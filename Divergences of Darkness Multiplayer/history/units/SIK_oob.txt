@@ -1,0 +1,7 @@
+leader = {
+	name = "Madhu Sood"
+	type = land
+	date = 1836.1.1
+	personality = relentless
+	background = school_of_the_bayonet
+}
