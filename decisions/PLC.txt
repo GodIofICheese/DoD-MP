@@ -1,0 +1,31 @@
+political_decisions  = {
+
+	expand_crimea = {
+		picture = crimea
+		potential = {
+			tag = PLC
+			NOT = { has_country_flag = expand_crimea }
+			year = 1880
+		}
+		
+		allow = {
+			mass_politics = 1
+			RUS_958 = { owned_by = THIS}
+			RUS_965 = { owned_by = THIS}
+			RUS_964 = { owned_by = THIS}	
+		}
+		
+		effect = {
+			set_country_flag = expand_crimea
+			prestige = 25
+			add_accepted_culture = crimean
+			RUS_965 = { add_core = THIS }
+			RUS_964 = { add_core = THIS }
+			RUS_980 = { add_core = THIS }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,186 @@
+country_event = {
+    id = 202201
+    title = "RUS_EXP_202201_t"
+    desc = "RUS_EXP_202201_d"
+    picture = "administration"
+
+    is_triggered_only = yes
+
+    #Each focus adds some cores. Perhaps the AI weights should depend on the relative strength of Scandinavia, the Commonwealth, Bohemia, Ottomans, etc. Mostly by region.
+
+    #Baltic focus - cores on Livonia and Finland
+    option = {
+        name = "202201.A"
+        badboy = 10
+	set_country_flag = baltic_focus
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 3650
+	}
+        #Estonia, Latvia
+        RUS_354 = { add_core = RUS }
+        RUS_349 = { add_core = RUS }
+        #Finland
+        982 = {
+            add_core = RUS
+        }
+        338 = {
+            add_core = RUS
+        }
+        342 = {
+            add_core = RUS
+        }
+        337 = {
+            add_core = RUS
+        }
+        336 = {
+            add_core = RUS
+        }
+        339 = {
+            add_core = RUS
+        }
+        340 = {
+            add_core = RUS
+        }
+        341 = {
+            add_core = RUS
+        }
+        343 = {
+            add_core = RUS
+        }
+        344 = {
+            add_core = RUS
+        }
+        345 = {
+            add_core = RUS
+        }
+        346 = {
+            add_core = RUS
+        }
+        347 = {
+            add_core = RUS
+        }
+        ai_chance = { 
+            factor = 33
+        }
+    }
+    #Steppe/Caucasus focus
+    option = {
+        name = "202201.B"
+        badboy = 10
+	set_country_flag = southern_focus
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 3650
+
+        RUS_1048 = { add_core = RUS } #Astrakhan
+        RUS_1041 = { add_core = RUS } #Ekaterinodar
+        GEO_1 = { add_core = RUS } #Phasis
+        RUS_1090 = { add_core = RUS } #Georgia proper
+	RUS_1102 = { add_core = RUS } #Azerbajin
+	RUS_1098 = { add_core = RUS } #Armenia
+	1049 = { add_core = RUS }
+	1051 = { add_core = RUS }
+	1056 = { add_core = RUS }
+	
+        ai_chance = { 
+             factor = 33
+        }
+    }
+
+    #Pan-slavic focus
+    option = {
+        name = "202201.C"
+        badboy = 10
+	set_country_flag = panslavic_focus
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 3650
+        RUS_947 = { add_core = RUS } #Orsha
+        RUS_977 = { add_core = RUS } #Kursk
+        RUS_958 = { add_core = RUS } #Kiev
+        RUS_955 = { add_core = RUS } #Rovne
+        RUS_718 = { add_core = RUS } #Minsk
+
+        ai_chance = { 
+             factor = 25
+        }
+    }
+
+    option = {
+	name = "202201.D"
+	badboy = 10
+	set_country_flag = siberia
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 3650
+	}
+	prestige = 20
+	YKT = { all_core = { add_core = RUS } }
+	RUS_1182 = {
+                 add_core = RUS
+	}
+	RUS_1184 = {
+	         add_core = RUS
+	}
+	RUS_2685 = {
+	         add_core = RUS
+	}
+	RUS_1065 = {
+	         add_core = RUS
+	}
+	RUS_1064 = {
+	         add_core = RUS
+	}
+	RUS_1469 = {
+	         add_core = RUS
+	}
+	RUS_1070 = {
+	         add_core = RUS
+	}
+	RUS_2615 = {
+	         add_core = RUS
+	}
+	RUS_1075 = {
+	         add_core = RUS
+	}
+	RUS_2694 = {
+	       add_core = RUS
+	}
+	RUS_2653 = {
+	       add_core = RUS
+	}
+	RUS_2621 = {
+	       add_core = RUS
+	}
+	RUS_1069 = {
+	       add_core = RUS
+	}
+	RUS_1079 = {
+	       add_core = RUS
+	}
+	RUS_1072 = {
+	       add_core = RUS
+	}
+	RUS_2618 = {
+	       add_core = RUS
+	}
+	RUS_1074 = {
+	       add_core = RUS
+	}
+	RUS_2590 = {
+	       add_core = RUS
+	}
+	2674 = { add_core = RUS }
+	2643 = { add_core = RUS }
+	2619 = { add_core = RUS }
+		
+	ai_chance = {
+	       factor = 25
+	}
+    }
+    
+    option = {
+	name = "202201.E"
+    }
+}

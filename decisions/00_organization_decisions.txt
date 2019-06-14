@@ -1,0 +1,373 @@
+political_decisions = {
+	turn_on_government_decisions = {
+		picture = government_decisions
+		alert = no
+		potential = {
+			ai = no
+			NOT = { has_country_flag = government_decisions_on }
+			OR = {
+				#turn_off_vassal_payments
+				AND = {
+					any_neighbor_country = {
+						vassal_of = THIS
+						NOT = { has_country_flag = exempt_from_vassal_contribution }
+					}
+					NOT = { has_country_flag = vassals_dont_need_to_pay }
+					num_of_vassals_no_substates = 1
+				}
+				#organize_colonial_armies
+				AND = {
+					civilized = yes
+					colonial_nation = yes
+					any_owned_province = { is_colonial = yes is_overseas = yes }
+					NOT = { has_country_flag = colonial_armies }
+				}
+				#specific_trade_policy
+				AND = {
+					NOT = { has_country_flag = trade_policy_choosing_disabled }
+					NOT = { has_global_flag = trade_policy_globally_disabled }
+					exists = yes
+					OR = {
+						civilized = yes
+						NOT = { finance_reform = no_finance_reform }
+					}
+					NOT = {
+						has_country_modifier = mercantilism
+						has_country_modifier = economic_nationalism
+						has_country_modifier = french_liberal_school
+						has_country_modifier = smithian_school
+						has_country_modifier = non_interventionism_trade_policy
+						has_country_modifier = no_trade_policy_set
+						has_country_modifier = in_bankrupcy
+						has_country_modifier = bad_debter
+						has_country_modifier = generalised_debt_default
+					}
+				}
+				#Release Vassal
+				AND = {
+					num_of_vassals_no_substates = 1
+					is_vassal = no
+					NOT = { has_country_flag = gtfo has_country_flag = gtfo_disabled }
+				}
+				AND = {
+					has_country_flag = gtfo
+					NOT = { has_country_flag = gtfo_disabled }
+				}
+				# #Increase Conscription
+				# AND = {
+					# civilized = yes
+					# war = yes
+					# OR = {
+						# AND = {
+							# conscription = no_draft
+							# NOT = { has_country_flag = in_great_war }
+						# }
+						# AND = {
+							# conscription = one_year_draft
+							# NOT = { has_country_flag = in_great_war }
+						# }
+						# AND = {
+							# conscription = two_year_draft
+							# NOT = { has_country_flag = in_great_war }
+						# }
+						# AND = {
+							# NOT = { conscription = mandatory_service }
+							# OR = {
+								# conscription = four_year_draft
+								# government = fascist_dictatorship
+								# government = proletarian_dictatorship
+								# has_country_flag = in_great_war
+							# }
+						# }
+					# }
+				# }
+				#Reform the Local Government
+				AND = {
+					civilized = yes
+					any_owned_province = {
+						any_core = {
+							exists = no
+							capital_scope = { owned_by = THIS }
+							OR = {
+								AND =  {
+									NOT = { political_parties = underground_parties }
+									THIS = { political_parties = underground_parties }
+								}
+								AND =  {
+									NOT = { political_parties = harassment }
+									THIS = { political_parties = harassment }
+								}
+								AND =  {
+									NOT = { political_parties = gerrymandering }
+									THIS = { political_parties = gerrymandering }
+								}
+								AND =  {
+									NOT = { political_parties = non_secret_ballots }
+									THIS = { political_parties = non_secret_ballots }
+								}
+								AND =  {
+									NOT = { political_parties = secret_ballots }
+									THIS = { political_parties = secret_ballots }
+								}
+							}
+						}
+					}
+				}
+				#Genocide
+				AND = {
+					OR = {
+						government = absolute_monarchy
+						government = theocracy
+						government = fascist_dictatorship
+						government = presidential_dictatorship
+						government = proletarian_dictatorship
+					}
+					revolution_n_counterrevolution = 1
+				}
+				#Enslave the Serfs
+				AND = {
+					OR = {
+						has_country_flag = government_decisions_on
+						ai = yes
+					}
+					OR = {
+						government = absolute_monarchy
+						government = prussian_constitutionalism
+					}
+					debt_law = serfdom
+				}
+				# #Change Border Policy
+				# AND = {
+					# OR = {
+						# has_country_flag = government_decisions_on
+						# ai = yes
+					# }
+					# civilized = yes
+					# NOT = { has_country_flag = change_border_policy }
+					# NOT = { has_country_modifier = law_changed_by_force }
+				# }
+				#Return Cores
+				AND = {
+					OR = {
+					num_of_vassals_no_substates = 1
+					is_greater_power = yes
+					}
+					NOT = {
+						has_country_flag = return_cores_decision
+						has_country_flag = return_core_disabled 
+					}
+					any_owned_province = { NOT = { is_core = THIS } any_core = { OR = { in_sphere = THIS vassal_of = THIS } } } 
+				}
+				AND = {
+					has_country_flag = return_cores_decision 
+					NOT = { has_country_flag = return_core_disabled }
+				}
+				#Return to Traditional Academia
+				AND = {
+					NOT = { tech_school = traditional_academic }
+					OR = {
+						ai = no
+						tech_school = developing_tech_school
+					}
+					civilized = yes
+				}
+			}
+		}
+		allow = {
+		}
+		effect = {
+			set_country_flag = government_decisions_on
+		}
+	}
+
+	
+	turn_off_government_decisions = {
+		picture = government_decisions
+		alert = no
+		potential = {
+			ai = no
+			has_country_flag = government_decisions_on
+		}
+		allow = {
+		}
+		effect = {
+			clr_country_flag = government_decisions_on
+		}
+	}
+	
+	pick_up_a_tech_school = {
+		alert = no
+		picture = switch_to_order
+		potential = {
+			ai = no
+			has_country_flag = government_decisions_on
+			civilized = yes
+			NOT = { has_country_flag = picking_up_a_tech_school }
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			set_country_flag = picking_up_a_tech_school
+		}
+	}
+	
+	close_pick_up_a_tech_school = {
+		picture = switch_to_productivity
+		alert = no
+		potential = {
+			ai = no
+			civilized = yes
+			has_country_flag = picking_up_a_tech_school
+		}
+		
+		allow = {
+		}
+		
+		effect = {
+			clr_country_flag = picking_up_a_tech_school
+		}
+	}
+	
+	increase_conscription = {
+		picture = marching_soldiers
+		alert = no
+		potential = {
+			 OR = {
+				 has_country_flag = government_decisions_on
+				 ai = yes
+			 }
+			civilized = yes
+			war = yes
+			OR = {
+				AND = {
+					conscription = no_draft
+					NOT = { has_country_flag = in_great_war }
+				}
+				AND = {
+					conscription = one_year_draft
+					NOT = { has_country_flag = in_great_war }
+				}
+				AND = {
+					conscription = two_year_draft
+					NOT = { has_country_flag = in_great_war }
+				}
+				AND = {
+					NOT = { conscription = mandatory_service }
+					OR = {
+						conscription = four_year_draft
+						government = fascist_dictatorship
+						government = proletarian_dictatorship
+						has_country_flag = in_great_war
+					}
+				}
+			}
+		}
+			
+		allow = {
+			NOT = { has_country_modifier = law_changed_by_force }
+			any_neighbor_country = { war_with = THIS civilized = yes }
+			OR = {
+				has_country_flag = in_great_war
+				AND = {
+					NOT = { war_policy = pacifism }
+					conscription = no_draft
+				}
+				AND = {
+					NOT = { OR = { war_policy = pacifism war_policy = anti_military } }
+					OR = {
+						conscription = one_year_draft
+						conscription = two_year_draft
+					}
+				}
+				AND = {
+					conscription = four_year_draft
+					OR = {
+						war_policy = jingoism
+						government = fascist_dictatorship
+						government = proletarian_dictatorship
+						government = bourgeois_dictatorship
+						has_country_flag = in_great_war
+					}
+				}
+			}
+		}
+			
+		effect = {
+			add_country_modifier = { name = law_changed_by_force duration = 3650 }
+			random_owned = {
+				limit = {
+					owner = {
+						NOT = { conscription = mandatory_service }
+						OR = {
+							government = fascist_dictatorship
+							government = proletarian_dictatorship
+							government = bourgeois_dictatorship
+							has_country_flag = in_great_war
+						}
+					}
+				}
+				owner = { political_reform = mandatory_service }
+			}
+			random_owned = { limit = { owner = { conscription = four_year_draft } } owner = { political_reform = mandatory_service } }
+			random_owned = { limit = { owner = { conscription = two_year_draft } } owner = { political_reform = four_year_draft } }
+			random_owned = { limit = { owner = { conscription = one_year_draft } } owner = { political_reform = two_year_draft } }
+			random_owned = { limit = { owner = { conscription = no_draft } } owner = { political_reform = one_year_draft } }
+		}
+		
+		ai_will_do = {
+			factor = 0
+			modifier = { factor = 100 conscription = no_draft }
+			modifier = {
+				factor = 100 
+				conscription = one_year_draft
+				OR = {
+					war_policy = jingoism
+					war_policy = pro_military
+					ruling_party_ideology = fascist
+					ruling_party_ideology = reactionary
+					any_greater_power = { war_with = THIS }
+					any_neighbor_country = {
+						civilized = yes
+						OR = {
+							brigades_compare = 1.1
+							conscription = two_year_draft
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 100 
+				conscription = two_year_draft
+				OR = {
+					war_policy = jingoism
+					ruling_party_ideology = fascist
+					ruling_party_ideology = reactionary
+					any_greater_power = { war_with = THIS }
+					any_neighbor_country = {
+						civilized = yes
+						OR = {
+							brigades_compare = 1.2
+							conscription = four_year_draft
+						}
+					}
+				}
+			}	
+			modifier = {
+				factor = 100
+				conscription = four_year_draft
+				OR = {
+					any_neighbor_country = { conscription = mandatory_service }
+					has_country_flag = in_great_war
+					any_greater_power = { war_with = THIS }
+					any_neighbor_country = { brigades_compare = 1.3 }
+					lost_national = 0.2
+					war_policy = jingoism
+					ruling_party_ideology = fascist
+					ruling_party_ideology = reactionary
+				}
+			}
+		}
+	}
+}

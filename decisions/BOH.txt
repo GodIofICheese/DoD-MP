@@ -1,0 +1,34 @@
+political_decisions = {
+	accept_elbian_BOH = { 
+		picture = embrace_the_boer
+		potential = { 
+			OR = {
+				tag = BOH
+				tag = CAE
+			} 
+			NOT = { has_country_flag = accept_elbian_BOH }
+			}
+		
+		allow = {  
+			SAX_558 = { owned_by = THIS }
+			AUS_625 = { owned_by = THIS }
+			AUS_626 = { owned_by = THIS }
+		
+			OR = {
+				phenomenology_n_hermeneutic = 1
+				AND = {
+					  rank = 3
+					  revolution_n_counterrevolution = 1
+				}
+			}
+		}		
+		effect = { 
+			set_country_flag = accept_elbian_BOH
+			add_accepted_culture = north_german
+			SAX_1 = { add_core = THIS }
+			BAV_595 = { add_core = THIS }
+			BAV_599 = { add_core = THIS }
+			AUS_619 = { add_core = THIS }  
+		}
+	}
+}

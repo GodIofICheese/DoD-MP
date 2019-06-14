@@ -1,0 +1,681 @@
+# keep as reference - correct syntax but not used
+song = {
+       name = "warmthelorrainemarch.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = prussian_constitutionalism 
+				     government = absolute_monarchy 
+				     government = hms_government 
+				     government = merchant_republic 
+				     government = feudal_monarchy 
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = prussian_constitutionalism
+			          	    government = absolute_monarchy
+					    government = hms_government
+					    government = merchant_republic
+					    government = feudal_monarchy 
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		 }		
+       }
+}
+
+song = {
+       name = "warmbritishgrenadiersmarch.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = prussian_constitutionalism 
+				     government = absolute_monarchy 
+				     government = hms_government 
+				     government = merchant_republic 
+				     government = feudal_monarchy 
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = prussian_constitutionalism
+			          	    government = absolute_monarchy
+					    government = hms_government
+					    government = merchant_republic
+					    government = feudal_monarchy 
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "warmbluebonnetsovertheborder.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = prussian_constitutionalism 
+				     government = absolute_monarchy 
+				     government = hms_government 
+				     government = merchant_republic 
+				     government = feudal_monarchy 
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = prussian_constitutionalism
+			          	    government = absolute_monarchy
+					    government = hms_government
+					    government = merchant_republic
+					    government = feudal_monarchy 
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "warmrulebritannia.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = prussian_constitutionalism 
+				     government = absolute_monarchy 
+				     government = hms_government 
+				     government = merchant_republic 
+				     government = feudal_monarchy 
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = prussian_constitutionalism
+			          	    government = absolute_monarchy
+					    government = hms_government
+					    government = merchant_republic
+					    government = feudal_monarchy 
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "warmleboudin.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = prussian_constitutionalism 
+				     government = absolute_monarchy 
+				     government = hms_government 
+				     government = merchant_republic 
+				     government = feudal_monarchy 
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = prussian_constitutionalism
+			          	    government = absolute_monarchy
+					    government = hms_government
+					    government = merchant_republic
+					    government = feudal_monarchy 
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "warmfarewelltonovascotia.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = prussian_constitutionalism 
+				     government = absolute_monarchy 
+				     government = hms_government 
+				     government = merchant_republic 
+				     government = feudal_monarchy 
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = prussian_constitutionalism
+			          	    government = absolute_monarchy
+					    government = hms_government
+					    government = merchant_republic
+					    government = feudal_monarchy 
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "peacemhohenzlied.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = prussian_constitutionalism 
+				     government = absolute_monarchy 
+				     government = hms_government 
+				     government = merchant_republic 
+				     government = feudal_monarchy 
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = prussian_constitutionalism
+			          	    government = absolute_monarchy
+					    government = hms_government
+					    government = merchant_republic
+					    government = feudal_monarchy 
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = yes
+		            }
+	          }		
+       }
+}
+
+song = {
+       name = "wardbridgeontheriverkwai.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = hms_government
+				     government = merchant_republic
+				     government = democracy  
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = hms_government
+					    government = merchant_republic
+				            government = democracy
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "wardlafeuillederable.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = hms_government
+				     government = merchant_republic
+				     government = democracy  
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = hms_government
+					    government = merchant_republic
+				            government = democracy
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "wardlafeuillederable.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = hms_government
+				     government = merchant_republic
+				     government = democracy  
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = hms_government
+					    government = merchant_republic
+				            government = democracy
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "warlostlacrimosa.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     has_recently_lost_war = yes
+				     is_disarmed = yes
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    has_recently_lost_war = no
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = yes
+		            }		
+       }
+}
+
+song = {
+       name = "warexhaustioneuivssalifetimeofwar.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     war_exhaustion = 40
+				     is_disarmed = yes
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    war_exhaustion = 20
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "warexhaustionsabatonthepriceofamile.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     war_exhaustion = 40
+				     is_disarmed = yes
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    war_exhaustion = 20
+		     		      }
+			      }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericpeacesergeirachmaninovmomentmusicop16no4.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericpeaceedwardelgarcelloconcertoineminorop85adagiomoderato.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericwarpiotrilichtchaikovsky1812overture.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 1
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericwartoccataandfugueindminor.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 1
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericpeaceeurope1.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericpeaceeurope2.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericpeaceeurope3.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericpeaceeuropecentral5.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "GermanicHeildirimSiegerkranz.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     tag = BRG 
+				     tag = CAE
+				     tag = BOH 
+				     tag = DNB 
+				     tag = HLR
+				     tag = GER
+				     tag = RHI 
+		              }
+		  }
+		  modifier = {
+			      factor = 1
+			      NOT = { 
+				      OR = { 
+					    tag = BRG 
+				     	    tag = CAE
+				            tag = BOH 
+				            tag = DNB 
+				            tag = HLR
+				            tag = GER
+					    tag = RHI 
+		     		      }
+			      }
+		  }	
+       }
+}
+
+song = {
+       name = "genericwargustavholsttheplanetsmarsthebringerofwar.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 1
+			      war = no
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericclassicalgeorgesbizetlestoreadorsfromcarmensuiteno1.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericclassicalwinter1stmovementvivaldi.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericaclassicalfranzschubertmarchemilitaire.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericclassicaljaegermarch.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericclassicalmarchemilitairefranaisedelancienregimedansedevillage.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+
+song = {
+       name = "genericclassicalsoldiersbraveguys.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+		              }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 1
+			      war = yes
+		            }
+		  }		
+       }
+}
+

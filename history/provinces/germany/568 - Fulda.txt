@@ -1,0 +1,6 @@
+owner = HEK
+controller = HEK
+add_core = HEK
+add_core = GERadd_core = RHI
+trade_goods = grain
+life_rating = 40
