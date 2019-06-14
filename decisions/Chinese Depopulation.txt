@@ -1,0 +1,44 @@
+political_decisions = {
+	chinese_genocide_MCK = {
+		potential = {
+			tag = MCK
+			NOT = {
+				has_global_flag = chinese_genocide_MCK
+			}
+			ai = no
+		}
+		allow = {
+			NOT = {
+				has_global_flag = chinese_genocide_MCK
+			}
+		}
+		effect = {
+			any_pop = {
+				reduce_pop = 0.33
+			}
+			set_global_flag = chinese_genocide_MCK
+			}
+		}
+}
+political_decisions = {
+	chinese_genocide_TAI = {
+		potential = {
+			tag = TAI
+			NOT = {
+				has_global_flag = chinese_genocide_TAI
+			}
+			ai = no
+		}
+		allow = {
+			NOT = {
+				has_global_flag = chinese_genocide_TAI
+			}
+		}
+		effect = {
+			any_pop = {
+				reduce_pop = 0.33
+			}
+			set_global_flag = chinese_genocide_TAI
+			}
+		}
+}

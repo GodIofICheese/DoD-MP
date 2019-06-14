@@ -1,0 +1,25 @@
+#############################################;;;;;;;;;;;;;;x
+#Additional Decisions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+force_iberia_title;Form Iberia Militarily;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+force_iberia_desc;"We have suceeded in beating back the Aragonese off the Iberian peninsula, now the time has come to create one Empire that rules all of Hispania. But the question remains: Will the Catalans accept our rule?";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+government_in_exile_ara_title;Declare a Government in Exile;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+government_in_exile_ara_desc;The situation in both Italy, Iberia & Europe as a whole has become untennable for us, perhaps it's for the best to seek refuge in The New World to bide our time for future opportunities.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+government_in_exile_spa_title;Declare a Government in Exile;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+government_in_exile_spa_desc;The Dream of a Unified Iberia lies shattered, the Peninsula now overrun by foreign powers; The time has come to establish a new Government in Cuba in-order to gather strength for a return to rightful Spanish dominion in Iberia.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+illyrian_annexation_title;Reclaim Illyria;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+illyrian_annexation_desc;What was once part of the Republic is now ours again, time time has come to end the failed experiment that is a independent Illyria.
+connect_holdings_greece_title;Proclaim Dominion over the Adriatic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+connect_holdings_greece_desc;With our lands in Greece connected the entire coastline along the Adriatic is now ours it is time to bring our Most Serene Republic to even greater heights.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+stewardship_italy_title;Declare Stewardship over Italy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+stewardship_italy_desc;For centuries the squabbling City-States of Italy have bickered even as foreign nations & peoples enroached the peninsula, it is perhaps for the best that Venice sherpad these states for their own good.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+government_in_exile_ven_title;Declare a Government in Exile;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+government_in_exile_ven_desc;Venice is lost, the Most Serene Republic that lasted a thousand years is now under foreign occupation, the true peoples of Venetia will carry on with a revitalized Government in Athesia until the time is ripe for revenge.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+duchy_romania_title;Proclaim the Grand Duchy of Romania;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+duchy_romania_desc;With the Romanian peoples united under our singular Banner it is time to offically claim dejure rulership over Romania.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+expand_crimea_title;Annexation of Crimea;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+expand_crimea_desc;The Peoples of Crimea deserve true self-determination under the rightful guidance of The Commonwealth, we merely took steps to ensure this.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+north_sea_empire_title;The Empire of the North Sea;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+north_sea_empire_desc;Now that Ireland has been wrestled away from Anglois dominion we now finally have compelete imperium over the North Sea.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+accept_elbian_BOH_title;Annex the Principalities;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+accept_elbian_BOH_desc;Although we have not yet been able to form the Elbian Confederation in the north, the principalities surrounding Bohemia to the west & south shall soon thrive under centralized Imperial management.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

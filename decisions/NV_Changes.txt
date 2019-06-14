@@ -1,0 +1,434 @@
+political_decisions = {
+
+	change_national_value_on = {
+		alert = yes
+		picture = national_value
+		potential = {
+			OR = {
+				has_country_flag = government_decisions_on
+				ai = yes
+			}
+			NOT = {	has_country_flag = nv_change }
+		}
+		
+		allow = {
+			NOT = {	has_country_modifier = national_confusion }
+			war = no
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = { set_country_flag = nv_change }
+		
+		ai_will_do = { 
+			factor = 1 
+			
+			modifier = {
+				factor = 0
+				OR = {
+					is_culture_group = east_asian
+					substate_of = QNG
+				}
+			}
+		}
+	}
+
+	change_national_value_off = {
+		alert = no
+		picture = national_value
+		potential = {
+			has_country_flag = nv_change
+		}
+		
+		allow = { }
+		
+		effect = { clr_country_flag = nv_change }
+		
+		ai_will_do = { factor = 0 }
+	}
+
+	switch_to_order = {
+		picture = switch_to_order
+		potential = {
+			civilized = no
+			nationalvalue = nv_tradition
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_order
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 1 }
+	}
+	
+	switch_to_production = {
+		picture = switch_to_productivity
+		potential = {
+			civilized = no
+			nationalvalue = nv_tradition
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_productivity
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0.25 }
+	}
+	
+	switch_to_autocracy = {
+		picture = switch_to_autocracy
+		potential = {
+			civilized = no
+			nationalvalue = nv_tradition
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_autocracy
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0.75 }
+	}
+	
+	switch_to_equality = {
+		picture = switch_to_equality
+		potential = {
+			civilized = no
+			nationalvalue = nv_tradition
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_equality
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+	
+	switch_to_liberty = {
+		picture = switch_to_liberty
+		potential = {
+			civilized = no
+			nationalvalue = nv_tradition
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			clr_country_flag = nv_change
+			nationalvalue = nv_liberty
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+			any_pop = {
+				scaled_militancy = {
+					ideology = reactionary
+					factor = 8
+				}
+				scaled_militancy = {
+					ideology = conservative
+					factor = 2
+				}
+				scaled_militancy = {
+					ideology = liberal
+					factor = -2
+				}
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+
+	switch_to_order = {
+		alert = yes
+		picture = switch_to_order
+		potential = {
+			civilized = yes
+			has_country_flag = nv_change
+		}
+		
+		allow = {
+			war = no
+			prestige = 25
+			revolution_n_counterrevolution = 1
+			OR = {
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+				government = presidential_dictatorship
+				centralization = totalitarianism 
+			}
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			prestige = -20
+			clr_country_flag = nv_change
+			nationalvalue = nv_order
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+		}
+		
+		ai_will_do = { factor = 0 }
+	}
+
+	switch_to_liberty = {
+		potential = {
+			ai = no
+			has_country_flag = nv_change
+			civilized = yes
+		}
+		
+		allow = {
+			war = no
+			prestige = 25
+			revolution_n_counterrevolution = 1
+			OR = {
+				government = democracy
+				government = hms_government
+				vote_franschise = universal_voting
+			}
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			prestige = -20
+			nationalvalue = nv_liberty
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+		}
+	}
+
+	switch_to_productivity = {
+		potential = {
+			ai = no
+			has_country_flag = nv_change
+			civilized = yes
+		}
+		
+		allow = {
+			war = no
+			prestige = 25
+			revolution_n_counterrevolution = 1
+			OR = {
+				government = merchant_republic
+				government = proletarian_dictatorship
+				industrial_score = 500
+			}
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			prestige = -20
+			nationalvalue = nv_productivity
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+		}
+	}
+
+	switch_to_equality = {
+		potential = {
+			ai = no
+			has_country_flag = nv_change
+			civilized = yes
+		}
+		
+		allow = {
+			war = no
+			prestige = 25
+			revolution_n_counterrevolution = 1
+			OR = {
+				government = democracy
+				government = proletarian_dictatorship
+				citizens_rights = all_voting_pops
+			}
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			prestige = -20
+			nationalvalue = nv_equality
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+		}
+	}
+
+	switch_to_autocracy = {
+		potential = {
+			ai = no
+			has_country_flag = nv_change
+			civilized = yes
+		}
+		
+		allow = {
+			war = no
+			prestige = 25
+			revolution_n_counterrevolution = 1
+			OR = {
+				government = presidential_dictatorship
+				government = proletarian_dictatorship
+				government = bourgeois_dictatorship
+				government = fascist_dictatorship
+				government = absolute_monarchy
+				upper_house_composition = party_appointed
+			}
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			prestige = -20
+			nationalvalue = nv_autocracy
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+		}
+	}
+
+	switch_to_tradition = {
+		potential = {
+			ai = no
+			has_country_flag = nv_change
+			civilized = yes
+		}
+		
+		allow = {
+			war = no
+			prestige = 25
+			revolution_n_counterrevolution = 1
+			OR = {
+				government = theocracy
+				government = feudal_monarchy
+				NOT = { literacy = .40 }
+			}
+			NOT = { has_country_modifier = national_confusion }
+			NOT = { num_of_revolts = 1 }
+		}
+		
+		effect = {
+			prestige = -20
+			nationalvalue = nv_tradition
+			add_country_modifier = {
+				name = national_confusion
+				duration = 3650
+			}
+		}
+	}

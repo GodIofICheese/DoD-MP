@@ -1,0 +1,421 @@
+political_decisions = {
+	merge_the_crowns_ari = {
+		picture = aragon_italy
+		potential = {			
+			tag = ARA	
+			NOT = { has_country_flag = ARA_ITA }
+			NOT = { has_country_flag = Italyrulezz }
+		}
+		allow = {
+			NOT = { war = yes }
+			owns = 754 # Napoli
+			owns = 762 # Palermo
+			NOT = { exists = ITA }
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = feudal_monarchy
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+			}
+			prestige = 50
+			ITA = {
+				all_core = {
+					OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 20
+			set_country_flag = ARA_ITA
+			
+			random_country = { 
+				limit = {
+					tag = PAP
+					owns = 749
+				}
+				annex_to = THIS
+			}
+			capital = 749
+		
+			add_accepted_culture = south_italian
+			add_accepted_culture = catalan
+			
+			749 = {
+				add_core = THIS
+			}
+			750 = {
+				add_core = THIS
+			}
+			751 = {
+				add_core = THIS
+			}
+			752 = {
+				add_core = THIS
+			}
+
+			SIC_754 = { remove_core = ITA }
+			SIC_763 = { remove_core = ITA }
+			SAR_765 = { remove_core = ITA }
+			PAP_752 = { remove_core = ITA }
+			SIC_753 = { remove_core = ITA } 
+
+			any_country = {
+				limit = {
+					OR = { 
+						primary_culture = south_italian
+						primary_culture = north_italian
+					}
+					NOT = {
+						tag = THIS
+						tag = ATS
+					}				
+				}
+				annex_to = THIS
+			}
+
+			any_owned = { 
+				limit = {
+					is_core = ITA
+				}
+				add_core = LOM
+			}
+
+			SIC_754 = { add_core = ITA }
+			SIC_763 = { add_core = ITA }
+			SAR_765 = { add_core = ITA }
+			PAP_752 = { add_core = ITA }
+			SIC_753 = { add_core = ITA }
+			
+			SPA_498 = { add_core = CAT }
+			SPA_492 = { add_core = CAT }
+			SPA_503 = { add_core = CAT }
+
+			change_tag = ARI
+
+			any_country = { 
+				any_owned = { 
+					limit = {
+						is_core = ARA
+					}
+					remove_core = ARA
+				}
+			}
+
+			random_country = {
+				limit = {
+					ai = yes
+					OR = { 
+						tag = RAP
+						tag = HAW
+					}
+				}
+				country_event = 124101
+			}
+
+			any_owned = { 
+				limit = {
+					is_core = ARA
+				}
+				remove_core = ARA
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	start_ai_cw = {
+		picture = council_Etruria
+		potential = {
+			tag = ARI
+			LOM = { is_vassal = yes }
+			NOT = { has_country_flag = waroveritaly }
+			NOT = { has_country_flag = waroveritalyend }
+		}
+		
+		allow = {
+			OR = {
+				social_science = 1
+				AND = {
+					rank = 2
+					nationalism_n_imperialism = 1
+				}
+			}
+			war = no
+		}
+		
+		effect = {
+			prestige = 5
+			country_event = 124105
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	integrate_north_italians = {
+		picture = embrace_the_boer
+		potential = {
+			tag = ARI
+			has_country_flag = waroveritalyend
+			NOT = { exists = LOM }
+			NOT = { has_country_flag = italian_integration }
+		}
+		
+		allow = {
+			ITA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			OR = {
+				phenomenology_n_hermeneutic = 1
+				AND = {
+					rank = 4
+					revolution_n_counterrevolution = 1
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 5
+			add_accepted_culture = north_italian
+			set_country_flag = italian_integration
+			
+			any_pop = {
+				limit = {
+					has_pop_culture = north_italian
+				}
+				militancy = -2
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = south_italian
+				}
+				militancy = -2
+				consciousness = 2
+			}
+			any_pop = {
+				limit = {
+					has_pop_culture = catalan
+				}
+				militancy = 2
+				consciousness = 2
+			}
+			any_pop = {
+				limit = { 
+				has_pop_culture = castilian
+				}
+				militancy = 4
+				consciousness = 4
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	venetian_question = { 
+		picture = north_east_italy
+		potential = { 
+			tag = ARI 
+			has_country_flag = italian_integration
+			NOT = { has_country_flag = venetia_ARI }
+		}
+		
+		allow = { 
+		own = 729
+		own = 770
+		own = 780
+		is_greater_power = yes
+		mass_politics = 1
+		}
+		
+		effect = { 
+		set_country_flag = venetia_ARI 
+		AUS_729 = { 
+				add_core = ARI
+			}
+		AUS_736 = {
+				add_core = ARI
+			}
+		AUS_780 = {
+				add_core = ARI
+			}
+		any_country = {
+				limit = {
+					tag = VEN 
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+		}
+	
+	}
+	
+	latin_empire = {
+		picture = latin_empire
+		potential = {
+			tag = ARI
+			has_country_flag = venetia_ARI
+			NOT = { has_country_flag = latin_empire }
+		}
+		
+		allow = {
+			all_core = { owned_by = THIS }
+			rank = 4
+			mass_politics = 1
+		}
+		
+		effect = {
+			set_country_flag = latin_empire
+			prestige = 25
+			
+			ALD_1704 = { add_core = THIS }
+			ALD_1708 = { add_core = THIS }
+			TUN_1726 = { add_core = THIS }
+			TRI_1743 = { add_core = THIS }
+			TRI_1741 = { add_core = THIS }
+			FRA_467 = { add_core = THIS }
+			FRA_461 = { add_core = THIS }
+			FRA_1700 = { add_core = THIS }
+			EGY_1754 = { add_core = THIS }
+			
+			random_owned = {
+				limit = {
+					owner = { owns = 465 }
+				}
+				FRA_451 = { add_core = THIS }
+			}
+			
+			relation = {
+				who = DUA
+				value = -200
+			}
+			relation = {
+				who = BOH
+				value = -200
+			}
+			relation = {
+				who = SPA
+				value = -200
+			}
+			
+			any_country = {
+				limit = {
+					any_owned_province = { is_core = THIS }
+					NOT = {
+						tag = DUA
+						tag = BOH
+						tag = SPA
+					}
+				}
+				relation = {
+					who = THIS
+					value = -200
+				}
+			}
+			
+			any_country = {
+				limit = {
+					any_owned_province = { is_core = THIS }
+					is_greater_power = no
+				}
+				country_event = 124108
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	annex_provence = { 
+		picture = provence
+		potential = { 
+		tag = ARI 
+		has_country_flag = latin_empire
+		PRV = { exists = yes }
+		is_greater_power = yes 
+		NOT = { 458 = { owned_by = PRV } }
+		NOT = { 455 = { owned_by = PRV } }
+		}
+		
+		allow = { 
+		PRV = { war = no in_sphere = THIS }
+		war = no 
+		}
+		
+		effect = { 
+		inherit = PRV 
+		}
+	
+	
+	}
+	government_in_exile_ara = {
+		picture = map_caribbean
+		potential = {
+			NOT = { has_country_flag = government_in_exile_ara }
+			owns = 2231
+			OR = {
+				tag = ARI
+				tag = ARA
+			}
+		}
+		
+		allow = { 
+			AND = {
+				OR = {
+					revanchism = 0.50
+					NOT = { 
+						498 = { owned_by = ARI }
+						503 = { owned_by = ARI }
+						495 = { owned_by = ARI }
+						754 = { owned_by = ARI }
+						753 = { owned_by = ARI }
+						749 = { owned_by = ARI }
+						747 = { owned_by = ARI }
+						498 = { owned_by = ARA }
+						503 = { owned_by = ARA }
+						495 = { owned_by = ARA }
+						754 = { owned_by = ARA }
+						753 = { owned_by = ARA }
+					}
+				}
+		        }
+		}
+		
+		effect = {
+			add_core = 2231
+			capital = 2231
+			2231 = {
+				    life_rating = 5
+				    change_province_name = "Nova Barcelona" 
+				    add_province_modifier = {
+				    	name = government_in_exile
+						duration = 7300
+	 				}  	  
+			}
+			add_accepted_culture = afro_latino
+			set_country_flag = government_in_exile_ara
+			set_country_flag = new_world_nation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

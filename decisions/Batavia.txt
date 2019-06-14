@@ -1,0 +1,62 @@
+political_decisions = {
+    claim_old_netherlands = {
+			potential = {
+				tag = BTV
+				NOT = { has_country_flag = claim_old_netherlands }
+			}
+		
+			allow = {
+				NET = { exists = no }
+				NOT = { war = yes }
+				OR = { 
+					AND = { 
+						is_greater_power = yes
+						revolution_n_counterrevolution = 1
+					}
+					phenomenology_n_hermeneutic = 1
+			}
+		
+			effect = {
+				prestige = 5
+				
+				relation = { who = BRG value = -200 }
+				
+				NET = {
+					all_core = {
+						add_core = THIS
+					}
+				}
+				set_country_flag = claim_old_netherlands
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+		return_home_BTV = {
+			potential = {
+				tag = BTV
+				has_country_flag = claim_old_netherlands
+			}
+		
+			allow = {
+				NOT = { NET = { exists = yes } }
+				NOT = { war = yes }
+				NET = {
+					all_core = {
+						owned_by = THIS
+					}
+				}
+			}
+		
+			effect = {
+				prestige = 20
+				change_tag = NET
+				add_accepted_culture = boer
+				primary_culture = dutch
+				capital = 375
+			}
+			ai_will_do = {
+				factor = 1
+			}
+	}
+}

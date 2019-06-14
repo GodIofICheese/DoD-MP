@@ -1,0 +1,164 @@
+#############################################;;;;;;;;;;;;;;x
+#Rare Goods Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+accelerated_vulcanization;Accelerated Vulcanization;;;;;;;;;;;;x,,,,,,,
+accelerated_vulcanization_desc;It was discovered in the early Twentieth Century that the addition of the organic compound aniline produced an accelerating effect. The active zinc salts in the aniline react strongly with the zinc oxide present in sulfur-vulcanized rubber to decrease the cure time necessary. Other compounds were later used that provided even faster cure times.;;;;;;;;;;;;x,,,,,,
+silk_waste_spinning;Silk Waste Spinning;;;;;;;;;;;;x,,,,,,,
+silk_waste_spinning_desc;This was a cumulative set of processes developed throughout the 19th century to process previously unusable silk. Sources of waste silk included the gummy silk fibres left over the predominant Silk Throwing Process and from the cocoons of the mulberry worms themselves. Previously this 'waste silk' had accounted for nearly 50% of raw silk production, and now it could be utilized too.;;;;;;;;;;;;x,,,,,,
+mechanized_wells;Mechanized Oil Wells;;;;;;;;;;;;x,,,,,,,
+mechanized_wells_desc;The ability to pump oil from the ground through automated machinery has greatly increased the capacity of the individual well. Already production has begun to skyrocket.;;;;;;;;;;;;x,,,,,,,
+advanced_drilling_techniques;Advanced Drilling Techniques;;;;;;;;;;;;x,,,,,,,
+advanced_drilling_techniques_desc;New methods of pumping oil from the ground are becoming available, meaning that oil can be harvested in a far more efficient manner.;;;;;;;;;;;;x,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Military Industrial Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+basic_ship_building_R&D;Basic Ship Building R&D;;;;;;;;;;;;x,,,,,,,
+basic_ship_building_R&D_desc;early production techniques were aided by increasing ship research.;;;;;;;;;;;;x,,,,,,,
+improved_ship_building_R&D;Improved Ship Building R&D;;;;;;;;;;;;x,,,,,,,
+improved_ship_building_R&D_desc;With advanced warships came advanced supply output.;;;;;;;;;;;;x,,,,,,,
+late_colonial_ships;Late Colonial Ships;;;;;;;;;;;;x,,,,,,,
+late_colonial_ships_desc;Ships with ever increasing naval ranges meant new methods of supply manufacture had to be devised.;;;;;;;;;;;;x,,,,,,,
+early_modern_oil_ship;Early Modern Oil Ship;;;;;;;;;;;;x,,,,,,,
+early_modern_oil_ship_desc;New advances in mobile refueling soon gave way to new advances in naval supply production.;;;;;;;;;;;;x, too!;;;;;;;;;;;;x,,,,,,
+ship_artillery_making;Ship Artillery Production;;;;;;;;;;;;x,,,,,,,
+ship_artillery_making_desc;The massive cannons required on warships ultimately led to more improvements in artillery production overall.;;;;;;;;;;;;x, resulting in more stable and fruitful marital unions.;;;;;;;;;;;;x,,,,,,
+ship_cannon_building;Ship Cannon Building;;;;;;;;;;;;x,,,,,,,
+ship_cannon_building_desc;As naval weaponry became larger and larger, so did its means of production.;;;;;;;;;;;;x,,,,,,
+late_colonial_armaments_industry;Late Colonial Armaments Industry;;;;;;;;;;;;x,,,,,,,
+late_colonial_armaments_industry_desc;Colonial ventures required arms production, but standard procedures often fell short. Thus, new methods were devised.;;;;;;;;;;;;x,,,,,
+modern_armaments_industry;Modern Armaments Industry;;;;;;;;;;;;x,,,,,,,
+modern_armaments_industry_desc;The modern armaments industry saw impressive gains in arms production.;;;;;;;;;;;;x,,,,,,,
+interruptor_gears;Interruptor Gears;;;;;;;;;;;;x,,,
+interruptor_gears_desc;These were inventions which enabled machine guns to be mounted in front of the cockpit of the airplane to give it real combat power for the first time. One type of gear synchronized the firing of the guns with the spinning arc of the propellers to prevent them being shot off. The second or true interruptor gear developed with bombers prevented the guns from firing if any part of the plane would take a hit.;;;;;;;;;;;;x,,,
+medium_tanks;Medium Tanks;;;;;;;;;;;;x,,,
+medium_tanks_desc;The Medium tank was developed in the interwar period to correct the design deficiencies and lack of speed of the early heavy tanks and the mobile yet underarmoured and outgunned light tanks. Medium tanks featured a main gun of between 37 and 76 millimetres to give it a more than adequate punch. At the same time, they were built with 360 degree revolving turrets and usually armed with at least one machine gun to provide defence from infantry attacks. They were built to specific designs with thicker armour than light tanks and with a lower profile, increasing their ability to survive on the battlefield.;;;;;;;;;;;;x,,,
+#############################################;;;;;;;;;;;;;;x
+#Navy Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+torpedo_tactics;Torpedo Tactics;;;;;;;;;;;;;x
+torpedo_tactics_desc;Cruisers and torpedo boats are now equipped with torpedos. Making the best use of this new weapon requires us to re-think the tactics we use.;;;;;;;;;;;;;x
+torpedo_training_school;Torpedo Training School;;;;;;;;;;;;;x
+torpedo_training_school_desc;As the use of the torpedo grew, it became necessary to have officers and men who knew the weapon in detail. So navies set up Torpedo Training Schools to produce specialists in this weapon.;;;;;;;;;;;;;x
+torpedo_night_training;Torpedo Night Training;;;;;;;;;;;;;x
+torpedo_night_training_desc;The advent of quick-firing guns meant it was difficult for a torpedo boat or destroyer to get close enough to a battleship to fire a torpedo. However, at night, a torpedo flotilla could approach battleships unawares. Night training makes torpedo craft more lethal.;;;;;;;;;;;;;x
+heater_torpedo;Heater Torpedo;;;;;;;;;;;;;x
+heater_torpedo_desc;The first torpedoes were powered by compressed air. However, we have now discovered a way to use the air to ignite kerosene fuel. This makes our torpedos faster and longer-ranged.;;;;;;;;;;;;;x
+compressed_oxygen_torpedo;Compressed Oxygen Torpedo;;;;;;;;;;;;;x
+compressed_oxygen_torpedo_desc;A torpedo fuelled with compressed oxygen, like the Japanese "Long Lance", has even greater range and speed.;;;;;;;;;;;;;x
+cruiser_gun_casemates;Cruiser Gun Casemates;;;;;;;;;;;;;x
+cruiser_gun_casemates_desc;Cruisers tended to have less protection for their gun crews than battleships did. It was impractical to put the guns of a small cruiser in turrets until well into the 20th century. However mounting some guns in a casemate betwen decks provides good protection.;;;;;;;;;;;;;x
+harvey_steel_armour;Harvey Steel Armour;;;;;;;;;;;;;x
+harvey_steel_armour_desc;The 'Harvey process' produced case-hardened armour, which was more difficult to penetrate. 7.75in of Harvey steel provided the same protection as  12in of regular steel.;;;;;;;;;;;;;x
+krupp_steel_armour;Krupp Cemented Steel;;;;;;;;;;;;;x
+krupp_steel_armour_desc;Krupp Cemented Steel uses a 'gas cementing' process to produce thick steel armour with a very tough face. This 'KC' Steel became the standard for battleships in the 20th century. It waas twice as effective against armour-piercing shells as plain steel plate.;;;;;;;;;;;;;x
+gunnery_training_school;Gunnery Training School;;;;;;;;;;;;;x
+gunnery_training_school_desc;As gunnery became an increasingly scientific subject, navies set up specialist Gunnery Schools to train crews in how to handle their weapons.;;;;;;;;;;;;;x
+13in_main_battery;13.5-in Main Battery;;;;;;;;;;;;;x
+13in_main_battery_desc;Our dreadnoughts are now equipped with 13.5-inch main guns, rather than 12-inch guns. This gives them more firepower.;;;;;;;;;;;;;x
+8in_secondary_guns;8-inch Secondary Guns;;;;;;;;;;;;;x
+8in_secondary_guns_desc;Pre-dreadnought battleships adopted heavier and heavier secondary guns in accordance with the "hail of fire" principle. The same guns served as the main armament for armoured cruisers.;;;;;;;;;;;;;x
+9in_secondary_guns;9.2-inch Secondary Guns;;;;;;;;;;;;;x
+9in_secondary_guns_desc;Pre-dreadnought battleships adopted heavier and heavier secondary guns in accordance with the "hail of fire" principle. The same guns served as the main armament for armoured cruisers..;;;;;;;;;;;;;x
+salvo_firing;Salvo Firing;;;;;;;;;;;;;x
+salvo_firing_desc;To judge the range of an enemy ship and calculate a firing solution, our ships now use "salvo firing": they fire a salvo of three to five shells, wait to see the splashes, and adjust accordingly. Once we know we have the enemy ship 'straddled' we open fire with all guns.;;;;;;;;;;;;;x
+ap_capped_shell;Armour Piercing Shell;;;;;;;;;;;;;x
+ap_capped_shell_desc;We now use carefully-designed armour-piercing shells, with a cemented steel point and a high-explosive filling. This is more effective against modern armour.;;;;;;;;;;;;;x
+aero_ap_shell;Aerodynamic Armour Piercing Capped Shell;;;;;;;;;;;;;x
+aero_ap_shell_desc;Research shows that putting a cap of soft metal over the point of an armour-piercing shell makes it more effective. However, this makes the shell less aerodynamic. So on top of that cap we now put another light steel cap to preserve the aerodynamics of the shell. This all means our battleships have unprecedented armour-piercing power at very long ranges.;;;;;;;;;;;;;x
+steam_auxiliaries;Steam Auxiliaries;;;;;;;;;;;;;x
+steam_auxiliaries_desc;The first steam ships in the navies of the 19th Century were not warships but tugs, dredgers and despatch ships. By freeing sailing ships from constraints of tide and wind, these auxiliary ships make our fleets faster and more flexible.;;;;;;;;;;;;;x
+triple_expansion_engine;Triple-Expansion Steam Engine;;;;;;;;;;;;;x
+triple_expansion_engine_desc;A Triple-Expansion Steam Engine divides the work of expanding the charge of steam by feeding it through three cylinders of increasing diameter. This served to lessen the magnitude of the heating and cooling process on the engine, a major source of inefficiency. Triple-Expansion engines were more efficient and generated increased speed for the new steel warships.;;;;;;;;;;;;;x
+quadruple_expansion;Quadruple-Expansion Steam Engines;;;;;;;;;;;;;x
+quadruple_expansion_desc;Adding yet another expansion chamber to a triple-expansion steam engine gave another marginal increase in power and efficiency to steam engines.;;;;;;;;;;;;;x
+geared_turbine_propulsion;Geared Turbine Propulsion;;;;;;;;;;;;;x
+geared_turbine_propulsion_desc;Geared turbines are more fuel-efficient, though more expensive, than regular turbines. The first capital ship to feature all-turbine propulsion was HMS Dreadnought.;;;;;;;;;;;;;x
+brixham_trawlers;Brixham Trawlers;;;;;;;;;;;;x,,,
+brixham_trawlers_desc;Named for the British town where they were developed and built, Brixham Trawlers represented a giant leap forward in the design of fishing vessels. A wooden sailing ship made for deep-sea fishing, its sleek design and tall rigging gave it great speed. Brixham fishermen could travel to the fishing grounds and back in record time. This allowed them to make a bigger catch and bring it to market faster. The design was copied all over the world.;;;;;;;;;;;;x,,,
+coal_powered_fishing_trawlers;Coal Powered Fishing Trawlers;;;;;;;;;;;;x,,,
+coal_powered_fishing_trawlers_desc;As coal became the engine of industrialization, its use became more and more predominant at sea as well.;;;;;;;;;;;;x,,
+turbine_driven_trawlers;Turbine Driven Trawlers;;;;;;;;;;;;x,,,
+turbine_driven_trawlers_desc;With new turbines added to trawlers across the country, who needs actual fishermen?;;;;;;;;;;;;x,,,
+oil_powered_fishing_trawlers;Oil Powered Fishing Trawlers;;;;;;;;;;;;x,,,
+oil_powered_fishing_trawlers_desc;Blue Water fishing fleets followed the merchant marines and navies of the world in transitioning from coal to oil for fueling.;;;;;;;;;;;;x,,
+#############################################;;;;;;;;;;;;;;x
+#New Triggered Modifiers;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+desperate_nation;Desperate Nation;Nation microscopique;Mikroskopische Nation;;Nación microscópica;;;;;;;;;x;;;;
+microscopic_nation;Microscopic Nation;Nation microscopique;Mikroskopische Nation;;Nación microscópica;;;;;;;;;x;;;;
+tiny_nation;Tiny Nation;Très petite Nation;Sehr kleine Nation;;Muy pequeña nación;;;;;;;;;x;;;;
+small_nation;Small Nation;Petite Nation;Kleine Nation;;Pequeña nación;;;;;;;;;x;;;;
+medium_nation;Medium Nation;Nation moyenne;Mittlere Nation;;Medio país;;;;;;;;;x;;;;
+average_nation;Average Nation;Nation régulière;Durchschnittsgröße Nation;;País promedio;;;;;;;;;x;;;;
+large_nation;Large Nation;Grande Nation;Großes Nation;;Nación grande;;;;;;;;;x;;;;
+empire;Empire;Empire;Reich;;Imperio;;;;;;;;;x;;;;
+medium_empire;Medium Empire;Moyen Empire;Mittleres Reich;;Imperio medio;;;;;;;;;x;;;;
+large_empire; Large Empire;Grand Empire;Große Reich;;Gran imperio;;;;;;;;;x;;;;
+insane_empire; Insane Empire;L'Empire de fou;Das wahnsinnig Reich;;El Imperio loco;;;;;;;;;x;;;;
+insane_empire2; Large Insane Empire;L'Empire de fou;Das wahnsinnig Reich;;El Imperio loco;;;;;;;;;x;;;;
+#############################################;;;;;;;;;;;;;;x
+#New CBs;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+take_capital;Take Capital;;;;;;;;;;;;;x
+take_capital_desc;Take the Capital region of a §Ycountry§W and force them to move their capital elsewhere;;;;;;;;;;;;;x
+take_capital_setup;Take Capital region $STATE$ of $RECIPIENT$;;;;;;;;;;;;;x
+take_capital_short;Takes Capital from $RECIPIENT$;;;;;;;;;;;;;x
+minor_conquest;Minor Conquest;;;;;;;;;;;;;x
+minor_conquest_desc;Annex a §Ycountry§W of small size and population by conquest;;;;;;;;;;;;;x
+minor_conquest_setup;Annex minor nation of $RECIPIENT$;;;;;;;;;;;;;x
+minor_conquest_short;Annex $RECIPIENT$;;;;;;;;;;;;;x
+negotiated_transfer;Negotiated Transfer;;;;;;;;;;;;x
+negotiated_transfer_desc;Transfer a state or colonial region to another country with no effect on infamy, prestige, or jingoism;;;;;;;;;;;;x
+negotiated_transfer_short;$RECIPIENT$ receives $STATE$ from us;;;;;;;;;;;;;x
+negotiated_transfer_setup;Transfer $STATE$ from our country to $RECIPIENT$;;;;;;;;;;;;x
+NORMAL_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+AGRESSION_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+acquire_state;Acquire State Early;;;;;;;;;;;;;x
+acquire_state_short;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_state_desc;Aquire an enemy §Ystate§W;;;;;;;;;;;;;x
+acquire_state_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_state_midgame;Acquire State Midgame;;;;;;;;;;;;;x
+acquire_state_midgame_short;Acquire $STATE$ for 33% less.;;;;;;;;;;;;;x
+acquire_state_midgame_desc;Aquire an enemy §Ystate§W for 33% less warscore;;;;;;;;;;;;;x
+acquire_state_midgame_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_state_late;Acquire State Lategame;;;;;;;;;;;;;x
+acquire_state_late_short;Acquire $STATE$ for 55% less.;;;;;;;;;;;;;x
+acquire_state_late_desc;Aquire an enemy §Ystate§W for 55% less warscore;;;;;;;;;;;;;x
+acquire_state_late_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+#More Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+sanitation;Sanitation;;;;;;;;;;;;x,,,,,,,
+sanitation_desc;It was not until the development of sanitation that the presence of waste and sewage in cities was even considered to be a health issue. Once methods were introduced to remove waste and keep the streets clean, it became possible for rodent infestations to be reduced in size and for cities to rapidly grow.;;;;;;;;;;;;x,,,,,,
+antitoxins;Antitoxins;;;;;;;;;;;;x,,,,,,,
+antitoxins_desc;The development of antitoxins is an advance that not only allows the medical field to combat poisons, but also to develop and further their understanding of how to kill bacteria and other microorganisms which are responsible for many afflictions.;;;;;;;;;;;;x,,,,,,,
+child_welfare;Child Welfare;;;;;;;;;;;;x,,,,,,,
+child_welfare_desc;The quaint new idea of basic care & legal rights for children has been established.;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+#Save The Nation;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+save_the_nation1;Patriotism;;;;;;;;;;;;x,,,,,,,
+save_the_nation1_desc;Patriotism;;;;;;;;;;;;x,,,,,,,
+save_the_nation2;Heightened Naionalism;;;;;;;;;;;;x,,,,,,,
+save_the_nation2_desc;Heightened Nationalism;;;;;;;;;;;;x,,,,,,,
+save_the_nation3;Desperate Defense;;;;;;;;;;;;x,,,,,,,
+save_the_nation3_desc;Desperate Defense;;;;;;;;;;;;x,,,,,,,
+save_the_nation4;Final Hour;;;;;;;;;;;;x,,,,,,,
+save_the_nation4_desc;Final Hour;;;;;;;;;;;;x,,,,,,,
+save_the_nation6;Spiteful Resistance;;;;;;;;;;;;x,,,,,,,
+save_the_nation6_desc;Spiteful Resistance;;;;;;;;;;;;x,,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Decisions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+romanians_integrated_title;Integrate the Romanians;;;;;;;;;;;;x,,,,,,,
+romanians_integrated;Integrate the Romanians;;;;;;;;;;;;x,,,,,,,
+romanians_integrated_desc;The time has come for the Romanian peoples to accept the crown of Hungary.;;;;;;;;;;;;x,,,,,,,
+spanish_expansion_maghreb_title;Proclaim Spanish Dominion over Maghreb;;;;;;;;;;;;x,,,,,,,
+spanish_expansion_maghreb;Proclaim Spanish Dominion over Maghreb;;;;;;;;;;;;x,,,,,,,
+spanish_expansion_maghreb_desc;After taking over Western Aragonese Maghreb, and annexing the local natives we have gained total dominion over North-West Africa.;;;;;;;;;;;;x,,,,,,,
+mesopotamian_excavations_decision_title;The Cradle of Civilization;;;;;;;;;;;;;
+mesopotamian_excavations_decision_desc;Mesopotamia: the onetime home of Babylonia, Akkadia and Assyria holds great promise for archaeological discovery. We've moved beyond the old methods of tomb-raiding and amateur excavations--- we should outfit a modern expedition and seek permission to explore these lands. We might bring back a few trophies for the museum... and learn something along the way.;;;;;;;;;;;;;
+minoan_excavations_decision_title;Minoan Excavations;;;;;;;;;;;;;
+minoan_excavations_decision_desc;We must plunder the secrets of the ancient Minoan civilization, for the good of science.;;;;;;;;;;;;;
+integrate_north_germans_title;Soldify Control over Elbia;;;;;;;;;;;;;
+integrate_north_germans_desc;The Bohemians are beaten back & much of Northern Germany is ours, it is time to look ever farther south to expand the Union.;;;;;;;;;;;;;

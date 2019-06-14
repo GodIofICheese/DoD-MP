@@ -1,0 +1,189 @@
+political_decisions = {
+	switch_to_army_tech = {
+		potential = {
+			exists = yes
+			OR = {
+				has_country_flag = picking_up_a_tech_school
+	                  	ai = yes
+			}	
+			NOT = { tech_school = army_tech_school }
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			prestige = 20
+			military_score = 100
+			jingoism = 5
+			pro_military = 5
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = reactionary
+				ruling_party_ideology = fascist
+				nationalvalue = nv_order
+				nationalvalue = nv_autocracy
+			}
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = army_tech_school
+		}
+	}
+	switch_to_navy_tech = {
+		potential = {
+			exists = yes
+			OR = {
+				  has_country_flag = picking_up_a_tech_school
+                     	  	  ai = yes
+			}
+			NOT = { tech_school = naval_tech_school }
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			prestige = 20
+			military_score = 100
+			total_amount_of_ships = 30
+			pro_military = 5
+			laissez_faire = 5
+			any_owned_province = { is_overseas = yes }
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+				nationalvalue = nv_liberty
+			}
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = naval_tech_school
+		}
+	}
+	switch_to_culture_tech = {
+		potential = {
+			exists = yes
+			OR = {
+				  has_country_flag = picking_up_a_tech_school
+                     	  	  ai = yes
+			}
+			NOT = { tech_school = culture_tech_school }
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			prestige = 20
+			average_consciousness = 4
+			pacifism = 5
+			secularized = 5
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = fascist
+				ruling_party_ideology = communist
+				nationalvalue = nv_equality
+			}
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = culture_tech_school
+		}
+	}
+	switch_to_trade_tech = {
+		potential = {
+			exists = yes
+			OR = {
+				  has_country_flag = picking_up_a_tech_school
+                     	  	  ai = yes
+			}
+			NOT = { tech_school = commerce_tech_school}
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			prestige = 20
+			industrial_score = 100
+			laissez_faire = 5
+			free_trade = 5
+			OR = {
+				ruling_party_ideology = liberal
+				ruling_party_ideology = anarcho_liberal
+				government = merchant_republic
+			}
+		}
+		effect = {
+			prestige = 20
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = commerce_tech_school
+		}
+	}
+	switch_to_industry_tech = {
+		potential = {
+			exists = yes
+			OR = {
+				  has_country_flag = picking_up_a_tech_school
+                     	  	  ai = yes
+			}
+			NOT = { tech_school = industrial_tech_school}
+		}
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			prestige = 20
+			industrial_score = 100
+			interventionism = 5
+			protectionism = 5
+			OR = {
+				ruling_party_ideology = conservative
+				ruling_party_ideology = socialist
+				ruling_party_ideology = communist
+				nationalvalue = nv_productivity
+			}
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = industrial_tech_school
+		}
+	}
+	switch_to_traditional_academic = {
+		potential = {
+			exists = yes
+			OR = {
+				  has_country_flag = picking_up_a_tech_school
+                     	  	  ai = yes
+			}
+		}
+		
+		allow = {
+			NOT = { has_country_modifier = academic_confusion }
+			prestige = 20
+			NOT = { tech_school = traditional_academic }
+			OR = {
+				nationalvalue = nv_tradition
+				ruling_party_ideology = reactionary
+			}	
+		}
+		effect = {
+			prestige = -15
+			add_country_modifier = {
+				name = academic_confusion
+				duration = 3650
+			}
+			tech_school = traditional_academic
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
