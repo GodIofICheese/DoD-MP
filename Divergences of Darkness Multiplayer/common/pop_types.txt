@@ -90,6 +90,7 @@ promotion_chance = {
 	modifier = {
 		factor = -0.1
 		state_scope = { is_colonial = yes }
+	}
 	
 	modifier = {
 		factor = -0.1
@@ -98,7 +99,7 @@ promotion_chance = {
 		state_scope = { is_colonial = yes }
 		country = {
 			NOT = { colonial_policy = settlement }
-		}
+			}
 	}
 	
 	modifier = {
@@ -114,8 +115,7 @@ promotion_chance = {
 		country = { colonial_policy = settlement }
 	}
 	
-	
-	`modifier = {
+	modifier = {
 		factor = -0.1
 		not = { culture = this }
 	}
