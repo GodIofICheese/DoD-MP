@@ -44,7 +44,7 @@ country = {
 	SUPPRESS_BUREAUCRAT_FACTOR = 0.5,
 	WRONG_REFORM_MILITANCY_IMPACT = 2,
 	SUPPRESSION_RADICALISATION_HIT = 10, -- % base added to a movements radicalness
-	INVESTMENT_SCORE_FACTOR = 0.001, -- how much foreign investment money counts towards your industry score
+	INVESTMENT_SCORE_FACTOR = 0.0005, -- how much foreign investment money counts towards your industry score
 	UNCIV_TECH_SPREAD_MAX = 0.15, --Max techs an unciv will get on westernizing
 	UNCIV_TECH_SPREAD_MIN = 0.10, --Minimum techs an unciv will get on westernizing
 	MIN_DELAY_BETWEEN_REFORMS = 6, -- months
@@ -505,7 +505,7 @@ diplomacy = {
 	
 	MIN_WARSCORE_TO_INTERVENE = -1,
 	MIN_MONTHS_TO_INTERVENE = 0,
-	MAX_WARSCORE_FROM_BATTLES = 50,
+	MAX_WARSCORE_FROM_BATTLES = 25,
 	
 	GUNBOAT_DIPLOMATIC_COST = 1,
 	GUNBOAT_RELATION_ON_ACCEPT = 1,
@@ -672,7 +672,7 @@ pops = {
 	
 	POP_TO_LEADERSHIP = 0.0001, -- how much leadership every 1000 officers gives each day.
 	ARTISAN_MIN_PRODUCTIVITY = 5, -- Minimum efficiency of an artisan
-	SLAVE_GROWTH_DIVISOR = 10, -- Slaves have N times lower growth
+	SLAVE_GROWTH_DIVISOR = 2, -- Slaves have N times lower growth
 	
 	MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
 	LUXURY_CON_CHANGE = 0.001, -- con boost from over-buying luxury goods

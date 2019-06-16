@@ -21,7 +21,7 @@ daimlers_automobile = {
 	effect = {
 		activate_building = automobile_factory 
 		factory_goods_output = {
-			machine_parts = 0.01 
+			machine_parts = 0.02 
 		}
 	}
 }
@@ -335,11 +335,14 @@ precision_work = {
 	}
 	effect = {
 		factory_goods_output = {
-			glass = 0.1
+			glass = 0.03
 		} 
+		factory_goods_throughput = {
+			ammunition = 0.07
+		}
 		factory_goods_output = {
-			ammunition = 0.1
-		} 
+			ammunition = 0.03
+		}  
 		activate_building = machine_parts_factory 
 	}
 }
@@ -604,6 +607,9 @@ fordism = {
 		factory_goods_output = {
 			aeroplanes = 0.03
 		}
+		factory_goods_output = {
+			barrels = 0.03
+		}
 	}
 }
 #massproduced_rail = {
@@ -641,16 +647,16 @@ industrialized_armament_industry = {
 	}
 	effect = {
 		factory_goods_output = {
-			small_arms = 0.03
+			small_arms = 0.04
 		}
 		factory_goods_output = {
-			ammunition = 0.03
+			ammunition = 0.04
 		}
 		factory_goods_output = {
-			artillery = 0.03
+			artillery = 0.04
 		}
 		factory_goods_output = {
-			explosives = 0.03
+			explosives = 0.04
 		}
 	}
 }

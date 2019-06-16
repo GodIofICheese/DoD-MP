@@ -36,9 +36,9 @@ guard = {
 
 	#Land Abilties
 	reconnaissance = 0
-	attack = 6
+	attack = 7
 	defence = 6
-	discipline = 1.0
+	discipline = 1.3
 	support = 0.0
 	maneuver = 1
 }
