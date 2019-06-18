@@ -4045,6 +4045,12 @@ country_event = {
 					tag = GXI
 					tag = GNG
 					tag = FJN
+					tag = TAI
+					tag = MUG
+					tag = BHA
+					tag = HND
+					tag = IND
+					tag = DRA
 				}
 			}
 		}
@@ -4060,11 +4066,7 @@ country_event = {
 			limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
 			owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
 		}
-		random_list = {
-			34 = { add_country_modifier = { name = global_baby_boom duration = 3650 } }
-			33 = { add_country_modifier = { name = global_baby_boom duration = 3285 } }
-			33 = { add_country_modifier = { name = global_baby_boom duration = 4015 } }
-		}
+		add_country_modifier = { name = balanced_baby_boom duration = 3650 }
 		remove_country_modifier = assegai
 		remove_country_modifier = educational_reform
 		remove_country_modifier = military_reform

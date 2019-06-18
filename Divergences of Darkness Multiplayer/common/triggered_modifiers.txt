@@ -789,3 +789,15 @@ save_the_nation5  = {
 	mobilisation_economy_impact = -0.66
 	icon = 9
 }
+
+player_unciv_mobilization = {
+	trigger = {
+		ai = no
+		civilized = no
+		NOT = { ai = yes }
+		NOT = { civilized = yes }
+	}
+
+	mobilisation_size = 0.20
+	icon = 9
+}

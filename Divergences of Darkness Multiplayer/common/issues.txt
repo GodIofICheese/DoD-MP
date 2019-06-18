@@ -209,20 +209,20 @@ party_issues = {
 			global_pop_militancy_modifier = 0.01
 		}
 		colonial_spending_policy = {
-			min_social_spending = 0.20
+			min_social_spending = 0.30
 			max_social_spending = 1.0
 		}
 		no_position_set = {
-			min_social_spending = 0.1
+			min_social_spending = 0.15
 			max_social_spending = 1.0
 		}
 		populist_welfare = {
-			min_social_spending = 0.20
+			min_social_spending = 0.30
 			max_social_spending = 1.0
 			global_pop_militancy_modifier = -0.01
 		}
 		welfare_state = {
-			min_social_spending = 0.45
+			min_social_spending = 0.6
 			max_social_spending = 1.0
 			global_pop_militancy_modifier = -0.02
 		}
@@ -888,24 +888,28 @@ social_reforms = {
 		no_health_care = {
 		}
 		trinket_health_care = {
+			pension_level	= 0.125
 			global_population_growth = 0.000
 			administrative_multiplier = 1
 			global_immigrant_attract = 0.01
 			allow = { year = 1850 }
 		}
 		low_health_care = {
+			pension_level	= 0.25
 			global_population_growth = 0.001
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.02
 			allow = { year = 1865 }
 		}
 		acceptable_health_care = {
+			pension_level	= 0.375
 			global_population_growth = 0.001
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.03
 			allow = { year = 1880 }
 		}
 		good_health_care = {
+			pension_level	= 0.5
 			global_population_growth = 0.002
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.04

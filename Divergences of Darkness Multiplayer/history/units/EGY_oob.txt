@@ -32,7 +32,7 @@ army = {
 	regiment = {
 		name= "3. Bostancy-yy Hassa"
 		type = infantry
-		home = 1762
+		home = 1750
 	}
 
 	regiment = {
@@ -66,13 +66,13 @@ army = {
 	regiment = {
 		name= "9. Bostancy-yy Hassa"
 		type = hussar
-		home = 1745
+		home = 1752
 	}
 
 	regiment = {
 		name= "10. Bostancy-yy Hassa"
 		type = hussar
-		home = 1745
+		home = 1765
 	}
 
 }
@@ -83,23 +83,23 @@ army = {
 	regiment = {
 		name= "1. Bostancy-yy Hassa"
 		type = infantry
-		home = 1745
+		home = 1751
 	}
 	regiment = {
 		name= "2. Bostancy-yy Hassa"
 		type = infantry
-		home = 1745
+		home = 1751
 	}
 	regiment = {
 		name= "3. Bostancy-yy Hassa"
 		type = hussar
-		home = 1745
+		home = 1751
 	}
 
 	regiment = {
 		name= "4. Bostancy-yy Hassa"
 		type = hussar
-		home = 1745
+		home = 1751
 	}
 
 }

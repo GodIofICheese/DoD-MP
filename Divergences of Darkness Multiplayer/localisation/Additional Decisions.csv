@@ -8,7 +8,7 @@ government_in_exile_ara_desc;The situation in both Italy, Iberia & Europe as a w
 government_in_exile_spa_title;Declare a Government in Exile;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 government_in_exile_spa_desc;The Dream of a Unified Iberia lies shattered, the Peninsula now overrun by foreign powers; The time has come to establish a new Government in Cuba in-order to gather strength for a return to rightful Spanish dominion in Iberia.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 illyrian_annexation_title;Reclaim Illyria;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-illyrian_annexation_desc;What was once part of the Republic is now ours again, time time has come to end the failed experiment that is a independent Illyria.
+illyrian_annexation_desc;What was once part of the Republic is now ours again, time time has come to end the failed experiment that is a independent Illyria.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 connect_holdings_greece_title;Proclaim Dominion over the Adriatic;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 connect_holdings_greece_desc;With our lands in Greece connected the entire coastline along the Adriatic is now ours it is time to bring our Most Serene Republic to even greater heights.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 stewardship_italy_title;Declare Stewardship over Italy;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -23,3 +23,11 @@ north_sea_empire_title;The Empire of the North Sea;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 north_sea_empire_desc;Now that Ireland has been wrestled away from Anglois dominion we now finally have compelete imperium over the North Sea.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 accept_elbian_BOH_title;Annex the Principalities;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 accept_elbian_BOH_desc;Although we have not yet been able to form the Elbian Confederation in the north, the principalities surrounding Bohemia to the west & south shall soon thrive under centralized Imperial management.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+chinese_genocide_MCK_title;Great Leap Forward;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+chinese_genocide_MCK_desc;This decision is mandatory to take in multiplayer.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+chinese_genocide_TAI_title;Great Leap Forward;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+chinese_genocide_TAI_desc;This decision is mandatory to take in multiplayer.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+secure_near_east_title;Secure the Near-East;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+secure_near_east_desc;With Persia finally united under our rule the time has come to reclaims Timurs legacy, beginning with our eastern neighbors.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+subjugate_the_khaganates_title;Subjugate the Khaganates;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+subjugate_the_khaganates_desc;The Khaganates has once again be put under rightful Persian leadership, though this is now a likely point of contention with Russia.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

@@ -1,8 +1,7 @@
 capital = 1236
 primary_culture = avadhi
 culture = panjabi
-culture = telegu
-culture = marathi
+culture = kanauji
 culture = rajput
 culture = gujarati
 religion = sunni

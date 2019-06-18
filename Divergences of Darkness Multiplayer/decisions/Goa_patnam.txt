@@ -3,10 +3,7 @@ political_decisions = {
 	picture = treaty_india
 		potential = {
       OR = {
-			   tag = VIJ   
-			   tag = DRA    
-			   tag = BHA     
-			   tag = BHO     
+			   tag = VIJ        
 			   tag = HND
       }
 			NOT = {
@@ -45,13 +42,8 @@ political_decisions = {
 	picture = treaty_india
 		potential = {
       OR = {
-			   tag = VIJ   
-			   tag = DRA    
-			   tag = BHA     
-			   tag = ADR      
-			   tag = HYD    
+			   tag = VIJ     
 			   tag = HND     
-			   tag = TRA
       }
 			NOT = {
 				has_country_flag = masulipatnam_treaty_pending

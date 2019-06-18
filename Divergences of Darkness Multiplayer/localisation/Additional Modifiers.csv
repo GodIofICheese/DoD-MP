@@ -6,3 +6,14 @@ government_in_exile_desc;Located here is the new Government of a once powerful n
 rus_expansion_cooldown;Expansion Cooldown;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 rus_expansion_cooldown_title;Expansion Cooldown;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 rus_expansion_cooldown_desc;We need time to work up the fervour in the populace for wars of expansion.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+player_unciv_mobilization;Player Controlled Uncivilized Nation;;;;;;;;;;;;x,,,,,,,
+asia_nerfonciv;Civilized Asian Nerf;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+asia_nerfonciv_desc;A nerf due to power of Asian accepted-pops.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+asia_nerfearly;Asian Early-game Nerf;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+asia_nerfearly_desc;A nerf due to power of Asian accepted-pops.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+asia_nerfmid;Asian Mid-game Nerf;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+asia_nerfmid_desc;A nerf due to power of Asian accepted-pops.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+asia_nerflate;Asian Late-game Nerf;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+asia_nerflate_desc;A nerf due to power of Asian accepted-pops.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+chinese_economic_compensation;Economic Compensation due to Genocide;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+chinese_economic_compensation_desc;To compensate the global economy for the loss of roughly two thirds of China's population, RGO outpost is temporarily increased.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;

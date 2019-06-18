@@ -1,6 +1,7 @@
 capital = 1555
 primary_culture = manchu
 culture = beifaren
+culture = nanfaren
 religion = mahayana
 government = absolute_monarchy
 plurality = 0.0

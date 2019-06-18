@@ -1,6 +1,18 @@
 #############################################;;;;;;;;;;;;;;x
 #Additional Events;;;;;;;;;;;;;;x
 #############################################;;;;;;;;;;;;;;x
-776543;Removal of Immigration Railroading;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME776543;Removal of Immigration Railroading;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC776543;All nations in the New World, Oceania, or South Africa will no longer recieve their immigration buff for simply existing after 1900.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA776543;A shame.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+776401;Civilized Asian Nerf;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776401;Civilized player nations in India & China will be getting nerfs to mobilization & pop-growth as the game goes on to compensate for their ludicrious accepted-pop & brigade count.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA776401;Damn the acts of attempting to balance Asia.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+776402;Early-game Asian Nerf;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776402;Civilized player nations in India & China will be getting nerfs to mobilization & pop-growth as the game goes on to compensate for their ludicrious accepted-pop & brigade count.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA776402;Damn the acts of attempting to balance Asia.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+776403;Mid-game Asian Nerf;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776403;Civilized player nations in India & China will be getting nerfs to mobilization & pop-growth as the game goes on to compensate for their ludicrious accepted-pop & brigade count.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA776403;Damn the acts of attempting to balance Asia.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+776404;Late-game Asian Nerf;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776404;Civilized player nations in India & China will be getting nerfs to mobilization & pop-growth as the game goes on to compensate for their ludicrious accepted-pop & brigade count.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA776404;Damn the acts of attempting to balance Asia.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x

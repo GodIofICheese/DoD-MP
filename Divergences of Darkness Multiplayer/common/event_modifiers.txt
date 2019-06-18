@@ -991,6 +991,11 @@ global_baby_boom = {
 	icon = 17
 }
 
+balanced_baby_boom = {
+	global_population_growth = 0.004
+	icon = 17
+}
+
 loyal_askaris = {
 	pop_militancy_modifier = -0.05
 	pop_consciousness_modifier = -0.05
@@ -3098,4 +3103,35 @@ mass_graves = {
 
 rus_expansion_cooldown = {
 	icon = 18
+}
+
+##### Asian Player Nerfs #####
+asia_nerfonciv = {
+	mobilisation_size = -0.01
+	global_population_growth = -0.001
+	icon = 8
+}
+
+asia_nerfearly = {
+	mobilisation_size = -0.02
+	global_population_growth = -0.001
+	icon = 8
+}
+
+asia_nerfmid = {
+	mobilisation_size = -0.045
+	global_population_growth = -0.002
+	icon = 8
+}
+
+asia_nerflate = {
+	mobilisation_size = -0.065
+	global_population_growth = -0.002
+	icon = 8
+}
+
+chinese_economic_compensation = {
+	rgo_output = 0.66
+	tariff_efficiency_modifier = -0.5
+	icon = 9
 }

@@ -2,22 +2,11 @@ capital = 1251
 primary_culture = avadhi
 culture = bihari
 culture = kanauji
-culture = assamese
-culture = bengali
-culture = manipuri
-culture = nepali
-culture = oriya
-culture = sinhala
 culture = panjabi
 culture = kashmiri
 culture = gujarati
-culture = sindi
 culture = rajput
 culture = marathi
-culture = malayalam
-culture = kannada
-culture = telegu
-culture = tamil
 
 
 religion = hindu
@@ -53,6 +42,8 @@ penal_system = capital_punishment
 child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = closed_borders
+centralization = regionalism
+colonial_policy = no_colonies 
 
 ruling_party = AAA_conservative_4
 upper_house = {

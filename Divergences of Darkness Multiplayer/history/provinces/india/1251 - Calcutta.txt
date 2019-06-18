@@ -1,6 +1,5 @@
 owner = BEN
 controller = BEN
-add_core = HND
 add_core = BEN
 #add_core = MUG
 trade_goods = dye

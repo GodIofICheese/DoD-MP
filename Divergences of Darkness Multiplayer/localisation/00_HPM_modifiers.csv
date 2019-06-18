@@ -270,6 +270,8 @@ gold_rush_country;Gold Rush;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
 gold_rush_country_desc;Our country is experiencing a gold rush leading people from all over the old world to flock to our country.;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
 global_baby_boom;Baby Boom;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
 global_baby_boom_desc;Improvements in life conditions in our country are leading to a country-wide baby boom.;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
+balanced_baby_boom;Baby Boom;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
+balanced_baby_boom_desc;Improvements in life conditions in our country are leading to a country-wide baby boom.;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
 political_education;Ideological Education;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
 political_education_desc;Education in our country is full blown ideological indoctrination, and has severe changes every time our leader changes. Universal public education is thus enforced and alphabetization is a priority, but at the cost of free thinking.;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;
 cult_of_personality;Cult of Personality;;;;;;;;;;;;;;;;;;x,,,,;;;;;;;;;;;;;;;;;;;;;;

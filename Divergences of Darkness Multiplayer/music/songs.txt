@@ -10,27 +10,23 @@ song = {
 				     government = hms_government 
 				     government = merchant_republic 
 				     government = feudal_monarchy 
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
-			      factor = 0.5
+				  factor = 0.5
 			      NOT = { 
 				      OR = { 
 					    government = prussian_constitutionalism
-			          	    government = absolute_monarchy
+			          	government = absolute_monarchy
 					    government = hms_government
 					    government = merchant_republic
-					    government = feudal_monarchy 
-		     		      }
+					    government = feudal_monarchy
+						war = no
+		     		  }
 			      }
 		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		 }		
-       }
+	   }
 }
 
 song = {
@@ -44,26 +40,22 @@ song = {
 				     government = hms_government 
 				     government = merchant_republic 
 				     government = feudal_monarchy 
-		              }
-			      war = yes
+			      }
+				  war = yes
 		  }
 		  modifier = {
 			      factor = 0.5
 			      NOT = { 
 				      OR = { 
 					    government = prussian_constitutionalism
-			          	    government = absolute_monarchy
+			          	government = absolute_monarchy
 					    government = hms_government
 					    government = merchant_republic
-					    government = feudal_monarchy 
-		     		      }
+					    government = feudal_monarchy
+						war = no
+		     		  }
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
+		  }	
        }
 }
 
@@ -78,7 +70,7 @@ song = {
 				     government = hms_government 
 				     government = merchant_republic 
 				     government = feudal_monarchy 
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
@@ -86,18 +78,14 @@ song = {
 			      NOT = { 
 				      OR = { 
 					    government = prussian_constitutionalism
-			          	    government = absolute_monarchy
+			          	government = absolute_monarchy
 					    government = hms_government
 					    government = merchant_republic
-					    government = feudal_monarchy 
-		     		      }
+					    government = feudal_monarchy
+						war = no
+		     		  }
 			      }
 		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
        }
 }
 
@@ -112,7 +100,7 @@ song = {
 				     government = hms_government 
 				     government = merchant_republic 
 				     government = feudal_monarchy 
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
@@ -120,18 +108,14 @@ song = {
 			      NOT = { 
 				      OR = { 
 					    government = prussian_constitutionalism
-			          	    government = absolute_monarchy
+			          	government = absolute_monarchy
 					    government = hms_government
 					    government = merchant_republic
-					    government = feudal_monarchy 
-		     		      }
+					    government = feudal_monarchy
+						war = no
+		     		  }
 			      }
 		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
        }
 }
 
@@ -146,7 +130,7 @@ song = {
 				     government = hms_government 
 				     government = merchant_republic 
 				     government = feudal_monarchy 
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
@@ -154,18 +138,14 @@ song = {
 			      NOT = { 
 				      OR = { 
 					    government = prussian_constitutionalism
-			          	    government = absolute_monarchy
+			          	government = absolute_monarchy
 					    government = hms_government
 					    government = merchant_republic
-					    government = feudal_monarchy 
-		     		      }
+					    government = feudal_monarchy
+						war = no
+		     		  }
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
+		  }	
        }
 }
 
@@ -180,7 +160,7 @@ song = {
 				     government = hms_government 
 				     government = merchant_republic 
 				     government = feudal_monarchy 
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
@@ -188,18 +168,14 @@ song = {
 			      NOT = { 
 				      OR = { 
 					    government = prussian_constitutionalism
-			          	    government = absolute_monarchy
+			          	government = absolute_monarchy
 					    government = hms_government
 					    government = merchant_republic
-					    government = feudal_monarchy 
-		     		      }
+					    government = feudal_monarchy
+						war = no
+		     		  }
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
+		  }	
        }
 }
 
@@ -214,7 +190,7 @@ song = {
 				     government = hms_government 
 				     government = merchant_republic 
 				     government = feudal_monarchy 
-		              }
+		          }
 			      war = no
 		  }
 		  modifier = {
@@ -222,18 +198,14 @@ song = {
 			      NOT = { 
 				      OR = { 
 					    government = prussian_constitutionalism
-			          	    government = absolute_monarchy
+			          	government = absolute_monarchy
 					    government = hms_government
 					    government = merchant_republic
-					    government = feudal_monarchy 
-		     		      }
+					    government = feudal_monarchy
+						war = yes
+		     		  }
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = yes
-		            }
-	          }		
+		  }	
        }
 }
 
@@ -246,7 +218,7 @@ song = {
 				     government = hms_government
 				     government = merchant_republic
 				     government = democracy  
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
@@ -255,15 +227,11 @@ song = {
 				      OR = { 
 					    government = hms_government
 					    government = merchant_republic
-				            government = democracy
-		     		      }
+				        government = democracy
+						war = no
+		     		  }
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
+		  }	
        }
 }
 
@@ -276,7 +244,7 @@ song = {
 				     government = hms_government
 				     government = merchant_republic
 				     government = democracy  
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
@@ -285,15 +253,11 @@ song = {
 				      OR = { 
 					    government = hms_government
 					    government = merchant_republic
-				            government = democracy
-		     		      }
+				        government = democracy
+						war = no
+		     		  }
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
+		  }	
        }
 }
 
@@ -306,7 +270,7 @@ song = {
 				     government = hms_government
 				     government = merchant_republic
 				     government = democracy  
-		              }
+		          }
 			      war = yes
 		  }
 		  modifier = {
@@ -315,14 +279,10 @@ song = {
 				      OR = { 
 					    government = hms_government
 					    government = merchant_republic
-				            government = democracy
-		     		      }
+				        government = democracy
+						war = no
+		     		  }
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
 		  }		
        }
 }
@@ -335,21 +295,15 @@ song = {
 			      OR = { 
 				     has_recently_lost_war = yes
 				     is_disarmed = yes
-		              }
-			      war = no
+					 war_exhaustion = 80
+		          }
 		  }
 		  modifier = {
 			      factor = 0.5
-			      NOT = { 
-				      OR = { 
-					    has_recently_lost_war = no
-		     		      }
+			      NOT = { 				      
+					  war_exhaustion = 20
 			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = yes
-		            }		
+		  }	
        }
 }
 
@@ -361,22 +315,21 @@ song = {
 			      OR = { 
 				     war_exhaustion = 40
 				     is_disarmed = yes
-		              }
+		          }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 20
+				  war_exhaustion = 80
 			      war = yes
 		  }
 		  modifier = {
 			      factor = 0.5
 			      NOT = { 
-				      OR = { 
-					    war_exhaustion = 20
-		     		      }
-			      }
-		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
+					    war_exhaustion = 30
+				  }
+				  war = no
+		  }	
        }
 }
 
@@ -388,22 +341,21 @@ song = {
 			      OR = { 
 				     war_exhaustion = 40
 				     is_disarmed = yes
-		              }
+		          }
+			      war = yes
+		  }
+		  modifier = {
+			      factor = 20
+				  war_exhaustion = 80
 			      war = yes
 		  }
 		  modifier = {
 			      factor = 0.5
 			      NOT = { 
-				      OR = { 
-					    war_exhaustion = 20
-		     		      }
-			      }
+					    war_exhaustion = 30
+		          }
+				  war = no
 		  }
-		  modifier = {
-			      factor = 0.5
-			      war = no
-		            }
-		  }		
        }
 }
 
@@ -412,13 +364,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -428,13 +378,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -444,13 +392,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = yes
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = no
-		            }
 		  }		
        }
 }
@@ -460,13 +406,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
-			      war = yes
+			      war = yes 
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = no
-		            }
 		  }		
        }
 }
@@ -476,13 +420,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -492,13 +434,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -508,13 +448,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -524,13 +462,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -548,22 +484,22 @@ song = {
 				     tag = HLR
 				     tag = GER
 				     tag = RHI 
-		              }
+		          }
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      NOT = { 
 				      OR = { 
 					    tag = BRG 
-				     	    tag = CAE
-				            tag = BOH 
-				            tag = DNB 
-				            tag = HLR
-				            tag = GER
+				     	tag = CAE
+				        tag = BOH 
+				        tag = DNB 
+				        tag = HLR
+				        tag = GER
 					    tag = RHI 
-		     		      }
+		     		  }
 			      }
-		  }	
+		 }	
        }
 }
 
@@ -572,13 +508,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = yes
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = no
-		            }
 		  }		
        }
 }
@@ -588,13 +522,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -604,13 +536,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -620,13 +550,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -636,13 +564,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -652,13 +578,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }
@@ -668,13 +592,11 @@ song = {
        chance = {
 		  modifier = {
 			      factor = 10
-		              }
 			      war = no
 		  }
 		  modifier = {
-			      factor = 1
+			      factor = 0.5
 			      war = yes
-		            }
 		  }		
        }
 }

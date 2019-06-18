@@ -4,58 +4,49 @@ political_decisions = {
 		potential = {
 			is_culture_group = south_asian
 			NOT = {
-				exists = BHA
-				exists = HND
 				tag = MUG
 			}
+			OR = {
+				tag = HND
+				tag = BHA
+			}	
 		}
 		
 		allow = {
 		NOT = { war = yes }
-		  prestige = 100
-		  OR = {      # Delhi
-				1236 = { owner = { in_sphere = THIS } }
-				owns = 1236
+		  mass_politics = 1
+		  HND = {
+				all_core = {
+					OR = {
+						owned_by = THIS	
+						owner = { in_sphere = THIS } 
+					}
+				}
 			}
-			OR = {      # Lucknow
-				1242 = { owner = { in_sphere = THIS } }
-				owns = 1242
+			DRA = {
+				all_core = {
+					OR = {
+						owned_by = THIS	
+						owner = { in_sphere = THIS } 
+					}	
+				}
 			}
-			OR = {      # Patna
-				1247 = { owner = { in_sphere = THIS } }
-				owns = 1247
-			}          
-			OR = {     # Calcutta
-				1251 = { owner = { in_sphere = THIS } }
-				owns = 1251
-			}
-			OR = {      # Cuttack
-				1261 = { owner = { in_sphere = THIS } }
-				owns = 1261
-			}          
-			OR = {     # Bhopal
-				1272 = { owner = { in_sphere = THIS } }
-				owns = 1272
-			}
-			OR = {      # Ahmedabad
-				1291 = { owner = { in_sphere = THIS } }
-				owns = 1291
-			}
-			OR = {      # Udaipur
-				1269 = { owner = { in_sphere = THIS } }
-				owns = 1269
-			}
-			OR = {      # Lahore
-				1227 = { owner = { in_sphere = THIS } }
-				owns = 1227
-			}  	
 		}
 		effect = {
-			prestige = 20
-			badboy = 10
+			prestige = 100
 			capital = 1236
 			change_tag = HND
-			add_accepted_culture = bengali
+			DRA = { all_core = { add_core = HND } }
+			HND = { all_core = { add_core = HND } }
+			ENG_1321 = { add_core = HND }
+			NEP_1327 = { add_core = HND }
+			SIN_1288 = { add_core = HND }
+			2128 = { add_core = HND }
+			add_accepted_culture = tamil
+			add_accepted_culture = malayalam
+			add_accepted_culture = kannada
+			add_accepted_culture = marathi
+			add_accepted_culture = telegu
 			add_accepted_culture = bihari
 			add_accepted_culture = oriya
 			add_accepted_culture = avadhi
@@ -65,6 +56,9 @@ political_decisions = {
 			add_accepted_culture = kashmiri
 			add_accepted_culture = sindi
 			add_accepted_culture = rajput
+			add_accepted_culture = sinhala
+			add_accepted_culture = pashtun
+			add_accepted_culture = nepali
 			any_country = {
 				limit = {
 					NOT = {
@@ -160,7 +154,10 @@ political_decisions = {
 		
 		allow = {
 			NOT = { war = yes }
-			prestige = 100
+			OR = {
+				nationalism_n_imperalism = 1
+				year = 1860
+			}	
 			HND = {
 				all_core = {
 					OR = {
@@ -169,59 +166,28 @@ political_decisions = {
 					}
 				}
 			}
-			DRA = {
-				all_core = {
-					OR = {
-						owned_by = THIS	
-						owner = { in_sphere = THIS } 
-					}	
-				}
-			}
 		}
 		effect = {
 			prestige = 40
-			DRA = { all_core = {  add_core = BHA } }
 			HND = { all_core = { add_core = BHA } }
+			MUG = { all_core = { add_core = BHA } }
 			change_tag = BHA
-			add_accepted_culture = tamil
-			add_accepted_culture = malayalam
-			add_accepted_culture = kannada
 			add_accepted_culture = marathi
-			add_accepted_culture = telegu
-			add_accepted_culture = bengali
 			add_accepted_culture = bihari
-			add_accepted_culture = oriya
 			add_accepted_culture = avadhi
 			add_accepted_culture = kanauji
 			add_accepted_culture = panjabi
 			add_accepted_culture = gujarati
-			add_accepted_culture = kashmiri
-			add_accepted_culture = sindi
 			add_accepted_culture = rajput
-			add_accepted_culture = sinhala
-			add_accepted_culture = burmese
-			add_accepted_culture = pashtun
-			add_accepted_culture = nepali
-			add_accepted_culture = assamese
-			AFG_1214 = { add_core = BHA }
-			AFG_1217 = { add_core = BHA }
-			KAL_1221 = { add_core = BHA }
+			add_accepted_culture = kashmiri
 			PAN_1224 = { add_core = BHA }
-			ENG_1321 = { add_core = BHA }
-			NEP_1327 = { add_core = BHA }
-			BUR_1330 = { add_core = BHA }
-			BUR_1334 = { add_core = BHA }
-			BUR_1339 = { add_core = BHA }
-			2128 = { add_core = BHA }
+			PAN_1227 = { add_core = BHA }
 			any_country = {
 				limit = {
 					NOT = {
 						is_greater_power = yes
 					}
-					OR = {
-						is_culture_group = south_asian
-						is_culture_group = dravidian
-					}
+					is_culture_group = south_asian
 					in_sphere = THIS
 				}
 				country_event = 11101
@@ -265,18 +231,25 @@ political_decisions = {
 	picture = Mughals
 		
 	potential = { 
-	tag = MUG 
+	OR = { 
+		tag = MUG
+		tag = HND
+	}
 	NOT = { has_country_flag = Bengal_MUG }
 	}
 	
 	allow = { 
 	owns = 1251
-	owns = 1257 
+	owns = 1257
+	owns = 1254
+	revolution_n_counterrevolution = 1
 	}
 	
 	effect = { 
 	BEN = { all_core = { add_core = THIS } }
 	add_accepted_culture = bengali
+	add_accepted_culture = assamese
+	add_accepted_culture = burmese
 	set_country_flag = Bengal_MUG
 	}
 	
