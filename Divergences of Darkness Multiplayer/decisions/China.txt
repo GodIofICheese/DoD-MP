@@ -537,123 +537,55 @@ political_decisions = {
   			factor = 1
   		}
 	}
-
+	
 	form_china_return = {
-      picture = form_china
-  		potential = {
-  			OR = { 
-				  primary_culture = qingqiuan
-				  primary_culture = ganguan
-				  primary_culture = tionghoa
-			  }
-  			NOT = {
-				exists = CHI
-  			}
-  		}
-  		
-  		allow = {  
-		civilized = yes
-  			NOT = { war = yes }
-  			CHI = {
-				all_core = {
-					OR = {
-  						owned_by = THIS
-  						owner = {
-  							in_sphere = THIS
-  						}
-					}
+    picture = form_china
+		  potential = {
+  			NOT = { 
+				has_country_flag = china_return 
+			}
+			OR = {
+				primary_culture = qingqiuan
+				primary_culture = ganguan
+			    primary_culture = tionghoa	
+			}
+  	     }
+  		 allow = {  
+			civilized = yes
+			mass_politics = 1
+  			NOT = { 
+				war = yes 
+			}
+			OR = {
+				TAI = {
+					ai = no
+				}
+				MCK = {
+					ai = no
+				}
+				CHI = {
+					ai = no
 				}
 			}
-  		}
-  		effect = {
+  		 }
+  		 effect = {
   			prestige = 30
-  			add_accepted_culture = beifaren
-  			change_tag = CHI 
-        1499 = { add_core = THIS }
-			any_country = {
-				limit = {
-					is_culture_group = chinese
-					in_sphere = THIS
-					NOT = {
-						tag = THIS
-					}
-				}
-				annex_to = THIS
-			}
-			any_owned = {
-				limit = {
-					OR = {
-						is_core = MIG
-						is_core = TAI
-						is_core = SHU
-						is_core = DAX
-						is_core = TNG
-					}
-				}
-				remove_core = MIG
-				remove_core = TAI
-				remove_core = SHU
-				remove_core = DAX
-				remove_core = TNG
-				add_core = THIS
-			}
-			any_country = {
-				any_owned = {
-					limit = {
-						OR = {
-							is_core = MIG
-							is_core = TAI
-							is_core = SHU
-							is_core = DAX
-							is_core = TNG
-						}
-					}
-					remove_core = MIG
-					remove_core = TAI
-					remove_core = SHU
-					remove_core = DAX
-					remove_core = TNG
-					add_core = THIS
-				}
-			}
-			capital = 2221
-
-			CHI_1473 = { add_core = MIG }
-			CHI_1472 = { add_core = MIG }
-			MIN_4 = { add_core = MIG }
-			CHI_1476 = { add_core = MIG }
-			MIN_1 = { add_core = MIG }
-			CHI_1516 = { add_core = MIG }
-			CHI_1539 = { add_core = MIG }
-			MIN_2 = { add_core = MIG }
-
-			CHI_1490 = { add_core = SHU }
-			CHI_1513 = { add_core = SHU }
-			CHI_4 = { add_core = SHU }
-			CHI_2062 = { add_core = SHU }
-
-			CHI_1505 = { add_core = DAX }
-			CHI_1529 = { add_core = DAX }
-			CHI_1523 = { add_core = DAX }
-			CHI_1578 = { add_core = DAX }
-			CHI_1581 = { add_core = DAX }
-			CHI_1601 = { add_core = DAX }
-
-			TAI_1 = { add_core = TAI }
-			CHI_1499 = { add_core = TAI }
-			CHI_1494 = { add_core = TAI }
-			CHI_1504 = { add_core = TAI }
-			TAI_3 = { add_core = TAI }
-			TAI_2 = { add_core = TAI }
-			CHI_1550 = { add_core = TAI }
-
-			CHI_1487 = { add_core = TNG }
-			CHI_2562 = { add_core = TNG }
-			CHI_1611 = { add_core = TNG }
-  		}
-  		ai_will_do = {
-  			factor = 1
-  		}
+			1499 = { add_core = THIS }
+			CHI_2562 = { add_core = THIS }
+			CHI_1611 = { add_core = THIS }
+			CHI_1487 = { add_core = THIS }
+			CHI_1494 = { add_core = THIS }
+			CHI_1495 = { add_core = THIS }
+			CHI_1476 = { add_core = THIS }
+			MIN_4 = { add_core = THIS }
+			CHI_1539 = { add_core = THIS }
+			CHI_1563 = { add_core = THIS }
+			set_country_flag = china_return
+  		 }
+  		
+		 ai_will_do = {
+  			 factor = 1
+  		 }
 	}
 	
 	form_china_tibet = {  

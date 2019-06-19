@@ -244,44 +244,44 @@
 	aristocrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 150
+		size = 300
 	}
 
 	bureaucrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 200
+		size = 400
 	}
 
 	officers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 100
+		size = 200
 	}
 
 	clergymen = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 175
+		size = 350
 	}
 
 	artisans = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 2150
+		size = 4300
 	}
 
 	soldiers = {
 		culture = qingqiuan
 		religion = mahayana
-		size= 900
+		size= 1800
 
 	}
 
 	farmers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 22700
+		size = 45400
 	}
 
 }
@@ -290,31 +290,31 @@
 	aristocrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 25
+		size = 50
 	}
 
 	clergymen = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 150
+		size = 300
 	}
 
 	artisans = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 100
+		size = 200
 	}
 
 	soldiers = {
 		culture = qingqiuan
 		religion = mahayana
-		size= 900
+		size= 1800
 	}
 
 	farmers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 21750
+		size = 43500
 	}
 }
 #Prince Rupert (8000/2000 POPS)
@@ -322,31 +322,31 @@
 	aristocrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 125
+		size = 250
 	}
 
 	clergymen = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 150
+		size = 300
 	}
 
 	artisans = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 2100
+		size = 4200
 	}
 
 	soldiers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 550
+		size = 1100
 	}
 
 	farmers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 11750
+		size = 23500
 	}
 }
 #Glenora (4000/1000 POPS)
@@ -354,49 +354,49 @@
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
-		size = 110
+		size = 220
 	}
 
 	clergymen = {
-		culture = native_american_minor
-		religion = animist
-		size = 125
-	}
-
-	artisans = {
 		culture = native_american_minor
 		religion = animist
 		size = 250
 	}
 
+	artisans = {
+		culture = native_american_minor
+		religion = animist
+		size = 500
+	}
+
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 550
+		size = 1100
 	}
 
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 5400
+		size = 10800
 	}
 
 	aristocrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 40
+		size = 80
 	}
 
 	clergymen = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 100
+		size = 200
 	}
 
 	farmers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 3900
+		size = 7800
 	}
 }
 #Atlin (4000/1000 POPS)
@@ -470,49 +470,49 @@
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
-		size = 120
+		size = 240
 	}
 
 	clergymen = {
 		culture = native_american_minor
 		religion = animist
-		size = 150
+		size = 300
 	}
 
 	artisans = {
 		culture = native_american_minor
 		religion = animist
-		size = 1300
+		size = 2600
 	}
 
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 450
+		size = 900
 	}
 
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 5340
+		size = 10680
 	}
 
 	aristocrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 40
+		size = 80
 	}
 
 	clergymen = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 50
+		size = 100
 	}
 
 	farmers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 4250
+		size = 8500
 	}
 }
 #Kelowna (8000/2000 POPS)
@@ -520,55 +520,55 @@
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
-		size = 120
+		size = 240
 	}
 
 	clergymen = {
 		culture = native_american_minor
 		religion = animist
-		size = 150
+		size = 300
 	}
 
 	artisans = {
 		culture = native_american_minor
 		religion = animist
-		size = 760
+		size = 1520
 	}
 
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 450
+		size = 900
 	}
 
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 5670
+		size = 11340
 	}
 
 	aristocrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 30
+		size = 60
 	}
 
 	clergymen = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 50
+		size = 100
 	}
 
 	artisans = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 650
+		size = 1300
 	}
 
 	farmers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 4320
+		size = 8640
 	}
 
 }
@@ -577,49 +577,49 @@
 	aristocrats = {
 		culture = native_american_minor
 		religion = animist
-		size = 60
+		size = 120
 	}
 
 	clergymen = {
 		culture = native_american_minor
 		religion = animist
-		size = 80
+		size = 160
 	}
 
 	artisans = {
 		culture = native_american_minor
 		religion = animist
-		size = 600
+		size = 1200
 	}
 
 	soldiers = {
 		culture = native_american_minor
 		religion = animist
-		size = 250
+		size = 500
 	}
 
 	farmers = {
 		culture = native_american_minor
 		religion = animist
-		size = 4350
+		size = 8700
 	}
 
 	aristocrats = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 30
+		size = 60
 	}
 
 	clergymen = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 50
+		size = 100
 	}
 
 	farmers = {
 		culture = qingqiuan
 		religion = mahayana
-		size = 3200
+		size = 6400
 	}
 }
 #Fort Nelson (1600/400 POPS)

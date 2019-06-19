@@ -112,14 +112,14 @@ country_event = {
 	
 	trigger = { 
 	tag = PLC 
-	year = 1860 
+	year = 1890 
 	NOT = { is_greater_power = yes }
 	NOT = { has_country_flag = lublin_new }
 	war = no 
 	}
 	
 	mean_time_to_happen = { 
-	months = 600 
+	months = 400 
 	modifier = { 
 	factor = 1.4 
 	rank = 12 

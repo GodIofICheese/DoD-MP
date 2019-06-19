@@ -82,6 +82,7 @@ political_decisions = {
 			}	
 		}
 		effect = {
+			prestige = 20
 			KAL_1221 = { add_core = THIS }
 			AFG_1217 = { add_core = THIS }
 			AFG_1214 = { add_core = THIS }
@@ -123,6 +124,7 @@ political_decisions = {
 			}	
 		}
 		effect = {
+			prestige = 50
 			RUS_1182 = { add_core = THIS }
 			RUS_1184 = { add_core = THIS }
 			KHI_1191 = { add_core = THIS }
@@ -239,7 +241,7 @@ political_decisions = {
             }
         }
 		effect = {
-			prestige = 40
+			prestige = 100
 			change_tag = ARY
 			add_accepted_culture = kurdish
 			add_accepted_culture = parsi

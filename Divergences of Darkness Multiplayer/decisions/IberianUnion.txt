@@ -77,9 +77,9 @@ political_decisions = {
 					NOT = { war = yes }
 					prestige = 80
 					phenomenology_n_hermeneutic = 1
-					own = 503
-					own = 498
-					own = 495
+					owns = 503
+					owns = 498
+					owns = 495
 				}
 		
 				effect = {

@@ -863,7 +863,7 @@ hot_blast = {
 		coal = 0.225
 	}
 	rgo_goods_throughput = {
-		sulphur = 0.1125
+		sulphur = 0.125
 	}
 	ai_chance = {
 		factor = 2

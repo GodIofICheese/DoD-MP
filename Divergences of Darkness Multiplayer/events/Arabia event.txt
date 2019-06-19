@@ -305,13 +305,15 @@ country_event = {
 		}
 	}
 
+	fire_only_once = yes
+	
 	mean_time_to_happen = {
 		days = 1
 	}
 
 	option = {
 		name = "22246.A"
-		prestige = 10
+		prestige = 25
 		set_country_flag = division_mg
 		any_owned = {
 			limit = {
@@ -356,8 +358,7 @@ country_event = {
 
 	option = {
 		name = "22246.B"
-		badboy = 0
-		prestige = 0
+		badboy = 2.5
 		set_global_flag = no_division
 		ai_chance = {
 			factor = 0

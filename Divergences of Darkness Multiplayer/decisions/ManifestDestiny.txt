@@ -5,7 +5,6 @@ political_decisions = {
 			NOT = { has_country_flag = vin_manifest_destiny }
 		}
 		allow = {
-			is_greater_power = yes
 			all_core = {
 				owned_by = THIS
 			}
@@ -61,7 +60,6 @@ political_decisions = {
 			NOT = { has_country_flag = nbg_manifest_destiny }
 		}
 		allow = {
-			is_greater_power = yes
 			all_core = {
 				owned_by = THIS
 			}
@@ -133,7 +131,6 @@ political_decisions = {
 			NOT = { has_country_flag = pla_manifest_destiny }
 		}
 		allow = {
-			is_greater_power = yes
 			all_core = {
 				owned_by = THIS
 			}
@@ -186,7 +183,6 @@ political_decisions = {
 			NOT = { has_country_flag = dng_manifest_destiny }
 		}
 		allow = {
-			is_greater_power = yes
 			all_core = {
 				owned_by = THIS
 			}

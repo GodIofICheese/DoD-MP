@@ -306,17 +306,15 @@ political_decisions = {
 			tag = GAN
 			owns = 2484
 			GAN_9 = { empty = yes }
-			NOT = { rank = 16 }
 		}
 
 		allow = {
 			war = no		
-			medicine = 1
-			invention = prophylaxis_against_malaria
+			basic_chemistry = 1
 		}
 
 		effect = {
-			prestige = 5
+			prestige = 2.5
 			GAN_9 = { secede_province = THIS }
 		}
 
@@ -331,18 +329,16 @@ political_decisions = {
 			tag = GAN
 			owns = 2484
 			GAN_10 = { empty = yes }
-			NOT = { rank = 16 }
 		}
 
 		allow = {
 			war = no		
 			medicine = 1
-			invention = prophylaxis_against_malaria
-			early_railroad = 1
+			experimental_railroad = 1
 		}
 
 		effect = {
-			prestige = 5
+			prestige = 2.5
 			GAN_10 = { secede_province = THIS }
 		}
 
@@ -357,13 +353,11 @@ political_decisions = {
 			tag = GAN
 			owns = 2484
 			GAN_7 = { empty = yes }
-			NOT = { rank = 16 }
 		}
 
 		allow = {
 			war = no		
 			medicine = 1
-			invention = prophylaxis_against_malaria
 			GAN_10 = { has_building = naval_base }	
 		}
 
@@ -383,7 +377,6 @@ political_decisions = {
 			tag = GAN
 			owns = 2497
 			GAN_8 = { empty = yes }
-			NOT = { rank = 16 }
 		}
 
 		allow = {
@@ -407,18 +400,15 @@ political_decisions = {
 		picture = GAN_colony
 		potential = {
 			tag = GAN
-			owns = 2602
 			owns = 2604
 			GAN_6 = { empty = yes }
-			NOT = { rank = 16 }
 		}
 
 		allow = {
 			war = no		
 			medicine = 1
 			breech_loaded_rifles = 1
-			revolution_n_counterrevolution = 1
-			GAN_8 = { has_building = naval_base }
+			early_railroad = 1
 		}
 
 		effect = {
@@ -437,14 +427,12 @@ political_decisions = {
 			tag = GAN
 			owns = 2501
 			GAN_11 = { empty = yes }
-			NOT = { rank = 16 }
 		}
 
 		allow = {
 			war = no		
 			medicine = 1
 			breech_loaded_rifles = 1
-			revolution_n_counterrevolution = 1
 			iron_railroad = 1
 		}
 

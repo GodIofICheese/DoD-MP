@@ -305,13 +305,6 @@ political_decisions = {
 			NOT = { has_country_flag = AMALOT }
 			has_country_flag = ATL_recognized
 			owns = 2447
-			AMA = { government = democracy }
-			OR = {
-				LOT = { government = presidential_dictatorship }
-				LOT = { government = proletarian_dictatorship  }
-				LOT = { government = fascist_dictatorship  } 
-				LOT = { government = absolute_monarchy  }
-			}
 		}
 		
 		allow = { 
@@ -416,7 +409,6 @@ political_decisions = {
 	
 		potential = { 
 		tag = AMA 
-		is_greater_power = yes 
 		OR = { 
 		has_global_flag = AMAguarani
 		has_global_flag = Amerigue
@@ -454,7 +446,6 @@ political_decisions = {
 	
 		potential = { 
 		tag = LOT 
-		is_greater_power = yes 
 		}
 		
 		allow = { 
@@ -486,7 +477,6 @@ political_decisions = {
 	picture = Guyana
 	potential = { 
 	tag = AZL 
-	is_greater_power = yes 
 	NOT = { has_country_flag = guyana_claim }
 	}
 	
@@ -513,7 +503,6 @@ political_decisions = {
 	
 	potential = { 
 	tag = AZL 
-	is_greater_power = yes 
 	has_country_flag = guyana_claim 
 	NAN = { exists = yes }
 	NOT = { has_country_flag = Odon_treaty }
@@ -537,7 +526,6 @@ political_decisions = {
 	picture = Congress_AMA
 	potential = { 
 	tag = AZL 
-	is_greater_power = yes 
 	owns = 2348 
 	NOT = { accepted_culture = beornian }
 	}
@@ -557,8 +545,7 @@ political_decisions = {
 	Granada_border = { 
 	
 	potential = { 
-	tag = AZL 
-	is_greater_power = yes 
+	tag = AZL  
 	NOT = { NAN = { exists = yes } }
 	NOT = { has_country_flag = granada_claim }
 	}
@@ -580,8 +567,7 @@ political_decisions = {
 	picture = Congress_AMA
 	
 	potential = { 
-	tag = AZL 
-	is_greater_power = yes 
+	tag = AZL  
 	owns = 2254 
 	NOT = { accepted_culture = granadan }
 	}
@@ -663,7 +649,6 @@ political_decisions = {
       NOT = { has_country_flag = amerigan_ideal }
 		}
 		allow = {
-			is_greater_power = yes
 			political_thought = 1  
 		war = no  
 		}
@@ -913,7 +898,6 @@ political_decisions = {
 	
 	potential = { 
 	has_country_flag = ameriga_united
-	is_greater_power = yes 
 	INC = { exists = yes }
 	NOT = { 
 	AND = { 

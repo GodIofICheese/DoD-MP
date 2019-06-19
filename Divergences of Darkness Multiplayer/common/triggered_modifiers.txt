@@ -712,10 +712,24 @@ powerful_HRE = {
 
 }
 
+save_the_nation0.5  = {
+	trigger = {
+		revanchism = 0.05
+		NOT = { revanchism = 0.10 } 
+	}
+	
+	suppression_points_modifier = 0.05
+	
+	land_organisation = 0.0125
+	mobilisation_size = 0.005
+	supply_consumption = -0.025
+	icon = 9
+}
+
 save_the_nation1  = {
 	trigger = {
 		revanchism = 0.10
-		NOT = { revanchism = 0.20 } 
+		NOT = { revanchism = 0.15 } 
 	}
 	
 	suppression_points_modifier = 0.10
@@ -726,10 +740,26 @@ save_the_nation1  = {
 	icon = 9
 }
 
+save_the_nation1.5  = {
+	trigger = {
+		revanchism = 0.15
+		NOT = { revanchism = 0.20 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.05
+	mobilisation_size = 0.015
+	supply_consumption = -0.1
+	mobilization_impact = 0.125
+	mobilisation_economy_impact = -0.0625
+	icon = 9
+}
+
 save_the_nation2  = {
 	trigger = {
 		revanchism = 0.20
-		NOT = { revanchism = 0.30 } 
+		NOT = { revanchism = 0.25 } 
 	}
 	
 	suppression_points_modifier = 0.10
@@ -742,10 +772,26 @@ save_the_nation2  = {
 	icon = 9
 }
 
+save_the_nation2.5  = {
+	trigger = {
+		revanchism = 0.25
+		NOT = { revanchism = 0.30 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.0875
+	mobilisation_size = 0.025
+	supply_consumption = -0.175
+	mobilization_impact = 0.375
+	mobilisation_economy_impact = -0.19
+	icon = 9
+}
+
 save_the_nation3  = {
 	trigger = {
 		revanchism = 0.30
-		NOT = { revanchism = 0.40 } 
+		NOT = { revanchism = 0.35 } 
 	}
 	
 	suppression_points_modifier = 0.10
@@ -758,10 +804,26 @@ save_the_nation3  = {
 	icon = 9
 }
 
+save_the_nation3.5  = {
+	trigger = {
+		revanchism = 0.35
+		NOT = { revanchism = 0.40 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.15
+	mobilisation_size = 0.035
+	supply_consumption = -0.25
+	mobilization_impact = 0.75
+	mobilisation_economy_impact = -0.375
+	icon = 9
+}
+
 save_the_nation4  = {
 	trigger = {
 		revanchism = 0.40
-		NOT = { revanchism = 0.50 } 
+		NOT = { revanchism = 0.45 } 
 	}
 	
 	suppression_points_modifier = 0.10
@@ -774,6 +836,23 @@ save_the_nation4  = {
 	icon = 9
 }
 
+save_the_nation4.5  = {
+	trigger = {
+		revanchism = 0.45
+		NOT = { revanchism = 0.50 }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.225
+	land_unit_start_experience = 2.5
+	mobilisation_size = 0.045
+	supply_consumption = -0.30
+	mobilization_impact = 1
+	mobilisation_economy_impact = -0.58
+	icon = 9
+}
+
 save_the_nation5  = {
 	trigger = {
 		revanchism = 0.50
@@ -781,7 +860,7 @@ save_the_nation5  = {
 	
 	suppression_points_modifier = 0.10
 	
-	land_organisation = 0.2
+	land_organisation = 0.25
 	land_unit_start_experience = 5
 	mobilisation_size = 0.05
 	supply_consumption = -0.30
