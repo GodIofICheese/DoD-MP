@@ -1258,3 +1258,675 @@ province_event = {
 		ai_chance = { factor = 0 }
 	}
 }
+
+country_event = {
+	id = 199036 #Mining Decision Change
+	picture = mining
+	title = "EVTNAME199036"
+	desc = "EVTDESC199036"
+	
+	trigger = {
+		is_triggered_only = yes
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = rgo_changed_flag
+	}
+
+	option = {
+		name = "EVT199036OPTA" #COAL
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 9125
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					trade_goods = iron
+					trade_goods = sulphur
+					trade_goods = precious_metal
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+			}
+			
+			clr_country_flag = rgo_changed_flag
+			trade_goods = coal
+			add_province_modifier = {
+			name = switched_production
+			duration = 9125
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVT199036OPTB" #IRON
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 9125
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					trade_goods = coal
+					trade_goods = sulphur
+					trade_goods = precious_metal
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+			}
+			
+			clr_country_flag = rgo_changed_flag
+			trade_goods = iron
+			add_province_modifier = {
+			name = switched_production
+			duration = 9125
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVT199036OPTC" #SULPHUR
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 9125
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					trade_goods = coal
+					trade_goods = iron
+					trade_goods = precious_metal
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+			}
+			
+			clr_country_flag = rgo_changed_flag
+			trade_goods = sulphur
+			add_province_modifier = {
+			name = switched_production
+			duration = 9125
+			}
+		}	
+	}
+	
+	option = {
+		name = "EVT199036OPTD"
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 730
+		}
+		clr_country_flag = rgo_changed_flag
+	}
+}
+
+country_event = {
+	id = 199037 #Argiculture Decision Change
+	picture = farming
+	title = "EVTNAME199037"
+	desc = "EVTDESC199037"
+	
+	trigger = {
+		is_triggered_only = yes
+	}
+	
+	fire_only_once = yes
+	
+	immediate = {
+		set_country_flag = rgo_changed_flag
+	}
+
+	option = {
+		name = "EVT199037OPTA" #WOOL
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		random_owned = {
+			limit = {
+				OR = {
+					trade_goods = timber
+					trade_goods = cotton
+					trade_goods = precious_goods
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				NOT = {
+					terrain = arctic
+					terrain = desert
+					terrain = montane_tundra
+					terrain = marsh
+					terrain = boreal
+					terrain = jungle
+					terrain = new_world_jungle
+					terrain = new_world_boreal
+					terrain = new_world_montane_tundra
+					terrain = new_world_arctic
+					terrain = new_world_jungle
+					terrain = new_world_desert
+				}
+			}
+			
+			trade_goods = wool
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+			clr_country_flag = rgo_changed_flag
+		}	
+	}
+	
+	option = {
+		name = "EVT199037OPTB" #TIMBER
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		random_owned = {
+			limit = {
+				OR = {
+				    trade_goods = wool
+					trade_goods = cotton
+					trade_goods = precious_goods
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				OR = {
+					terrain = forest
+					terrain = woods
+					terrain = jungle
+					terrain = new_world_jungle
+					terrain = montane_forest
+					terrain = new_world_boreal
+				}
+			}
+			
+			trade_goods = timber
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+			clr_country_flag = rgo_changed_flag
+		}	
+	}
+	
+	option = {
+		name = "EVT199037OPTC" #COTTON
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		random_owned = {
+			limit = {
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = precious_goods
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				NOT = {
+					terrain = arctic
+					terrain = desert
+					terrain = montane_forest
+					terrain = montane_tundra
+					terrain = mountain
+					terrain = marsh
+					terrain = hills
+					terrain = boreal
+					terrain = jungle
+					terrain = new_world_jungle
+					terrain = new_world_boreal
+					terrain = new_world_montane_tundra
+					terrain = new_world_arctic
+					terrain = new_world_jungle
+					terrain = new_world_mountain
+					terrain = new_world_desert
+				}
+			}
+			
+			trade_goods = cotton
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+			clr_country_flag = rgo_changed_flag
+		}	
+	}
+	
+	option = {
+		name = "EVT199037OPTD" #CATTLE
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		random_owned = {
+			limit = {
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = precious_goods
+					trade_goods = cotton
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				NOT = {
+					terrain = arctic
+					terrain = desert
+					terrain = montane_forest
+					terrain = montane_tundra
+					terrain = mountain
+					terrain = marsh
+					terrain = dryhills
+					terrain = boreal
+					terrain = jungle
+					terrain = new_world_jungle
+					terrain = new_world_boreal
+					terrain = new_world_montane_tundra
+					terrain = new_world_arctic
+					terrain = new_world_jungle
+					terrain = new_world_mountain
+					terrain = new_world_desert
+				}
+			}
+			
+			trade_goods = cattle
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+			clr_country_flag = rgo_changed_flag
+		}	
+	}
+	
+	option = {
+		name = "EVT199037OPTE" #FISH
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		random_owned = {
+			limit = {
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = precious_goods
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fruit
+					trade_goods = grain
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				is_coastal = yes
+			}
+			
+			trade_goods = fish
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+			clr_country_flag = rgo_changed_flag
+		}	
+	}
+	
+	option = {
+		name = "EVT199037OPTF" #FRUIT
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		random_owned = {
+			limit = {
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = precious_goods
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = grain
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				NOT = {
+					terrain = arctic
+					terrain = desert
+					terrain = semidesert
+					terrain = montane_forest
+					terrain = montane_tundra
+					terrain = mountain
+					terrain = marsh
+					terrain = dryhills
+					terrain = hills
+					terrain = boreal
+					terrain = jungle
+					terrain = savanna
+					terrain = steppe
+					terrain = new_world_jungle
+					terrain = new_world_boreal
+					terrain = new_world_montane_tundra
+					terrain = new_world_arctic
+					terrain = new_world_jungle
+					terrain = new_world_mountain
+					terrain = new_world_desert
+					terrain = new_world_semidesert
+				}
+			}
+			
+			trade_goods = fruit
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+			clr_country_flag = rgo_changed_flag
+		}	
+	}
+	
+	option = {
+		name = "EVT199037OPTG" #GRAIN
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		random_owned = {
+			limit = {
+				OR = {
+				    trade_goods = wool
+					trade_goods = timber
+					trade_goods = precious_goods
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				NOT = {
+					terrain = arctic
+					terrain = desert
+					terrain = montane_forest
+					terrain = montane_tundra
+					terrain = mountain
+					terrain = marsh
+					terrain = dryhills
+					terrain = boreal
+					terrain = jungle
+					terrain = savanna
+					terrain = steppe
+					terrain = new_world_jungle
+					terrain = new_world_boreal
+					terrain = new_world_montane_tundra
+					terrain = new_world_arctic
+					terrain = new_world_jungle
+					terrain = new_world_mountain
+					terrain = new_world_desert
+				}
+			}
+			
+			trade_goods = grain
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+			clr_country_flag = rgo_changed_flag
+		}	
+	}
+	
+	option = {
+		name = "EVT199037OPTH"
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 365
+		}
+		clr_country_flag = rgo_changed_flag
+	}
+}

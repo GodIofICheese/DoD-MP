@@ -1,13 +1,16 @@
 political_decisions = {
 	form_italy = {
 		potential = {
-			is_culture_group = italian
+			OR = {
+				is_culture_group = italian
+				primary_culture = venetian
 			NOT = {
 				primary_culture = catalan
 				primary_culture = athesian
 			}
+			NOT = { tag = ARA }
 			NOT = {
-					exists = ITA
+				exists = ITA
 			}
 			NOT = {
 				exists = ARI
@@ -79,7 +82,7 @@ political_decisions = {
 		}
 	
 		effect = {
-			prestige = 15
+			prestige = 25
 			change_tag = ITA
 			add_accepted_culture = north_italian
 			add_accepted_culture = south_italian
@@ -408,7 +411,7 @@ political_decisions = {
 	NOT = { exists = HLR }
 	NOT = { has_global_flag = first_council_of_munich }
 	NOT = { has_global_flag = revolution_germany }
-		}
+	}
 		
 	allow = {
 	nationalism_n_imperialism = 1 
@@ -419,10 +422,10 @@ political_decisions = {
 	effect = { 
 	prestige = 25
 	set_global_flag = revolution_germany
-		}
+	}
 	ai_will_do = {
 			factor = 1
-		}
+	}
 	}
 	
 	build_the_ponte_liberta = { 
@@ -431,7 +434,7 @@ political_decisions = {
 	
 		potential = { 
 		NOT = { has_global_flag = ponte_venice }
-		OR = { tag = VEN tag = ARI tag = ITA}
+		OR = { tag = VEN tag = ARI tag = ITA }
 		owns = 729 
 		}
 		
@@ -461,7 +464,7 @@ political_decisions = {
 		NOT = { has_global_flag = ven_building }
 		OR = { 
 		tag = VEN tag = ITA tag = ARI 	
-			}
+		}
 		owns = 729 
 		}
 		
@@ -471,7 +474,7 @@ political_decisions = {
 		OR = { 
 		realism = 1 
 		state_n_government = 1 
-			}
+		}
 		}
 		
 		effect = { 
@@ -493,12 +496,17 @@ political_decisions = {
 		}
 		
 		allow = { 
-		invention = steamer_shipyards 
+		steamers = 1 
 		}
 		
 		effect = { 
-		prestige = 5 
-		build_factory_in_capital_state = steamer_shipyard
+		prestige = 10
+		729 = {
+		add_province_modifier = {
+		name = venetian_shipyards
+		duration = -1
+		}
+		}
 		set_country_flag = steamer_arsenal 
 		}
 	}

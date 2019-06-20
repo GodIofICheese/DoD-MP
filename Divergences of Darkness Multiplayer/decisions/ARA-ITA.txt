@@ -11,14 +11,6 @@ political_decisions = {
 			owns = 754 # Napoli
 			owns = 762 # Palermo
 			NOT = { exists = ITA }
-			OR = {
-				government = absolute_monarchy
-				government = prussian_constitutionalism
-				government = hms_government
-				government = feudal_monarchy
-				government = proletarian_dictatorship
-				government = fascist_dictatorship
-			}
 			prestige = 50
 			ITA = {
 				all_core = {
@@ -139,6 +131,7 @@ political_decisions = {
 			LOM = { is_vassal = yes }
 			NOT = { has_country_flag = waroveritaly }
 			NOT = { has_country_flag = waroveritalyend }
+			NOT = { has_country_flag = waroveritalyfail }
 		}
 		
 		allow = {
@@ -169,6 +162,7 @@ political_decisions = {
 			has_country_flag = waroveritalyend
 			NOT = { exists = LOM }
 			NOT = { has_country_flag = italian_integration }
+			NOT = { has_country_flag = waroveritalyfail }
 		}
 		
 		allow = {
@@ -247,6 +241,7 @@ political_decisions = {
 		AUS_729 = { 
 				add_core = ARI
 			}
+		AUS_726 = { add_core = ARI }
 		AUS_736 = {
 				add_core = ARI
 			}
@@ -279,6 +274,7 @@ political_decisions = {
 			all_core = { owned_by = THIS }
 			rank = 4
 			mass_politics = 1
+			NOT = { war = yes }
 		}
 		
 		effect = {

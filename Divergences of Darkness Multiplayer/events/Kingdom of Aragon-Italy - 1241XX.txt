@@ -31,7 +31,9 @@ country_event = {
 	trigger = {
 		tag = ARI
 		has_country_flag = ARA_ITA
+		has_primary_culture = catalan
 		NOT = { has_country_flag = Italyrulezz }
+		NOT = { has_country_flag = ARA_SITA }
 	}
 
 	mean_time_to_happen = {
@@ -62,35 +64,54 @@ country_event = {
 }
 
 country_event = {
-	id = 124101 #Declaration - reaction event II
-	title = "EVTNAME124101"
-	desc = "EVTDESC124101"
-	picture = "?"
+		
+	id = 124114 # Bypass-Consolidation
+	title = "EVTNAME124114"
+	desc = "EVTDESC124114"
 	
-	is_triggered_only = yes
-	
-	option = {
-		name = "EVTOPTA124101"
-		any_country = { 
-				limit = {
-					ai = no
-				}
-				country_event = 124103
-		}
+	trigger = {
+		tag = ARI
+		has_country_flag = ARA_ITA
+		has_country_flag = ARA_SITA
+		NOT = { has_country_flag = Italyrulezz }
 	}
-}
 
-country_event = {
-	id = 124103 #A minor recommendation
-	title = "EVTNAME124103"
-	desc = "EVTDESC124103"
-	picture = "?"
-	
-	is_triggered_only = yes
-	
+	mean_time_to_happen = {
+		days = 1
+	}
+
 	option = {
-		name = "EVTOPTA124103"
-		prestige = 1
+		name = "EVTOPTA124114"
+		set_country_flag = Italyrulezz
+		set_country_flag = waroveritalyend
+		set_country_flag = italian_integration
+		
+		any_country = { 
+			any_owned = { 
+				limit = {
+					is_core = ITA
+				}
+				add_core = ARI
+			}
+		}
+
+		any_owned = { 
+			limit = {
+				is_core = ITA
+			}
+			add_core = ARI
+		}
+		
+		any_country = { 
+			limit = {
+				is_greater_power = yes
+				OR = {
+					tag = SPA
+					tag = DUA
+				}
+			}
+			country_event = 124100
+		}
 	}
 }
 
@@ -169,46 +190,8 @@ country_event = {
 	option = {
 		name = "EVTOPTA124106"
 		clr_country_flag = waroveritaly
-		set_country_flag = waroveritalyend
+		set_country_flag = waroveritalyfail
 		prestige = -50
-		capital = 498
-
-		change_tag = ARA
-
-		any_country = { 
-			any_owned = { 
-				limit = {
-					is_core = ARI
-				}
-				remove_core = ARI
-			}
-		}
-
-		any_owned = { 
-			limit = {
-				is_core = ARI
-			}
-			remove_core = ARI
-		}
-		
-		any_country = {
-			any_owned = {
-				limit = {
-					NOT = { exists = CAT }
-					is_core = CAT
-				}
-				remove_core = CAT
-			}
-		}
-		
-		any_owned = {
-			limit = {
-				NOT = { exists = CAT }
-				is_core = CAT
-			}
-			remove_core = CAT
-		}
-	}
 }
 
 country_event = {

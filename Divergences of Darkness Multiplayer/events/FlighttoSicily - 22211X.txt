@@ -6,13 +6,12 @@ country_event = {
 	
 	trigger = {
 		tag = ARA
-		NOT = { is_greater_power = yes }
 		NOT = { owns = 495 } # Zaragoza
 		NOT = { owns = 503 } # Valencia
 		NOT = { war = yes }
 		owns = 754 # Napoli
 		owns = 762 # Palermo
-		NOT = { has_country_flag = ARA_SIC }
+		NOT = { has_country_flag = ARA_SITA }
 	}
 
 	mean_time_to_happen = {
@@ -24,30 +23,26 @@ country_event = {
 		prestige = -10
 		primary_culture = south_italian
 		add_accepted_culture = catalan
-		set_country_flag = ARA_SIC
+		add_accepted_culture = north_italian
+		remove_accepted_culture = castilian
+		set_country_flag = ARA_SITA
 		capital = 754
 		SPA_498 = { add_core = CAT }
 		SPA_492 = { add_core = CAT }
 		SPA_503 = { add_core = CAT }
-		random_owned = {
-			limit = {
-				NOT = { exists = CAT }
-				is_core = CAT
-			}
-			owner = { release = CAT }
-			ARA = { create_vassal = CAT }
-		}
-		any_owned = {
-			limit = {
-				is_core = CAT
-			}
-			secede_province = CAT
-		}
 		any_owned = {
 			limit = {
 				is_core = SIC
 			}
 			remove_core = SIC
+			add_core = ARA
+		}
+		any_owned = {
+			limit = {
+				is_core = PAP
+				owned_by = ARA
+			}
+			remove_core = PAP
 			add_core = ARA
 		}
 		any_country = {
@@ -62,7 +57,7 @@ country_event = {
 		any_country = {
 			any_owned = {
 				limit = {
-					is_core = ARA
+					is_core = CAT
 					NOT = { owned_by = ARA }
 				}
 				remove_core = ARA
@@ -85,6 +80,9 @@ country_event = {
 		NOT = { owns = 758 } # Brindisi
 		NOT = { war = yes }
 		NOT = { has_country_flag = ARA_SIC }
+		owns = 503
+		owns = 495
+		ai = yes
 	}
 
 	mean_time_to_happen = {

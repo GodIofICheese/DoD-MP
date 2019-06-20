@@ -11,7 +11,7 @@ country_event = {
 		random_list = {
 			60 = { 
 				add_accepted_culture = catalan
-				badboy = -5
+				badboy = 5
 			}
 			40 = { 
 				any_pop = {

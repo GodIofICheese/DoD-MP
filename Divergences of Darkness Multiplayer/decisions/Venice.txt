@@ -193,6 +193,37 @@ political_decisions = {
 		}
 	}
 	
+	integrate_milan = {
+		picture = north_east_italy
+		potential = {
+			tag = VEN
+			NOT = { has_country_flag = integrate_milan }
+			NOT = {
+					exists = ITA
+			}
+			NOT = {
+				exists = ARI
+			}
+		}
+	
+		allow = {
+			revolution_n_counterrevolution = 1
+			NOT = { war = yes }
+			AUS_729 = { owned_by = THIS }
+			AUS_726 = { owned_by = THIS }
+			AUS_736 = { owned_by = THIS }
+		}	
+	
+		effect = {
+			prestige = 10
+			set_country_flag = integrate_milan
+			add_accepted_culture = north_italian
+			AUS_726 = { add_core = THIS }
+			AUS_726 = { remove_core = ITA }
+			AUS_726 = { remove_core = LOM }
+		}
+	}
+	
 	government_in_exile_ven = {
 		picture = map_caribbean
 		potential = {

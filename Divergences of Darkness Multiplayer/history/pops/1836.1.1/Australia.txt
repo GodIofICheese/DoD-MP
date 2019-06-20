@@ -5,37 +5,75 @@
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 744
+        size = 2235
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 20300
+        size = 60900
     }
 
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 150
+        size = 450
     }
 
     aristocrats = {
         culture = ganguan
         religion = mahayana
-        size = 3000
+        size = 9000
     }
 
     officers = {
         culture = ganguan
         religion = mahayana
-        size = 100
+        size = 300
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 70550
+        size = 211650
+    }
+
+    clergymen = {
+        culture = aborigine
+        religion = animist
+        size = 72
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 900
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 16800
+    }
+}
+#Newcastle (16000/4000 POPS)
+2469 = {
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 855
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 16200
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 121416
     }
 
     clergymen = {
@@ -53,45 +91,7 @@
     farmers = {
         culture = aborigine
         religion = animist
-        size = 5600
-    }
-}
-#Newcastle (16000/4000 POPS)
-2469 = {
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 284
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 5400
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 40472
-    }
-
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 8
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 100
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 1824
+        size = 5472
     }
 }
 #Port Macquarie (12000/3000 POPS)
@@ -99,37 +99,37 @@
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 274
+        size = 822
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 1400
+        size = 4200
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 24500
+        size = 73500
     }
 
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 48
+        size = 144
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 200
+        size = 600
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 3450
+        size = 10350
     }
 }
 #Eden (12000/3000 POPS)
@@ -137,63 +137,13 @@
     aristocrats = {
         culture = aborigine
         religion = animist
-        size = 10
+        size = 30
     }
 
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 12
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 50
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 900
-    }
-
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 300
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 2200
-    }
-
-    soldiers = {
-        culture = ganguan
-        religion = mahayana
-        size = 2492
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 40300
-    }
-
-    aristocrats = {
-        culture = ganguan
-        religion = mahayana
-        size = 76
-    }
-}
-#Wagga Wagga (12000/3000 POPS)
-2473 = {
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 75
+        size = 36
     }
 
     artisans = {
@@ -205,25 +155,75 @@
     farmers = {
         culture = aborigine
         religion = animist
-        size = 2650
+        size = 2700
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 20
+        size = 900
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 15
+        size = 6600
+    }
+
+    soldiers = {
+        culture = ganguan
+        religion = mahayana
+        size = 7476
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 889
+        size = 120900
+    }
+
+    aristocrats = {
+        culture = ganguan
+        religion = mahayana
+        size = 228
+    }
+}
+#Wagga Wagga (12000/3000 POPS)
+2473 = {
+    clergymen = {
+        culture = aborigine
+        religion = animist
+        size = 225
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 450
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 7950
+    }
+
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 60
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 45
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 2667
     }
 }
 #uncolonized in 1836
@@ -270,67 +270,67 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 50
+        size = 150
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 100
+        size = 300
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 2350
+        size = 7050
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 100
+        size = 300
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 200
+        size = 600
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 5000
+        size = 15000
     }
 
     officers = {
         culture = ganguan
         religion = mahayana
-        size = 30
+        size = 90
     }
 
     aristocrats = {
         culture = ganguan
         religion = mahayana
-        size = 300
+        size = 900
     }
 
     aristocrats = {
         culture = aborigine
         religion = animist
-        size = 175
+        size = 525
     }
 
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 15
+        size = 45
     }
 
     soldiers = {
         culture = ganguan
         religion = mahayana
-        size = 400
+        size = 1200
     }
 }
 #Broken Hill (12000/3000 POPS)
@@ -338,43 +338,219 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 75
+        size = 225
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 150
+        size = 450
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 2700
+        size = 8100
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 80
+        size = 240
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 200
+        size = 600
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 3000
+        size = 9000
     }
 }
 #Victoria Region - 44000
 #uncolonized in 1836
 #Melbourne (12000/3000 POPS)
 2476 = {
+    clergymen = {
+        culture = aborigine
+        religion = animist
+        size = 108
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 450
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 8100
+    }
+
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 576
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 1800
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 32400
+    }
+
+    aristocrats = {
+        culture = ganguan
+        religion = mahayana
+        size = 1290
+    }
+
+    officers = {
+        culture = ganguan
+        religion = mahayana
+        size = 300
+    }
+}
+#Warnambool (8000/2000 POPS)
+2477 = {
+    clergymen = {
+        culture = aborigine
+        religion = animist
+        size = 72
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 300
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 5250
+    }
+
+    aristocrats = {
+        culture = ganguan
+        religion = mahayana
+        size = 246
+    }
+
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 150
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 600
+    }
+
+    soldiers = {
+        culture = ganguan
+        religion = mahayana
+        size = 8064
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 21000
+    }
+}
+#Ballarat (8000/2000 POPS)
+2478 = {
+    clergymen = {
+        culture = aborigine
+        religion = animist
+        size = 72
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 300
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 5250
+    }
+
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 150
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 600
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 10500
+    }
+}
+#Sale (8000/2000 POPS)
+2479 = {
+    clergymen = {
+        culture = aborigine
+        religion = animist
+        size = 72
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 300
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 5250
+    }
+
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 150
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 600
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 12600
+    }
+}
+#Beechworth (4000/1000 POPS)
+2480 = {
     clergymen = {
         culture = aborigine
         religion = animist
@@ -396,7 +572,45 @@
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 192
+        size = 78
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 300
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 6600
+    }
+}
+#Swan Hill (4000/1000 POPS)
+2481 = {
+    clergymen = {
+        culture = aborigine
+        religion = animist
+        size = 75
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 150
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 2700
+    }
+
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 300
     }
 
     artisans = {
@@ -411,242 +625,28 @@
         size = 10800
     }
 
-    aristocrats = {
-        culture = ganguan
-        religion = mahayana
-        size = 430
-    }
-
     officers = {
         culture = ganguan
         religion = mahayana
-        size = 100
-    }
-}
-#Warnambool (8000/2000 POPS)
-2477 = {
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 24
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 100
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 1750
+        size = 210
     }
 
     aristocrats = {
         culture = ganguan
         religion = mahayana
-        size = 82
-    }
-
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 50
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 200
-    }
-
-    soldiers = {
-        culture = ganguan
-        religion = mahayana
-        size = 2688
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 7000
-    }
-}
-#Ballarat (8000/2000 POPS)
-2478 = {
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 24
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 100
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 1750
-    }
-
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 50
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 200
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 3500
-    }
-}
-#Sale (8000/2000 POPS)
-2479 = {
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 24
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 100
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 1750
-    }
-
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 50
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 200
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 4200
-    }
-}
-#Beechworth (4000/1000 POPS)
-2480 = {
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 12
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 50
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 900
-    }
-
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 26
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 100
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 2200
-    }
-}
-#Swan Hill (4000/1000 POPS)
-2481 = {
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 25
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 50
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 900
-    }
-
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 100
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 200
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 3600
-    }
-
-    officers = {
-        culture = ganguan
-        religion = mahayana
-        size = 70
-    }
-
-    aristocrats = {
-        culture = ganguan
-        religion = mahayana
-        size = 400
+        size = 1200
     }
 
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 23
+        size = 69
     }
 
     soldiers = {
         culture = ganguan
         religion = mahayana
-        size = 1000
+        size = 3000
     }
 }
 #Tasmania Region (36000)
@@ -656,55 +656,55 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 100
+        size = 300
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 2000
+        size = 6000
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 6775
+        size = 20325
     }
 
     aristocrats = {
         culture = ganguan
         religion = mahayana
-        size = 52
+        size = 156
     }
 
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 25
+        size = 75
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 50
+        size = 150
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 200
+        size = 600
     }
 
     soldiers = {
         culture = ganguan
         religion = mahayana
-        size = 590
+        size = 1770
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 800
+        size = 2400
     }
 }
 #Queensland Region : 64000
@@ -714,61 +714,61 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 24
+        size = 72
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 100
+        size = 300
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 1750
+        size = 5250
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 174
-    }
+        size = 522    
+	}
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 700
+        size = 2100
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 15500
+        size = 46500
     }
 
     aristocrats = {
         culture = ganguan
         religion = mahayana
-        size = 400
+        size = 1200
     }
 
     officers = {
         culture = ganguan
         religion = mahayana
-        size = 30
+        size = 90
     }
 
     bureaucrats = {
         culture = ganguan
         religion = mahayana
-        size = 20
+        size = 60
     }
 
     soldiers = {
         culture = ganguan
         religion = mahayana
-        size = 3100
+        size = 9300
     }
 }
 #uncolonized in 1836
@@ -777,37 +777,37 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 24
+        size = 72
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 100
+        size = 300
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 1750
+        size = 5250
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 50
+        size = 150
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 200
+        size = 600
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 4200
+        size = 12600
     }
 }
 #Clermont (4000/1000 POPS)
@@ -815,37 +815,37 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 12
+        size = 36
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 50
+        size = 150
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 900
+        size = 2700
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 26
+        size = 78
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 100
+        size = 300
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 2120
+        size = 63260
     }
 }
 #Toowoomba (8000/2000 POPS)
@@ -853,37 +853,37 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 24
+        size = 72
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 100
+        size = 300
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 2150
+        size = 6450
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 50
+        size = 150
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 200
+        size = 600
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 4000
+        size = 12000
     }
 }
 #Townsville (8000/2000 POPS)
@@ -969,37 +969,37 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 25
+        size = 75
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 50
+        size = 150
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 900
+        size = 2700
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 10
+        size = 30
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 20
+        size = 60
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 360
+        size = 1080
     }
 }
 #Normanton (6000/1500 POPS)
@@ -1029,6 +1029,44 @@
     clergymen = {
         culture = aborigine
         religion = animist
+        size = 225
+    }
+
+    artisans = {
+        culture = aborigine
+        religion = animist
+        size = 450
+    }
+
+    farmers = {
+        culture = aborigine
+        religion = animist
+        size = 8100
+    }
+
+    clergymen = {
+        culture = ganguan
+        religion = mahayana
+        size = 750
+    }
+
+    artisans = {
+        culture = ganguan
+        religion = mahayana
+        size = 1800
+    }
+
+    farmers = {
+        culture = ganguan
+        religion = mahayana
+        size = 24000
+    }
+}
+#Port Lincoln (4000/1000 POPS)
+2492 = {
+    clergymen = {
+        culture = aborigine
+        religion = animist
         size = 75
     }
 
@@ -1047,57 +1085,19 @@
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 250
+        size = 300
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 600
+        size = 444
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 8000
-    }
-}
-#Port Lincoln (4000/1000 POPS)
-2492 = {
-    clergymen = {
-        culture = aborigine
-        religion = animist
-        size = 25
-    }
-
-    artisans = {
-        culture = aborigine
-        religion = animist
-        size = 50
-    }
-
-    farmers = {
-        culture = aborigine
-        religion = animist
-        size = 900
-    }
-
-    clergymen = {
-        culture = ganguan
-        religion = mahayana
-        size = 100
-    }
-
-    artisans = {
-        culture = ganguan
-        religion = mahayana
-        size = 148
-    }
-
-    farmers = {
-        culture = ganguan
-        religion = mahayana
-        size = 4780
+        size = 14340
     }
 }
 #Robe (4000/1000 POPS)
@@ -1105,49 +1105,49 @@
     aristocrats = {
         culture = aborigine
         religion = animist
-        size = 10
+        size = 30
     }
 
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 25
+        size = 75
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 50
+        size = 150
     }
 
     soldiers = {
         culture = aborigine
         religion = animist
-        size = 85
+        size = 255
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 900
+        size = 2700
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 100
+        size = 300
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 280
+        size = 840
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 3250
+        size = 9750
     }
 }
 #Port Augusta (4000/1000 POPS)
@@ -1155,37 +1155,37 @@
     clergymen = {
         culture = aborigine
         religion = animist
-        size = 25
+        size = 75
     }
 
     artisans = {
         culture = aborigine
         religion = animist
-        size = 50
+        size = 150
     }
 
     farmers = {
         culture = aborigine
         religion = animist
-        size = 900
+        size = 2700
     }
 
     clergymen = {
         culture = ganguan
         religion = mahayana
-        size = 50
+        size = 150
     }
 
     artisans = {
         culture = ganguan
         religion = mahayana
-        size = 100
+        size = 300
     }
 
     farmers = {
         culture = ganguan
         religion = mahayana
-        size = 2000
+        size = 6000
     }
 }
 #Oodnadatta (4000/1000 POPS)
