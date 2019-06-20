@@ -4,6 +4,7 @@ political_decisions = {
 			OR = {
 				is_culture_group = italian
 				primary_culture = venetian
+			}
 			NOT = {
 				primary_culture = catalan
 				primary_culture = athesian
@@ -73,12 +74,17 @@ political_decisions = {
 					owned_by = THIS
 					owner = {
 						in_sphere = THIS
+					}
+				}	
 			}
 			SIC_753 = {
 				OR = {
 					owned_by = THIS
 					owner = {
 						in_sphere = THIS
+					}
+				}
+			}			
 		}
 	
 		effect = {
