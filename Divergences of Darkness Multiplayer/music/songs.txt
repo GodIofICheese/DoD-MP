@@ -773,3 +773,23 @@ song = {
 		  }	
        }
 }
+
+song = {
+       name = "genericFhoi2overture.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = fascist_dictatorship
+		          }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = fascist_dictatorship
+		     		  }
+			      }
+		  }	
+       }
+}

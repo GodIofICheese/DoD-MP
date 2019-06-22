@@ -26,9 +26,12 @@ province_event = {
 			province_id = 1187			# Semipalatinsk
 			province_id = 1070			# Yeniseysk - Russia
 		}
-		not = { trade_goods = precious_metal }
+		NOT = { trade_goods = precious_metal }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 	}
-
+	
 	mean_time_to_happen =  {
 		months = 12
 	}
@@ -83,8 +86,11 @@ province_event = {
 			province_id = 2645			# Bodaybo, Russia
 			#province_id = 2058			# Moyo, Mozambique
 		}
-		not = { trade_goods = precious_metal }
-		not = { trade_goods = oil }
+		NOT = { trade_goods = precious_metal }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
+		NOT = { trade_goods = oil }
 	}
 
 	mean_time_to_happen =  {
@@ -110,10 +116,10 @@ province_event = {
 		name = "EVTOPTA1100"
 		trade_goods = precious_metal
 		# life_rating = 5
-		owner = { random_owned = { limit = { province_id = 104 NOT = { life_rating = 39 } } life_rating = 10 } }
-		owner = { random_owned = { limit = { province_id = 89 NOT = { life_rating = 39 } } life_rating = 10 } }
-		owner = { random_owned = { limit = { province_id = 84 NOT = { life_rating = 39 } } life_rating = 5 } }
-		owner = { random_owned = { limit = { province_id = 87 NOT = { life_rating = 39 } } life_rating = 5 } }
+		owner = { random_owned = { limit = { province_id = 104 NOT = { life_rating = 39 trade_goods = coal trade_goods = sulphur trade_goods = iron } } life_rating = 10 } }
+		owner = { random_owned = { limit = { province_id = 89 NOT = { life_rating = 39 trade_goods = coal trade_goods = sulphur trade_goods = iron } } life_rating = 10 } }
+		owner = { random_owned = { limit = { province_id = 84 NOT = { life_rating = 39 trade_goods = coal trade_goods = sulphur trade_goods = iron } } life_rating = 5 } }
+		owner = { random_owned = { limit = { province_id = 87 NOT = { life_rating = 39 trade_goods = coal trade_goods = sulphur trade_goods = iron } } life_rating = 5 } }
 		add_province_modifier = { name = gold_rush duration = 730 }
 		owner = { random_owned = { limit = { province_id = 695 } remove_province_modifier = gold_rush } }
 		owner = {
@@ -149,7 +155,10 @@ province_event = {
 			province_id = 2400			# Rio Grande
 			province_id = 1643			# Sapporo
 		}
-		not = { trade_goods = precious_metal }
+		NOT = { trade_goods = precious_metal }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { year = 1920 }
 	}
 	
@@ -207,6 +216,9 @@ province_event = {
 		year = 1886
 		province_id = 2106
 		NOT = { trade_goods = precious_metal }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 	}
 	
 	fire_only_once = yes
@@ -295,7 +307,10 @@ province_event = {
 			province_id = 2603		# Alice Springs
 			province_id = 2648		# Yakutsk - Russia
 		}
-		not = { trade_goods = precious_metal }
+		NOT = { trade_goods = precious_metal }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 	}
 
 	mean_time_to_happen =  {
@@ -347,7 +362,10 @@ province_event = {
 			province_id = 2107			# Klerksdorp
 			province_id = 2068			# Salisbury
 		}
-		not = { trade_goods = precious_goods }
+		NOT = { trade_goods = precious_goods }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 	}
 
 	mean_time_to_happen =  {
@@ -378,7 +396,10 @@ province_event = {
 			province_id = 1849			# Massawa
 			province_id = 2084			# Luderitzbutch/Angra Pequena
 		}
-		not = { trade_goods = precious_goods }
+		NOT = { trade_goods = precious_goods }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 	}
 
 	mean_time_to_happen =  {
@@ -445,7 +466,10 @@ province_event = {
 			province_id = 1981
 			province_id = 2624
 		}
-		not = { trade_goods = rubber }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
+		NOT = { trade_goods = rubber }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = edison_light_bulb } }
 			owner = { part_of_sphere = yes sphere_owner = { invention = daimlers_automobile } }
@@ -509,7 +533,10 @@ province_event = {
 			province_id = 2600
 			province_id = 2286
 		}
-		not = { trade_goods = rubber }
+		NOT = { trade_goods = rubber }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = edison_light_bulb } }
 			owner = { part_of_sphere = yes sphere_owner = { invention = daimlers_automobile } }
@@ -557,7 +584,10 @@ province_event = {
 			province_id = 1102		# Baku
 			province_id = 1205		# Kizil Arvat
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
 			owner = { part_of_sphere = yes sphere_owner = { any_owned_province = { has_building = fuel_refinery } } }
@@ -588,7 +618,10 @@ province_event = {
 	trigger = {
 		year = 1871
 		province_id = 1104		# Sheki
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -620,7 +653,10 @@ province_event = {
 	trigger = {
 		year = 1872
 		province_id = 1186		# Alma Ata
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -652,7 +688,10 @@ province_event = {
 	trigger = {
 		year = 1873
 		province_id = 1202		# Kokand
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -684,7 +723,10 @@ province_event = {
 	trigger = {
 		year = 1874
 		province_id = 1107		# Lankaran
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -716,7 +758,10 @@ province_event = {
 	trigger = {
 		year = 1875
 		province_id = 132		# Houston
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -748,7 +793,10 @@ province_event = {
 	trigger = {
 		year = 1876
 		province_id = 667		# Tirgoviste
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -780,7 +828,10 @@ province_event = {
 	trigger = {
 		year = 1877
 		province_id = 672		# Bacau
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -812,7 +863,10 @@ province_event = {
 	trigger = {
 		year = 1879
 		province_id = 1168		# Dubai
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -844,7 +898,10 @@ province_event = {
 	trigger = {
 		year = 1881
 		province_id = 112		# Cheyenne
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -879,7 +936,10 @@ province_event = {
 			province_id = 90		# San Diego
 			province_id = 133		# Austin
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -915,7 +975,10 @@ province_event = {
 			province_id = 1055		# Grozny
 			province_id = 126		# Topeka
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -952,7 +1015,10 @@ province_event = {
 			province_id = 1425		# Tarakan
 			province_id = 1432		# Mamuju
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -989,7 +1055,10 @@ province_event = {
 			province_id = 43		# Dallas
 			province_id = 705		# Przemysl
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1020,7 +1089,10 @@ province_event = {
 	trigger = {
 		year = 1889
 		province_id = 1260		# Dibrugarh
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1052,7 +1124,10 @@ province_event = {
 	trigger = {
 		year = 1892
 		province_id = 1086		# Pogobi
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1087,7 +1162,10 @@ province_event = {
 			province_id = 131		# Oklahoma City
 			province_id = 1680		# Fez
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1119,7 +1197,10 @@ province_event = {
 	trigger = {
 		year = 1894
 		province_id = 2173		# Queretaro
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1156,7 +1237,10 @@ province_event = {
 			province_id = 2163		# Tampico
 			province_id = 702		# Lvov
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1188,7 +1272,10 @@ province_event = {
 	trigger = {
 		year = 1897
 		province_id = 1397		# Sandakan
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1220,7 +1307,10 @@ province_event = {
 	trigger = {
 		year = 1902
 		province_id = 2237		# Trinidad
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1252,7 +1342,10 @@ province_event = {
 	trigger = {
 		year = 1907
 		province_id = 2396		# Rawson
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1284,7 +1377,10 @@ province_event = {
 	trigger = {
 		year = 1908
 		province_id = 1131		# Ahvaz
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1323,7 +1419,10 @@ province_event = {
 			province_id = 2270		# Maracaibo
 			province_id = 1170		# Nizwa 
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1355,7 +1454,10 @@ province_event = {
 	trigger = {
 		year = 1912
 		province_id = 1132		# Abadan
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1387,7 +1489,10 @@ province_event = {
 	trigger = {
 		year = 1913
 		province_id = 26		# Calgary
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1419,7 +1524,10 @@ province_event = {
 	trigger = {
 		year = 1915
 		province_id = 2291		# Piura
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1454,7 +1562,10 @@ province_event = {
 			province_id = 849		# Tirana
 			province_id = 2237		# Trinidad
 		}
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1486,7 +1597,10 @@ province_event = {
 	trigger = {
 		year = 1923
 		province_id = 928		# Mendeli
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
@@ -1518,7 +1632,10 @@ province_event = {
 	trigger = {
 		year = 1927
 		province_id = 923		# Mosul
-		not = { trade_goods = oil }
+		NOT = { trade_goods = oil }
+		NOT = { trade_goods = iron }
+		NOT = { trade_goods = sulphur }
+		NOT = { trade_goods = coal }
 		NOT = { has_province_modifier = switched_production }
 		OR = {
 			owner = { part_of_sphere = yes sphere_owner = { invention = cracking } }
