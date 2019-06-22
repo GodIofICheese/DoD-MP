@@ -1,0 +1,528 @@
+political_decisions = {
+	reclaim_vinland = {
+	picture = Vinland
+		potential = {
+			exists = ARC
+			year = 1870
+			OR = {
+				tag = SCA
+				primary_culture = scandinavian
+			}
+			NOT = { has_country_flag = reclaim_vinland }
+		}
+		allow = {
+			NOT = { war = yes }
+			exists = ARC
+			VIN_2 = { owned_by = THIS }
+			VIN_3 = { owned_by = THIS }
+			VIN_6 = { owned_by = THIS }
+			VIN_5 = { owned_by = THIS }
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			VIN_2 = { add_core = THIS }
+			VIN_3 = { add_core = THIS }
+			VIN_6 = { add_core = THIS }
+			VIN_5 = { add_core = THIS }
+			VIN_10 = { add_core = THIS }
+			VIN_60 = { add_core = THIS }
+			add_accepted_culture = vinlander
+			set_country_flag = reclaim_vinland
+			set_global_flag = vinland_claimed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reclaim_vinland_primary = {
+	picture = Vinland
+		potential = {
+			has_global_flag = vinland_claimed
+			tag = ARC
+			primary_culture = vinlander
+			NOT = { has_country_flag = reclaim_vinland_primary }
+		}
+		allow = {
+			NOT = { war = yes }
+			ARC = {
+				all_core = {
+					owned_by = THIS
+				}
+			}	
+			DEN_251 = { owned_by = THIS }
+			HAI_2213 = {
+					NOT = { owned_by = SCA }
+			}
+			ENG_2224 = {
+					NOT = { owned_by = SCA }
+			}
+			ENG_2228 = {
+					NOT = { owned_by = SCA }
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			DEN_251 = { add_core = THIS }
+			DEN_251 = { add_core = THIS }
+			HAI_2213 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			add_accepted_culture = scandinavian
+			set_country_flag = reclaim_vinland_primary
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reclaim_vinland_accepted = {
+	picture = Vinland
+		potential = {
+			has_global_flag = vinland_claimed
+			tag = ARC
+			NOT = { primary_culture = vinlander }
+			NOT = { has_country_flag = reclaim_vinland_accepted }
+		}
+		allow = {
+			NOT = { war = yes }
+			VIN = {
+				all_core = {
+					owned_by = THIS
+				}
+			}
+			DEN_251 = { owned_by = THIS }
+			HAI_2213 = {
+					NOT = { owned_by = SCA }
+			}
+			ENG_2224 = {
+					NOT = { owned_by = SCA }
+			}
+			ENG_2228 = {
+					NOT = { owned_by = SCA }
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			DEN_251 = { add_core = THIS }
+			HAI_2213 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			set_country_flag = reclaim_vinland_accepted
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+reclaim_new_burgundy = {
+	picture = SevenRep
+		potential = {
+			exists = ARC
+			year = 1870
+			OR = {
+				tag = BRG
+				primary_culture = burgundian
+			}
+			NOT = { has_country_flag = reclaim_new_burgundy }
+		}
+		allow = {
+			NOT = { war = yes }
+			exists = ARC
+			NBG_1 = { owned_by = THIS }
+			NBG_4 = { owned_by = THIS }
+			NBG_2 = { owned_by = THIS }
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			NBG_1 = { add_core = THIS }
+			NBG_4 = { add_core = THIS }
+			NBG_2 = { add_core = THIS }
+			add_accepted_culture = septiman
+			set_country_flag = reclaim_new_burgundy
+			set_global_flag = new_burgundy_claimed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reclaim_new_burgundy_primary = {
+	picture = SevenRep
+		potential = {
+			has_global_flag = new_burgundy_claimed
+			tag = ARC
+			primary_culture = septiman
+			NOT = { has_country_flag = reclaim_new_burgundy_primary }
+		}
+		allow = {
+			NOT = { war = yes }
+			NBG = {
+				all_core = {
+					owned_by = THIS
+				}
+			}	
+			ENG_203 = {
+					OR = {
+						NOT = { owned_by = BRG }
+						AND = {
+							exists = LOT
+							NOT = { owned_by = LOT }
+						}
+			}
+			ENG_2228 = {
+					OR = {
+						NOT = { owned_by = BRG }
+						AND = {
+							exists = LOT
+							NOT = { owned_by = LOT }
+						}
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			ENG_203 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			ENG_2228 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			add_accepted_culture = burgundian
+			set_country_flag = reclaim_new_burgundy_primary
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	reclaim_new_burgundy_accepted = {
+	picture = SevenRep
+		potential = {
+			has_global_flag = new_burgundy_claimed
+			tag = ARC
+			NOT = { primary_culture = septiman }
+			NOT = { has_country_flag = reclaim_new_burgundy_accepted }
+		}
+		allow = {
+			NOT = { war = yes }
+			NBG = {
+				all_core = {
+					owned_by = THIS
+				}
+			}	
+			ENG_203 = {
+					OR = {
+						NOT = { owned_by = BRG }
+						AND = {
+							exists = LOT
+							NOT = { owned_by = LOT }
+						}
+			}
+			ENG_2228 = {
+					OR = {
+						NOT = { owned_by = BRG }
+						AND = {
+							exists = LOT
+							NOT = { owned_by = LOT }
+						}
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			ENG_203 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			ENG_2228 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			set_country_flag = reclaim_new_burgundy_accepted
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+reclaim_crown_colony_plantagenia = {
+	picture = Plantagenia
+		potential = {
+			exists = ARC
+			year = 1870
+			OR = {
+				tag = DUA
+				primary_culture = anglois
+			}
+			NOT = { has_country_flag = reclaim_crown_colony_plantagenia }
+		}
+		allow = {
+			NOT = { war = yes }
+			exists = ARC
+			NBG_5 = { owned_by = THIS }
+			PLA_2 = { owned_by = THIS }
+			PLA_3 = { owned_by = THIS }
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			NBG_5 = { add_core = THIS }
+			PLA_2 = { add_core = THIS }
+			PLA_3 = { add_core = THIS }
+			add_accepted_culture = plantagenian
+			set_country_flag = reclaim_crown_colony_plantagenia
+			set_global_flag = crown_colony_plantagenia_claimed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+reclaim_crown_colony_plantagenia_primary = {
+	picture = Plantagenia
+		potential = {
+			has_global_flag = crown_colony_plantagenia_claimed
+			tag = ARC
+			primary_culture = plantagenian
+			NOT = { has_country_flag = reclaim_crown_colony_plantagenia_primary }
+		}
+		allow = {
+			NOT = { war = yes }
+			ARC = {
+				all_core = {
+					owned_by = THIS
+				}
+			}	
+			ENG_2224 = {
+						NOT = { owned_by = DUA }
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			ENG_2224 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			FRA_420 = {
+			owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			add_accepted_culture = anglois
+			set_country_flag = reclaim_crown_colony_plantagenia_primary
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+reclaim_crown_colony_plantagenia_accepted = {
+	picture = Plantagenia
+		potential = {
+			has_global_flag = crown_colony_plantagenia_claimed
+			tag = ARC
+			NOT = { primary_culture = plantagenian }
+			NOT = { has_country_flag = reclaim_crown_colony_plantagenia_accepted }
+		}
+		allow = {
+			NOT = { war = yes }
+			PLA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}	
+			ENG_2224 = {
+						NOT = { owned_by = DUA }
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			ENG_2224 = { 
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			FRA_420 = {
+				owner = {
+					owned_by = THIS
+					ARC = {
+						add_core = THIS
+					}
+				}
+			}
+			set_country_flag = reclaim_crown_colony_plantagenia_accepted
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+reclaim_viceroyalty_granada = {
+	picture = colombia_map
+		potential = {
+			exists = CLM
+			year = 1870
+			OR = {
+				tag = SPA
+				primary_culture = castilian
+			}
+			NOT = { has_country_flag = reclaim_viceroyalty_granada }
+		}
+		allow = {
+			NOT = { war = yes }
+			exists = CLM
+			VNZ_2278 = { owned_by = THIS }
+			VNZ_2265 = { owned_by = THIS }
+			VNZ_2234 = { owned_by = THIS }
+			CLM_2251 = { owned_by = THIS }
+			CLM_2259 = { owned_by = THIS }
+			ENG_1979 = { owned_by = THIS }
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			VNZ_2278 = { add_core = THIS }
+			VNZ_2265 = { add_core = THIS }
+			VNZ_2234 = { add_core = THIS }
+			CLM_2251 = { add_core = THIS }
+			CLM_2259 = { add_core = THIS }
+			CLM_2247 = { add_core = THIS }
+			CLM_2262 = { add_core = THIS }
+			VNZ_2275 = { add_core = THIS }
+			ENG_1979 = { add_core = THIS }
+			BRZ_2408 = { add_core = THIS }
+			set_country_flag = reclaim_viceroyalty_granada
+			set_global_flag = viceroyalty_granada_claimed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+reclaim_viceroyalty_granada_from_spain = {
+	picture = colombia_map
+		potential = {
+			year = 1870
+			has_global_flag = viceroyalty_granada_claimed
+			NOT = { tag = SPA }
+			OR = {
+				tag = CLM
+				primary_culture = granadan
+				accepted_culture = granadan
+			}
+			NOT = { has_country_flag = reclaim_viceroyalty_granada_from_spain }
+		}
+		allow = {
+			NOT = { war = yes }
+			exists = CLM
+			VNZ_2278 = { owned_by = THIS }
+			VNZ_2265 = { owned_by = THIS }
+			VNZ_2234 = { owned_by = THIS }
+			CLM_2251 = { owned_by = THIS }
+			CLM_2259 = { owned_by = THIS }
+			CLM_2247 = { owned_by = THIS }
+			CLM_2262 = { owned_by = THIS }
+			VNZ_2275 = { owned_by = THIS }
+			ENG_1979 = { owned_by = THIS }
+			BRZ_2408 = { owned_by = THIS }
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			add_accepted_culture = castilian
+			set_country_flag = reclaim_viceroyalty_granada_from_spain
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}	

@@ -22,7 +22,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 					    government = feudal_monarchy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }
@@ -52,7 +52,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 					    government = feudal_monarchy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }	
@@ -82,7 +82,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 					    government = feudal_monarchy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }
@@ -112,7 +112,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 					    government = feudal_monarchy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }
@@ -142,7 +142,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 					    government = feudal_monarchy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }	
@@ -172,7 +172,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 					    government = feudal_monarchy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }	
@@ -202,7 +202,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 					    government = feudal_monarchy
-						war = yes
+						war = no
 		     		  }
 			      }
 		  }	
@@ -228,7 +228,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 				        government = democracy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }	
@@ -254,7 +254,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 				        government = democracy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }	
@@ -280,7 +280,7 @@ song = {
 					    government = hms_government
 					    government = merchant_republic
 				        government = democracy
-						war = no
+						war = yes
 		     		  }
 			      }
 		  }		
@@ -300,9 +300,10 @@ song = {
 		  }
 		  modifier = {
 			      factor = 0.5
-			      NOT = { 				      
-					  war_exhaustion = 20
-			      }
+			      OR = {
+					NOT = { war_exhaustion = 20 }
+			        war = no
+				  }
 		  }	
        }
 }
@@ -325,10 +326,10 @@ song = {
 		  }
 		  modifier = {
 			      factor = 0.5
-			      NOT = { 
-					    war_exhaustion = 30
+			      OR = {
+					NOT = { war_exhaustion = 20 }
+			        war = no
 				  }
-				  war = no
 		  }	
        }
 }
@@ -351,10 +352,10 @@ song = {
 		  }
 		  modifier = {
 			      factor = 0.5
-			      NOT = { 
-					    war_exhaustion = 30
-		          }
-				  war = no
+			      OR = {
+					NOT = { war_exhaustion = 20 }
+			        war = no
+				  }
 		  }
        }
 }
@@ -601,3 +602,174 @@ song = {
        }
 }
 
+song = {
+       name = "peacecLasBarricadas.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				     government = proletarian_dictatorship 
+		          }
+			      war = no
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					  government = proletarian_dictatorship
+					  war = no
+		     		  }
+			      }
+		  }	
+       }
+}
+
+song = {
+       name = "genericCnationalanthemofussr.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = proletarian_dictatorship 
+		          }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+					 government = proletarian_dictatorship
+				  }
+		  }	
+       }
+}
+
+song = {
+       name = "genericwarhellmarch.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = proletarian_dictatorship
+					government = fascist_dictatorship
+					total_offensives = 5
+		          }
+				  war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    war = yes
+						total_offensives = 3
+		     		  }
+			      }
+		  }	
+       }
+}
+
+song = {
+       name = "genericwarccsovietmarch.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = proletarian_dictatorship
+					tag = RUS
+					total_offensives = 5
+		          }
+				  war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    war = yes
+						total_offensives = 3
+		     		  }
+			      }
+		  }	
+       }
+}
+
+song = {
+       name = "genericCredoctober.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = proletarian_dictatorship
+					tag = RUS
+		          }
+				  war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    war = yes
+		     		  }
+			      }
+		  }	
+       }
+}
+
+song = {
+       name = "genericCKatiusha.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = proletarian_dictatorship
+					tag = RUS
+		          }
+				  war = yes
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    war = yes
+		     		  }
+			      }
+		  }	
+       }
+}
+
+song = {
+       name = "genericFpanzerlied.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = fascist_dictatorship
+		          }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = fascist_dictatorship
+		     		  }
+			      }
+		  }	
+       }
+}
+
+song = {
+       name = "genericFrotundschwarz.mp3"
+       chance = {
+		  modifier = {
+			      factor = 10
+			      OR = { 
+				    government = fascist_dictatorship
+		          }
+		  }
+		  modifier = {
+			      factor = 0.5
+			      NOT = { 
+				      OR = { 
+					    government = fascist_dictatorship
+		     		  }
+			      }
+		  }	
+       }
+}

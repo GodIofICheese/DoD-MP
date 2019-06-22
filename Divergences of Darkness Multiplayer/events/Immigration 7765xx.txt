@@ -18,24 +18,3 @@ country_event = {
 		clr_country_flag = new_world_nation
 	}
 }
-
-country_event = {
-	id = 776544
-	title = "EVTNAME77654"
-	desc = "EVTDESC776543"
-	picture = "election_crowd"
-	prestige = 10
-	
-	trigger = {
-		year = 1900
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	option = {
-		name = "EVTOPTA776543"
-		prestige = 1
-	}
-}

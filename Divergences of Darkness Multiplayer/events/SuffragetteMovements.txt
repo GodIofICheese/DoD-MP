@@ -14,8 +14,9 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -26,14 +27,21 @@ country_event = {
 			vote_franschise = wealth_voting
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
-		}	
-		NOT = {
-			has_country_modifier = female_suffrage
 		}
+		
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+		}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.5
 			social_science = 1
@@ -59,7 +67,7 @@ country_event = {
 			average_consciousness = 5
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			war_exhaustion = 4
 		}
 		modifier = {
@@ -75,7 +83,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -107,8 +115,9 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -120,13 +129,22 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		NOT = { has_country_modifier = female_suffrage }
+		
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
+		
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 900
 		modifier = {
 			factor = 0.5
 			social_science = 1
@@ -152,7 +170,7 @@ country_event = {
 			average_consciousness = 5
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			war_exhaustion = 4
 		}
 		modifier = {
@@ -168,7 +186,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -205,9 +223,10 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
 		slavery = no_slavery
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -218,14 +237,20 @@ country_event = {
 			vote_franschise = wealth_voting
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
-		}	
-		NOT = {
-			has_country_modifier = female_suffrage
 		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 900
 		modifier = {
 			factor = 0.5
 			social_science = 1
@@ -316,13 +341,19 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
-		months = 50
+		months = 70
 		modifier = {
 			factor = 0.5
 			social_science = 1
@@ -399,6 +430,7 @@ country_event = {
 	trigger = {
 		year = 1890
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -410,9 +442,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -458,7 +496,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -495,9 +533,10 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
 		public_meetings = yes_meeting
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -509,9 +548,18 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
 		NOT = {
-			has_country_modifier = female_suffrage
+			capital_scope = { continent = oceania }
+			tag = TUR
 		}
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -557,7 +605,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -566,6 +614,9 @@ country_event = {
 		name = "EVTOPTA17050"
 		any_pop = {
 			consciousness = 0.5
+		}
+		ai_chance = {
+			factor = 34
 		}
 	}
 	
@@ -577,6 +628,9 @@ country_event = {
 				factor = 0.05
 			}
 		}
+		ai_chance = {
+			factor = 33
+		}
 	}
 	
 	option = {
@@ -585,6 +639,20 @@ country_event = {
 		any_pop = {
 			militancy = 4
 			consciousness = 2
+		}
+		ai_chance = {
+			factor = 33
+			
+			modifier = {
+				factor = 0
+				NOT = {
+					OR = {
+						ruling_party_ideology = reactionary
+						ruling_party_ideology = fascist
+						ruling_party_ideology = communist
+					}
+				}
+			}
 		}
 	}
 }
@@ -597,8 +665,9 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -610,9 +679,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -658,7 +733,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -697,9 +772,10 @@ country_event = {
 
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
 		is_ideology_enabled = socialist
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -711,9 +787,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -759,7 +841,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -805,8 +887,9 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -818,9 +901,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -866,7 +955,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -907,8 +996,9 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -919,10 +1009,16 @@ country_event = {
 			vote_franschise = wealth_voting
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
-		}	
-		NOT = {
-			has_country_modifier = female_suffrage
 		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -968,7 +1064,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1006,8 +1102,9 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -1019,9 +1116,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -1067,7 +1170,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1113,6 +1216,7 @@ country_event = {
 	trigger = {
 		year = 1900
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -1124,9 +1228,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -1172,7 +1282,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1206,8 +1316,9 @@ country_event = {
 	picture = "Womensrights"
 	
 	trigger = {
-		invention = womens_suffrage_movement
+		year = 1870
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -1219,9 +1330,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -1267,7 +1384,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1302,6 +1419,7 @@ country_event = {
 	trigger = {
 		year = 1890
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -1313,9 +1431,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -1333,7 +1457,7 @@ country_event = {
 			revolution_n_counterrevolution = 1
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			anti__rationalism = 1
 		}
 		modifier = {
@@ -1365,7 +1489,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1401,6 +1525,7 @@ country_event = {
 	trigger = {
 		year = 1890
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -1412,9 +1537,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -1432,7 +1563,7 @@ country_event = {
 			revolution_n_counterrevolution = 1
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			anti__rationalism = 1
 		}
 		modifier = {
@@ -1464,7 +1595,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1510,6 +1641,7 @@ country_event = {
 	trigger = {
 		year = 1890
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -1521,9 +1653,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -1541,7 +1679,7 @@ country_event = {
 			revolution_n_counterrevolution = 1
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			anti__rationalism = 1
 		}
 		modifier = {
@@ -1573,7 +1711,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1616,6 +1754,7 @@ country_event = {
 	trigger = {
 		year = 1890
 		civilized = yes
+		literacy = 0.7
 		OR = {
 			government = prussian_constitutionalism
 			government = hms_government
@@ -1627,9 +1766,15 @@ country_event = {
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
 		}	
-		NOT = {
-			has_country_modifier = female_suffrage
-		}
+		OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+			}
+		
+		NOT = { capital_scope = { continent = oceania } tag = TUR }
+		NOT = { has_country_modifier = female_suffrage }
 	}
 	
 	mean_time_to_happen = {
@@ -1647,7 +1792,7 @@ country_event = {
 			revolution_n_counterrevolution = 1
 		}
 		modifier = {
-			factor = 0.25
+			factor = 0.5
 			anti__rationalism = 1
 		}
 		modifier = {
@@ -1679,7 +1824,7 @@ country_event = {
 			political_reform_want = 0.15
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.9
 			public_meetings = yes_meeting
 		}
 	}
@@ -1724,11 +1869,11 @@ country_event = {
 			vote_franschise = wealth_voting
 			vote_franschise = universal_weighted_voting
 			vote_franschise = universal_voting
-		}	
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -1781,6 +1926,17 @@ country_event = {
 	option = {
 		name = "EVTOPTB17170"
 		random_country = {
+			limit = {
+				NOT = { tag = THIS }
+				NOT = { has_country_modifier = female_suffrage }
+				NOT = { capital_scope = { continent = oceania } tag = TUR }
+			OR = {
+			capital_scope = { continent = europe }
+			capital_scope = { continent = north_america }
+			capital_scope = { continent = south_america }
+			capital_scope = { continent = australia_new_zealand }
+				}
+			}
 			prestige = -1
 		}
 		prestige = 5

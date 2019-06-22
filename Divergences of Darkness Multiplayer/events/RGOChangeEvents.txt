@@ -1264,11 +1264,9 @@ country_event = {
 	picture = mining
 	title = "EVTNAME199036"
 	desc = "EVTDESC199036"
-	
-	trigger = {
-		is_triggered_only = yes
-	}
-	
+
+	is_triggered_only = yes
+
 	fire_only_once = yes
 	
 	immediate = {
@@ -1438,9 +1436,7 @@ country_event = {
 	title = "EVTNAME199037"
 	desc = "EVTDESC199037"
 	
-	trigger = {
-		is_triggered_only = yes
-	}
+	is_triggered_only = yes
 	
 	fire_only_once = yes
 	

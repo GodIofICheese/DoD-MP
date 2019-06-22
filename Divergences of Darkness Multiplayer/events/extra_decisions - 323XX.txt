@@ -5,10 +5,42 @@
 		picture = "Administration"
 		
 		trigger = {
-				not = { government = proletarian_dictatorship }
+				NOT = { government = proletarian_dictatorship }
+				NOT = { government = fascist_dictatorship }
+				NOT = { centralization = totalitarianism }				
 				revolution_n_counterrevolution = 1
 				civilized = yes
-				ruling_party_ideology = communist
+				OR = {
+					AND = {
+						OR = {
+							ruling_party_ideology = communist
+							ruling_party_ideology = socialist
+						}
+						OR = {
+							upper_house_composition = party_appointed
+							political_parties = underground_parties
+						}	
+					}
+					OR = {
+							AND = {
+								OR = { 
+									ruling_party_ideology = communist
+									ruling_party_ideology = socialist
+								}
+								revanchism = 0.25
+								average_militancy = 4.0
+							}
+							AND = {
+								OR = { 
+									ruling_party_ideology = communist
+									ruling_party_ideology = socialist
+								}
+								revanchism = 0.20
+								average_militancy = 6.0
+							}
+					}
+					pop_majority_ideology = communist
+				}
 		}
 
 		mean_time_to_happen = {
@@ -77,10 +109,33 @@
 		picture = "Administration"
 		
 		trigger = {
-				not = { government = fascist_dictatorship }
+				NOT = { government = fascist_dictatorship }
+				NOT = { government = proletarian_dictatorship }
+				NOT = { centralization = totalitarianism }
 				revolution_n_counterrevolution = 1
 				civilized = yes
-				ruling_party_ideology = fascist
+				OR = {
+					AND = {
+						ruling_party_ideology = facist
+						OR = {
+							upper_house_composition = party_appointed
+							political_parties = underground_parties
+						}
+					}
+					pop_majority_ideology = facist
+					OR = {
+							AND = {
+								NOT = { ruling_party_ideology = communist }
+								NOT = { ruling_party_ideology = socialist }
+								revanchism = 0.25
+								average_militancy = 4.0
+							}
+							AND = {
+								revanchism = 0.20
+								average_militancy = 6.0
+							}
+					}
+				}
 		}
 
 		mean_time_to_happen = {
@@ -149,10 +204,21 @@
 		picture = "Administration"
 		
 		trigger = {
-				not = { government = bourgeois_dictatorship }
+				NOT = { government = bourgeois_dictatorship }
+				NOT = { government = democracy }
 				revolution_n_counterrevolution = 1
 				civilized = yes
-				ruling_party_ideology = anarcho_liberal
+				OR = {
+					AND = {
+						ruling_party_ideology = anarcho_liberal
+						NOT = { centralization = totalitarianism }
+						OR = {
+							upper_house_composition = party_appointed
+							political_parties = underground_parties
+						}
+					}
+					pop_majority_ideology = anarcho_liberal
+				}
 		}
 		
 		mean_time_to_happen = {
@@ -223,9 +289,21 @@
 				NOT = { government = prussian_constitutionalism }
 				NOT = { government = absolute_monarchy }
 				NOT = { government = presidential_dictatorship }
+				NOT = { government = feudal_monarchy }
+				NOT = { government = theocracy }
 				revolution_n_counterrevolution = 1
 				civilized = yes
-				ruling_party_ideology = reactionary
+				OR = {
+					AND = {
+						ruling_party_ideology = reactionary
+						NOT = { centralization = totalitarianism }
+						OR = {
+							upper_house_composition = party_appointed
+							political_parties = underground_parties
+						}
+					}
+					pop_majority_ideology = reactionary
+				}
 		}
 		
 
