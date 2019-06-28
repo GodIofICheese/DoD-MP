@@ -8,7 +8,6 @@ political_decisions = {
 				}	
 				allow = {
 					NOT = { war = yes }
-					NOT = { has_country_flag = rgo_changed_flag }
 				}
 				effect = {
 					country_event = { 
@@ -25,7 +24,6 @@ political_decisions = {
 				}	
 				allow = {
 					NOT = { war = yes }
-					NOT = { has_country_flag = rgo_changed_flag }
 				}
 				effect = {
 					country_event = {

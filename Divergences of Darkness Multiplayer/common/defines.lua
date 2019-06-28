@@ -1,7 +1,7 @@
 defines = {
 
 start_date = '1836.1.1',
-end_date = '1950.1.1',
+end_date = '1991.1.1',
 
 country = {
 	YEARS_OF_NATIONALISM 	= 20,   -- Years of Nationalism
@@ -65,8 +65,8 @@ country = {
 	NAVAL_BASE_NON_CORE_SUPPLY_SCORE = 0.3, -- modifier for supply score for naval bases that are not in core provinces.
 	COLONIAL_POINTS_FROM_SUPPLY_FACTOR = 1, --Scale this down as you scale up the supply base or everyone will drown in colonial points
 	COLONIAL_POINTS_FOR_NON_CORE_BASE = 1,
-	MOBILIZATION_SPEED_BASE = 0.10, -- Base speed for raising troops
-	MOBILIZATION_SPEED_RAILS_MULT = 4.0, -- Speed modifier for raising troops. It's max value for max railways level in state.
+	MOBILIZATION_SPEED_BASE = 0.075, -- Base speed for raising troops
+	MOBILIZATION_SPEED_RAILS_MULT = 3.00, -- Speed modifier for raising troops. It's max value for max railways level in state.
 	COLONIZATION_INTEREST_LEAD = 3,
 	COLONIZATION_INFLUENCE_LEAD = 3,
 	COLONIZATION_MONTHS_TO_COLONIZE = 12,
@@ -99,7 +99,7 @@ economy = {
 	BANKRUPTCY_EXTERNAL_LOAN_YEARS	= 10,
 	BANKRUPTCY_FACTOR = 0.2,
 	SHADOWY_FINANCIERS_MAX_LOAN_AMOUNT = 5000,
-	MAX_LOAN_CAP_FROM_BANKS = 20, -- can loan max % of country tax base from single country
+	MAX_LOAN_CAP_FROM_BANKS = 25, -- can loan max % of country tax base from single country
 	GUNBOAT_LOW_TAX_CAP = 0.0,
 	GUNBOAT_HIGH_TAX_CAP = 1.0,
 	GUNBOAT_FLEET_SIZE_FACTOR = 100,
@@ -108,14 +108,14 @@ economy = {
 	GOODS_FOCUS_SWAP_CHANCE = 0, -- Percent increased chance that artisan wants to change goods independently of how well he is doing presently
 	NUM_CLOSED_FACTORIES_PER_STATE_LASSIEZ_FAIRE = 1, -- Number of closed factories allowed per state under Lassiez Faire
 	MIN_NUM_FACTORIES_PER_STATE_BEFORE_DELETING_LASSIEZ_FAIRE = 2, -- Min number of factories per state before starting to delete under Lassiez Faire
-	BANKRUPCY_DURATION = 3, -- Years till a bankruptcy clears all loans
+	BANKRUPCY_DURATION = 5, -- Years till a bankruptcy clears all loans
 	SECOND_RANK_BASE_SHARE_FACTOR = 0.5,
 	CIV_BASE_SHARE_FACTOR = 0.75,
 	UNCIV_BASE_SHARE_FACTOR = 1,
 	FACTORY_PAYCHECKS_LEFTOVER_FACTOR = 0.3, -- % of how much we pay to the pops and capitalists, from the leftovers.
 	MAX_FACTORY_MONEY_SAVE = 3000,	-- how much money is stored maximum in a factory.
 	SMALL_DEBT_LIMIT = 20000,
-	FACTORY_UPGRADE_EMPLOYEE_FACTOR = 0.75, -- determines how close to the employee limit we need to be before "upgrade all" will upgrade/expand a given factory (1 = 100%).
+	FACTORY_UPGRADE_EMPLOYEE_FACTOR = 0.50, -- determines how close to the employee limit we need to be before "upgrade all" will upgrade/expand a given factory (1 = 100%).
 	RGO_SUPPLY_DEMAND_FACTOR_HIRE_HI = 0.2,	-- how fast pops are Hired when there is a high demand
 	RGO_SUPPLY_DEMAND_FACTOR_HIRE_LO = 0.02,	-- how fast pops are Hired when there is a medium demand
 	RGO_SUPPLY_DEMAND_FACTOR_FIRE = 0.2,		-- how fast pops are Fired when there is a low demand
@@ -143,7 +143,7 @@ military = {
 	SUPPLY_RANGE = 50,
 	POP_MIN_SIZE_FOR_REGIMENT_PROTECTORATE_MULTIPLIER = 6,
 	POP_MIN_SIZE_FOR_REGIMENT_COLONY_MULTIPLIER = 4,
-	POP_MIN_SIZE_FOR_REGIMENT_NONCORE_MULTIPLIER = 3, -- VALUE * POP_MIN_SIZE_FOR_REGIMENT is min for noncores
+	POP_MIN_SIZE_FOR_REGIMENT_NONCORE_MULTIPLIER = 1, -- VALUE * POP_MIN_SIZE_FOR_REGIMENT is min for noncores
 	GAS_ATTACK_MODIFIER = 3,
 	COMBATLOSS_WAR_EXHAUSTION = 3, -- base war exhaustion in combat
 	LEADER_MAX_RANDOM_PRESTIGE = 0.05, -- max percent of prestige, when randomizing stats for leaders.
@@ -519,7 +519,7 @@ diplomacy = {
 	NEIGHBOUR_BONUS_INFLUENCE_PERCENT = 0.50, -- Bonus to neighbouring countries when influencing
 	SPHERE_NEIGHBOUR_BONUS_INFLUENCE_PERCENT = 0.2, -- Bonus to countries in your sphere neighbouring when influencing
 	OTHER_CONTINENT_BONUS_INFLUENCE_PERCENT = -0.50, -- Malus to countries in another continent
-	PUPPET_BONUS_INFLUENCE_PERCENT = 1.0, -- bonus if they are our puppet
+	PUPPET_BONUS_INFLUENCE_PERCENT = 2.0, -- bonus if they are our puppet
 	
 	-- effects of manually releasing a nation
 	RELEASE_NATION_PRESTIGE = 0,

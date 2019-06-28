@@ -41,6 +41,7 @@ country_event = { ##Young Scotland revolts
 	owns = 267 
 	has_global_flag = ENL_help_SCO  
 	NOT = { has_country_flag = SCO_free }
+	NOT = { has_country_flag = scotland_reannexed )
 	}
 	
 	mean_time_to_happen = { 
@@ -125,6 +126,7 @@ country_event = { ##The Scandinavian Reaction
 	
 	option = { 
 	name = "48206.A"
+	set_country_flag = scotland_reannexed
 	prestige = 25 
 	war = {
 			target = SCO
@@ -139,6 +141,7 @@ country_event = { ##The Scandinavian Reaction
 	
 	option = { 
 	name = "48206.B"
+	set_country_flag = scotland_reannexed
 	prestige = -25 
 	war = {
 			target = SCO

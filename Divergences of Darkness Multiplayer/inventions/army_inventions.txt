@@ -1492,8 +1492,8 @@ early_interwar_bombers = {
 	}
 	effect = {
 		plane = {
-			attack = 0.5
-			support = 0.25
+			attack = 0.75
+			support = 0.125
 			supply_consumption = 0.025
 		}
 	}
@@ -1513,8 +1513,8 @@ late_interwar_bombers = {
 	}
 	effect = {
 		plane = {
-			attack = 0.5
-			support = 0.25
+			attack = 0.75
+			support = 0.125
 			supply_consumption = 0.025
 		}
 	}
@@ -1530,8 +1530,8 @@ early_interwar_fighters = {
 	}
 	effect = {
 		plane = {
-			attack = 1
-			defence = 0.25
+			attack = 2
+			defence = 0.5
 			supply_consumption = 0.025
 		}
 	}
@@ -1551,8 +1551,8 @@ late_interwar_fighters = {
 	}
 	effect = {
 		plane = {
-			attack = 1
-			defence = 0.25
+			attack = 2
+			defence = 0.5
 			supply_consumption = 0.025
 		}
 	}
@@ -1576,7 +1576,7 @@ t_air_superiority = {
 	}
 	effect = {
 		plane = {
-			attack = 2
+			attack = 4
 			default_organisation = 5
 		}
 	}
@@ -1600,7 +1600,7 @@ flying_circus_doctrine = {
 	}
 	effect = {
 		plane = {
-			defence = 2
+			defence = 4
 			default_organisation = 5
 		}
 	}
@@ -1624,7 +1624,7 @@ force_substitution_doctrine = {
 	}
 	effect = {
 		plane = {
-			defence = 2
+			defence = 4
 			default_organisation = 5
 		}
 	}
@@ -1648,8 +1648,8 @@ battlefield_destruction_doctrine = {
 	}
 	effect = {
 		plane = {
-			attack = 0.25
-			support = 0.25
+			attack = 0.75
+			support = 0.125
 			default_organisation = 5
 		}
 	}
@@ -1673,8 +1673,8 @@ operational_destruction_doctrine = {
 	}
 	effect = {
 		plane = {
-			attack = 0.25
-			support = 0.25
+			attack = 0.75
+			support = 0.125
 			default_organisation = 5
 		}
 	}

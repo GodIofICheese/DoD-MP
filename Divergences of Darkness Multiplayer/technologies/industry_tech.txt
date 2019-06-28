@@ -313,6 +313,46 @@ electrical_power_generation = {
 		}
 	}
 }
+modern_power_generation = {
+	area = tech_power
+	year = 1930
+	cost = 40000
+	
+	farm_rgo_size = 0.35
+	mine_rgo_size = 0.35
+	rgo_throughput = 0.05
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 4
+			OR = {
+				unemployment_by_type = { value = 0.01 type = labourers }
+				unemployment_by_type = { value = 0.01 type = farmers }
+			}
+			}
+		}
+		modifier = {
+			factor = 3
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 1.4
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
 
 
 #mechanization
@@ -542,6 +582,44 @@ shift_work = {
 	
 	rgo_output = 0.05
 	factory_throughput = 0.1 
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 3
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+mechanized_manufacture = {
+	area = mechanization
+	year = 1930
+	cost = 40000
+	
+	factory_throughput = 0.1 
+	rgo_throughput = 0.05
+	factory_goods_output = { canned_food = 0.1 }
+	factory_goods_output = { ammunition = 0.1 }
+	factory_goods_output = { artillery = 0.1 }
+	factory_goods_output = { small_arms = 0.1 }
+	factory_goods_output = { barrels = 0.05 }
+	factory_goods_output = { aeroplanes = 0.05 }
+	factory_goods_output = { automobiles = 0.05 }
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -808,7 +886,7 @@ puddling = {
 		}
 		
 		modifier = {
-			factor = 0
+			factor =   0
 			any_owned_province = {
 				controlled_by = THIS
 				province_control_days = 365
@@ -1388,6 +1466,134 @@ electric_furnace = {
 		}
 	}
 }
+modern_metallurgy = {
+	area = metallurgy
+	year = 1930
+	cost = 40000
+	
+	factory_goods_output = {
+		steel = 0.05 
+	}
+	rgo_goods_output = {
+		iron = 0.4
+	}
+	rgo_goods_output = {
+		coal = 0.4
+	}
+	rgo_goods_output = {
+		sulphur = 0.2
+	}
+	factory_goods_throughput = {
+		steel = 0.025
+	}
+	rgo_goods_throughput = {
+		coal = 0.2
+	}
+	rgo_goods_throughput = {
+		iron = 0.2
+	}
+	rgo_goods_throughput = {
+		sulphur = 0.1
+	}
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 10
+			big_producer = coal
+		}
+		modifier = {
+			factor = 10
+			big_producer = iron
+		}
+		modifier = {
+			factor = 2
+			big_producer = sulphur
+		}
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				produces = coal
+			}
+		}
+		modifier = {
+			factor = 2
+			any_owned_province = {
+				produces = iron
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = sulphur
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			OR = {
+				industrial_score = 10
+				tag = RUS
+			}
+			any_owned_province = {
+				OR = {
+					produces = iron
+					produces = coal
+				}
+			}
+		}
+		modifier = {
+			factor = 1.1
+			any_owned_province = {
+				produces = precious_metal
+			}
+		}
+		modifier = {
+			factor = 3
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				literacy = 0.4
+				big_producer = coal
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			any_owned_province = {
+				controlled_by = THIS
+				province_control_days = 365
+				OR = {
+					trade_goods = coal
+					trade_goods = iron
+				}
+				unemployment_by_type = { value = 0.01 type = labourers }
+			}
+			any_neighbor_country = {
+				any_owned_province = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+					}
+					province_control_days = 365
+					unemployment_by_type = { value = 0.01 type = labourers }
+				} 
+			}
+			any_greater_power = {
+				any_owned_province = {
+					OR = {
+						trade_goods = coal
+						trade_goods = iron
+					}
+					province_control_days = 365
+					unemployment_by_type = { value = 0.01 type = labourers }
+				}
+			}
+		}
+	}
+}
+
 
 #tech_infrastructure
 experimental_railroad = {
@@ -1587,6 +1793,36 @@ limited_access_roads = {
 	year = 1915
 	cost = 21600
 
+	max_railroad = 1
+	ai_chance = {
+		factor = 3
+		modifier = {
+			factor = 1.5
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 1.4
+			tech_school = prussian_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
+modern_infrastructure = {
+	area = tech_infrastructure
+	year = 1930
+	cost = 40000
+	
 	max_railroad = 1
 	ai_chance = {
 		factor = 3
@@ -1834,8 +2070,43 @@ synthetic_polymers = {
 			factor = 0.25
 			NOT = { literacy = 0.4 }
 		}
-	}
-	
+	}	
+
 }
+synthetic_production = {
+	area = chemistry_and_electricity
+	year = 1930
+	cost = 40000
+	
+	rgo_goods_output = {
+		rubber = 0.25
+	}
+	rgo_goods_output = {
+		oil = 0.25
+	}
+	factory_goods_output = { oil = 0.25 }
+	ai_chance = {
+		factor = 1.1
+		modifier = {
+			factor = 1.02
+			tech_school = industrial_tech_school
+		}
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1000
+		}
+		modifier = {
+			factor = 1.2
+			industrial_score = 1500
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}	
 
-
+}

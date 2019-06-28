@@ -1,0 +1,63 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+synthetic_production;Synthetic Production;;;;;;;;;;;;x,,
+synthetic_production_desc;;;;;;;;;;;;;x,,
+modern_infrastructure;Modern Infrastructure;;;;;;;;;;;;x,,
+modern_infrastructure_desc;;;;;;;;;;;;;x,,
+modern_metallurgy;Modern Metallurgy;;;;;;;;;;;;x,,
+modern_metallurgy_desc;;;;;;;;;;;;;x,,
+mechanized_manufacture;Mechanized Manufacturing;;;;;;;;;;;;x,,
+mechanized_manufacture_desc;;;;;;;;;;;;;x,,
+modern_power_generation;Modern Power Generation;;;;;;;;;;;;x,,
+modern_power_generation_desc;;;;;;;;;;;;;x,,
+humanistic_psychology;Humanistic Psychology;;;;;;;;;;;;x,,
+humanistic_psychology_desc;Humanistic psychology was developed in the 1950s in reaction to both behaviorism and psychoanalysis. By using phenomenology, intersubjectivity, and first-person categories, the humanistic approach sought to glimpse the whole person - not just the fragmented parts of the personality or cognitive functioning. Humanism focused on fundamentally and uniquely human issues, such as individual free will, personal growth, self-actualization, self-identity, death, aloneness, freedom, and meaning. The humanistic approach was distinguished by its emphasis on subjective meaning, rejection of determinism, and concern for positive growth rather than pathology. Some founders of the humanistic school of thought were American psychologists Abraham Maslow, who formulated a hierarchy of human needs, and Carl Rogers, who created and developed client-centered therapy.;;;;;;;;;;;;x,,
+total_war;Total War;;;;;;;;;;;;x,,
+total_war_desc;It has become increasingly clear that we have entered a new era of unprecedented warfare. The conflicts of our time are no longer mere local issues, but instead reach every corner of the world. Considering the ever increasing stakes and the terrifying impact of these hostilities on the nations involved, there is no longer any need for restrain.;;;;;;;;;;;;;x,,
+mathematical_sociology;Mathematical Sociology;;;;;;;;;;;;x,,
+mathematical_sociology_desc;Mathematical sociology is the use of mathematics to construct social theories. Mathematical sociology aims to take sociological theory, which is strong in intuitive content but weak from a formal point of view, and to express it in formal terms. Starting in the early 1940s, Nicolas Rashevsky, and subsequently in the late 1940s, Anatol Rapoport and others, developed a relational and probabilistic approach to the characterization of large social networks in which the nodes are persons and the links are acquaintanceship. During the late 1940s, formulas were derived that connected local parameters such as closure of contacts.;;;;;;;;;;;;x,,
+critical_theory;Critical Theory;;;;;;;;;;;;x,,
+critical_theory_desc;Critical theory is a school of thought that stresses the reflective assessment and critique of society and culture by applying knowledge from the social sciences and the humanities. In philosophy, the term critical theory describes the neo-Marxist philosophy of the Frankfurt School, which was developed in Germany in the 1930s. Frankfurt theorists drew on the critical methods of Karl Marx and Sigmund Freud. Critical theory maintains that ideology is the principal obstacle to human liberation. It was primarily established by five Frankfurt School theoreticians: Herbert Marcuse, Theodor Adorno, Max Horkheimer, Walter Benjamin, and Erich Fromm.;;;;;;;;;;;;x,,
+modern_aesthetics;Modern Aesthetics;;;;;;;;;;;;x,,
+modern_aesthetics_desc;;;;;;;;;;;;;x,,
+modern_business_management;Modern Business Management;;;;;;;;;;;;x,,
+modern_business_management_desc;;;;;;;;;;;;;x,,
+modern_financial_institutions;Modern Financial Institutions;;;;;;;;;;;;x,,
+modern_financial_institutions_desc;;;;;;;;;;;;;x,,
+modern_monetary_system;Modern Monetary System;;;;;;;;;;;;x,,
+modern_monetary_system_desc;;;;;;;;;;;;;x,,
+neoliberal_theory;Neoliberal Theory;;;;;;;;;;;;x,,
+neoliberal_theory_desc;Originally neoliberalism was an economic philosophy that emerged among European liberal scholars in the 1930s attempting to trace a so-called 'Third' or 'Middle Way' between the conflicting philosophies of classical liberalism and collectivist central planning. The impetus for this development arose from a desire to avoid repeating the economic failures of the early 1930s, which were mostly blamed on the economic policy of classical liberalism. In the decades that followed, the use of the term neoliberal tended to refer to theories at variance with the more laissez-faire doctrine of classical liberalism and promoted instead a market economy under the guidance and rules of a strong state, a model which came to be known as the social market economy.;;;;;;;;;;;;x,,
+globalized_markets;Globalized Markets;;;;;;;;;;;;x,,
+globalized_markets_desc;Globalization is the process of international integration arising from the interchange of world views, products, ideas and other aspects of culture. Advances in transportation and telecommunications infrastructure, including the rise of the telegraph and its posterity the Internet, are major factors in globalization, generating further interdependence of economic and cultural activities. Though scholars place the origins of globalization in modern times, others trace its history long before the European age of discovery and voyages to the New World. Large-scale globalization began in the 19th century and in the late 19th century and early 20th century, the connectedness of the world's economies and cultures grew very quickly.;;;;;;;;;;;;x,,
+fleet_in_being;Fleet in Being;;;;;;;;;;;;x,,
+fleed_in_being_desc;;;;;;;;;;;;;x,,
+carriers;Carriers;;;;;;;;;;;;x,,
+carriers_desc;;;;;;;;;;;;;x,,
+early_20th_century_naval_design;Early 20th Century Naval Design;;;;;;;;;;;;x,,
+early_20th_century_naval_design_desc;;;;;;;;;;;;;x,,
+carrier_tactics;Carrier Tactics;;;;;;;;;;;;x,,
+carrier_tactics;;;;;;;;;;;;;x,,
+early_20th_century_naval_training;Early 20th Century Naval Training;;;;;;;;;;;;x,,
+early_20th_century_naval_training;;;;;;;;;;;;;x,,
+maginot_line;Maginot Line;;;;;;;;;;;;x,,
+maginot_line_desc;;;;;;;;;;;;;x,,
+submachine_guns;Submachine Guns;;;;;;;;;;;;x,,
+submachine_guns_desc;;;;;;;;;;;;;x,,
+motorized_artillery;Motorized Artillery;;;;;;;;;;;;x,,
+motorized_artillery_desc;;;;;;;;;;;;;x,,
+motorized_infantry;Motorized Infantry;;;;;;;;;;;;x,,
+motorized_infantry_desc;;;;;;;;;;;;;x,,
+total_war_philosophy;Total War Philosophy;;;;;;;;;;;;x,,
+total_war_philosophy_desc;Gentlemen, all I ask for is war, a war so grand as to make Hell itself tremble.;;;;;;;;;;;;;x,,
+carrier;Carrier;;;;;;;;;;;;x,,
+mechanized_infantry;Mechanized Infantry;;;;;;;;;;;;x,,
+NORMAL_TOTAL_WAR_COLONIAL_NAME;$ORDER$$FIRST_COUNTRY$'s Total War against $SECOND_COUNTRY$;Grande Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Gr廲er Krieg;Baza;Base:;Base:;Alap:;Z嫜ladna:;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+NORMAL_TOTAL_WAR_TAKE_NAME;$ORDER$$FIRST_COUNTRY$'s Total War against $SECOND_COUNTRY$;Grande Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Gr廲er Krieg;Baza;Base:;Base:;Alap:;Z嫜ladna:;;;;;;;x;;;;;;;;;;;;;;,,,;;;;;;;;;;;;;;;;;;;;;;
+total_war_place_in_the_sun;Total War Acquire Colony;;;;;;;;;;;
+total_war_place_in_the_sun_short;The time has come to wipe the very idea of $RECIPIENT$ from the annals of history;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+total_war_place_in_the_sun_desc;Acquire an enemy country's colony for 0 warscore & 0 infamy.;;;;;;;;;;;
+total_war_place_in_the_sun_setup;The peoples of $RECIPIENT$$ stand in the way of a better world;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+total_war_state;Total War Acquire State;;;;;;;;;;;
+total_war_state_short;The time has come to wipe the very idea of $RECIPIENT$ from the annals of history;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+total_war_state_desc;Acquire an enemy country's state for 0 warscore & 0 infamy.;;;;;;;;;;;
+total_war_state_setup;The peoples of $RECIPIENT$$ stand in the way of a better world;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

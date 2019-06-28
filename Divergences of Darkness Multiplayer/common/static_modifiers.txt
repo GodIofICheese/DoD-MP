@@ -177,6 +177,7 @@ war_exhaustion = {
 	factory_throughput = -0.01
 	cb_generation_speed_modifier = -0.02
 	RGO_throughput = -0.01
+	global_immigrant_attract = -0.005
 }
 
 

@@ -165,6 +165,33 @@ mass_culture_n_the_avant_garde = {
 		}
 	}
 }
+modern_aesthetics = {
+	area = aesthetics
+	year = 1930
+	cost = 40000
+	permanent_prestige = 50
+	prestige = 0.2
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 0.1
+			not = { literacy = 0.5  }
+			is_greater_power = no
+		}			
+		modifier = {
+			factor = 1.05
+			literacy = 0.6
+		}		
+		modifier = {
+			factor = 2
+			tech_school = culture_tech_school
+		}
+	}
+}
 
 
 #philosophy
@@ -332,7 +359,7 @@ phenomenology_n_hermeneutic = {
 	year = 1880
 	cost = 18000
 
-	increase_research = 0.5
+	increase_research = 0.4
 	ai_chance = {
 		factor = 90
 		modifier = {
@@ -365,7 +392,7 @@ anti__rationalism = {
 	year = 1900
 	cost = 21600
 
-	increase_research = 0.5
+	increase_research = 0.4
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -390,6 +417,39 @@ anti__rationalism = {
 		modifier = {
 			factor = 2
 			year = 1910
+		}
+	}
+}
+critical_theory = {
+	area = philosophy
+	year = 1930
+	cost = 40000
+	
+	increase_research = 0.4
+	ai_chance = {
+		factor = 100
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 20
+			OR = {
+				is_greater_power = yes
+				is_secondary_power = yes
+			}
+		}
+		modifier = {
+			factor = 10
+			civilized = yes
+		}
+		modifier = {
+			factor = 1.1
+			year = 1935
+		}
+		modifier = {
+			factor = 2
+			year = 1940
 		}
 	}
 }
@@ -644,6 +704,38 @@ social_alienation = {
 	colonial_migration = 0.05
 	education_efficiency = 0.1
 	increase_research = 0.10
+	ai_chance = {
+		factor = 1.05
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2 #2
+			not = { literacy = 0.75 }
+		}
+		modifier = {
+			factor = 2 #2
+			not = { literacy = 0.50 }
+		}
+		modifier = {
+			factor = 2 #2
+			not = { literacy = 0.25 }
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+	}
+
+}
+mathematical_sociology = {
+	area = social_thought
+	year = 1930
+	cost = 40000
+	
+	war_exhaustion = -0.25
+	colonial_migration = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -948,6 +1040,33 @@ mass_politics = {
 		}
 	}
 }
+total_war = {
+	area = political_thought
+	year = 1930
+	cost = 40000
+	
+	max_national_focus = 1
+	cb_creation_speed = 1	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 5
+			total_pops = 6000000
+		}
+		modifier = {
+			factor = 3
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}
 
 
 #psychology
@@ -1168,4 +1287,34 @@ behaviorism = {
 	}
 }
 
-
+humanistic_psychology = {
+	area = psychology
+	year = 1930
+	cost = 40000
+	
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	ai_chance = {
+		factor = 1.01
+		modifier = {
+			factor = 1.25
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 1.02
+			tech_school = culture_tech_school
+		}
+		modifier = {
+			factor = 1.1
+			year = 1910
+		}
+		modifier = {
+			factor = 2
+			year = 1920
+		}
+		modifier = {
+			factor = 0.25
+			NOT = { literacy = 0.4 }
+		}
+	}
+}

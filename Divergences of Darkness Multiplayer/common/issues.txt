@@ -640,6 +640,7 @@ political_reforms = {
 		no_colonies = {
 			allow = { colonial_nation = no }
 			supply_consumption = -0.1
+			tax_efficiency = 0.05
 			administrative_efficiency_modifier = 0.05
 			army_tech_research_bonus = 0.05
 		}

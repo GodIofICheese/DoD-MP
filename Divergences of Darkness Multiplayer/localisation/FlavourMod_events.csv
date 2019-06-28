@@ -4,3 +4,6 @@ EVTDESC99801;Now that $COUNTRY$ is a colonial power, it is time to decide a poli
 EVT99801OPTA;Our people need more land to settle!;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT99801OPTB;We shall rule our colonies through local rulers.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
 EVT99801OPTC;It is our burden to bring civilization to these lands.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTNAME99802;Non-Colonial Nation;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVTDESC99802;Now that $COUNTRY$ is no longer a colonial power, it is time to reform the bureaucracy centered on the $COUNTRY_ADJ$ homeland.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,
+EVT99802OPTA;Who needs a place in the sun anyways?;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,

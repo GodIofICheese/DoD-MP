@@ -1684,7 +1684,7 @@ signed_the_geneva_convention = {
 #### VEN - Venice ####
 venetian_shipyards = {
 	local_repair = 0.5
-	local_ship_build = -0.50
+	local_ship_build = -0.20
 	icon = 15
 }
 
@@ -2808,7 +2808,8 @@ recruitment_drive = {
 ##### Immigration #####
 the_open_door = {
 	global_immigrant_attract = 0.25
-	mobilisation_size = -0.01
+	mobilisation_size = -0.005
+	global_pop_militancy_modifier = 0.01
 	icon = 5
 }
 

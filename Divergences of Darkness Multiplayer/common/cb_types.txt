@@ -39,6 +39,8 @@
 
 # Order that CBs are executed in a peace treaty
 peace_order = {
+total_war_place_in_the_sun
+total_war_state
 treaty_port_casus_belli
 war_reparations
 become_independent
@@ -73,6 +75,8 @@ liberate_country
 free_peoples
 free_allied_cores
 free_balkans
+annex_india_AI
+annex_india_full_AI
 monroe_doctrine
 oriental_crisis
 unification_release_puppet_cb
@@ -108,8 +112,6 @@ conquest_any
 conquest_low
 annex_africa
 annex_africa_full
-annex_india_AI
-annex_india_full_AI
 establish_protectorate_BC_casus_belli
 establish_protectorate_NI_casus_belli
 establish_protectorate_casus_belli
@@ -988,7 +990,7 @@ add_to_sphere = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
-		NOT = { total_pops = 11000000 }
+		NOT = { total_pops = 40000000 }
 		THIS = { is_greater_power = yes }
 		is_greater_power = no
 		is_vassal = no
@@ -7037,6 +7039,159 @@ acquire_state_late = {
 			from = jingoism 
 			to = pro_military
 			value = 0.00
+		}
+	}
+}
+
+#Total War Acquire State
+total_war_state = {
+	sprite_index = 6
+	is_triggered_only = yes
+	months = 0
+	crisis = no
+
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 0
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 2
+	break_truce_militancy_factor = 2
+	truce_months = 12
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	construction_speed = 0.5
+
+	can_use = {
+	     AND = {
+		   NOT = { has_country_modifier = no_more_war }
+		   year = 1930
+		   is_independant = yes
+		   number_of_states = 1 # annex if you want their last state
+	    }
+	}
+	
+	allowed_states = {
+		OR = {
+			is_colonial = no
+		}
+		any_owned_province = {
+                     OR = {
+			is_colonial = no
+                     }
+		}
+		not = { any_owned_province = { is_capital = yes } }
+
+	}
+		
+
+	po_demand_state = yes
+	
+	war_name = TOTAL_WAR_TAKE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.00
+		}
+	}
+}
+
+total_war_place_in_the_sun = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 12
+	
+	badboy_factor = 0
+	prestige_factor = 1
+	peace_cost_factor = 0
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 3
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		year = 1930
+		is_vassal = no
+		any_owned_province = { is_colonial = yes }
+		THIS = {
+			NOT = { has_country_modifier = neutrality }
+			OR = {
+				num_of_ports = 1
+				any_owned_province = { any_neighbor_province = { NOT = { owned_by = THIS } is_colonial = yes } }
+			}
+		}
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		OR = {
+			THIS = { government = fascist_dictatorship }
+			THIS = { government = proletarian_dictatorship }
+			THIS = { civilized = no }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+	}
+	
+	allowed_states = {
+		any_owned_province = { is_colonial = yes }
+		OR = {
+			any_owned_province = {
+				NOT = {
+					OR = {
+					any_core = { exists = yes }
+					any_core = { exists = no }
+					}
+				}
+			}
+			any_owned_province = {
+				any_core = { civilized = no }
+			}
+			any_owned_province = { continent = africa }
+			THIS = { ai = no }
+		}
+		OR = {
+			THIS = { ai = no }
+			any_owned_province = { any_neighbor_province = { owned_by = THIS } }
+			AND = {
+				any_owned_province = { port = yes }
+				THIS = { any_owned_province = { port = yes } }
+			}
+		}
+	}
+	
+	allowed_states_in_crisis = {
+		any_owned_province = {
+			OR = {
+				port = yes
+				any_neighbor_province = { owner = { tag = THIS } }
+			}
+		}
+	}
+
+	po_demand_state = yes
+
+	war_name = TOTAL_WAR_COLONIAL_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
 		}
 	}
 }

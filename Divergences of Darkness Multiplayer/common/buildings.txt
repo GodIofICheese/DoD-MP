@@ -639,20 +639,19 @@ fertilizer_factory = {
 
 fort = {      
 	type = fort
+	cost = 500
 	goods_cost =
 	{
-		steel = 100
-		lumber = 100
-		cement = 100
-		explosives = 50
-		small_arms = 50
-		artillery = 40
-		ammunition = 10
+		lumber = 600
+		cement = 400
+		explosives = 200
+		small_arms = 200
+		artillery = 180
 	}
-	time = 1080 
+	time = 270 
 	visibility = yes
 	onmap = yes
-	max_level = 6
+	max_level = 16
 	province = yes
 	fort_level = 1
 }
@@ -673,9 +672,8 @@ naval_base = {
 	onmap = yes
 	port = yes
 	visibility = yes
-	max_level = 6
-	# Audax Validator "." Ignore_NEXT
-	colonial_points = { 30 50 70 90 110 130 } #points at levels 1-6
+	max_level = 7
+	colonial_points = { 30 50 70 90 110 130 150 } #points at levels 1-7
 	province = yes
 	one_per_state = yes
 	colonial_range = 25
@@ -693,7 +691,7 @@ railroad = {
 	time = 730
 	visibility = yes
 	onmap = yes
-	max_level = 6
+	max_level = 7
 	province = yes
 	
 	infrastructure = 0.16

@@ -173,3 +173,34 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = 99802 #No Colonies Colonial Policy
+	title = "EVTNAME99802"
+	desc = "EVTDESC99802"
+	picture = "exemplar_colony"
+
+	trigger = {
+		civilized = yes
+		OR = {
+		colonial_policy = exploitation
+		colonial_policy = civilizing
+		colonial_policy = settlement
+		}
+		colonial_nation = no
+		NOT = {
+			#ai = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVT99802OPTA"
+		prestige = -20
+		political_reform = no_colonies
+		clr_country_flag = is_now_colonial
+	}
+}

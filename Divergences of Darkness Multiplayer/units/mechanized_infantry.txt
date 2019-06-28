@@ -1,0 +1,48 @@
+#======= WW2 =========
+mechanized_infantry = {
+	icon = 22
+	
+	type = land
+	sprite = Tank
+	active = no
+	unit_type = infantry
+	floating_flag = yes
+	primary_culture = yes
+	#Core Abilities
+	priority = 50
+	max_strength = 3
+	default_organisation = 40
+	maximum_speed = 10.0
+	weighted_value = 10.0
+
+
+	#Building Costs
+	build_time = 240
+	# cost c.100 per div 5M/mech - > 0.5B
+	build_cost = {
+		automobiles = 20
+		canned_food = 10
+		small_arms = 10
+		fuel = 5
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		automobiles = 0.03
+		small_arms = 0.02 #0.015
+		canned_food = 0.07 # 0.08
+		ammunition = 0.1 #0
+		fuel = 0.2        #3.75
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 2
+	attack = 18
+	defence = 20
+	discipline = 1.2
+	support = 1.0
+	maneuver = 2
+	siege = 0
+	
+}
