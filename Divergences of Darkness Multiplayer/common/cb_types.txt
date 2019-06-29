@@ -7069,7 +7069,7 @@ total_war_state = {
 	can_use = {
 	     AND = {
 		   NOT = { has_country_modifier = no_more_war }
-		   year = 1940
+		   year = 1930
 		   is_independant = yes
 		   number_of_states = 1 # annex if you want their last state
 	    }
@@ -7123,7 +7123,7 @@ total_war_place_in_the_sun = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
-		year = 1940
+		year = 1930
 		is_vassal = no
 		any_owned_province = { is_colonial = yes }
 		THIS = {
