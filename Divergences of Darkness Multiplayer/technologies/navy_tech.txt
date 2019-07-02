@@ -1885,6 +1885,7 @@ early_20th_century_naval_design = {
 	}
 }
 
+
 #naval_science
 alphabetic_flag_signaling = {
 	area = naval_science
@@ -2901,5 +2902,3 @@ early_20th_century_naval_training = {
 		}
 	}
 }
-
-

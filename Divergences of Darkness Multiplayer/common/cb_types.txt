@@ -7058,7 +7058,7 @@ total_war_state = {
 	break_truce_prestige_factor = 1
 	break_truce_infamy_factor = 2
 	break_truce_militancy_factor = 2
-	truce_months = 6
+	truce_months = 12
 	
 	good_relation_prestige_factor = 1
 	good_relation_infamy_factor = 1
@@ -7069,7 +7069,7 @@ total_war_state = {
 	can_use = {
 	     AND = {
 		   NOT = { has_country_modifier = no_more_war }
-		   year = 1940
+		   year = 1930
 		   is_independant = yes
 		   number_of_states = 1 # annex if you want their last state
 	    }
@@ -7123,7 +7123,7 @@ total_war_place_in_the_sun = {
 
 	can_use = {
 		NOT = { is_our_vassal = THIS }
-		year = 1940
+		year = 1930
 		is_vassal = no
 		any_owned_province = { is_colonial = yes }
 		THIS = {

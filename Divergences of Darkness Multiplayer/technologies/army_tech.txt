@@ -1762,11 +1762,13 @@ submachine_guns = {
 		defence = 2
 		supply_consumption = 0.2
 	}
+	
 	guard = {
 		attack = 6
 		defence = 3
 		supply_consumption = 0.2
 	}
+	
 	mechanized_infantry = {
 		attack = 6
 		defence = 3
@@ -2634,23 +2636,25 @@ motorized_artillery	= {
 	year = 1930
 	cost = 40000
 	unciv_military = yes
+	
 	artillery = {
 		attack = 1
 		defence = 1
 		supply_consumption = 0.3
 	}
+	
 	tank = {
 		attack = 6
 		defence = 4
 		reconnaissance = 1
 		maximum_speed = 1		
 	}
+	
 	plane = {
 		attack = 2
 		defence = 2
 		reconnaissance = 2		
 	}
-	
 	
 	ai_chance = {
 		factor = 4
@@ -2778,6 +2782,7 @@ motorized_artillery	= {
 		}
 	}
 }
+
 
 #military_science
 military_staff_system = {
@@ -3606,11 +3611,14 @@ motorized_infantry = {
 	area = military_science
 	year = 1930
 	cost = 40000
+	
 	army_base = {
 		default_organisation = 10
 		supply_consumption = 0.05
 	}
+	
 	activate_unit = mechanized_infantry
+	
 	mechanized_infantry = {
 			supply_consumption = 0.20
 	}
@@ -4403,4 +4411,5 @@ total_war_philosophy = {
 		}
 	}
 }
+
 

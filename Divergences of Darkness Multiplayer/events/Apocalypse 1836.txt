@@ -1,0 +1,453 @@
+#Outbreak
+country_event = {
+	id = 999901
+	title = "OUTBREAK_START_TITLE"
+	desc = "OUTBREAK_START_DESC"
+	picture = disease
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		NOT = {
+			has_country_flag = zombie_outbreak
+			has_country_flag = zombie_outbreak_defeat
+			has_country_flag = zombie_outbreak_victory
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "OUTBREAK_START_OPT"
+		random_country = {
+			limit = {
+				NOT = { tag = SOK }
+				number_of_states = 3
+				continent = asia
+			}
+			country_event = 999902
+		}
+		random_country = {
+			limit = {
+				NOT = { tag = SOK }
+				number_of_states = 3
+				continent = europe
+			}
+			country_event = 999902
+		}
+		random_country = {
+			limit = {
+				NOT = { tag = SOK }
+				number_of_states = 3
+				OR = {
+				continent = north_america
+				continent = south_america
+				}
+			}
+			country_event = 999902
+		}
+		random_country = {
+			limit = {
+				NOT = { tag = SOK }
+				number_of_states = 1
+			}
+			country_event = 999902
+		}
+	}
+}
+
+#Country to Province
+country_event = {
+	id = 999902
+	title = "OUTBREAK_START_LOCAL_TITLE"
+	desc = "OUTBREAK_START_LOCAL_DESC"
+	picture = disease
+
+	trigger = {
+		any_neighbor_country = {
+			has_country_flag = zombie_outbreak
+		}
+		NOT = {
+			has_country_flag = zombie_outbreak
+			has_country_flag = zombie_outbreak_defeat
+			has_country_flag = zombie_outbreak_victory
+			any_owned_province = {
+				has_province_modifier = zombie_outbreak
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "OUTBREAK_START_LOCAL_OPT"
+		set_country_flag = zombie_outbreak
+		any_pop = {
+			consciousness = 1
+			militancy = -2
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = no
+				is_overseas = no
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = no
+				is_overseas = no
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = no
+				is_overseas = no
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = yes
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Province to Country
+country_event = {
+	id = 999903
+	title = "OUTBREAK_START_LOCAL_TITLE"
+	desc = "OUTBREAK_START_LOCAL_DESC"
+	picture = disease
+
+	trigger = {
+		any_owned_province = {
+			has_province_modifier = zombie_outbreak
+		}
+		NOT = {
+			has_country_flag = zombie_outbreak
+			has_country_flag = zombie_outbreak_defeat
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 21
+	}
+
+	option = {
+		name = "Uh oh."
+		set_country_flag = zombie_outbreak
+		any_pop = {
+			consciousness = 1
+			militancy = -2
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = no
+				is_overseas = no
+			}
+			any_pop = {
+				reduce_pop = 0.8
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Province Victory
+province_event = {
+	id = 999914
+	title = "OUTBREAK_PLAYER_VICTORY_TITLE"
+	desc = "OUTBREAK_PLAYER_VICTORY_DESC"
+
+	trigger = {
+		has_province_modifier = zombie_outbreak
+		NOT = {
+			controlled_by = REB
+			country_units_in_province = REB
+		}
+		units_in_province = 10
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 1.25
+			any_neighbor_province = {
+				has_province_modifier = zombie_outbreak
+			}
+		}
+	}
+
+	option = {
+		name = "Excellent."
+		remove_province_modifier = zombie_outbreak
+		any_pop = {
+			consciousness = 2
+			militancy = -8
+		}
+	}
+}
+
+#Country Victory
+country_event = {
+	id = 999915
+	title = "OUTBREAK_PLAYER_VICTORY_NATION_TITLE"
+	desc = "OUTBREAK_PLAYER_VICTORY_NATION_DESC"
+	picture = prosper
+
+	trigger = {
+		has_country_flag = zombie_outbreak
+		NOT = {
+			any_owned_province = {
+				has_province_modifier = zombie_outbreak
+			}
+			has_country_flag = zombie_outbreak_victory
+			num_of_revolts = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = "Excellent."
+		clr_country_flag = zombie_outbreak
+		set_country_flag = zombie_outbreak_victory
+		any_pop = {
+			consciousness = -5
+			militancy = -8
+		}
+	}
+}
+
+#Province to Province
+country_event = {
+	id = 999916
+	title = "OUTBREAK_SPREAD_LOCAL_TITLE"
+	desc = "OUTBREAK_SPREAD_LOCAL_DESC"
+	picture = disease
+
+	trigger = {
+			any_owned_province = {
+				has_province_modifier = zombie_outbreak
+			}
+		}	
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "OUTBREAK_SPREAD_LOCAL_OPT"
+			random_province = {
+			limit = {
+				has_province_modifier = zombie_outbreak
+			}
+			random_neighbor_province = {
+			limit = {
+				NOT = { has_province_modifier = zombie_outbreak }
+				NOT = { units_in_province = 10 }
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+			}
+			}
+			random_province = {
+			limit = {
+				has_province_modifier = zombie_outbreak
+			}
+			any_neighbor_country = {
+			limit = {
+				neighbor = THIS
+			}
+			random_neighbor_province = {
+			limit = {
+				NOT = { has_province_modifier = zombie_outbreak }
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+			}
+			}
+			}
+		}
+}
+
+#Global Defeat
+country_event = {
+	id = 999924
+	title = "OUTBREAK_TETW_TITLE"
+	desc = "OUTBREAK_TETW_DESC"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Oh uh."
+		clr_country_flag = zombie_outbreak
+		set_country_flag = zombie_outbreak_defeat
+		any_pop = {
+			reduce_pop = 0.1
+			consciousness = -5
+			militancy = -10
+		}
+		any_owned_province = {
+			remove_province_modifier = zombie_outbreak
+		}
+	}
+}
+
+##Terra Nullius
+#province_event = {
+#	id = 999025
+#	title = "EVTNAME999025"
+#	desc = "EVTDESC999025"
+#
+#	trigger = {
+#		has_province_modifier = zombie_outbreak
+#		controlled_by = REB
+#		NOT = {
+#			country_units_in_province = THIS
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 18
+#		modifier = {
+#			factor = 0.5
+#			any_neighbor_province = {
+#				has_province_modifier = zombie_outbreak
+#			}
+#		}
+#		modifier = {
+#			factor = 0.5
+#			has_empty_adjacent_province = yes
+#		}
+#	}
+#
+#	option = {
+#		name = "Uh oh."
+#		any_pop = {
+#			reduce_pop = 0.4
+#			militancy = 8
+#			consciousness = -3
+#		}
+#		#add_core = this
+#		change_controller = THIS
+#		secede_province = FROM
+#		#trade_goods = fish
+#	}
+#}
+
+##### Added 12/18/11 #####
+
+#The Zombies are back!
+country_event = {
+	id = 999928
+	title = "OUTBREAK_RESURGE_TITLE"
+	desc = "OUTBREAK_RESURGE_DESC"
+	picture = disease
+
+	trigger = {
+		any_owned_province = {
+			has_province_modifier = zombie_outbreak
+		}
+		has_country_flag = zombie_outbreak_victory
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "Oh no!"
+		clr_country_flag = zombie_outbreak_victory
+		set_country_flag = zombie_outbreak
+		any_owned_province = {
+			limit = {
+				has_province_modifier = zombie_outbreak
+			}
+			any_pop = {
+				reduce_pop = 0.99
+				consciousness = -3
+				militancy = 10
+			}
+		}
+	}
+}
+
+#Deletes 1 pop countries
+country_event = {
+	id = 999931
+	title = "Dead Land"
+	desc = "Your civilisation could not stand the test of time."
+
+	trigger = { 
+	THIS = { NOT = { total_pops = 100 } }
+
+	}
+	
+	mean_time_to_happen = { days = 3 }
+  
+	option = {
+	name = "I'm sorry."
+	
+	annex_to = { ZOM }
+	
+   }
+}
+

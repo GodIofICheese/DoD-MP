@@ -324,11 +324,16 @@ modern_power_generation = {
 	ai_chance = {
 		factor = 2
 		modifier = {
-			factor = 4
+			factor = 2
 			OR = {
-				unemployment_by_type = { value = 0.01 type = labourers }
-				unemployment_by_type = { value = 0.01 type = farmers }
-			}
+				big_producer = grain
+				big_producer = cotton
+				big_producer = cattle
+				big_producer = tea
+				big_producer = coffee
+				big_producer = silk
+				big_producer = tobacco
+				big_producer = fruit
 			}
 		}
 		modifier = {
@@ -2040,7 +2045,6 @@ electricity = {
 			tech_school = prussian_tech_school
 		}
 	}
-
 }
 synthetic_polymers = {
 	area = chemistry_and_electricity
@@ -2071,7 +2075,6 @@ synthetic_polymers = {
 			NOT = { literacy = 0.4 }
 		}
 	}	
-
 }
 synthetic_production = {
 	area = chemistry_and_electricity
@@ -2108,5 +2111,6 @@ synthetic_production = {
 			NOT = { literacy = 0.4 }
 		}
 	}	
-
 }
+
+

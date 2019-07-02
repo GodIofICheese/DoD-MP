@@ -4,7 +4,7 @@ carrier = {
 	naval_icon = 10
 	
 	type = naval
-	sprite = Carrier
+	sprite = Battleship
 	unit_type = big_ship
 	capital = yes
 	active = no

@@ -182,46 +182,18 @@ modern_financial_institutions = {
 	
 	tax_eff = 5
 	ai_chance = {
-		factor = 1
-		modifier = {
-			factor = 0.5
-			not = { year = 1935 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = 1.2
-			literacy = 0.5
-			NOT = { literacy = 0.7 }
-		}
+		factor = 1.5
 		modifier = {
 			factor = 1.5
-			literacy = 0.7
+			rank = 16
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 8
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
-		}
-		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			tech_school = culture_tech_school
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 1.02
+			tech_school = commerce_tech_school
 		}
 	}
 }
@@ -384,41 +356,22 @@ modern_monetary_system = {
 
 	administrative_efficiency = 0.05	
 	ai_chance = {
-		factor = 1
-		modifier = {
-			factor = 0.5
-			NOT = { year = 1935 }
-		}
-		modifier = {
-			factor = 1.5
-			year = 1940
-		}
+		factor = 1.2
 		modifier = {
 			factor = 5
-			NOT = { money = 10000 }
+			economic_policy = laissez_faire
 		}
 		modifier = {
-			factor = 1.2
-			nationalvalue = nv_equality
+			factor = 1.1
+			rank = 16
 		}
 		modifier = {
-			factor = 1.4
-			nationalvalue = nv_prosperity
+			factor = 3
+			tech_school = commerce_tech_school
 		}
 		modifier = {
-			factor = 0.8
-			tech_school = japanese_tech_school
-		}
-		modifier = {
-			factor = 0.9
-			tech_school = culture_tech_school
-		}
-		modifier = {
-			factor = 1.2
-			OR = {
-				tech_school = naval_tech_school
-				tech_school = industrial_tech_school
-			}
+			factor = 0.25
+			NOT = { literacy = 0.4 }
 		}
 	}
 }
@@ -1263,3 +1216,5 @@ modern_business_management = {
 		}
 	}
 }
+
+

@@ -525,6 +525,7 @@ country_event = {
 				limit = { 
 					life_rating = 35
 					NOT = { life_rating = 36 }
+					NOT = { is_core = SCO }
 				} 
 				life_rating = 1 
 			} 
@@ -534,6 +535,7 @@ country_event = {
 				limit = { 
 					life_rating = 30 
 					NOT = { life_rating = 31 }
+					NOT = { is_core = SCO }
 				} 
 				life_rating = 6 
 			} 
@@ -543,6 +545,7 @@ country_event = {
 				limit = { 
 					life_rating = 25
 					NOT = { life_rating = 26 }
+					NOT = { is_core = SCO }
 				} 
 				life_rating = 11 
 			} 
@@ -552,6 +555,7 @@ country_event = {
 				limit = { 
 					life_rating = 20
 					NOT = { life_rating = 21 }
+					NOT = { is_core = SCO }
 				} 
 				life_rating = 16 
 			} 
@@ -561,6 +565,7 @@ country_event = {
 				limit = { 
 					life_rating = 15
 					NOT = { life_rating = 16 }
+					NOT = { is_core = SCO }
 				} 
 				life_rating = 21 
 			} 
@@ -570,6 +575,7 @@ country_event = {
 				limit = { 
 					life_rating = 10
 					NOT = { life_rating = 11 }
+					NOT = { is_core = SCO }
 				} 
 				life_rating = 26 
 			} 
