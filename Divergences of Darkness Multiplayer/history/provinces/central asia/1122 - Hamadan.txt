@@ -3,6 +3,5 @@ controller = IRQ
 add_core = IRQ        
 add_core = ARY
 add_core = PER
-add_core = TUR
 trade_goods = fruit
 life_rating = 35

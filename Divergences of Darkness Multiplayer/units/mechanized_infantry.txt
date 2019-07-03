@@ -38,8 +38,8 @@ mechanized_infantry = {
 
 	#Land Abilties
 	reconnaissance = 2
-	attack = 18
-	defence = 20
+	attack = 19
+	defence = 21
 	discipline = 1.2
 	support = 1.0
 	maneuver = 2

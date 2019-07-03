@@ -1,0 +1,32 @@
+political_decisions = {
+	
+	enable_zombies = {
+		potential = {
+			ai = no
+			rank = 1
+			NOT = { has_global_flag = zombies_allowed }
+		}	
+		allow = {
+			ai = no
+			rank = 1
+		}
+		effect = {
+		set_global_flag = zombies_allowed
+		}
+	}
+
+	disable_zombies = {
+		potential = {
+			ai = no
+			rank = 1
+			has_global_flag = zombies_allowed
+		}	
+		allow = {
+			ai = no
+			rank = 1
+		}
+		effect = {
+		clr_global_flag = zombies_allowed
+		}
+	}
+}

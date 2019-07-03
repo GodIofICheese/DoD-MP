@@ -2,6 +2,7 @@ owner = HEK
 controller = HEK
 add_core = HEK
 add_core = GER
-add_core = RHItrade_goods = cattle
+add_core = RHI
+trade_goods = cattle
 life_rating = 40
 1861.1.1 = { railroad = 3 }

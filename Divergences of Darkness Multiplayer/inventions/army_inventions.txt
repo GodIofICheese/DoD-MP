@@ -560,7 +560,7 @@ firepower_vs_mobility = {
 			defence = 1
 		}
 		artillery = {
-			defence = 2
+			defence = 0.5
 		}
 		cuirassier = {
 			defence = 1
@@ -1079,9 +1079,8 @@ anti_aircraft_artillery = {
 	effect = {
 		artillery = {
 			attack = 0.1
-			defence = 1
-			support = 0.1
-			supply_consumption = 0.25
+			defence = 0.25
+			supply_consumption = 0.2
 		}
 	}
 }
@@ -1101,9 +1100,8 @@ improved_anti_aircraft_artillery = {
 	effect = {
 		artillery = {
 			attack = 0.1
-			defence = 1
-			support = 0.1
-			supply_consumption = 0.25
+			defence = 0.25
+			supply_consumption = 0.2
 		}
 	}
 }
@@ -1123,8 +1121,7 @@ light_artillery = {
 	effect = {
 		artillery = {
 			attack = 0.1
-			support = 0.1
-			supply_consumption = 0.25
+			supply_consumption = 0.2
 		}
 	}
 }
@@ -1144,8 +1141,7 @@ medium_artillery = {
 	effect = {
 		artillery = {
 			attack = 0.1
-			support = 0.1
-			supply_consumption = 0.25
+			supply_consumption = 0.2
 		}
 	}
 }
@@ -1165,8 +1161,7 @@ heavy_artillery = {
 	effect = {
 		artillery = {
 			attack = 0.1
-			support = 0.1
-			supply_consumption = 0.25
+			supply_consumption = 0.2
 		}
 	}
 }

@@ -795,17 +795,39 @@ political_decisions = {
 		
 		allow = {
 			state_n_government = 1
+			
+			OR = {
 			vote_franschise = none_voting
-			NOT = { press_rights = free_press }
+			has_country_flag = zombie_outbreak
+			}
+			
 			NOT = { has_country_modifier = law_changed_by_force }
+			
+			OR = {
 			NOT = { ruling_party_ideology = liberal }
+			has_country_flag = zombie_outbreak
+			}
+			
+			OR = {
 			NOT = { ruling_party_ideology = conservative }
+			has_country_flag = zombie_outbreak
+			}
+			
+			OR = {
 			NOT = { ruling_party_ideology = socialist }
+			has_country_flag = zombie_outbreak
+			}
+			
+			OR = {
+			NOT = { ruling_party_ideology = anarcho_liberal }
+			has_country_flag = zombie_outbreak
+			}
 			
 			OR = {
 				citizenship_policy = residency
 				government = proletarian_dictatorship
 				government = fascist_dictatorship
+				has_country_flag = zombie_outbreak
 			}
 			
 			OR = {
@@ -816,6 +838,7 @@ political_decisions = {
 				government = fascist_dictatorship
 				government = theocracy
 				government = feudal_monarchy
+				has_country_flag = zombie_outbreak
 			}
 		}
 		

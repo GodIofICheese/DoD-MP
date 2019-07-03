@@ -2,5 +2,6 @@ owner = NAS
 controller = NAS
 add_core = NAS
 add_core = GER
-add_core = RHItrade_goods = cattle
+add_core = RHI
+trade_goods = cattle
 life_rating = 40

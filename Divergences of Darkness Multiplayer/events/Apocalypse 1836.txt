@@ -9,10 +9,12 @@ country_event = {
 	
 	trigger = {
 		ai = no
+		has_global_flag = zombies_allowed
 		NOT = {
 			has_country_flag = zombie_outbreak
 			has_country_flag = zombie_outbreak_defeat
 			has_country_flag = zombie_outbreak_victory
+			has_global_flag = first_zombie_invasion
 		}
 	}
 
@@ -22,6 +24,7 @@ country_event = {
 
 	option = {
 		name = "OUTBREAK_START_OPT"
+		set_global_flag = first_zombie_invasion
 		random_country = {
 			limit = {
 				NOT = { tag = SOK }
@@ -52,14 +55,14 @@ country_event = {
 		random_country = {
 			limit = {
 				NOT = { tag = SOK }
-				number_of_states = 1
+				number_of_states = 2
 			}
 			country_event = 999902
 		}
 	}
 }
 
-#Country to Province
+#Inital Infection
 country_event = {
 	id = 999902
 	title = "OUTBREAK_START_LOCAL_TITLE"
@@ -81,9 +84,20 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 48
+		modifier = {
+			factor = 0.05
+			any_owned = {
+			limit = {
+				is_colonial = no
+			}
+			any_neighbor_province = {
+			limit = {
+			has_province_modifier = zombie_outbreak
+			}
+		}
 	}
-
+	
 	option = {
 		name = "OUTBREAK_START_LOCAL_OPT"
 		set_country_flag = zombie_outbreak
@@ -157,42 +171,34 @@ country_event = {
 	}
 }
 
-#Province to Country
+#Port Infection
 country_event = {
 	id = 999903
-	title = "OUTBREAK_START_LOCAL_TITLE"
-	desc = "OUTBREAK_START_LOCAL_DESC"
+	title = "OUTBREAK_SPREAD_PORT_TITLE"
+	desc = "OUTBREAK_SPREAD_PORT_DESC"
 	picture = disease
 
 	trigger = {
-		any_owned_province = {
-			has_province_modifier = zombie_outbreak
-		}
+		has_global_flag = first_zombie_invasion
+		total_num_of_ports = 1
 		NOT = {
-			has_country_flag = zombie_outbreak
-			has_country_flag = zombie_outbreak_defeat
+			border_policy = closed_borders
 		}
 	}
 
 	mean_time_to_happen = {
-		days = 21
+		months = 1
 	}
 
 	option = {
-		name = "Uh oh."
-		set_country_flag = zombie_outbreak
-		any_pop = {
-			consciousness = 1
-			militancy = -2
-		}
+		name = "OUTBREAK_SPREAD_PORT_OPT"
 		random_province = {
 			limit = {
-				is_capital = no
-				is_colonial = no
-				is_overseas = no
+				port = yes
+				has_recent_imigration = 30
+				NOT = { has_province_modifier = zombie_outbreak }
 			}
 			any_pop = {
-				reduce_pop = 0.8
 				consciousness = -3
 				militancy = 10
 			}
@@ -286,19 +292,23 @@ country_event = {
 		}	
 
 	mean_time_to_happen = {
-		months = 1
+		months = 3
 	}
 
 	option = {
 		name = "OUTBREAK_SPREAD_LOCAL_OPT"
-			random_province = {
+			any_owned = {
 			limit = {
 				has_province_modifier = zombie_outbreak
 			}
-			random_neighbor_province = {
+			any_neighbor_province = {
 			limit = {
 				NOT = { has_province_modifier = zombie_outbreak }
 				NOT = { units_in_province = 10 }
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
 			}
 			add_province_modifier = {
 				name = zombie_outbreak
@@ -306,7 +316,7 @@ country_event = {
 			}
 			}
 			}
-			random_province = {
+			any_owned = {
 			limit = {
 				has_province_modifier = zombie_outbreak
 			}
@@ -314,9 +324,13 @@ country_event = {
 			limit = {
 				neighbor = THIS
 			}
-			random_neighbor_province = {
+			any_neighbor_province = {
 			limit = {
 				NOT = { has_province_modifier = zombie_outbreak }
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
 			}
 			add_province_modifier = {
 				name = zombie_outbreak
@@ -326,6 +340,97 @@ country_event = {
 			}
 			}
 		}
+}
+
+#Inital Outbreak Boost
+country_event = {
+	id = 999917
+	title = "OUTBREAK_START_LOCAL_TITLE"
+	desc = "OUTBREAK_START_LOCAL_DESC"
+	picture = disease
+
+	trigger = {
+			NOT = { has_country_flag = zombie_outbreak }
+			any_owned_province = {
+				has_province_modifier = zombie_outbreak
+			}
+		}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "OUTBREAK_START_LOCAL_OPT"
+		set_country_flag = zombie_outbreak
+		any_pop = {
+			consciousness = 1
+			militancy = -2
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = no
+				is_overseas = no
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = no
+				is_overseas = no
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = no
+				is_overseas = no
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+		random_province = {
+			limit = {
+				is_capital = no
+				is_colonial = yes
+			}
+			any_pop = {
+				reduce_pop = 0.95
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
 }
 
 #Global Defeat

@@ -116,7 +116,7 @@ expressionism = {
 	year = 1870
 	cost = 18000
 
-	prestige = 0.075
+	prestige = 0.125
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -143,7 +143,7 @@ mass_culture_n_the_avant_garde = {
 	year = 1900
 	cost = 21600
 
-	prestige = 0.075
+	prestige = 0.125
 	ai_chance = {
 		factor = 1.01
 		modifier = {
@@ -463,7 +463,8 @@ malthusian_thought = {
 
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	increase_research = 0.10
+	farm_rgo_size = 0.02
+	mine_rgo_size = 0.02
 	
 	ai_chance = {
 		factor = 1.5
@@ -501,7 +502,8 @@ positivism = {
 	cost = 7200
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	increase_research = 0.10
+	farm_rgo_size = 0.02
+	mine_rgo_size = 0.02
 	ai_chance = {
 		factor = 1.8
 		modifier = {
@@ -553,7 +555,8 @@ functionalism = {
 
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	increase_research = 0.10
+	farm_rgo_size = 0.02
+	mine_rgo_size = 0.02
 	ai_chance = {
 		factor = 1.5
 		modifier = {
@@ -605,7 +608,8 @@ biologism = {
 
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	increase_research = 0.10
+	farm_rgo_size = 0.02
+	mine_rgo_size = 0.02
 	ai_chance = {
 		factor = 2
 		modifier = {
@@ -658,7 +662,8 @@ social_science = {
 
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	increase_research = 0.10
+	farm_rgo_size = 0.05
+	mine_rgo_size = 0.05
 	
 	ai_chance = {
 		factor = 1.05
@@ -703,7 +708,8 @@ social_alienation = {
 	
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	increase_research = 0.10
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -736,6 +742,8 @@ mathematical_sociology = {
 	
 	war_exhaustion = -0.25
 	colonial_migration = 0.1
+	farm_rgo_size = 0.1
+	mine_rgo_size = 0.1
 	ai_chance = {
 		factor = 1.05
 		modifier = {

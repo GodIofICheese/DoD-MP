@@ -2,5 +2,5 @@ owner = SCA
 controller = SCA
 add_core = SCA
 add_core = LAT
-trade_goods = cattle
+trade_goods = sulphur
 life_rating = 35

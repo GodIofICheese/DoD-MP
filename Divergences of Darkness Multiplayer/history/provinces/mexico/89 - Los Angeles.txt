@@ -1,7 +1,7 @@
 owner = DNG
 controller = DNG
 add_core = DNG
-trade_goods = grain
+trade_goods = sulphur
 life_rating = 35
 1861.1.1 = {
 	owner = USA
