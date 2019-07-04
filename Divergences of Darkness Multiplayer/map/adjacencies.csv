@@ -72,6 +72,7 @@ From;To;Type;Through;Data;Comment
 267;1724;sea;2735;0;Inverness - Orkney Strait
 780;782;land;2762;0;Mostar Bay
 301;400;sea;2724;0;UK - France Strait
+1725;762;sea;2758;0;Gulf of Gabes #Sicily to Tunis
 
 #
 # Asian Straits
@@ -115,6 +116,7 @@ From;To;Type;Through;Data;Comment
 1461;1463;land;2850;0;Davao Strait
 1462;1460;land;2850;0;Iloilo Strait
 1462;1464;sea;2851;0;Sulu Strait
+1397;1464;sea;2851;0;Sulu Sea #Borneo-Phillipines
 1440;1439;sea;2810;0;Sumbawa-Flores Strait
 1440;1441;sea;2808;0;Sumbawa-Sumba Strait
 1441;1443;sea;2809;0;Sumba-Roti Strait
@@ -142,6 +144,8 @@ From;To;Type;Through;Data;Comment
 2512;2516;sea;2876;0;Cook Strait #NZ
 2512;2516;sea;2881;0;Cook Strait #NZ
 2537;1531;sea;2858;0;Villan Strait #New Britain-New Ireland
+2488;2529;sea;2860;0;Torres Strait #Australia-Papa New Guinea
+2501;1443;sea;2809;0;Timor Sea #Australia-Timor
 
 #
 # Impassables
@@ -197,24 +201,6 @@ From;To;Type;Through;Data;Comment
 1;15;impassable;0;0;
 1;16;impassable;0;0;
 1;17;impassable;0;0;
-
-#Siberia
-
-2687;2682;impassable;0;0;Northern urals
-2689;2682;impassable;0;0;Northern urals
-2689;1062;impassable;0;0;Northern urals
-1026;1062;impassable;0;0;Northern urals
-2659;2657;impassable;0;0;Yamal-Yenisei
-2659;2692;impassable;0;0;Yamal-Yenisei
-2615;2692;impassable;0;0;Yamal-Yenisei
-2646;2692;impassable;0;0;Yamal-Yenisei
-2654;2653;impassable;0;0;Yenisei-Yakut
-2654;2673;impassable;0;0;Yenisei-Yakut
-2693;2673;impassable;0;0;Yenisei-Yakut
-2655;2673;impassable;0;0;Yenisei-Yakut
-2655;2651;impassable;0;0;Yenisei-Yakut
-2675;2651;impassable;0;0;Yenisei-Yakut
-
 
 #
 # The canals

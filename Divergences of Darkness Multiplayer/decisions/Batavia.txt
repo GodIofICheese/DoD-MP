@@ -1,5 +1,6 @@
 political_decisions = {
-    claim_old_netherlands = {
+    
+	claim_old_netherlands = {
 			potential = {
 				tag = BTV
 				NOT = { has_country_flag = claim_old_netherlands }
@@ -14,6 +15,7 @@ political_decisions = {
 						revolution_n_counterrevolution = 1
 					}
 					phenomenology_n_hermeneutic = 1
+				}
 			}
 		
 			effect = {
@@ -32,7 +34,8 @@ political_decisions = {
 				factor = 1
 			}
 	}
-		return_home_BTV = {
+		
+	return_home_BTV = {
 			potential = {
 				tag = BTV
 				has_country_flag = claim_old_netherlands

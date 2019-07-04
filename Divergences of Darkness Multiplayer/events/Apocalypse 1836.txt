@@ -27,24 +27,24 @@ country_event = {
 		set_global_flag = first_zombie_invasion
 		random_country = {
 			limit = {
-				NOT = { tag = SOK }
-				number_of_states = 3
+				number_of_states = 4
+				OR = {
 				continent = asia
+				continent = oceania
+				}
 			}
 			country_event = 999902
 		}
 		random_country = {
 			limit = {
-				NOT = { tag = SOK }
-				number_of_states = 3
+				number_of_states = 4
 				continent = europe
 			}
 			country_event = 999902
 		}
 		random_country = {
 			limit = {
-				NOT = { tag = SOK }
-				number_of_states = 3
+				number_of_states = 4
 				OR = {
 				continent = north_america
 				continent = south_america
@@ -54,7 +54,6 @@ country_event = {
 		}
 		random_country = {
 			limit = {
-				NOT = { tag = SOK }
 				number_of_states = 2
 			}
 			country_event = 999902
@@ -70,8 +69,11 @@ country_event = {
 	picture = disease
 
 	trigger = {
-		any_neighbor_country = {
-			has_country_flag = zombie_outbreak
+		any_owned_province = {
+			any_neighbor_province = {
+				has_province_modifier = zombie_outbreak
+				is_colonial = no
+			}
 		}
 		NOT = {
 			has_country_flag = zombie_outbreak
@@ -84,18 +86,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.05
-			any_owned = {
-			limit = {
-				is_colonial = no
-			}
-			any_neighbor_province = {
-			limit = {
-			has_province_modifier = zombie_outbreak
-			}
-		}
+		months = 2
 	}
 	
 	option = {
@@ -171,7 +162,7 @@ country_event = {
 	}
 }
 
-#Port Infection
+#Port Infection Europe
 country_event = {
 	id = 999903
 	title = "OUTBREAK_SPREAD_PORT_TITLE"
@@ -181,21 +172,246 @@ country_event = {
 	trigger = {
 		has_global_flag = first_zombie_invasion
 		total_num_of_ports = 1
-		NOT = {
-			border_policy = closed_borders
+		NOT = {	border_policy = closed_borders }
+		
+		any_neighbor_country = {
+				any_owned_province = {
+					AND = {
+					is_blockaded = no
+					port = yes
+					has_province_modifier = zombie_outbreak
+					continent = europe
+					}
+				}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 2
 	}
 
 	option = {
 		name = "OUTBREAK_SPREAD_PORT_OPT"
 		random_province = {
 			limit = {
+				continent = europe
 				port = yes
 				has_recent_imigration = 30
+				NOT = { units_in_province = 10 }
+				NOT = { has_province_modifier = zombie_outbreak }
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Port Infection Africa
+country_event = {
+	id = 999904
+	title = "OUTBREAK_SPREAD_PORT_TITLE"
+	desc = "OUTBREAK_SPREAD_PORT_DESC"
+	picture = disease
+
+	trigger = {
+		has_global_flag = first_zombie_invasion
+		total_num_of_ports = 1
+		NOT = {	border_policy = closed_borders }
+		
+		any_neighbor_country = {
+				any_owned_province = {
+					AND = {
+					is_blockaded = no
+					port = yes
+					has_province_modifier = zombie_outbreak
+					continent = africa
+					}
+				}	
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "OUTBREAK_SPREAD_PORT_OPT"
+		random_province = {
+			limit = {
+				continent = africa
+				port = yes
+				has_recent_imigration = 30
+				NOT = { units_in_province = 10 }
+				NOT = { has_province_modifier = zombie_outbreak }
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Port Infection Americas
+country_event = {
+	id = 999905
+	title = "OUTBREAK_SPREAD_PORT_TITLE"
+	desc = "OUTBREAK_SPREAD_PORT_DESC"
+	picture = disease
+
+	trigger = {
+		has_global_flag = first_zombie_invasion
+		total_num_of_ports = 1
+		NOT = {	border_policy = closed_borders }
+		
+		any_neighbor_country = {
+				any_owned_province = {
+					AND = {
+					is_blockaded = no
+					port = yes
+					has_province_modifier = zombie_outbreak
+					}
+					OR = {
+					continent = north_america
+					continent = south_america
+					}
+				}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "OUTBREAK_SPREAD_PORT_OPT"
+		random_province = {
+			limit = {
+				OR = {	
+					continent = north_america
+					continent = south_america
+				}
+				port = yes
+				has_recent_imigration = 30
+				NOT = { units_in_province = 10 }
+				NOT = { has_province_modifier = zombie_outbreak }
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Port Infection Asia & Oceania
+country_event = {
+	id = 999906
+	title = "OUTBREAK_SPREAD_PORT_TITLE"
+	desc = "OUTBREAK_SPREAD_PORT_DESC"
+	picture = disease
+
+	trigger = {
+		has_global_flag = first_zombie_invasion
+		total_num_of_ports = 1
+		NOT = {	border_policy = closed_borders }
+		
+		any_neighbor_country = {
+				any_owned_province = {
+					AND = {
+					is_blockaded = no
+					port = yes
+					has_province_modifier = zombie_outbreak
+					OR = {
+					continent = asia
+					continent = australia_new_zealand
+					continent = polynesia
+					}
+					}
+				}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "OUTBREAK_SPREAD_PORT_OPT"
+		random_province = {
+			limit = {
+				OR = {
+				continent = asia
+				continent = australia_new_zealand
+				continent = polynesia
+				}
+				port = yes
+				has_recent_imigration = 30
+				NOT = { units_in_province = 10 }
+				NOT = { has_province_modifier = zombie_outbreak }
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Port Infection Middleeast
+country_event = {
+	id = 999907
+	title = "OUTBREAK_SPREAD_PORT_TITLE"
+	desc = "OUTBREAK_SPREAD_PORT_DESC"
+	picture = disease
+
+	trigger = {
+		has_global_flag = first_zombie_invasion
+		total_num_of_ports = 1
+		NOT = {	border_policy = closed_borders }
+		
+		any_neighbor_country = {
+				any_owned_province = {
+					AND = {
+					is_blockaded = no
+					port = yes
+					has_province_modifier = zombie_outbreak
+					continent = oceania
+					}
+				}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = "OUTBREAK_SPREAD_PORT_OPT"
+		random_province = {
+			limit = {
+				continent = oceania
+				port = yes
+				has_recent_imigration = 30
+				NOT = { units_in_province = 10 }
 				NOT = { has_province_modifier = zombie_outbreak }
 			}
 			any_pop = {
@@ -264,7 +480,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 48
+		months = 60
 	}
 
 	option = {
@@ -286,13 +502,13 @@ country_event = {
 	picture = disease
 
 	trigger = {
-			any_owned_province = {
+			any_owned_province = {	
 				has_province_modifier = zombie_outbreak
 			}
 		}	
 
 	mean_time_to_happen = {
-		months = 3
+		months = 1
 	}
 
 	option = {
@@ -327,6 +543,7 @@ country_event = {
 			any_neighbor_province = {
 			limit = {
 				NOT = { has_province_modifier = zombie_outbreak }
+				NOT = { units_in_province = 10 }
 			}
 			any_pop = {
 				consciousness = -3
@@ -352,6 +569,7 @@ country_event = {
 	trigger = {
 			NOT = { has_country_flag = zombie_outbreak }
 			any_owned_province = {
+				is_colonial = no
 				has_province_modifier = zombie_outbreak
 			}
 		}	

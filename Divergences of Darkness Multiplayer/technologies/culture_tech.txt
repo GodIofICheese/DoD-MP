@@ -201,7 +201,7 @@ late_enlightenment_philosophy = {
 	cost = 3600
 
 
-	increase_research = 0.30
+	increase_research = 0.5
 	
 	ai_chance = {
 		factor = 90
@@ -243,7 +243,7 @@ idealism = {
 	year = 1840
 	cost = 7200
 
-	increase_research = 0.40
+	increase_research = 0.50
 	ai_chance = {
 		factor = 90
 		modifier = {
@@ -359,7 +359,7 @@ phenomenology_n_hermeneutic = {
 	year = 1880
 	cost = 18000
 
-	increase_research = 0.4
+	increase_research = 0.5
 	ai_chance = {
 		factor = 90
 		modifier = {
@@ -392,7 +392,7 @@ anti__rationalism = {
 	year = 1900
 	cost = 21600
 
-	increase_research = 0.4
+	increase_research = 0.5
 	ai_chance = {
 		factor = 100
 		modifier = {
@@ -425,7 +425,7 @@ critical_theory = {
 	year = 1930
 	cost = 40000
 	
-	increase_research = 0.4
+	increase_research = 0.5
 	ai_chance = {
 		factor = 100
 		modifier = {

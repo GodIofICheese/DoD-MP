@@ -570,6 +570,9 @@ political_decisions = {
   		 }
   		 effect = {
   			prestige = 30
+			add_accepted_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = min
 			1499 = { add_core = THIS }
 			CHI_2562 = { add_core = THIS }
 			CHI_1611 = { add_core = THIS }

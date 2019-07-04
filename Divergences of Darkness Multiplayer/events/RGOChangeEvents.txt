@@ -1513,6 +1513,72 @@ country_event = {
 	}
 	
 	option = {
+		name = "EVT199037OPTB" #Timber
+		add_country_modifier = {
+		name = rgo_changed
+		duration = 4562
+		}
+		clr_country_flag = rgo_changed_flag
+		random_owned = {
+			limit = {
+				OR = {
+				    trade_goods = wool
+					trade_goods = cotton
+					trade_goods = cattle
+					trade_goods = fish
+					trade_goods = fruit
+					trade_goods = grain
+				}
+				OR = {
+					AND = {
+						total_pops = 10000
+						NOT = { total_pops = 1000000 }
+						NOT = { year = 1861 }
+					}
+					AND = {
+						total_pops = 20000
+						NOT = { total_pops = 1000000 }
+						year = 1861
+						NOT = { year = 1886 }
+					}
+					AND = {
+						total_pops = 30000
+						NOT = { total_pops = 1000000 }
+						year = 1886
+						NOT = { year = 1911 }
+					}
+					AND = {
+						total_pops = 40000
+						NOT = { total_pops = 1000000 }
+						year = 1911
+					}
+				}
+				is_colonial = no
+				OR = {
+					terrain = forest
+					terrain = woods
+					terrain = jungle
+					terrain = new_world_jungle
+					terrain = montane_forest
+					terrain = new_world_boreal
+				}
+			}
+			
+			trade_goods = timber
+			any_pop = {
+				limit = {
+				type = farmers
+				}
+			pop_type = labourers
+			}
+			add_province_modifier = {
+			name = switched_production
+			duration = 4562
+			}
+		}	
+	}
+	
+	option = {
 		name = "EVT199037OPTC" #COTTON
 		add_country_modifier = {
 		name = rgo_changed
