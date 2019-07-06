@@ -42,17 +42,15 @@ peace_order = {
 total_war_place_in_the_sun
 total_war_state
 treaty_port_casus_belli
-war_reparations
 become_independent
-dismantle_cb
-dismantle_cb_add
-dismantle_cb_add_new
 colonial_competition
 acquire_all_cores
 acquire_core_state
 restore_austrian_empire
 colonial_reconquest_cb
 restore_america
+annex_india_AI
+annex_india_full_AI
 claim_holy_land
 restore_british_raj
 unification_casus_belli
@@ -75,8 +73,6 @@ liberate_country
 free_peoples
 free_allied_cores
 free_balkans
-annex_india_AI
-annex_india_full_AI
 monroe_doctrine
 oriental_crisis
 unification_release_puppet_cb
@@ -92,7 +88,6 @@ cut_down_to_size
 cut_down_to_size_boxer
 humiliate
 place_in_the_sun
-dismantle_forts
 china_acquire_state
 china_acquire_state_2
 china_conquest
@@ -107,6 +102,8 @@ demand_concession_BC_casus_belli
 demand_concession_NI_casus_belli
 demand_concession_casus_belli
 rude_boy
+war_reparations
+dismantle_forts
 conquest
 conquest_any
 conquest_low

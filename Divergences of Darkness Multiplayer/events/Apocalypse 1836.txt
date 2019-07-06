@@ -3,7 +3,7 @@ country_event = {
 	id = 999901
 	title = "OUTBREAK_START_TITLE"
 	desc = "OUTBREAK_START_DESC"
-	picture = disease
+	picture = outbreakannouncement
 
 	fire_only_once = yes
 	
@@ -159,6 +159,12 @@ country_event = {
 				duration = -1
 			}
 		}
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999918
+		}
 	}
 }
 
@@ -167,7 +173,7 @@ country_event = {
 	id = 999903
 	title = "OUTBREAK_SPREAD_PORT_TITLE"
 	desc = "OUTBREAK_SPREAD_PORT_DESC"
-	picture = disease
+	picture = portinfection
 
 	trigger = {
 		has_global_flag = first_zombie_invasion
@@ -217,7 +223,7 @@ country_event = {
 	id = 999904
 	title = "OUTBREAK_SPREAD_PORT_TITLE"
 	desc = "OUTBREAK_SPREAD_PORT_DESC"
-	picture = disease
+	picture = portinfection
 
 	trigger = {
 		has_global_flag = first_zombie_invasion
@@ -267,7 +273,7 @@ country_event = {
 	id = 999905
 	title = "OUTBREAK_SPREAD_PORT_TITLE"
 	desc = "OUTBREAK_SPREAD_PORT_DESC"
-	picture = disease
+	picture = portinfection
 
 	trigger = {
 		has_global_flag = first_zombie_invasion
@@ -323,7 +329,7 @@ country_event = {
 	id = 999906
 	title = "OUTBREAK_SPREAD_PORT_TITLE"
 	desc = "OUTBREAK_SPREAD_PORT_DESC"
-	picture = disease
+	picture = portinfection
 
 	trigger = {
 		has_global_flag = first_zombie_invasion
@@ -381,7 +387,7 @@ country_event = {
 	id = 999907
 	title = "OUTBREAK_SPREAD_PORT_TITLE"
 	desc = "OUTBREAK_SPREAD_PORT_DESC"
-	picture = disease
+	picture = portinfection
 
 	trigger = {
 		has_global_flag = first_zombie_invasion
@@ -499,7 +505,7 @@ country_event = {
 	id = 999916
 	title = "OUTBREAK_SPREAD_LOCAL_TITLE"
 	desc = "OUTBREAK_SPREAD_LOCAL_DESC"
-	picture = disease
+	picture = outbreakannouncement
 
 	trigger = {
 			any_owned_province = {	
@@ -562,9 +568,9 @@ country_event = {
 #Inital Outbreak Boost
 country_event = {
 	id = 999917
-	title = "OUTBREAK_START_LOCAL_TITLE"
-	desc = "OUTBREAK_START_LOCAL_DESC"
-	picture = disease
+	title = "OUTBREAK_BOOST_LOCAL_TITLE"
+	desc = "OUTBREAK_BOOST_LOCAL_DESC"
+	picture = outbreakannouncement
 
 	trigger = {
 			NOT = { has_country_flag = zombie_outbreak }
@@ -648,7 +654,28 @@ country_event = {
 				duration = -1
 			}
 		}
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999918
+		}
 	}
+}
+
+#Zombie Outbreak Announcement
+country_event = {
+	id = 999918
+	title = "OUTBREAK_ANNOUNCEMENT_TITLE"
+	desc = "OUTBREAK_ANNOUNCEMENT_DESC"
+	picture = outbreakannouncement
+	
+	allow_multiple_instances = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "OUTBREAK_ANNOUNCEMENT_OPTA"	
+	}	
 }
 
 #Global Defeat
@@ -760,7 +787,8 @@ country_event = {
 	desc = "Your civilisation could not stand the test of time."
 
 	trigger = { 
-	THIS = { NOT = { total_pops = 100 } }
+	has_global_flag = first_zombie_invasion
+	THIS = { NOT = { total_pops = 500 } }
 
 	}
 	
