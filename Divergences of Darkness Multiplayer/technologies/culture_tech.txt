@@ -463,8 +463,6 @@ malthusian_thought = {
 
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	farm_rgo_size = 0.02
-	mine_rgo_size = 0.02
 	
 	ai_chance = {
 		factor = 1.5
@@ -708,8 +706,8 @@ social_alienation = {
 	
 	colonial_migration = 0.05
 	education_efficiency = 0.1
-	farm_rgo_size = 0.1
-	mine_rgo_size = 0.1
+	farm_rgo_size = 0.05
+	mine_rgo_size = 0.05
 	ai_chance = {
 		factor = 1.05
 		modifier = {
@@ -742,8 +740,8 @@ mathematical_sociology = {
 	
 	war_exhaustion = -0.25
 	colonial_migration = 0.1
-	farm_rgo_size = 0.1
-	mine_rgo_size = 0.1
+	farm_rgo_size = 0.05
+	mine_rgo_size = 0.05
 	ai_chance = {
 		factor = 1.05
 		modifier = {

@@ -193,18 +193,20 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 4
 	}
 
 	option = {
 		name = "OUTBREAK_SPREAD_PORT_OPT"
 		random_province = {
 			limit = {
-				continent = europe
-				port = yes
-				has_recent_imigration = 30
-				NOT = { units_in_province = 10 }
-				NOT = { has_province_modifier = zombie_outbreak }
+				AND = { 
+					continent = europe
+					port = yes
+					has_recent_imigration = 30
+					NOT = { units_in_province = 9 }
+					NOT = { has_province_modifier = zombie_outbreak }
+				}
 			}
 			any_pop = {
 				consciousness = -3
@@ -243,18 +245,20 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 4
 	}
 
 	option = {
 		name = "OUTBREAK_SPREAD_PORT_OPT"
 		random_province = {
 			limit = {
-				continent = africa
-				port = yes
-				has_recent_imigration = 30
-				NOT = { units_in_province = 10 }
-				NOT = { has_province_modifier = zombie_outbreak }
+				AND = { 
+					continent = africa
+					port = yes
+					has_recent_imigration = 30
+					NOT = { units_in_province = 9 }
+					NOT = { has_province_modifier = zombie_outbreak }
+				}
 			}
 			any_pop = {
 				consciousness = -3
@@ -296,21 +300,23 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 4
 	}
 
 	option = {
 		name = "OUTBREAK_SPREAD_PORT_OPT"
 		random_province = {
 			limit = {
-				OR = {	
-					continent = north_america
-					continent = south_america
+				AND = { 
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					port = yes
+					has_recent_imigration = 30
+					NOT = { units_in_province = 9 }
+					NOT = { has_province_modifier = zombie_outbreak }
 				}
-				port = yes
-				has_recent_imigration = 30
-				NOT = { units_in_province = 10 }
-				NOT = { has_province_modifier = zombie_outbreak }
 			}
 			any_pop = {
 				consciousness = -3
@@ -353,22 +359,24 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 4
 	}
 
 	option = {
 		name = "OUTBREAK_SPREAD_PORT_OPT"
 		random_province = {
 			limit = {
-				OR = {
-				continent = asia
-				continent = australia_new_zealand
-				continent = polynesia
+				AND = { 
+					OR = {
+					continent = asia
+					continent = australia_new_zealand
+					continent = polynesia
+					}
+					port = yes
+					has_recent_imigration = 30
+					NOT = { units_in_province = 9 }
+					NOT = { has_province_modifier = zombie_outbreak }
 				}
-				port = yes
-				has_recent_imigration = 30
-				NOT = { units_in_province = 10 }
-				NOT = { has_province_modifier = zombie_outbreak }
 			}
 			any_pop = {
 				consciousness = -3
@@ -407,18 +415,20 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 4
 	}
 
 	option = {
 		name = "OUTBREAK_SPREAD_PORT_OPT"
 		random_province = {
 			limit = {
-				continent = oceania
-				port = yes
-				has_recent_imigration = 30
-				NOT = { units_in_province = 10 }
-				NOT = { has_province_modifier = zombie_outbreak }
+				AND = { 
+					continent = oceania
+					port = yes
+					has_recent_imigration = 30
+					NOT = { units_in_province = 9 }
+					NOT = { has_province_modifier = zombie_outbreak }
+				}
 			}
 			any_pop = {
 				consciousness = -3
@@ -444,11 +454,11 @@ province_event = {
 			controlled_by = REB
 			country_units_in_province = REB
 		}
-		units_in_province = 10
+		units_in_province = 9
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 1
 		modifier = {
 			factor = 1.25
 			any_neighbor_province = {
@@ -526,7 +536,7 @@ country_event = {
 			any_neighbor_province = {
 			limit = {
 				NOT = { has_province_modifier = zombie_outbreak }
-				NOT = { units_in_province = 10 }
+				NOT = { units_in_province = 9 }
 			}
 			any_pop = {
 				consciousness = -3

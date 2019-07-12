@@ -54,13 +54,18 @@ centralization = regionalism
 colonial_policy = no_colonies 
 
 
-foreign_artillery = yes_foreign_artillery
+military_constructions = yes_military_constructions
 foreign_weapons = yes_foreign_weapons
+land_reform = yes_land_reform
+admin_reform = yes_admin_reform
+
 
 set_country_flag = sunni_country
 
 # Technologies
 flintlock_rifles = 1
 bronze_muzzle_loaded_artillery = 1
+piston_steam_engine = 1
+enlightenment_thought = 1
 
 oob = "MUG_oob.txt"

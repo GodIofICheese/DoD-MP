@@ -1,4 +1,4 @@
-add_core = ARU
+add_core = AUC
 trade_goods = wool
 terrain = montane_forest
 life_rating = 35

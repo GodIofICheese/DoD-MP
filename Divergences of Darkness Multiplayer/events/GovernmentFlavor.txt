@@ -1,4 +1,4 @@
-#Regency starts
+7#Regency starts
 country_event = {
 	id = 11000
 	title = "EVTNAME11000"
@@ -227,143 +227,16 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA11002" #Jingoism
-		add_country_modifier = { name = war_propaganda duration = 730 }
-			random_owned = {
-				limit = {
-					owner = {
-						press_rights = state_press
-						has_country_flag = propaganda_program
-					}
-				}
-				owner = {
-					any_pop = {
-						limit = { literacy = 0.3 }
-						dominant_issue = { value = jingoism factor = 0.01 }
-					}
-				}
-			}
+		add_country_modifier = { name = war_propaganda duration = 1460 }
+		
+		war_exhaustion = -10
 			
-			random_owned = {
-				limit = {
-					owner = {
-						upper_house_composition = party_appointed
-						has_country_flag = propaganda_program
-					}
-				}
-				owner = {
-					any_pop = {
-						limit = { literacy = 0.3 }
-						dominant_issue = { value = jingoism factor = 0.01 }
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						invention = mass_advertising
-						has_country_flag = propaganda_program
-					}
-				}
-				owner = {
-					any_pop = {
-						limit = { literacy = 0.3 }
-						dominant_issue = { value = jingoism factor = 0.01 }
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						has_country_flag = propaganda_program
-						OR = {
-							government = prussian_constitutionalism
-							government = hms_government
-							government = democracy
-							NOT = { invention = mass_advertising }
-						}
-					}
-				}	
-				owner = {
-					any_pop = {
-						limit = {
-							literacy = 0.3
-							OR = {
-								is_primary_culture = yes
-								is_accepted_culture = yes
-							}
-						}
-						random = {
-							chance = 50
-							dominant_issue = { value = jingoism factor = 0.01 }
-						}
-						random = {
-							chance = 25
-							dominant_issue = { value = jingoism factor = 0.01 }
-						}
-						random = {
-							chance = 25
-							dominant_issue = { value = pacifism factor = 0.01 }
-						}
-					}
-					any_pop = {
-						limit = {
-							literacy = 0.3
-							NOT = {
-								is_primary_culture = yes
-								is_accepted_culture = yes
-							}
-						}
-						random = {
-							chance = 50
-							dominant_issue = { value = jingoism factor = 0.01 }
-						}
-						random = {
-							chance = 25
-							dominant_issue = { value = pacifism factor = 0.01 }
-						}
-					}
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						has_country_flag = propaganda_program
-						invention = mass_advertising
-						NOT = {
-							government = prussian_constitutionalism
-							government = hms_government
-							government = democracy
-						}
-					}
-				}	
-				owner = {
-					any_pop = {
-						limit = { literacy = 0.2 }
-						random = {
-							chance = 75
-							dominant_issue = { value = jingoism factor = 0.02 }
-						}
-						random = {
-							chance = 50
-							dominant_issue = { value = jingoism factor = 0.01 }
-						}
-						random = {
-							chance = 25
-							dominant_issue = { value = jingoism factor = 0.01 }
-						}
-					}
-				}
-			}
-			clr_country_flag = propaganda_program
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 0 }
 	}
 	
 	option = {
 		name = "EVTOPTB11002" #Ruling Party Support
-			add_country_modifier = { name = government_propaganda duration = 730 }
+			add_country_modifier = { name = government_propaganda duration = 1460 }
 			any_pop = {
 				limit = { literacy = 0.3 }
 				random = {
@@ -648,6 +521,6 @@ country_event = {
 				}
 			}
 		clr_country_flag = propaganda_program
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 100 }
 	}
 }

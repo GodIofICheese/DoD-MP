@@ -318,8 +318,8 @@ modern_power_generation = {
 	year = 1930
 	cost = 40000
 	
-	farm_rgo_size = 0.30
-	mine_rgo_size = 0.30
+	farm_rgo_size = 0.15
+	mine_rgo_size = 0.15
 	rgo_throughput = 0.05
 	ai_chance = {
 		factor = 2

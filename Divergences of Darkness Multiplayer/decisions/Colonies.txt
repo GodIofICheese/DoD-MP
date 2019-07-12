@@ -833,7 +833,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			literacy = 0.15
+			literacy = 0.25
 		}
 		
 		effect = {

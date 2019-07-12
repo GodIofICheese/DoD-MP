@@ -8,22 +8,15 @@ country_event = {
 	
 	option = {
 		name = "EVTOPTA333220"
-		random_list = {
-			60 = { 
 				add_accepted_culture = catalan
 				badboy = 5
-			}
-			40 = { 
 				any_pop = {
 					limit = {
 						culture = catalan
 					}
 					militancy = 5
-         				consciousness = 5
+         			consciousness = 5
 				}
-				badboy = 5
-			}
-		}
 	}
 }
 

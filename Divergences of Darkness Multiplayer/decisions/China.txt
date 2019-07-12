@@ -573,6 +573,9 @@ political_decisions = {
 			add_accepted_culture = beifaren
 			add_accepted_culture = nanfaren
 			add_accepted_culture = min
+			add_accepted_culture = yue 
+			add_accepted_culture = hakka
+			add_accepted_culture = zhuang 
 			1499 = { add_core = THIS }
 			CHI_2562 = { add_core = THIS }
 			CHI_1611 = { add_core = THIS }

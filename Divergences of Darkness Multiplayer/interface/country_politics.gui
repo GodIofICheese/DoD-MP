@@ -1398,8 +1398,8 @@ guiTypes = {
 			windowType = {
 				name = "land_reform"
 				backGround =""
-				position = { x = 690 y = 125 }
-				size = { x=149 y=72 }
+				position = { x = 685 y = 267 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1409,17 +1409,17 @@ guiTypes = {
 				iconType = {
 					 name = "politics_land_reform"
 					 spriteType = "GFX_politics_land_reform"
-					 position = { x = 1 y = -2 }
+					 position = { x= 5 y = 7 }
 					 Orientation = "UPPER_LEFT"
 				 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 4 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
-					maxWidth = 149
-					maxHeight = 29	
+					maxWidth = 100
+					maxHeight = 20	
 				}
 
 			}
@@ -1427,8 +1427,8 @@ guiTypes = {
 			windowType = {
 				name = "admin_reform"
 				backGround =""
-				position = { x = 842 y = 125 }
-				size = { x=149 y=72 }
+				position = { x = 834 y = 267 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1438,25 +1438,25 @@ guiTypes = {
 				iconType = {
 					name = "politics_admin_reform"
 					spriteType = "GFX_politics_admin_reform"
-					position = { x = 1 y = -3 }
+					position = { x= 7 y = 7 }
 					Orientation = "UPPER_LEFT"
 				}
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "finance_reform"
 				backGround =""
-				position = { x = 690 y = 283 }
-				size = { x=149 y=72 }
+				position = { x = 685 y = 113 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1466,54 +1466,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_finance_reform"
 				 spriteType = "GFX_politics_finance_reform"
-				 position = { x= 1 y = 7 }
+				 position = { x= 7 y = 7 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 15 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
-					maxWidth = 149
-					maxHeight = 29	
+					maxWidth = 100
+					maxHeight = 20	
 				}
 			}
-			
-			windowType = {
-				name = "monetary_reform"
-				backGround =""
-				position = { x = 842 y = 283 }
-				size = { x=149 y=72 }
-				moveable = 0
-				dontRender = ""
-				horizontalBorder = "0"
-				verticalBorder = ""
-				fullScreen = no
-				
-				iconType = {
-				 name = "politics_monetary_reform"
-				 spriteType = "GFX_politics_monetary_reform"
-				 position = { x= 1 y = 12 }
-				 Orientation = "UPPER_LEFT"
-			 }
-				
-				instantTextBoxType = { 
-					name = "reform_name"
-					position = { x = 34 y = 15 }
-					font = "vic_18"
-					text = "REFORM_NAME"	
-					maxWidth = 149
-					maxHeight = 29	
-				}
-			}
-			
 			
 			windowType = {
 				name = "education_reform"
 				backGround =""
-				position = { x = 690 y = 211 }
-				size = { x=149 y=72 }
+				position = { x = 685 y = 344 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1523,53 +1494,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_education_reform"
 				 spriteType = "GFX_politics_education_reform"
-				 position = { x = 1 y = -2 }
+				 position = { x= 6 y = 9 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 4 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
-					maxWidth = 149
-					maxHeight = 29	
-				}
-			}
-			
-			windowType = {
-				name = "research_reform"
-				backGround =""
-				position = { x = 842 y = 211 }
-				size = { x=149 y=72 }
-				moveable = 0
-				dontRender = ""
-				horizontalBorder = "0"
-				verticalBorder = ""
-				fullScreen = no
-				
-				iconType = {
-				 name = "politics_research_reform"
-				 spriteType = "GFX_politics_research_reform"
-				 position = { x = 3 y = -2 }
-				 Orientation = "UPPER_LEFT"
-			 }
-				
-				instantTextBoxType = { 
-					name = "reform_name"
-					position = { x = 34 y = 4 }
-					font = "vic_18"
-					text = "REFORM_NAME"	
-					maxWidth = 149
-					maxHeight = 29	
+					maxWidth = 100
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "transport_improv"
 				backGround =""
-				position = { x = 690 y = 383 }
-				size = { x=149 y=72 }
+				position = { x = 685 y = 421 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1579,54 +1522,25 @@ guiTypes = {
 				iconType = {
 					name = "politics_transportation_system"
 					spriteType = "GFX_politics_transportation_system"
-					position = { x = 1 y = -2 }
+					position = { x= 7 y = 7 }
 					Orientation = "UPPER_LEFT"
 				}
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
 				}
 			}
-			
-			windowType = {
-				name = "firearms_production"
-				backGround =""
-				position = { x = 842 y = 383 }
-				size = { x=149 y=72 }
-				moveable = 0
-				dontRender = ""
-				horizontalBorder = "0"
-				verticalBorder = ""
-				fullScreen = no
-				
-				iconType = {
-					name = "politics_firearms_production"
-					spriteType = "GFX_politics_firearms_production"
-					position = { x = 1 y = -2 }
-					Orientation = "UPPER_LEFT"
-				}
-				
-				instantTextBoxType = { 
-					name = "reform_name"
-					position = { x = 34 y = 1 }
-					font = "vic_18"
-					text = "REFORM_NAME"	
-					maxWidth = 100
-					maxHeight = 43	
-				}
-			}
-			
 			
 			windowType = {
 				name = "pre_indust"
 				backGround =""
-				position = { x = 690 y = 469 }
-				size = { x=149 y=72 }
+				position = { x = 685 y = 498 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1636,25 +1550,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_pre_industrialisation"
 				 spriteType = "GFX_politics_pre_industrialisation"
-				 position = { x = 1 y = -2 }
+				 position = { x= 7 y = 6 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "industrial_construction"
 				backGround =""
-				position = { x = 842 y = 469 }
-				size = { x=149 y=72 }
+				position = { x = 834 y = 344 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1664,20 +1578,158 @@ guiTypes = {
 				iconType = {
 				 name = "politics_industrial_construction"
 				 spriteType = "GFX_politics_industrial_construction"
-				 position = { x = 1 y = -2 }
+				 position = { x= 6 y = 8 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43
+					maxHeight = 20	
 				}
 			}
-
+			
+			windowType = {
+				name = "academic_institutions"
+				backGround =""
+				position = { x = 834 y = 190 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "politics_education_reform"
+				 spriteType = "GFX_politics_education_reform"
+				 position = { x= 6 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
+				}
+			}
+			
+			windowType = {
+				name = "medicine_reform"
+				backGround =""
+				position = { x = 685 y =  190 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "politics_healthcare"
+				 spriteType = "GFX_politics_healthcare"
+				 position = { x= 6 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
+				}
+			}
+			windowType = {
+				name = "taxation_reform"
+				backGround =""
+				position = { x = 834 y =  113 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "politics_finance_reform"
+				 spriteType = "GFX_politics_finance_reform"
+				 position = { x= 6 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
+				}
+			}
+			
+			windowType = {
+				name = "diplomatic_reform"
+				backGround =""
+				position = { x = 834 y = 421 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "politics_citizens_rights"
+				 spriteType = "GFX_politics_citizens_rights"
+				 position = { x= 6 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
+				}
+			}
+			
+			windowType = {
+				name = "disciplinary_reform"
+				backGround =""
+				position = { x = 834 y = 498 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "politics_penal_system"
+				 spriteType = "GFX_politics_penal_system"
+				 position = { x= 6 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
+				}
+			}
 			
 			########################
 			### military
@@ -1686,8 +1738,8 @@ guiTypes = {
 			windowType = {
 				name = "foreign_training"
 				backGround =""
-				position = { x = 384 y = 125 }
-				size = { x=149 y=72 }
+				position = { x = 382 y = 267 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1697,25 +1749,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_training_methods"
 				 spriteType = "GFX_politics_training_methods"
-				 position = { x= 1 y = -2 }
+				 position = { x= 7 y = 8 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 4 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
-					maxWidth = 120
-					maxHeight = 43	
+					maxWidth = 100
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "foreign_weapons"
 				backGround =""
-				position = { x = 384 y = 211 }
-				size = { x=149 y=72 }
+				position = { x = 382 y = 113 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1725,25 +1777,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_foreign_weapons"
 				 spriteType = "GFX_politics_foreign_weapons"
-				 position = { x= 1 y = -2 }
+				 position = { x= 7 y = 8 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 4 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "military_constructions"
 				backGround =""
-				position = { x = 536 y = 125 }
-				size = { x=149 y=100 }
+				position = { x = 382 y = 344 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1753,25 +1805,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_military_constructions"
 				 spriteType = "GFX_politics_military_constructions"
-				 position = { x= 5 y = 6 }
+				 position = { x= 7 y = 10 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "foreign_officers"
 				backGround =""
-				position = { x = 384 y = 297 }
-				size = { x=149 y=100 }
+				position = { x = 382 y = 190 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1781,25 +1833,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_officer_training"
 				 spriteType = "GFX_politics_officer_training"
-				 position = { x= 1 y = -2 }
+				 position = { x= 7 y = 11 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 4 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "army_schools"
 				backGround =""
-				position = { x = 536 y = 297 }
-				size = { x=149 y=100 }
+				position = { x = 382 y = 420 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1809,25 +1861,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_army_training"
 				 spriteType = "GFX_politics_army_training"
-				 position = { x= 1 y = -2 }
+				 position = { x= 7 y = 10 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 4 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "foreign_navies"
 				backGround =""
-				position = { x = 384 y = 383 }
-				size = { x=149 y=100 }
+				position = { x = 530 y = 113 }#upp
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1837,109 +1889,25 @@ guiTypes = {
 				iconType = {
 				 name = "politics_foreign_naval_units"
 				 spriteType = "GFX_politics_foreign_naval_units"
-				 position = { x= 1 y = -2 }
+				 position = { x= 7 y = 7 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 1 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
-				}
-			}
-			
-			windowType = {
-				name = "foreign_artillery"
-				backGround =""
-				position = { x = 536 y = 211 }
-				size = { x=149 y=72 }
-				moveable = 0
-				dontRender = ""
-				horizontalBorder = "0"
-				verticalBorder = ""
-				fullScreen = no
-				
-				iconType = {
-				 name = "politics_foreign_artillery"
-				 spriteType = "GFX_politics_foreign_artillery"
-				 position = { x= -2 y = -4 }
-				 Orientation = "UPPER_LEFT"
-			 }
-				
-				instantTextBoxType = { 
-					name = "reform_name"
-					position = { x = 36 y = 4 }
-					font = "vic_18"
-					text = "REFORM_NAME"	
-					maxWidth = 100
-					maxHeight = 43	
-				}
-			}
-			
-			windowType = {
-				name = "western_shipyards"
-				backGround =""
-				position = { x = 536 y = 383 }
-				size = { x=149 y=100 }
-				moveable = 0
-				dontRender = ""
-				horizontalBorder = "0"
-				verticalBorder = ""
-				fullScreen = no
-				
-				iconType = {
-				 name = "politics_naval_supplies_reform"
-				 spriteType = "GFX_politics_naval_supplies_reform"
-				 position = { x= 1 y = -2 }
-				 Orientation = "UPPER_LEFT"
-			 }
-				
-				instantTextBoxType = { 
-					name = "reform_name"
-					position = { x = 34 y = 4 }
-					font = "vic_18"
-					text = "REFORM_NAME"	
-					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
 				}
 			}
 			
 			windowType = {
 				name = "naval_schools"
 				backGround =""
-				position = { x = 536 y = 469 }
-				size = { x=149 y=100 }
-				moveable = 0
-				dontRender = ""
-				horizontalBorder = "0"
-				verticalBorder = ""
-				fullScreen = no
-				
-				iconType = {
-				 name = "politics_naval_training"
-				 spriteType = "GFX_politics_naval_training"
-				 position = { x= 1 y = -2 }
-				 Orientation = "UPPER_LEFT"
-			 }
-				
-				instantTextBoxType = { 
-					name = "reform_name"
-					position = { x = 34 y = 4 }
-					font = "vic_18"
-					text = "REFORM_NAME"	
-					maxWidth = 100
-					maxHeight = 43	
-				}
-			}
-
-			windowType = {
-				name = "foreign_naval_officers"
-				backGround =""
-				position = { x = 384 y = 469 }
-				size = { x=149 y=100 }
+				position = { x = 530 y = 420 }
+				size = { x=310 y=100 }
 				moveable = 0
 				dontRender = ""
 				horizontalBorder = "0"
@@ -1949,17 +1917,99 @@ guiTypes = {
 				iconType = {
 				 name = "politics_naval_officers"
 				 spriteType = "GFX_politics_naval_officers"
-				 position = { x= 1 y = -2 }
+				 position = { x= 7 y = 7 }
 				 Orientation = "UPPER_LEFT"
 			 }
 				
 				instantTextBoxType = { 
 					name = "reform_name"
-					position = { x = 34 y = 4 }
+					position = { x = 40 y = 15 }
 					font = "vic_18"
 					text = "REFORM_NAME"	
 					maxWidth = 100
-					maxHeight = 43	
+					maxHeight = 20	
+				}
+			}
+
+			windowType = {
+				name = "foreign_naval_officers"
+				backGround =""
+				position = { x = 530 y = 190 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "politics_naval_officers"
+				 spriteType = "GFX_politics_naval_officers"
+				 position = { x= 7 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
+				}
+			}
+			windowType = {
+				name = "naval_architecture"
+				backGround =""
+				position = { x = 530 y = 267 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "colonial_policy_reform"
+				 spriteType = "GFX_politics_colonial_policy"
+				 position = { x= 7 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
+				}
+			}
+			windowType = {
+				name = "naval_facilities"
+				backGround =""
+				position = { x = 530 y = 344 }
+				size = { x=310 y=100 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder = "0"
+				verticalBorder = ""
+				fullScreen = no
+				
+				iconType = {
+				 name = "politics_naval_training"
+				 spriteType = "GFX_politics_naval_training"
+				 position = { x= 7 y = 8 }
+				 Orientation = "UPPER_LEFT"
+			 }
+				
+				instantTextBoxType = { 
+					name = "reform_name"
+					position = { x = 40 y = 15 }
+					font = "vic_18"
+					text = "REFORM_NAME"	
+					maxWidth = 100
+					maxHeight = 20	
 				}
 			}
 			

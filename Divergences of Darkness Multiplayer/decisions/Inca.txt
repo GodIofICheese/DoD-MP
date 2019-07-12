@@ -63,6 +63,7 @@ political_decisions = {
 							owned_by = THIS	
 						}
 					}
+				revolution_n_counterrevolution = 1
 			}
 			effect = {
 				prestige = 20
@@ -128,6 +129,7 @@ political_decisions = {
 				NOT = { has_global_flag = Hispanic_Andes }
 			}
 			allow = {
+				year = 1885
 				NOT = { war = yes }
 				INC = {
 					all_core = {
@@ -139,6 +141,49 @@ political_decisions = {
 				prestige = 10
 				add_accepted_culture = granadan
 				set_country_flag = empire_del_inca_2
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		empire_inca_3 = {
+		picture = Incas
+			potential = {
+				tag = INC
+				capital = 2302
+				has_country_flag = empire_del_inca
+				NOT = { has_country_flag = empire_del_inca_3 }
+				NOT = { has_global_flag = Hispanic_Andes }
+			}
+			allow = {
+				mass_politics = 1
+				NOT = { war = yes }
+				CLM_2251 = { owned_by = THIS }
+				CLM_1723 = { owned_by = THIS }
+				VNZ_2234 = { owned_by = THIS }
+				VNZ_2265 = { owned_by = THIS }
+				UCA_2201 = { owned_by = THIS }
+			}
+			effect = {
+				prestige_factor = 1.1
+				CLM_2251 = { add_core = THIS }
+				CLM_1723 = { add_core = THIS }
+				VNZ_2234 = { add_core = THIS }
+				VNZ_2265 = { add_core = THIS }
+				UCA_2201 = { add_core = THIS }
+				VNZ_2278 = { add_core = THIS }
+				VNZ_2275 = { add_core = THIS }
+				ENG_1979 = { add_core = THIS }
+				BRZ_2408 = { add_core = THIS }
+				SA_1 = { add_core = THIS }
+				SA_2 = { add_core = THIS }
+				SA_3 = { add_core = THIS }
+				SA_5 = { add_core = THIS }
+				UCA_2197 = { add_core = THIS }
+				UCA_2191 = { add_core = THIS }
+				add_accepted_culture = central_american
+				set_country_flag = empire_del_inca_3
 			}
 			ai_will_do = {
 				factor = 1

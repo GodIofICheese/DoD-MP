@@ -21,4 +21,6 @@ rgo_changed;RGO Change Cooldown;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 rgo_changed_title;RGO Change Cooldown;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 rgo_changed_desc;You have recently taken a decision to change a RGO, you must wait a while before doing so again.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 venetian_shipyards;Venetian Shipyards;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
-venetian_shipyards;The massive shipwrights of Venetia truly are a crowning jewel of Italia.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+venetian_shipyards_desc;The massive shipwrights of Venetia truly are a crowning jewel of Italia.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+federales_CLM;Federales;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+federales_CLM_desc;The federal nature of our state poses serious problems for maintaining order, with the various police forces underfunded by the local authorities, lacking proper training and squabbling over jurisdictions. The central government has proposed the creation of a Federal Force inspired by European methods, the Federal Gendarmerie which will be able to act over our whole territory as to severely hinder the rebellious elements of our population.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;

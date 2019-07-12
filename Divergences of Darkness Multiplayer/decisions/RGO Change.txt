@@ -17,7 +17,7 @@ political_decisions = {
 				}
 		}
 		
-		rgo_change_argiculture = {
+		rgo_change_agriculture = {
 			picture = tea_production
 				potential = {
 					NOT = { has_country_modifier = rgo_changed }

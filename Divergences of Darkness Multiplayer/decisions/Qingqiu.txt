@@ -1,0 +1,31 @@
+political_decisions = {
+	dng_expand_south = { # Qingqiu
+		picture = CAL_greater_california
+		potential = {
+			tag = DNG
+			NOT = { has_country_flag = dng_expand_south }
+		}
+		allow = {
+			revolution_n_counterrevolution = 1
+			year = 1880
+			MEX_103 = { owned_by = THIS }
+			MEX_90 = { owned_by = THIS }
+			MEX_2138 = { owned_by = THIS }
+			MEX_2142 = { owned_by = THIS }
+			TEX_132 = { owned_by = THIS }
+			TEX_134 = { owned_by = THIS }
+		}
+		effect = {
+			set_country_flag = dng_expand_south
+			revolution_n_counterrevolution = 1
+			year = 1880
+			MEX_103 = { add_core = THIS }
+			MEX_90 = { add_core = THIS }
+			MEX_2138 = { add_core = THIS }
+			MEX_2142 = { add_core = THIS }
+			TEX_132 = { add_core = THIS }
+			TEX_134 = { add_core = THIS }
+			add_accepted_culture = lusitanian
+		}
+	}
+}

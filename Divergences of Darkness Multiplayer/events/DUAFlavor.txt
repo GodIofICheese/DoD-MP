@@ -495,12 +495,23 @@ country_event = {
 		has_country_flag = richelieu_minister 
 		}
 	}
+	modifier = {
+		factor = 2.0
+		NOT = { year = 1850 }
+	}
+	modifier = {
+		factor = 0.5
+		year = 1880
+	}
 	
 	option = { 
 	name = "650210.A"
 	prestige = 20
 	set_global_flag = french_int
 	add_accepted_culture = french
+	add_accepted_culture = provencal
+	add_accepted_culture = breton
+	remove_accepted_culture = welsh
 	any_pop = {
 			limit = {
 				culture = french
@@ -584,6 +595,14 @@ country_event = { ## Glorious Revolution
 		factor = 0.9
 		has_country_flag = shakespeare_no
 		}
+	modifier = {
+		factor = 2.0
+		NOT = { year = 1850 }
+	}
+	modifier = {
+		factor = 0.5
+		year = 1880
+	}
 	modifier = { 
 		factor = 0.3	
 		any_pop = {
@@ -603,6 +622,10 @@ country_event = { ## Glorious Revolution
 	set_global_flag = wait_DUA
 	set_country_flag = ENL_revolted	
 	set_global_flag = glorious_revolution
+	add_accepted_culture = french
+	add_accepted_culture = provencal
+	add_accepted_culture = breton
+	remove_accepted_culture = welsh
 	any_owned = {
 			limit = {
 				OR = {
@@ -1177,12 +1200,23 @@ country_event = {
 		has_country_flag = devonshire_minister 
 		}
 	}
+	modifier = {
+		factor = 2.0
+		NOT = { year = 1850 }
+	}
+	modifier = {
+		factor = 0.5
+		year = 1880
+	}
 	
 	option = { 
 	name = "650221.A"
 	prestige = 20
 	set_global_flag = english_int
 	add_accepted_culture = english
+	add_accepted_culture = irish
+	add_accepted_culture = welsh
+	remove_accepted_culture = breton
 	any_pop = {
 			limit = {
 				culture = english
@@ -1244,6 +1278,14 @@ country_event = { ## Midi Revolution
 		factor = 1.2
 		has_country_flag = henry_gascony 
 		}
+	modifier = {
+		factor = 2.0
+		NOT = { year = 1850 }
+	}
+	modifier = {
+		factor = 0.5
+		year = 1880
+	}
 	modifier = { 
 		factor = 0.4
 		any_owned_province = {
@@ -1265,6 +1307,10 @@ country_event = { ## Midi Revolution
 	set_global_flag = wait_DUA
 	set_global_flag = glorious_revolution
 	set_country_flag = OCC_revolted	
+	add_accepted_culture = english
+	add_accepted_culture = irish
+	add_accepted_culture = welsh
+	remove_accepted_culture = breton
 	any_owned = {
 			limit = {
 				is_core = OCC 
@@ -1992,6 +2038,8 @@ country_event = { ##The Total Revolution
 	option = { 
 	name = "650247.A"
 	set_country_flag = global_revolt
+	add_accepted_culture = english
+	add_accepted_culture = french
 	set_global_flag = glorious_revolution
 	any_owned = {
 			limit = {

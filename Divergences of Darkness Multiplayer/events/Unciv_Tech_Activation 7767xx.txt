@@ -1,0 +1,1850 @@
+country_event = {
+	id = 776701
+	title = "Tech reform flag"
+	desc = "Foreign Tactics Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_training = yes_foreign_training
+		NOT = { foreign_training = no_foreign_training }
+		NOT = { has_country_flag = foreign_tactics_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = foreign_tactics_flag
+	}
+}
+	
+country_event = {
+	id = 776702
+	title = "Tech activation"
+	desc = "Foreign Tactics Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = foreign_tactics_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = foreign_tactics_flag
+		activate_technology = post_napoleonic_thought
+	}
+}
+
+country_event = {
+	id = 776703
+	title = "Tech reform flag"
+	desc = "Advanced Foreign Tactics Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_training = advanced_foreign_training
+		NOT = { has_country_flag = foreign_tactics2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = foreign_tactics2_flag
+	}
+}
+	
+country_event = {
+	id = 776704
+	title = "Tech activation"
+	desc = "Advanced Foreign tactics Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = foreign_tactics2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = foreign_tactics2_flag
+		activate_technology = strategic_mobility
+	}
+}
+
+country_event = {
+	id = 776705
+	title = "Tech reform flag"
+	desc = "Foreign Weapons Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_weapons = yes_foreign_weapons
+		NOT = { has_country_flag = foreign_weapons_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = foreign_weapons_flag
+	}
+}
+
+country_event = {
+	id = 776706
+	title = "Tech activation"
+	desc = "Foreign Weapons Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = foreign_weapons_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = foreign_weapons_flag
+		activate_technology = flintlock_rifles
+	}
+}
+
+country_event = {
+	id = 776707
+	title = "Tech reform flag"
+	desc = "Advanced Foreign Weapons Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_weapons = modern_weapons 
+		NOT = { has_country_flag = foreign_weapons2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = foreign_weapons2_flag
+	}
+}
+
+country_event = {
+	id = 776708
+	title = "Tech activation"
+	desc = "Advanced Foreign Weapons Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = foreign_weapons2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = foreign_weapons2_flag
+		activate_technology = muzzle_loaded_rifles
+	}
+}
+
+country_event = {
+	id = 776709
+	title = "Tech reform flag"
+	desc = "Military Constructions Designed"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		military_constructions = yes_military_constructions
+		NOT = { has_country_flag = mil_con_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = mil_con_flag
+	}
+}
+
+country_event = {
+	id = 776710
+	title = "Tech activation"
+	desc = "Military Constructions Built"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = mil_con_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = mil_con_flag
+		activate_technology = bronze_muzzle_loaded_artillery
+	}
+}
+
+country_event = {
+	id = 776711
+	title = "Tech reform flag"
+	desc = "Advanced Military Constructions Designed"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		military_constructions = advanced_military_constructions
+		NOT = { has_country_flag = mil_con2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = mil_con2_flag
+	}
+}
+
+country_event = {
+	id = 776712
+	title = "Tech activation"
+	desc = "Advanced Military Constructions Built"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = mil_con2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = mil_con2_flag
+		activate_technology = iron_muzzle_loaded_artillery
+	}
+}
+
+country_event = {
+	id = 776713
+	title = "Tech reform flag"
+	desc = "Foreign Officer Training Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_officers = yes_foreign_officers
+		NOT = { has_country_flag = fo_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = fo_flag
+	}
+}
+
+country_event = {
+	id = 776714
+	title = "Tech activation"
+	desc = "Foreign Officer Training Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = fo_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = fo_flag
+		activate_technology = army_command_principle
+	}
+}
+
+country_event = {
+	id = 776715
+	title = "Tech reform flag"
+	desc = "Domestic Officer Training Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_officers = professional_officers
+		NOT = { has_country_flag = fo2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = fo2_flag
+	}
+}
+
+country_event = {
+	id = 776716
+	title = "Tech activation"
+	desc = "Domestic Officer Training Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = fo2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = fo2_flag
+		activate_technology = army_professionalism
+	}
+}
+
+country_event = {
+	id = 776717
+	title = "Tech reform flag"
+	desc = "Army Schools Established"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		army_schools = yes_army_schools
+		NOT = { has_country_flag = at_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = at_flag
+	}
+}
+
+country_event = {
+	id = 776718
+	title = "Tech activation"
+	desc = "Army Schools Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = at_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = at_flag
+		activate_technology = military_staff_system
+	}
+}
+
+country_event = {
+	id = 776719
+	title = "Tech reform flag"
+	desc = "Military Academies Established"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		army_schools = army_academies
+		NOT = { has_country_flag = at2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = at2_flag
+	}
+}
+
+country_event = {
+	id = 776720
+	title = "Tech activation"
+	desc = "Military Academies Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = at2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = at2_flag
+		activate_technology = military_plans
+	}
+}
+
+country_event = {
+	id = 776721
+	title = "Tech reform flag"
+	desc = "Foreign Naval Officers Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_naval_officers = yes_foreign_naval_officers
+		NOT = { has_country_flag = no_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = no_flag
+	}
+}
+
+country_event = {
+	id = 776722
+	title = "Tech activation"
+	desc = "Foreign Naval Officers Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = no_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = no_flag
+		activate_technology = naval_professionalism
+	}
+}
+
+country_event = {
+	id = 776723
+	title = "Tech reform flag"
+	desc = "Domestic Naval Officers Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_naval_officers = professional_naval_officers
+		NOT = { has_country_flag = no2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = no2_flag
+	}
+}
+
+country_event = {
+	id = 776724
+	title = "Tech activation"
+	desc = "Domestic Naval officers Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = no2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = no2_flag
+		activate_technology = naval_professionalism
+	}
+}
+
+country_event = {
+	id = 776725
+	title = "Tech reform flag"
+	desc = "Naval Schools Created"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_navies = yes_naval_schools
+		NOT = { has_country_flag = ns_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = ns_flag
+	}
+}
+
+country_event = {
+	id = 776726
+	title = "Tech activation"
+	desc = "Naval Schools Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = ns_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = ns_flag
+		activate_technology = alphabetic_flag_signaling
+	}
+}
+
+country_event = {
+	id = 776727
+	title = "Tech reform flag"
+	desc = "Naval Academies Created"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_navies = naval_academies
+		NOT = { has_country_flag = ns2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = ns2_flag
+	}
+}
+
+country_event = {
+	id = 776728
+	title = "Tech activation"
+	desc = "Naval Academies Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = ns2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = ns2_flag
+		activate_technology = naval_plans
+	}
+}
+
+country_event = {
+	id = 776729
+	title = "Tech reform flag"
+	desc = "Naval Facilities Created"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		naval_facilities = yes_naval_bases
+		NOT = { has_country_flag = nf_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = nf_flag
+	}
+}
+
+country_event = {
+	id = 776730
+	title = "Tech activation"
+	desc = "Naval Facilities Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = nf_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = nf_flag
+		activate_technology = post_nelsonian_thought
+	}
+}
+
+country_event = {
+	id = 776731
+	title = "Tech reform flag"
+	desc = "Naval Infrastructure Created"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		naval_facilities = naval_infrastructure
+		NOT = { has_country_flag = nf2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = nf2_flag
+	}
+}
+
+country_event = {
+	id = 776732
+	title = "Tech activation"
+	desc = "Naval Infrastructure Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = nf2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = nf2_flag
+		activate_technology = battleship_column_doctrine
+	}
+}
+
+country_event = {
+	id = 776733
+	title = "Tech reform flag"
+	desc = "Naval Architecture Created"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		naval_architecture = scientific
+		NOT = { has_country_flag = na_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = na_flag
+	}
+}
+
+country_event = {
+	id = 776734
+	title = "Tech activation"
+	desc = "Naval Architecture Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = na_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = na_flag
+		activate_technology = naval_design_bureaus
+	}
+}
+
+country_event = {
+	id = 776735
+	title = "Tech reform flag"
+	desc = "Advanced Naval Architecture Created"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		naval_architecture = advanced
+		NOT = { has_country_flag = na2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = na2_flag
+	}
+}
+
+country_event = {
+	id = 776736
+	title = "Tech activation"
+	desc = "Advanced Naval Architecture Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = na2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = na2_flag
+		activate_technology = fire_control_systems
+	}
+}
+
+country_event = {
+	id = 776737
+	title = "Tech reform flag"
+	desc = "Western Warships Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_navies = yes_foreign_navies
+		NOT = { has_country_flag = nu_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = nu_flag
+	}
+}
+
+country_event = {
+	id = 776738
+	title = "Tech activation"
+	desc = "Western Warships Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = nu_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = nu_flag
+		activate_technology = clipper_design
+	}
+}
+
+country_event = {
+	id = 776739
+	title = "Tech reform flag"
+	desc = "Advanced Warships Acquired"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		foreign_navies = advanced_foreign_navies
+		NOT = { has_country_flag = nu2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = nu2_flag
+	}
+}
+
+country_event = {
+	id = 776740
+	title = "Tech activation"
+	desc = "Advanced Warships Activated"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = nu2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = nu2_flag
+		activate_technology = steamers
+	}
+}
+
+country_event = {
+	id = 776741
+	title = "Tech reform flag"
+	desc = "Land Reform Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		land_reform = yes_land_reform
+		NOT = { has_country_flag = landr_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = landr_flag
+	}
+}
+
+country_event = {
+	id = 776742
+	title = "Tech activation"
+	desc = "Land Reform Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = landr_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = landr_flag
+		activate_technology = piston_steam_engine
+	}
+}
+
+country_event = {
+	id = 776743
+	title = "Tech reform flag"
+	desc = "Title and Deed System Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		land_reform = advanced_agriculture
+		NOT = { has_country_flag = landr2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = landr2_flag
+	}
+}
+
+country_event = {
+	id = 776744
+	title = "Tech activation"
+	desc = "Title and Deed System Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = landr2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = landr2_flag
+		activate_technology = freedom_of_trade
+		activate_technology = high_pressure_steam_engine
+	}
+}
+
+country_event = {
+	id = 776745
+	title = "Tech reform flag"
+	desc = "Rehabilitation Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		disciplinary_reform = rehabilitation
+		NOT = { has_country_flag = rehabilitation_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = rehabilitation_flag
+	}
+}
+
+country_event = {
+	id = 776746
+	title = "Tech activation"
+	desc = "Rehabilitation System Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = rehabilitation_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = rehabilitation_flag
+		activate_technology = introspectionism 
+	}
+}
+
+country_event = {
+	id = 776747
+	title = "Tech reform flag"
+	desc = "Administrative Reform Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		admin_reform = yes_admin_reform
+		NOT = { has_country_flag = adm_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = adm_flag
+	}
+}
+
+country_event = {
+	id = 776748
+	title = "Tech activation"
+	desc = "Administrative Reform Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = adm_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = adm_flag
+		activate_technology = enlightenment_thought
+	}
+}
+
+country_event = {
+	id = 776749
+	title = "Tech reform flag"
+	desc = "Foreign-Trained Civil Service Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		admin_reform = advanced_admin_reform
+		NOT = { has_country_flag = adm2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = adm2_flag
+	}
+}
+
+country_event = {
+	id = 776750
+	title = "Tech activation"
+	desc = "Foreign-Trained Civil Service Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = adm2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = adm2_flag
+		activate_technology = ideological_thought
+	}
+}
+
+country_event = {
+	id = 776751
+	title = "Tech reform flag"
+	desc = "Diplomatic Civil Service Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		diplomatic_reform = interactive
+		NOT = { has_country_flag = dcs_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = dcs_flag
+	}
+}
+
+country_event = {
+	id = 776752
+	title = "Tech activation"
+	desc = "Diplomatic Civil Service Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = dcs_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = dcs_flag
+		activate_technology = classicism_n_early_romanticism
+	}
+}
+
+country_event = {
+	id = 776753
+	title = "Tech reform flag"
+	desc = "Foreign-Trained Diplomatic Civil Service Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		diplomatic_reform = balanced_diplomacy
+		NOT = { has_country_flag = dcs2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = dcs2_flag
+	}
+}
+
+country_event = {
+	id = 776754
+	title = "Tech activation"
+	desc = "Foreign-Trained Diplomatic Civil Service Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = dcs2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = dcs2_flag
+		activate_technology = romanticism
+	}
+}
+
+country_event = {
+	id = 776755
+	title = "Tech reform flag"
+	desc = "Taxation Reform Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		taxation_reform = tax_farmers
+		NOT = { has_country_flag = taxreform_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = taxreform_flag
+	}
+}
+
+country_event = {
+	id = 776756
+	title = "Tech activation"
+	desc = "Taxation Reform Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = taxreform_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = taxreform_flag
+		activate_technology = no_standard
+	}
+}
+
+country_event = {
+	id = 776757
+	title = "Tech reform flag"
+	desc = "Tax Inspectors Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		taxation_reform = tax_farmers
+		NOT = { has_country_flag = taxreform2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = taxreform2_flag
+	}
+}
+
+country_event = {
+	id = 776758
+	title = "Tech activation"
+	desc = "Tax Inspectors Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = taxreform2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = taxreform2_flag
+		activate_technology = ad_hoc_money_bill_printing
+	}
+}
+
+country_event = {
+	id = 776759
+	title = "Tech reform flag"
+	desc = "Finance Reform Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		finance_reform = yes_finance_reform
+		NOT = { has_country_flag = fref_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = fref_flag
+	}
+}
+
+country_event = {
+	id = 776760
+	title = "Tech activation"
+	desc = "Finance Reform Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = fref_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = fref_flag
+		activate_technology = private_banks
+	}
+}
+
+country_event = {
+	id = 776761
+	title = "Tech reform flag"
+	desc = "International Debt Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		finance_reform = finance_reform_two
+		NOT = { has_country_flag = fref2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = fref2_flag
+	}
+}
+
+country_event = {
+	id = 776762
+	title = "Tech activation"
+	desc = "International Debt Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = fref2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = fref2_flag
+		activate_technology = stock_exchange
+		activate_technology = early_classical_theory_and_critique
+	}
+}
+
+country_event = {
+	id = 776763
+	title = "Tech reform flag"
+	desc = "Education Reform Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		education_reform = yes_education_reform
+		NOT = { has_country_flag = edu_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = edu_flag
+	}
+}
+
+country_event = {
+	id = 776764
+	title = "Tech activation"
+	desc = "Education Reform Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = edu_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = edu_flag
+		activate_technology = malthusian_thought
+	}
+}
+
+country_event = {
+	id = 776765
+	title = "Tech reform flag"
+	desc = "Modernized Education System Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		education_reform = advanced_education_reform
+		NOT = { has_country_flag = edu2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = edu2_flag
+	}
+}
+
+country_event = {
+	id = 776766
+	title = "Tech activation"
+	desc = "Modernized Education System Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = edu2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = edu2_flag
+		activate_technology = positivism
+	}
+}
+
+country_event = {
+	id = 776767
+	title = "Tech reform flag"
+	desc = "Imported Medicine Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		medicine_reform = alchemy
+		NOT = { has_country_flag = imported_medicine_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = imported_medicine_flag
+	}
+}
+
+country_event = {
+	id = 776768
+	title = "Tech activation"
+	desc = "Imported Medicine Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = imported_medicine_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = imported_medicine_flag
+		activate_technology = basic_chemistry
+	}
+}
+
+country_event = {
+	id = 776769
+	title = "Tech reform flag"
+	desc = "Foreign Surgery Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		medicine_reform = foreign_surgeons
+		NOT = { has_country_flag = foreign_surgery_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = foreign_surgery_flag
+	}
+}
+
+country_event = {
+	id = 776770
+	title = "Tech activation"
+	desc = "Foreign Surgery Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = foreign_surgery_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = foreign_surgery_flag
+		activate_technology = medicine
+	}
+}
+
+country_event = {
+	id = 776771
+	title = "Tech reform flag"
+	desc = "Basic Academic Institutions Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		academic_institutions = madrasahs
+		NOT = { has_country_flag = basic_academic_instituions_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = basic_academic_instituions_flag
+	}
+}
+
+country_event = {
+	id = 776772
+	title = "Tech activation"
+	desc = "Basic Academic Institutions Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = basic_academic_instituions_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = basic_academic_instituions_flag
+		activate_technology = late_enlightenment_philosophy
+	}
+}
+
+country_event = {
+	id = 776773
+	title = "Tech reform flag"
+	desc = "Universities Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		academic_institutions = universities
+		NOT = { has_country_flag = universities_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = universities_flag
+	}
+}
+
+country_event = {
+	id = 776774
+	title = "Tech activation"
+	desc = "Universities Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = universities_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = universities_flag
+		activate_technology = idealism 
+	}
+}
+
+country_event = {
+	id = 776775
+	title = "Tech reform flag"
+	desc = "Transport System Improvevements Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		transport_improv = yes_transport_improv
+		NOT = { has_country_flag = tran_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = tran_flag
+	}
+}
+
+country_event = {
+	id = 776776
+	title = "Tech activation"
+	desc = "Transport System Improvevements Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = tran_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = tran_flag
+		activate_technology = experimental_railroad
+	}
+}
+
+country_event = {
+	id = 776777
+	title = "Tech reform flag"
+	desc = "Advanced Railroads Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		transport_improv = advanced_transport
+		NOT = { has_country_flag = tran2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = tran2_flag
+	}
+}
+
+country_event = {
+	id = 776778
+	title = "Tech activation"
+	desc = "Advanced Railroads Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = tran2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = tran2_flag
+		activate_technology = early_railroad
+	}
+}
+
+country_event = {
+	id = 776779
+	title = "Tech reform flag"
+	desc = "Industrial Progress Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		pre_indust = yes_pre_indust
+		NOT = { has_country_flag = industrial_progress_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = industrial_progress_flag
+	}
+}
+
+country_event = {
+	id = 776780
+	title = "Tech activation"
+	desc = "Industrial Progress Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = industrial_progress_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = industrial_progress_flag
+		activate_technology = guild_based_production
+	}
+}
+
+country_event = {
+	id = 776781
+	title = "Tech reform flag"
+	desc = "Early Industrialization Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		industrial_construction = yes_industrial_construction
+		NOT = { has_country_flag = earlyid_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = earlyid_flag
+	}
+}
+
+country_event = {
+	id = 776782
+	title = "Tech activation"
+	desc = "Early Industrialization Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = earlyid_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = earlyid_flag
+		activate_technology = organized_factories
+	}
+}
+
+country_event = {
+	id = 776783
+	title = "Tech reform flag"
+	desc = "Advanced Industrialization Enacted"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = no
+		industrial_construction = advanced_industrial_construction
+		NOT = { has_country_flag = earlyid2_flag }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		set_country_flag = earlyid2_flag
+	}
+}
+
+country_event = {
+	id = 776784
+	title = "Tech activation"
+	desc = "Advanced Industrialization Implemented"
+	picture = "Unite"
+	
+	trigger = {
+		civilized = yes
+		has_country_flag = earlyid2_flag
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "Ok"
+		clr_country_flag = earlyid2_flag
+		activate_technology = mechanized_mining
+	}
+}

@@ -101,6 +101,7 @@ political_decisions = {
 			effect = {
 				prestige = 20
 				add_accepted_culture = english
+				add_accepted_culture = welsh
 			}
 			ai_will_do = {
 				factor = 1
@@ -119,24 +120,24 @@ political_decisions = {
 				NOT = { war = yes }
 				is_greater_power = yes
 				mass_politics = 1
-       				OR = { 
-					government = absolute_monarchy
-			 		government = fascist_dictatorship
-			 		government = feudal_monarchy
-				}
-		
+				LOT_6 = { owned_by = THIS }
+				LOT_2358 = { owned_by = THIS }
+				LOT_3 = { owned_by = THIS }
+				LOT_5 = { owned_by = THIS }
+				LOT_4 = { owned_by = THIS }
+				LOT_2458 = { owned_by = THIS }
 			}
 		
 			effect = {
-				prestige = 25
-				
+				prestige = 50	
 				NAN = { all_core = { add_core = HBE	} }
 				AMA = { all_core = { add_core = HBE	} }
-				ARU = { all_core = { add_core = HBE	} }
+				AUC = { all_core = { add_core = HBE	} }
 				LOT = { all_core = { add_core = HBE	} }
 				GUY = { all_core = { add_core = HBE	} }
+				add_accepted_culture = lotharian
         
-        change_tag = HBE
+				change_tag = HBE
 				
 				set_country_flag = holy_britannia
 			}

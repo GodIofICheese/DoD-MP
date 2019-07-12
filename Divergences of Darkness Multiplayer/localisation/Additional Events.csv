@@ -28,6 +28,8 @@ EVT776603OPTA;Let the Buffing Commence.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;
 EVTNAME776604;Scandinavian Cores Liferating Increase;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC776604;To compensate for low liferating in some provinces, and due to it's multi-front nature liferating has been increased for Scandinavia.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT776604OPTA;Let the Buffing Commence.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776605;To compensate for high overall liferating in Germany, and due to the over-all lategame potential of Burgundy & Bohemia liferating has been nerfed for all German provinces by 1.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT776605OPTA;Let the Nerfing Commence.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 199036;Mining RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME199036;Mining RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC199036;Choose to change a province to the following RGO types, cool down is 25 years for changing, 1 year for not choosing one.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -36,7 +38,7 @@ EVT199036OPTB;Change a province to produce Iron.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;
 EVT199036OPTC;Change a province to produce Sulphur.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT199036OPTD;I'd rather not change anything.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 199037;Argiculture RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
-EVTNAME199037;Argiculture RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME199037;Agriculture RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC199037;Choose to change a province to the following RGO types, cool down is 12.5 years for changing, 1 year for not choosing one. Fish require an available costal province, Timber requires forested terrain.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT199037OPTA;Change a province to produce Wool.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT199037OPTB;Change a province to produce Timber.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x

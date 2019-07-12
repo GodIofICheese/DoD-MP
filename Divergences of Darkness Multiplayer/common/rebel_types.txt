@@ -5837,7 +5837,7 @@ zombie_rebels = {
 	resilient = yes
 	reinforcing = yes
 	general = yes
-	smart = yes
+	smart = no
 	unit_transfer = yes
 
 	occupation_mult = 3.0
@@ -5894,7 +5894,7 @@ zombie_rebels = {
 		}
 		modifier = {
 			factor = 0.1
-			units_in_province = 10
+			units_in_province = 9
 		}
 		modifier = {
 			factor = 0.001

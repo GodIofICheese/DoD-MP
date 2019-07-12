@@ -34,6 +34,8 @@ debt_law = peonage
 penal_system = capital_punishment
 child_labor = child_labor_legalcitizens_rights = culture_voting_only
 border_policy = open_borders
+centralization = regionalism
+colonial_policy = no_colonies
 
 set_country_flag = coptic_country
 
@@ -60,6 +62,10 @@ schools = unciv_tech_school
 
 # Unciv Reforms
 admin_reform = yes_admin_reform
+foreign_officers = yes_foreign_officers 
+
+enlightenment_thought = 1
+army_command_principle = 1
 
 oob = "ETH_oob.txt"
 
@@ -72,8 +78,16 @@ oob = "ETH_oob.txt"
 	foreign_weapons = yes_foreign_weapons
 	foreign_training = yes_foreign_training
 	admin_reform = yes_admin_reform
+	education_reform = yes_education_reform
+	medicine_reform = alchemy
+	academic_institutions = madrasahs
 
 	# Technologies
 	flintlock_rifles = 1
+	post_napoleonic_thought = 1
+	enlightenment_thought = 1
+	basic_chemistry = 1
+	malthusian_thought = 1
+	late_enlightenment_philosophy = 1
 
 }

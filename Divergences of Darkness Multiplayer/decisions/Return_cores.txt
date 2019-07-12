@@ -3,44 +3,32 @@ political_decisions = {
 		picture = return_cores_img
 		alert = no 
 		potential = {
-			OR = {
-				has_country_flag = government_decisions_on
-				ai = yes
-			}
+			has_country_flag = government_decisions_on
+			NOT = { has_country_flag = return_cores_decision } 
 			OR = {
 				num_of_vassals_no_substates = 1
-				is_greater_power = yes
+				num_of_vassals = 1
+				num_of_substates = 1
 			}
-			NOT = {
-				has_country_flag = return_cores_decision
-				has_country_flag = return_core_disabled 
-			}
-			any_owned_province = { NOT = { is_core = THIS } any_core = { OR = { in_sphere = THIS vassal_of = THIS } } } 
 		}
-		allow = { civilized = yes ai = no }
-		effect = { set_country_flag = return_cores_decision } 
+		allow = { 
+			civilized = yes 
+			ai = no 
+		}
+		effect = { 
+		set_country_flag = return_cores_decision 
+		} 
 	}
 	return_core_off = { 
 		picture = return_cores_img
 		alert = no 
 		potential = {
-			has_country_flag = return_cores_decision 
-			NOT = { has_country_flag = return_core_disabled_forever } 
+			has_country_flag = return_cores_decision  
 		}
 		allow = { ai = no }
 		effect = { clr_country_flag = return_cores_decision } 
 	}
-	return_core_disabled = {
-		picture = return_cores_img
-		alert = no
-		potential = { 
-			has_country_flag = return_cores_decision 
-			NOT = { has_country_flag = return_core_disabled }
-		}
-		allow = { ai = no }
-		effect = { clr_country_flag = return_cores_decision set_country_flag = return_core_disabled } 
-	}
-	
+
 	return_cores_MNP = { picture = return_cores_img alert = no potential = { ai = no has_country_flag = return_cores_decision MNP = { NOT = { substate_of = THIS } OR = { in_sphere = THIS vassal_of = THIS } } any_owned_province = { is_core = MNP NOT = { is_core = THIS } } } allow = { war = no MNP = { war = no } } effect = { prestige = -5 relation = { who = MNP value = 50 } any_owned = { limit = { NOT = { is_core = THIS } is_core = MNP } secede_province = MNP } } }
 	return_cores_BDK = { picture = return_cores_img alert = no potential = { ai = no has_country_flag = return_cores_decision BDK = { NOT = { substate_of = THIS } OR = { in_sphere = THIS vassal_of = THIS } } any_owned_province = { is_core = BDK NOT = { is_core = THIS } } } allow = { war = no BDK = { war = no } } effect = { prestige = -5 relation = { who = BDK value = 50 } any_owned = { limit = { NOT = { is_core = THIS } is_core = BDK } secede_province = BDK } } }
 	return_cores_PGG = { picture = return_cores_img alert = no potential = { ai = no has_country_flag = return_cores_decision PGG = { NOT = { substate_of = THIS } OR = { in_sphere = THIS vassal_of = THIS } } any_owned_province = { is_core = PGG NOT = { is_core = THIS } } } allow = { war = no PGG = { war = no } } effect = { prestige = -5 relation = { who = PGG value = 50 } any_owned = { limit = { NOT = { is_core = THIS } is_core = PGG } secede_province = PGG } } }

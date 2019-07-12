@@ -128,6 +128,7 @@ party = {
 
 	ideology = communist
 
+	social_policy = populist_welfare
 	economic_policy = planned_economy
 	trade_policy = protectionism
 	religious_policy = pro_atheism
@@ -142,6 +143,7 @@ party = {
 
 	ideology = fascist
 
+	social_policy = populist_welfare
 	economic_policy = state_capitalism
 	trade_policy = protectionism
 	religious_policy = moralism

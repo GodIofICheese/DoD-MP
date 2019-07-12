@@ -1429,11 +1429,12 @@ country_event = {
 		name = rgo_changed
 		duration = 730
 		}
+		clr_country_flag = rgo_changed_flag
 	}
 }
 
 country_event = {
-	id = 199037 #Argiculture Decision Change
+	id = 199037 #Agriculture Decision Change
 	picture = farming
 	title = "EVTNAME199037"
 	desc = "EVTDESC199037"

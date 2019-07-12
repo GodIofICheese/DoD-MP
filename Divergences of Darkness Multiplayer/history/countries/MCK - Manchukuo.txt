@@ -2,6 +2,9 @@ capital = 1555
 primary_culture = manchu
 culture = beifaren
 culture = nanfaren
+culture = yue 
+culture = hakka
+culture = zhuang 
 religion = mahayana
 government = absolute_monarchy
 plurality = 0.0
@@ -53,9 +56,14 @@ upper_house = {
 
 land_reform = yes_land_reform
 foreign_weapons = yes_foreign_weapons
+foreign_officers = yes_foreign_officers
+taxation_reform = tax_farmers
 
 # Technologies
 flintlock_rifles = 1
+piston_steam_engine = 1
+army_command_principle = 1
+no_standard = 1
 
 # Starting Consciousness
 consciousness = 0

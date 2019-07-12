@@ -238,6 +238,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}
 					life_rating = 35
 					NOT = { life_rating = 36 }
@@ -270,6 +271,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 					    }						
 					life_rating = 30
 					NOT = { life_rating = 31 }
@@ -302,6 +304,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}	
 					life_rating = 31
 					NOT = { life_rating = 32 }
@@ -334,6 +337,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}		
 					life_rating = 25
 					NOT = { life_rating = 26 }
@@ -366,6 +370,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}
 					life_rating = 21
 					NOT = { life_rating = 22 }
@@ -398,6 +403,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}
 					life_rating = 20
 					NOT = { life_rating = 21 }
@@ -430,6 +436,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}
 					life_rating = 15
 					NOT = { life_rating = 16 }
@@ -462,6 +469,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}	
 					life_rating = 10
 					NOT = { life_rating = 11 }
@@ -494,6 +502,7 @@ country_event = {
 						owned_by = NBG
 						owned_by = DNG
 						owned_by = AOT
+						owned_by = HHR
 						}	
 					life_rating = 0
 					NOT = { life_rating = 1 }
@@ -519,7 +528,7 @@ country_event = {
 	mean_time_to_happen = { days = 1 }
 	
 	option = {
-		name = "EVT776601OPTA"
+		name = "EVT776604OPTA"
 		SCA = { 
 			all_core = { 
 				limit = { 
@@ -581,4 +590,74 @@ country_event = {
 			} 
 		}
 	}	
+}
+
+#Germany Liferating Nerf -1
+country_event = {
+	id = 776605
+	title = "EVTNAME776605"
+	desc = "EVTDESC776605"
+	picture = "rome_buildings"
+
+	trigger = {
+		tag = SIK
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = "EVT776605OPTA"
+		GER = { 
+			all_core = { 
+				limit = { 
+					life_rating = 40
+					NOT = { life_rating = 41 }
+				}
+				life_rating = -1 
+			}
+		}
+	}
+}
+
+#New World/Oceania RGO Size Reduction
+country_event = {
+	id = 776606
+	title = "EVTNAME776606"
+	desc = "EVTDESC776606"
+	picture = "rome_buildings"
+
+	trigger = {
+		tag = SIK
+	}
+	
+	fire_only_once = yes
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = "EVT776606OPTA"
+		any_country = {
+				any_owned = {
+					limit = {
+						OR = {
+						owned_by = PLA
+						owned_by = VIN
+						owned_by = GAN
+						owned_by = HHR
+						owned_by = NAN
+						owned_by = LOT
+						owned_by = AMA
+						owned_by = INC
+						owned_by = CLM
+						owned_by = NBG
+						owned_by = DNG
+						owned_by = AOT
+						}
+					}
+					RGO_size = 2
+					}
+			}
+	}
 }

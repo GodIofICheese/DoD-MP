@@ -1001,7 +1001,7 @@ country_event = {
 	
 	option = { 
 	name = "97090.A"
-	badboy = 8 
+	badboy = 5 
 	LOT_2446 = { add_core = AMA }
 	LOT_2 = { add_core = AMA }
 	set_global_flag = borderAMA
@@ -1015,13 +1015,13 @@ country_event = {
 	SA_4 = { add_core = AMA }
 	LOT_3 = { add_core = AMA }
 	SA_5 = { add_core = AMA }
-	badboy = 18
+	badboy = 12
 	set_global_flag = AMAguarani
 	}
 	
 	option = { 
 	name = "97090.C"
-	badboy = 30
+	badboy = 20
 	set_global_flag = Amerigue
 	LOT = {
 			all_core = {
@@ -1044,17 +1044,16 @@ country_event = {
 		random_list = {
 			50 = { 
 				add_accepted_culture = lotharian
-				badboy = -5
+				badboy = 5
 			}
 			50 = { 
 				any_pop = {
 					limit = {
 						culture = lotharian
 					}
-					militancy = 5
-         			consciousness = 5
+					militancy = 3
+         			consciousness = 3
 				}
-				badboy = 5
 			}
 		}
 	}
@@ -1073,17 +1072,16 @@ country_event = {
 		random_list = {
 			70 = { 
 				add_accepted_culture = lotharian
-				badboy = -5
+				badboy = 5
 			}
 			30 = { 
 				any_pop = {
 					limit = {
 						culture = lotharian
 					}
-					militancy = 5
-         			consciousness = 5
+					militancy = 3
+         			consciousness = 3
 				}
-				badboy = 5
 			}
 		}
 	}
@@ -1102,17 +1100,16 @@ country_event = {
 		random_list = {
 			95 = { 
 				add_accepted_culture = lotharian
-				badboy = -5
+				badboy = 5
 			}
 			5 = { 
 				any_pop = {
 					limit = {
 						culture = lotharian
 					}
-					militancy = 5
-         			consciousness = 5
+					militancy = 3
+         			consciousness = 3
 				}
-				badboy = 5
 			}
 		}
 	}

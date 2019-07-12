@@ -5,10 +5,16 @@ political_decisions = {
 			NOT = { has_country_flag = vin_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			OR = {
+				AND = {
+					all_core = {
+					owned_by = THIS
+					}
+				}
+				mass_politics = 1
 			}
 			nationalism_n_imperialism = 1
+			year = 1860
 		}
 		effect = {
 			set_country_flag = vin_manifest_destiny
@@ -60,10 +66,16 @@ political_decisions = {
 			NOT = { has_country_flag = nbg_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			OR = {
+				AND = {
+					all_core = {
+					owned_by = THIS
+					}
+				}
+				mass_politics = 1
 			}
 			nationalism_n_imperialism = 1
+			year = 1860
 		}
 		effect = {
 			set_country_flag = nbg_manifest_destiny
@@ -131,10 +143,16 @@ political_decisions = {
 			NOT = { has_country_flag = pla_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			OR = {
+				AND = {
+					all_core = {
+					owned_by = THIS
+					}
+				}
+				mass_politics = 1
 			}
 			nationalism_n_imperialism = 1
+			year = 1860
 		}
 		effect = {
 			set_country_flag = pla_manifest_destiny
@@ -178,15 +196,22 @@ political_decisions = {
 	}
 	
 	dng_manifest_destiny = { # Qingqiu
+		picture = meiji_court
 		potential = {
 			tag = DNG
 			NOT = { has_country_flag = dng_manifest_destiny }
 		}
 		allow = {
-			all_core = {
-				owned_by = THIS
+			OR = {
+				AND = {
+					all_core = {
+					owned_by = THIS
+					}
+				}
+				mass_politics = 1
 			}
 			nationalism_n_imperialism = 1
+			year = 1860
 		}
 		effect = {
 			set_country_flag = dng_manifest_destiny
@@ -502,71 +527,6 @@ political_decisions = {
 		
 		effect = { 
 		SCA = { country_event = 135623 }
-		}
-	}
-	
-	dissolve_CLM = { 
-		picture = map_central_america
-		potential = { 
-			war_with = CLM
-			OR = {
-			continent = north_america
-			continent = south_america
-		}
-			is_greater_power = yes 
-		}
-		
-		allow = { 
-		controls = 2172
-		CLM = { 
-		NOT = { is_greater_power = yes }
-		war_exhaustion = 80 
-		national_provinces_occupied = .60
-			}
-		}
-		
-		effect = { 
-		end_war = CLM 
-		CLM = { 
-		any_owned = {
-				limit = {
-					is_core = CLM
-				}
-				remove_core = CLM
-			}
-			any_country = {
-				any_owned = {
-					limit = {
-						is_core = CLM
-					}
-				remove_core = CLM
-				}
-			}
-
-			change_tag = MEX
-
-			any_owned = {
-				limit = {
-					is_core = CUB
-				}
-				secede_province = CUB
-			}
-
-			any_owned = {
-				limit = {
-					is_core = LST
-				}
-				secede_province = LST
-			}
-
-			CUB = { country_event = 46423 }
-			LST = { country_event = 46423 }
-
-			MEX = { country_event = 46440 }
-		
-			} 
-		badboy = 10 
-		prestige = 25 
 		}
 	}
 	

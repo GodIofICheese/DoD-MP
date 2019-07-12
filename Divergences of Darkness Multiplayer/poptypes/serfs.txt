@@ -71,48 +71,44 @@ promote_to = {
 
 ideologies = {
 
-	conservative = { factor = 5 }
+ideologies = {
 	
-	reactionary = { factor = 1 }
-	
-	socialist = { factor = 2 }
-
-	communist = { factor = 1 }
-	
-	liberal = { factor = 1 
-	modifier = {
-		factor = 1.2
-		literacy = 0.6
+	subordinate = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			not = { political_reform_want = 0.05 }
 		}
-	
-	modifier = {
-		factor = 1.3
-		literacy = 0.7
+		modifier = {
+			factor = 1.5
+			not = { political_reform_want = 0.10 }
 		}
-	
-	modifier = {
-		factor = 1.8
-		OR = {
-			vote_franschise = universal_weighted_voting
-			vote_franschise = universal_voting
-			}
+		modifier = {
+			factor = 1.5
+			not = { political_reform_want = 0.15 }
 		}
-	
-	modifier = {
-		factor = 1.1
-		consciousness = 6
+		modifier = {
+			factor = 1.5
+			not = { political_reform_want = 0.20 }
+		}		
+	}
+	insubordinate = {
+		factor = 1
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.05
 		}
-	modifier = {
-		factor = 1.1
-		consciousness = 7
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.10
 		}
-	modifier = {
-		factor = 1.3
-		consciousness = 8
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.15
 		}
-	modifier = {
-		factor = 1.5
-		consciousness = 9
+		modifier = {
+			factor = 1.5
+			political_reform_want = 0.20
 		}
 	}
 }

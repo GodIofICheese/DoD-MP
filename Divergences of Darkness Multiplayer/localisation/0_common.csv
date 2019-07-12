@@ -1177,86 +1177,168 @@ massive_endowment;Massive Endowment;Massive Endowment;Massive Endowment;;Massive
 massive_endowment_l;Massive Endowment;Massive Endowment;Massive Endowment;;Massive Endowment;;;;;;;;;
 massive_endowment_desc;There's a museum on every street corner.;Large Endowment;Large Endowment;;Large Endowment;;;;;;;;;
 movement_massive_endowment;Movement for the Promotion of the Arts;;;;;;;;;;;;;
-advanced_agriculture;Modern agriculture;;;;;;;;;;;;;
+advanced_agriculture;Modern Agriculture;;;;;;;;;;;;;
 advanced_agriculture_desc;Adapting new techniques will increase our RGO output significantly.;;;;;;;;;;;;;
-disciplinary_reform;Disciplinary reform;;;;;;;;;;;;;
-disciplinary_reform_l;Disciplinary reform;;;;;;;;;;;;;
 punishment;Retribution;;;;;;;;;;;;;
-punishment_desc;An eye for an eye, no less;;;;;;;;;;;;;
+punishment_desc;An eye for an eye, no less.;;;;;;;;;;;;;
+naval_architecture;Naval Design;;;;;;;;;;;;x,,
+naval_architecture_l;Naval Design;;;;;;;;;;;;x,,
 rehabilitation;Rehabilitation;;;;;;;;;;;;;
-rehabilitation_desc;The concepts of mercy and parole;;;;;;;;;;;;;
-advanced_admin_reform;Modern administration;;;;;;;;;;;;;
+rehabilitation_desc;The concepts of mercy and parole.;;;;;;;;;;;;;
+advanced_admin_reform;Modern Administration;;;;;;;;;;;;;
 advanced_admin_reform_desc;Our administration is now REALLY modern and efficient. By the way, do you have any idea where I can get permit A39?;;;;;;;;;;;;;
-diplomatic_reform;Diplomatic reform;;;;;;;;;;;;;
-diplomatic_reform_l;Diplomatic reform;;;;;;;;;;;;;
 isolationism;Isolationism;;;;;;;;;;;;;
-isolationism_desc;We shall interact with no other nations;;;;;;;;;;;;;
+isolationism_desc;We shall interact with no other nations.;;;;;;;;;;;;;
 interactive;Interactive;;;;;;;;;;;;;
-interactive_desc;We can ignore the rest of the world no longer;;;;;;;;;;;;;
+interactive_desc;We can ignore the rest of the world no longer.;;;;;;;;;;;;;
 balanced_diplomacy;Experienced;;;;;;;;;;;;;
-balanced_diplomacy_desc;Our officials have learned how to avoid faux pas. (Adopting this reform will reduce the chance of negative events.);;;;;;;;;;;;;
-taxation_reform;Taxation reform;;;;;;;;;;;;;
-taxation_reform_l;Taxation reform;;;;;;;;;;;;;
+balanced_diplomacy_desc;Our officials have learned how to avoid faux pas.;;;;;;;;;;;;;
 tribute;Tribute;;;;;;;;;;;;;
-tribute_desc;Collected through traditional means;;;;;;;;;;;;;
-tax_farmers;Taxed goods;;;;;;;;;;;;;
-tax_farmers_desc;Organized system to tax farmers;;;;;;;;;;;;;
-tax_inspectors;Tax inspectors;;;;;;;;;;;;;
-tax_inspectors_desc;Modern taxation system;;;;;;;;;;;;;
-advanced_education_reform;Modernized system;;;;;;;;;;;;;
+tribute_desc;Collected through traditional means.;;;;;;;;;;;;;
+tax_farmers;Taxed Goods;;;;;;;;;;;;;
+tax_farmers_desc;Organized system to tax farmers.;;;;;;;;;;;;;
+tax_inspectors;Tax Inspectors;;;;;;;;;;;;;
+tax_inspectors_desc;Modern Taxation System.;;;;;;;;;;;;;
+advanced_education_reform;Modernized System;;;;;;;;;;;;;
 advanced_education_reform_desc;The newest ideas for everyone.;;;;;;;;;;;;;
-medicine_reform;Medical reform;;;;;;;;;;;;;
-medicine_reform_l;Medical reform;;;;;;;;;;;;;
 herbalism;Herbalism;;;;;;;;;;;;;
-herbalism_desc;Only traditional medicines allowed;;;;;;;;;;;;;
-alchemy;Imported medicines;;;;;;;;;;;;;
-alchemy_desc;Foreign pharmaceuticals are permitted;;;;;;;;;;;;;
-foreign_surgeons;Foreign surgeons;;;;;;;;;;;;;
-foreign_surgeons_desc;Foreign doctors are permitted to practice;;;;;;;;;;;;;
-academic_institutions;Academic institutions;;;;;;;;;;;;;
-academic_institutions_l;Academic institutions;;;;;;;;;;;;;
+herbalism_desc;Only traditional medicines allowed.;;;;;;;;;;;;;
+alchemy;Imported Medicines;;;;;;;;;;;;;
+alchemy_desc;Foreign pharmaceuticals are permitted.;;;;;;;;;;;;;
+foreign_surgeons;Foreign Surgeons;;;;;;;;;;;;;
+foreign_surgeons_desc;Foreign doctors are permitted to practice.;;;;;;;;;;;;;
 nonexistent;None;;;;;;;;;;;;;
-nonexistent_desc;Traditional education methods only;;;;;;;;;;;;;
+nonexistent_desc;Traditional education methods only.;;;;;;;;;;;;;
 madrasahs;Madrasahs;;;;;;;;;;;;;
-madrasahs_desc;Simple schooling institutions;;;;;;;;;;;;;
+madrasahs_desc;Simple schooling institutions.;;;;;;;;;;;;;
 universities;Universities;;;;;;;;;;;;;
-universities_desc;Advanced centers of learning;;;;;;;;;;;;;
-advanced_transport;Advanced;;;;;;;;;;;;;
+universities_desc;Advanced centers of learning. (Can only be taken after 1840);;;;;;;;;;;;;
+advanced_transport;Advanced Railroads;;;;;;;;;;;;;
 advanced_transport_desc;Transportation system is modern AND efficient.;;;;;;;;;;;;;
 advanced_industrial_construction;Advanced Construction;;;;;;;;;;;;;
 advanced_industrial_construction_desc;We have adopted all modern techniques.;;;;;;;;;;;;;
-advanced_foreign_training;Advanced foreign training;;;;;;;;;;;;;
-advanced_foreign_training_desc;Our troops have mastered modern techniques.;;;;;;;;;;;;;
-modern_weapons;Modern weapons;;;;;;;;;;;;;
-modern_weapons_desc;The best weapons foreign nations have to offer;;;;;;;;;;;;;
-advanced_military_constructions;Modern fortifications;;;;;;;;;;;;;
-advanced_military_constructions_desc;These fortifications can actually withstand enemy fire.;;;;;;;;;;;;;
-professional_officers;Professional officers;;;;;;;;;;;;;
-professional_officers_desc;Our troops AND officers are the finest in the world. For real this time.;;;;;;;;;;;;;
-army_academies;Army academies;;;;;;;;;;;;;
-army_academies_desc;We have established a national college to train our officers.;;;;;;;;;;;;;
-professional_naval_officers;Professional naval officers;;;;;;;;;;;;;
+modern_weapons;Modern Weapons;;;;;;;;;;;;;
+modern_weapons_desc;The best weapons foreign nations have to offer. (Can only be taken after 1850);;;;;;;;;;;;;
+advanced_military_constructions;Modern Fortifications;;;;;;;;;;;;;
+advanced_military_constructions_desc;These fortifications can actually withstand enemy fire. (Can only be taken after 1850);;;;;;;;;;;;;
+professional_officers;Professional Officers;;;;;;;;;;;;;
+professional_officers_desc;Our troops AND officers are the finest in the world. For real this time. (Can only be taken after 1850);;;;;;;;;;;;;
+army_academies;Army Academies;;;;;;;;;;;;;
+army_academies_desc;We have established a national college to train our officers. (Can only be taken after 1850);;;;;;;;;;;;;
+professional_naval_officers;Professional Naval Officers;;;;;;;;;;;;;
 professional_naval_officers_desc;Our captains are well trained professionals.;;;;;;;;;;;;;
-naval_academies;Naval academies;;;;;;;;;;;;;
+naval_academies;Naval Academies;;;;;;;;;;;;;
 naval_academies_desc;Man the cannons lads, thar she sails!;;;;;;;;;;;;;
-naval_facilities;Naval facilities;;;;;;;;;;;;;
-naval_facilities_l;Naval facilities;;;;;;;;;;;;;
-no_naval_bases;Non-existent;;;;;;;;;;;;;
-no_naval_bases_desc;Primitive port capabilities;;;;;;;;;;;;;
-yes_naval_bases;Naval bases;;;;;;;;;;;;;
-yes_naval_bases_desc;Able to build military ports;;;;;;;;;;;;;
-naval_infrastructure;Naval infrastructure;;;;;;;;;;;;;
+naval_facilities;Naval Facilities;;;;;;;;;;;;;
+naval_facilities_l;Naval Facilities;;;;;;;;;;;;;
+no_naval_bases;Non-existent Facilities;;;;;;;;;;;;;
+no_naval_bases_desc;Primitive port capabilities.;;;;;;;;;;;;;
+yes_naval_bases;Naval Bases;;;;;;;;;;;;;
+yes_naval_bases_desc;Able to build military ports.;;;;;;;;;;;;;
+naval_infrastructure;Naval Infrastructure;;;;;;;;;;;;;
 naval_infrastructure_desc;We have set up a network of naval bases and outposts.;;;;;;;;;;;;;
-naval_architecture;Naval architecture;;;;;;;;;;;;;
-naval_architecture_l;Naval architecture;;;;;;;;;;;;;
 traditional;Traditional;;;;;;;;;;;;;
-traditional_desc;Simple ship design;;;;;;;;;;;;;
+traditional_desc;Simple Ship Design.;;;;;;;;;;;;;
 scientific;Scientific;;;;;;;;;;;;;
-scientific_desc;Advanced ship design;;;;;;;;;;;;;
+scientific_desc;Advanced Ship Design.;;;;;;;;;;;;;
 advanced;Advanced;;;;;;;;;;;;;
 advanced_desc;REALLY advanced ship design. It's like rocket science for the Victorian era.;;;;;;;;;;;;;
-advanced_foreign_navies;Advanced foreign navies;;;;;;;;;;;;;
-advanced_foreign_navies_desc;The best ships that we can purchase;;;;;;;;;;;;;
+advanced_foreign_navies;Advanced Foreign Navies;;;;;;;;;;;;;
+advanced_foreign_navies_desc;The best ships that we can purchase.;;;;;;;;;;;;;
+land_reform;Land Reform;Réforme rurale;Landreform;;;;;;;;;;x,,
+land_reform_l;Land Reform;Réforme agraire;Landreform;;;;;;;;;;x,,
+admin_reform;Administration;Réforme administrative;Verwaltungsreform;;;;;;;;;;x,,
+admin_reform_l;Administration;Réforme administrative;Verwaltungsreform;;;;;;;;;;x,,
+finance_reform;Finances;Réforme financière;Finanzreform;;;;;;;;;;x,,
+finance_reform_l;Finances;Réforme financière;Finanzreform;;;;;;;;;;x,,
+education_reform;Education;Réforme de l'éducation;Bildungsreform;;;;;;;;;;x,,
+education_reform_l;Education;Réforme de l'éducation;Bildungsreform;;;;;;;;;;x,,
+transport_improv;Transportation;Système de transport;Transportsystem;;;;;;;;;;x,,
+transport_improv_l;Transportation;Système de transport;Transportsystem;;;;;;;;;;x,,
+pre_indust;Industry;Préindustrialisation;Frühe Industrialisierung;;;;;;;;;;x,,
+pre_indust_l;Industry;Préindustrialisation;Frühe Industrialisierung;;;;;;;;;;x,,
+industrial_construction;Construction;Construction industrielle;Industrielle Konstruktion;;;;;;;;;;x,,
+industrial_construction_l;Construction;Construction industrielle;Industrielle Konstruktion;;;;;;;;;;x,,
+foreign_weapons;Armament;Armes étrangères;Ausländische Waffen;;;;;;;;;;x,,
+foreign_weapons_l;Armament;Armes étrangères;Ausländische Waffen;;;;;;;;;;x,,
+military_constructions;Fortifications;Constructions militaires;Militärische Konstruktionen;;;;;;;;;;x,,
+military_constructions_l;Fortifications;Constructions militaires;Militärische Konstruktionen;;;;;;;;;;x,,
+foreign_officers;Army Officers;Entraînement d'officier;Offiziersausbildung;;;;;;;;;;x,,
+foreign_officers_l;Army Officers;Entraînement d'officier;Offiziersausbildung;;;;;;;;;;x,,
+army_schools;Army Training;Entraînement militaire;Armeeausbildung;;;;;;;;;;x,,
+army_schools_l;Army Training;Entraînement militaire;Armeeausbildung;;;;;;;;;;x,,
+foreign_naval_officers;Naval Officers;Officiers de marine;Marineoffiziere;;;;;;;;;;x,,
+foreign_naval_officers_l;Naval Officers;Officiers de marine;Marineoffiziere;;;;;;;;;;x,,
+naval_schools;Naval Training;Entraînement naval;Marineausbildung;;;;;;;;;;x,,
+naval_schools_l;Naval Training;Entraînement naval;Marineausbildung;;;;;;;;;;x,,
+foreign_navies;Naval Units;Unités navales étrangères;Ausländische Marineeinheiten;;;;;;;;;;x,,
+foreign_navies_l;Naval Units;Unités navales étrangères;Ausländische Marineeinheiten;;;;;;;;;;x,,
+foreign_training;Military Drill;;;;;;;;;;;;x,,
+foreign_training_l;Military Drill;;;;;;;;;;;;x,,
+naval_facilities;Naval Facilities;;;;;;;;;;;;x,,
+naval_facilities_l;Naval Facilities;;;;;;;;;;;;x,,
+disciplinary_reform;Judiciaries;;;;;;;;;;;;x,,
+disciplinary_reform_l;Judiciaries;;;;;;;;;;;;x,,
+diplomatic_reform;Diplomacy;;;;;;;;;;;;x,,
+diplomatic_reform_l;Diplomacy;;;;;;;;;;;;x,,
+taxation_reform;Taxation;;;;;;;;;;;;x,,
+taxation_reform_l;Taxation;;;;;;;;;;;;x,,
+medicine_reform;Medicine;;;;;;;;;;;;x,,
+medicine_reform_l;Medicine;;;;;;;;;;;;x,,
+academic_institutions;School System;;;;;;;;;;;;x,,
+academic_institutions_l;School System;;;;;;;;;;;;x,,
+army_command_principle;Army Command Principle;Hiérarchie militaire;Das Kommandoprinzip;;El Principio de Mando;;;;;;;;x,,
+army_command_principle_desc;Army Command Principle.;Hiérarchie militaire;Das Kommandoprinzip;;El Principio de Mando;;;;;;;;x,,
+the_command_principle;Naval Command Principle;Hiérarchie militaire;Das Kommandoprinzip;;El Principio de Mando;;;;;;;;x,,
+the_command_principle_desc;Naval Command Principle.;Hiérarchie militaire;Das Kommandoprinzip;;El Principio de Mando;;;;;;;;x,,
+professional_officers;Professional Officers;;;;;;;;;;;;x,,
+professional_officers_l;Professional Officers;;;;;;;;;;;;x,,
+professional_officers_desc;Our troops AND officers are the finest in the world. For real this time. (Can only be taken after 1850);;;;;;;;;;;;x,,
+professional_naval_officers;Professional Naval Officers;;;;;;;;;;;;x,,
+professional_naval_officers_l;Professional Naval Officers;;;;;;;;;;;;x,,
+professional_naval_officers_desc;Our captains are well trained professionals.;;;;;;;;;;;;x,,
+advanced_foreign_training;Advanced Foreign Training;;;;;;;;;;;;x,,
+advanced_foreign_training_l;Advanced Foreign Training;;;;;;;;;;;;x,,
+advanced_foreign_training_desc;Our troops have mastered modern techniques. (Can only be taken after 1850);;;;;;;;;;;;x,,
+advanced;Advanced;;;;;;;;;;;;x,,
+advanced_l;Advanced;;;;;;;;;;;;x,,
+advanced_desc;REALLY advanced ship design. It's like rocket science of the victorian era.;;;;;;;;;;;;x,,
+advanced_military_constructions;Modern Fortifications;;;;;;;;;;;;x,,
+advanced_military_constructions_l;Modern Fortifications;;;;;;;;;;;;x,,
+advanced_military_constructions_desc;These fortifications can actually withstand enemy fire.;;;;;;;;;;;;x,,
+naval_infrastructure;Naval Infrastructure;;;;;;;;;;;;x,,
+naval_infrastructure_l;Naval Infrastructure;;;;;;;;;;;;x,,
+naval_infrastructure_desc;We have set up a network of naval bases and outposts.;;;;;;;;;;;;x,,
+army_academies;Army Academies;;;;;;;;;;;;x,,
+army_academies_l;Army Academies;;;;;;;;;;;;x,,
+army_academies_desc;We have established a national college to train our officers.;;;;;;;;;;;;x,,
+naval_academies;Naval Academies;;;;;;;;;;;;x,,
+naval_academies_l;Naval Academies;;;;;;;;;;;;x,,
+naval_academies_desc;Man the cannons lads, thar she sails!;;;;;;;;;;;;x,,
+advanced_agriculture;Title and Deed System;;;;;;;;;;;;x,,
+advanced_agriculture_l;Title and Deed System;;;;;;;;;;;;x,,
+advanced_agriculture_desc;The state guarantees private property and land development rights.;;;;;;;;;;;;x,,
+advanced_admin_reform;Modern Administration;;;;;;;;;;;;x,,
+advanced_admin_reform_l;Modern Administration;;;;;;;;;;;;x,,
+advanced_admin_reform_desc;Our administration is now REALLY modern and efficient. By the way, do you have any idea where I can get permit A39?;;;;;;;;;;;;x,,
+advanced_education_reform;Modernized System;;;;;;;;;;;;x,,
+advanced_education_reform_l;Modernized System;;;;;;;;;;;;x,,
+advanced_education_reform_desc;The newest ideas for everyone.;;;;;;;;;;;;x,,
+advanced_industrial_construction;Advanced Construction;;;;;;;;;;;;x,,
+advanced_industrial_construction_l;Advanced Construction;;;;;;;;;;;;x,,
+advanced_industrial_construction_desc;We have adopted all modern techniques.;;;;;;;;;;;;x,,
+advanced_transport;Advanced;;;;;;;;;;;;x,,
+advanced_transport_l;Advanced;;;;;;;;;;;;x,,
+advanced_transport_desc;Transportation system is modern AND efficient.;;;;;;;;;;;;x,,
+balanced_diplomacy;Experienced;;;;;;;;;;;;x,,
+balanced_diplomacy_l;Experienced;;;;;;;;;;;;x,,
+balanced_diplomacy_desc;Our officals have learned how to avoid faux pas.;;;;;;;;;;;;x,,
+no_pre_indust;Stick to the Old Ways;;;;;;;;;;;;x,,
+no_pre_indust_desc;We have no need of industry.;;;;;;;;;;;;x,,
+yes_pre_indust;Industrial Progress;;;;;;;;;;;;x,,
+no_transport_improv_desc;Transportation system is primitive.;;;;;;;;;;;;x,,
+yes_transport_improv_desc;Transportation system is modern.;;;;;;;;;;;;x,,
+yes_foreign_weapons;Imported Weapons;;;;;;;;;;;;x,,
 #national_focus.txt;;;;;;;;;;;;;;
 promotion_focus;Promotion;Promotion;Beförderung;;;;;;;;;;;
 promote_aristocrats;Encourage Aristocrats ;Encourager les aristocrates;Aristokraten fördern;;;;;;;;;;;

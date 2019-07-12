@@ -35,26 +35,12 @@ alliance=
 		second="BIK"
 		start_date="1773.1.1"
 	}
-
-		alliance=
-	{
-		first="ARA"
-		second="VEN"
-		start_date="1773.1.1"
-	}
 	
 alliance = {
 	first="DUA"
 	second="SPA"
 	start_date="1773.1.1"
 }
-	
-alliance=
-	{
-		first="SPA"
-		second="VIJ"
-		start_date="1773.1.1"
-	}
 	
 alliance=
 	{

@@ -1,4 +1,4 @@
-add_core = ARU
+add_core = AUC
 trade_goods = wool
 terrain = steppe
 life_rating = 15

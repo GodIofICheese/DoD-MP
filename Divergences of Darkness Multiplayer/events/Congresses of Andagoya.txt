@@ -15,6 +15,7 @@ country_event = {
 	trigger = {
 		tag = CLM
    		war = no
+		ai = no
 		NOT = {
 			has_global_flag = congress_of_panama
 			has_global_flag = partial_peace 
@@ -34,6 +35,16 @@ country_event = {
 		modifier = {
 			factor = 0.2 #increase likelihood to happen
 			year = 1842
+			}
+		}
+		modifier = {
+			factor = -10 #increase likelihood to happen
+			ai = no
+			}
+		}
+		modifier = {
+			factor = -10 #increase likelihood to happen
+			year = 1855
 			}
 		}
 		
@@ -588,6 +599,7 @@ country_event = {
 		prestige = -25
 		add_accepted_culture = lusitanian
 		add_accepted_culture = central_american
+		add_accepted_culture = granadan
 		set_global_flag = congress_of_panama_over
 		set_global_flag = columbian_unity
 		set_country_flag = GRA_not_federation
@@ -614,6 +626,9 @@ country_event = {
 		political_reform = state_press
 		political_reform = no_trade_unions
 		political_reform = underground_parties
+		add_accepted_culture = lusitanian
+		add_accepted_culture = central_american
+		add_accepted_culture = granadan
 		add_country_modifier = {
 			name = national_confusion
 			duration = 1095
@@ -777,6 +792,9 @@ country_event = {
 		political_reform = state_press
 		political_reform = no_trade_unions
 		political_reform = underground_parties
+		add_accepted_culture = lusitanian
+		add_accepted_culture = central_american
+		add_accepted_culture = granadan
 		add_country_modifier = {
 			name = national_confusion
 			duration = 1095
@@ -1040,4 +1058,4 @@ country_event = {
 		ELS = { country_event = 46423 }
 
 	}
-}
+}	

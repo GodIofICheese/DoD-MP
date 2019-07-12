@@ -3177,3 +3177,29 @@ chinese_economic_compensation = {
 	tariff_efficiency_modifier = -0.5
 	icon = 9
 }
+
+##### Weapons of Mass Destruction #####
+
+nuclear_stockpile_1 = {
+	icon = 15
+}
+
+nuclear_stockpile_2 = {
+	icon = 15
+}
+
+nuclear_stockpile_3 = {
+	icon = 15
+}
+
+fallout = {
+	farm_rgo_size = -0.75
+	mining_rgo_size = -0.75
+	farm_rgo_eff = = -0.75
+	mining_rgo_eff = -0.75
+	local_factory_output = -0.5
+	population_growth = -0.002
+	
+	icon = 10
+}
+

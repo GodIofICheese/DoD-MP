@@ -971,6 +971,7 @@ political_decisions = {
 					militancy = 4
 					any_greater_power = { war_with = THIS }
 				}
+				has_country_flag = zombie_outbreak
 				militancy = 7
 			}
 		}

@@ -1102,47 +1102,97 @@ political_decisions = {
 			NOT = { has_country_modifier = monthly_payment_made }
 			OR = {
 				AND = {
-					money = 500
+					money = 1500
 					NOT = { total_pops = 750000 }
 				}
 				AND = {
-					money = 750
+					money = 2250
 					total_pops = 750000
 					NOT = { total_pops = 100000 }
 				}
 				AND = {
-					money = 1000
+					money = 3000
 					total_pops = 1000000
 					NOT = { total_pops = 1250000 }
 				}
 				AND = {
-					money = 1250
+					money = 3750
 					total_pops = 1250000
 					NOT = { total_pops = 1500000 }
 				}
 				AND = {
-					money = 1500
+					money = 4500
 					total_pops = 1500000
 					NOT = { total_pops = 1750000 }
 				}
 				AND = {
-					money = 1750
+					money = 5250
 					total_pops = 1750000
 					NOT = { total_pops = 2000000 }
 				}
 				AND = {
-					money = 2000
+					money = 6000
 					total_pops = 2000000
 					NOT = { total_pops = 2250000 }
 				}
 				AND = {
-					money = 2250
+					money = 6750
 					total_pops = 2250000
 					NOT = { total_pops = 2500000 }
 				}
 				AND = {
-					money = 2500
+					money = 7500
 					total_pops = 2500000
+					NOT = { total_pops = 3000000 }
+				}
+				AND = {
+					money = 9000
+					total_pops = 3000000
+					NOT = { total_pops = 3500000 }
+				}
+				AND = {
+					money = 10500
+					total_pops = 3500000
+					NOT = { total_pops = 4000000 }
+				}
+				AND = {
+					money = 12000
+					total_pops = 4000000
+					NOT = { total_pops = 4500000 }
+				}
+				AND = {
+					money = 13500
+					total_pops = 4500000
+					NOT = { total_pops = 5000000 }
+				}
+				AND = {
+					money = 15000
+					total_pops = 5000000
+					NOT = { total_pops = 6000000 }
+				}
+				AND = {
+					money = 18000
+					total_pops = 6000000
+					NOT = { total_pops = 7000000 }
+				}
+				AND = {
+					money = 21000
+					total_pops = 7000000
+					NOT = { total_pops = 8000000 }
+				}
+				AND = {
+					money = 24000
+					total_pops = 8000000
+					NOT = { total_pops = 9000000 }
+				}
+				AND = {
+					money = 27000
+					total_pops = 9000000
+					NOT = { total_pops = 10000000 }
+				}
+				AND = {
+					money = 30000
+					total_pops = 10000000
 				}
 			}
 		}
@@ -1151,61 +1201,13 @@ political_decisions = {
 			random_owned = {
 				limit = { owner = { NOT = { total_pops = 750000 } } }
 				owner = {
-					treasury = -500
-					overlord = { treasury = 500 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { total_pops = 750000 NOT = { total_pops = 1000000 } } }
-				owner = {
-					treasury = -750
-					overlord = { treasury = 750 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { total_pops = 1000000 NOT = { total_pops = 1250000 } } }
-				owner = {
-					treasury = -1000
-					overlord = { treasury = 1000 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { total_pops = 1250000 NOT = { total_pops = 1500000 } } }
-				owner = {
-					treasury = -1250
-					overlord = { treasury = 1250 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { total_pops = 1500000 NOT = { total_pops = 1750000 } } }
-				owner = {
 					treasury = -1500
 					overlord = { treasury = 1500 }
 				}
 			}
 			
 			random_owned = {
-				limit = { owner = { total_pops = 1750000 NOT = { total_pops = 2000000 } } }
-				owner = {
-					treasury = -1750
-					overlord = { treasury = 1750 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { total_pops = 2000000 NOT = { total_pops = 2250000 } } }
-				owner = {
-					treasury = -2000
-					overlord = { treasury = 2000 }
-				}
-			}
-			
-			random_owned = {
-				limit = { owner = { total_pops = 2250000 NOT = { total_pops = 2500000 } } }
+				limit = { owner = { total_pops = 750000 NOT = { total_pops = 1000000 } } }
 				owner = {
 					treasury = -2250
 					overlord = { treasury = 2250 }
@@ -1213,17 +1215,147 @@ political_decisions = {
 			}
 			
 			random_owned = {
-				limit = { owner = { total_pops = 2500000 } }
+				limit = { owner = { total_pops = 1000000 NOT = { total_pops = 1250000 } } }
 				owner = {
-					treasury = -2500
-					overlord = { treasury = 2500 }
+					treasury = -3000
+					overlord = { treasury = 3000 }
 				}
 			}
 			
-			random_owned = { limit = { owner = { is_substate = yes } } owner = { add_country_modifier = { name = monthly_payment_made duration = 25 } } }
 			random_owned = {
-				limit = { owner = { is_vassal = yes is_substate = no } } owner = { add_country_modifier = { name = monthly_payment_made duration = 50 } } 
+				limit = { owner = { total_pops = 1250000 NOT = { total_pops = 1500000 } } }
+				owner = {
+					treasury = -3750
+					overlord = { treasury = 3750 }
+				}
 			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 1500000 NOT = { total_pops = 1750000 } } }
+				owner = {
+					treasury = -4500
+					overlord = { treasury = 4500 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 1750000 NOT = { total_pops = 2000000 } } }
+				owner = {
+					treasury = -5250
+					overlord = { treasury = 5250 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 2000000 NOT = { total_pops = 2250000 } } }
+				owner = {
+					treasury = -6000
+					overlord = { treasury = 6000 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 2250000 NOT = { total_pops = 2500000 } } }
+				owner = {
+					treasury = -6750
+					overlord = { treasury = 6750 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 2500000 } }
+				owner = {
+					treasury = -7500
+					overlord = { treasury = 7500 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 3000000 } }
+				owner = {
+					treasury = -9000
+					overlord = { treasury = 9000 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 3500000 } }
+				owner = {
+					treasury = -10500
+					overlord = { treasury = 10500 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 4000000 } }
+				owner = {
+					treasury = -12000
+					overlord = { treasury = 12000 }
+				}
+			}
+				
+			random_owned = {
+				limit = { owner = { total_pops = 4500000 } }
+				owner = {
+					treasury = -13500
+					overlord = { treasury = 13500 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 5000000 } }
+				owner = {
+					treasury = -15000
+					overlord = { treasury = 15000 }
+				}
+			}
+				
+			random_owned = {
+				limit = { owner = { total_pops = 6000000 } }
+				owner = {
+					treasury = -18000
+					overlord = { treasury = 18000 }
+				}
+			}
+		
+			random_owned = {
+				limit = { owner = { total_pops = 7000000 } }
+				owner = {
+					treasury = -21000
+					overlord = { treasury = 21000 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 8000000 } }
+				owner = {
+					treasury = -24000
+					overlord = { treasury = 24000 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 9000000 } }
+				owner = {
+					treasury = -27000
+					overlord = { treasury = 27000 }
+				}
+			}
+			
+			random_owned = {
+				limit = { owner = { total_pops = 10000000 } }
+				owner = {
+					treasury = -30000
+					overlord = { treasury = 30000 }
+				}
+			}
+			
+			random_owned = { limit = { owner = { is_substate = yes } } owner = { add_country_modifier = { name = monthly_payment_made duration = 30 } } }
+			
+			random_owned = {
+				limit = { owner = { is_vassal = yes is_substate = no } } owner = { add_country_modifier = { name = monthly_payment_made duration = 45 } }
+			}
+			
 			random_owned = {
 				limit = { owner = { has_country_flag = counting_payments } }
 				owner = {
