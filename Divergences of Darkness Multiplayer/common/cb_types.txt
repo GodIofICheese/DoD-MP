@@ -6948,7 +6948,7 @@ acquire_state_midgame = {
 	can_use = {
 	     AND = {
 		   NOT = { has_country_modifier = no_more_war }
-		   revolution_n_counterrevolution = 1
+		   year = 1870
 		   is_independant = yes
 		   number_of_states = 2 # annex if you want their last state
 	    }
@@ -7007,7 +7007,7 @@ acquire_state_late = {
 	can_use = {
 	     AND = {
 		   NOT = { has_country_modifier = no_more_war }
-		   mass_politics = 1
+		   year = 1900
 		   is_independant = yes
 		   number_of_states = 2 # annex if you want their last state
 	    }
@@ -7190,5 +7190,79 @@ total_war_place_in_the_sun = {
 			to = pro_military
 			value = 0.25
 		}
+	}
+}
+
+# Remove_WMDs
+remove_wmds = {
+	sprite_index = 11
+	is_triggered_only = yes
+	months = 12
+	
+	badboy_factor = 0
+	prestige_factor = 0
+	peace_cost_factor = 0
+	penalty_factor = 0
+	
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 1
+	good_relation_infamy_factor = 1
+	good_relation_militancy_factor = 1
+	
+	can_use = {
+		NOT = { is_our_vassal = THIS }
+		year = 1930
+		has_recently_lost_war = no
+		THIS = { NOT = { has_country_modifier = neutrality } }
+		is_vassal = no
+		OR = {
+			 has_country_modifier = developing_bioweapons
+			 has_country_modifier = experimental_bioweapon
+		}
+		OR = {
+			war_with = THIS
+			THIS = { NOT = { has_country_modifier = no_more_war } }
+		}
+		OR = {
+			THIS = { government = fascist_dictatorship }
+			THIS = { government = proletarian_dictatorship }
+			war_with = THIS
+			NOT = { relation = { who = THIS value = 0 } }
+			THIS = { ai = no }
+		}
+		OR = {
+			NOT = { has_country_flag = dismantle_declared }
+			THIS = { NOT = { has_country_flag = in_great_war } }
+			THIS = { ai = no }
+		}
+		OR = {
+			AND = {
+				prestige = 10
+				has_recently_lost_war = no
+			}
+			THIS = { ai = no }
+		}
+	}
+
+	po_remove_prestige = no
+	
+	tws_battle_factor = 2.0
+	
+	war_name = WAR_HUMILIATE_NAME
+	
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.25
+		}
+	}
+	
+	on_po_accepted = {
+		country_event = 999923
 	}
 }

@@ -443,11 +443,11 @@ political_decisions = {
 			}
 		}
 		allow = {
-			money = 5000000
+			money = 2000000
 		}
 		effect = {
-			prestige = 100
-			treasury = -5000000
+			prestige = 45
+			treasury = -2000000
 			add_country_modifier = {
 				name = exhibition
 				duration = 5400
@@ -470,11 +470,11 @@ political_decisions = {
 			}
 		}
 		allow = {
-			money = 10000000
+			money = 2000000
 		}
 		effect = {
-			prestige = 200
-			treasury = -10000000
+			prestige = 50
+			treasury = -2000000
 			add_country_modifier = {
 				name =exhibition
 				duration = 5400

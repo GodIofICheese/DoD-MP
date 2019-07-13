@@ -67,7 +67,7 @@ political_decisions = {
 		
 		allow = {
 			plurality = 2
-			money = 4000000
+			money = 2000000
 			literacy = 0.3
 			NOT = { has_country_modifier = government_propaganda }
 			NOT = { has_country_modifier = war_propaganda }
@@ -79,7 +79,7 @@ political_decisions = {
 		
 		effect = {
 			plurality = -2
-			treasury = -4000000
+			treasury = -2000000
 			country_event = 11002
 			set_country_flag = propaganda_program
 		}

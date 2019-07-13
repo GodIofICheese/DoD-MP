@@ -405,6 +405,7 @@ political_decisions = {
 	}
 	
 	Ameriga_AMA = { 
+		picture = "Panarcadianism"
 		potential = { 
 			tag = AMA 
 			OR = { 
@@ -447,7 +448,7 @@ political_decisions = {
 	}
 	
 	Ameriga_LOT = { 
-	
+		picture = "Panarcadianism"
 		potential = { 
 		tag = LOT 
 		}
@@ -492,7 +493,7 @@ political_decisions = {
 	}
 	
 	allow = { 
-	nationalism_n_imperialism = 1 
+	year = 1880
 	}
 	
 	effect = { 
@@ -511,7 +512,7 @@ political_decisions = {
 	}
 	
 	Federation_NAN = { 
-	
+	picture = "Panarcadianism"
 	potential = { 
 	tag = AZL 
 	has_country_flag = guyana_claim 
@@ -554,15 +555,16 @@ political_decisions = {
 	}
 	
 	Granada_border = { 
-	
+	picture = "Panarcadianism"
 	potential = { 
 	tag = AZL  
-	NOT = { NAN = { exists = yes } }
 	NOT = { has_country_flag = granada_claim }
 	}
 	
 	allow = { 
-	owns = 2348 
+	AZL = { all_core = { owned_by = THIS } 
+		}
+	mass_politics = 1
 	}
 	
 	effect = { 
@@ -579,11 +581,13 @@ political_decisions = {
 	
 	potential = { 
 	tag = AZL  
-	owns = 2254 
+	AZL = { all_core = { owned_by = THIS } 
+		}
 	NOT = { accepted_culture = granadan }
 	}
 	
 	allow = { 
+	mass_politics = 1
 	NOT = { GRA = { exists = yes } }
 	}
 	
@@ -595,7 +599,7 @@ political_decisions = {
 	}
 	
 	integrate_beornians = { 
-	
+	picture = "Panarcadianism"
 	potential = {
 	owns = 2348 
 	NOT = { has_country_flag = beornia_accepted }
@@ -637,11 +641,7 @@ political_decisions = {
 					owned_by = THIS
 				}
 			}
-			nationalism_n_imperialism = 1
-			OR = {
-				rank = 4
-				revolution_n_counterrevolution = 1
-			}
+			mass_politics = 1
 	}
 	
 	effect = { 
@@ -661,7 +661,9 @@ political_decisions = {
 		}
 		allow = {
 			political_thought = 1  
-		war = no  
+		war = no
+		AZL = { all_core = { owned_by = THIS } 
+		}
 		}
 		effect = {
 		prestige = 30			
@@ -906,51 +908,22 @@ political_decisions = {
 	}
 	
 	AZL_annexation_INC = { 
-	
+	picture = Congress_AMA
 	potential = { 
 	has_country_flag = ameriga_united
 	INC = { exists = yes }
-	NOT = { 
-	AND = { 
-	government = democracy 
-	OR = { 
-	INC = { government = democracy }
-	INC = { government = hms_government }
-				}
-			}
-		}
 	}
 	
 	allow = { 
 	war = no 
 	NOT = { truce_with = INC }
 	NOT = { alliance_with = INC }
-	OR = { 
-	war_policy = jingoism
-	AND = { 
-	war_policy = pro_military 
-	OR = { 
-	government = proletarian_dictatorship
-	government = presidential_dictatorship
-				}
-			}
+	AZL = { all_core = { owned_by = THIS } 
 		}
-	NOT = { INC = { is_greater_power = yes } }
 	}
 	
 	effect = { 
-	badboy = 24.5 
-	add_casus_belli = {
-				target = INC
-				type = conquest
-				months = 24
-			}
-	war = {
-			target = INC
-			attacker_goal = {
-					casus_belli = conquest
-				}
-			}
+	INC = { all_core = { add_core = AZL } }
 	}
 	
 	}

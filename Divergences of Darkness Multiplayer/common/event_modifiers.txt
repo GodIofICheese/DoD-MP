@@ -1012,17 +1012,17 @@ small_baby_boom = {
 }
 
 baby_boom = {
-	population_growth = 0.005
+	population_growth = 0.003
 	icon = 19
 }
 
 global_baby_boom = {
-	global_population_growth = 0.008
+	global_population_growth = 0.003
 	icon = 17
 }
 
 balanced_baby_boom = {
-	global_population_growth = 0.004
+	global_population_growth = 0.003
 	icon = 17
 }
 
@@ -1444,8 +1444,8 @@ international_negotiations = {
 
 the_statue_of_liberty = {
 	prestige = 0.01
-	global_immigrant_attract = 0.1	#100%
-	global_assimilation_rate = 0.5
+	global_immigrant_attract = 0.05	#100%
+	global_assimilation_rate = 0.1
 	icon = 15
 }
 
@@ -1506,7 +1506,7 @@ prussian_general_staff = {
 
 ##### Boer War #####
 trek_boers = {
-	global_immigrant_attract = 4.1		#410%
+	global_immigrant_attract = 0.05		#410%
 	global_assimilation_rate = 0.1
 	icon = 17
 }
@@ -3060,7 +3060,7 @@ native_integration = {
 
 war_propaganda = {
 	war_exhaustion = -0.02
-	badboy = 0.01
+	tax_efficiency = -0.03
 	icon = 15
 }
 
@@ -3180,26 +3180,15 @@ chinese_economic_compensation = {
 
 ##### Weapons of Mass Destruction #####
 
-nuclear_stockpile_1 = {
+developing_bioweapons = {
+	tax_efficiency = -0.15
 	icon = 15
 }
 
-nuclear_stockpile_2 = {
+experimental_bioweapon = {
 	icon = 15
 }
 
-nuclear_stockpile_3 = {
-	icon = 15
+bioweapon_cooldown = {
+	icon = 16
 }
-
-fallout = {
-	farm_rgo_size = -0.75
-	mining_rgo_size = -0.75
-	farm_rgo_eff = = -0.75
-	mining_rgo_eff = -0.75
-	local_factory_output = -0.5
-	population_growth = -0.002
-	
-	icon = 10
-}
-

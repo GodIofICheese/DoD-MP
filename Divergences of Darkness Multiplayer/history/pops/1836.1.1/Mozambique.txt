@@ -5,120 +5,16 @@
     aristocrats = {
         culture = boer
         religion = protestant
-        size = 1725
+        size = 3450
     }
 
     capitalists = {
         culture = boer
         religion = protestant
-        size = 1725
+        size = 3450
     }
 
     clergymen = {
-        culture = nguni
-        religion = animist
-        size = 196
-    }
-
-    artisans = {
-        culture = boer
-        religion = protestant
-        size = 9350
-    }
-
-    soldiers = {
-        culture = boer
-        religion = protestant
-        size = 11650
-    }
-
-    farmers = {
-        culture = nguni
-        religion = animist
-        size = 15820
-    }
-
-    slaves = {
-        culture = nguni
-        religion = animist
-        size = 3500
-    }
-
-    clergymen = {
-        culture = tonga
-        religion = animist
-        size = 126
-    }
-
-    farmers = {
-        culture = tonga
-        religion = animist
-        size = 5334
-    }
-
-    slaves = {
-        culture = tonga
-        religion = animist
-        size = 9100
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 515
-    }
-
-    craftsmen = {
-        culture = boer
-        religion = protestant
-        size = 1515
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 17555
-    }
-
-    bureaucrats = {
-        culture = boer
-        religion = protestant
-        size = 750
-    }
-
-    officers = {
-        culture = boer
-        religion = protestant
-        size = 400
-    }
-
-    clergymen = {
-        culture = afro_south_african
-        religion = protestant
-        size = 138
-    }
-
-    farmers = {
-        culture = afro_south_african
-        religion = protestant
-        size = 9066
-    }
-
-    soldiers = {
-        culture = afro_south_african
-        religion = protestant
-        size = 6000
-    }
-
-    slaves = {
-        culture = afro_south_african
-        religion = protestant
-        size = 9400
-    }
-}
-#Chaimate (280000/70000 POPS)
-2050 = {
-   clergymen = {
         culture = nguni
         religion = animist
         size = 392
@@ -127,79 +23,183 @@
     artisans = {
         culture = boer
         religion = protestant
-        size = 5450
-    }
-
-    farmers = {
-        culture = nguni
-        religion = animist
-        size = 10020
-    }
-
-    slaves = {
-        culture = nguni
-        religion = animist
-        size = 3500
-    }
-
-    clergymen = {
-        culture = tonga
-        religion = animist
-        size = 420
-    }
-
-    farmers = {
-        culture = tonga
-        religion = animist
-        size = 10682
-    }
-
-    slaves = {
-        culture = tonga
-        religion = animist
-        size = 9200
-    }
-
-    aristocrats = {
-        culture = boer
-        religion = protestant
-        size = 590
-    }
-
-    clergymen = {
-        culture = boer
-        religion = protestant
-        size = 590
-    }
-
-    farmers = {
-        culture = boer
-        religion = protestant
-        size = 14465
+        size = 18700
     }
 
     soldiers = {
         culture = boer
         religion = protestant
-        size = 7465
+        size = 23500
+    }
+
+    farmers = {
+        culture = nguni
+        religion = animist
+        size = 31640
+    }
+
+    slaves = {
+        culture = nguni
+        religion = animist
+        size = 7000
+    }
+
+    clergymen = {
+        culture = tonga
+        religion = animist
+        size = 252
+    }
+
+    farmers = {
+        culture = tonga
+        religion = animist
+        size = 10668
+    }
+
+    slaves = {
+        culture = tonga
+        religion = animist
+        size = 18200
+    }
+
+    clergymen = {
+        culture = boer
+        religion = protestant
+        size = 1030
+    }
+
+    craftsmen = {
+        culture = boer
+        religion = protestant
+        size = 3030
+    }
+
+    farmers = {
+        culture = boer
+        religion = protestant
+        size = 35110
+    }
+
+    bureaucrats = {
+        culture = boer
+        religion = protestant
+        size = 1500
+    }
+
+    officers = {
+        culture = boer
+        religion = protestant
+        size = 800
     }
 
     clergymen = {
         culture = afro_south_african
         religion = protestant
-        size = 348
+        size = 276
     }
 
     farmers = {
         culture = afro_south_african
         religion = protestant
-        size = 10158
+        size = 18132
+    }
+
+    soldiers = {
+        culture = afro_south_african
+        religion = protestant
+        size = 12000
     }
 
     slaves = {
         culture = afro_south_african
         religion = protestant
-        size = 6300
+        size = 18800
+    }
+}
+#Chaimate (280000/70000 POPS)
+2050 = {
+   clergymen = {
+        culture = nguni
+        religion = animist
+        size = 784
+    }
+
+    artisans = {
+        culture = boer
+        religion = protestant
+        size = 10900
+    }
+
+    farmers = {
+        culture = nguni
+        religion = animist
+        size = 20040
+    }
+
+    slaves = {
+        culture = nguni
+        religion = animist
+        size = 7000
+    }
+
+    clergymen = {
+        culture = tonga
+        religion = animist
+        size = 840
+    }
+
+    farmers = {
+        culture = tonga
+        religion = animist
+        size = 21364
+    }
+
+    slaves = {
+        culture = tonga
+        religion = animist
+        size = 18400
+    }
+
+    aristocrats = {
+        culture = boer
+        religion = protestant
+        size = 1180
+    }
+
+    clergymen = {
+        culture = boer
+        religion = protestant
+        size = 1180
+    }
+
+    farmers = {
+        culture = boer
+        religion = protestant
+        size = 28930
+    }
+
+    soldiers = {
+        culture = boer
+        religion = protestant
+        size = 14930
+    }
+
+    clergymen = {
+        culture = afro_south_african
+        religion = protestant
+        size = 696
+    }
+
+    farmers = {
+        culture = afro_south_african
+        religion = protestant
+        size = 20316
+    }
+
+    slaves = {
+        culture = afro_south_african
+        religion = protestant
+        size = 12600
     }
 }
 #Inhambane (176000/44000 POPS)

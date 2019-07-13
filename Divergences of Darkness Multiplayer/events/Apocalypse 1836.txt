@@ -688,6 +688,101 @@ country_event = {
 	}	
 }
 
+#Developing Bioweapon Announcement
+country_event = {
+	id = 999919
+	title = "COUNTRY_DEVELOPING_BIOWEAPONS_TITLE"
+	desc = "COUNTRY_DEVELOPING_BIOWEAPONS_DESC"
+	picture = biological_weapons
+	
+	allow_multiple_instances = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "COUNTRY_DEVELOPING_BIOWEAPONS_OPTA"	
+	}	
+}
+
+#Developed Bioweapons
+country_event = {
+	id = 999920
+	title = "COUNTRY_DEVELOPED_BIOWEAPONS_TITLE"
+	desc = "COUNTRY_DEVELOPED_BIOWEAPONS_DESC"
+	picture = biological_weapons
+	
+	trigger = {
+		has_country_flag = developing_bioweapons
+		NOT = { has_country_modifier = developing_bioweapons }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "COUNTRY_DEVELOPED_BIOWEAPONS_OPTA"
+		clr_country_flag = developing_bioweapons
+		remove_country_modifier = developing_bioweapons
+		add_country_modifier = {
+				name = experimental_bioweapon
+				duration = -1
+		}
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999921
+		}
+	}	
+}
+
+#Country has Developed Bioweapon Announcement
+country_event = {
+	id = 999921
+	title = "COUNTRY_ANNOUNCEMENT_DEVELOPED_BIOWEAPONS_TITLE"
+	desc = "COUNTRY_ANNOUNCEMENT_DEVELOPED_BIOWEAPONS_DESC"
+	picture = biological_weapons
+	
+	allow_multiple_instances = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "COUNTRY_ANNOUNCEMENT_DEVELOPED_BIOWEAPONS_OPTA"
+	}	
+}
+
+#Country has used Bioweapon Announcement
+country_event = {
+	id = 999922
+	title = "COUNTRY_ANNOUNCEMENT_USED_BIOWEAPONS_TITLE"
+	desc = "COUNTRY_ANNOUNCEMENT_USED_BIOWEAPONS_DESC"
+	picture = outbreakannouncement
+	
+	allow_multiple_instances = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "COUNTRY_ANNOUNCEMENT_USED_BIOWEAPONS_OPTA"
+	}	
+}
+
+#Forced Removal of WMDs
+country_event = {
+	id = 999923
+	title = "REMOVE_WMDS_TITLE"
+	desc = "REMOVE_WMDS_DESC"
+	
+	allow_multiple_instances = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = "REMOVE_WMDS_OPTA"	
+		remove_country_modifier = developing_bioweapons
+		remove_country_modifier = experimental_bioweapon
+		clr_country_flag = developing_bioweapons
+	}	
+}
+
 #Global Defeat
 country_event = {
 	id = 999924
@@ -710,48 +805,6 @@ country_event = {
 		}
 	}
 }
-
-##Terra Nullius
-#province_event = {
-#	id = 999025
-#	title = "EVTNAME999025"
-#	desc = "EVTDESC999025"
-#
-#	trigger = {
-#		has_province_modifier = zombie_outbreak
-#		controlled_by = REB
-#		NOT = {
-#			country_units_in_province = THIS
-#		}
-#	}
-#
-#	mean_time_to_happen = {
-#		months = 18
-#		modifier = {
-#			factor = 0.5
-#			any_neighbor_province = {
-#				has_province_modifier = zombie_outbreak
-#			}
-#		}
-#		modifier = {
-#			factor = 0.5
-#			has_empty_adjacent_province = yes
-#		}
-#	}
-#
-#	option = {
-#		name = "Uh oh."
-#		any_pop = {
-#			reduce_pop = 0.4
-#			militancy = 8
-#			consciousness = -3
-#		}
-#		#add_core = this
-#		change_controller = THIS
-#		secede_province = FROM
-#		#trade_goods = fish
-#	}
-#}
 
 ##### Added 12/18/11 #####
 
@@ -790,25 +843,453 @@ country_event = {
 	}
 }
 
-#Deletes 1 pop countries
 country_event = {
 	id = 999931
-	title = "Dead Land"
-	desc = "Your civilisation could not stand the test of time."
+	title = "EVTNAME999931"
+	desc = "EVTDESC999931"
+	picture = "rome_buildings"
 
-	trigger = { 
-	has_global_flag = first_zombie_invasion
-	THIS = { NOT = { total_pops = 500 } }
+	is_triggered_only = yes
+	allow_multiple_instances = yes
 
+	option = {
+		name = "EVT999931OPTA"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTB"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 1
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTC"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 2
+				NOT = { rank = 1 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTD"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 3
+				NOT = { rank = 2 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTE"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 4
+				NOT = { rank = 3 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTF"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 5
+				NOT = { rank = 4 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTG"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 6
+				NOT = { rank = 5 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTH"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 7
+				NOT = { rank = 6 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTI"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 8
+				NOT = { rank = 7 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTJ"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 9
+				NOT = { rank = 8 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTK"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 10
+				NOT = { rank = 9 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999931OPTL"
+			country_event = 999932		
 	}
 	
-	mean_time_to_happen = { days = 3 }
-  
+}		
+
+country_event = {
+	id = 999932
+	title = "EVTNAME999932"
+	desc = "EVTDESC999932"
+	picture = "rome_buildings"
+
+	is_triggered_only = yes
+	allow_multiple_instances = yes
+
+		option = {
+		name = "EVT999932OPTM"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 12
+				NOT = { rank = 11 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
 	option = {
-	name = "I'm sorry."
-	
-	annex_to = { ZOM }
-	
-   }
+		name = "EVT999932OPTN"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 13
+				NOT = { rank = 12 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999932OPTO"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 14
+				NOT = { rank = 13 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999932OPTP"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 15
+				NOT = { rank = 14 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999932OPTQ"
+		set_global_flag = first_zombie_invasion
+
+		any_country = {
+			limit = {
+				ai = no
+			}
+			country_event = 999922
+		}
+		random_country = { 
+			limit = { 
+				rank = 16
+				NOT = { rank = 15 }
+				neighbour = THIS
+				war_with = THIS
+				OR = { 
+					rank = 16
+					ai = no
+				}
+				
+			}
+			country_event = 999902
+			war_exhastion = 10
+		}
+	}
+	option = {
+		name = "EVT999932OPTR"
+
+		country_event = 999931
+	}
+	option = {
+		name = "EVT999932OPTS"
+		remove_country_modifier = bioweapon_cooldown
+	}
+		
 }
 

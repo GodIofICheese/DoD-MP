@@ -62,7 +62,15 @@ country_event = {
 		NOT = { has_country_modifier = asia_nerfearly }
 		NOT = { has_country_flag = asia_nerfearly }
 		ai = no
-		civilized = yes
+		OR = {
+			civilized = yes
+			AND = {
+				invention = railroad_transport_groups
+				invention = staff_command_support
+				invention = mobilization_time_tables
+				invention = personnel_category_tables
+			}
+		}
 		OR = {
 			AND = {
 				invention = railroad_transport_groups

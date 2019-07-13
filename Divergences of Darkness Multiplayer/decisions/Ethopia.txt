@@ -1,0 +1,101 @@
+political_decisions = {
+	integrate_egypt = {
+	picture = zanzibar_oman
+		potential = {
+			tag = ETH
+			NOT = { has_country_flag = integrate_egypt }
+		}
+		allow = {
+			NOT = { war = yes }
+			EGY_1771 = { owned_by = THIS }
+			EGY_1758 = { owned_by = THIS }
+			EGY_1762 = { owned_by = THIS }
+			EGY_1750 = { owned_by = THIS }
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			prestige = 30
+			EGY_1771 = { add_core = THIS }
+			EGY_1758 = { add_core = THIS }
+			EGY_1762 = { add_core = THIS }
+			EGY_1750 = { add_core = THIS }
+			EGY_1753 = { add_core = THIS }
+			EGY_1746 = { add_core = THIS }
+			add_accepted_culture = misri
+			add_accepted_culture = mashriqi
+			set_country_flag = integrate_egypt
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	greater_ethopia = {
+	picture = map_africa
+		potential = {
+			tag = ETH
+			NOT = { has_country_flag = greater_ethopia }
+		}
+		allow = {
+			NOT = { war = yes }
+			ENG_1843 = { owned_by = THIS }
+			EGY_1838 = { owned_by = THIS }
+			EGY_1827 = { owned_by = THIS }
+			EGY_1834 = { owned_by = THIS }
+			EGY_1842 = { owned_by = THIS }
+			ENG_2026 = { owned_by = THIS }
+			ENG_2024 = { owned_by = THIS }
+			mass_politics = 1
+		}
+		effect = {
+			prestige = 10
+			ENG_1843 = { add_core = THIS }
+			EGY_1838 = { add_core = THIS }
+			EGY_1827 = { add_core = THIS }
+			EGY_1834 = { add_core = THIS }
+			EGY_1842 = { add_core = THIS }
+			ENG_2026 = { add_core = THIS }
+			ENG_2024 = { add_core = THIS }
+			set_country_flag = greater_ethopia
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	expand_arabia = {
+	picture = map_arabia
+		potential = {
+			tag = ETH
+			NOT = { has_country_flag = expand_arabia }
+		}
+		allow = {
+			NOT = { war = yes }
+			YEM_1173 = { owned_by = THIS }
+			NEJ_1157 = { owned_by = THIS }
+			HDJ_1151 = { owned_by = THIS }
+			NEJ_1156 = { owned_by = THIS }
+			OMA_1166 = { owned_by = THIS }
+			ABU_1162 = { owned_by = THIS }
+			revolution_n_counterrevolution = 1
+		}
+		effect = {
+			prestige = 20
+			YEM_1173 = { add_core = THIS }
+			NEJ_1157 = { add_core = THIS }
+			HDJ_1151 = { add_core = THIS }
+			NEJ_1156 = { add_core = THIS }
+			OMA_1166 = { add_core = THIS }
+			ABU_1162 = { add_core = THIS }
+			add_accepted_culture = bedouin
+			add_accepted_culture = khaliji
+			set_country_flag = expand_arabia
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

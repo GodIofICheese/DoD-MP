@@ -889,7 +889,7 @@ province_event = {
 			region = SA_9 
 			region = SA_6 
 		}
-		is_core = ARU
+		is_core = AUC
 		NOT = { life_rating = 17 }
 	}
 	
@@ -1349,7 +1349,6 @@ country_event = {
 	
 	option = { 
 	name = "775412.A"
-	inherit = FROM 
 	NAN = { all_core = { add_core = AZL } }
 	add_accepted_culture = beornian 
 	prestige = 30 
@@ -1365,27 +1364,14 @@ country_event = {
 	
 	option = { 
 	name = "775413.A"
-	badboy = -10
+	badboy = -25
 	relation = { who = NAN value = -150 }
 	}
 	
 	option = { 
 	name = "775413.B"
-	NAN = { all_core = { add_core = AZL } }
-	badboy = 23 
-	casus_belli = {
-				target = NAN
-				type = conquest
-				months = 60
-			}
-	war = {
-			target = NAN
-			attacker_goal = {
-				casus_belli = conquest
-			}
-		}
+	add_accepted_culture = beornian	
 	}
-
 }
 
 country_event = {
@@ -1401,7 +1387,6 @@ country_event = {
 		random_list = {
 			75 = { 
 				add_accepted_culture = beornian
-				badboy = -5
 				set_country_flag = beornia_accepted
 			}
 			25 = { 
@@ -1409,10 +1394,9 @@ country_event = {
 					limit = {
 						culture = beornian
 					}
-					militancy = 5
-         			consciousness = 5
+					militancy = 3
+         			consciousness = 3
 				}
-				badboy = 5
 			}
 		}
 	}
@@ -1431,7 +1415,6 @@ country_event = {
 		random_list = {
 			50 = { 
 				add_accepted_culture = granadan
-				badboy = -5
 				set_country_flag = ameriga_united
 			}
 			50 = { 
@@ -1439,10 +1422,9 @@ country_event = {
 					limit = {
 						culture = granadan
 					}
-					militancy = 5
-         			consciousness = 5
+					militancy = 3
+         			consciousness = 3
 				}
-				badboy = 5
 			}
 		}
 	}
@@ -1469,7 +1451,7 @@ country_event = {
 			limit = {
 				FROM = { tag = NAN }
 				is_core = NAN
-				is_core = ARU
+				is_core = AUC
 			}
 			secede_province = NAN
 		}
@@ -1477,7 +1459,7 @@ country_event = {
 			limit = {
 				FROM = { tag = HBE }
 				is_core = HBE
-				is_core = ARU
+				is_core = AUC
 			}
 			secede_province = HBE
 		}
@@ -1589,7 +1571,7 @@ country_event = {
 			limit = {
 				FROM = { tag = NAN }
 				is_core = NAN
-				is_core = ARU
+				is_core = AUC
 			}
 			remove_core = INC
 			secede_province = NAN
@@ -1598,7 +1580,7 @@ country_event = {
 			limit = {
 				FROM = { tag = HBE }
 				is_core = HBE
-				is_core = ARU
+				is_core = AUC
 			}
 			remove_core = INC
 			secede_province = HBE
@@ -1668,7 +1650,7 @@ country_event = {
 		any_owned = {
 			limit = {
 				is_core = INC
-				is_core = ARU
+				is_core = AUC
 			}
 			remove_core = NAN
 			secede_province = INC
@@ -1677,7 +1659,7 @@ country_event = {
 			limit = {
 				FROM = { tag = INC }
 				is_core = HBE
-				is_core = ARU
+				is_core = AUC
 			}
 			remove_core = HBE
 			secede_province = INC
