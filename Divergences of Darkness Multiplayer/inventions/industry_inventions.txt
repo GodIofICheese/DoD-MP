@@ -1049,6 +1049,7 @@ vaccination = {
 		}
 	}
 	effect = {
+		pop_growth = 0.0001
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.01
 	}

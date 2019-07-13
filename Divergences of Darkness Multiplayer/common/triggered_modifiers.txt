@@ -70,6 +70,63 @@ good_health_care_fully_funded = {
 	icon = 19
 }
 
+low_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = low_health_care
+		OR = {
+			AND = {
+				ai = yes
+				social_spending = 0.25
+			}
+			AND = {
+			        ai = no
+				social_spending = 0.3
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+acceptable_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = acceptable_health_care
+		OR = {
+			AND = {
+				ai = yes
+				social_spending = 0.3
+			}
+			AND = {
+				ai = no
+				social_spending = 0.4
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+good_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = good_health_care
+		OR = {
+			AND = {
+				ai = yes
+				social_spending = 0.3
+			}
+			AND = {
+				ai = no
+				social_spending = 0.5
+			}
+		}
+	}
+	global_population_growth = 0.002
+	icon = 19
+}
+
 health_care_fully_funded = {
 	trigger = {
 		exists = yes
@@ -77,11 +134,11 @@ health_care_fully_funded = {
 		OR = {
 			AND = {
 				ai = yes
-				social_spending = 0.74
+				administration_spending = 0.74
 			}
 			AND = {
 				ai = no
-				social_spending = 0.99
+				administration_spending = 0.99
 			}
 		}
 	}
