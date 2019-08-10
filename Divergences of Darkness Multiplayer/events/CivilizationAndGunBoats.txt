@@ -4066,7 +4066,6 @@ country_event = {
 			limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
 			owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
 		}
-		add_country_modifier = { name = balanced_baby_boom duration = 3650 }
 		remove_country_modifier = assegai
 		remove_country_modifier = educational_reform
 		remove_country_modifier = military_reform
@@ -4773,6 +4772,78 @@ country_event = {
 		clr_country_flag = change_to_orthodox
 		clr_country_flag = change_to_protestant
 		clr_country_flag = change_to_catholic
+	}
+}
+
+country_event = {
+	id = 90964
+	title = "westernize_nation_title"
+	desc = "westernize_nation_desc"
+	news = yes
+	news_desc_long = "westernize_nation_desc_NEWS_LONG"
+	news_desc_medium = "westernize_nation_desc_NEWS_MEDIUM"
+	news_desc_short = "westernize_nation_desc_NEWS_SHORT"
+	picture = "western"
+	
+	trigger = {
+		OR = {
+		has_country_modifier = assegai
+		has_country_modifier = educational_reform
+		has_country_modifier = military_reform
+		has_country_modifier = western_influences
+		has_country_modifier = uncivilized_isolationism
+		has_country_modifier = trade_restrictions
+		has_country_modifier = sayings_of_the_dutch
+		has_country_modifier = rangaku
+		has_country_modifier = sakoku
+		has_country_modifier = western_presence
+		has_country_modifier = isolationist_foreign_naval_officers
+		has_country_modifier = isolationist_foreign_naval_schools
+		has_country_modifier = isolationist_foreign_officers
+		has_country_modifier = isolationist_foreign_training
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA90910"
+		prestige = 5
+		tech_school = traditional_academic
+		clr_country_flag = lacking_writing_system
+		random_owned = { limit = { owner = { ai = yes } } owner = { add_country_modifier = { name = law_changed_by_force duration = 3 } } }
+		random_owned = { 
+			limit = { owner = { has_country_flag = activate_experimental_railroad } NOT = { experimental_railroad = 1 } }
+			owner = { activate_technology = experimental_railroad  clr_country_flag = activate_experimental_railroad }
+		}
+		remove_country_modifier = assegai
+		remove_country_modifier = educational_reform
+		remove_country_modifier = military_reform
+		remove_country_modifier = western_influences
+		remove_country_modifier = uncivilized_isolationism
+		remove_country_modifier = trade_restrictions
+		remove_country_modifier = sayings_of_the_dutch
+		remove_country_modifier = rangaku
+		remove_country_modifier = sakoku
+		remove_country_modifier = western_presence
+		remove_country_modifier = isolationist_foreign_naval_officers
+		remove_country_modifier = isolationist_foreign_naval_schools
+		remove_country_modifier = isolationist_foreign_officers
+		remove_country_modifier = isolationist_foreign_training
+		any_owned = {
+			remove_province_modifier = western_presence
+			remove_province_modifier = foreign_smugglers
+			remove_province_modifier = foreign_trading_post
+			remove_province_modifier = local_opium_habit
+			remove_province_modifier = european_military_mission
+			remove_province_modifier = legation_quarter
+			remove_province_modifier = kettler_denkmal
+			remove_province_modifier = extraterritoriality_granted
+			remove_province_modifier = boxer_presence
+			remove_province_modifier = boxer_agitation
+		}
 	}
 }
 

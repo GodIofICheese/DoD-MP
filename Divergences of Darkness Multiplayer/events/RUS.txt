@@ -34,6 +34,12 @@ country_event = {
 			factor = 0
 		}
 	}
+	option = {
+		name = "EVTOPTB32410"
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 country_event = { 

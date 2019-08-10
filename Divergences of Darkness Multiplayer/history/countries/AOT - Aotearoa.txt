@@ -37,6 +37,7 @@ centralization = regionalism
 colonial_policy = no_colonies 
 
 set_country_flag = animist_country
+set_country_flag = new_world_nation
 
 ruling_party = AAA_conservative_3
 upper_house = {

@@ -243,25 +243,44 @@ party_issues = {
 political_reforms = {
 	
 	slavery = {
-	
+		
 		yes_slavery = {
 			rules = { slavery_allowed = yes }
 			allow = {
-				NOT = { has_country_flag = communist_gov }
-				NOT = { has_country_flag = fascist_gov }
+				NOT = { has_country_flag = democracy_gov }
 				NOT = { has_country_flag = slave_revolution }
+				AND = {
+					has_country_flag = totalitarian
+					OR = { 
+						has_country_flag = clean_up_colonial_government
+						has_country_flag = absolute_monarchy_gov
+						has_country_flag = presidential_dictatorship_gov
+						has_country_flag = theocratic_government
+						has_country_flag = communist_gov
+						has_country_flag = anarcho_liberal_gov
+						has_country_flag = fascist_gov
+					}
+				}
 			}
 		}
 		
 		freedom_of_womb = {
 			rules = { slavery_allowed = yes }
 			allow = {
-				NOT = { has_country_flag = communist_gov }
-				NOT = { has_country_flag = fascist_gov }
+				year = 1875
+				NOT = { has_country_flag = democracy_gov }
 				NOT = { has_country_flag = slave_revolution }
-				OR = {
-					NOT = { has_country_flag = the_slavery_debate }
-					year = 1875
+				AND = {
+					has_country_flag = totalitarian
+					OR = { 
+						has_country_flag = clean_up_colonial_government
+						has_country_flag = absolute_monarchy_gov
+						has_country_flag = presidential_dictatorship_gov
+						has_country_flag = theocratic_government
+						has_country_flag = communist_gov
+						has_country_flag = anarcho_liberal_gov
+						has_country_flag = fascist_gov
+					}
 				}
 			}
 		}
@@ -524,10 +543,14 @@ political_reforms = {
 			poor_savings_modifier = -0.5
 			global_immigrant_attract = -0.1
 			allow = {
+				has_country_flag = totalitarian
 				OR = {
 					has_country_flag = clean_up_colonial_government
 					has_country_flag = absolute_monarchy_gov
-					has_country_flag = semi_constitutional_monarchy_gov
+					has_country_flag = theocratic_government
+					has_country_flag = anarcho_liberal_gov
+					has_country_flag = fascist_gov
+					has_country_flag = communist_gov
 				}
 			}
 		}
@@ -539,7 +562,12 @@ political_reforms = {
 			poor_everyday_needs = 0.1
 			poor_savings_modifier = -0.25
 			#on_execute = { effect = { country_event = 6016804 } }
-			allow = { OR = { NOT = { has_country_flag = serfdom_not_abolished } year = 1870 } }
+			allow = { 
+				OR = { 
+					NOT = { has_country_flag = serfdom_not_abolished } 
+					year = 1870 
+				} 
+			}
 		}
 		
 		debtors_prisons = {
@@ -559,11 +587,12 @@ political_reforms = {
 			badboy = 0.01
 			literacy_con_impact = -0.1
 			administrative_multiplier = 6
-			global_pop_militancy_modifier = 0.01
+			global_pop_militancy_modifier = 0.02
 			allow = {
-				vote_franschise = none_voting
-				NOT = { press_rights = free_press }
-				citizenship_policy = residency
+				OR = {
+					has_country_flag = totalitarian
+					has_country_flag = zombie_outbreak
+				}
 				OR = {
 					has_country_flag = clean_up_colonial_government
 					has_country_flag = absolute_monarchy_gov
@@ -571,22 +600,32 @@ political_reforms = {
 					has_country_flag = fascist_gov
 					has_country_flag = presidential_dictatorship_gov
 					has_country_flag = theocratic_government
+
 				}
 			}
 		}
 		quota_immigration = {
 			administrative_multiplier = 2
 			global_immigrant_attract = -0.02
-			core_pop_militancy_modifier = -0.01
+			core_pop_militancy_modifier = -0.02
 			allow = {
-				OR = {
-					is_culture_group = latin_american_cultures
-					is_culture_group = american_cultures
-					is_culture_group = african_diaspora_cultures
-					is_culture_group = native_american
-					primary_culture = australian
-					primary_culture = anglo_canadian
-					primary_culture = french_canadian
+				AND = {
+					OR = {
+						citizenship_policy = residency
+						citizenship_policy = limited_citizenship
+						has_country_flag = zombie_outbreak
+					}
+					OR = {
+						has_country_flag = clean_up_colonial_government
+						has_country_flag = absolute_monarchy_gov
+						has_country_flag = communist_gov
+						has_country_flag = fascist_gov
+						has_country_flag = presidential_dictatorship_gov
+						has_country_flag = theocratic_government
+						has_country_flag = presidential_dictatorship_gov
+						has_country_flag = totalitarian
+						has_country_flag = zombie_outbreak
+					}
 				}
 			}
 		}
@@ -657,20 +696,14 @@ political_reforms = {
 			global_population_growth = -0.0001
 			global_immigrant_attract = -0.25
 			allow = {
-			year = 1870
+			year = 1890
 				OR = {
 					has_country_flag = communist_gov
 					has_country_flag = fascist_gov
-					AND = { 
-						ruling_party_ideology = reactionary
-						OR = {
-							has_country_flag = clean_up_colonial_government
-							has_country_flag = absolute_monarchy_gov
-							has_country_flag = presidential_dictatorship_gov
-							has_country_flag = theocratic_government
-							has_country_flag = proletarian_dictatorship
-							has_country_flag = bourgeois_dictatorship  
-						}
+					AND = {
+						upper_house_composition = party_appointed
+						vote_franschise = none_voting
+						political_parties = underground_parties
 					}
 				}
 			}
@@ -694,6 +727,7 @@ political_reforms = {
 					has_country_flag = holy_roman_empire
 					has_country_flag = rhineland
 					AND = {
+						has_country_flag = anarcho_liberal_gov
 						number_of_states = 4
 						average_militancy = 7
 					}
@@ -709,8 +743,7 @@ political_reforms = {
 				OR = {
 					has_country_flag = absolute_monarchy_gov
 					has_country_flag = theocratic_government
-					has_country_flag = feudal_monarchy
-					has_country_flag = merchant_republic 				
+					has_country_flag = feudal_monarchy				
 				}
 			}
 		}
@@ -720,9 +753,7 @@ political_reforms = {
 			allow = {
 				has_global_flag = revolution_n_counter_researched
 				number_of_states = 2
-				OR = {
-				        has_country_flag = democracy
-				}
+				has_country_flag = democracy_gov
 			}
 		}
 		unitary = {
@@ -1065,7 +1096,7 @@ economic_reforms = {
 			war_exhaustion = 0.15
 			global_pop_consciousness_modifier = -0.05
 		}
-		rehabilitation = {
+		penal_code = {
 			technology_cost = 4000
 			civilization_progress_modifier = 0.05
 			global_pop_militancy_modifier = -0.02

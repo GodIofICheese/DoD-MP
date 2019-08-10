@@ -90,6 +90,7 @@ political_decisions = {
 		effect = {
 			prestige = 25
 			change_tag = ITA
+			set_country_flag = italy
 			add_accepted_culture = north_italian
 			add_accepted_culture = south_italian
 			any_country = {
@@ -460,6 +461,10 @@ political_decisions = {
 	 				} 
 			}
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	risanamento_VEN = { 
@@ -490,6 +495,10 @@ political_decisions = {
 				life_rating = 5
 			}
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	extand_the_arsenal = { 
@@ -515,6 +524,10 @@ political_decisions = {
 		}
 		set_country_flag = steamer_arsenal 
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	
 	integrate_athesians = { 
@@ -537,6 +550,10 @@ political_decisions = {
 		add_accepted_culture = athesian
 		set_country_flag = athesian_acc
 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	
 	}
 	
@@ -550,12 +567,18 @@ political_decisions = {
 		
 		allow = { 
 		state_n_government = 1 
-		NOT = { CRO = { rank = 16 } } 
+		OR = {
+			NOT = { CRO = { rank = 16 } }
+			NOT = { exists = CRO }
 		}
-		
+		}
 		effect = { 
 		AUS_780 = { add_core = VEN }
 		set_country_flag = dalmatia_cores
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

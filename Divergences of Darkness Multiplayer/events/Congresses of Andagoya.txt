@@ -15,7 +15,8 @@ country_event = {
 	trigger = {
 		tag = CLM
    		war = no
-		ai = no
+		ai = yes
+		NOT = { year = 1855 }
 		NOT = {
 			has_global_flag = congress_of_panama
 			has_global_flag = partial_peace 
@@ -36,22 +37,16 @@ country_event = {
 			factor = 0.2 #increase likelihood to happen
 			year = 1842
 			}
-		}
 		modifier = {
-			factor = -10 #increase likelihood to happen
+			factor = 0 #Never Happens
 			ai = no
 			}
-		}
 		modifier = {
-			factor = -10 #increase likelihood to happen
+			factor = 0 #Never Happens
 			year = 1855
 			}
-		}
+	}
 		
-		
-	
-	
-
 	option = {
 		name = "EVTOPTA46411"
 		any_pop = {

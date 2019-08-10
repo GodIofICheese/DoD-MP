@@ -144,6 +144,7 @@ political_decisions = {
 		effect = {
 			prestige = 10
 			change_tag = RHI
+			set_country_flag = rhineland
 			HES_2560 = { add_core = RHI }
 			capital = 565
 			any_country = {

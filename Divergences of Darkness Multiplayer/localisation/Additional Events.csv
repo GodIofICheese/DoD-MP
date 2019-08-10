@@ -16,6 +16,9 @@ EVTOPTA776403;Damn the acts of attempting to balance Asia.;;;;;;;;;;;;;;;;;;;;;;
 776404;Late-game Asian Nerf;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC776404;Civilized player nations in India & China will be getting nerfs to mobilization & pop-growth as the game goes on to compensate for their ludicrious accepted-pop & brigade count.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTOPTA776404;Damn the acts of attempting to balance Asia.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+776405;Chinese Pop Nerf;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776405;China gets a nerf to it's large population to help with balance & late-game lag.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA776405;Damn the acts of attempting to balance Asia.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME776601;Zhourao Liferating Increase;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC776601;With all of Australia now controlled, low liferating provinces will have their liferating increased.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT776601OPTA;Excellent.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
@@ -51,3 +54,13 @@ EVT199037OPTH;I'd rather not change anything.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;
 EVTNAME124114;Final Consolidation;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTDESC124114;The administration of our newly gained Italian holdings finally settled and it was decided to redistribute some power to the restless North Italians. We can now call ourselves the heirs of the Roman Empire.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 EVTOPTA124114;An Eagles rises.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTNAME6016814;Beginning of the Regime of Totalitarianism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTDESC6016814;Although there may have been prior authoritarianism, recent centralization of power has lead to complete absolute rule over all aspects of society.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVT6016814OPTA;I am the State!;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+totalitarian;Totalitarianism;;;;;;;;;;;;;x
+EVTNAME6016815;End of Totalitarianism;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTDESC6016815;A recent thaw and the rise of more competition in governance has lead to a less absolutist regime.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVT6016815OPTA;Atleast there won't be as many political purges.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+EVTNAME776801;Colonial Tech Inheiritance;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776801;Uncivilized Puppets gain basic industrial techs to further the out-sourcing of resources.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTOPTA776801;Isn't this just exploitation of our natural resources?;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x

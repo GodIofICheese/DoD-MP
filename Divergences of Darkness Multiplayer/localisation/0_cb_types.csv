@@ -106,6 +106,10 @@ demand_concession_casus_belli;Demand Concession;Demande de concession;Konzession
 demand_concession_casus_belli_short;Demand $STATE$;Demander $STATE$;Fordern Sie $STATE$;;;;;;;;;;;
 demand_concession_casus_belli_desc;Force an §Yuncivilized country§W to secede territory to form a colonial concession.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonialkonzession abzuspalten.;;;;;;;;;;;
 demand_concession_casus_belli_setup;Demand that $RECIPIENT$ secede territory to form a colonial concession.;Demandez à ce que $RECIPIENT$ fasse sécession d'un territoire pour former une concession coloniale.;Verlangen Sie, dass $RECIPIENT$ Gebiete zur Gründung einer Kolonialkonzession abspaltet.;;;;;;;;;;;
+demand_concession_casus_belli_player_early;Demand Concession Early;Demande de concession;Konzession verlangen;;;;;;;;;;;
+demand_concession_casus_belli_player_early_short;Demand $STATE$ for 100% more warscore.;Demander $STATE$;Fordern Sie $STATE$;;;;;;;;;;;
+demand_concession_casus_belli_player_early_desc;Force the §Yuncivilized country§W to secede territory to form a colonial concession for 100% more warscore.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonialkonzession abzuspalten.;;;;;;;;;;;
+demand_concession_casus_belli_player_early_setup;Demand that $RECIPIENT$ secede territory to form a colonial concession.;Demandez à ce que $RECIPIENT$ fasse sécession d'un territoire pour former une concession coloniale.;Verlangen Sie, dass $RECIPIENT$ Gebiete zur Gründung einer Kolonialkonzession abspaltet.;;;;;;;;;;;
 demand_concession_NI_casus_belli;Demand Concession;Demande de concession;Konzession verlangen;;;;;;;;;;;
 demand_concession_NI_casus_belli_short;Demand $STATE$;Demander $STATE$;Fordern Sie $STATE$;;;;;;;;;;;
 demand_concession_NI_casus_belli_desc;Force an §Yuncivilized country§W to secede territory to form a colonial concession.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonialkonzession abzuspalten.;;;;;;;;;;;
@@ -271,6 +275,8 @@ AGRESSION_WAR_CHINA_REUNIFICATION;$ORDER$$FIRST$-$SECOND$ War of Chinese Reunifi
 NORMAL_WAR_CHINA_REUNIFICATION;$ORDER$$FIRST$-$SECOND$ War of Chinese Reunification;Guerre $ORDER$$FIRST$-$SECOND$;$ORDER$$FIRST$-$SECOND$ Krieg;Baza;Base:;Base:;Alap:;Základna:;;;;;;
 AGRESSION_WAR_CONCESSION_NAME;$ORDER$ War of The $STATE$ Concession;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;
 NORMAL_WAR_CONCESSION_NAME;$ORDER$ War of The $STATE$ Concession;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;
+AGRESSION_EARLY_WAR_CONCESSION_NAME;$ORDER$ War of The $STATE$ Concession;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;
+NORMAL_EARLY_WAR_CONCESSION_NAME;$ORDER$ War of The $STATE$ Concession;$ORDER$ Guerre de concession de $STATE$;$ORDER$ Krieg der $STATE$-Konzession;;;;;;;;;;;
 AGRESSION_WAR_RUDEBOI_NAME;$ORDER$$FIRST$ War of $SECOND$ Containment;$ORDER$$FIRST$ guerre de confinement $SECOND$;$ORDER$$FIRST$ Krieg der $SECOND$ Beherrschung;;;;;;;;;;;
 NORMAL_WAR_RUDEBOI_NAME;$ORDER$$FIRST$ War of $SECOND$ Containment;$ORDER$$FIRST$ guerre de confinement $SECOND$;$ORDER$$FIRST$ Krieg der $SECOND$ Beherrschung;;;;;;;;;;;
 AGRESSION_WAR_CONQUEST_NAME;$ORDER$War of $FIRST$ Aggression against $SECOND_COUNTRY$;$ORDER$ guerre de l'aggression $FIRST$ sur $SECOND$;$ORDER$Krieg der $FIRST$ Aggression gegen $SECOND$;;;;;;;;;;;

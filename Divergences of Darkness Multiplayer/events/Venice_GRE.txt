@@ -6,6 +6,7 @@ country_event = { # Venice becomes Greece if they have lost their Italian holdin
 
 	trigger = {
 		tag = VEN
+		ai = no
 		NOT = { is_greater_power = yes }
 		NOT = { owns = 729 } # Venice
 		NOT = { war = yes }
@@ -25,6 +26,11 @@ country_event = { # Venice becomes Greece if they have lost their Italian holdin
 		release = ATS
 		primary_culture = greek
 		add_accepted_culture = venetian
+		add_accepted_culture = serb
+		add_accepted_culture = albanian
+		add_accepted_culture = croat
+		add_accepted_culture = bosniak
+		add_accepted_culture = bulgarian
 		government = democracy
 		set_country_flag = VEN_GRE
 		capital = 834
@@ -685,11 +691,6 @@ country_event = { #Treaty of Corfu
 					is_core = GRE
 				}
 		secede_province = GRE
-		}
-		GRE = {
-			all_core = {
-				remove_core = THIS
-			}
 		}
 	}
 }

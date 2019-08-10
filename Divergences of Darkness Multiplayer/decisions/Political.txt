@@ -263,9 +263,11 @@ political_decisions = {
 			}
 			OR = {
 				government = absolute_monarchy
-				government = prussian_constitutionalism
 				government = feudal_monarchy
 				government = theocracy
+				government = bourgeois_dictatorship
+				government = fascist_dictatorship
+				has_country_flag = totalitarian
 			}
 			debt_law = serfdom
 		}
@@ -865,24 +867,27 @@ political_decisions = {
 				ai = yes
 			}
 			NOT = { border_policy = quota_immigration }
-			OR = {
-				is_culture_group = latin_american_cultures
-				is_culture_group = american_cultures
-				is_culture_group = african_diaspora_cultures
-				is_culture_group = native_american
-				primary_culture = australian
-				primary_culture = anglo_canadian
-				primary_culture = french_canadian
-			}
-			OR = {
-				continent = north_america
-				continent = south_america
-				primary_culture = australian
-			}
 		}
 		
 		allow = {
 			state_n_government = 1
+			OR = {
+				OR = {
+					citizenship_policy = residency
+					citizenship_policy = limited_citizenship
+					ruling_party_ideology = reactionary
+				}
+				OR = {
+					has_country_flag = clean_up_colonial_government
+					has_country_flag = absolute_monarchy_gov
+					has_country_flag = communist_gov
+					has_country_flag = fascist_gov
+					has_country_flag = presidential_dictatorship_gov
+					has_country_flag = theocratic_government
+					has_country_flag = presidential_dictatorship_gov
+					has_country_flag = totalitarian
+				}
+			}
 			NOT = { has_country_modifier = law_changed_by_force }
 		}
 		

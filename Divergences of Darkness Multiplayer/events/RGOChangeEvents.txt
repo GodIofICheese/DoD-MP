@@ -1566,12 +1566,6 @@ country_event = {
 			}
 			
 			trade_goods = timber
-			any_pop = {
-				limit = {
-				type = farmers
-				}
-			pop_type = labourers
-			}
 			add_province_modifier = {
 			name = switched_production
 			duration = 4562

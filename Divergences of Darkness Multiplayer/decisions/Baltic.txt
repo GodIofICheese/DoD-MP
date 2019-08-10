@@ -247,7 +247,15 @@ political_decisions = {
 
 		potential = { 
 			tag = PLC 
-			has_country_flag = lublin_new 
+			OR = {
+			has_country_flag = lublin_new
+			AND = {
+				owns = 958
+				owns = 718
+				owns = 706
+				year = 1880
+			}
+			}
 			NOT = { has_country_flag = treaty_hadiach }
 		}
 

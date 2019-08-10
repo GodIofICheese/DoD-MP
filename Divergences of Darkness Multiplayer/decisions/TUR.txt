@@ -17,11 +17,21 @@ political_decisions = {
 		
 		allow = {
 			nationalism_n_imperialism = 1
+			EGY_921 = { owned_by = THIS }
+			EGY_915 = { owned_by = THIS }
+			EGY_903 = { owned_by = THIS }
+			EGY_897 = { owned_by = THIS }
+			TUR_923 = { owned_by = THIS }
+			TUR_931 = { owned_by = THIS }
+			TUR_935 = { owned_by = THIS }
+			SER_794 = { owned_by = THIS }
+			TUR_803 = { owned_by = THIS }
 			NOT = { exists = MAC }
 			NOT = { exists = SYR }
 			NOT = { exists = PLS }
 			NOT = { exists = JOR }
 			NOT = { exists = BUL }
+			NOT = { exists = IRQ }
 			NOT = { average_militancy = 3 }
 			NOT = { ruling_party_ideology = reactionary }
 			NOT = { war = yes }
@@ -30,7 +40,7 @@ political_decisions = {
 		effect = {
 			any_pop = {
 				limit = {
-					has_pop_culture = greek
+					has_pop_culture = serb
 				}
 				militancy = -2
 				consciousness = 2
@@ -50,7 +60,7 @@ political_decisions = {
 				ideology = { factor = 0.25 value = reactionary }
 				consciousness = 4
 			}
-			add_accepted_culture = greek
+			add_accepted_culture = serb
 			add_accepted_culture = mashriqi
     			political_reform = wealth_weighted_voting
     			political_reform = state_equal_weight
@@ -83,12 +93,14 @@ political_decisions = {
 				   revolution_n_counterrevolution = 1
 			     }
 			}
-			NOT = { exists = MAC }
-			NOT = { exists = YUG }
-			NOT = { exists = SER }
+			NOT = { exists = EGY }
 			NOT = { exists = BUL }
-			NOT = { exists = ALB }
-			NOT = { exists = MON }
+			EGY_1750 = { owned_by = THIS }
+			EGY_1762 = { owned_by = THIS }
+			EGY_1746 = { owned_by = THIS }
+			TUR_810 = { owned_by = THIS }
+			TUR_809 = { owned_by = THIS }
+			TUR_805 = { owned_by = THIS }
 			NOT = { average_militancy = 2 }
 			NOT = { ruling_party_ideology = reactionary }
 			OR = {

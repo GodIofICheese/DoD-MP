@@ -104,6 +104,12 @@ political_decisions = {
 			potential = {
 				tag = RUS
 				NOT = { has_country_modifier = rus_expansion_cooldown }
+				OR = {
+				NOT = { has_country_flag = panslavic_focus }
+				NOT = { has_country_flag = siberia }
+				NOT = { has_country_flag = southern_focus }
+				NOT = { has_country_flag = baltic_focus }
+				}
 			}
 			allow = {
 				year = 1860
@@ -116,6 +122,7 @@ political_decisions = {
 				factor = 1
 			}
 	}
+	
 #Next step: Moving the capital, once all relevant territory is reclaimed.
 	#St. Petersburg will be named after Mikhail I ("Mikhailgrad")
 	move_capital_to_nyenschantz = {

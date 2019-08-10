@@ -318,6 +318,16 @@ divided_society = {
 	icon = 18
 }
 
+divided_society1 = {
+	assimilation_rate = -0.3
+	icon = 18
+}
+
+integrated_society = {
+	assimilation_rate = 0.15
+	icon = 5
+}
+
 corrupt_army = {
 	supply_consumption = -0.25
 	#goods_demand = -0.6
@@ -2026,7 +2036,7 @@ chinese_floods = {
 taiping_draft = {
 	land_organisation = -0.1
 	org_regain = -0.1
-	mobilisation_size = 0.15
+	mobilisation_size = 0.05
 	prestige = -0.02
 	icon = 18
 }
@@ -2535,7 +2545,7 @@ sons_of_louis = {
 }
 
 assimilate_tributaries_modif = { 
-	assimilation_rate = 1.5
+	assimilation_rate = 0.5
 	icon = 19
 }
 
@@ -2544,7 +2554,7 @@ anglois_dilemma = {
 	pop_consciousness_modifier = 0.1
 }
 anglois_cultural_unity = {
-	assimilation_rate = 2.5
+	assimilation_rate = 0.3
 	icon = 19
 }
 
@@ -2663,15 +2673,15 @@ pompeji_excavations = {
 
 #Janissary
 janissary_rule = {
-	assimilation_rate = -0.25
-	pop_militancy_modifier = 0.05
+	assimilation_rate = -0.10
+	pop_militancy_modifier = 0.01
 	icon = 7
 }
 
 janissary_system = { 
-	pop_militancy_modifier = 0.02
-	non_accepted_pop_militancy_modifier = 0.2
-	non_accepted_pop_consciousness_modifier = 0.5 
+	pop_militancy_modifier = 0.01
+	non_accepted_pop_militancy_modifier = 0.01
+	non_accepted_pop_consciousness_modifier = 0.025 
 	icon = 16
 }
 
@@ -2693,7 +2703,7 @@ enosis_modifier = {
 }
 
 federales_CLM = {
-	core_pop_militancy_modifier = -0.02
+	core_pop_militancy_modifier = -0.01
 	icon = 1
 }
 
@@ -2715,7 +2725,7 @@ purge = {
 	global_pop_militancy_modifier = -0.05
 	global_pop_consciousness_modifier = -0.05
 	leadership_modifier = -0.75
-	global_population_growth = -0.01
+	global_population_growth = -0.001
 	prestige = -0.1
 	icon = 15
 }

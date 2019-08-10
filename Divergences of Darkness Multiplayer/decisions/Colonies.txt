@@ -16,158 +16,14 @@ political_decisions = {
 		allow = {
 			naval_logistics = 1
 			invention = bell_n_greys_telephones
-			money = 11000
+			money = 110000
 		}
 		
 		effect = {
 			set_country_flag = colonial_armies
-			treasury = -10000
+			treasury = -100000
 		}
 		ai_will_do = {  factor = 1 }
-	}
-	
-	commission_warship = {
-		picture = ironclad_commissions
-		potential = {
-			any_owned_province = { has_building = naval_base }
-			NOT = { iron_steamers = 1 }
-			OR = {
-				any_greater_power = { invention = ironclads raider_group_doctrine = 1 }
-				any_neighbor_country = { invention = ironclads raider_group_doctrine = 1 }
-				sphere_owner = { invention = ironclads raider_group_doctrine = 1 }
-				overlord = { invention = ironclads raider_group_doctrine = 1 }
-			}
-			NOT = { has_country_flag = lacking_writing_system }
-			NOT = { has_country_flag = warship_commissioned }
-		}
-		
-		allow = {
-			money = 51000
-			NOT = { is_disarmed = yes }
-			NOT = { has_country_modifier = warship_commissioned }
-			any_owned_province = { has_building = naval_base is_core = THIS }
-			war = no
-			OR = {
-				ai = no
-				NOT = { total_amount_of_ships = 3 }
-				AND = {
-					num_of_ports = 3
-					NOT = { check_variable = { which = ironclad_commision value = 1 } }
-				}
-				AND = {
-					num_of_ports = 6
-					NOT = { check_variable = { which = ironclad_commision value = 3 } }
-				}
-				AND = {
-					num_of_ports = 12
-					NOT = { check_variable = { which = ironclad_commision value = 6 } }
-				}
-				AND = {
-					num_of_ports = 18
-					NOT = { check_variable = { which = ironclad_commision value = 9 } }
-				}
-				AND = {
-					num_of_ports = 24
-					NOT = { check_variable = { which = ironclad_commision value = 12 } }
-				}
-				AND = {
-					num_of_ports = 30
-					NOT = { check_variable = { which = ironclad_commision value = 15 } }
-				}
-			}
-		}
-		
-		effect = {
-			random_owned = { limit = { owner = { NOT = { has_global_flag = warship_commissioned } } } set_global_flag = warship_commissioned }
-			set_country_flag = warship_commissioned
-			treasury = -50000
-			any_country = { limit = { exists = no has_country_flag = warship_commissioned } clr_country_flag = warship_commissioned }
-			random_owned = { limit = { owner = { NOT = { has_country_flag = warship_variable } } } owner = { set_country_flag = warship_variable } }
-			random_owned = {
-				limit = { owner = { NOT = { has_country_flag = warship_variable } } }
-				owner = { set_variable = { which = ironclad_commision value = 0 } }
-			}
-			random_owned = {
-				limit = { owner = { has_country_flag = warship_variable NOT = { total_amount_of_ships = 1 } } }
-				owner = { set_variable = { which = ironclad_commision value = 0 } }
-			}
-		}	
-		
-		ai_will_do = {
-			factor = 1
-			
-			#modifier = { factor = 0 NOT = { number_of_states = 6 } colonial_nation = no }
-		}
-	}
-	
-	take_on_warship_commission = {
-		picture = ironclad_commissions
-		potential = {
-			any_owned_province = { has_building = naval_base }
-			OR = {
-				has_global_flag = warship_commissioned
-				any_neighbor_country = { has_country_flag = warship_commissioned }
-			}
-			invention = ironclads
-			raider_group_doctrine = 1
-			NOT = { has_global_flag = warship_commission_being_fulfilled }
-		}
-		
-		allow = {
-			war = no
-			is_vassal = no
-			OR = {
-				AND = {
-					ai = no
-					steamer_convoy = 24
-					artillery = 10
-					canned_food = 10
-				}
-				ai = yes
-			}
-			NOT = {
-				has_country_modifier = warship_commissioned
-				is_disarmed = yes
-				check_variable = { which = owed_steamers value = 1 }
-				check_variable = { which = owed_artillery value = 1 }
-				check_variable = { which = owed_canned_food value = 1 }
-			}
-		}
-		
-		effect = {
-			clr_global_flag = warship_commissioned
-			set_global_flag = warship_commission_being_fulfilled
-			any_country = { limit = { exists = yes has_country_flag = warship_commissioned } set_global_flag = warship_commissioned }
-			add_country_modifier = { name = warship_commissioned duration = 1095 }
-			random_owned = {
-				limit = { owner = { ai = no } }
-				owner = {
-					steamer_convoy = -24
-					artillery = -10
-					canned_food = -10
-				}
-			}
-			random_owned = {
-				limit = { owner = { ai = yes } }
-				owner = {
-					set_variable = { which = owed_steamers value = 24 }
-					set_variable = { which = owed_artillery value = 10 }
-					set_variable = { which = owed_canned_food value = 10 }
-				}
-			}
-			treasury = 50000
-			random_country = {
-				limit = { has_country_flag = warship_commissioned exists = yes }
-				clr_country_flag = warship_commissioned
-				relation = { who = THIS value = 5 }
-				country_event = 6016812
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			
-			modifier = { factor = 0 NOT = { month = 6 } }
-		}
 	}
 	
 	commodity_production_in_uzbekistan = {
@@ -181,7 +37,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			money = 50000
+			money = 500000
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
@@ -194,7 +50,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = uzbekistan_commodities
-			treasury = -50000
+			treasury = -500000
 			1200 = { trade_goods = cotton }
 			1198 = { trade_goods = cotton }
 			1195 = { trade_goods = silk }
@@ -216,7 +72,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			money = 50000
+			money = 500000
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
@@ -229,7 +85,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = kyrgyzstan_commodities
-			treasury = -50000
+			treasury = -500000
 			1203 = { trade_goods = coal }
 			1190 = { trade_goods = cotton }
 			1189 = { trade_goods = coal } #Bishkek
@@ -248,7 +104,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			money = 50000
+			money = 500000
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
@@ -261,7 +117,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = turkmenia_commodities
-			treasury = -50000
+			treasury = -500000
 			1206 = { trade_goods = cotton }
 			1196 = { trade_goods = cotton }
 		}
@@ -278,7 +134,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			money = 50000
+			money = 500000
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
@@ -291,7 +147,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = tajikstan_commodities
-			treasury = -50000
+			treasury = -500000
 			1208 = { trade_goods = cotton }
 			1201 = { trade_goods = precious_metal }
 		}
@@ -309,7 +165,7 @@ political_decisions = {
 		
 		allow = {
 			war = no
-			money = 50000
+			money = 500000
 			OR = {
 				market_determined_exchange_rates = 1
 				AND = {
@@ -322,7 +178,7 @@ political_decisions = {
 		
 		effect = {
 			set_global_flag = philippines_commodities
-			treasury = -50000
+			treasury = -500000
 			2565 = { trade_goods = tobacco }
 			1457 = { trade_goods = coffee }
 			1458 = { trade_goods = coffee }
@@ -587,6 +443,21 @@ political_decisions = {
 	asian_rgo_normalization = {
 		picture = coffee_in_colombia
 		potential = {
+			AND = {
+				NOT = { tag = HND }
+				NOT = { tag = MUG }
+				NOT = { tag = BHA }
+				NOT = { tag = DRA }
+				NOT = { tag = CHI }
+				NOT = { tag = MCK }
+				NOT = { tag = TAI }
+				NOT = { tag = BEN }
+				NOT = { tag = DAI }
+				NOT = { tag = SIA }
+				NOT = { tag = CHP }
+				NOT = { tag = CAM }
+				NOT = { tag = BUR }
+			}	
 			OR = {
 				1485 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
 				2681 = { owned_by = THIS NOT = { has_province_modifier = plantation } }
@@ -598,10 +469,10 @@ political_decisions = {
 					NOT = { terrain = dryhills }
 					NOT = { province_id = 1320 }
 					NOT = { terrain = coral_island }
-					NOT = { has_province_modifier = plantation }
+					NOT = { has_province_modifier = plantation }	
 				}
 				any_owned_province = {
-					is_core = PHL
+					is_core = TON
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -613,7 +484,7 @@ political_decisions = {
 					NOT = { has_province_modifier = plantation } 
 				}
 				any_owned_province = {
-					is_core = INO
+					is_core = NUS
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -622,7 +493,15 @@ political_decisions = {
 					NOT = { has_province_modifier = plantation } 
 				}
 				any_owned_province = {
-					is_core = MLY
+					is_core = BUR
+					NOT = { terrain = small_island }
+					NOT = { terrain = desert }
+					NOT = { terrain = semidesert }
+					NOT = { terrain = dryhills }
+					NOT = { has_province_modifier = plantation }
+				}
+				any_owned_province = { 
+					is_core = SRL
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -630,23 +509,42 @@ political_decisions = {
 					NOT = { has_province_modifier = plantation } 
 				}
 				any_owned_province = { 
-					is_core = SRI
+					is_core = BEN
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
 					NOT = { terrain = dryhills }
-					NOT = { has_province_modifier = plantation } 
+					NOT = { has_province_modifier = plantation }	
 				}
 				any_owned_province = { 
-					is_core = PAK
+					is_core = DAI
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
 					NOT = { terrain = dryhills }
-					NOT = { has_province_modifier = plantation } 
+					NOT = { province_id = 1637 }
+					NOT = { has_province_modifier = plantation }
 				}
 				any_owned_province = { 
-					is_core = KOR
+					is_core = CHP
+					NOT = { terrain = small_island }
+					NOT = { terrain = desert }
+					NOT = { terrain = semidesert }
+					NOT = { terrain = dryhills }
+					NOT = { province_id = 1637 }
+					NOT = { has_province_modifier = plantation }
+				}
+				any_owned_province = { 
+					is_core = CAM
+					NOT = { terrain = small_island }
+					NOT = { terrain = desert }
+					NOT = { terrain = semidesert }
+					NOT = { terrain = dryhills }
+					NOT = { province_id = 1637 }
+					NOT = { has_province_modifier = plantation }
+				}
+				any_owned_province = { 
+					is_core = SIA
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -694,7 +592,7 @@ political_decisions = {
 			any_owned = {
 				limit = {
 					NOT = { has_province_modifier = plantation }
-					is_core = PHL
+					is_core = TON
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -709,7 +607,7 @@ political_decisions = {
 			any_owned = {
 				limit = {
 					NOT = { has_province_modifier = plantation }
-					is_core = INO
+					is_core = NUS
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -721,7 +619,7 @@ political_decisions = {
 			any_owned = {
 				limit = {
 					NOT = { has_province_modifier = plantation }
-					is_core = MLY
+					is_core = BUR
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -732,7 +630,7 @@ political_decisions = {
 			any_owned = {
 				limit = {
 					NOT = { has_province_modifier = plantation }
-					is_core = SRI
+					is_core = SRL
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -743,7 +641,7 @@ political_decisions = {
 			any_owned = {
 				limit = {
 					NOT = { has_province_modifier = plantation }
-					is_core = PAK
+					is_core = BEN
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
@@ -754,12 +652,44 @@ political_decisions = {
 			any_owned = {
 				limit = {
 					NOT = { has_province_modifier = plantation }
-					is_core = KOR
+					is_core = DAI
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
 					NOT = { terrain = semidesert }
 					NOT = { terrain = dryhills }
-					NOT = { province_id = 1637 }
+				}
+				add_province_modifier = { name = plantation duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					NOT = { has_province_modifier = plantation }
+					is_core = CHP
+					NOT = { terrain = small_island }
+					NOT = { terrain = desert }
+					NOT = { terrain = semidesert }
+					NOT = { terrain = dryhills }
+				}
+				add_province_modifier = { name = plantation duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					NOT = { has_province_modifier = plantation }
+					is_core = CAM
+					NOT = { terrain = small_island }
+					NOT = { terrain = desert }
+					NOT = { terrain = semidesert }
+					NOT = { terrain = dryhills }
+				}
+				add_province_modifier = { name = plantation duration = -1 }
+			}
+			any_owned = {
+				limit = {
+					NOT = { has_province_modifier = plantation }
+					is_core = SIA
+					NOT = { terrain = small_island }
+					NOT = { terrain = desert }
+					NOT = { terrain = semidesert }
+					NOT = { terrain = dryhills }
 				}
 				add_province_modifier = { name = plantation duration = -1 }
 			}
@@ -775,7 +705,6 @@ political_decisions = {
 				continent = africa
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
-					NOT = { terrain = semidesert }
 					NOT = { terrain = dryhills }
 					NOT = { has_province_modifier = plantation }
 					NOT = { province_id = 2590 }
@@ -803,7 +732,6 @@ political_decisions = {
 					continent = africa
 					NOT = { terrain = small_island }
 					NOT = { terrain = desert }
-					NOT = { terrain = semidesert }
 					NOT = { terrain = dryhills }
 					NOT = { has_province_modifier = plantation }
 					NOT = { province_id = 2590 }

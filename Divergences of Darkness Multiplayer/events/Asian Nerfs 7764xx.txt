@@ -243,3 +243,25 @@ country_event = {
 		clr_country_flag = asia_nerfmid
 	}
 }
+
+country_event = {
+	id = 776405
+	title = "776405"
+	desc = "EVTDESC776405"
+	picture = "xinhai"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "EVTOPTA776405"
+		set_country_flag = chinese_economic_compensation
+		any_owned = {
+			limit = {
+				is_core = CHI
+			}
+				any_pop = {
+						reduce_pop = 0.33
+				}		
+		}
+	}
+}

@@ -8,7 +8,7 @@ new_world_desert;Desert;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
 new_world_boreal;Taiga;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
 new_world_montane_tundra;Alpine Tundra;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
 new_world_arctic;Tundra;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
-new_world_mountain;Montane Grassland;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
+new_world_mountain;Mountain Grassland;Prairie de Montagne;Berggrasland;;Praderas Montañas;;;;;;;;;
 new_world_jungle;Jungle;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
 new_world_plains;Grassland;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
 new_world_small_island;Island;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,;;;;;;;;;;;;;;;
@@ -72,7 +72,7 @@ PROV1858;Asaita;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 australia_new_zealand;Oceania;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 polynesia;Polynesia;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 desert;Desert;;;;;;;;;;;;;;;;;;;;;;;x;;;;
-semidesert;Semidesert;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+semidesert;Semi-Desert;Semi-Désertique;Halbwüste;;Semi-Desierto;;;;;;;;;
 small_island;Island;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 coral_island;Atoll;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 forest;Forest;;;;;;;;x;;;;;;;;;;;;;;;;;;;
@@ -81,9 +81,9 @@ arctic;Tundra;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 plains;Grassland;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 hills;Grassland Hills;;;;;;;;;;;;;;;;;x;;;;;;;;;;
 dryhills;Dry Grassland Hills;;;;;;;;;;;;;;;;;x;;;;;;;;;;
-mountain;Montane Grassland;;;;;;;;;;;;;;;;;x;;;;;;;;;;
+mountain;Mountains;Montagnes;Berge;;;;;;;;;;;
 montane_tundra;Alpine Tundra;;;;;;;;;;;;;;;;;x;;;;;;;;;;
-montane_forest;Montane Forest;;;;;;;;;;;;;;;;;x;;;;;;;;;;
+montane_forest;Forested Mountains;;;;;;;;;;;;;;;;;x;;;;;;;;;;
 savanna;Savanna;;;;;;;;;;;;;;;;;;;;;;;;x;;;
 PROV1714;Tinogasta;;;;;;;;;;;;;;;;;;x;;;;;;;;;
 PROV2406;Penghu;;;;;;;;;;;;;;;;;x;;;;;;;;;;

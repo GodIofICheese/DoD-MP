@@ -16,12 +16,12 @@ political_decisions = {
 		}
 
 		allow = {
-			money = 50000
+			money = 500000
 		}
 		
 		effect = {
 			set_country_flag = museum_build
-			money = -50000
+			money = -500000
 			prestige = 5
 			plurality = 1
 			capital_scope = {
@@ -114,7 +114,6 @@ political_decisions = {
 			}
 			invention = vaccination
 			invention = prophylaxis_against_malaria
-			invention = early_archaeology
 		}
 		
 		effect = {		
@@ -150,7 +149,6 @@ political_decisions = {
 		allow = {
 			invention = vaccination
 			invention = prophylaxis_against_malaria
-			invention = early_archaeology
 			OR = {
 				owns = 2189
 				2189 = {
@@ -179,13 +177,12 @@ political_decisions = {
 
 		allow = {
 			empiricism = 1
-			invention = early_archaeology
-			money = 10000
+			money = 100000
 		}
 
 		effect = {
 			set_country_flag = fiorelli
-			money = -10000
+			money = -100000
 			prestige = 5
 			add_country_modifier = {
 				name = pompeji_excavations
@@ -210,7 +207,6 @@ political_decisions = {
 		allow = {
 			prestige = 100
 			functionalism = 1
-			invention = early_archaeology
 		}
 		
 		effect = {		
@@ -244,7 +240,6 @@ political_decisions = {
 		
 		allow = {
 			functionalism = 1
-			invention = early_archaeology
 			OR = {
 				owns = 840
 				840 = {
@@ -279,7 +274,6 @@ political_decisions = {
 		allow = {
 			prestige = 150
 			social_science = 1
-			invention = modern_archaeology
 		}
 		
 		effect = {
@@ -354,7 +348,6 @@ political_decisions = {
 		allow = {
 			prestige = 150
 			social_science = 1
-			invention = modern_archaeology
 		}
 		
 		effect = {		
@@ -385,7 +378,6 @@ political_decisions = {
 		
 		allow = {
 			social_science = 1
-			invention = modern_archaeology
 			OR = {
 				owns = 926
 				926 = {

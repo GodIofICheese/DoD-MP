@@ -61,7 +61,12 @@ country_event = {
             add_core = RUS
         }
         ai_chance = { 
-            factor = 33
+            factor = 1
+			
+			modifier = {
+				factor = 0
+				has_country_flag = baltic_focus
+			}
         }
     }
     #Steppe/Caucasus focus
@@ -84,7 +89,12 @@ country_event = {
 	1056 = { add_core = RUS }
 	
         ai_chance = { 
-             factor = 33
+             factor = 1
+			 
+			 modifier = {
+				factor = 0
+				has_country_flag = southern_focus
+			}
         }
     }
 
@@ -103,7 +113,11 @@ country_event = {
         RUS_718 = { add_core = RUS } #Minsk
 
         ai_chance = { 
-             factor = 25
+             factor = 1
+			 modifier = {
+				factor = 0
+				has_country_flag = panslavic_focus
+			}
         }
     }
 
@@ -176,11 +190,20 @@ country_event = {
 	2619 = { add_core = RUS }
 		
 	ai_chance = {
-	       factor = 25
+	       factor = 1
+		   
+		   modifier = {
+				factor = 0
+				has_country_flag = siberia
+			}
 	}
     }
     
     option = {
 	name = "202201.E"
+	
+	ai_chance = {
+	       factor = 0
+	}
     }
 }

@@ -121,6 +121,7 @@ country_event = {
 		NOT = { war_with = ALB }
 		NOT = { has_country_flag = albaniaTUR }
 		NOT = { has_global_flag = fartheewell }
+		NOT = { year = 1870 }
 	}
 	
 	mean_time_to_happen = {
@@ -133,12 +134,6 @@ country_event = {
 		set_country_flag = albaniaTUR
 		set_country_flag = albaniaTURloss
 		prestige = -5
-		TUR_803 = {
-			remove_core = THIS
-		}
-		SER_794 = {
-			remove_core = THIS
-		}
 		MON_2582 = {
 			remove_core = THIS
 		}
@@ -270,6 +265,7 @@ country_event = {
 	
 	trigger = {
 		tag = HUN
+		ai = no
 		NOT = { war = yes }
 		TUR = { has_country_flag = albaniaTURloss }
 		NOT = { has_global_flag = fartheewell }
@@ -298,7 +294,7 @@ country_event = {
 		war = {
 			target = TUR
 			attacker_goal = {
-				casus_belli = acquire_state
+				casus_belli = acquire_state_early
 				state_province_id = 794
 			}
 
@@ -332,6 +328,7 @@ country_event = {
 		NOT = { MAC = { owns = 823 } }
 		NOT = { has_country_flag = macedoniaTUR }
 		NOT = { has_global_flag = fartheewell }
+		NOT = { year = 1870 }
 	}
 	
 	mean_time_to_happen = {
@@ -349,9 +346,6 @@ country_event = {
 				who = MOL
 				value = -200
 		}
-		TUR_805 = {
-			remove_core = THIS
-		}
 		TUR_806 = {
 			remove_core = THIS
 		}
@@ -362,9 +356,6 @@ country_event = {
 			remove_core = THIS
 		}
 		GRE_826 = {
-			remove_core = THIS
-		}
-		EGY_843 = {
 			remove_core = THIS
 		}
 		TUR_819 = {
@@ -412,6 +403,7 @@ country_event = {
 		MAC = { owns = 823 }
 		NOT = { has_country_flag = macedoniaTUR }
 		NOT = { has_global_flag = fartheewell }
+		NOT = { year = 1870 }
 	}
 	
 	mean_time_to_happen = {
@@ -434,9 +426,6 @@ country_event = {
 				who = CRI
 				value = -200
 		}
-		TUR_805 = {
-			remove_core = THIS
-		}
 		TUR_806 = {
 			remove_core = THIS
 		}
@@ -449,29 +438,10 @@ country_event = {
 		GRE_826 = {
 			remove_core = THIS
 		}
-		EGY_843 = {
-			remove_core = THIS
-		}
-		TUR_855 = {
-			remove_core = THIS
-		}
 		TUR_819 = {
 			remove_core = THIS
 		}
-		WAL_665 = {
-			remove_core = THIS
-		}
-		TUR_674 = {
-			remove_core = THIS
-		}
-		TUR_810 = {
-			remove_core = THIS
-		}
-		TUR_809 = {
-			remove_core = THIS
-		}
 		
-
 		any_pop = { 
 			militancy = 1 
 		}
@@ -655,28 +625,7 @@ country_event = {
 		
 		set_country_flag = kurdistanTUR
 		set_country_flag = kurdistanTURloss
-		prestige = -5
-		TUR_889 = {
-			remove_core = THIS
-		}
-		TUR_885 = {
-			remove_core = THIS
-		}
-		TUR_923 = {
-			remove_core = THIS
-		}
-		TUR_931 = {
-			remove_core = THIS
-		}
-		TUR_935 = {
-			remove_core = THIS
-		}
-		PER_1138 = {
-			remove_core = THIS
-		}
-		PER_1122 = {
-			remove_core = THIS
-		}
+		prestige = -20
 		leave_alliance = ASK
 		diplomatic_influence = {
 				who = ASK
@@ -824,6 +773,7 @@ country_event = {
 		NOT = { EGY = { owns = 1755 } }
 		NOT = { has_country_flag = egyptTUR }
 		NOT = { has_global_flag = fartheewell }
+		NOT = { year = 1870 }
 	}
 	
 	mean_time_to_happen = {
@@ -854,9 +804,6 @@ country_event = {
 			remove_core = THIS
 		}
 		EGY_1771 = {
-			remove_core = THIS
-		}
-		HDJ_1151 = {
 			remove_core = THIS
 		}
 
@@ -896,6 +843,7 @@ country_event = {
 		EGY = { owns = 1755 }
 		NOT = { has_country_flag = egyptTUR }
 		NOT = { has_global_flag = fartheewell }
+		NOT = { year = 1870 }
 	}
 	
 	mean_time_to_happen = {
@@ -934,12 +882,6 @@ country_event = {
 			remove_core = THIS
 		}
 		EGY_1771 = {
-			remove_core = THIS
-		}
-		EGY_1746 = {
-			remove_core = THIS
-		}
-		HDJ_1151 = {
 			remove_core = THIS
 		}
 
@@ -1131,6 +1073,7 @@ country_event = {
 	
 	trigger = {
 		tag = TUR
+		NOT = { year = 1870 }
 		EGY_897 = {
 			controlled_by = REB
 		}
@@ -1157,22 +1100,6 @@ country_event = {
 				is_core = SYR
 			}
 			secede_province = SYR
-		}
-
-		EGY_897 = {
-			remove_core = THIS
-		}
-		EGY_903 = {
-			remove_core = THIS
-		}
-		EGY_910 = {
-			remove_core = THIS
-		}
-		EGY_915 = {
-			remove_core = THIS
-		}
-		EGY_921 = {
-			remove_core = THIS
 		}
 
 		any_pop = { 
@@ -1346,24 +1273,19 @@ country_event = {
 
 	trigger = {
 		tag = TUR
-		government = presidential_dictatorship
-		year = 1840 
+		OR = {
+			government = presidential_dictatorship
+			government = absolute_monarchy
+		}
+		year = 1840
+		NOT = { has_country_flag = tanzimat_reforms_enacted_2 }
+		NOT = { year = 1880 }
 		war = no
-		TUR_860 = {
-			NOT = { controlled_by = REB }
-		}
-		TUR_869 = {
-			NOT = { controlled_by = REB }
-		}
-		TUR_881 = {
-			NOT = { controlled_by = REB }
-		}
-		TUR_873 = {
-			NOT = { controlled_by = REB }
-		}
-		TUR_876 = {
-			NOT = { controlled_by = REB }
-		}
+		TUR_860 = { controlled_by = REB }
+		TUR_869 = { controlled_by = REB }
+		TUR_881 = { controlled_by = REB }
+		TUR_873 = { controlled_by = REB }
+		TUR_876 = { controlled_by = REB }
 		NOT = { has_global_flag = fartheewell }
 	}
 	
@@ -1383,75 +1305,14 @@ country_event = {
 			limit = { OR = { is_core = GRE is_core = BUL is_core = SER is_core = SYR is_core = EGY is_core = KUR } }
 			add_province_modifier = { 
 			name = janissary_system 
-			duration = 10000
+			duration = 3650
 				}
 		}
 		
 		add_country_modifier = { 
 		name = janissary_rule
-		duration = 1000
+		duration = 1460
 		}
-		
-		TUR_803 = {
-			remove_core = THIS
-		}
-		SER_794 = {
-			remove_core = THIS
-		}
-		MON_2582 = {
-			remove_core = THIS
-		}
-		TUR_853 = {
-			remove_core = THIS
-		}
-		GRE_826 = {
-			remove_core = THIS
-		}
-		TUR_855 = {
-			remove_core = THIS
-		}
-		WAL_665 = {
-			remove_core = THIS
-		}
-		TUR_674 = {
-			remove_core = THIS
-		}
-		TUR_923 = {
-			remove_core = THIS
-		}
-		TUR_931 = {
-			remove_core = THIS
-		}
-		TUR_935 = {
-			remove_core = THIS
-		}
-		PER_1138 = {
-			remove_core = THIS
-		}
-		PER_1122 = {
-			remove_core = THIS
-		}
-		EGY_1750 = {
-			remove_core = THIS
-		}
-		EGY_1753 = {
-			remove_core = THIS
-		}
-		EGY_1758 = {
-			remove_core = THIS
-		}
-		EGY_1762 = {
-			remove_core = THIS
-		}
-		EGY_1771 = {
-			remove_core = THIS
-		}
-		EGY_1746 = {
-			remove_core = THIS
-		}
-		HDJ_1151 = {
-			remove_core = THIS
-		}	
 	}
 }
 
@@ -1466,12 +1327,10 @@ country_event = {
 	
 	trigger = {
 		tag = TUR
-		OR = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
-			government = hms_government
-		}
+		government = absolute_monarchy
 		NOT = { has_global_flag = fartheewell }
+		NOT = { year = 1880 }
+		NOT = { has_country_flag = end_janissary }
 		ruling_party_ideology = reactionary
 	}
 	
@@ -1490,7 +1349,7 @@ country_event = {
 				ideology = reactionary
 			}
 		}
-		prestige = -3
+		prestige = 5
 		government = presidential_dictatorship
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -1629,9 +1488,6 @@ country_event = {
 	activate_technology = bronze_muzzle_loaded_artillery
 	activate_technology = army_command_principle
 	set_country_flag = warTUR
-	EGY_921 = { 
-	remove_core = TUR 
-		}
 	}
 }
 

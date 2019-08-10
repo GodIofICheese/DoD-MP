@@ -114,8 +114,48 @@ country_event = {
 		name = "650201.A"
 		set_country_flag = french_integration
 		set_country_flag = choice_pokemon
+		ENL = { 
+			all_core = {
+				add_province_modifier = {
+					name = divided_society1
+						duration = 16170
+				}
+			}
+		}
+		IRE = { 
+			all_core = {
+				add_province_modifier = {
+					name = divided_society1
+						duration = 16170
+				}
+			}
+		}
+		any_owned = {
+			limit = {
+				AND = {
+					is_core = DUA
+					is_core = FRA
+				}
+			}
+			add_province_modifier = {
+				name = integrated_society
+					duration = 16170
+			}
+		}
+		any_owned = {
+			limit = {
+				AND = { 
+					is_core = DUA
+					is_core = OCC
+				}
+			}
+			add_province_modifier = {
+			name = integrated_society
+				duration = 16170
+			}
+		}
 		ai_chance = { 
-		factor = 50
+		factor = 30
 		}
 	}
 	
@@ -123,8 +163,48 @@ country_event = {
 		name = "650201.B"
 		set_country_flag = english_integration
 		set_country_flag = choice_pokemon
+		ENL = { 
+			all_core = {
+				add_province_modifier = {
+					name = integrated_society
+						duration = 16170
+				}
+			}
+		}
+		IRE = { 
+			all_core = {
+				add_province_modifier = {
+					name = integrated_society
+						duration = 16170
+				}
+			}
+		}
+		any_owned = {
+			limit = {
+				AND = {
+					is_core = DUA
+					is_core = FRA
+				}
+			}
+			add_province_modifier = {
+				name = divided_society1
+					duration = 16170
+			}
+		}
+		any_owned = {
+			limit = {
+				AND = { 
+					is_core = DUA
+					is_core = OCC
+				}
+			}
+			add_province_modifier = {
+			name = divided_society1
+				duration = 16170
+			}
+		}
 		ai_chance = { 
-			factor = 20
+			factor = 30
 			}
 		}
 	option = {
@@ -546,7 +626,10 @@ country_event = { ## Glorious Revolution
 	tag = DUA 
 	year = 1841
 	has_country_flag = french_integration 
-	NOT = { has_country_flag = had_liberal_revolution }
+	OR = { 
+		NOT = { has_country_flag = had_liberal_revolution }
+		NOT = {	has_country_flag = ENL_revolted }
+	}
 	}
 	
 	mean_time_to_happen = { 
@@ -1249,11 +1332,14 @@ country_event = { ## Midi Revolution
 	has_country_flag = english_integration 
 	has_global_flag = liberal_revolution_somewhere
 	year = 1841
-	NOT = { has_country_flag = had_liberal_revolution }
+	OR = {
+		NOT = { has_country_flag = had_liberal_revolution }
+		NOT = { has_country_flag = OCC_revolted }
+	}
 	}
 	
 	mean_time_to_happen = { 
-	months = 13
+	months = 170
 	modifier = { 
 		factor = 0.5
 		has_country_modifier = springtime_of_nations

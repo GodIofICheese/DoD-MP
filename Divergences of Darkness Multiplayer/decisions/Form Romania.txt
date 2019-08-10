@@ -3,6 +3,7 @@ political_decisions = {
 		potential = {
 			NOT = {	ROM = { exists = yes }	}
 			primary_culture = romanian
+			NOT = { has_country_flag = unite_principalities }
 		}
 
 		allow = {
@@ -87,6 +88,7 @@ political_decisions = {
 			}		
 		}
 		effect = {
+			set_country_flag = unite_principalities
 			prestige = 20
 			change_tag = ROM
 			any_country = {
@@ -119,7 +121,8 @@ political_decisions = {
 				is_sphere_leader_of = WAL
 				is_sphere_leader_of = MOL
 				is_sphere_leader_of = SIE
-			}	
+			}
+			NOT = { has_country_flag = create_romania }
 			NOT = { 
 				OR = { 
 				tag = HUN 
@@ -145,6 +148,7 @@ political_decisions = {
 			}
 		}
 		effect = {
+			set_country_flag = create_romania
 			prestige = 20
 			badboy = 2
 			any_country = {

@@ -78,7 +78,9 @@ political_decisions = {
 						}
 					}
 				}
-				CAE = { substate_of = BOH }
+				OR = {
+					CAE = { vassal_of = THIS }
+					CAE = { substate_of = THIS }
 			}
 			OR = {
 				SGF = {
@@ -92,8 +94,8 @@ political_decisions = {
 					}
 				}
 				OR = {
-					SGF = { substate_of = CAE }
-					SGF = { substate_of = BOH }
+					SGF = { substate_of = THIS }
+					SGF = { vassal_of = THIS }
 				}	
 		    }
 		}
@@ -130,8 +132,10 @@ political_decisions = {
 			    	     add_core = HLR
 				}
 			}
-			prestige = 100 
-			change_tag = HLR 
+			prestige = 100
+			set_country_flag = holy_roman_empire
+			change_tag = HLR
+			centralization = confederalism
 			country_event = 410009
 	    }
 	}
@@ -150,11 +154,18 @@ political_decisions = {
 			OR = {
 				SGF = {
 					all_core = {
+						OR = {
 						owned_by = THIS
-						
+						owner = {
+							in_sphere = THIS
+						}
+						}
 					}
 				}
-				SGF = { substate_of = HLR }
+				OR = {
+					SGF = { substate_of = THIS }
+					SGF = { vassal_of = THIS }
+				}
 			}
 			OR = {
 				CAE = { 
@@ -167,7 +178,10 @@ political_decisions = {
 						}
 					}
 				}
-				CAE = { substate_of = HLR }
+				OR = {
+					CAE = { substate_of = THIS }
+					CAE = { vassal_of = THIS }
+				}
 			}
 			OR = {
 				RHI = { 
@@ -180,7 +194,10 @@ political_decisions = {
 						}
 					}
 				}
-				RHI = { substate_of = HLR }
+				OR = {
+					RHI = { substate_of = THIS }
+					RHI = { vassal_of = THIS }
+				}
 			} 
 		}	
 		
@@ -191,6 +208,7 @@ political_decisions = {
 				}
 			}
 			
+			
 			set_country_flag = frankfurt_unify 
 			add_accepted_culture = czech 
 			add_accepted_culture = north_german 
@@ -199,6 +217,24 @@ political_decisions = {
 			prestige = 100 
 			564 = {
 				life_rating = 5
+			}
+			any_country = {
+				limit = {
+					OR = {
+						primary_culture = north_german
+						primary_culture = south_german
+						primary_culture = rheinish
+					}
+					OR = {
+						in_sphere = THIS
+						vassal_of = THIS
+						substate_of = THIS
+					}
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
 			}
 		}
 	}
@@ -345,6 +381,8 @@ political_decisions = {
 			}
 		change_tag = CAE
 		add_accepted_culture = north_german
+		set_country_flag = elbian_confederation
+		centralization = confederalism
 		}
 	ai_will_do = { 
 	factor = 1 
@@ -357,14 +395,14 @@ political_decisions = {
 	OR = { tag = HLR tag = CAE } 
 	NOT = { has_country_flag = integrate_prussia }
 	NOT = { 690 = { is_core = THIS } }
-	NOT = { 698 = { is_core = THIS } }
+	NOT = { 695 = { is_core = THIS } }
 
 	}
 	
 	allow = { 
 	revolution_n_counterrevolution = 1
 	690 = { owned_by = THIS }
-	698 = { owned_by = THIS } 
+	695 = { owned_by = THIS } 
 	}
 	effect = { 
 	badboy = 10 

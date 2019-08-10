@@ -971,13 +971,13 @@ country_event = {
 country_event = {
 	id = 776745
 	title = "Tech reform flag"
-	desc = "Rehabilitation Enacted"
+	desc = "Penal Code Enacted"
 	picture = "Unite"
 	
 	trigger = {
 		civilized = no
-		disciplinary_reform = rehabilitation
-		NOT = { has_country_flag = rehabilitation_flag }
+		disciplinary_reform = penal_code
+		NOT = { has_country_flag = penal_code_flag }
 	}
 	
 	mean_time_to_happen = {
@@ -986,7 +986,7 @@ country_event = {
 	
 	option = {
 		name = "Ok"
-		set_country_flag = rehabilitation_flag
+		set_country_flag = penal_code_flag
 	}
 }
 
@@ -998,7 +998,7 @@ country_event = {
 	
 	trigger = {
 		civilized = yes
-		has_country_flag = rehabilitation_flag
+		has_country_flag = penal_code_flag
 	}
 	
 	mean_time_to_happen = {
@@ -1007,7 +1007,7 @@ country_event = {
 	
 	option = {
 		name = "Ok"
-		clr_country_flag = rehabilitation_flag
+		clr_country_flag = penal_code_flag
 		activate_technology = introspectionism 
 	}
 }

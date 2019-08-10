@@ -33,6 +33,8 @@ border_policy = closed_borders
 centralization = regionalism
 colonial_policy = no_colonies 
 
+set_country_flag = new_world_nation
+
 # Level_2
 # Technologies
 early_classical_theory_and_critique = 1

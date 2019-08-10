@@ -310,6 +310,7 @@ country_event = {
 		NOT = { vote_franschise = none_voting }
 		NOT = { political_parties = underground_parties }
 		NOT = { upper_house_composition = party_appointed }
+		NOT = { centralization = totalitarianism }
 	}
 	
 	mean_time_to_happen = {
@@ -389,7 +390,8 @@ country_event = {
 	
 	trigger = {
 		government = absolute_monarchy
-		NOT = { vote_franschise = none_voting }		
+		NOT = { vote_franschise = none_voting }
+		NOT = { centralization = totalitarianism }
 		civilized = yes	
 	}
 	
@@ -405,7 +407,6 @@ country_event = {
 		clr_country_flag = preparations_to_kill
 		remove_country_modifier = preparations_to_kill
 		government = prussian_constitutionalism
-		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 		clr_country_flag = communist_gov
 		clr_country_flag = absolute_monarchy_gov
 		set_country_flag = semi_constitutional_monarchy_gov
@@ -461,7 +462,6 @@ country_event = {
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
 		government = hms_government
-		random_owned = { limit = { owner = { border_policy = closed_borders } } owner = { political_reform = open_borders } }
 	}
 }
 
@@ -2705,3 +2705,46 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = 6016814
+	title = "EVTNAME6016814"
+	desc = "EVTDESC6016814"
+	picture = "Fascist"
+	
+	trigger = {
+		civilized = yes
+		centralization = totalitarianism
+		NOT = { has_country_flag = totalitarian }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVT6016814OPTA"
+		set_country_flag = totalitarian
+	}
+}
+
+country_event = {
+	id = 6016815
+	title = "EVTNAME6016815"
+	desc = "EVTDESC6016815"
+	picture = "senate_debate"
+	
+	trigger = {
+		civilized = yes
+		NOT = { centralization = totalitarianism }
+		has_country_flag = totalitarian
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "EVT6016815OPTA"
+		clr_country_flag = totalitarian
+	}
+}

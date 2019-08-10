@@ -66,11 +66,21 @@ good_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.002
+	global_population_growth = 0.001
 	icon = 19
 }
 
-low_health_care_fully_funded = {
+trinket_health_care_fully_funded_social = {
+	trigger = {
+		exists = yes
+		health_care = trinket_health_care
+		social_spending = 0.2
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+low_health_care_fully_funded_social = {
 	trigger = {
 		exists = yes
 		health_care = low_health_care
@@ -89,7 +99,7 @@ low_health_care_fully_funded = {
 	icon = 19
 }
 
-acceptable_health_care_fully_funded = {
+acceptable_health_care_fully_funded_social = {
 	trigger = {
 		exists = yes
 		health_care = acceptable_health_care
@@ -108,7 +118,7 @@ acceptable_health_care_fully_funded = {
 	icon = 19
 }
 
-good_health_care_fully_funded = {
+good_health_care_fully_funded_social = {
 	trigger = {
 		exists = yes
 		health_care = good_health_care
@@ -123,7 +133,7 @@ good_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.002
+	global_population_growth = 0.001
 	icon = 19
 }
 
@@ -134,11 +144,17 @@ health_care_fully_funded = {
 		OR = {
 			AND = {
 				ai = yes
-				administration_spending = 0.74
+				OR = {
+					administration_spending = 0.74
+					social_spending = 0.74
+				}
 			}
 			AND = {
 				ai = no
+				OR = {
 				administration_spending = 0.99
+				social_spending = 0.99
+				}
 			}
 		}
 	}
@@ -223,15 +239,9 @@ neglected_education = {
 
 desperate_nation  = {
 	trigger = {
-		NOT = {
-			OR = { 
-				#is_culture_group = germanic
-				total_pops = 25000 #25 thousand POPs/100 thousand population	
-			}
-
-		}
+		NOT = { total_pops = 25000 }  #25 thousand POPs/100 thousand population 
 	}
-	global_population_growth = 0.01
+	global_population_growth = 0.06
 	mobilisation_economy_impact = -0.80
 	supply_consumption = -0.80
 	mobilisation_size = 0.2
@@ -242,13 +252,7 @@ desperate_nation  = {
 microscopic_nation  = {
 	trigger = {
 		total_pops = 25000 #25 thousand POPs/100 thousand population
-		NOT = {
-			OR = { 
-				#is_culture_group = germanic
-				total_pops = 125000 #125 thousand POPs/500 thousand population	
-			}
-
-		}
+		NOT = { total_pops = 125000 }  #125 thousand POPs/500 thousand population 
 	}
 	global_population_growth = 0.005
 	mobilisation_economy_impact = -0.75
@@ -261,14 +265,7 @@ microscopic_nation  = {
 tiny_nation  = {
 	trigger = {
 		total_pops = 125000 #125 thousand POPs/500 thousand population
-		NOT = {
-			OR = {
-				year = 1900
-				#is_culture_group = germanic 
-				total_pops = 1250000 #1.25 million POPs/5 Million population
-			}
-
-		}
+		NOT = { total_pops = 1250000 } #1.25 million POPs/5 Million population
 	}
 	global_population_growth = 0.004
 	mobilisation_economy_impact = -0.50
@@ -281,13 +278,7 @@ tiny_nation  = {
 small_nation  = {
 	trigger = {
 		total_pops = 1250000 #1.25 million POPs/5 Million population
-		NOT = { 
-			OR = { 
-				#is_culture_group = germanic
-				#is_culture_group = scandinavian
-				total_pops = 3750000 #3.75 million POPs/15 million population
-			}
-		}
+		NOT = { total_pops = 3750000 } #3.75 million POPs/30 Million population
 	}
 	global_population_growth = 0.003
 	mobilisation_economy_impact = -0.25
@@ -299,17 +290,9 @@ small_nation  = {
 
 medium_nation  = {
 	trigger = {
+		civilized = yes
 		total_pops = 3750000 #3.75 million POPs/15 Million population
-		NOT = { 
-			OR = {
-				year = 1837
-				civilized = no
-				#is_culture_group = germanic
-				#is_culture_group = scandinavian
-				total_pops = 7500000 #7.5 million POPs/30 Million population
-			}
-			
-		}
+		NOT = { total_pops = 7500000 } #7.5 million POPs/30 Million population
 	}
 	global_population_growth = 0.001
 	mobilisation_economy_impact = -0.10
@@ -321,11 +304,9 @@ medium_nation  = {
 
 average_nation  = {
 	trigger = {
-		year = 1837
 		civilized = yes
 		total_pops = 7500000 #7.5 million POPs/30 Million population 
 		NOT = { total_pops = 12500000 } #12.5 million POPs/50 million population
-		ai = no
 	}
 	supply_consumption = 0.05
 	mobilisation_size = -0.01
@@ -336,11 +317,9 @@ average_nation  = {
 
 large_nation  = {
 	trigger = {
-		year = 1837
 		civilized = yes
 		total_pops = 12500000 #12.5 million POPs/50 million population
 		NOT = { total_pops = 21250000 } #21.25 million POPs/85 million population
-		ai = no
 	}
 	#global_population_growth = -0.001
 	supply_consumption = 0.1
@@ -353,18 +332,9 @@ large_nation  = {
 
 empire  = {
 	trigger = {
-		year = 1837
 		civilized = yes
 		total_pops = 21250000 #21.25 million POPs/85 million population
 		NOT = { total_pops = 37500000 } #37.5 million POPs/150 million population
-		OR = {
-			ai = no
-			AND = {
-				ai = yes
-				year = 1837
-			}
-		}
-
 	}
 	global_population_growth = -0.001
 	mobilisation_size = -0.02
@@ -378,18 +348,9 @@ empire  = {
 
 medium_empire  = {
 	trigger = {
-		year = 1837
 		civilized = yes
 		total_pops = 37500000 #37.5 million POPs/150 million population
 		NOT = { total_pops = 62500000 } #62.5 million POPs/250 million population
-		OR = {
-			ai = no
-			AND = {
-				ai = yes
-				year = 1837
-			}
-		}
-
 	}
 	global_population_growth = -0.002
 	mobilisation_size = -0.03
@@ -404,18 +365,9 @@ medium_empire  = {
 
 large_empire  = {
 	trigger = {
-		year = 1837
 		civilized = yes
 		total_pops = 62500000 #62.5 million POPs/250 million population
 		NOT = { total_pops = 87500000 } #87.5 million POPs/350 million population
-		OR = {
-			ai = no
-			AND = {
-				ai = yes
-				year = 1837
-			}
-		}
-
 	}
 	global_population_growth = -0.003
 	mobilisation_size = -0.04
@@ -428,19 +380,12 @@ large_empire  = {
 	icon = 9
 }
 
-insane_empire  = {
+insane_empire = {
 	trigger = {
 		year = 1837
 		civilized = yes
 		total_pops = 87500000 #87.5 million POPs/350 million population
 		NOT = { total_pops = 125000000 } #87.5 million POPs/350 million population
-		OR = {
-			ai = no
-			AND = {
-				ai = yes
-				year = 1837
-			}
-		}
 	}
 	global_population_growth = -0.004
 	mobilisation_size = -0.05
@@ -452,7 +397,7 @@ insane_empire  = {
 	icon = 9
 }
 
-insane_empire2  = {
+insane_empire2 = {
 	trigger = {
 		year = 1837
 		civilized = yes
@@ -494,11 +439,7 @@ islamic_law_triggered = {
 the_british_raj = {
 	trigger = {
 		exists = yes
-		OR = {
-			government = absolute_monarchy
-			government = prussian_constitutionalism
-			government = hms_government
-		}
+		capital_scope = { continent = europe }
 		NOT = { is_culture_group = indo_iranian }
 		NOT = { is_culture_group = south_asian }
 		1227 = {
@@ -518,9 +459,7 @@ the_british_raj = {
 			owned_by = THIS
 		}
 	}
-	research_points = 0.5
-	core_pop_militancy_modifier = -0.05
-	prestige = 0.03
+	prestige = 0.05
 	icon = 19
 }
 
@@ -936,4 +875,25 @@ player_unciv_mobilization = {
 
 	mobilisation_size = 0.20
 	icon = 9
+}
+
+help_ai = {
+	trigger = {
+		ai = yes
+	}
+	icon = 10
+	tax_efficiency = 0.05
+	administrative_efficiency_modifier = 0.03
+	supply_consumption = -0.15
+}
+
+chinese_economic_compensation = {
+	trigger = {
+		has_country_flag = chinese_economic_compensation
+		NOT = { year = 1890 }
+		civilized = no
+	}
+	icon = 10
+	farm_rgo_eff = 1
+	mine_rgo_eff = 1
 }

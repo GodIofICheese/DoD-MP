@@ -15,7 +15,7 @@ political_decisions = {
 				      CRO = {
 				      in_sphere = THIS
 				      }
-			       }
+			       }	
 			OR = {
 			      revolution_n_counterrevolution = 1
 			      AND = {
@@ -31,7 +31,7 @@ political_decisions = {
 			add_accepted_culture = bosniak
 			set_country_flag = illyrian_annexation
 			TUR_788 = { add_core = VEN }
-			AUS_780 = { add_core = VEN }
+			AUS_771 = { add_core = VEN }
 		}
 		
 		ai_will_do = {
@@ -89,6 +89,7 @@ political_decisions = {
 			MON_2582 = { add_core = VEN }
 			TUR_832 = { add_core = VEN }
 			GRE_837 = { add_core = VEN }
+			GRE_826 = { add_core = VEN }
 		}
 		
 		ai_will_do = {
@@ -221,6 +222,10 @@ political_decisions = {
 			AUS_726 = { add_core = THIS }
 			AUS_726 = { remove_core = ITA }
 			AUS_726 = { remove_core = LOM }
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	

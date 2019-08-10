@@ -8,6 +8,10 @@ country_event = {
 		tag = MGH
 		exists = yes
 		year = 1855
+		OR = {
+			is_vassal = no
+			is_substate = no
+		}
 		NOT = { has_global_flag = reb_in_mag }
 	}
 	
@@ -84,6 +88,7 @@ country_event = {
 		name = "22241.B"
 		set_country_flag = end_of_mag
 		prestige = -20
+		badboy = -5
 		any_owned = {
 			limit = {
 				NOT = { is_core = THIS }
@@ -358,7 +363,6 @@ country_event = {
 
 	option = {
 		name = "22246.B"
-		badboy = 2.5
 		set_global_flag = no_division
 		ai_chance = {
 			factor = 0

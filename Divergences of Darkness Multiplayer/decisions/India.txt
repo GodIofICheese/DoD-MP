@@ -234,6 +234,8 @@ political_decisions = {
 	OR = { 
 		tag = MUG
 		tag = HND
+		tag = BHA
+		tag = DRA
 	}
 	NOT = { has_country_flag = Bengal_MUG }
 	}

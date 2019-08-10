@@ -4,51 +4,64 @@ political_decisions = {
 		potential = {
 			tag = MCK
 			NOT = {
-				has_global_flag = chinese_genocide_MCK
+				has_global_flag = chinese_genocide
 			}
-			ai = no
 		}
 		allow = {
 			NOT = {
-				has_global_flag = chinese_genocide_MCK
+				has_global_flag = chinese_genocide
 			}
 		}
 		effect = {
-			any_pop = {
-				reduce_pop = 0.33
+		country_event = 776405
+		any_country = {
+			limit = {
+				OR = {
+				tag = CHI
+				tag = TNG
+				tag = DAX
+				tag = SHU
+				tag = TAI
+				tag = MCK
+				tag = MIG
+				}
 			}
-			add_country_modifier = { 
-				name = chinese_economic_compensation
-				duration = 8760
-			}
-			set_global_flag = chinese_genocide_MCK
-			}
+			country_event = 776405
 		}
-}
-political_decisions = {
+			set_global_flag = chinese_genocide
+		}
+	}
+
 	chinese_genocide_TAI = {
 		picture = switch_to_fraternity
 		potential = {
 			tag = TAI
 			NOT = {
-				has_global_flag = chinese_genocide_TAI
+				has_global_flag = chinese_genocide
 			}
-			ai = no
 		}
 		allow = {
 			NOT = {
-				has_global_flag = chinese_genocide_TAI
+				has_global_flag = chinese_genocide
 			}
 		}
 		effect = {
-			any_pop = {
-				reduce_pop = 0.33
+		country_event = 776405
+		any_country = {
+			limit = {
+				OR = {
+				tag = CHI
+				tag = TNG
+				tag = DAX
+				tag = SHU
+				tag = TAI
+				tag = MCK
+				tag = MIG
+				}
 			}
-			add_country_modifier = {
-				name = chinese_economic_compensation
-				duration = 8760
-			}
-			set_global_flag = chinese_genocide_TAI
-			}
+			country_event = 776405
 		}
+			set_global_flag = chinese_genocide
+		}
+	}
 }

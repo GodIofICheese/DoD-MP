@@ -40,7 +40,7 @@ child_labor = child_labor_legal
 citizens_rights = culture_voting_only
 border_policy = open_borders
 centralization = regionalism
-colonial_policy = exploitation
+colonial_policy = no_colonies
 
 set_country_flag = dual_monarchy 
 
