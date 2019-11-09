@@ -388,7 +388,6 @@ political_decisions = {
 		}
 		
 		effect = { 
-		prestige = 5 
 		set_global_flag = transcontinental_railroad 
 		137 = { infrastructure = 1 life_rating = 1 }
 		136 = { infrastructure = 1 life_rating = 1 }
@@ -421,37 +420,37 @@ political_decisions = {
 			modifier = { 
 				factor = 0 
 				AND = { 
-				governement = democracy 
-				NOT = { CLM = { governement = democracy } }
+				government = democracy 
+				NOT = { CLM = { government = democracy } }
 				}
 			}
 			modifier = { 
 				factor = 0 
 				AND = { 
 				OR = { 
-					governement = presidential_dictatorship 
+					government = presidential_dictatorship 
 					government = absolute_monarchy
 					government = prussian_constitutionalism
 					government = hms_government
 					}
 				OR = { 
-					CLM = { governement = democracy } 
-					CLM = { governement = proletarian_dictatorship }
+					CLM = { government = democracy } 
+					CLM = { government = proletarian_dictatorship }
 						} 
 					}
 				}
 			modifier = { 
 				factor = 0 
 				AND = { 
-				governement = proletarian_dictatorship 
-				NOT = { CLM = { governement = proletarian_dictatorship } }
+				government = proletarian_dictatorship 
+				NOT = { CLM = { government = proletarian_dictatorship } }
 					}
 				}
 			modifier = { 
 				factor = 0 
 				AND = { 
-				governement = fascist_dictatorship 
-				NOT = { CLM = { governement = fascist_dictatorship } }
+				government = fascist_dictatorship 
+				NOT = { CLM = { government = fascist_dictatorship } }
 				}
 			}
 		}

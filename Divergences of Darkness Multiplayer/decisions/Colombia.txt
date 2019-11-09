@@ -50,7 +50,6 @@ political_decisions = {
 						}
 					}
 				}	
-    			prestige = 20
 					add_country_modifier = {
 						name = fight_the_power
 					duration = 2000
@@ -657,6 +656,7 @@ political_decisions = {
 	clr_country_flag = dictatorshipCLM 
 	clr_country_flag = calm_before_tempest		
 	}
+	}
 	
 	integrate_granadans = {
 		potential = {
@@ -744,7 +744,6 @@ political_decisions = {
 		limit = { culture = mexican }
 		literacy = 0.05
 			}
-		social_reform = public 
 		scaled_militancy = {
 			issue = moralism
 			factor = 3

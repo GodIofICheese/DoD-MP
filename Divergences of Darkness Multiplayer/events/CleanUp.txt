@@ -134,6 +134,8 @@ country_event = {
 		set_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		government = presidential_dictatorship
 		political_reform = none_voting
 		political_reform = party_appointed
@@ -332,6 +334,8 @@ country_event = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		remove_country_modifier = fight_the_power
 		government = democracy
 		election = yes
@@ -373,6 +377,8 @@ country_event = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		government = absolute_monarchy
 	}
 }
@@ -415,6 +421,8 @@ country_event = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 	}
 }
 
@@ -461,6 +469,8 @@ country_event = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		government = hms_government
 	}
 }
@@ -503,6 +513,8 @@ country_event = {
 		set_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		clr_country_flag = everywhere_genocide_only
 		clr_country_flag = non_colonial_genocide_only
 		clr_country_flag = colonial_genocide_only
@@ -544,6 +556,8 @@ country_event = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		set_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		clr_country_flag = everywhere_genocide_only
 		clr_country_flag = non_colonial_genocide_only
 		clr_country_flag = colonial_genocide_only
@@ -585,6 +599,8 @@ country_event = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		clr_country_flag = everywhere_genocide_only
 		clr_country_flag = non_colonial_genocide_only
 		clr_country_flag = colonial_genocide_only
@@ -627,6 +643,8 @@ country_event = {
 		clr_country_flag = presidential_dictatorship_gov
 		set_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = feudal_monarchy_gov
+		clr_country_flag = merchant_republic_gov
 		clr_country_flag = everywhere_genocide_only
 		clr_country_flag = non_colonial_genocide_only
 		clr_country_flag = colonial_genocide_only
@@ -2706,9 +2724,9 @@ country_event = {
 }
 
 country_event = {
-	id = 6016814
-	title = "EVTNAME6016814"
-	desc = "EVTDESC6016814"
+	id = 6026814
+	title = "EVTNAME6026814"
+	desc = "EVTDESC6026814"
 	picture = "Fascist"
 	
 	trigger = {
@@ -2728,9 +2746,9 @@ country_event = {
 }
 
 country_event = {
-	id = 6016815
-	title = "EVTNAME6016815"
-	desc = "EVTDESC6016815"
+	id = 6026815
+	title = "EVTNAME6026815"
+	desc = "EVTDESC6026815"
 	picture = "senate_debate"
 	
 	trigger = {

@@ -46,7 +46,7 @@
 	
 	farmers = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 8000
 	}
 	
@@ -276,7 +276,7 @@
 	
 	farmers = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 1325
 	}
 	

@@ -17,7 +17,6 @@ political_decisions = {
 		}
 		effect = {
 			set_country_flag = dng_expand_south
-			year = 1880
 			MEX_103 = { add_core = THIS }
 			MEX_90 = { add_core = THIS }
 			MEX_2138 = { add_core = THIS }

@@ -965,6 +965,7 @@ country_event = {
 				type = cut_down_to_size
 				months = 60
 			}
+	}
 }
 
 country_event = {
@@ -1908,6 +1909,7 @@ country_event = {
 				type = cut_down_to_size
 				months = 60
 			}
+	}
 }
 
 country_event = { 

@@ -74,14 +74,7 @@ political_decisions = {
 			prestige = 20
 			DEN_251 = { add_core = THIS }
 			DEN_251 = { add_core = THIS }
-			HAI_2213 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
+			HAI_2213 = { add_core = THIS }
 			add_accepted_culture = scandinavian
 			set_country_flag = reclaim_vinland_primary
 		}
@@ -124,14 +117,7 @@ political_decisions = {
 		effect = {
 			prestige = 20
 			DEN_251 = { add_core = THIS }
-			HAI_2213 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
+			HAI_2213 = { add_core = THIS }
 			set_country_flag = reclaim_vinland_accepted
 		}
 
@@ -199,6 +185,7 @@ reclaim_new_burgundy = {
 							exists = LOT
 							NOT = { owned_by = LOT }
 						}
+					}
 			}
 			ENG_2228 = {
 					OR = {
@@ -207,6 +194,7 @@ reclaim_new_burgundy = {
 							exists = LOT
 							NOT = { owned_by = LOT }
 						}
+					}
 			}
 			OR = {
 				mass_politics = 1
@@ -215,22 +203,8 @@ reclaim_new_burgundy = {
 		}
 		effect = {
 			prestige = 20
-			ENG_203 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
-			ENG_2228 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
+			ENG_203 = { add_core = THIS }
+			ENG_2228 = { add_core = THIS }
 			add_accepted_culture = burgundian
 			set_country_flag = reclaim_new_burgundy_primary
 		}
@@ -262,6 +236,7 @@ reclaim_new_burgundy = {
 							exists = LOT
 							NOT = { owned_by = LOT }
 						}
+					}
 			}
 			ENG_2228 = {
 					OR = {
@@ -270,6 +245,7 @@ reclaim_new_burgundy = {
 							exists = LOT
 							NOT = { owned_by = LOT }
 						}
+					}
 			}
 			OR = {
 				mass_politics = 1
@@ -278,22 +254,8 @@ reclaim_new_burgundy = {
 		}
 		effect = {
 			prestige = 20
-			ENG_203 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
-			ENG_2228 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
+			ENG_203 = { add_core = THIS }
+			ENG_2228 = { add_core = THIS }
 			set_country_flag = reclaim_new_burgundy_accepted
 		}
 
@@ -364,22 +326,8 @@ reclaim_crown_colony_plantagenia_primary = {
 		}
 		effect = {
 			prestige = 20
-			ENG_2224 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
-			FRA_420 = {
-			owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
+			ENG_2224 = { add_core = THIS } 
+			FRA_420 = { add_core = THIS }
 			add_accepted_culture = anglois
 			set_country_flag = reclaim_crown_colony_plantagenia_primary
 		}
@@ -414,22 +362,8 @@ reclaim_crown_colony_plantagenia_accepted = {
 		}
 		effect = {
 			prestige = 20
-			ENG_2224 = { 
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
-			FRA_420 = {
-				owner = {
-					owned_by = THIS
-					ARC = {
-						add_core = THIS
-					}
-				}
-			}
+			ENG_2224 = { add_core = THIS }
+			FRA_420 = { add_core = THIS } 
 			set_country_flag = reclaim_crown_colony_plantagenia_accepted
 		}
 

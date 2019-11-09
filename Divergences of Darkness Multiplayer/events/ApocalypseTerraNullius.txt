@@ -4,7 +4,7 @@
 	desc = "EVTDESC99025"
 
 	trigger = {
-		province_control_days=1800 #5 years
+		province_control_days=365 #1 years
 		NOT = { owner = { tag = ZOM } }
 		has_province_modifier = zombie_outbreak
 		controlled_by = REB
@@ -15,15 +15,15 @@
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 12
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			any_neighbor_province = {
 				has_province_modifier = zombie_outbreak
 			}
 		}
 		modifier = {
-			factor = 0.75
+			factor = 0.5
 			has_empty_adjacent_province = yes
 		}
 	}
@@ -58,21 +58,21 @@ country_event = { #note, this must be a country event, otherwise it might happen
 	trigger = {
 		NOT = { exists = ZOM }
 		any_owned_province = {
-			province_control_days=1800 #5 years
+			province_control_days=365 #1 years
 			has_province_modifier = zombie_outbreak
 			controlled_by = REB
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 12
 	}
 
 	option = {
 		name = "Uh oh."
 		random_owned = {
 			limit = {
-				province_control_days=1800 #5 years
+				province_control_days=365 #1 years
 				has_province_modifier = zombie_outbreak
 				controlled_by = REB
 			}

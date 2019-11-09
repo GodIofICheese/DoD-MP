@@ -2265,6 +2265,7 @@ native_south_american = {
 }
 
 native_north_american = {
+	leader = nativeamerican
 	rohnnst = {
 		color = {15 68 192}
 		first_names = { Albrecht Alexander Arnold August Axel Baltzar Carl Christofer Didrik Edvard

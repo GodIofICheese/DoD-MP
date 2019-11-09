@@ -115,7 +115,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -241,7 +241,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -355,7 +355,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 1.5
 			has_country_modifier = uncivilized_isolationism
@@ -439,7 +439,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 480
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -682,7 +682,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 480
 		modifier = {
 			factor = 1.2
 			part_of_sphere = no
@@ -965,7 +965,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 200
 		modifier = {
 			factor = 0.8
 			NOT = {
@@ -1071,7 +1071,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 120
 		modifier = {
 			factor = 0.8
 			any_owned_province = { has_province_modifier = local_opium_habit }
@@ -1217,7 +1217,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 80
+		months = 160
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -1340,7 +1340,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 90
+		months = 180
 		modifier = {
 			factor = 2
 			owner = {
@@ -1438,7 +1438,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 1.5
 			owner = {
@@ -1549,7 +1549,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 240
+		months = 480
 		modifier = {
 			factor = 1.5
 			owner = {
@@ -1665,7 +1665,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 120
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1753,7 +1753,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		
 		modifier = {
 			factor = 0.9
@@ -1803,7 +1803,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 200
 		modifier = {
 			factor = 0.9
 			NOT = { prestige = 30 }
@@ -1899,7 +1899,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 1.5
 			NOT = { average_consciousness = 3 }
@@ -1955,7 +1955,7 @@ province_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -2029,7 +2029,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -2098,7 +2098,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 	}
 	
 	option = {
@@ -2140,7 +2140,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -2248,7 +2248,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 24
 		modifier = {
 			factor = 0.8
 			average_militancy = 3
@@ -2301,7 +2301,7 @@ province_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -2391,7 +2391,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			NOT = { prestige = 25 }
@@ -2671,7 +2671,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.8
 			civilization_progress = 0.25
@@ -2805,7 +2805,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1000
+		months = 2000
 		modifier = {
 			factor = 0.05
 			any_owned_province = {
@@ -2901,7 +2901,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 120
 		modifier = {
 			factor = 0.75
 			sphere_owner = {
@@ -3182,7 +3182,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 0.8
 			civilization_progress = 0.5
@@ -3237,7 +3237,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 200
 		modifier = {
 			factor = 0.8
 			prestige = 10
@@ -3397,7 +3397,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			capital_scope = { average_militancy = 3 }
@@ -3541,7 +3541,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 200
 	}
 	
 	option = {
@@ -3729,7 +3729,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 	}
 	
 	option = {
@@ -3762,7 +3762,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 100
+		months = 200
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -4513,7 +4513,7 @@ country_event = {
 		
 	fire_only_once = yes	
 	
-	mean_time_to_happen = { months = 40 }
+	mean_time_to_happen = { months = 80 }
 	
 	option = {
 		name = "EVT110073OPTA" #This will make a nice trinket!

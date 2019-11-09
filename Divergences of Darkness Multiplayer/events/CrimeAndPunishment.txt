@@ -283,7 +283,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.8
 			NOT = {	poor_strata_life_needs = 0.9 }
@@ -347,7 +347,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 320
+		months = 640
 		modifier = {
 			factor = 0.8
 			NOT = {
@@ -410,7 +410,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.8
 			NOT = {
@@ -460,7 +460,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 280
+		months = 560
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -507,7 +507,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.9
 			NOT = { average_consciousness = 4 }
@@ -559,7 +559,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		
 		modifier = {
 			factor = 0.9

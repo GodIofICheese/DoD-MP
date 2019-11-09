@@ -15,8 +15,6 @@ press_rights = state_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = underground_parties
-minorities_reform = oppression
-conscription = mandatory_service
 
 # Social Reforms
 wage_reform = no_minimum_wage

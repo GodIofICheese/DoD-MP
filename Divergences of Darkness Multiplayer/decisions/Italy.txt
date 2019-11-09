@@ -211,15 +211,16 @@ political_decisions = {
 			ARI = {
 				exists = no
 			}
+			ITA = { exists = no }
 		}
 		
 		allow = {
 			OR = {
 				AND = {
-					state_n_government = 1
-					SAR = { state_n_government = 1 }
+					nationalism_n_imperialism  = 1
+					SAR = { nationalism_n_imperialism  = 1 }
 				}
-				nationalism_n_imperialism = 1
+				revolution_n_counterrevolution = 1
 			}
 			NOT = { war = yes }
 			SAR = { 
@@ -229,9 +230,8 @@ political_decisions = {
 				owns = 465
 				owns = 466
 			}
-			ITA = {
-				exists = no
-			}
+			ITA = {	exists = no }
+			ARI = { exists = no }
 			NOT = {
 				ITA = {
 					any_core = {
@@ -246,13 +246,14 @@ political_decisions = {
 				}
 			}
 			is_greater_power = yes
-			PRV = { 
-				OR = {
+			OR = {
+				PRV = { 
 					all_core = { 
 						owned_by = THIS
 					}
-					exists = no
 				}
+					exists = no
+					vassal_of = THIS
 			}	
 		}
 		
@@ -410,8 +411,10 @@ political_decisions = {
 	picture = Germania
 	potential = { 
 	tag = ITA 
-	government = democracy
-	government = hms_government 
+	OR = {
+		government = democracy
+		government = hms_government
+	}
 	NOT = { exists = SGF }
 	NOT = { exists = CAE }
 	NOT = { exists = GER }
@@ -446,7 +449,7 @@ political_decisions = {
 		}
 		
 		allow = { 
-		cheap_iron = 1 
+		hot_blast = 1 
 		iron_railroad = 1 
 		}
 		
@@ -481,7 +484,7 @@ political_decisions = {
 		
 		allow = { 
 		medicine = 1 
-		cheap_iron = 1 
+		hot_blast = 1 
 		OR = { 
 		realism = 1 
 		state_n_government = 1 

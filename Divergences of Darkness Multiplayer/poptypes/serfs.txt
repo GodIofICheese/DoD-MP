@@ -68,9 +68,6 @@ promote_to = {
 	}
 }
 
-
-ideologies = {
-
 ideologies = {
 	
 	subordinate = {

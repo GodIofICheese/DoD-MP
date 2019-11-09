@@ -216,7 +216,7 @@ political_decisions = {
 			WUR_589 = { add_core = RHI }
 			HES_566 = { add_core = RHI }
 			BAD_586 = { add_core = RHI }
-			SWI_606 = { add_core = RHI }
+			AUS_613 = { add_core = RHI }
 		}
 		
 		ai_will_do = {

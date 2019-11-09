@@ -1,4 +1,4 @@
-`##################################################################################################
+###################################################################################################
 # scriptable and usable for event-system below.
 ##################################################################################################
 
@@ -28,6 +28,26 @@ do_not_annex = {
 accepts_new_provinces = {
 	immigrant_attract = -.001
 	icon = 20
+}
+
+##### Weapons of Mass Destruction #####
+
+developing_bioweapons = {
+	tax_efficiency = -0.15
+	tariff_efficiency_modifier = -0.1
+	badboy = 0.1
+	icon = 15
+}
+
+experimental_bioweapon = {
+	prestige = 1
+	badboy = 0.1
+	icon = 15
+}
+
+bioweapon_cooldown = {
+	badboy = 0.2
+	icon = 16
 }
 
 ##### End of Apocalypse 1836 Modifiers #####
@@ -320,6 +340,8 @@ divided_society = {
 
 divided_society1 = {
 	assimilation_rate = -0.3
+	non_accepted_pop_militancy_modifier = 0.02
+	pop_consciousness_modifier = 0.05
 	icon = 18
 }
 
@@ -675,7 +697,7 @@ bigben_construction = {
 }
 
 small_immigration_boom = {
-	global_immigrant_attract = 1
+	global_immigrant_attract = 0.5
 	icon = 17
 }
 #### Suez Canal ####
@@ -1442,6 +1464,10 @@ protector_of_eastern_christendom = {
 	icon = 17
 }
 
+local_excavations = {
+	icon = 5
+}
+
 egyptian_excavations = {
 	prestige = 0.01
 	icon = 5
@@ -1534,7 +1560,7 @@ boer_exodus = {
 }
 
 gold_rush_country = {
-	global_immigrant_attract = 0.5
+	global_immigrant_attract = 0.1
 	icon = 9
 }
 
@@ -1849,12 +1875,12 @@ peasant_revolt = {
 
 war_torn = {
 	local_ruling_party_support = -0.25
-	#pop_militancy_modifier = -0.05
+	pop_militancy_modifier = 0.01
 	local_factory_output = -0.125
 	local_rgo_output = -0.125
 	immigrant_attract = -0.125
 	immigrant_push = 0.25
-	population_growth = -0.001
+	population_growth = -0.0001
 	icon = 4
 }
 
@@ -1865,7 +1891,7 @@ no_freedom = {
 colonial_chaos = {
 	prestige = -0.01
 	local_RGO_throughput = -0.5
-	pop_militancy_modifier = 0.1
+	pop_militancy_modifier = 0.05
 	icon = 2
 }
 
@@ -2396,6 +2422,16 @@ neutrality = {
 	icon = 7
 }
 
+###PUIR - Generic Neutrality###
+generic_neutrality = {
+	max_military_spending = -0.25
+	leadership_modifier = -0.25
+	#mobilisation_size = 0.01
+	RGO_throughput = 0.1
+	#global_pop_militancy_modifier = -0.01
+	icon = 7
+}
+
 ### NV Changes ###
 national_confusion = {
 	research_points_modifier = -0.01
@@ -2550,8 +2586,8 @@ assimilate_tributaries_modif = {
 }
 
 anglois_dilemma = { 
-	non_accepted_pop_militancy_modifier = 0.08
-	pop_consciousness_modifier = 0.1
+	non_accepted_pop_militancy_modifier = 0.02
+	pop_consciousness_modifier = 0.05
 }
 anglois_cultural_unity = {
 	assimilation_rate = 0.3
@@ -2850,6 +2886,7 @@ the_open_door = {
 	global_immigrant_attract = 0.25
 	mobilisation_size = -0.005
 	global_pop_militancy_modifier = 0.01
+	min_social_spending = 0.1
 	icon = 5
 }
 
@@ -2862,6 +2899,7 @@ citizenship_tests = {
 passports = {
 	global_immigrant_attract = 0.1
 	global_pop_consciousness_modifier = 0.01
+	pension_level = 0.50
 	icon = 5
 }
 
@@ -3113,7 +3151,7 @@ nationalization_in_progress = {
 
 regency_government = {
 	global_pop_consciousness_modifier = 0.1
-	global_pop_militancy_modifier = 0.05
+	global_pop_militancy_modifier = 0.03
 	political_reform_desire  = 0.25
 	cb_generation_speed_modifier = -0.25 
 	influence_modifier = -0.25
@@ -3157,6 +3195,9 @@ rgo_changed = {
 	icon = 12
 }
 
+province_selected = {
+	icon = 5
+}
 ##### Asian Player Nerfs #####
 asia_nerfonciv = {
 	mobilisation_size = -0.01
@@ -3186,19 +3227,4 @@ chinese_economic_compensation = {
 	rgo_output = 0.66
 	tariff_efficiency_modifier = -0.5
 	icon = 9
-}
-
-##### Weapons of Mass Destruction #####
-
-developing_bioweapons = {
-	tax_efficiency = -0.15
-	icon = 15
-}
-
-experimental_bioweapon = {
-	icon = 15
-}
-
-bioweapon_cooldown = {
-	icon = 16
 }

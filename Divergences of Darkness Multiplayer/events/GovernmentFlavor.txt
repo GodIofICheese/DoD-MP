@@ -1,4 +1,4 @@
-7#Regency starts
+#Regency starts
 country_event = {
 	id = 11000
 	title = "EVTNAME11000"

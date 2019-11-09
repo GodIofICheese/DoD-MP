@@ -15,6 +15,7 @@ political_decisions = {
 						owned_by = THIS
 				}
 			}
+		phenomenology_n_hermeneutic = 1
 		}
 		effect = {
 			prestige = 10
@@ -207,7 +208,8 @@ political_decisions = {
 			NA_10 = { add_core = THIS }
 			NA_11 = { add_core = THIS }
 			NA_17 = { add_core = THIS }
-      DNG = { country_event = 334302 }
+			DNG = { country_event = 334302 }
+		}
 	 
 		ai_will_do = {
 			factor = 1
@@ -226,8 +228,10 @@ political_decisions = {
 		}
 	}
   
-  annex_hawaii = {
+  annex_hawaii_DoD = {
+	picture = annex_hawaii
 		potential = {
+			year = 1860
 			exists = HAW
 			HAW = { ai = yes }
 			rank = 16 
@@ -404,7 +408,7 @@ political_decisions = {
 	organize_yakutia = { 
 	potential = {
 	tag = JAP
-	owns = 2669 
+	owns = 2696 
 	civilized = yes
 	NOT = { YKT = { exists = yes } }
 	NOT = { has_country_flag = yakutia_org }

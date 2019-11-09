@@ -106,7 +106,7 @@ high_pressure_steam_engine = {
 }
 compound_steam_engines = {
 	area = tech_power
-	year = 1836
+	year = 1840
 	cost = 10800
 
 	rgo_goods_output = { coal = 0.1 }
@@ -158,7 +158,7 @@ compound_steam_engines = {
 }
 steam_turbine = {
 	area = tech_power
-	year = 1850
+	year = 1860
 	cost = 14400
 
 	rgo_goods_output = { coal = 0.15 }
@@ -452,7 +452,7 @@ interchangeable_parts = {
 }
 semi_automatization = {
 	area = mechanization
-	year = 1836
+	year = 1845
 	cost = 10800
 
 	factory_throughput = 0.05
@@ -513,7 +513,7 @@ semi_automatization = {
 }
 pneumatic_and_hydraulics = {
 	area = mechanization
-	year = 1850
+	year = 1855
 	cost = 14400
 	factory_throughput = 0.1
 	factory_cost = -0.1 
@@ -551,7 +551,7 @@ pneumatic_and_hydraulics = {
 }
 assembly_line = {
 	area = mechanization
-	year = 1870
+	year = 1875
 	cost = 18000
 	factory_throughput = 0.1
 	factory_cost = -0.1 
@@ -916,7 +916,7 @@ puddling = {
 hot_blast = {
 	area = metallurgy
 	year = 1850
-	cost = 10800
+	cost = 14400
 	
 	rgo_goods_output = {
 		iron = 0.4
@@ -1042,7 +1042,7 @@ hot_blast = {
 bessemer_process = {
 	area = metallurgy
 	year = 1870
-	cost = 14400
+	cost = 18000
 	
 	rgo_goods_output = {
 		iron = 0.45
@@ -1832,7 +1832,7 @@ medicine = {
 }
 inorganic_chemistry = {
 	area = chemistry_and_electricity
-	year = 1836
+	year = 1850
 	cost = 10800
 
 	supply_limit = 0.25
@@ -1895,7 +1895,7 @@ inorganic_chemistry = {
 }
 organic_chemistry = {
 	area = chemistry_and_electricity
-	year = 1850
+	year = 1870
 	cost = 14400
 
 	supply_limit = 0.25
@@ -1939,10 +1939,10 @@ organic_chemistry = {
 }
 electricity = {
 	area = chemistry_and_electricity
-	year = 1870
+	year = 1880
 	cost = 18000
 	
-	supply_limit = 0.50
+	supply_limit = 0.40
 	ai_chance = {
 		factor = 5
 		modifier = {
@@ -1980,7 +1980,7 @@ synthetic_polymers = {
 	year = 1900
 	cost = 21600
 
-	supply_limit = 0.50
+	supply_limit = 0.40
 	ai_chance = {
 		factor = 1.1
 		modifier = {
@@ -2010,6 +2010,7 @@ synthetic_production = {
 	year = 1930
 	cost = 40000
 	
+	supply_limit = 0.40
 	rgo_goods_output = {
 		rubber = 0.25
 	}

@@ -72,7 +72,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 1.5
-			nationalvalue = nv_might
+			nationalvalue = nv_autocracy
 		}	
 	}
 	
@@ -1620,7 +1620,7 @@ country_event = {
 			factor = 1.5
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				nationalvalue = nv_autocracy
 			}
 		}
 	}
@@ -2236,7 +2236,7 @@ province_event = {
 		}
 		modifier = {
 			factor = 1.5
-			owner = { nationalvalue = nv_might }
+			owner = { nationalvalue = nv_autocracy }
 		}
 	}
 	option = {
@@ -2564,7 +2564,7 @@ province_event = {
 			owner = {
 				OR = {
 					nationalvalue = nv_order
-					nationalvalue = nv_might
+					nationalvalue = nv_autocracy
 				}
 			}
 		}
@@ -2766,7 +2766,7 @@ country_event = {
 			factor = 1.25
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				nationalvalue = nv_autocracy
 			}
 		}
 	}
@@ -2949,7 +2949,7 @@ province_event = {
 			owner = {
 				OR = {
 					nationalvalue = nv_order
-					nationalvalue = nv_might
+					nationalvalue = nv_autocracy
 				}
 			}
 		}
@@ -3478,7 +3478,7 @@ province_event = {
 		modifier = {
 			factor = 0.75
 			owner = {
-				nationalvalue = nv_might
+				nationalvalue = nv_autocracy
 			}
 		}
 	}
@@ -4070,7 +4070,7 @@ country_event = {
 			factor = 1.25
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				nationalvalue = nv_autocracy
 			}
 		}
 	}
@@ -4610,7 +4610,7 @@ country_event = {
 			factor = 1.25
 			OR = {
 				nationalvalue = nv_order
-				nationalvalue = nv_might
+				nationalvalue = nv_autocracy
 			}
 		}
 	}

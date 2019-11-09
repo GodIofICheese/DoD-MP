@@ -41,7 +41,7 @@ country_event = { ##Young Scotland revolts
 	owns = 267 
 	has_global_flag = ENL_help_SCO  
 	NOT = { has_country_flag = SCO_free }
-	NOT = { has_country_flag = scotland_reannexed )
+	NOT = { has_country_flag = scotland_reannexed }
 	}
 	
 	mean_time_to_happen = { 

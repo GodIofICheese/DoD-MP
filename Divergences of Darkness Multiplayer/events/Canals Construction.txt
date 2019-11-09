@@ -345,7 +345,7 @@ country_event = {
 		owns = 1755
 		NOT = {
 			war_policy = pacifism
-			has_country_modifier = neutrality_modifier
+			has_country_modifier = neutrality
 			has_country_flag = suez_egypt_intervention
 		}
 		EGY = {

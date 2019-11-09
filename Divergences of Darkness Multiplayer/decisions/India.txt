@@ -155,7 +155,7 @@ political_decisions = {
 		allow = {
 			NOT = { war = yes }
 			OR = {
-				nationalism_n_imperalism = 1
+				nationalism_n_imperialism = 1
 				year = 1860
 			}	
 			HND = {

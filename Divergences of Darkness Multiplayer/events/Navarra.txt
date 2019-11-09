@@ -321,6 +321,9 @@ country_event = {
 	country_event = 987415
 	inherit = NAV 
 	}
+	ESK_1 = { add_core = ARA }
+	460 = { add_core = ARA }
+	add_accepted_culture = basque
 	ai_chance = { 
 		factor =  50
 		}

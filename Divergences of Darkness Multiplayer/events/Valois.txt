@@ -527,6 +527,7 @@ country_event = {
 		NOT = { war_with = PRV }
 		PRV = { in_sphere = THIS }
 		PRV = { ai = yes }
+		NOT = { has_country_flag = no_disparition_provence }
 		year = 1850
 	}
 
@@ -538,6 +539,11 @@ country_event = {
 		name = "110618.A"
 		inherit = PRV
 		badboy = 5
+	}
+	option = {
+		name = "110618.B"
+		prestige = 5
+		set_country_flag = no_disparition_provence
 	}
 }
 

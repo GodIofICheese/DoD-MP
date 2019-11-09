@@ -1619,7 +1619,7 @@ country_event = {
 				is_accepted_culture = no
 				NOT = {
 					OR = {
-						is_culture_group = arab
+						is_culture_group = semitic
 						is_culture_group = west_african
 						is_culture_group = central_african
 						is_culture_group = east_african
@@ -2952,7 +2952,7 @@ province_event = {
 			war = no
 			has_country_flag = post_colonial_country
 			NOT = {
-				is_culture_group = arab
+				is_culture_group = semitic
 				is_culture_group = west_african
 				is_culture_group = central_african
 				is_culture_group = east_african
@@ -2963,7 +2963,7 @@ province_event = {
 		}
 		any_pop = {
 			OR = {
-				is_culture_group = arab
+				is_culture_group = semitic
 				is_culture_group = west_african
 				is_culture_group = central_african
 				is_culture_group = east_african
@@ -3081,7 +3081,7 @@ country_event = {
 					OR = {
 						tag = MAH
 						tag = MUG
-						tag = BNG
+						tag = BEN
 					}
 				}
 			}

@@ -584,6 +584,7 @@ political_decisions = {
 	AZL = { all_core = { owned_by = THIS } 
 		}
 	NOT = { accepted_culture = granadan }
+	NOT = { has_country_flag = congress_GRA }
 	}
 	
 	allow = { 
@@ -660,7 +661,7 @@ political_decisions = {
       NOT = { has_country_flag = amerigan_ideal }
 		}
 		allow = {
-			political_thought = 1  
+			revolution_n_counterrevolution = 1  
 		war = no
 		AZL = { all_core = { owned_by = THIS } 
 		}
@@ -887,7 +888,7 @@ political_decisions = {
 		}
 	
 		allow = {
-			cheap_steel = 1
+			bessemer_process = 1
 		}
 	
 		effect = {
@@ -912,6 +913,7 @@ political_decisions = {
 	potential = { 
 	has_country_flag = ameriga_united
 	INC = { exists = yes }
+	NOT = { has_country_flag = AZL_annexation_INC }
 	}
 	
 	allow = { 
@@ -924,6 +926,7 @@ political_decisions = {
 	
 	effect = { 
 	INC = { all_core = { add_core = AZL } }
+	set_country_flag = AZL_annexation_INC
 	}
 	
 	}
@@ -942,7 +945,7 @@ political_decisions = {
 		
 		allow = { 
 		medicine = 1 
-		cheap_iron = 1 
+		hot_blast = 1 
 		romanticism = 1 
 		}
 		

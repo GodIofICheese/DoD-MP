@@ -1,44 +1,4 @@
 political_decisions = {
-	ottoman_oppression_mil_gain = {
-		potential = {
-			ai = yes
-			exists = yes
-			OR = {
-				tag = SWI
-				AND = {
-					OR = {
-						SWI = { ai = no }
-						SWI = { exists = no }
-					}
-					OR = {
-						neighbour = TUR
-						tag = TUR
-					}
-				}
-			}
-			TUR = {
-				has_country_modifier = ottoman_oppression
-				NOT = { has_country_modifier = religious_minority_oppression }
-			}
-		}
-		
-		allow = {
-		}
-		
-		effect = {
-			TUR = {
-				any_pop = {
-					limit = { is_state_religion = no }
-					consciousness = 1.2
-					militancy = 0.6
-					money = -1000
-				}
-				add_country_modifier = { name = religious_minority_oppression duration = 365 }
-			}
-		}
-		ai_will_do = { factor = 1 }
-	}
-	
 	sanctions_lifted = {
 		potential = {
 			is_disarmed = yes
@@ -76,16 +36,6 @@ political_decisions = {
 				}
 				any_greater_power = { 
 					ai = no
-					NOT = { has_country_flag = germs_invented }
-					invention = germ_theory
-				}
-				any_neighbor_country = {
-					ai = no
-					NOT = { has_country_flag = germs_invented }
-					invention = germ_theory
-				}
-				any_greater_power = { 
-					ai = no
 					NOT = { has_country_flag = gaslights_invented }
 					invention = gaslights
 				}
@@ -109,10 +59,6 @@ political_decisions = {
 					medicine = 1
 				}
 				AND = {
-					NOT = { has_country_flag = germs_invented }
-					invention = germ_theory
-				}
-				AND = {
 					NOT = { has_country_flag = gaslights_invented }
 					invention = gaslights
 				}
@@ -132,10 +78,6 @@ political_decisions = {
 				owner = { set_country_flag = medicine_invented }
 			}
 			random_owned = {
-				limit = { owner = { NOT = { has_country_flag = germs_invented } invention = germ_theory } }
-				owner = { set_country_flag = germs_invented }
-			}
-			random_owned = {
 				limit = { owner = { NOT = { has_country_flag = gaslights_invented } invention = gaslights } }
 				owner = { set_country_flag = gaslights_invented }
 			}
@@ -146,10 +88,6 @@ political_decisions = {
 			any_country = {
 				limit = { NOT = { has_country_flag = medicine_invented } medicine = 1 }
 				set_country_flag = medicine_invented
-			}
-			any_country = {
-				limit = { NOT = { has_country_flag = germs_invented } invention = germ_theory }
-				set_country_flag = germs_invented
 			}
 			any_country = {
 				limit = { NOT = { has_country_flag = gaslights_invented } invention = gaslights }
@@ -187,6 +125,7 @@ political_decisions = {
 		}
 		
 		allow = {
+		debt_law = serfdom
 		}
 		
 		effect = {
@@ -253,6 +192,8 @@ political_decisions = {
 				AND = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } }
 				AND = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
 				AND = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
+				AND = { government = merchant_republic NOT = { has_country_flag = merchant_republic_gov } }
+				AND = { government = feudal_monarchy NOT = { has_country_flag = feudal_monarchy_gov } }
 				AND = { exists = yes NOT = { has_country_flag = existing_country } }
 				any_neighbor_country = {
 					ai = no
@@ -266,6 +207,8 @@ political_decisions = {
 						AND = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } }
 						AND = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
 						AND = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
+						AND = { government = merchant_republic NOT = { has_country_flag = merchant_republic_gov } }
+						AND = { government = feudal_monarchy NOT = { has_country_flag = feudal_monarchy_gov } }
 						AND = { exists = yes NOT = { has_country_flag = existing_country } }
 					}
 				}
@@ -281,6 +224,8 @@ political_decisions = {
 						AND = { government = presidential_dictatorship NOT = { has_country_flag = presidential_dictatorship_gov } }
 						AND = { government = fascist_dictatorship NOT = { has_country_flag = fascist_gov } }
 						AND = { government = bourgeois_dictatorship NOT = { has_country_flag = anarcho_liberal_gov } }
+						AND = { government = merchant_republic NOT = { has_country_flag = merchant_republic_gov } }
+						AND = { government = feudal_monarchy NOT = { has_country_flag = feudal_monarchy_gov } }
 						AND = { exists = yes NOT = { has_country_flag = existing_country } }
 					}
 				}
@@ -300,6 +245,8 @@ political_decisions = {
 			clr_country_flag = presidential_dictatorship_gov
 			clr_country_flag = fascist_gov
 			clr_country_flag = anarcho_liberal_gov
+			clr_country_flag = merchant_republic_gov
+			clr_country_flag = feudal_monarchy_gov
 			random_owned = { limit = { owner = { government = theocracy } } owner = { set_country_flag = theocratic_government } }
 			random_owned = { limit = { owner = { government = proletarian_dictatorship } } owner = { set_country_flag = communist_gov } }
 			random_owned = { limit = { owner = { government = absolute_monarchy } } owner = { set_country_flag = absolute_monarchy_gov } }
@@ -309,6 +256,8 @@ political_decisions = {
 			random_owned = { limit = { owner = { government = presidential_dictatorship } } owner = { set_country_flag = presidential_dictatorship_gov } }
 			random_owned = { limit = { owner = { government = fascist_dictatorship } } owner = { set_country_flag = fascist_gov } }
 			random_owned = { limit = { owner = { government = bourgeois_dictatorship } } owner = { set_country_flag = anarcho_liberal_gov } }
+			random_owned = { limit = { owner = { government = merchant_republic } } owner = { set_country_flag = merchant_republic_gov } }
+			random_owned = { limit = { owner = { government = feudal_monarchy } } owner = { set_country_flag = feudal_monarchy_gov } }
 			random_owned = { limit = { owner = { exists = yes NOT = { has_country_flag = existing_country } } } owner = { set_country_flag = existing_country } }
 			any_neighbor_country = {
 				limit = { exists = yes NOT = { has_country_flag = existing_country } }
@@ -325,6 +274,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = theocratic_government
 			}
 			any_neighbor_country = {
@@ -338,6 +289,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = communist_gov
 			}
 			any_neighbor_country = {
@@ -351,6 +304,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = absolute_monarchy_gov
 			}
 			any_neighbor_country = {
@@ -364,6 +319,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = semi_constitutional_monarchy_gov
 			}
 			any_neighbor_country = {
@@ -377,6 +334,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = constitutional_monarchy_gov
 			}
 			any_neighbor_country = {
@@ -390,6 +349,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = democracy_gov
 			}
 			any_neighbor_country = {
@@ -403,6 +364,8 @@ political_decisions = {
 				#clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = presidential_dictatorship_gov
 			}
 			any_neighbor_country = {
@@ -416,6 +379,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				#clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = fascist_gov
 			}
 			any_neighbor_country = {
@@ -429,7 +394,39 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				#clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = anarcho_liberal_gov
+			}
+			any_neighbor_country = {
+				limit = { government = merchant_republic NOT = { has_country_flag = merchant_republic_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				#clr_country_flag = anarcho_liberal_gov
+				set_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
+				clr_country_flag = anarcho_liberal_gov
+			}
+			any_neighbor_country = {
+				limit = { government = feudal_monarchy NOT = { has_country_flag = feudal_monarchy_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				#clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				set_country_flag = feudal_monarchy_gov
+				clr_country_flag = anarcho_liberal_gov
 			}
 			any_greater_power = {
 				limit = { exists = yes NOT = { has_country_flag = existing_country } }
@@ -446,6 +443,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = theocratic_government
 			}
 			any_greater_power = {
@@ -459,6 +458,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = communist_gov
 			}
 			any_greater_power = {
@@ -472,6 +473,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = absolute_monarchy_gov
 			}
 			any_greater_power = {
@@ -485,6 +488,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = semi_constitutional_monarchy_gov
 			}
 			any_greater_power = {
@@ -498,6 +503,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = constitutional_monarchy_gov
 			}
 			any_greater_power = {
@@ -511,6 +518,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = democracy_gov
 			}
 			any_greater_power = {
@@ -524,6 +533,8 @@ political_decisions = {
 				#clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = presidential_dictatorship_gov
 			}
 			any_greater_power = {
@@ -537,6 +548,8 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				#clr_country_flag = fascist_gov
 				clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = fascist_gov
 			}
 			any_greater_power = {
@@ -550,7 +563,39 @@ political_decisions = {
 				clr_country_flag = presidential_dictatorship_gov
 				clr_country_flag = fascist_gov
 				#clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
 				set_country_flag = anarcho_liberal_gov
+			}
+			any_greater_power = {
+				limit = { government = merchant_republic NOT = { has_country_flag = merchant_republic_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				#clr_country_flag = anarcho_liberal_gov
+				set_country_flag = merchant_republic_gov
+				clr_country_flag = feudal_monarchy_gov
+				clr_country_flag = anarcho_liberal_gov
+			}
+			any_greater_power = {
+				limit = { government = feudal_monarchy NOT = { has_country_flag = feudal_monarchy_gov } }
+				clr_country_flag = theocratic_government
+				clr_country_flag = communist_gov
+				clr_country_flag = absolute_monarchy_gov
+				clr_country_flag = semi_constitutional_monarchy_gov
+				clr_country_flag = constitutional_monarchy_gov
+				clr_country_flag = democracy_gov
+				clr_country_flag = presidential_dictatorship_gov
+				clr_country_flag = fascist_gov
+				#clr_country_flag = anarcho_liberal_gov
+				clr_country_flag = merchant_republic_gov
+				set_country_flag = feudal_monarchy_gov
+				clr_country_flag = anarcho_liberal_gov
 			}
 		}
 		ai_will_do = { factor = 1 }
@@ -689,34 +734,6 @@ political_decisions = {
 		ai_will_do = { factor = 1 }
 	}
 	
-	release_bukovina = {
-		potential = {
-			owns = 662
-			owns = 663
-			OR = {
-				tag = AUS
-				tag = KUK
-			}
-			NOT = { owns = 660 }	
-			NOT = { owns = 661 }
-			NOT = { owns = 953 }
-			NOT = { owns = 952 }
-			BKV = { exists = no }
-		}
-		
-		allow = {
-			war = no
-		}
-		
-		effect = {
-			release_vassal = BKV
-			diplomatic_influence = { who = BKV value = 400 }
-			relation = { who = BKV value = 400 }
-			create_alliance = BKV
-		}
-		ai_will_do = { factor = 1 }
-	}
-
 	clean_up_crisis_tension = {
 		potential = {
 			ai = yes
@@ -791,55 +808,6 @@ political_decisions = {
 		}
 	}
 	
-	native_assimilation_act_ended = {
-		picture = native_assimilation_act
-		potential = {
-			ai = yes
-			exists = yes
-			OR = {
-				AND = {
-					has_country_flag = native_assimilation_enacted
-					NOT = { has_country_modifier = native_assimilation_act_policy }
-				}
-				any_neighbor_country = {
-					ai = no
-					has_country_flag = native_assimilation_enacted
-					NOT = { has_country_modifier = native_assimilation_act_policy }
-				}
-				any_greater_power = {
-					ai = no
-					has_country_flag = native_assimilation_enacted
-					NOT = { has_country_modifier = native_assimilation_act_policy }
-				}
-			}
-		}
-	
-		allow = {
-		}
-		
-		effect = {
-			random_owned = {
-				limit = {
-					owner = {
-						has_country_flag = native_assimilation_enacted
-						NOT = { has_country_modifier = native_assimilation_act_policy }
-					}
-				}
-				owner = { clr_country_flag = native_assimilation_enacted }
-			}
-			any_country = {
-				limit = {
-					has_country_flag = native_assimilation_enacted
-					NOT = { has_country_modifier = native_assimilation_act_policy }
-				}
-				clr_country_flag = native_assimilation_enacted
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-	
 	modern_central_banking_system_flag = {
 		potential = {
 			ai = yes
@@ -873,211 +841,6 @@ political_decisions = {
 			any_country = {
 				limit = { NOT = { has_country_flag = modern_central_bank_system_invented } modern_central_bank_system = 1 }
 				set_country_flag = modern_central_bank_system_invented
-			}
-		}
-		
-		ai_will_do = { factor = 1 }
-	}
-	
-	
-	pay_owed_steamers = {
-		potential = {
-			ai = yes
-			OR = {
-				check_variable = { which = owed_steamers value = 1 }
-				check_variable = { which = owed_artillery value = 1 }
-				check_variable = { which = owed_canned_food value = 1 }
-				check_variable = { which = owed_small_arms value = 1 }
-				check_variable = { which = owed_ammunition value = 1 }
-				check_variable = { which = owed_cash_money value = 1 }
-			}
-		}
-		
-		allow = {
-			OR = {
-				AND = {
-					steamer_convoy = 2
-					check_variable = { which = owed_steamers value = 1 }
-				}
-				AND = {
-					artillery = 2
-					check_variable = { which = owed_artillery value = 1 }
-				}
-				AND = {
-					canned_food = 2
-					check_variable = { which = owed_canned_food value = 1 }
-				}
-				AND = {
-					small_arms = 2
-					check_variable = { which = owed_small_arms value = 1 }
-				}
-				AND = {
-					ammunition = 2
-					check_variable = { which = owed_ammunition value = 1 }
-				}
-				AND = {
-					money = 10000
-					check_variable = { which = owed_cash_money value = 1 }
-				}
-			}
-		}
-		
-		effect = {
-		
-			random_owned = {
-				limit = {
-					owner = {
-						ammunition = 1
-						check_variable = { which = owed_ammunition value = 1 }
-					}
-				}
-				owner = {
-					ammunition = -1
-					change_variable = { which = owed_ammunition value = -1 }
-				}
-			}
-		
-			random_owned = {
-				limit = {
-					owner = {
-						small_arms = 1
-						check_variable = { which = owed_small_arms value = 1 }
-					}
-				}
-				owner = {
-					small_arms = -1
-					change_variable = { which = owed_small_arms value = -1 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						steamer_convoy = 4
-						check_variable = { which = owed_steamers value = 4 }
-					}
-				}
-				owner = {
-					steamer_convoy = -4
-					change_variable = { which = owed_steamers value = -4 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						steamer_convoy = 4
-						check_variable = { which = owed_steamers value = 4 }
-					}
-				}
-				owner = {
-					steamer_convoy = -4
-					change_variable = { which = owed_steamers value = -4 }
-				}
-			}
-		
-			random_owned = {
-				limit = {
-					owner = {
-						steamer_convoy = 2
-						check_variable = { which = owed_steamers value = 1 }
-					}
-				}
-				owner = {
-					steamer_convoy = -2
-					change_variable = { which = owed_steamers value = -2 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						artillery = 4
-						check_variable = { which = owed_artillery value = 4 }
-					}
-				}
-				owner = {
-					artillery = -4
-					change_variable = { which = owed_artillery value = -4 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						artillery = 4
-						check_variable = { which = owed_artillery value = 4 }
-					}
-				}
-				owner = {
-					artillery = -4
-					change_variable = { which = owed_artillery value = -4 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						artillery = 2
-						check_variable = { which = owed_artillery value = 1 }
-					}
-				}
-				owner = {
-					artillery = -2
-					change_variable = { which = owed_artillery value = -2 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						canned_food = 4
-						check_variable = { which = owed_canned_food value = 4 }
-					}
-				}
-				owner = {
-					canned_food = -4
-					change_variable = { which = owed_canned_food value = -4 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						canned_food = 2
-						check_variable = { which = owed_canned_food value = 1 }
-					}
-				}
-				owner = {
-					canned_food = -2
-					change_variable = { which = owed_canned_food value = -2 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						money = 50000
-						check_variable = { which = owed_cash_money value = 50 }
-					}
-				}
-				owner = {
-					treasury = -50000
-					change_variable = { which = owed_cash_money value = -50 }
-				}
-			}
-			
-			random_owned = {
-				limit = {
-					owner = {
-						money = 10000
-						check_variable = { which = owed_cash_money value = 1 }
-					}
-				}
-				owner = {
-					treasury = -10000
-					change_variable = { which = owed_cash_money value = -10 }
-				}
 			}
 		}
 		

@@ -97,19 +97,8 @@ country_event = {
 	desc = "DUA1.D"
 
 	major = yes
-	
-	trigger = {
-	tag = DUA
-	NOT = { has_country_flag = french_integration }
-	NOT = { has_country_flag = english_integration }
-	NOT = { has_country_flag = dual_integration }
-	NOT = { has_country_flag = choice_pokemon }
-	}
-	
-	mean_time_to_happen = {
-		days = 10
-	}
-	
+	is_triggered_only = yes
+
 	option = {
 		name = "650201.A"
 		set_country_flag = french_integration
@@ -214,6 +203,12 @@ country_event = {
 		country_event = 650240 
 		ai_chance = { 
 			factor = 30
+		}
+	}
+	option = {
+		name = "650201.D"
+		ai_chance = { 
+			factor = 0
 		}
 	}
 }
@@ -530,12 +525,13 @@ country_event = {
 	trigger = { 
 	tag = DUA 
 	has_country_flag = french_integration 
+	year = 1850
 	NOT = { accepted_culture = french }
 	NOT = { exists = FRA }
 	}
 	
 	mean_time_to_happen = { 
-	months = 350
+	months = 360
 	modifier = { 
 		factor = 0.97 
 		has_country_flag = st_louis_speech
@@ -573,17 +569,16 @@ country_event = {
 	modifier = { 
 		factor = 0.9 
 		has_country_flag = richelieu_minister 
-		}
 	}
 	modifier = {
 		factor = 2.0
-		NOT = { year = 1850 }
+		NOT = { year = 1870 }
 	}
 	modifier = {
 		factor = 0.5
 		year = 1880
 	}
-	
+	}
 	option = { 
 	name = "650210.A"
 	prestige = 20
@@ -601,12 +596,6 @@ country_event = {
 			}
 			militancy = -4
 		}
-		random_owned = {
-				limit = {
-					FRA = { exists = no }
-				}
-				FRA = { all_core = { remove_core = FRA } }
-			}
 	}
 }
 
@@ -624,7 +613,7 @@ country_event = { ## Glorious Revolution
 	
 	trigger = { 
 	tag = DUA 
-	year = 1841
+	year = 1850
 	has_country_flag = french_integration 
 	OR = { 
 		NOT = { has_country_flag = had_liberal_revolution }
@@ -633,7 +622,7 @@ country_event = { ## Glorious Revolution
 	}
 	
 	mean_time_to_happen = { 
-	months = 170
+	months = 360
 	modifier = { 
 		factor = 0.97 
 		has_country_flag = st_louis_speech
@@ -680,7 +669,7 @@ country_event = { ## Glorious Revolution
 		}
 	modifier = {
 		factor = 2.0
-		NOT = { year = 1850 }
+		NOT = { year = 1870 }
 	}
 	modifier = {
 		factor = 0.5
@@ -1237,14 +1226,15 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger = { 
-	tag = DUA 
+	tag = DUA
+	year = 1850
 	has_country_flag = english_integration 
 	NOT = { accepted_culture = english }
 	NOT = { exists = ENL }
 	}
 	
 	mean_time_to_happen = { 
-	months = 350
+	months = 360
 	modifier = { 
 		factor = 0.95
 		has_country_flag = great_travel_ENL
@@ -1282,14 +1272,14 @@ country_event = {
 		factor = 0.9 
 		has_country_flag = devonshire_minister 
 		}
-	}
 	modifier = {
 		factor = 2.0
-		NOT = { year = 1850 }
+		NOT = { year = 1870 }
 	}
 	modifier = {
 		factor = 0.5
 		year = 1880
+	}
 	}
 	
 	option = { 
@@ -1300,6 +1290,7 @@ country_event = {
 	add_accepted_culture = irish
 	add_accepted_culture = welsh
 	remove_accepted_culture = breton
+	remove_accepted_culture = basque
 	any_pop = {
 			limit = {
 				culture = english
@@ -1308,9 +1299,6 @@ country_event = {
 				}
 			}
 			militancy = -4
-		}
-		random_owned = {
-			ENL = { all_core = { remove_core = ENL } }
 		}
 	}
 }
@@ -1331,7 +1319,7 @@ country_event = { ## Midi Revolution
 	tag = DUA 
 	has_country_flag = english_integration 
 	has_global_flag = liberal_revolution_somewhere
-	year = 1841
+	year = 1850
 	OR = {
 		NOT = { has_country_flag = had_liberal_revolution }
 		NOT = { has_country_flag = OCC_revolted }
@@ -1339,7 +1327,7 @@ country_event = { ## Midi Revolution
 	}
 	
 	mean_time_to_happen = { 
-	months = 170
+	months = 360
 	modifier = { 
 		factor = 0.5
 		has_country_modifier = springtime_of_nations
@@ -1366,7 +1354,7 @@ country_event = { ## Midi Revolution
 		}
 	modifier = {
 		factor = 2.0
-		NOT = { year = 1850 }
+		NOT = { year = 1870 }
 	}
 	modifier = {
 		factor = 0.5
@@ -1397,6 +1385,7 @@ country_event = { ## Midi Revolution
 	add_accepted_culture = irish
 	add_accepted_culture = welsh
 	remove_accepted_culture = breton
+	remove_accepted_culture = basque
 	any_owned = {
 			limit = {
 				is_core = OCC 
@@ -2096,7 +2085,8 @@ country_event = { ##The Total Revolution
 	major = yes 
 	
 	trigger = { 
-	tag = DUA 
+	tag = DUA
+	year = 1850
 	has_country_flag = dual_integration 
 	NOT = { 
 	OR = { truce_with = ENL truce_with = OCC truce_with = FRA truce_with = IRE }
@@ -2118,7 +2108,16 @@ country_event = { ##The Total Revolution
 		}
 	
 	mean_time_to_happen = { 
-	months = 50 
+	months = 360 
+	
+	modifier = {
+		factor = 2.0
+		NOT = { year = 1870 }
+	}
+	modifier = {
+		factor = 0.5
+		year = 1880
+	}
 	}
 
 	option = { 
@@ -2235,7 +2234,8 @@ country_event = { ##The Anglois success
 	desc = "DUA48.D"
 	
 	trigger = { 
-	tag = DUA 
+	tag = DUA
+	year = 1850
 	has_country_flag = dual_integration 
 	NOT = { 
 	ENL = { exists = yes }
@@ -2268,7 +2268,15 @@ country_event = { ##The Anglois success
 	}
 	
 	mean_time_to_happen = { 
-	months = 50 
+	months = 360 
+	modifier = {
+		factor = 2.0
+		NOT = { year = 1870 }
+	}
+	modifier = {
+		factor = 0.5
+		year = 1880
+	}
 	}
 	
 	option = { 
@@ -2278,39 +2286,8 @@ country_event = { ##The Anglois success
 	prestige = 100 
 	add_accepted_culture = french 
 	add_accepted_culture = english 
-	any_pop = { 
-	militancy = -3 
+	any_pop = { militancy = -3 }
 	}
-	any_country = {
-			any_owned = {
-				limit = {
-				is_core = ENL 
-					}
-				remove_core = ENL
-			}
-		}
-	any_country = {
-			any_owned = {
-				limit = {
-				is_core = FRA 
-					}
-				remove_core = FRA
-			}
-		}
-	any_owned = {
-				limit = {
-				is_core = FRA 
-					}
-				remove_core = FRA
-		}
-	any_owned = {
-				limit = {
-				is_core = ENL 
-				}
-			remove_core = ENL
-		}
-	}
-	
 }
 	
 country_event = { 
@@ -4372,36 +4349,34 @@ country_event = { ##The Midi Revolution -reconquest
 
 country_event = { ##End of the Dual-Monarchy
 	id = 650295
-	title = "DUAendEnl.T"
-	desc = "DUAendEnl.D"
+	title = "EVTNAME650295"
+	desc = "EVTDESC650295"
 	
 	major = yes
 	
 	is_triggered_only = yes 
 	
 	option = { 
-	name = "650295.A"
+	name = "EVTOPTA650295"
 	prestige = -100
-	any_country = { 
-			any_owned = { 
-				limit = {
-				OR = {
-					is_core = ENL
-					is_core = IRE
-					is_core = ENG 
-					is_core = WLS
-					}
-				}
-				remove_core = DUA
+		any_country = { 
+	any_owned = { 
+	limit = { OR = { is_core = ENL is_core = IRE is_core = WLS } }
+	remove_core = DUA
 			}
 		}
+	any_owned = { 
+	limit = { OR = { is_core = ENL is_core = IRE is_core = WLS } }
+	remove_core = DUA
+			}
 	change_tag = FRA 
 	set_global_flag = fall_DUA
 	remove_accepted_culture = english 
 	remove_accepted_culture = welsh 
 	remove_accepted_culture = irish 
 	add_accepted_culture = french
-	add_accepted_culture = provencal 
+	add_accepted_culture = provencal
+	add_accepted_culture = burgundian
 	any_country = { 
 			any_owned = { 
 				limit = {

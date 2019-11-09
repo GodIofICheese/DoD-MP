@@ -5,13 +5,12 @@ political_decisions = {
 			NOT = { has_country_modifier = developing_bioweapons }
 			NOT = { has_country_modifier = experimental_bioweapon }
 			rank = 16
-			year = 1928
+			year = 1925
 			ai = no
 			}
 		
 			allow = {
 			money = 3000000
-			total_war = 1
 			part_of_sphere = no
 			is_vassal = no
 			is_disarmed = no
@@ -21,7 +20,7 @@ political_decisions = {
 				set_country_flag = developing_bioweapons
 				add_country_modifier = {
 				name = developing_bioweapons
-				duration = 2190
+				duration = 1825
 				}
 				money = -2000000
 				any_country = {
@@ -55,7 +54,7 @@ political_decisions = {
 				country_event = 999931
 				add_country_modifier = {
 				name = bioweapon_cooldown
-				duration = 730
+				duration = 1095
 				}
 				money = -2000000
 				badboy = 10

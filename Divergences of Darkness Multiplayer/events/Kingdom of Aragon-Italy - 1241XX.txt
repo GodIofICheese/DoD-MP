@@ -31,7 +31,7 @@ country_event = {
 	trigger = {
 		tag = ARI
 		has_country_flag = ARA_ITA
-		has_primary_culture = catalan
+		primary_culture = catalan
 		NOT = { has_country_flag = Italyrulezz }
 		NOT = { has_country_flag = ARA_SITA }
 	}
@@ -192,6 +192,7 @@ country_event = {
 		clr_country_flag = waroveritaly
 		set_country_flag = waroveritalyfail
 		prestige = -50
+	}
 }
 
 country_event = {

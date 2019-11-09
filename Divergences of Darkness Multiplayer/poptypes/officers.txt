@@ -2,9 +2,10 @@ sprite = 2
 color = { 119 98 34 }
 strata = middle
 state_capital_only = yes
+can_be_recruited = yes
 
-leadership = 2
-research_optimum = 0.002	#used for leadership as well.
+leadership = 3
+research_optimum = 0.01	#used for leadership as well.
 
 rebel = {
 	cavalry = 0.2
@@ -83,33 +84,135 @@ country_migration_target = {
 		THIS = { NOT = { literacy = 0.6 } }
 	}
 	modifier = {
-		factor = 0.75
-		NOT = { military_spending = 0.4 }
-	}
-	modifier = {
-		factor = 1.1
-		military_spending = 0.7
-	}
-	modifier = {
-		factor = 1.1
-		military_spending = 0.8
-	}
-	modifier = {
-		factor = 1.1
-		military_spending = 0.9
-	}
-	modifier = {
-		factor = 1.2
-		military_spending = 0.99
-	}
+			factor = 0.9
+			NOT = { military_spending = 0.5 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { military_spending = 0.4 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { military_spending = 0.3 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { military_spending = 0.2 }
+		}
+		modifier = {
+			factor = 0.9
+			NOT = { military_spending = 0.1 }
+		}
 	
-	modifier = {
-		factor = 0.5
-		NOT = { middle_strata_life_needs = 0.90 }
-	}		
+		modifier = {
+			factor = 1.1
+			military_spending = 0.5
+		}
+		modifier = {
+			factor = 1.1
+			military_spending = 0.6
+		}
+		modifier = {
+			factor = 1.1
+			military_spending = 0.7
+		}
+		modifier = {
+			factor = 1.1
+			military_spending = 0.8
+		}
+		modifier = {
+			factor = 1.1
+			military_spending = 0.9
+		}
+		modifier = {
+			factor = 1.1
+			military_spending = 0.99
+		}
 	
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { middle_strata_life_needs = 0.90 }
+				NOT = { middle_strata_everyday_needs = 0.45 }
+				NOT = { middle_strata_luxury_needs = 0.2 }
+			}
+		}
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { middle_strata_life_needs = 0.80 }
+				NOT = { middle_strata_everyday_needs = 0.40 }
+				NOT = { middle_strata_luxury_needs = 0.175 }
+			}
+		}
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { middle_strata_life_needs = 0.70 }
+				NOT = { middle_strata_everyday_needs = 0.35 }
+				NOT = { middle_strata_luxury_needs = 0.15 }
+			}
+		}		
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { middle_strata_life_needs = 0.60 }
+				NOT = { middle_strata_everyday_needs = 0.30 }
+				NOT = { middle_strata_luxury_needs = 0.125 }
+			}
+		}		
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { middle_strata_life_needs = 0.50 }
+				NOT = { middle_strata_everyday_needs = 0.25 }
+				NOT = { middle_strata_luxury_needs = 0.10 }
+			}
+		}
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { middle_strata_life_needs = 0.40 }
+				NOT = { middle_strata_everyday_needs = 0.20 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			AND = {
+				NOT = { middle_strata_life_needs = 0.30 }
+				NOT = { middle_strata_everyday_needs = 0.15 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			AND = {
+				NOT = { middle_strata_life_needs = 0.20 }
+				NOT = { middle_strata_everyday_needs = 0.10 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			AND = {
+				NOT = { middle_strata_life_needs = 0.10 }
+				NOT = { middle_strata_everyday_needs = 0.05 }
+			}
+		}
+		modifier = {
+			factor = 0.25
+			AND = {
+				NOT = { middle_strata_life_needs = 0.05 }
+				NOT = { middle_strata_everyday_needs = 0.025 }
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { middle_strata_life_needs = 0 }
+				NOT = { middle_strata_everyday_needs = 0 }
+			}
+		}
 	modifier = {
-		factor = 1.5
+		factor = 1.4
 		OR = {
 			is_primary_culture = THIS
 			is_accepted_culture = THIS
@@ -118,14 +221,56 @@ country_migration_target = {
 	}
 	
 	modifier = {
-		factor = 2.0
-		NOT = { total_pops = 10000000 }
-		has_country_flag = new_world_nation
+		factor = 1.1
+		religion = THIS
+	}
+		
+	modifier = {
+		factor = 1.1
+		neighbour = THIS
+	}
+	
+	modifier = {
+		factor = 1.25
+		is_our_vassal = THIS
+	}
+	
+	modifier = {
+		factor = 1.25
+		vassal_of = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		is_sphere_leader_of = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		in_sphere = THIS
+	}
+	
+	modifier = {
+		factor = 0.5
+		war_with = THIS
+	}
+	
+	modifier = {
+		factor = 0.85
+		is_mobilised = yes
+	}
+		
+	modifier = {
+		factor = 0.9
+		NOT = { has_country_flag = new_world_nation }
+		NOT = { year = 1900 }
 	}
 	modifier = {
-		factor = 1.7
-		total_pops = 10000000
+		factor = 1.1
+		NOT = { total_pops = 10000000 }
 		has_country_flag = new_world_nation
+		NOT = { year = 1900 }
+		
 	}
 	modifier = {
 		factor = 1.5
@@ -422,8 +567,101 @@ soldiers = {
 			modifier = {
 				factor = -100
 				soldiers = 0.05
+				NOT = { revanchism = 0.05 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.055
+				NOT = { revanchism = 0.1 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.06
+				NOT = { revanchism = 0.15 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.065
+				NOT = { revanchism = 0.2 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.07
+				NOT = { revanchism = 0.25 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.075
+				NOT = { revanchism = 0.3 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.08
+				NOT = { revanchism = 0.35 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.085
+				NOT = { revanchism = 0.4 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.09
+				NOT = { revanchism = 0.45 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.1
+				NOT = { revanchism = 0.5 }
+			}
+			modifier = {
+				factor = -100
+				soldiers = 0.11
 			}
 		}
+		
+		group = {
+            modifier = {
+                factor = 2
+                revanchism = 0.05
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.10
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.15
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.20
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.25
+            }
+			modifier = {
+                factor = 2
+                revanchism = 0.30
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.35
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.40
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.45
+            }
+            modifier = {
+                factor = 2
+                revanchism = 0.50
+            }
+        }
 	}
 	clergymen =
 	{

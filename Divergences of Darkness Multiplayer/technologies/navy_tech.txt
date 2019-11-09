@@ -781,7 +781,7 @@ steamers = {
 }
 iron_steamers = {
 	area = ship_construction
-	year = 1855
+	year = 1860
 	cost = 10800
 	unciv_military = yes
 	navy_base = { maximum_speed = 2 }
@@ -1415,7 +1415,7 @@ fire_control_systems = {
 
 weapon_platforms = {
 	area = naval_engineering
-	year = 1850
+	year = 1855
 	cost = 10800
 	unciv_military = yes
 	navy_base = { build_time = -10 }
@@ -1511,7 +1511,7 @@ weapon_platforms = {
 }
 main_armament = {
 	area = naval_engineering
-	year = 1870
+	year = 1880
 	cost = 14400
 	unciv_military = yes
 	navy_base = { build_time = -10 }
@@ -2448,7 +2448,7 @@ naval_professionalism = {
 }
 naval_decision_making = {
 	area = naval_leadership
-	year = 1850
+	year = 1860
 	cost = 10800
 	unciv_military = yes
 	navy_base = { default_organisation = 5 }
@@ -2539,7 +2539,7 @@ naval_decision_making = {
 }
 naval_risk_management = {
 	area = naval_leadership
-	year = 1870
+	year = 1880
 	cost = 14400
 	unciv_military = yes
 	navy_base = { default_organisation = 5 }

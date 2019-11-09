@@ -81,6 +81,7 @@ political_decisions = {
 				OR = {
 					CAE = { vassal_of = THIS }
 					CAE = { substate_of = THIS }
+				}
 			}
 			OR = {
 				SGF = {
@@ -502,7 +503,7 @@ political_decisions = {
 	allow = {
 	mass_politics = 1  
 	NOT = { citizenship_policy = residency }
-	OR = { any_owned_province = { is_core = BAV } any_owned_province = { is_core = SWI } any_owned_province = { is_core = AUS } }
+	OR = { any_owned_province = { is_core = BAV } any_owned_province = { is_core = SWI } any_owned_province = { is_core = AUS } any_owned_province = { is_core = SGF } }
 	}
 	
 	effect = { 

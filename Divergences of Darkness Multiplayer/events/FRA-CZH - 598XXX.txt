@@ -495,16 +495,19 @@ country_event = {
 	desc = "DUA100.D"
 	
 	trigger = { 
-	tag = DUA 
+	tag = DUA
+	year = 1880
+	ai = yes
 	government = democracy 
 	has_country_flag = french_integration
 	NOT = { ENL = { exists = yes } }
 	NOT = { IRE = { exists = yes } }
+	NOT = { WLS = { exists = yes } }
 	NOT = { has_country_flag = Paris_congress }
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+	months = 240 
 	}
 	
 	option = { 
@@ -529,13 +532,9 @@ country_event = { ######All cultures accepted
 	
 	option = { 
 	name = "650301.A"
-	any_owned = { remove_core = FRA remove_core = ENL }
-	any_country = { any_owned = { remove_core = FRA remove_core = ENL } }
 	any_pop = { militancy = -3 }
 	add_accepted_culture = french 
-	add_accepted_culture = english 
-	add_accepted_culture = irish 
-	add_accepted_culture = provencal
+	add_accepted_culture = english
 	}
 }
 
@@ -555,15 +554,20 @@ country_event = { ###Irish and English puppets
 	ENG_291 = { remove_core = ENL }
 	any_owned = { limit = { is_core = ENL } remove_core = DUA }
 	any_owned = { limit = { is_core = IRE } remove_core = DUA }
+	any_owned = { limit = { is_core = WLS } remove_core = DUA }
 	release_vassal = ENL 
-	release_vassal = IRE 
+	release_vassal = IRE
+	release_vassal = WLS
 	diplomatic_influence = { who = ENL value = 300 }
 	diplomatic_influence = { who = IRE value = 300 }
+	diplomatic_influence = { who = WLS value = 300 }
 	ENL = { prestige = -100 }
 	IRE = { prestige = -100 }
+	WLS = { prestige = -100 }
 	any_pop = { militancy = -3 }
 	add_accepted_culture = french 
 	add_accepted_culture = provencal
+	remove_accepted_culture = welsh
 	}
 }
 
@@ -596,6 +600,9 @@ country_event = { ###Irish and English leave
 	add_accepted_culture = provencal
 	remove_accepted_culture = welsh
 	change_tag = FRA
+	primary_culture = french
+	add_accepted_culture = anglois
+	FRA_467 = { add_core = FRA }
 	relation = { who = ENG value = 200 }
 	relation = { who = IRE value = 200 }
 	}
@@ -607,15 +614,23 @@ country_event = {
 	desc = "DUA104.D"
 	
 	trigger = { 
-	tag = DUA 
-	government = democracy 
+	tag = DUA
+	year = 1870
 	has_country_flag = french_integration
-	ENL = { exists = yes }
+	NOT = { accepted_culture = french }
+	OR = {
+		ENL = { exists = yes }
+		AND = {
+			NOT = { ENG_300 = { owned_by = THIS } }
+			NOT = { ENG_296 = { owned_by = THIS } }
+		}
+	}
+			
 	NOT = { has_country_flag = Paris_congress }
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+	months = 120 
 	}
 	
 	option = { 
@@ -646,6 +661,13 @@ country_event = {
 	add_accepted_culture = provencal
 	remove_accepted_culture = welsh
 	change_tag = FRA
+	add_accepted_culture = burgundian
+	primary_culture = french
+	add_accepted_culture = anglois
+	FRA_467 = { add_core = FRA }
+	ENG_300 = { add_core = FRA }
+	ENG_296 = { add_core = FRA }
+	ENG_291 = { add_core = FRA }
 	relation = { who = ENG value = 200 }
 	relation = { who = IRE value = 200 }
 	}
@@ -660,6 +682,8 @@ country_event = {
 	
 	trigger = { 
 	tag = DUA 
+	year = 1880
+	ai = yes
 	government = democracy 
 	has_country_flag = english_integration
 	NOT = { FRA = { exists = yes } }
@@ -668,7 +692,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+	months = 240 
 	}
 	
 	option = { 
@@ -692,13 +716,9 @@ country_event = { ######All cultures accepted
 	
 	option = { 
 	name = "650311.A"
-	any_owned = { remove_core = FRA remove_core = ENL }
-	any_country = { any_owned = { remove_core = FRA remove_core = ENL } }
 	any_pop = { militancy = -3 }
 	add_accepted_culture = french 
 	add_accepted_culture = english 
-	add_accepted_culture = irish 
-	add_accepted_culture = provencal
 	}
 }
 
@@ -713,14 +733,17 @@ country_event = { ###Occitan and French puppets
 	name = "650312.A"
 	FRA_420 = { remove_core = FRA }
 	FRA_425 = { remove_core = FRA }
-	FRA_435 = { remove_core = FRA }
 	FRA_418 = { remove_core = FRA }
 	any_country = { 
 	any_owned = { 
-	limit = { is_core = OCC }
+	limit = { OR = { is_core = FRA is_core = OCC } }
 	remove_core = DUA
 		}
 	}
+	any_owned = { 
+	limit = { OR = { is_core = FRA is_core = OCC } }
+	remove_core = DUA
+		}
 	release_vassal = FRA 
 	release_vassal = OCC
 	any_owned = { 
@@ -728,7 +751,6 @@ country_event = { ###Occitan and French puppets
 	remove_core = DUA
 	secede_province = OCC
 		}
-	create_vassal = OCC
 	diplomatic_influence = { who = OCC value = 300 }
 	FRA = { prestige = -100 capital = 438 }
 	OCC = { prestige = -100 capital = 455 }
@@ -736,6 +758,8 @@ country_event = { ###Occitan and French puppets
 	any_pop = { militancy = -3 }
 	add_accepted_culture = english 
 	add_accepted_culture = irish
+	remove_accepted_culture = breton
+	remove_accepted_culture = basque
 	capital = 300 
 	}
 }
@@ -766,6 +790,11 @@ country_event = { ###France and Occitania leave
 	add_accepted_culture = irish
 	remove_accepted_culture = breton
 	change_tag = ENL
+	ENG_260 = { add_core = ENL }
+	ENG_263 = { add_core = ENL }
+	ENG_254 = { add_core = ENL }
+	primary_culture = english
+	add_accepted_culture = anglois
 	relation = { who = FRA value = 200 }
 	relation = { who = OCC value = 200 }
 	}
@@ -777,16 +806,29 @@ country_event = {
 	desc = "DUA114.D"
 	
 	trigger = { 
-	tag = DUA 
-	government = democracy 
+	tag = DUA
+	year = 1870
 	has_country_flag = english_integration
-	OCC = { exists = yes }
-	FRA = { exists = yes }
+	OR = {
+		AND = {
+			OCC = { exists = yes }
+			FRA = { exists = yes }
+		}
+		AND = {
+			NOT = { FRA_404 = { owned_by = THIS } }
+			NOT = { FRA_425 = { owned_by = THIS } }
+		}
+		AND = {
+			NOT = { FRA_458 = { owned_by = THIS } }
+			NOT = { FRA_455 = { owned_by = THIS } }
+		}
+	}
 	NOT = { has_country_flag = Paris_congress }
+	NOT = { accepted_culture = english }
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+	months = 120 
 	}
 	
 	option = { 
@@ -814,104 +856,14 @@ country_event = {
 	any_pop = { militancy = -3 }
 	add_accepted_culture = irish 
 	add_accepted_culture = english
+	add_accepted_culture = scottish
 	remove_accepted_culture = breton
 	change_tag = ENL
-	relation = { who = FRA value = 200 }
-	relation = { who = OCC value = 200 }
-	}
-}
-
-country_event = { 
-	id = 650315
-	title = "DUA114.T"
-	desc = "DUA114.D"
-	
-	trigger = { 
-	tag = DUA 
-	government = democracy 
-	has_country_flag = english_integration
-	OCC = { exists = yes }
-	NOT = { FRA = { exists = yes } } 
-	NOT = { has_country_flag = Paris_congress }
-	}
-	
-	mean_time_to_happen = { 
-	months = 1 
-	}
-	
-	option = { 
-	capital = 300
-	name = "650315.A"
-	set_country_flag = Paris_congress
-	any_country = { 
-	any_owned = { 
-	remove_core = DUA
-			}
-		}
-	any_owned = { 
-	limit = { OR = { is_core = FRA is_core = OCC } }
-	remove_core = DUA
-			}
-	release = FRA
-	any_owned = { 
-	limit = { is_core = OCC } 
-	secede_province = OCC
-			}
-	FRA = { capital = 425 add_accepted_culture = anglois }
-	OCC = { capital = 455 }
-	any_pop = { militancy = -3 }
-	add_accepted_culture = irish 
-	add_accepted_culture = english
-	remove_accepted_culture = breton
-	change_tag = ENL
-	relation = { who = FRA value = 200 }
-	relation = { who = OCC value = 200 }
-	}
-}
-
-country_event = { 
-	id = 650316
-	title = "DUA114.T"
-	desc = "DUA114.D"
-	
-	trigger = { 
-	tag = DUA 
-	government = democracy 
-	has_country_flag = french_integration
-	NOT = { OCC = { exists = yes } } 
-	FRA = { exists = yes } 
-	NOT = { has_country_flag = Paris_congress }
-	}
-	
-	mean_time_to_happen = { 
-	months = 1 
-	}
-	
-	option = { 
-	capital = 300
-	name = "650316.A"
-	set_country_flag = Paris_congress
-	any_country = { 
-	any_owned = { 
-	remove_core = DUA
-			}
-		}
-	any_owned = { 
-	limit = { OR = { is_core = FRA is_core = OCC } }
-	remove_core = DUA
-			}
-	release = FRA
-	any_owned = { 
-	limit = { is_core = OCC } 
-	secede_province = OCC
-			}
-	FRA = { capital = 425 add_accepted_culture = anglois }
-	OCC = { capital = 455 }
-	any_pop = { militancy = -3 }
-	add_accepted_culture = irish 
-	add_accepted_culture = english
-	remove_accepted_culture = breton
-	change_tag = ENL
+	primary_culture = english
+	add_accepted_culture = anglois
+	FRA_418 = { add_core = ENL }
+	FRA_458 = { add_core = ENL }
+	FRA_399 = { add_core = ENL }
 	relation = { who = FRA value = 200 }
 	relation = { who = OCC value = 200 }
 	}
@@ -923,7 +875,9 @@ country_event = {
 	desc = "DUA120.D"
 	
 	trigger = { 
-	tag = DUA 
+	tag = DUA
+	year = 1880
+	ai = yes
 	government = democracy 
 	has_country_flag = dual_integration
 	NOT = { FRA = { exists = yes } }
@@ -934,7 +888,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+	months = 240
 	}
 	
 	option = { 
@@ -957,13 +911,9 @@ country_event = { ######All cultures accepted
 	
 	option = { 
 	name = "650321.A"
-	any_owned = { remove_core = FRA remove_core = ENL }
-	any_country = { any_owned = { remove_core = FRA remove_core = ENL } }
 	any_pop = { militancy = -3 }
 	add_accepted_culture = french 
 	add_accepted_culture = english 
-	add_accepted_culture = irish 
-	add_accepted_culture = provencal
 	}
 }
 
@@ -996,6 +946,8 @@ country_event = { ######Sister Republics
 	ENL = { capital = 300 add_accepted_culture = anglois set_country_flag = Anglois_accepted }
 	IRE = { capital = 263 }
 	change_tag = FRA
+	primary_culture = french
+	add_accepted_culture = anglois
 	}
 }
 
@@ -1006,19 +958,23 @@ country_event = {
 	
 	trigger = { 
 	tag = DUA 
-	government = democracy 
+	year = 1870
 	has_country_flag = dual_integration
-	OR = { 
-	OCC = { exists = yes } 
-	ENL = { exists = yes } 
-	IRE = { exists = yes } 
+	OR = {
+		ENL = { exists = yes }
+		AND = {
+			NOT = { ENG_300 = { owned_by = THIS } }
+			NOT = { ENG_296 = { owned_by = THIS } }
+		}
 	}
 	NOT = { exists = FRA }
-	NOT = { has_country_flag = Paris_congress has_country_flag = Anglois_accepted}
+	NOT = { accepted_culture = english }
+	NOT = { accepted_culture = french }
+	NOT = { has_country_flag = Paris_congress has_country_flag = Anglois_accepted }
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+	months = 120 
 	}
 	
 	option = { 
@@ -1038,12 +994,20 @@ country_event = {
 	remove_accepted_culture = english 
 	remove_accepted_culture = irish
 	remove_accepted_culture = welsh
-	remove_accepted_culture = provencal
-	add_accepted_culture = french
 	OCC = { capital = 455 }
 	ENL = { capital = 300 add_accepted_culture = anglois }
 	IRE = { capital = 263 }
 	change_tag = FRA
+	add_accepted_culture = french
+	add_accepted_culture = burgundian
+	add_accepted_culture = provencal
+	primary_culture = french
+	add_accepted_culture = anglois
+	OCC = { all_core = { add_core = FRA } }
+	FRA_467 = { add_core = FRA }
+	ENG_300 = { add_core = FRA }
+	ENG_296 = { add_core = FRA }
+	ENG_291 = { add_core = FRA }
 	}
 }
 
@@ -1054,19 +1018,30 @@ country_event = {
 	
 	trigger = { 
 	tag = DUA 
-	government = democracy 
+	year = 1870
 	has_country_flag = dual_integration
-	OR = { 
-	OCC = { exists = yes } 
-	FRA = { exists = yes } 
-	IRE = { exists = yes } 
+	OR = {
+		AND = {
+			OCC = { exists = yes }
+			FRA = { exists = yes }
+		}
+		AND = {
+			NOT = { FRA_404 = { owned_by = THIS } }
+			NOT = { FRA_425 = { owned_by = THIS } }
+		}
+		AND = {
+			NOT = { FRA_458 = { owned_by = THIS } }
+			NOT = { FRA_455 = { owned_by = THIS } }
+		}
 	}
 	NOT = { exists = ENL }
 	NOT = { has_country_flag = Paris_congress has_country_flag = Anglois_accepted }
+	NOT = { accepted_culture = english }
+	NOT = { accepted_culture = french }
 	}
 	
 	mean_time_to_happen = { 
-	months = 1 
+	months = 120 
 	}
 	
 	option = { 
@@ -1085,14 +1060,24 @@ country_event = {
 	any_owned = { limit = { is_core = OCC } secede_province = OCC }
 	any_owned = { limit = { is_core = IRE } secede_province = IRE }
 	remove_accepted_culture = french 
-	remove_accepted_culture = irish
 	remove_accepted_culture = breton
 	remove_accepted_culture = provencal
+	remove_accepted_culture = basque
 	add_accepted_culture = english
+	add_accepted_culture = irish
+	add_accepted_culture = scottish
 	OCC = { capital = 455 }
 	FRA = { capital = 425 add_accepted_culture = anglois }
 	IRE = { capital = 263 }
 	change_tag = ENL
+	primary_culture = english
+	add_accepted_culture = anglois
+	FRA_418 = { add_core = ENL }
+	FRA_458 = { add_core = ENL }
+	FRA_399 = { add_core = ENL }
+	ENG_260 = { add_core = ENL }
+	ENG_263 = { add_core = ENL }
+	ENG_254 = { add_core = ENL }
 	}
 
 }

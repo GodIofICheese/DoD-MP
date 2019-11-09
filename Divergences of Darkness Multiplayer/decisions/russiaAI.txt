@@ -10,6 +10,7 @@ political_decisions = {
 				NOT = { war = yes }
 				NOT = { part_of_sphere = yes }
 				is_greater_power = yes
+				year = 1850
 				OR = {
 					AND = {
 						tag = MUS
@@ -95,6 +96,7 @@ political_decisions = {
 				NOT = { war = yes }
 				NOT = { part_of_sphere = yes }
 				rank = 6
+				year = 1850
 				OR = {
 					AND = {
 						tag = MUS

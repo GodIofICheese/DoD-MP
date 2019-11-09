@@ -33,8 +33,8 @@ dreadnought = {
 		#fuel = 25
 	}
 	min_port_level = 5
-	limit_per_port = -1
-	supply_consumption_score = 95
+	limit_per_port = 1
+	supply_consumption_score = 60
 	
 	supply_consumption = 1.0
 	supply_cost = {

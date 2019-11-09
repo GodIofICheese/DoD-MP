@@ -73,7 +73,7 @@ political_decisions = {
 		allow = { 
 			is_greater_power = yes 
 			war_policy = jingoism
-			social_science = yes
+			social_science = 1
 		}
 		
 		effect = {
@@ -138,19 +138,11 @@ political_decisions = {
 	
 		allow = { 
 			OR = {
-				OR = {
-					revolution_n_counterrevolution = 1
-					AND = {
-						is_greater_power = yes
-						year = 1860
-					}
+				revolution_n_counterrevolution = 1
+				AND = {
+					is_greater_power = yes
+					year = 1860
 				}
-			}
-			OR = {
-				LIT = { substate_of = PLC }
-				BLR = { substate_of = PLC }
-				UKR = { substate_of = PLC }
-				PRU = { substate_of = PLC }
 			}
 			OR = {
 				LIT = { substate_of = PLC }
@@ -221,7 +213,7 @@ political_decisions = {
 			war = no
 			OR = {
 				citizens_rights = all_voting_pops
-				vote_franchise = universal_voting
+				vote_franschise = universal_voting
 			}
 			nationalism_n_imperialism = 1
 			owns = 354
@@ -491,7 +483,7 @@ political_decisions = {
 	meddle_with_cossacks = { 
 		picture = meddle_cossacks
 		potential = { 
-		OR = { tag = RUS }
+		tag = RUS
 		is_greater_power = yes 
 		UKR = { substate_of = PLC }
 		963 = { owned_by = UKR }

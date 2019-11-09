@@ -66,7 +66,7 @@ good_health_care_fully_funded = {
 			}
 		}
 	}
-	global_population_growth = 0.001
+	global_population_growth = 0.002
 	icon = 19
 }
 
@@ -133,7 +133,7 @@ good_health_care_fully_funded_social = {
 			}
 		}
 	}
-	global_population_growth = 0.001
+	global_population_growth = 0.002
 	icon = 19
 }
 
@@ -270,7 +270,7 @@ tiny_nation  = {
 	global_population_growth = 0.004
 	mobilisation_economy_impact = -0.50
 	supply_consumption = -0.50
-	mobilisation_size = 0.04
+	mobilisation_size = 0.03
 	tax_efficiency = 0.25 #25% boost
 	icon = 6
 }
@@ -283,7 +283,7 @@ small_nation  = {
 	global_population_growth = 0.003
 	mobilisation_economy_impact = -0.25
 	supply_consumption = -0.25
-	mobilisation_size = 0.03
+	mobilisation_size = 0.02
 	tax_efficiency = 0.20 #20% boost
 	icon = 9
 }
@@ -315,7 +315,7 @@ average_nation  = {
 	icon = 9
 }
 
-large_nation  = {
+large_nation = {
 	trigger = {
 		civilized = yes
 		total_pops = 12500000 #12.5 million POPs/50 million population
@@ -327,10 +327,11 @@ large_nation  = {
 	tax_efficiency = -0.05 #5% malus
 	max_tariff = -0.05 #5% was 15%
 	mobilisation_economy_impact = 0.1
+	global_immigrant_attract = -0.05
 	icon = 9
 }
 
-empire  = {
+empire = {
 	trigger = {
 		civilized = yes
 		total_pops = 21250000 #21.25 million POPs/85 million population
@@ -343,10 +344,11 @@ empire  = {
 	max_tariff = -0.10 #10% was 20%
 	factory_owner_cost = -0.10 #10% decrease in cost for buildings
 	mobilisation_economy_impact = 0.2
+	global_immigrant_attract = -0.1
 	icon = 9
 }
 
-medium_empire  = {
+medium_empire = {
 	trigger = {
 		civilized = yes
 		total_pops = 37500000 #37.5 million POPs/150 million population
@@ -360,10 +362,11 @@ medium_empire  = {
 	research_points_modifier = 0.1 #10% increase
 	factory_owner_cost = -0.10 #10% decrease in cost for buildings
 	mobilisation_economy_impact = 0.4
+	global_immigrant_attract = -0.2
 	icon = 9
 }
 
-large_empire  = {
+large_empire = {
 	trigger = {
 		civilized = yes
 		total_pops = 62500000 #62.5 million POPs/250 million population
@@ -377,6 +380,7 @@ large_empire  = {
 	research_points_modifier = 0.13 #13% increase
 	factory_owner_cost = -0.15 #15% decrease in cost for buildings
 	mobilisation_economy_impact = 0.6
+	global_immigrant_attract = -0.3
 	icon = 9
 }
 
@@ -394,6 +398,7 @@ insane_empire = {
 	max_tariff = -0.25 #25% malus
 	factory_owner_cost = -0.15 #15% decrease in cost for buildings
 	mobilisation_economy_impact = 1.0
+	global_immigrant_attract = -0.4
 	icon = 9
 }
 
@@ -410,6 +415,7 @@ insane_empire2 = {
 	max_tariff = -0.60 #60% malus
 	factory_owner_cost = -0.20 #20% decrease in cost for buildings
 	mobilisation_economy_impact = 1.0
+	global_immigrant_attract = -0.5
 	icon = 9
 }
 
@@ -635,7 +641,7 @@ social_reformed_nation = {
 			penal_system = rehabilitation
 		}
 		
-	social_reform_desire = -0.3
+	social_reform_desire = -0.4
 	icon = 13
 }
 
@@ -885,6 +891,51 @@ help_ai = {
 	tax_efficiency = 0.05
 	administrative_efficiency_modifier = 0.03
 	supply_consumption = -0.15
+	loan_interest = -0.03
+	education_efficiency_modifier = 0.25
+}
+
+fairer_taxation3 = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 50000000
+	}
+	max_tax = 0.10
+	icon = 9
+}
+
+fairer_taxation2 = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 40000000
+		NOT = { money = 50000000 }
+	}
+	max_tax = 0.20
+	icon = 9
+}
+
+fairer_taxation1 = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 30000000
+		NOT = { money = 40000000 }
+	}
+	max_tax = 0.30
+	icon = 9
+}
+
+fairer_taxation = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 20000000
+		NOT = { money = 30000000 }
+	}
+	max_tax = 0.40
+	icon = 9
 }
 
 chinese_economic_compensation = {
@@ -896,4 +947,47 @@ chinese_economic_compensation = {
 	icon = 10
 	farm_rgo_eff = 1
 	mine_rgo_eff = 1
+}
+
+well_drilled = {
+	trigger = {
+		officers = 0.075
+	}
+	icon = 17
+	land_organisation = 0.15
+	org_regain = 0.1
+	min_military_spending = 0.2
+}
+
+
+drilled = {
+	trigger = {
+		not = { officers = 0.075 }
+		officers = 0.005
+	}
+	icon = 17
+	land_organisation = 0.075
+	org_regain = 0.05
+	min_military_spending = 0.1
+}
+
+poorly_drilled = {
+	trigger = {
+		not = { officers = 0.005 }
+		officers = 0.0025
+	}
+	icon = 18
+	land_organisation = -0.075
+	org_regain = -0.05
+	min_military_spending = -0.1
+}
+
+undisciplined_mob = {
+	trigger = {
+		not = { officers = 0.0025 }
+	}
+	icon = 18
+	land_organisation = -0.15
+	org_regain = -0.1
+	min_military_spending = -0.2
 }

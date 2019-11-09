@@ -55,7 +55,7 @@ romanticism = {
 
 realism = {
 	area = aesthetics
-	year = 1836
+	year = 1840
 	cost = 10800
 
 	prestige = 0.075
@@ -323,7 +323,7 @@ empiricism = {
 }
 analytic_philosophy = {
 	area = philosophy
-	year = 1870
+	year = 1880
 	cost = 14400
 
 	increase_research = 0.5
@@ -776,6 +776,7 @@ enlightenment_thought = {
 	cost = 3600
 
 	max_national_focus = 1
+	activate_building = province_selector
 	
 	ai_chance = {
 		factor = 11
@@ -794,7 +795,7 @@ ideological_thought = {
 	area = political_thought
 	year = 1836
 	cost = 7200
-
+	
 	max_national_focus = 1 
 		
 	ai_chance = {
@@ -1133,7 +1134,7 @@ introspectionism = {
 }
 associationism = {
 	area = psychology
-	year = 1836
+	year = 1840
 	cost = 7200
 
 	regular_experience_level = 5
@@ -1165,7 +1166,7 @@ associationism = {
 }
 phenomenalism = {
 	area = psychology
-	year = 1836
+	year = 1860
 	cost = 10800
 
 	regular_experience_level = 5
@@ -1197,7 +1198,7 @@ phenomenalism = {
 }
 experimental_psychology = {
 	area = psychology
-	year = 1850
+	year = 1875
 	cost = 14400
 
 	regular_experience_level = 5
@@ -1229,7 +1230,7 @@ experimental_psychology = {
 }
 psychoanalysis = {
 	area = psychology
-	year = 1870
+	year = 1890
 	cost = 18000
 
 	regular_experience_level = 5

@@ -124,7 +124,7 @@ political_decisions = {
 				limit = {
 					has_pop_culture = albanian
 				}
-				miltancy = 2
+				militancy = 2
 				consciousness = 2
 			}
 			any_pop = {
@@ -188,13 +188,15 @@ political_decisions = {
 			NOT = {
 				has_country_flag = macedonia_is_reclaimed
 			}
+			NOT = { capital = 876 }
 		}	
 		allow = {
 			NOT = { exists = MAC }
-			NOT = { exists = GRE }
+			NOT = { exists = SER }
+			NOT = { exists = BUL }
 			is_greater_power = yes
 			NOT = { war = yes }
-			GRE = {
+			SER = {
 				all_core = {
 						owned_by = THIS	
 				}
@@ -218,7 +220,7 @@ political_decisions = {
 			set_country_flag = macedonia_is_reclaimed
 			any_owned = {
 				limit = {
-					is_core = GRE
+					is_core = SER
 				}
 				add_core = TUR
 			}
@@ -246,9 +248,8 @@ political_decisions = {
 			has_country_flag = kurdistanTURloss
 			has_country_flag = macedonia_is_reclaimed
 			tag = TUR
-			NOT = {
-				has_country_flag = kurdistan_is_reclaimed
-		}	
+			NOT = { has_country_flag = kurdistan_is_reclaimed }
+		}
 		allow = {
 			NOT = { exists = IRQ }
 			NOT = { exists = KUR }
@@ -507,19 +508,26 @@ political_decisions = {
 			tag = TUR
 			NOT = { capital = 876 }
 			owns = 876
+			NOT = { has_country_flag = tanzimat_reforms_enacted_1 }
 		}
 
 		allow = {
 			OR = {
-				NOT = { owns = 817 }
-				NOT = { owns = 816 }
-				NOT = { owns = 830 }
-				has_country_flag = ottomans_to_turks
+				AND = {
+					NOT = { owns = 798 }
+					OR = {
+						NOT = { owns = 830 }
+						NOT = { owns = 817 }
+						NOT = { owns = 859 }
+					}
+				}
+				NOT = { owns = 860 }
 			}
 		}
 
 		effect = {
 			capital = 876
+			add_accepted_culture = mashriqi
 		any_country = { 
 		any_owned = { 
 				limit = {
@@ -544,6 +552,15 @@ political_decisions = {
 				}
 				remove_core = TUR
 			}
+		TUR_859 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_860 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_869 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_863 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_873 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_876 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_881 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_884 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_889 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
 		}
 
 		ai_will_do = {

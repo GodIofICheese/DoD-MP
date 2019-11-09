@@ -163,7 +163,7 @@ political_decisions = {
 						owned_by = THIS
 			}
       }
-			social_thought = 1
+			social_alienation = 1
 		}
 		effect = {
 				random_country = {
@@ -193,7 +193,7 @@ political_decisions = {
 						owned_by = THIS
 			}
       }
-			social_thought = 1
+			social_alienation = 1
 		}
 		effect = {
 				random_country = {
@@ -223,7 +223,7 @@ political_decisions = {
 						owned_by = THIS
 			}
       }
-			social_thought = 1
+			social_alienation = 1
 		}
 		effect = {
 				random_country = {
@@ -241,7 +241,7 @@ political_decisions = {
   } 
   
   erase_lusitania = { # Lusitania, bonus treatment for PLA 
-    picture = "lusitania"
+    picture = Destiny_PLA
 		potential = {
 			tag = ARC
       has_country_flag = pla_manifest_destiny
@@ -255,7 +255,7 @@ political_decisions = {
 						owned_by = THIS
 			}
       }
-			social_thought = 1
+			social_alienation = 1
 		}
 		effect = {
 				random_country = {
@@ -283,13 +283,13 @@ political_decisions = {
 		}
 		allow = {
 			is_greater_power = yes
-			political_thought = 1  
+			revolution_n_counterrevolution = 1  
       war = no  
 		}
 		effect = {
 				prestige = 30			
 				set_country_flag = panarcadianism 
-        nationalvalue = nv_prosperity
+        nationalvalue = nv_liberty
 		any_pop = {
 			limit = {
 				is_accepted_culture = yes
@@ -356,7 +356,7 @@ political_decisions = {
 		}
 		allow = {
 			is_greater_power = yes
-			political_thought = 1
+			revolution_n_counterrevolution = 1
       war = no 
       money = 50000     
       ARC = {

@@ -6,6 +6,7 @@ political_decisions = {
 			civilized = yes
 			NOT = { has_country_modifier = tour }
 			NOT = {	has_country_modifier = national_instability }
+			ai = no
 			OR = {
 				government = absolute_monarchy
 				government = prussian_constitutionalism
@@ -69,6 +70,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			assembly_line = 1
+			ai = no
 			NOT = {
 				has_country_modifier = address
 			}
@@ -98,6 +100,7 @@ political_decisions = {
 		alert = yes
 		potential = {
 			civilized = no
+			ai = no
 			NOT = {
 				has_country_modifier = futile
 			}
@@ -131,6 +134,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = no
+			ai = no
 			year = 1840
 			classicism_n_early_romanticism = 1
 			NOT = {
@@ -162,6 +166,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = no
+			ai = no
 			romanticism = 1
 			year = 1840
 			NOT = {
@@ -192,6 +197,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = no
+			ai = no
 			realism = 1
 			year = 1840
 			NOT = {
@@ -223,6 +229,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = no
+			ai = no
 			year = 1840
 			impressionism = 1
 			NOT = {
@@ -254,6 +261,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = no
+			ai = no
 			expressionism = 1
 			year = 1840
 			NOT = {
@@ -285,6 +293,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = no
+			ai = no
 			mass_culture_n_the_avant_garde = 1
 			NOT = {
 				has_country_modifier = exhibition
@@ -311,6 +320,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = yes
+			ai = no
 			year = 1840
 			classicism_n_early_romanticism = 1
 			NOT = {
@@ -342,6 +352,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = yes
+			ai = no
 			romanticism = 1
 			year = 1840
 			NOT = {
@@ -372,6 +383,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = yes
+			ai = no
 			realism = 1
 			year = 1840
 			NOT = {
@@ -403,6 +415,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = yes
+			ai = no
 			impressionism = 1
 			year = 1840
 			NOT = {
@@ -434,6 +447,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = yes
+			ai = no
 			expressionism = 1
 			NOT = {
 				mass_culture_n_the_avant_garde = 1
@@ -464,6 +478,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_greater_power = yes
+			ai = no
 			mass_culture_n_the_avant_garde = 1
 			NOT = {
 				has_country_modifier = exhibition
@@ -504,6 +519,10 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = new_world_nation }
+			}
 		}
 	}
 	
@@ -559,6 +578,7 @@ political_decisions = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+			ai = no
 			year = 1840
 			late_enlightenment_philosophy = 1
 			NOT = {
@@ -593,6 +613,7 @@ political_decisions = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+			ai = no
 			idealism = 1
 			year = 1840
 			NOT = {
@@ -626,6 +647,7 @@ political_decisions = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+			ai = no
 			empiricism = 1
 			year = 1840
 			NOT = {
@@ -660,6 +682,7 @@ political_decisions = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+			ai = no
 			year = 1840
 			analytic_philosophy = 1
 			NOT = {
@@ -694,6 +717,7 @@ political_decisions = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+			ai = no
 			phenomenology_n_hermeneutic = 1
 			NOT = {
 				anti__rationalism = 1
@@ -727,6 +751,7 @@ political_decisions = {
 				is_greater_power = yes
 				is_secondary_power = yes
 			}
+			ai = no
 			anti__rationalism  = 1
 			NOT = {
 				has_country_modifier = conference
@@ -753,6 +778,7 @@ political_decisions = {
 		potential = {
 			civilized = yes
 			is_secondary_power = yes
+			ai = no
 			NOT = {
 				has_country_modifier = parade
 			}
@@ -800,6 +826,10 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = new_world_nation }
+			}
 		}
 	}	
 	
@@ -822,6 +852,10 @@ political_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { has_country_flag = new_world_nation }
+			}
 		}
 	}
 	
@@ -986,120 +1020,6 @@ political_decisions = {
 		}
 	}
 	
-	leave_soi = {
-		alert = no
-		picture = sign_the_geneva_convention
-		potential = {
-			part_of_sphere = yes
-			NOT = { is_vassal = yes }			
-		}
-		
-		allow = {
-			is_secondary_power = yes
-			sphere_owner = {
-				NOT = {
-					relation = { who = THIS value = -100 }
-					truce_with = THIS
-				}
-			}
-		}
-		effect = {
-			sphere_owner = {
-				country_event = 13202
-			}
-		}
-		
-		ai_will_do = {
-			factor = 1
-			
-			# Ai will do, if sphere owner has LESS than thrice our brigades.
-			modifier = {
-				factor = 0
-				sphere_owner = {
-						# Factor = (sphere_owner regiments) / (our regiments).
-						# Returns true if( factor >= x ).
-						# Use NOT statement to check if( factor < x )
-						brigades_compare = 3
-				}
-			}
-		}
-	}
-
-	remove_leader = {
-		alert = no
-		picture = national_value
-		potential = {
-			OR = {
-				has_country_modifier = expert_diplomat
-				has_country_modifier = successful_industrialist
-				has_country_modifier = ivory_tower_intellectual
-				has_country_modifier = man_of_the_people
-				has_country_modifier = landed_gentleman
-				has_country_modifier = military_man
-				has_country_modifier = lord_admiral
-				has_country_modifier = raving_loon
-				has_country_modifier = luddite
-				has_country_modifier = great_statesman
-				has_country_modifier = backroom_boy
-				has_country_modifier = great_reformer
-				has_country_modifier = gauche_buffoon
-				has_country_modifier = administrative_genius
-				has_country_modifier = visionary_thinker
-				has_country_modifier = competent_placeholder
-				has_country_modifier = imperious_autocrat
-				has_country_modifier = prince_of_terror
-				has_country_modifier = efficient_sociopath
-				has_country_modifier = pig_headed_isolationist
-				has_country_modifier = ambitious_union_boss
-				has_country_modifier = dour_economist
-			}		
-			OR = { 
-				government = absolute_monarchy
-				government = prussian_constitutionalism
-			}	
-			NOT = { has_country_modifier = national_confusion }
-		}
-		allow = {
-			war = no
-		}
-		effect = {
-			remove_country_modifier = expert_diplomat
-			remove_country_modifier = successful_industrialist
-			remove_country_modifier = ivory_tower_intellectual
-			remove_country_modifier = man_of_the_people
-			remove_country_modifier = landed_gentleman
-			remove_country_modifier = military_man
-			remove_country_modifier = lord_admiral
-			remove_country_modifier = raving_loon
-			remove_country_modifier = luddite
-			remove_country_modifier = great_statesman
-			remove_country_modifier = backroom_boy
-			remove_country_modifier = great_reformer
-			remove_country_modifier = gauche_buffoon
-			remove_country_modifier = administrative_genius
-			remove_country_modifier = visionary_thinker
-			remove_country_modifier = competent_placeholder
-			remove_country_modifier = imperious_autocrat
-			remove_country_modifier = prince_of_terror
-			remove_country_modifier = efficient_sociopath
-			remove_country_modifier = pig_headed_isolationist
-			remove_country_modifier = ambitious_union_boss
-			remove_country_modifier = dour_economist
-			add_country_modifier = {
-				name = national_confusion
-				duration = 365
-			}
-		}
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { militancy = 6 }
-			}
-		}
-	}
-	
 	land_of_opportunity = {
 		picture = liberty_enlightening_the_world
 		potential = {
@@ -1151,7 +1071,8 @@ political_decisions = {
 	secret_police = {
 		alert = yes
 		potential = {	
-			NOT = { has_country_modifier = secret_police }		 	
+			NOT = { has_country_modifier = secret_police }
+			ai = no
 			OR = {
 				government = proletarian_dictatorship
 				government = presidential_dictatorship

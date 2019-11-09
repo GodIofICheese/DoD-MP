@@ -124,9 +124,12 @@ political_decisions = {
 			add_accepted_culture = croat
 			random_owned = {
 				limit = {
-					owner = { minorities_reform = primary_culture_only }
+					OR = { 
+						owner = { citizens_rights = primary_culture_only }
+						owner = { citizens_rights = culture_voting_only }
+					}
 				}
-				owner = { political_reform = culture_voting_only }
+				owner = { citizens_rights = all_voting_pops }
 			}
 			any_pop = {
 				limit = {

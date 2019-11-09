@@ -155,15 +155,15 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			owner = average_consciousness = 8.0
+			owner = { average_consciousness = 8.0 }
 		}
 		modifier = {
 			factor = 0.9
-			owner = average_consciousness = 9.0
+			owner = { average_consciousness = 9.0 }
 		}
 		modifier = {
 			factor = 0.9
-			owner = average_consciousness = 10.0
+			owner = { average_consciousness = 10.0 }
 		}
 	}
 

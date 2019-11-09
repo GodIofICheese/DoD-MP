@@ -1282,35 +1282,12 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 					trade_goods = iron
 					trade_goods = sulphur
 					trade_goods = precious_metal
 					trade_goods = precious_goods
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 			}
@@ -1332,35 +1309,12 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 					trade_goods = coal
 					trade_goods = sulphur
 					trade_goods = precious_metal
 					trade_goods = precious_goods
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 			}
@@ -1382,35 +1336,12 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 					trade_goods = coal
 					trade_goods = iron
 					trade_goods = precious_metal
 					trade_goods = precious_goods
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 			}
@@ -1456,6 +1387,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 					trade_goods = timber
 					trade_goods = cotton
@@ -1463,30 +1395,6 @@ country_event = {
 					trade_goods = fish
 					trade_goods = fruit
 					trade_goods = grain
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 				NOT = {
@@ -1500,7 +1408,6 @@ country_event = {
 					terrain = new_world_boreal
 					terrain = new_world_montane_tundra
 					terrain = new_world_arctic
-					terrain = new_world_jungle
 					terrain = new_world_desert
 				}
 			}
@@ -1522,6 +1429,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 				    trade_goods = wool
 					trade_goods = cotton
@@ -1530,34 +1438,9 @@ country_event = {
 					trade_goods = fruit
 					trade_goods = grain
 				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
-				}
 				is_colonial = no
 				OR = {
 					terrain = forest
-					terrain = woods
 					terrain = jungle
 					terrain = new_world_jungle
 					terrain = montane_forest
@@ -1582,6 +1465,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1589,30 +1473,6 @@ country_event = {
 					trade_goods = fish
 					trade_goods = fruit
 					trade_goods = grain
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 				NOT = {
@@ -1629,7 +1489,6 @@ country_event = {
 					terrain = new_world_boreal
 					terrain = new_world_montane_tundra
 					terrain = new_world_arctic
-					terrain = new_world_jungle
 					terrain = new_world_mountain
 					terrain = new_world_desert
 				}
@@ -1652,6 +1511,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1659,30 +1519,6 @@ country_event = {
 					trade_goods = fish
 					trade_goods = fruit
 					trade_goods = grain
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 				NOT = {
@@ -1699,7 +1535,6 @@ country_event = {
 					terrain = new_world_boreal
 					terrain = new_world_montane_tundra
 					terrain = new_world_arctic
-					terrain = new_world_jungle
 					terrain = new_world_mountain
 					terrain = new_world_desert
 				}
@@ -1722,6 +1557,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1729,30 +1565,6 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fruit
 					trade_goods = grain
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 				is_coastal = yes
@@ -1775,6 +1587,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1782,30 +1595,6 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fish
 					trade_goods = grain
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 				NOT = {
@@ -1826,7 +1615,6 @@ country_event = {
 					terrain = new_world_boreal
 					terrain = new_world_montane_tundra
 					terrain = new_world_arctic
-					terrain = new_world_jungle
 					terrain = new_world_mountain
 					terrain = new_world_desert
 					terrain = new_world_semidesert
@@ -1850,6 +1638,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
+				has_province_modifier = province_selected
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1857,30 +1646,6 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fish
 					trade_goods = fruit
-				}
-				OR = {
-					AND = {
-						total_pops = 10000
-						NOT = { total_pops = 1000000 }
-						NOT = { year = 1861 }
-					}
-					AND = {
-						total_pops = 20000
-						NOT = { total_pops = 1000000 }
-						year = 1861
-						NOT = { year = 1886 }
-					}
-					AND = {
-						total_pops = 30000
-						NOT = { total_pops = 1000000 }
-						year = 1886
-						NOT = { year = 1911 }
-					}
-					AND = {
-						total_pops = 40000
-						NOT = { total_pops = 1000000 }
-						year = 1911
-					}
 				}
 				is_colonial = no
 				NOT = {
@@ -1899,7 +1664,6 @@ country_event = {
 					terrain = new_world_boreal
 					terrain = new_world_montane_tundra
 					terrain = new_world_arctic
-					terrain = new_world_jungle
 					terrain = new_world_mountain
 					terrain = new_world_desert
 				}

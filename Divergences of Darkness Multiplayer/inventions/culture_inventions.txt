@@ -527,7 +527,7 @@ i_analytic_philosophy = {
 		}
 	}
 	effect = {
-		shared_prestige = 15 
+		shared_prestige = 10 
 	}
 }
 modern_logics = {
@@ -545,7 +545,7 @@ modern_logics = {
 		}
 	}
 	effect = {
-		shared_prestige = 15 
+		shared_prestige = 10 
 	}
 }
 logical_positivism = {
@@ -563,7 +563,7 @@ logical_positivism = {
 		}
 	}
 	effect = {
-		shared_prestige = 15 
+		shared_prestige = 10 
 	}
 }
 philosophy_of_language = {
@@ -581,7 +581,7 @@ philosophy_of_language = {
 		}
 	}
 	effect = {
-		shared_prestige = 15
+		shared_prestige = 10
 	}
 }
 #phenomenology_n_hermeneutic
@@ -637,7 +637,7 @@ existentialism = {
 		}
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 20 
 	}
 }
 nihilism_and_the_will = {
@@ -655,7 +655,7 @@ nihilism_and_the_will = {
 		}
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 20 
 	}
 }
 futurism = {
@@ -673,7 +673,7 @@ futurism = {
 		}
 	}
 	effect = {
-		shared_prestige = 25 
+		shared_prestige = 20 
 	}
 }
 quantum_theory = {
@@ -691,7 +691,7 @@ quantum_theory = {
 		}
 	}
 	effect = {
-		shared_prestige = 25
+		shared_prestige = 20
 	}
 }
 #biologism
@@ -714,7 +714,7 @@ darwinism = {
 		}
 	}
 	effect = {
-		education_efficiency = 0.50
+		education_efficiency = 0.25
 	}
 }
 social_darwinism = {

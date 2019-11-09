@@ -267,7 +267,7 @@
 	
 	farmers = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 175
 	}
 

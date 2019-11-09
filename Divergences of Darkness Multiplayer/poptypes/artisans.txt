@@ -57,66 +57,145 @@ country_migration_target = {
 		border_policy = quota_immigration
 		THIS = { NOT = { literacy = 0.6 } }
 	}
-
-	modifier = {
-		factor = 0.9
-		unemployment = 0.05
-	}
-	modifier = {
-		factor = 0.8
-		unemployment = 0.1
-	}
-	modifier = {
-		factor = 0.7
-		unemployment = 0.15
-	}
-	modifier = {
-		factor = 0.6
-		unemployment = 0.2
-	}
-	modifier = {
-		factor = 0.5
-		unemployment = 0.25
-	}
-	modifier = {
-		factor = 0.4
-		unemployment = 0.3
-	}
-	modifier = {
-		factor = 0.3
-		unemployment = 0.35
-	}
-	modifier = {
-		factor = 0.2
-		unemployment = 0.4
-	}
-	modifier = {
-		factor = 0.1
-		unemployment = 0.45
-	}
-	modifier = {
-		factor = -1
-		unemployment = 0.5
-	}
-	modifier = {
-		factor = -2
-		unemployment = 0.6
-	}
-	modifier = {
-		factor = -3
-		unemployment = 0.7
-	}
-	modifier = {
-		factor = -4
-		unemployment = 0.8
-	}
-	modifier = {
-		factor = 0.5
-		NOT = { middle_strata_life_needs = 0.90 }
-	}		
 	
 	modifier = {
-		factor = 1.5
+			factor = 0.95
+			unemployment = 0.05
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.1
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.15
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.2
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.25
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.3
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.35
+		}
+		modifier = {
+			factor = 0.9
+			unemployment = 0.4
+		}
+		modifier = {
+			factor = 0.9
+			unemployment = 0.45
+		}
+		modifier = {
+			factor = 0.9
+			unemployment = 0.5
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.6
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.7
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.8
+		}
+	
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { middle_strata_life_needs = 0.90 }
+				NOT = { middle_strata_everyday_needs = 0.45 }
+				NOT = { middle_strata_luxury_needs = 0.2 }
+			}
+		}
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { middle_strata_life_needs = 0.80 }
+				NOT = { middle_strata_everyday_needs = 0.40 }
+				NOT = { middle_strata_luxury_needs = 0.175 }
+			}
+		}
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { middle_strata_life_needs = 0.70 }
+				NOT = { middle_strata_everyday_needs = 0.35 }
+				NOT = { middle_strata_luxury_needs = 0.15 }
+			}
+		}		
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { middle_strata_life_needs = 0.60 }
+				NOT = { middle_strata_everyday_needs = 0.30 }
+				NOT = { middle_strata_luxury_needs = 0.125 }
+			}
+		}		
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { middle_strata_life_needs = 0.50 }
+				NOT = { middle_strata_everyday_needs = 0.25 }
+				NOT = { middle_strata_luxury_needs = 0.10 }
+			}
+		}
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { middle_strata_life_needs = 0.40 }
+				NOT = { middle_strata_everyday_needs = 0.20 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			AND = {
+				NOT = { middle_strata_life_needs = 0.30 }
+				NOT = { middle_strata_everyday_needs = 0.15 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			AND = {
+				NOT = { middle_strata_life_needs = 0.20 }
+				NOT = { middle_strata_everyday_needs = 0.10 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			AND = {
+				NOT = { middle_strata_life_needs = 0.10 }
+				NOT = { middle_strata_everyday_needs = 0.05 }
+			}
+		}
+		modifier = {
+			factor = 0.25
+			AND = {
+				NOT = { middle_strata_life_needs = 0.05 }
+				NOT = { middle_strata_everyday_needs = 0.025 }
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { middle_strata_life_needs = 0 }
+				NOT = { middle_strata_everyday_needs = 0 }
+			}
+		}
+		
+	modifier = {
+		factor = 1.4
 		OR = {
 			is_primary_culture = THIS
 			is_accepted_culture = THIS
@@ -125,18 +204,59 @@ country_migration_target = {
 	}
 	
 	modifier = {
-		factor = 2.0
+		factor = 1.1
+		religion = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		neighbour = THIS
+	}
+	
+	modifier = {
+		factor = 1.25
+		is_our_vassal = THIS
+	}
+	
+	modifier = {
+		factor = 1.25
+		vassal_of = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		is_sphere_leader_of = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		in_sphere = THIS
+	}
+	
+	modifier = {
+		factor = 0.5
+		war_with = THIS
+	}
+	
+	modifier = {
+		factor = 0.85
+		is_mobilised = yes
+	}
+	
+	modifier = {
+		factor = 0.9
+		NOT = { has_country_flag = new_world_nation }
+		NOT = { year = 1900 }
+	}
+	modifier = {
+		factor = 1.1
 		NOT = { total_pops = 10000000 }
 		has_country_flag = new_world_nation
-	}
-	modifier = {
-		factor = 1.7
-		total_pops = 10000000
-		has_country_flag = new_world_nation
-	}
+		NOT = { year = 1900 }
+		
+	}	
 	modifier = {
 		factor = 1.5
-		year = 1900
 		NOT = { total_num_of_ports = 1 }
 		neighbour = THIS
 	}	

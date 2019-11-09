@@ -140,6 +140,12 @@ country_event = {
 		TUR_853 = {
 			remove_core = THIS
 		}
+		TUR_803 = {
+			remove_core = THIS
+		}
+		SER_794 = {
+			remove_core = THIS
+		}
 
 		any_pop = { 
 			militancy = 1 
@@ -328,7 +334,7 @@ country_event = {
 		NOT = { MAC = { owns = 823 } }
 		NOT = { has_country_flag = macedoniaTUR }
 		NOT = { has_global_flag = fartheewell }
-		NOT = { year = 1870 }
+		NOT = { year = 1840 }
 	}
 	
 	mean_time_to_happen = {
@@ -403,7 +409,7 @@ country_event = {
 		MAC = { owns = 823 }
 		NOT = { has_country_flag = macedoniaTUR }
 		NOT = { has_global_flag = fartheewell }
-		NOT = { year = 1870 }
+		NOT = { year = 1840 }
 	}
 	
 	mean_time_to_happen = {
@@ -773,7 +779,7 @@ country_event = {
 		NOT = { EGY = { owns = 1755 } }
 		NOT = { has_country_flag = egyptTUR }
 		NOT = { has_global_flag = fartheewell }
-		NOT = { year = 1870 }
+		NOT = { year = 1840 }
 	}
 	
 	mean_time_to_happen = {
@@ -843,7 +849,7 @@ country_event = {
 		EGY = { owns = 1755 }
 		NOT = { has_country_flag = egyptTUR }
 		NOT = { has_global_flag = fartheewell }
-		NOT = { year = 1870 }
+		NOT = { year = 1840 }
 	}
 	
 	mean_time_to_happen = {
@@ -1281,11 +1287,20 @@ country_event = {
 		NOT = { has_country_flag = tanzimat_reforms_enacted_2 }
 		NOT = { year = 1880 }
 		war = no
-		TUR_860 = { controlled_by = REB }
-		TUR_869 = { controlled_by = REB }
-		TUR_881 = { controlled_by = REB }
-		TUR_873 = { controlled_by = REB }
-		TUR_876 = { controlled_by = REB }
+		OR = {
+			AND = {
+				TUR_860 = { controlled_by = REB }
+				TUR_869 = { controlled_by = REB }
+				TUR_881 = { controlled_by = REB }
+				TUR_873 = { controlled_by = REB }
+				TUR_876 = { controlled_by = REB }
+				TUR_859 = { controlled_by = REB }
+				TUR_863 = { controlled_by = REB }
+				TUR_884 = { controlled_by = REB }
+				TUR_889 = { controlled_by = REB }
+			}
+			capital_scope = { controlled_by = REB }
+		}
 		NOT = { has_global_flag = fartheewell }
 	}
 	

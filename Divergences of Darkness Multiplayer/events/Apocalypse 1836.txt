@@ -144,21 +144,6 @@ country_event = {
 				duration = -1
 			}
 		}
-		random_province = {
-			limit = {
-				is_capital = no
-				is_colonial = yes
-			}
-			any_pop = {
-				reduce_pop = 0.95
-				consciousness = -3
-				militancy = 10
-			}
-			add_province_modifier = {
-				name = zombie_outbreak
-				duration = -1
-			}
-		}
 		any_country = {
 			limit = {
 				ai = no
@@ -187,13 +172,14 @@ country_event = {
 					port = yes
 					has_province_modifier = zombie_outbreak
 					continent = europe
+					NOT = { units_in_province = 9 }
 					}
 				}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 4
+		months = 6
 	}
 
 	option = {
@@ -239,13 +225,14 @@ country_event = {
 					port = yes
 					has_province_modifier = zombie_outbreak
 					continent = africa
+					NOT = { units_in_province = 9 }
 					}
 				}	
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 4
+		months = 6
 	}
 
 	option = {
@@ -290,6 +277,7 @@ country_event = {
 					is_blockaded = no
 					port = yes
 					has_province_modifier = zombie_outbreak
+					NOT = { units_in_province = 9 }
 					}
 					OR = {
 					continent = north_america
@@ -300,7 +288,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 4
+		months = 6
 	}
 
 	option = {
@@ -353,13 +341,14 @@ country_event = {
 					continent = australia_new_zealand
 					continent = polynesia
 					}
+					NOT = { units_in_province = 9 }
 					}
 				}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 4
+		months = 6
 	}
 
 	option = {
@@ -409,13 +398,14 @@ country_event = {
 					port = yes
 					has_province_modifier = zombie_outbreak
 					continent = oceania
+					NOT = { units_in_province = 9 }
 					}
 				}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 4
+		months = 6
 	}
 
 	option = {
@@ -424,6 +414,120 @@ country_event = {
 			limit = {
 				AND = { 
 					continent = oceania
+					port = yes
+					has_recent_imigration = 30
+					NOT = { units_in_province = 9 }
+					NOT = { has_province_modifier = zombie_outbreak }
+				}
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Port Infection Europe --> Americas
+country_event = {
+	id = 999908
+	title = "OUTBREAK_SPREAD_PORT_TITLE"
+	desc = "OUTBREAK_SPREAD_PORT_DESC"
+	picture = portinfection
+
+	trigger = {
+		has_global_flag = first_zombie_invasion
+		total_num_of_ports = 1
+		
+		any_country = {
+				any_owned_province = {
+					AND = {
+					is_blockaded = no
+					port = yes
+					has_province_modifier = zombie_outbreak
+					OR = {
+					continent = europe
+					}
+					NOT = { units_in_province = 9 }
+					}
+				}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "OUTBREAK_SPREAD_PORT_OPT"
+		random_province = {
+			limit = {
+				AND = { 
+					OR = {
+					continent = north_america
+					continent = south_america
+					}
+					port = yes
+					has_recent_imigration = 30
+					NOT = { units_in_province = 9 }
+					NOT = { has_province_modifier = zombie_outbreak }
+				}
+			}
+			any_pop = {
+				consciousness = -3
+				militancy = 10
+			}
+			add_province_modifier = {
+				name = zombie_outbreak
+				duration = -1
+			}
+		}
+	}
+}
+
+#Port Infection Americas --> Europe
+country_event = {
+	id = 999909
+	title = "OUTBREAK_SPREAD_PORT_TITLE"
+	desc = "OUTBREAK_SPREAD_PORT_DESC"
+	picture = portinfection
+
+	trigger = {
+		has_global_flag = first_zombie_invasion
+		total_num_of_ports = 1
+		
+		any_country = {
+				any_owned_province = {
+					AND = {
+					is_blockaded = no
+					port = yes
+					has_province_modifier = zombie_outbreak
+					OR = {
+					continent = north_america
+					continent = south_america
+					}
+					NOT = { units_in_province = 9 }
+					}
+				}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = "OUTBREAK_SPREAD_PORT_OPT"
+		random_province = {
+			limit = {
+				AND = { 
+					OR = {
+					continent = europe
+					}
 					port = yes
 					has_recent_imigration = 30
 					NOT = { units_in_province = 9 }
@@ -649,21 +753,6 @@ country_event = {
 				duration = -1
 			}
 		}
-		random_province = {
-			limit = {
-				is_capital = no
-				is_colonial = yes
-			}
-			any_pop = {
-				reduce_pop = 0.95
-				consciousness = -3
-				militancy = 10
-			}
-			add_province_modifier = {
-				name = zombie_outbreak
-				duration = -1
-			}
-		}
 		any_country = {
 			limit = {
 				ai = no
@@ -864,7 +953,6 @@ country_event = {
 		}
 		random_country = { 
 			limit = { 
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -889,7 +977,6 @@ country_event = {
 		random_country = { 
 			limit = { 
 				rank = 1
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -915,7 +1002,6 @@ country_event = {
 			limit = { 
 				rank = 2
 				NOT = { rank = 1 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -941,7 +1027,6 @@ country_event = {
 			limit = { 
 				rank = 3
 				NOT = { rank = 2 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -967,7 +1052,6 @@ country_event = {
 			limit = { 
 				rank = 4
 				NOT = { rank = 3 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -993,7 +1077,6 @@ country_event = {
 			limit = { 
 				rank = 5
 				NOT = { rank = 4 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1019,7 +1102,6 @@ country_event = {
 			limit = { 
 				rank = 6
 				NOT = { rank = 5 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1045,7 +1127,6 @@ country_event = {
 			limit = { 
 				rank = 7
 				NOT = { rank = 6 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1071,7 +1152,6 @@ country_event = {
 			limit = { 
 				rank = 8
 				NOT = { rank = 7 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1097,7 +1177,6 @@ country_event = {
 			limit = { 
 				rank = 9
 				NOT = { rank = 8 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1123,7 +1202,6 @@ country_event = {
 			limit = { 
 				rank = 10
 				NOT = { rank = 9 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1165,7 +1243,6 @@ country_event = {
 			limit = { 
 				rank = 12
 				NOT = { rank = 11 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1191,7 +1268,6 @@ country_event = {
 			limit = { 
 				rank = 13
 				NOT = { rank = 12 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1217,7 +1293,6 @@ country_event = {
 			limit = { 
 				rank = 14
 				NOT = { rank = 13 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1243,7 +1318,6 @@ country_event = {
 			limit = { 
 				rank = 15
 				NOT = { rank = 14 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1269,7 +1343,6 @@ country_event = {
 			limit = { 
 				rank = 16
 				NOT = { rank = 15 }
-				neighbour = THIS
 				war_with = THIS
 				OR = { 
 					rank = 16
@@ -1292,4 +1365,3 @@ country_event = {
 	}
 		
 }
-

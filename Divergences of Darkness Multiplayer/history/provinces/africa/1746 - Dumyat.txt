@@ -2,5 +2,5 @@ owner = TUR
 controller = TUR
 add_core = EGY
 add_core = TUR
-trade_goods = grain
+trade_goods = coal
 life_rating = 40

@@ -55,7 +55,6 @@ political_decisions = {
 				      owns = 780
 				      owns = 783
 				      owns = 834
-				      owns = 824
 				      }
 				      AND = {
 					     ALB = {
@@ -202,9 +201,6 @@ political_decisions = {
 			NOT = {
 					exists = ITA
 			}
-			NOT = {
-				exists = ARI
-			}
 		}
 	
 		allow = {
@@ -271,4 +267,4 @@ political_decisions = {
 			factor = 1
 		}
 	}
-
+}

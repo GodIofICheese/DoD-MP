@@ -1740,7 +1740,6 @@ country_event = {
 	artillery = -100
 	canned_food = -1000
 	regular_clothes = -1000
-	prestige = 2 
 	ENL = { country_event = { id = 775424 days = 30 } } 
 	prestige = 5 
 	relation = { who = DUA value = -100 }
@@ -1758,7 +1757,7 @@ country_event = {
 	modifier = { 
 	factor = 0.8 
 	ENL = { government = democracy }
-		}
+	}
 	}
 	
 	option = { 

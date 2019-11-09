@@ -1,7 +1,7 @@
 political_decisions = {
 	form_UAR = {
 		potential = {
-			NOT = { exists = UAR }
+			NOT = { exists = ARU }
 			OR = { 
 				is_culture_group = semitic
 				primary_culture = fur
@@ -72,74 +72,74 @@ political_decisions = {
 			add_accepted_culture = misri
 			add_accepted_culture = mashriqi
 			all_core = {
-				add_core = UAR
+				add_core = ARU
 			}
 			EGY = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			SYR = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			JOR = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			NEJ = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			YEM = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			OMA = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			FUN = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			DAR = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			ABU = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			IRQ = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			HDJ = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			ALH = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
 			TRI = {
 				all_core = {
-					add_core = UAR
+					add_core = ARU
 				}
 			}
-			change_tag = UAR
+			change_tag = ARU
 			add_core = 2585
 			add_core = 1739
 			add_core = 1758 
@@ -152,7 +152,7 @@ political_decisions = {
 
 	claim_ethiopia = {
 		potential = {
-			tag = UAR
+			tag = ARU
 			NOT = { has_country_flag = UAR_ETH }
 		}
 		allow = {
@@ -188,7 +188,7 @@ political_decisions = {
 
 	move_capital_to_cairo = {
 		potential = {
-			tag = UAR
+			tag = ARU
 			NOT = { capital = 1745 }
 		}
 		allow = {

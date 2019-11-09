@@ -17,7 +17,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 0.9
 			average_militancy = 5
@@ -126,7 +126,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 1.5
 			owner = { num_of_cities = 50 }
@@ -238,7 +238,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 1.5
 			owner = { num_of_cities = 50 }
@@ -362,7 +362,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		
 		modifier = {
 			factor = 1.5
@@ -462,7 +462,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -565,7 +565,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -670,7 +670,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -787,7 +787,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -900,7 +900,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -991,7 +991,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		
 		modifier = {
 			factor = 1.5
@@ -1083,7 +1083,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 0.9
 			average_militancy = 5
@@ -1193,7 +1193,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {	
 			factor = 0.9
 			average_consciousness = 4
@@ -1315,7 +1315,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -1409,7 +1409,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1521,7 +1521,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		
 		modifier = {
 			factor = 1.5
@@ -1635,7 +1635,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1736,7 +1736,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -1848,7 +1848,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			average_militancy = 7
@@ -1961,7 +1961,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -2104,7 +2104,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_militancy = 6
@@ -2230,7 +2230,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -2334,7 +2334,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -2441,7 +2441,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 900
 		modifier = {
 			factor = 0.9
 			average_militancy = 5
@@ -2556,7 +2556,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 900
+		months = 1800
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -2668,7 +2668,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -2785,7 +2785,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -2900,7 +2900,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 0.9
 			average_militancy = 4
@@ -3010,7 +3010,7 @@ province_event = {
 	fire_only_once = yes
 	
 	mean_time_to_happen = {
-		months = 700
+		months = 1400
 		modifier = {
 			factor = 0.9
 			average_militancy = 6
@@ -3115,7 +3115,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 15
+		months = 30
 		
 		modifier = {
 			factor = 1.5
@@ -3204,7 +3204,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -3314,7 +3314,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_militancy = 5
@@ -3418,7 +3418,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			average_militancy = 5
@@ -3531,7 +3531,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_militancy = 5

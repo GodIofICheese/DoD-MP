@@ -125,14 +125,28 @@ political_decisions = {
 		allow = {
 			war = no
 			is_vassal = no
+			OR = {
+				owns = 289
+				AND = {
+					owns = 278
+					owns = 282
+				}
+			}
 		}
 		
 		effect = {
 			set_country_flag = ENL_recognized
 			set_global_flag = ENL_loss
-			any_owned = {
-				limit = { is_core = THIS }
+			any_country = { 
+				any_owned = { 
+					limit = { 
+						NOT = { region = ENG_300 }
+						NOT = { region = ENG_296 }
+						NOT = { region = ENG_291 } 
+						is_core = THIS 
+					}
 				remove_core = DUA
+				}
 			}
 			any_country = {
 				limit = {

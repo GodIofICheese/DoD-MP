@@ -36,7 +36,6 @@ political_decisions = {
 						has_country_modifier = economic_nationalism
 						has_country_modifier = french_liberal_school
 						has_country_modifier = smithian_school
-						has_country_modifier = non_interventionism_trade_policy
 						has_country_modifier = no_trade_policy_set
 						has_country_modifier = in_bankrupcy
 						has_country_modifier = bad_debter
@@ -165,10 +164,7 @@ political_decisions = {
 				#Return to Traditional Academia
 				AND = {
 					NOT = { tech_school = traditional_academic }
-					OR = {
-						ai = no
-						tech_school = developing_tech_school
-					}
+					ai = no
 					civilized = yes
 				}
 			}

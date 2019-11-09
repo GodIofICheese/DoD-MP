@@ -9,6 +9,7 @@ political_decisions = {
 				ai = yes
 			}
 			NOT = {	has_country_flag = nv_change }
+			civilized = yes
 		}
 		
 		allow = {
@@ -37,6 +38,7 @@ political_decisions = {
 		picture = national_value
 		potential = {
 			has_country_flag = nv_change
+			ai = no
 		}
 		
 		allow = { }
@@ -46,7 +48,7 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 
-	switch_to_order = {
+	switch_to_order_unciv = {
 		picture = switch_to_order
 		potential = {
 			civilized = no
@@ -126,7 +128,7 @@ political_decisions = {
 		ai_will_do = { factor = 0.25 }
 	}
 	
-	switch_to_autocracy = {
+	switch_to_autocracy_unciv = {
 		picture = switch_to_autocracy
 		potential = {
 			civilized = no
@@ -165,7 +167,7 @@ political_decisions = {
 		ai_will_do = { factor = 0.75 }
 	}
 	
-	switch_to_equality = {
+	switch_to_equality_unciv = {
 		picture = switch_to_equality
 		potential = {
 			civilized = no
@@ -205,7 +207,7 @@ political_decisions = {
 		ai_will_do = { factor = 0 }
 	}
 	
-	switch_to_liberty = {
+	switch_to_liberty_unciv = {
 		picture = switch_to_liberty
 		potential = {
 			civilized = no
@@ -246,8 +248,8 @@ political_decisions = {
 	}
 
 	switch_to_order = {
-		alert = yes
 		picture = switch_to_order
+		alert = yes
 		potential = {
 			civilized = yes
 			has_country_flag = nv_change
@@ -311,6 +313,7 @@ political_decisions = {
 	}
 
 	switch_to_productivity = {
+		picture = switch_to_productivity
 		potential = {
 			ai = no
 			has_country_flag = nv_change

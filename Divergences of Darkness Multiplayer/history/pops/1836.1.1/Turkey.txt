@@ -3646,31 +3646,31 @@
 	
 	aristocrats = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 150
 	}
 
 	clergymen = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 100
 	}
 
 	artisans = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 550
 	}
 
 	soldiers = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 1175
 	}
 
 	farmers = {
 		culture = kurdish
-		religion = yazidi
+		religion = assyrian
 		size = 7025
 	}
 }

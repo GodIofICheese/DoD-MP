@@ -73,6 +73,8 @@ From;To;Type;Through;Data;Comment
 780;782;land;2762;0;Mostar Bay
 301;400;sea;2724;0;UK - France Strait
 1725;762;sea;2758;0;Gulf of Gabes #Sicily to Tunis
+1700;501;sea;2752;0;Algeria-Baleric Islands Strait
+502;504;sea;2748;0;Baleric Islands-Catalonia Strait
 
 #
 # Asian Straits

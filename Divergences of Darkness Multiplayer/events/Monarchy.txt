@@ -43,7 +43,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 100
+		months = 200
 		modifier = {
 			factor = 1.2
 			average_militancy = 2
@@ -192,7 +192,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
 			factor = 1.2
 			average_militancy = 2

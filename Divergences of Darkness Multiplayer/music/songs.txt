@@ -257,32 +257,6 @@ song = {
 						war = yes
 		     		  }
 			      }
-		  }	
-       }
-}
-
-song = {
-       name = "wardlafeuillederable.mp3"
-       chance = {
-		  modifier = {
-			      factor = 10
-			      OR = { 
-				     government = hms_government
-				     government = merchant_republic
-				     government = democracy  
-		          }
-			      war = yes
-		  }
-		  modifier = {
-			      factor = 0.5
-			      NOT = { 
-				      OR = { 
-					    government = hms_government
-					    government = merchant_republic
-				        government = democracy
-						war = yes
-		     		  }
-			      }
 		  }		
        }
 }

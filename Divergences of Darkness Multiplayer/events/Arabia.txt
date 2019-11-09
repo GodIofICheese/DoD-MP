@@ -20,10 +20,10 @@ country_event = {
 		year = 1900
 		NOT = {
 			AND = {
-				has_country_modifier = tanzimat_reforms_enacted_2
+				has_country_flag = tanzimat_reforms_enacted_2
 				citizens_rights = all_voting_pops
 			}
-			is_culture_group = arab
+			is_culture_group = semitic
 			is_culture_group = iranian
 			has_country_flag = arab_revolt
 			has_country_flag = arab_revolt_ended
@@ -276,7 +276,7 @@ country_event = {
 
 	trigger = {
 		is_vassal = yes
-		is_culture_group = arab
+		is_culture_group = semitic
 		NOT = { has_country_flag = arab_revolt }
 		any_neighbor_country = {
 			has_country_flag = arab_revolt
@@ -291,7 +291,7 @@ country_event = {
 		name = "EVT96102OPTA"
 		set_country_flag = arab_revolt
 		any_pop = { 
-			limit = { is_culture_group = arab }
+			limit = { is_culture_group = semitic }
 			militancy = 6
 		}
 		any_owned = {
@@ -380,7 +380,7 @@ country_event = {
 		name = "EVT96105OPTA"
 		set_country_flag = arab_revolt_ended
 		any_pop = {
-			limit = { is_culture_group = arab }
+			limit = { is_culture_group = semitic }
 			militancy = -4
 			consciousness = 4
 		}
@@ -398,7 +398,7 @@ country_event = {
 			has_country_flag = arab_revolt
 			NOT = { has_country_flag = arab_revolt_ended }
 			NOT = {
-				is_culture_group = arab
+				is_culture_group = semitic
 				is_culture_group = iranian
 			}
 		}
@@ -472,9 +472,10 @@ country_event = {
 			add_province_modifier = {
 			name = nationalist_agitation
 			duration = 1095
+			}
 		}
 		any_pop = { 
-			limit = { is_culture_group = arab }
+			limit = { is_culture_group = semitic }
 			militancy = 4
 		}	
 	}
@@ -483,7 +484,7 @@ country_event = {
 		name = "EVT96106OPTB"
 		state_scope = {
 			any_pop = { 
-				limit = { is_culture_group = arab }
+				limit = { is_culture_group = semitic }
 				militancy = 4
 			}
 			any_owned = {
@@ -526,7 +527,7 @@ country_event = {
 			NOT = { units_in_province = 1 }
 		}
 		owns = 1159
-		NOT = { exists = ARA }
+		NOT = { exists = ARU }
 		has_global_flag = house_of_saud_exiled
 		has_global_flag = arab_revolt_has_begun
 	}
@@ -829,7 +830,7 @@ country_event = {
 		}
 		any_country = {
 			limit = {
-				NOT = { is_culture_group = arab }
+				NOT = { is_culture_group = semitic }
 				any_owned_province = { is_core = THIS }
 			}
 			relation = { who = THIS value = -100 }
@@ -851,12 +852,11 @@ country_event = {
 					duration = 1095
 				}
 				any_pop = {
-					limit = { is_culture_group = arab }
+					limit = { is_culture_group = semitic }
 					militancy = 5
 				}
 			}
 		}
-		PER_1132 = { remove_core = ARU }
 		any_country = {
 			limit = {
 				exists = yes

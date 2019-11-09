@@ -199,3 +199,4 @@ political_decisions = {
 			}
 		}
 	}
+}

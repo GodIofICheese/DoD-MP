@@ -131,8 +131,10 @@ political_decisions = {
 	
 		potential = { 
 			tag = VEN 
+			OR = {
 			government = democracy
-			government = merchant_republic 
+			government = merchant_republic
+			}
 			GRE = { vassal_of = VEN } 
 			rank = 15
 			NOT = { has_country_flag = greek_integration }
@@ -159,9 +161,12 @@ political_decisions = {
 		picture = Greece_VEN
 	
 		potential = { 
-			primary_culture = VEN 
-			government = democracy
-			government = merchant_republic 
+			primary_culture = venetian
+			OR = {
+				government = democracy
+				government = merchant_republic
+			}
+			nationalism_n_imperialism = 1
 			rank = 15
 			NOT = { 
 				has_country_flag = greek_integration 
@@ -170,7 +175,7 @@ political_decisions = {
 			}
 		
 		allow = { 
-			nationalism_n_imperialism = 1 
+			 phenomenology_n_hermeneutic = 1 
 			war = no
 			owns = 834
 			}

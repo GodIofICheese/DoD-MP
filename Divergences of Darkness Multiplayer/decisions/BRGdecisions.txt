@@ -167,29 +167,29 @@ political_decisions = {
 			prestige = 5
 			set_country_flag = savoya
 			465 = {
-				add_core = BRG
 				add_core = GNV
+				add_core = BRG
 				remove_core = SAR
 				remove_core = DUA
 				remove_core = ITA
 			}
 			466 = {
-				add_core = BRG
 				add_core = GNV
+				add_core = BRG
 				remove_core = SAR
 				remove_core = DUA
 				remove_core = ITA
 			}
 			721 = {
-				add_core = BRG
 				add_core = GNV
+				add_core = BRG
 				remove_core = SAR
 				remove_core = DUA
 				remove_core = ITA
 			}
 			609  = {
-				add_core = BRG
 				add_core = GNV
+				add_core = BRG
 				remove_core = SAR
 				remove_core = DUA
 				remove_core = ITA

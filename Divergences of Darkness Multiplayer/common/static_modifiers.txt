@@ -80,12 +80,14 @@ very_hard_ai = {
 ##########################################################################
 
 overseas = {
-	assimilation_rate = -0.3
-	pop_militancy_modifier = -0.01
+	farm_rgo_size = 0.3
+	mine_rgo_size = 0.3
+	assimilation_rate = -0.5
+	pop_consciousness_modifier = -0.01
+	supply_limit = -1
 }
 
 coastal = {
-	supply_limit = 5
 }
 
 non_coastal = {
@@ -101,16 +103,15 @@ sea_zone = {
 }
 
 land_province = {
-	max_attrition = 5			#Maximum Attrition is 5
-	supply_limit = 5
+	max_attrition = 6			#Maximum Attrition is 6
+	supply_limit = 6
 }
 
-
-
 blockaded = {
-	war_exhaustion = 0.01
+	war_exhaustion = 0.02
 	farm_rgo_eff = -0.33
 	mining_rgo_eff = -0.33
+	factory_throughput = -0.001
 }
 
 no_adjacent_controlled = {
@@ -119,7 +120,6 @@ no_adjacent_controlled = {
 
 
 core = {
-
 }
 
 
@@ -130,13 +130,13 @@ has_siege = {
 }
 
 occupied = {
-	population_growth = -0.001
 	immigrant_attract = -1
 }
 
 nationalism = {
 	pop_militancy_modifier = 0.01
-	pop_consciousness_modifier = 0.01
+	farm_rgo_eff = -0.04
+	mine_rgo_eff = -0.04
 }
 
 infrastructure = {
@@ -157,14 +157,12 @@ base_values = {
 
 war = {
 	max_war_exhaustion = 100			#base max at war.
-	supply_consumption = -0.5
 	#war_exhaustion = 0.1
 	badboy = -0.1
 }
 
 peace = {
-	max_war_exhaustion = 100			#base max at peace.
-	supply_consumption = -0.5
+	max_war_exhaustion = 50			#base max at peace.
 	war_exhaustion = -1
 	badboy = -0.1
 	mobilisation_economy_impact = 2.0
@@ -199,17 +197,17 @@ bad_debter = {
 }
 
 great_power = {
-	prestige = 0.05
+	prestige = 0.25
 	research_points = 1.5
 	diplomatic_points_modifier = 1.0
-	leadership = 2.0
+	leadership = 1
 }
 
 second_power = {
 	prestige = 0.025
 	research_points = 1.25
 	diplomatic_points_modifier = 0.25
-	leadership = 1.0
+	leadership = 0.75
 }
 
 civ_nation = {
@@ -227,8 +225,8 @@ unciv_nation = {
 average_literacy = {
 	research_points = 4
 	leadership = 1
-	self_unciv_economic_modifier = -0.5
-	self_unciv_military_modifier = -0.5
+	self_unciv_economic_modifier = -0.10
+	self_unciv_military_modifier = -0.10
 }
 
 plurality = { 
@@ -246,7 +244,7 @@ total_occupation = {
 
 total_blockaded = {
 	war_exhaustion = 0.3	#increased by war exhaustion.  
-	import_cost = 0.2
+	import_cost = 0.4
 	prestige = -0.05
 }
 
@@ -257,4 +255,5 @@ in_bankrupcy = {
 	max_military_spending = -0.2
 	#max_social_spending = 0.5
 	ruling_party_support = -0.75
+	cb_generation_speed_modifier = -1
 }

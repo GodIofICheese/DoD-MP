@@ -247,7 +247,7 @@ silver_standard = {
 		}
 	}
 	effect = {
-		tax_eff = 3 
+		tax_eff = 2 
 	}
 }
 decimal_monetary_system = {
@@ -265,7 +265,7 @@ decimal_monetary_system = {
 		}
 	}
 	effect = {
-		tax_eff = 3 
+		tax_eff = 2 
 	}
 }
 #private_bank_money_bill_printing

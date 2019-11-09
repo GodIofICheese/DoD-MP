@@ -838,7 +838,7 @@ country_event = {
 				}
 			}
 		}
-		cheap_steel = 1
+		bessemer_process = 1
 		NOT = { has_global_flag = neanderthal }
 	}
 	

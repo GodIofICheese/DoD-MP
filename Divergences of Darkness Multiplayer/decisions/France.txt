@@ -226,7 +226,7 @@ political_decisions = {
 			OR = { has_global_flag = english_int has_global_flag = french_int has_country_flag = Anglois_accepted }
 			NOT = {
 				has_country_flag = enacted_anglois_schooling
-				education = elite
+				school_reforms = good_schools
 			}
 		}
 		
@@ -238,12 +238,6 @@ political_decisions = {
 		
 		effect = { 
 		set_country_flag = enacted_anglois_schooling
-		random_owned = {
-				limit = {
-					owner = { education = church }
-				}
-				owner = { social_reform = public }
-			}
 		country_event = 650330
 		}
 	}

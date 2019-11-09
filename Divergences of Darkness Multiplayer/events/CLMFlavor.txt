@@ -751,7 +751,7 @@ country_event = { ###### Growing unrest in Gran Columbia
 	political_reform = censored_press
 	political_reform = no_trade_unions
 	political_reform = underground_parties
-	political_reform = nobody_gets_out
+	political_reform = closed_borders
 	political_reform = appointed
 	add_country_modifier = {
 			name = national_confusion
@@ -1923,9 +1923,9 @@ country_event = { ####For the proletariat !
 		political_reform = state_press
 		political_reform = state_controlled
 		political_reform = underground_parties
-		political_reform = nobody_gets_out
+		political_reform = closed_borders
 		political_reform = mandatory_service
-		political_reform = protected
+		political_reform = all_voting_pops
 		political_reform = no_slavery
 		social_reform = good_minimum_wage
 		social_reform = eight_hours
@@ -1977,7 +1977,7 @@ country_event = {
 	UCA = { exists = yes }
 	AND = { GRA = { exists = yes } NOT = { has_country_flag = GRA_not_federation } }
 		}
-	NOT = { MEX = exists = yes }
+	NOT = { MEX = { exists = yes } }
 	}
 	
 	mean_time_to_happen = { 

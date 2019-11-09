@@ -4,10 +4,8 @@ political_decisions = {
 		picture = kaitakushi
 		alert = no
 		potential = {
-			OR = {
-				has_country_flag = government_decisions_on
-				ai = yes
-			}
+			has_country_flag = government_decisions_on
+			ai = no
 			civilized = yes
 			any_owned_province = {
 				any_core = {

@@ -493,3 +493,46 @@ child_welfare = {
 		pop_growth = 0.0001
 	}	
 }
+
+#Inorganic Chemistry
+prophylactics = {
+	limit = { inorganic_chemistry = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 5
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 6
+			NOT = { pop_majority_religion = catholic }
+		}
+	}
+	effect = {
+		pop_growth = -0.0001
+	}	
+}
+
+#Organic Chemistry
+cholera_vaccine = {
+	limit = {
+		organic_chemistry = 1	
+	}
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			year = 1875
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_country = {
+				invention = cholera_vaccine
+			}
+		}
+	}
+	effect = {
+		pop_growth = 0.0001
+	}	
+}

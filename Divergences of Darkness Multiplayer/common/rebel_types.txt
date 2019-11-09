@@ -20,15 +20,17 @@ reactionary_rebels = {
 	
 	# <this is the government in the country> = <this is what the rebels want>
 	government = {
-		proletarian_dictatorship = presidential_dictatorship
+		proletarian_dictatorship = bourgeois_dictatorship
 		presidential_dictatorship = absolute_monarchy
-		bourgeois_dictatorship = presidential_dictatorship
+		bourgeois_dictatorship = merchant_republic
 		fascist_dictatorship = presidential_dictatorship
 		absolute_monarchy = absolute_monarchy
-		prussian_constitutionalism = absolute_monarchy
-		hms_government = absolute_monarchy
+		prussian_constitutionalism = feudal_monarchy
+		hms_government = feudal_monarchy
+		feudal_monarchy = absolute_monarchy
 		democracy = presidential_dictatorship
-		theocracy = absolute_monarchy
+		theocracy = theocracy
+		merchant_republic = merchant_republic
 	}
 	
 	
@@ -286,6 +288,8 @@ reactionary_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		remove_country_modifier = expert_diplomat
 		remove_country_modifier = successful_industrialist
 		remove_country_modifier = ivory_tower_intellectual
@@ -354,6 +358,8 @@ fascist_rebels = {
 		hms_government = fascist_dictatorship
 		democracy = fascist_dictatorship
 		theocracy = fascist_dictatorship
+		feudal_monarchy = fascist_dictatorship
+		merchant_republic = fascist_dictatorship
 	}
 	
 	
@@ -601,6 +607,8 @@ fascist_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		set_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		
 		ruling_party_ideology = fascist
 		political_reform = none_voting
@@ -671,6 +679,8 @@ communist_rebels = {
 		hms_government = proletarian_dictatorship
 		democracy = proletarian_dictatorship
 		theocracy = proletarian_dictatorship
+		feudal_monarchy = proletarian_dictatorship
+		merchant_republic = proletarian_dictatorship
 	}
 	
 	
@@ -905,6 +915,8 @@ communist_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		ruling_party_ideology = communist
 		political_reform = all_voting_pops
 		political_reform = none_voting
@@ -983,6 +995,8 @@ anarcho_liberal_rebels = {
 		hms_government = bourgeois_dictatorship
 		democracy = bourgeois_dictatorship
 		theocracy = bourgeois_dictatorship
+		feudal_monarchy = bourgeois_dictatorship
+		merchant_republic = bourgeois_dictatorship
 	}
 	
 	
@@ -1246,6 +1260,8 @@ anarcho_liberal_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		ruling_party_ideology = anarcho_liberal
 		political_reform = universal_voting
 		political_reform = party_appointed
@@ -1254,6 +1270,7 @@ anarcho_liberal_rebels = {
 		political_reform = no_trade_unions
 		political_reform = underground_parties
 		political_reform = debtors_prisons
+		political_reform = confederalism
 		social_reform = no_minimum_wage
 		social_reform = no_work_hour_limit
 		social_reform = no_safety
@@ -1322,6 +1339,8 @@ nationalist_rebels = {
 		hms_government = hms_government
 		democracy = democracy
 		theocracy = theocracy
+		merchant_republic = merchant_republic
+		feudal_monarchy = feudal_monarchy
 	}
 	
 	
@@ -1614,6 +1633,8 @@ pan_nationalist_rebels = {
 		hms_government = hms_government
 		democracy = democracy
 		theocracy = theocracy
+		feudal_monarchy = feudal_monarchy
+		merchant_republic = merchant_republic
 	}
 
 	defection = none			# (It was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -1907,6 +1928,8 @@ pan_nationalist_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		political_reform = wealth_voting
 		political_reform = population_equal_weight
 		political_reform = yes_meeting
@@ -1986,6 +2009,8 @@ christino_rebels = {
 		hms_government = hms_government
 		democracy = hms_government
 		theocracy = theocracy
+		feudal_monarchy = hms_government
+		merchant_republic = hms_government
 	}
 	
 	
@@ -2194,6 +2219,8 @@ christino_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		change_tag = SPA
 		ruling_party_ideology = liberal
 		political_reform = wealth_voting
@@ -2227,6 +2254,8 @@ boxer_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
+		feudal_monarchy = absolute_monarchy
+		merchant_republic = absolute_monarchy
 		theocracy = theocracy
 	}
 	
@@ -2490,6 +2519,8 @@ red_shirts = {
 		hms_government = hms_government
 		democracy = democracy
 		theocracy = democracy
+		merchant_republic = merchant_republic
+		feudal_monarchy = feudal_monarchy
 	}
 
 	defection = none			# (Was pan_nationalist) If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2726,6 +2757,8 @@ indian_sepoys = {
 		hms_government = hms_government
 		democracy = democracy
 		theocracy = theocracy
+		feudal_monarchy = feudal_monarchy
+		merchant_republic = merchant_republic
 	}
 
 	defection = pan_nationalist		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -2987,6 +3020,8 @@ indian_nationalists = {
 		hms_government = hms_government
 		democracy = democracy
 		theocracy = theocracy
+		feudal_monarchy = feudal_monarchy
+		merchant_republic = merchant_republic
 	}
 
 	defection = none		# If the country seeks independence, defection specifies what type of provinces it wants.
@@ -3201,6 +3236,8 @@ liberal_rebels = {
 		hms_government = democracy
 		democracy = democracy
 		theocracy = democracy
+		feudal_monarchy = hms_government
+		merchant_republic = democracy
 	}
 	
 	
@@ -3546,6 +3583,8 @@ liberal_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		set_country_flag = liberal_election_win
@@ -3668,6 +3707,8 @@ unciv_reactionary_rebels = {
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
 		theocracy = absolute_monarchy
+		feudal_monarchy = feudal_monarchy
+		merchant_republic = merchant_republic
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -3904,6 +3945,8 @@ carlist_rebels = {
 		prussian_constitutionalism = absolute_monarchy
 		hms_government = absolute_monarchy
 		democracy = absolute_monarchy
+		feudal_monarchy = feudal_monarchy
+		merchant_republic = absolute_monarchy
 		theocracy = theocracy
 	}
 	
@@ -4132,6 +4175,8 @@ carlist_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -4196,6 +4241,8 @@ separatist_rebels = {
 		hms_government = hms_government
 		democracy = democracy
 		theocracy = theocracy
+		feudal_monarchy = feudal_monarchy
+		merchant_republic = merchant_republic
 	}
 	
 	
@@ -4452,6 +4499,8 @@ socialist_rebels = {
 		hms_government = democracy
 		democracy = democracy
 		theocracy = democracy
+		merchant_republic = democracy
+		feudal_monarchy = democracy
 	}
 	
 	
@@ -4770,6 +4819,8 @@ socialist_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		clr_country_flag = tory_election_win
 		set_country_flag = socialist_election_win
 		clr_country_flag = liberal_election_win
@@ -4955,6 +5006,8 @@ independence_rebels = {
 		hms_government = hms_government
 		democracy = democracy
 		theocracy = theocracy
+		feudal_monarchy = feudal_monarchy
+		merchant_republic = merchant_republic
 	}
 	
 	
@@ -5116,6 +5169,8 @@ turkish_nationalist_rebels = {
 		hms_government = democracy
 		democracy = democracy
 		theocracy = theocracy
+		feudal_monarchy = democracy
+		merchant_republic = democracy
 	}
 	
 	
@@ -5317,6 +5372,8 @@ turkish_nationalist_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		clr_country_flag = turkish_nationalism_activated
 		clr_country_flag = tory_election_win
 		clr_country_flag = socialist_election_win
@@ -5388,6 +5445,8 @@ native_rebels = {
 		hms_government = democracy
 		democracy = democracy
 		theocracy = democracy
+		feudal_monarchy = democracy
+		merchant_republic = merchant_republic
 	}
 	
 	defection = none					# Will defect to the "best" alternative.
@@ -5536,6 +5595,8 @@ native_rebels = {
 		clr_country_flag = presidential_dictatorship_gov
 		clr_country_flag = fascist_gov
 		clr_country_flag = anarcho_liberal_gov
+		clr_country_flag = merchant_republic
+		clr_country_flag = feudal_monarchy
 		any_country = {
 			limit = { is_culture_group = THIS }
 			leave_alliance = THIS
@@ -5549,257 +5610,6 @@ native_rebels = {
 		prestige_factor = -0.2
 		country_event = 810057
 	}
-}
-
-
-###################################
-# American Natives
-###################################
-sioux_nation = {
-	icon = 11
-	break_alliance_on_win = no
-	
-	area = culture_group
-	
-	# <this is the government in the country> = <this is what the rebels want>
-	government = {
-		proletarian_dictatorship = proletarian_dictatorship
-		presidential_dictatorship = presidential_dictatorship
-		bourgeois_dictatorship = bourgeois_dictatorship
-		fascist_dictatorship = fascist_dictatorship
-		absolute_monarchy = absolute_monarchy
-		prussian_constitutionalism = prussian_constitutionalism
-		hms_government = hms_government
-		democracy = democracy
-		theocracy = theocracy
-	}
-
-	defection = none					# Will defect to the "best" alternative.
-	independence = none				# Does not strive for independence
-	defect_delay = 18
-	
-	ideology = reactionary
-	
-	allow_all_cultures = yes
-	allow_all_religions = yes
-	allow_all_ideologies = yes
-	
-	resilient = yes					# Disbands on retreat
-	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
-	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
-	unit_transfer = no				# Units do not remain after enforcing demands.
-	
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
-
-	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
-
-	will_rise = {
-		factor = 0.05
-	}
-	
-	# The rebel type with the highest modifier for this pop gets picked
-	spawn_chance = {
-		factor = 2
-		modifier = {
-			factor = 0
-			NOT = {
-				culture = dakota 
-			}
-		}
-		modifier = {
-			factor = 0
-			country = {
-				NOT = { has_country_flag = sioux_wars }
-			}
-		}	
-		modifier = {
-			factor = 0
-			country = { has_country_flag = sioux_wars_over }
-		}		
-
-	}
- 
- 	#This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 1
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-		}
-		modifier = {
-			factor = 1.5
-			not = { average_militancy = 4 }
-		}
-		modifier = {
-			factor = 1.5
-			not = { average_militancy = 6 }
-		}
-		modifier = {
-			factor = 1.5
-			not = { average_militancy = 2 }
-		}
-	}
-	
- 	# Province Scope
- 	#siege_won_trigger = {
- 	#}
-	
-	siege_won_effect = {
-		any_pop = {
-			limit = {
-				NOT = {
-					is_culture_group = native_american
-				}
-			}
-			reduce_pop = 0.90
-		}
-		any_pop = {
-			limit = {
-				culture = dakota 
-			}
-			militancy = 10
-		}
-		
-	}
-	
-
-	# Country scope
-	#demands_enforced_trigger = {
-	#}
-	
-	#demands_enforced_effect = {
-	#}
-}
-
-apache = {
-	icon = 11
-	break_alliance_on_win = no
-	
-	area = culture_group
-	
-	# <this is the government in the country> = <this is what the rebels want>
-	government = {
-		proletarian_dictatorship = proletarian_dictatorship
-		presidential_dictatorship = presidential_dictatorship
-		bourgeois_dictatorship = bourgeois_dictatorship
-		fascist_dictatorship = fascist_dictatorship
-		absolute_monarchy = absolute_monarchy
-		prussian_constitutionalism = prussian_constitutionalism
-		hms_government = hms_government
-		democracy = democracy
-		theocracy = democracy
-	}
-
-	defection = none					# Will defect to the "best" alternative.
-	independence = none				# Does not strive for independence
-	defect_delay = 18
-	
-	ideology = reactionary
-	
-	allow_all_cultures = yes
-	allow_all_religions = yes
-	allow_all_ideologies = yes
-	
-	resilient = yes					# Disbands on retreat
-	reinforcing = yes				# Does not receive reinforcements
-	general = yes					# Does use generals
-	smart = yes					# Does not assault forts, tactically withdraw from battle, etc.
-	unit_transfer = no				# Units do not remain after enforcing demands.
-	
-	occupation_mult = 1.0			# The amount of strength this rebel gains from taking provinces	
-
-	# triggers a general rising, modifier will be multiplied with the countrys army strength and compared to the factions strenght
-
-	will_rise = {
-		factor = 0.05
-	}
-	
-	# The rebel type with the highest modifier for this pop gets picked
-	spawn_chance = {
-		factor = 2
-		modifier = {
-			factor = 0
-			NOT = {
-				culture = native_american_minor
-			}
-		}
-		modifier = {
-			factor = 0
-			country = {
-				NOT = { has_country_flag = apache_wars }
-			}
-		}	
-		modifier = {
-			factor = 0
-			country = { has_country_flag = apache_wars_over }
-		}		
-
-	}
- 
- 	#This is checked for EACH province in the Area of Operations
-	movement_evaluation = {
-		factor = 1
-		modifier = {
-			factor = 0.1
-			units_in_province = 5
-		}
-		modifier = {
-			factor = 1.5
-			units_in_province = 1
-			not = { units_in_province = 3 }
-		}
-		modifier = {
-			factor = 0.001
-			controlled_by = REB
-		}
-		modifier = {
-			factor = 1.5
-			not = { average_militancy = 4 }
-		}
-		modifier = {
-			factor = 1.5
-			not = { average_militancy = 6 }
-		}
-		modifier = {
-			factor = 1.5
-			not = { average_militancy = 2 }
-		}
-	}
-	
- 	# Province Scope
- 	#siege_won_trigger = {
- 	#}
-	
-	siege_won_effect = {
-		any_pop = {
-			limit = {
-				not = {
-					is_culture_group = native_american
-				}
-			}
-			reduce_pop = 0.50
-		}
-		any_pop = {
-			limit = {
-				culture = native_american_minor
-			}
-			militancy = 10
-		}
-		
-	}
-	
-
-	# Country scope
-	#demands_enforced_trigger = {
-	#}
-	
-	#demands_enforced_effect = {
-	#}
 }
 
 ###################################
@@ -5822,6 +5632,7 @@ zombie_rebels = {
 		democracy = democracy
 		feudal_monarchy = feudal_monarchy
 		merchant_republic = merchant_republic
+		theocracy = theocracy
 	}
 
 	defection = none

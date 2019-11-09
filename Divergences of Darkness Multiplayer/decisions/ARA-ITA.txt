@@ -162,11 +162,9 @@ political_decisions = {
 			tag = ARI
 			OR = {
 				has_country_flag = waroveritalyend
-				AND = {
-					ITA = {
-						all_core = {
-							owned_by = THIS
-						}
+				ITA = {
+					all_core = {
+						owned_by = THIS
 					}
 				}
 			}
@@ -239,9 +237,9 @@ political_decisions = {
 		}
 		
 		allow = { 
-		own = 729
-		own = 770
-		own = 780
+		owns = 729
+		owns = 770
+		owns = 780
 		is_greater_power = yes
 		mass_politics = 1
 		}
@@ -391,7 +389,6 @@ political_decisions = {
 		}
 		
 		allow = { 
-			AND = {
 				OR = {
 					revanchism = 0.50
 					NOT = { 
@@ -409,7 +406,6 @@ political_decisions = {
 						753 = { owned_by = ARA }
 					}
 				}
-		        }
 		}
 		
 		effect = {

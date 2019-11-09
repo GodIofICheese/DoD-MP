@@ -3,7 +3,7 @@ primary_culture = qingqiuan
 religion = mahayana
 government = democracy
 plurality = 0.0
-nationalvalue = nv_order
+nationalvalue = nv_productivity
 literacy = 0.4
 civilized = yes
 prestige = 1
@@ -13,7 +13,7 @@ slavery = no_slavery
 upper_house_composition = state_equal_weight
 vote_franschise = wealth_voting
 public_meetings = yes_meeting
-press_rights = state_press
+press_rights = censored_press
 trade_unions = no_trade_unions
 voting_system = jefferson_method
 political_parties = non_secret_ballots
@@ -28,7 +28,7 @@ pensions = no_pensions
 school_reforms = no_schools
 
 # New Reforms
-conscription = four_year_draft
+conscription = two_year_draft
 debt_law = debtors_prisons
 penal_system = capital_punishment
 child_labor = child_labor_legal
@@ -54,6 +54,8 @@ upper_house = {
 # Technologies
 post_napoleonic_thought = 1
 flintlock_rifles = 1
+bronze_muzzle_loaded_artillery = 1
+military_staff_system  = 1
 post_nelsonian_thought = 1
 private_banks = 1
 no_standard = 1
@@ -62,6 +64,8 @@ classicism_n_early_romanticism = 1
 late_enlightenment_philosophy = 1
 piston_steam_engine = 1
 enlightenment_thought = 1
+basic_chemistry = 1
+clipper_design = 1
 
 # Inventions
 

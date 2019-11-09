@@ -60,81 +60,234 @@ country_migration_target = {
 	factor = 1
 	
 	modifier = {
-		factor = 0
-		border_policy = quota_immigration
-		THIS = { NOT = { literacy = 0.6 } }
-	}
-	
-	modifier = {
-		factor = 0.9
-		unemployment = 0.05
-	}
-	modifier = {
-		factor = 0.8
-		unemployment = 0.1
-	}
-	modifier = {
-		factor = 0.7
-		unemployment = 0.15
-	}
-	modifier = {
-		factor = 0.6
-		unemployment = 0.2
-	}
-	modifier = {
-		factor = 0.5
-		unemployment = 0.25
-	}
-	modifier = {
-		factor = 0.4
-		unemployment = 0.3
-	}
-	modifier = {
-		factor = 0.3
-		unemployment = 0.35
-	}
-	modifier = {
-		factor = 0.2
-		unemployment = 0.4
-	}
-	modifier = {
-		factor = 0.1
-		unemployment = 0.45
-	}
-	modifier = {
-		factor = -1
-		unemployment = 0.5
-	}
-	modifier = {
-		factor = -2
-		unemployment = 0.6
-	}
-	modifier = {
-		factor = -3
-		unemployment = 0.7
-	}
-	modifier = {
-		factor = -4
-		unemployment = 0.8
-	}
-	
-	modifier = {
-		factor = 1.5
-		OR = {
-			is_primary_culture = THIS
-			is_accepted_culture = THIS
-			is_culture_group = THIS
+			factor = 0.95
+			unemployment = 0.05
 		}
-	}
-		
+		modifier = {
+			factor = 0.95
+			unemployment = 0.1
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.15
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.2
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.25
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.3
+		}
+		modifier = {
+			factor = 0.95
+			unemployment = 0.35
+		}
+		modifier = {
+			factor = 0.9
+			unemployment = 0.4
+		}
+		modifier = {
+			factor = 0.9
+			unemployment = 0.45
+		}
+		modifier = {
+			factor = 0.9
+			unemployment = 0.5
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.6
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.7
+		}
+		modifier = {
+			factor = 0.8
+			unemployment = 0.8
+		}
+
+	modifier = {
+			factor = 0.95
+			rich_tax = 0.05
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.1
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.15
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.2
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.25
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.3
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.35
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.4
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.45
+		}
+		modifier = {
+			factor = 0.95
+			rich_tax = 0.5
+		}
+		modifier = {
+			factor = 0.9
+			rich_tax = 0.55
+		}
+		modifier = {
+			factor = 0.85
+			rich_tax = 0.6
+		}
+		modifier = {
+			factor = 0.8
+			rich_tax = 0.65
+		}
+		modifier = {
+			factor = 0.75
+			rich_tax = 0.70
+		}
+		modifier = {
+			factor = 0.7
+			rich_tax = 0.75
+		}
+		modifier = {
+			factor = 0.5
+			rich_tax = 0.80
+		}
+		modifier = {
+			factor = 0.25
+			rich_tax = 0.85
+		}
+		modifier = {
+			factor = 0.1
+			rich_tax = 0.90
+		}
+		modifier = {
+			factor = 0.05
+			rich_tax = 0.95
+		}
+		modifier = {
+			factor = 0
+			rich_tax = 1
+		}
+
 	modifier = {
 		factor = 0
 		government = proletarian_dictatorship
 	}
 	
 	modifier = {
-		factor = 0.5
-		NOT = { rich_strata_life_needs = 0.90 }
+			factor = 0.95
+			AND = {
+				NOT = { rich_strata_life_needs = 0.90 }
+				NOT = { rich_strata_everyday_needs = 0.45 }
+				NOT = { rich_strata_luxury_needs = 0.2 }
+			}
+		}
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { rich_strata_life_needs = 0.80 }
+				NOT = { rich_strata_everyday_needs = 0.40 }
+				NOT = { rich_strata_luxury_needs = 0.175 }
+			}
+		}
+		modifier = {
+			factor = 0.95
+			AND = {
+				NOT = { rich_strata_life_needs = 0.70 }
+				NOT = { rich_strata_everyday_needs = 0.35 }
+				NOT = { rich_strata_luxury_needs = 0.15 }
+			}
+		}		
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { rich_strata_life_needs = 0.60 }
+				NOT = { rich_strata_everyday_needs = 0.30 }
+				NOT = { rich_strata_luxury_needs = 0.125 }
+			}
+		}		
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { rich_strata_life_needs = 0.50 }
+				NOT = { rich_strata_everyday_needs = 0.25 }
+				NOT = { rich_strata_luxury_needs = 0.10 }
+			}
+		}
+		modifier = {
+			factor = 0.90
+			AND = {
+				NOT = { rich_strata_life_needs = 0.40 }
+				NOT = { rich_strata_everyday_needs = 0.20 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			AND = {
+				NOT = { rich_strata_life_needs = 0.30 }
+				NOT = { rich_strata_everyday_needs = 0.15 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			AND = {
+				NOT = { rich_strata_life_needs = 0.20 }
+				NOT = { rich_strata_everyday_needs = 0.10 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			AND = {
+				NOT = { rich_strata_life_needs = 0.10 }
+				NOT = { rich_strata_everyday_needs = 0.05 }
+			}
+		}
+		modifier = {
+			factor = 0.25
+			AND = {
+				NOT = { rich_strata_life_needs = 0.05 }
+				NOT = { rich_strata_everyday_needs = 0.025 }
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				NOT = { rich_strata_life_needs = 0 }
+				NOT = { rich_strata_everyday_needs = 0 }
+			}
+		}
+	
+	modifier = {
+		factor = 1.4
+		OR = {
+			is_primary_culture = THIS
+			is_accepted_culture = THIS
+			is_culture_group = THIS
+		}
 	}
 	
 	modifier = {
@@ -147,18 +300,59 @@ country_migration_target = {
 	}
 	
 	modifier = {
-		factor = 2.0
-		NOT = { total_pops = 10000000 }
-		has_country_flag = new_world_nation
+		factor = 1.1
+		religion = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		neighbour = THIS
+	}
+	
+	modifier = {
+		factor = 1.25
+		is_our_vassal = THIS
+	}
+	
+	modifier = {
+		factor = 1.25
+		vassal_of = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		is_sphere_leader_of = THIS
+	}
+	
+	modifier = {
+		factor = 1.1
+		in_sphere = THIS
+	}
+	
+	modifier = {
+		factor = 0.5
+		war_with = THIS
+	}
+	
+	modifier = {
+		factor = 0.85
+		is_mobilised = yes
+	}
+	
+	modifier = {
+		factor = 0.9
+		NOT = { has_country_flag = new_world_nation }
+		NOT = { year = 1900 }
 	}
 	modifier = {
-		factor = 1.7
-		total_pops = 10000000
+		factor = 1.1
+		NOT = { total_pops = 10000000 }
 		has_country_flag = new_world_nation
+		NOT = { year = 1900 }
+		
 	}
 	modifier = {
 		factor = 1.5
-		year = 1900
 		NOT = { total_num_of_ports = 1 }
 		neighbour = THIS
 	}	
@@ -483,26 +677,91 @@ promote_to =
 	officers = {
 		factor = 0.01
 		
-		modifier = {
-			factor = -5
-			state_scope = { officers = 0.002 }
-		}
-		
+			modifier = {
+				factor = -10
+				state_scope = { 
+					officers = 0.005
+				}
+			}
+			modifier = {
+				factor = -9000
+				state_scope = { 
+					officers = 0.01
+				}
+			}
 		modifier = {
 			factor = -100
 			location = { is_colonial = yes }
 			is_primary_culture = no
 			is_accepted_culture = no
 		}
-		
+
 		group = {
 			modifier = {
-				factor = 1.3
+				factor = 1
+				literacy = 0.5
+			}
+			modifier = {
+				factor = 1
+				literacy = 0.6
+			}
+			modifier = {
+				factor = 1
+				literacy = 0.7
+			}
+			modifier = {
+				factor = 1
+				literacy = 0.8
+			}
+			modifier = {
+				factor = 1
+				literacy = 0.9
+			}
+			modifier = {
+				factor = 1
+				literacy = 1
+			}
+		}
+		group = {
+			modifier = {
+				factor = 2
+				military_spending = 0.1
+			}
+			modifier = {
+				factor = 2
+				military_spending = 0.2
+			}
+			modifier = {
+				factor = 2
+				military_spending = 0.3
+			}
+			modifier = {
+				factor = 2
+				military_spending = 0.4
+			}
+			modifier = {
+				factor = 2
+				military_spending = 0.5
+			}
+			modifier = {
+				factor = 2
 				military_spending = 0.6
 			}
 			modifier = {
-				factor = 1.3
+				factor = 2
 				military_spending = 0.7
+			}
+			modifier = {
+				factor = 2
+				military_spending = 0.8
+			}
+			modifier = {
+				factor = 2
+				military_spending = 0.9
+			}
+			modifier = {
+				factor = 2
+				military_spending = 0.99
 			}
 		}
 	}
@@ -929,18 +1188,7 @@ promote_to =
 			NOT = { location = { work_available = { worker = craftsmen } } }
 		}
 	}
-#	labourers = 
-#	{
-#		factor = 0.01
-#		modifier = {
-#			factor = 1.4
-#			not = { military_spending = 0.35 }
-#		}
-#	}
-
 }
-
-
 ideologies = {
 	
 	subordinate = {

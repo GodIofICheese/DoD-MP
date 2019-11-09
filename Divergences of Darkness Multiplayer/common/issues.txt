@@ -471,21 +471,21 @@ political_reforms = {
 		mandatory_service = {
 			mobilisation_size = 0.05
 			mobilisation_economy_impact = 0.5
-			global_immigrant_attract = -0.1
+			global_immigrant_attract = -0.15
 			education_efficiency_modifier = -0.20
 			land_organisation = -0.20
 		}
 		four_year_draft = {
 			mobilisation_size = 0.03
 			mobilisation_economy_impact = 0.2
-			global_immigrant_attract = -0.05
+			global_immigrant_attract = -0.08
 			education_efficiency_modifier = -0.1
 			land_organisation = -0.10
 		}
 		two_year_draft = {
 			mobilisation_size = 0.02
 			mobilisation_economy_impact = 0.1
-			global_immigrant_attract = -0.02
+			global_immigrant_attract = -0.04
 			education_efficiency_modifier = -0.05
 			land_organisation = -0.05
 		}
@@ -494,12 +494,6 @@ political_reforms = {
 			global_immigrant_attract = 0.01
 			land_organisation = 0.05
 			land_unit_start_experience = 5
-			allow = { 
-				OR = {
-					NOT = { war_policy = jingoism }
-					NOT = { war_policy = pro_military}
-				}
-			}
 		}
 		no_draft = {
 			global_immigrant_attract = 0.04
@@ -782,22 +776,22 @@ social_reforms = {
 		trinket_wage = {
 			minimum_wage = 0.15
 			administrative_multiplier = 1
-			global_immigrant_attract = 0.01
+			global_immigrant_attract = 0.02
 		}
 		low_minimum_wage = {
 			minimum_wage = 0.25
 			administrative_multiplier = 2
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.04
 		}
 		acceptable_minimum_wage = {
 			minimum_wage = 0.5
 			administrative_multiplier = 3
-			global_immigrant_attract = 0.03
+			global_immigrant_attract = 0.06
 		}
 		good_minimum_wage = {
 			minimum_wage = 0.75
 			administrative_multiplier = 4
-			global_immigrant_attract = 0.04
+			global_immigrant_attract = 0.08
 		}
 	}
 	work_hours = {
@@ -811,7 +805,7 @@ social_reforms = {
 			artisan_throughput = -0.02
 			minimum_wage = 0.12
 			administrative_multiplier = 1
-			global_immigrant_attract = 0.01
+			global_immigrant_attract = 0.02
 		}
 		twelve_hours = {
 			factory_throughput = -0.05
@@ -819,7 +813,7 @@ social_reforms = {
 			artisan_throughput = -0.03
 			minimum_wage = 0.25
 			administrative_multiplier = 2
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.04
 		}
 		ten_hours = {
 			factory_throughput = -0.075
@@ -827,7 +821,7 @@ social_reforms = {
 			artisan_throughput = -0.04
 			minimum_wage = 0.37
 			administrative_multiplier = 3
-			global_immigrant_attract = 0.03
+			global_immigrant_attract = 0.06
 		}
 		eight_hours = {
 			factory_throughput = -0.1
@@ -835,7 +829,7 @@ social_reforms = {
 			artisan_throughput = -0.05
 			minimum_wage = 0.5
 			administrative_multiplier = 4
-			global_immigrant_attract = 0.04
+			global_immigrant_attract = 0.08
 		}
 	}
 	safety_regulations = {
@@ -847,7 +841,7 @@ social_reforms = {
 			factory_cost = 0.20
 			factory_maintenance = 0.1
 			administrative_multiplier = 1
-			global_immigrant_attract = 0.01
+			global_immigrant_attract = 0.02
 		}
 		low_safety = {
 			pension_level = 0.1
@@ -856,7 +850,7 @@ social_reforms = {
 			RGO_output = -0.02
 			artisan_output = -0.02
 			administrative_multiplier = 2
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.04
 		}
 		acceptable_safety = {
 			pension_level = 0.25
@@ -865,7 +859,7 @@ social_reforms = {
 			RGO_output = -0.03
 			artisan_output = -0.03
 			administrative_multiplier = 3
-			global_immigrant_attract = 0.03
+			global_immigrant_attract = 0.06
 		}
 		good_safety = {
 			pension_level = 0.5
@@ -874,7 +868,7 @@ social_reforms = {
 			RGO_output = -0.04
 			artisan_throughput = -0.04
 			administrative_multiplier = 4
-			global_immigrant_attract = 0.04
+			global_immigrant_attract = 0.08
 		}
 	}
 	
@@ -884,19 +878,19 @@ social_reforms = {
 		}
 		trinket_subsidies = {
 			unemployment_benefit = 0.25
-			global_immigrant_attract = 0.01
+			global_immigrant_attract = 0.02
 		}
 		low_subsidies = {
 			unemployment_benefit = 0.50
-			global_immigrant_attract = 0.02
+			global_immigrant_attract = 0.04
 		}
 		acceptable_subsidies = {
 			unemployment_benefit = 0.75
-			global_immigrant_attract = 0.03
+			global_immigrant_attract = 0.06
 		}
 		good_subsidies = {
 			unemployment_benefit = 1.0
-			global_immigrant_attract = 0.04
+			global_immigrant_attract = 0.08
 		}
 	}
 	pensions = {
@@ -904,20 +898,20 @@ social_reforms = {
 		no_pensions = {
 		}
 		trinket_pensions = {
-			pension_level	= 0.25
-			global_immigrant_attract = 0.02
+			pension_level = 0.25
+			global_immigrant_attract = 0.03
 		}
 		low_pensions = {
-			pension_level	= 0.50
-			global_immigrant_attract = 0.04
-		}
-		acceptable_pensions = {
-			pension_level	= 0.75
+			pension_level = 0.50
 			global_immigrant_attract = 0.06
 		}
+		acceptable_pensions = {
+			pension_level = 0.75
+			global_immigrant_attract = 0.09
+		}
 		good_pensions = {
-			pension_level	= 1
-			global_immigrant_attract = 0.08
+			pension_level = 1
+			global_immigrant_attract = 0.12
 		}
 	}
 	health_care = {
@@ -955,26 +949,26 @@ social_reforms = {
 		next_step_only = yes
 		administrative = yes
 		no_schools = {
-			global_assimilation_rate = -0.002
+			global_assimilation_rate = -0.005
 			global_pop_consciousness_modifier = -0.02
 		}
 		low_schools = {
 			education_efficiency_modifier = 0.05
-			global_assimilation_rate = 0.002
+			global_assimilation_rate = 0.005
 			global_immigrant_attract = 0.02
 			administrative_multiplier = 1
 			global_pop_consciousness_modifier = -0.01
 		}
 		acceptable_schools = {
 			education_efficiency_modifier = 0.075
-			global_assimilation_rate = 0.005
+			global_assimilation_rate = 0.01
 			global_immigrant_attract = 0.03
 			administrative_multiplier = 2
 			global_pop_consciousness_modifier = 0.01
 		}
 		good_schools = {
 			education_efficiency_modifier = 0.1
-			global_assimilation_rate = 0.01
+			global_assimilation_rate = 0.02
 			global_immigrant_attract = 0.04
 			administrative_multiplier = 3
 			global_pop_consciousness_modifier = 0.02
@@ -1010,8 +1004,8 @@ social_reforms = {
 		next_step_only = yes
 		child_labor_legal = {
 			education_efficiency_modifier = -0.15
-			factory_throughput = 0.1
-			artisan_throughput = 0.1
+			factory_throughput = 0.15
+			artisan_throughput = 0.15
 			RGO_throughput = 0.25
 		}
 		

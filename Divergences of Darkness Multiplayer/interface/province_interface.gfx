@@ -6,6 +6,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_province_selector_strip"
+		texturefile = "gfx\\interface\\province_selector_strip.dds"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
 		name = "GFX_flashpoint_tension_icon"
 		texturefile = "gfx\\interface\\flashpoint_tension_icon.dds"
 	}
@@ -124,6 +130,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_provinceview_bg"
 		texturefile = "gfx\\interface\\province_bg.dds"
+		norefcount = yes
+	}
+	spriteType = {
+		name = "GFX_a_new_interface"
+		texturefile = "gfx\\interface\\a_new_interface.dds"
 		norefcount = yes
 	}
 	spriteType = {

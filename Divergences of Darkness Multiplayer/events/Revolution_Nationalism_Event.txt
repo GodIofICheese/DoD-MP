@@ -368,10 +368,7 @@ province_event = {
 	news_desc_short = "EVTDESC97175_NEWS_SHORT"
 	
 	trigger = {
-		OR = {
 			is_colonial = yes
-			is_overseas = yes
-		}
 		state_scope = {
 			NOT = {
 				any_owned_province = {
