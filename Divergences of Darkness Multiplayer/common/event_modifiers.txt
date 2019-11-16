@@ -339,8 +339,8 @@ divided_society = {
 }
 
 divided_society1 = {
-	assimilation_rate = -0.3
-	non_accepted_pop_militancy_modifier = 0.02
+	assimilation_rate = -0.3	
+	pop_militancy_modifier = 0.02
 	pop_consciousness_modifier = 0.05
 	icon = 18
 }

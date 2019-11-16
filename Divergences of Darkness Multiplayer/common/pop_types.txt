@@ -894,7 +894,7 @@ colonialmigration_chance = {
 
 #general emigration chance
 emigration_chance = {
-	factor = 0.5
+	factor = 0.45
 
 	group = {
 		modifier = {

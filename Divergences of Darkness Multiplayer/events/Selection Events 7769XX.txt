@@ -7,6 +7,9 @@ province_event = {
 		has_building = province_selector
 		NOT = { has_province_modifier = province_selected }
 	}
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 		option = {
 		name = EVTOPTA776901

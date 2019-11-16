@@ -323,7 +323,7 @@ empiricism = {
 }
 analytic_philosophy = {
 	area = philosophy
-	year = 1880
+	year = 1870
 	cost = 14400
 
 	increase_research = 0.5

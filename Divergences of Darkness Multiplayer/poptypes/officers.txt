@@ -2,7 +2,6 @@ sprite = 2
 color = { 119 98 34 }
 strata = middle
 state_capital_only = yes
-can_be_recruited = yes
 
 leadership = 3
 research_optimum = 0.01	#used for leadership as well.
