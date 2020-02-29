@@ -552,15 +552,15 @@ political_decisions = {
 				}
 				remove_core = TUR
 			}
-		TUR_859 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_860 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_869 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_863 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_873 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_876 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_881 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_884 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
-		TUR_889 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 1 }
+		TUR_859 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_860 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_869 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_863 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_873 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_876 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_881 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_884 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
+		TUR_889 = { limit = { life_rating = 35 NOT = { life_rating = 36 } } life_rating = 2 }
 		}
 
 		ai_will_do = {

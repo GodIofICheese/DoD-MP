@@ -5,4 +5,9 @@ add_core = ENL
 add_core = WLS
 trade_goods = sulphur
 life_rating = 34
-1861.1.1 = { railroad = 3 }
+1836.1.2 = {
+	owner = ENL
+	controller = ENL
+	remove_core = DUA
+	life_rating = 35
+}

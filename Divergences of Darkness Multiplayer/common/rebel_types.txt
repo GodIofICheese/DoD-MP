@@ -5647,7 +5647,7 @@ zombie_rebels = {
 	
 	resilient = yes
 	reinforcing = yes
-	general = yes
+	general = no
 	smart = no
 	unit_transfer = yes
 
@@ -5668,6 +5668,10 @@ zombie_rebels = {
 		modifier = {
 			factor = 0
 			country = { has_country_flag = zombie_outbreak_defeat }
+		}
+		modifier = {
+			factor = 0
+			type = soldiers
 		}
 	}
 	
@@ -5711,7 +5715,10 @@ zombie_rebels = {
 			factor = 0.001
 			controlled_by = REB
 		}
-
+		modifier = {
+			factor = 0
+			type = soldiers
+		}
 	}
 
  	siege_won_trigger = { 
@@ -5722,8 +5729,11 @@ zombie_rebels = {
 	
 	siege_won_effect = {
 		any_pop = {
+			limit = {
+			NOT = { type = soldiers }
+			}
 			reduce_pop = 0.9
-			militancy = 8
+			militancy = 10
 			consciousness = -3
 		}
 		add_province_modifier = { 

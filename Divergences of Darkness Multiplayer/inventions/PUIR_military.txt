@@ -26,6 +26,7 @@ interruptor_gears = {
 	effect = {
 		plane = {
 			attack = 2
+			defense = 3
 		}
 	}	
 }
@@ -51,7 +52,7 @@ medium_tanks = {
 	effect = {
 		tank = {
 			attack = 5
-			defense = 1
+			defense = 4
 			maximum_speed = 2
 			supply_consumption = 0.5
 		}

@@ -1282,14 +1282,13 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 					trade_goods = iron
 					trade_goods = sulphur
 					trade_goods = precious_metal
 					trade_goods = precious_goods
 				}
-				is_colonial = no
 			}
 			
 			trade_goods = coal
@@ -1309,14 +1308,13 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 					trade_goods = coal
 					trade_goods = sulphur
 					trade_goods = precious_metal
 					trade_goods = precious_goods
 				}
-				is_colonial = no
 			}
 			
 			trade_goods = iron
@@ -1336,14 +1334,13 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 					trade_goods = coal
 					trade_goods = iron
 					trade_goods = precious_metal
 					trade_goods = precious_goods
 				}
-				is_colonial = no
 			}
 			
 			trade_goods = sulphur
@@ -1358,7 +1355,7 @@ country_event = {
 		name = "EVT199036OPTD"
 		add_country_modifier = {
 		name = rgo_changed
-		duration = 730
+		duration = 1
 		}
 		clr_country_flag = rgo_changed_flag
 	}
@@ -1387,7 +1384,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 					trade_goods = timber
 					trade_goods = cotton
@@ -1395,8 +1392,13 @@ country_event = {
 					trade_goods = fish
 					trade_goods = fruit
 					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = opium
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
 				}
-				is_colonial = no
 				NOT = {
 					terrain = arctic
 					terrain = desert
@@ -1426,10 +1428,15 @@ country_event = {
 		name = rgo_changed
 		duration = 4562
 		}
+		any_country = {
+                any_owned = { limit = { trade_goods = timber }
+                    add_province_modifier = { name = timber_employment_fix duration = 5 }
+                }
+        }
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 				    trade_goods = wool
 					trade_goods = cotton
@@ -1437,8 +1444,13 @@ country_event = {
 					trade_goods = fish
 					trade_goods = fruit
 					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = opium
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
 				}
-				is_colonial = no
 				OR = {
 					terrain = forest
 					terrain = jungle
@@ -1453,6 +1465,10 @@ country_event = {
 			name = switched_production
 			duration = 4562
 			}
+			add_province_modifier = {
+			name = migration_factor_reduced
+			duration = 730
+			}
 		}	
 	}
 	
@@ -1465,7 +1481,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1473,8 +1489,13 @@ country_event = {
 					trade_goods = fish
 					trade_goods = fruit
 					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = opium
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
 				}
-				is_colonial = no
 				NOT = {
 					terrain = arctic
 					terrain = desert
@@ -1511,7 +1532,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1519,8 +1540,13 @@ country_event = {
 					trade_goods = fish
 					trade_goods = fruit
 					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = opium
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
 				}
-				is_colonial = no
 				NOT = {
 					terrain = arctic
 					terrain = desert
@@ -1557,7 +1583,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1565,8 +1591,13 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fruit
 					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = opium
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
 				}
-				is_colonial = no
 				is_coastal = yes
 			}
 			
@@ -1587,7 +1618,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1595,8 +1626,13 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fish
 					trade_goods = grain
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = opium
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
 				}
-				is_colonial = no
 				NOT = {
 					terrain = arctic
 					terrain = desert
@@ -1638,7 +1674,7 @@ country_event = {
 		clr_country_flag = rgo_changed_flag
 		random_owned = {
 			limit = {
-				has_province_modifier = province_selected
+				has_building = province_selector
 				OR = {
 				    trade_goods = wool
 					trade_goods = timber
@@ -1646,8 +1682,13 @@ country_event = {
 					trade_goods = cattle
 					trade_goods = fish
 					trade_goods = fruit
+					trade_goods = dye
+					trade_goods = silk
+					trade_goods = opium
+					trade_goods = tobacco
+					trade_goods = coffee
+					trade_goods = tea
 				}
-				is_colonial = no
 				NOT = {
 					terrain = arctic
 					terrain = desert
@@ -1681,7 +1722,7 @@ country_event = {
 		name = "EVT199037OPTH"
 		add_country_modifier = {
 		name = rgo_changed
-		duration = 365
+		duration = 1
 		}
 		clr_country_flag = rgo_changed_flag
 	}

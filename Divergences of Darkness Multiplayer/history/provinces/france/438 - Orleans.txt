@@ -19,11 +19,9 @@ upgrade = yes
 #	building = glass_factory
 #	upgrade = yes
 #}
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = artillery_factory
-		upgrade = yes
-	}
+1836.1.2 = {
+	owner = FRA
+	controller = FRA
+	remove_core = DUA
+	life_rating = 35
 }
-1861.1.1 = { railroad = 3 }

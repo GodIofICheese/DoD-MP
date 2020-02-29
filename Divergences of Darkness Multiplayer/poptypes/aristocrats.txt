@@ -33,9 +33,6 @@ everyday_needs = {
 	tobacco = 10 
 	coffee = 5
 	tea = 5
-	radio = 2
-	telephones = 3
-	automobiles = 1
 }
 
 #Total cash needed: 2618 - Vanilla value: 2121
@@ -44,10 +41,10 @@ luxury_needs = {
 	fruit = 5
 	wool = 10
 	opium = 10
-	telephones = 10
-	automobiles = 10
+	telephones = 13
+	automobiles = 11
 	aeroplanes = 5
-	radio = 10
+	radio = 12
 	fuel = 10
 	ammunition = 1 
 	small_arms = 1 
@@ -1180,8 +1177,11 @@ promote_to =
 			soldiers = 0.03
 		}
 		modifier = {
-			factor = 5.0
-			not = { luxury_needs = 0.1 }
+			factor = 10
+			OR = {
+				NOT = { luxury_needs = 0.10 }
+				NOT = { cash_reserves = 4 }
+			}
 		}
 		modifier = {
 			factor = 5.0

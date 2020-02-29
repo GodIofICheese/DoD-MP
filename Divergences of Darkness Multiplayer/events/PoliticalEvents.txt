@@ -13,7 +13,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400 #COMMON
+		months = 1600 #COMMON
 		
 		modifier = {
 			factor = 0.9
@@ -78,7 +78,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400 #COMMON
+		months = 1600 #COMMON
 		modifier = {
 			factor = 1.1
 			ruling_party_ideology = conservative
@@ -149,7 +149,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.8
 			average_consciousness = 6
@@ -239,7 +239,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 0.9
 			literacy = 0.7
@@ -311,7 +311,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 430
+		months = 860
 		modifier = {
 			factor = 0.9
 			average_consciousness = 8
@@ -391,7 +391,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 1600
 		
 		modifier = {
 			factor = 4
@@ -455,7 +455,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 0.9
 			NOT = {
@@ -522,7 +522,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 1600
 		modifier = {
 			factor = 0.9
 			ruling_party_ideology = liberal
@@ -595,7 +595,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 1600
 		modifier = {
 			factor = 0.9
 			socialist = 40
@@ -665,7 +665,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 450
+		months = 900
 		modifier = {
 			factor = 0.9
 			war_exhaustion = 4
@@ -723,7 +723,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 7
@@ -781,7 +781,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 1600
 		modifier = {
 			factor = 0.9
 			poor_strata_life_needs = 0.9
@@ -849,7 +849,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		
 		modifier = {
 			factor = 0.9
@@ -910,7 +910,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			NOT = {
@@ -956,7 +956,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			NOT = {
@@ -1035,7 +1035,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 700
+		months = 1800
 		
 		modifier = {
 			factor = 0.9
@@ -1096,7 +1096,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 700
+		months = 1800
 		modifier = {
 			factor = 0.9
 			NOT = {
@@ -1152,7 +1152,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		
 		modifier = {
 			factor = 0.9
@@ -1220,7 +1220,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 0.9
 			political_reform_want = 0.25
@@ -1302,7 +1302,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 1.5
 			NOT = {
@@ -1358,7 +1358,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 700
+		months = 1800
 		modifier = {
 			factor = 1.5
 			NOT = {
@@ -1429,7 +1429,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 500
+		months = 1000
 		modifier = {
 			factor = 1.3
 			NOT = {
@@ -1488,7 +1488,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			political_reform_want = 0.2
@@ -1569,7 +1569,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 1200
+		months = 2800
 		modifier = {
 			factor = 0.9
 			plurality = 4
@@ -1612,7 +1612,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			plurality = 4
@@ -1668,7 +1668,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			political_reform_want = 0.45
@@ -1746,7 +1746,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.8
 			average_militancy = 10
@@ -1814,7 +1814,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			middle_strata_everyday_needs = 0.7
@@ -1875,7 +1875,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			plurality = 30
@@ -1920,7 +1920,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_militancy = 6
@@ -1975,7 +1975,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			universal_voting = 20
@@ -2041,7 +2041,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 0.9
 			average_consciousness = 7
@@ -2089,9 +2089,9 @@ country_event = {
 #Policies
 #Trade Policy
 country_event = {
-	id = 4400
-	title = "EVTNAME4400"
-	desc = "EVTDESC4400"
+	id = 4800
+	title = "EVTNAME4800"
+	desc = "EVTDESC4800"
 	picture = "Prosper"
 	
 	trigger = {
@@ -2101,7 +2101,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 1.5
 			NOT = {
@@ -2115,7 +2115,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTA4400"
+		name = "EVTOPTA4800"
 		random_state = {
 			limit = {
 				NOT = {
@@ -2135,7 +2135,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "EVTOPTB4400"
+		name = "EVTOPTB4800"
 		random_state = {
 			limit = {
 				NOT = {
@@ -2174,7 +2174,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 600
+		months = 1200
 		modifier = {
 			factor = 2
 			NOT = {
@@ -2221,7 +2221,7 @@ country_event = {
     }
     
     mean_time_to_happen = {
-        months = 800
+        months = 1600
         modifier = {
             factor = 0.9
             NOT = {
@@ -2277,7 +2277,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			NOT = {
@@ -2337,7 +2337,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 1.1
 			poor_strata_life_needs = 0.9
@@ -2376,7 +2376,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 1.4
 			NOT = {
@@ -2419,7 +2419,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.7
 			war = yes
@@ -2460,7 +2460,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 1.4
 			war_exhaustion = 5
@@ -2504,7 +2504,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 1.1
 			war = yes
@@ -2548,7 +2548,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 1.1
 			jingoism = 10
@@ -2594,7 +2594,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			pro_atheism = 10
@@ -2635,7 +2635,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 3
@@ -2701,7 +2701,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.8
 			average_militancy = 7
@@ -2755,7 +2755,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			moralism = 5
@@ -2816,7 +2816,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_militancy = 6
@@ -2883,7 +2883,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.8
 			unemployment = 0.1
@@ -2954,7 +2954,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.8
 			moralism = 15
@@ -3027,7 +3027,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.3
 			war = yes
@@ -3133,7 +3133,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.7
 			NOT = {
@@ -3202,7 +3202,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			war = no
@@ -3276,7 +3276,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			political_reform_want = 0.3
@@ -3333,7 +3333,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		
 		modifier = {
 			factor = 0.9
@@ -3406,7 +3406,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.8
 			average_consciousness = 6
@@ -3466,7 +3466,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		modifier = {
 			factor = 0.9
 			average_consciousness = 4
@@ -3527,7 +3527,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 800
+		months = 1600
 		
 		modifier = {
 			factor = 0.8
@@ -3589,7 +3589,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 400
+		months = 800
 		
 		modifier = {
 			factor = 0.9
@@ -3992,7 +3992,7 @@ country_event = {
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
 			random_list = {
-				25 = { relation = { who = THIS value = -400 } }
+				25 = { relation = { who = THIS value = -800 } }
 				25 = { relation = { who = THIS value = -300 } }
 				25 = { relation = { who = THIS value = -200 } }
 				25 = { relation = { who = THIS value = -150 } }
@@ -4018,7 +4018,7 @@ country_event = {
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
 			random_list = {
-				25 = { relation = { who = THIS value = -400 } }
+				25 = { relation = { who = THIS value = -800 } }
 				25 = { relation = { who = THIS value = -300 } }
 				25 = { relation = { who = THIS value = -200 } }
 				25 = { relation = { who = THIS value = -150 } }
@@ -4044,7 +4044,7 @@ country_event = {
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
 			random_list = {
-				25 = { relation = { who = THIS value = -400 } }
+				25 = { relation = { who = THIS value = -800 } }
 				25 = { relation = { who = THIS value = -300 } }
 				25 = { relation = { who = THIS value = -200 } }
 				25 = { relation = { who = THIS value = -150 } }
@@ -4627,7 +4627,7 @@ country_event = {
 				}
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 		}
 	}
 		
@@ -4711,7 +4711,7 @@ country_event = {
 				}
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 		}
 	}
 	
@@ -4795,7 +4795,7 @@ country_event = {
 				}
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 		}
 	}
 		
@@ -4871,7 +4871,7 @@ country_event = {
 		any_country = {
 			limit = { has_country_flag = jewish_country }
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 		}
 		any_country = {
 			limit = {
@@ -5027,7 +5027,7 @@ country_event = {
 				}
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 			}
 		}
 	}
@@ -5069,7 +5069,7 @@ country_event = {
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
 			random_list = {
-				25 = { relation = { who = THIS value = -400 } }
+				25 = { relation = { who = THIS value = -800 } }
 				25 = { relation = { who = THIS value = -300 } }
 				25 = { relation = { who = THIS value = -200 } }
 				25 = { relation = { who = THIS value = -150 } }
@@ -5098,7 +5098,7 @@ country_event = {
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
 			random_list = {
-				25 = { relation = { who = THIS value = -400 } }
+				25 = { relation = { who = THIS value = -800 } }
 				25 = { relation = { who = THIS value = -300 } }
 				25 = { relation = { who = THIS value = -200 } }
 				25 = { relation = { who = THIS value = -150 } }
@@ -5127,7 +5127,7 @@ country_event = {
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
 			random_list = {
-				25 = { relation = { who = THIS value = -400 } }
+				25 = { relation = { who = THIS value = -800 } }
 				25 = { relation = { who = THIS value = -300 } }
 				25 = { relation = { who = THIS value = -200 } }
 				25 = { relation = { who = THIS value = -150 } }
@@ -5715,7 +5715,7 @@ country_event = {
 				}
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 		}
 	}
 		
@@ -5802,7 +5802,7 @@ country_event = {
 				}
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 		}
 	}
 		
@@ -6093,7 +6093,7 @@ country_event = {
 				}
 			}
 			casus_belli = { target = THIS type = cut_down_to_size months = 60 }
-			relation = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
 		}
 	}
 }
@@ -6351,8 +6351,8 @@ country_event = {
 	option = {
 		name = "EVT443027OPTA"
 		release_vassal = FROM
-		relation = { who = FROM value = -400 }
-		diplomatic_influence = { who = FROM value = -400 }
+		relation = { who = FROM value = -800 }
+		diplomatic_influence = { who = FROM value = -800 }
 		end_military_access = FROM
 		leave_alliance = FROM
 		casus_belli = { target = FROM type = install_fascism_make_puppet months = 24 }
@@ -6363,7 +6363,7 @@ country_event = {
 	option = {
 		name = "EVT443027OPTC"
 		relation = { who = FROM value = -50 }
-		diplomatic_influence = { who = FROM value = -400 }
+		diplomatic_influence = { who = FROM value = -800 }
 		release_vassal = FROM
 		end_military_access = FROM
 		leave_alliance = FROM
@@ -6621,8 +6621,8 @@ country_event = {
 	option = {
 		name = "EVT443027OPTA"
 		release_vassal = FROM
-		relation = { who = FROM value = -400 }
-		diplomatic_influence = { who = FROM value = -400 }
+		relation = { who = FROM value = -800 }
+		diplomatic_influence = { who = FROM value = -800 }
 		end_military_access = FROM
 		leave_alliance = FROM
 		casus_belli = { target = FROM type = install_communism_make_puppet months = 24 }
@@ -6685,8 +6685,8 @@ country_event = {
 			release_vassal = THIS
 			end_military_access = THIS
 			leave_alliance = THIS
-			relation = { who = THIS value = -400 }
-			diplomatic_influence = { who = THIS value = -400 }
+			relation = { who = THIS value = -800 }
+			diplomatic_influence = { who = THIS value = -800 }
 			country_event = { id = 443033 days = 10 }
 		}
 	}	

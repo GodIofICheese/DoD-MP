@@ -44,17 +44,16 @@ everyday_needs = {
 	furniture = 4		#19.6
 	paper = 5			#17
 	glass = 1			#2.9
-	tobacco = 3			#3.3
-	tea = 5				#13
-	coffee = 2			#4.2
-	radio = 0.50		#8
-	telephones = 0.5	#8
-	cement = 0.5		#8
-	steel = 1			#4.7
+	tobacco = 1.5			#3.3
+	tea = 2.5				#13
+	coffee = 0.5			#4.2
 }
 
 #Total cash needed: 461.7 - Vanilla value: 383.4
 luxury_needs = {
+	tobacco = 3			#3.3
+	tea = 5				#13
+	coffee = 1
 	canned_food = 0.75
 	fruit = 1
 	wool = 3
@@ -63,10 +62,9 @@ luxury_needs = {
 	luxury_furniture = 1.5
 	telephones = 1.25
 	automobiles = 1
-	wine = 10
+	wine = 5
 	aeroplanes = 0.4
 	radio = 1
-	fuel = 0.2
 }
 
 country_migration_target = {
@@ -998,29 +996,93 @@ promote_to =
 			}
 		}
 	}
-	aristocrats =  {
+	aristocrats = {
 		factor = 0.01
-		
+
 		modifier = {
 			factor = -100
 			OR = {
-				state_scope = { aristocrats = 0.02 }
+				state_scope = { aristocrats = 0.04 }
 				country = { government = proletarian_dictatorship }
 			}
 		}
 
 		modifier = {
-			factor = -100
-			NOT = { luxury_needs = 0.10 }
-		}		
-		modifier = {
-			factor = 10
-			luxury_needs = 1
+			factor = -10
+			OR = {
+				NOT = { luxury_needs = 0.10 }
+				NOT = { cash_reserves = 4 }
+			}
 		}
 		
+		group = {
+			modifier = {
+				factor = 0.5
+				cash_reserves = 8
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 12
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 16
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 20
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 24
+			}
+			modifier = {
+				factor = 1
+				cash_reserves = 32
+			}
+			modifier = {
+				factor = 1
+				cash_reserves = 40
+			}
+			modifier = {
+				factor = 2
+				cash_reserves = 56
+			}
+			modifier = {
+				factor = 3
+				cash_reserves = 80
+			}
+			modifier = {
+				factor = 5
+				cash_reserves = 160
+			}
+		}
+			
+		group = {
 		modifier = {
-			factor = 2
-			not = { literacy = 0.50 }
+				factor = 1
+				luxury_needs = 0.5
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.6
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.7
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.8
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.9
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 1
+			}
 		}
 	}
 	
@@ -1104,14 +1166,7 @@ promote_to =
 			NOT = { location = { work_available = { worker = craftsmen } } }
 		}
 	}
-#	labourers = 
-#	{
-#		factor = 0.01
-#		modifier = {
-#			factor = 1.4
-#			not = { military_spending = 0.35 }
-#		}
-#	}
+}
 
 ideologies = {
 	
@@ -1157,7 +1212,7 @@ ideologies = {
 			social_reform_want = 0.20
 			political_reform_want = 0.20
 		}
-}
+	}
 	
 	separatist = {
 		factor = 1
@@ -1242,7 +1297,7 @@ ideologies = {
     				}
 			}
 		}
-}
+	}
 	
 	fascist = {
 		factor = 1

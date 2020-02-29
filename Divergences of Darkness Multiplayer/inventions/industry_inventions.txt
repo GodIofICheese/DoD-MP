@@ -342,8 +342,7 @@ precision_work = {
 		}
 		factory_goods_output = {
 			ammunition = 0.03
-		}  
-		activate_building = machine_parts_factory 
+		} 
 	}
 }
 

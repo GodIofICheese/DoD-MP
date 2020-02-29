@@ -1340,18 +1340,6 @@ no_transport_improv_desc;Transportation system is primitive.;;;;;;;;;;;;x,,
 yes_transport_improv_desc;Transportation system is modern.;;;;;;;;;;;;x,,
 yes_foreign_weapons;Imported Weapons;;;;;;;;;;;;x,,
 #national_focus.txt;;;;;;;;;;;;;;
-promotion_focus;Promotion;Promotion;Beförderung;;;;;;;;;;;
-promote_aristocrats;Encourage Aristocrats ;Encourager les aristocrates;Aristokraten fördern;;;;;;;;;;;
-promote_artisans;Encourage Artisans ;Encourager les artisans;Handwerker fördern;;;;;;;;;;;
-promote_bureaucrats;Encourage Bureaucrats ;Encourager les bureaucrates;Bürokraten fördern;;;;;;;;;;;
-promote_capitalists;Encourage Capitalists ;Encourager les capitalistes;Kapitalisten fördern;;;;;;;;;;;
-promote_clergymen;Encourage Clergymen ;Encourager les membres du clergé;Geistliche fördern;;;;;;;;;;;
-promote_clerks;Encourage Clerks ;Encourager les employés de bureau;Angestellte fördern;;;;;;;;;;;
-promote_craftsmen;Encourage Craftsmen ;Encourager les ouvriers;Facharbeiter fördern;;;;;;;;;;;
-promote_farmers;Encourage Farmers ;Encourager les fermiers;Bauern fördern;;;;;;;;;;;
-promote_labourers;Encourage Labourers ;Encourager les travailleurs;Arbeiter fördern;;;;;;;;;;;
-promote_officers;Encourage Officers ;Encourager les officiers;Offiziere fördern;;;;;;;;;;;
-promote_soldiers;Encourage Soldiers ;Encourager les soldats;Soldaten fördern;;;;;;;;;;;
 heavy_industry_focus;Heavy Industry;;;;;;;;;;;;;
 encourage_rail;Build Railroads ;Construire des chemins de fer;Eisenbahn bauen;;;;;;;;;;;
 basic_industry_focus;Encourage Basic Industry ;Encourager l'industrie de base;Grundstoffindustrie fördern;;;;;;;;;;;
@@ -1376,10 +1364,6 @@ military_goods_focus;Military Industry;;;;;;;;;;;;;
 munitions_focus;Encourage Munitions Industry;;;;;;;;;;;;;
 armaments_focus;Encourage Armaments Industry ;Encourager l'industrie de l'armement;Waffenindustrie fördern;;;;;;;;;;;
 cavalry_focus;Encourage Cavalry;;;;;;;;;;;;;
-immigration_colonization_focus;Immigration & Colonization;;;;;;;;;;;;;
-immigration;Attract Immigrants ;Attirer des immigrants;Einwanderer anlocken;;;;;;;;;;;
-progress_focus;Encourage Progress;;;;;;;;;;;;;
-order_focus;Encourage Order;;;;;;;;;;;;;
 #nationalvalues.txt;;;;;;;;;;;;;;
 nv_tradition;Tradition;;;;;;;;;;;;;
 nv_enlightenment;Enlightenment;;;;;;;;;;;;;

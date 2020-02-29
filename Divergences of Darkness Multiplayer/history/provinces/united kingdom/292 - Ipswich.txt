@@ -6,7 +6,9 @@ trade_goods = grain
 life_rating = 34
 naval_base = 2
 fort = 1
-1861.1.1 = { 
-	railroad = 3 
-	naval_base = 3 
+1836.1.2 = {
+	owner = ENL
+	controller = ENL
+	remove_core = DUA
+	life_rating = 35
 }

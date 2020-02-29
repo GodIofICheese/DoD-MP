@@ -182,81 +182,81 @@
 	bureaucrats = {
 		culture = scandinavian
 		religion = protestant
-		size = 180
+		size = 270
 	}
 
 	clergymen = {
 		culture = scandinavian
 		religion = protestant
-		size = 225
+		size = 335
 	}
 
 	artisans = {
 		culture = scandinavian
 		religion = protestant
-		size = 5500
+		size = 6750
 	}
 
 	soldiers = {
 		culture = scandinavian
 		religion = protestant
-		size= 3000
+		size= 4500
 
 	}
 
 	soldiers = {
 		culture = scandinavian
 		religion = protestant
-		size = 1500
+		size = 2250
 	}
 	
 	farmers = {
 		culture = scandinavian
 		religion = protestant
-		size = 34025
+		size = 51025
 	}
 
 	aristocrats = {
 		culture = scandinavian
 		religion = protestant
-		size = 650
+		size = 875
 	}
 
 	bureaucrats = {
 		culture = north_german
 		religion = protestant
-		size = 20
+		size = 30
 	}
 
 	officers = {
 		culture = scandinavian
 		religion = protestant
-		size = 150
+		size = 225
 	}
 
 	clergymen = {
 		culture = north_german
 		religion = protestant
-		size = 150
+		size = 225
 	}
 
 	artisans = {
 		culture = north_german
 		religion = protestant
-		size = 2500
+		size = 3750
 	}
 
 	soldiers = {
 		culture = north_german
 		religion = protestant
-		size= 1500
+		size= 2250
 
 	}
 
 	farmers = {
 		culture = north_german
 		religion = protestant
-		size = 14850
+		size = 22270
 	}
 }
 #Aabenra (100000/25000 POPS)
@@ -264,32 +264,32 @@
 	clergymen = {
 		culture = scandinavian
 		religion = protestant
-		size = 175
+		size = 255
 	}
 
 	artisans = {
 		culture = scandinavian
 		religion = protestant
-		size = 1350
+		size = 2025
 	}
 
 	soldiers = {
 		culture = scandinavian
 		religion = protestant
-		size= 300
+		size= 450
 
 	}
 
 	farmers = {
 		culture = scandinavian
 		religion = protestant
-		size = 23175
+		size = 34675
 	}
 
 	aristocrats = {
 		culture = scandinavian
 		religion = protestant
-		size = 100
+		size = 150
 	}
 
 }

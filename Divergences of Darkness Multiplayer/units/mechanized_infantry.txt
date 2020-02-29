@@ -28,7 +28,7 @@ mechanized_infantry = {
 	
 	supply_consumption = 1.0
 	supply_cost = {
-		automobiles = 0.03
+		automobiles = 0.3
 		small_arms = 0.02 #0.015
 		canned_food = 0.07 # 0.08
 		ammunition = 0.1 #0
@@ -38,8 +38,8 @@ mechanized_infantry = {
 
 	#Land Abilties
 	reconnaissance = 2
-	attack = 19
-	defence = 21
+	attack = 23
+	defence = 23
 	discipline = 1.2
 	support = 1.0
 	maneuver = 2

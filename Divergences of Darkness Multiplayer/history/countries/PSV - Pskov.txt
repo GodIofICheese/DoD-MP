@@ -1,5 +1,6 @@
 capital = 1006
-primary_culture = russian
+primary_culture = finnish
+culture = russian
 religion = orthodox
 government = presidential_dictatorship # Lord Protector assigned by Scandinavian Emperor
 plurality = 0.0

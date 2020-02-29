@@ -124646,3 +124646,14 @@
     }
 
 }
+
+# Burgundian Ocean
+3321 = {
+    text_scale = 1.599997
+}
+
+# French Ocean
+3322 = {
+	text_rotation=0.000000 
+    text_scale = 0.000000 
+}

@@ -39,7 +39,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 375
+		months = 750
 		modifier = {
 			factor = 1.2
 			owner = {
@@ -244,7 +244,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 375
+		months = 750
 		modifier = {
 			factor = 1.2
 			poor_strata_everyday_needs = 1.0
@@ -421,7 +421,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 275
+		months = 550
 		modifier = {
 			factor = 1.2
 			owner = {
@@ -617,7 +617,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 375
+		months = 750
 		modifier = {
 			factor = 3
 			poor_strata_everyday_needs = 1.0
@@ -780,7 +780,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 275
+		months = 550
 		modifier = {
 			factor = 0.9
 			has_province_modifier = labor_union
@@ -1005,7 +1005,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 250
+		months = 500
 		modifier = {
 			factor = 1.5
 			poor_strata_everyday_needs = 1.0
@@ -1152,7 +1152,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 1.2
 			poor_strata_everyday_needs = 1.0
@@ -1297,7 +1297,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 1.2
 			poor_strata_everyday_needs = 1.0
@@ -1438,7 +1438,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 1.5
 			poor_strata_everyday_needs = 1.0
@@ -1636,7 +1636,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 1.5
 			poor_strata_everyday_needs = 1.0
@@ -1824,7 +1824,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -2008,7 +2008,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -2182,7 +2182,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -2351,7 +2351,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 300
+		months = 600
 		modifier = {
 			factor = 1.5
 			NOT = { average_militancy = 2 }
@@ -2534,7 +2534,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 30
+		months = 60
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -2715,7 +2715,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -2872,7 +2872,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 150
+		months = 300
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -3039,7 +3039,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -3215,7 +3215,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -3386,7 +3386,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -3568,7 +3568,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 250
+		months = 500
 		modifier = {
 			factor = 0.9
 			average_consciousness = 5
@@ -3756,7 +3756,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 1.2
 			poor_strata_everyday_needs = 1.0
@@ -3977,7 +3977,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 1.2
 			poor_strata_everyday_needs = 1.0
@@ -4169,7 +4169,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		months = 240
 		modifier = {
 			factor = 0.9
 			any_owned_province = {
@@ -4373,7 +4373,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 200
+		months = 400
 		modifier = {
 			factor = 0.5
 			OR = {

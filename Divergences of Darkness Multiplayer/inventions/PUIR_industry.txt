@@ -469,3 +469,13 @@ synthetic_cement = {
 	}
 	
 }
+
+haber_bosch_process = {
+	limit = { synthetic_polymers = 1 }
+	chance = {
+		base = 2
+	}
+	effect = {
+		activate_building = synthetic_nitrate_factory
+	}
+}

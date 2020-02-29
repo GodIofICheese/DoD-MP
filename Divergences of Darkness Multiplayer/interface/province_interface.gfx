@@ -8,7 +8,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_province_selector_strip"
 		texturefile = "gfx\\interface\\province_selector_strip.dds"
-		noOfFrames = 3
+		noOfFrames = 2
 	}
 	
 	spriteType = {

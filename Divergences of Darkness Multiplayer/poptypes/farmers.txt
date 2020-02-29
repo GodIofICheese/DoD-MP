@@ -16,25 +16,27 @@ life_needs = {
 
 #Total cash needed: 50.75 - Vanilla value: 49.25
 everyday_needs = {
-	tea = 4
+	tea = 2
 	coal = 1
 	liquor = 2
 	regular_clothes = 1.2
 	furniture = 1.1
-	coffee = 1
-	tobacco = 1
-	fertilizer = 0.5 #0
+	coffee = 0.5
+	tobacco = 0.5
+	fertilizer = 0.25 #0
 }
 
 #Total cash needed: 136.78 - Vanilla value: 125.995
 luxury_needs = {
+	tea = 4
+	coffee = 1
+	tobacco = 1
 	regular_clothes = 3
 	furniture = 3
 	paper = 1.0
 	telephones = 1.0
 	automobiles = 0.5
 	radio = 1.0
-	fuel = 0.1
 	#dye = 0.5
 }
 
@@ -284,11 +286,11 @@ migration_target = {
 	
 	modifier = {
 		factor = 1.5
+		is_colonial = no
 		OR = {
 			trade_goods = coal
 			trade_goods = sulphur
 			trade_goods = iron
-			trade_goods = precious_metal
 			trade_goods = tobacco
 			trade_goods = coffee
 			trade_goods = tea
@@ -296,6 +298,30 @@ migration_target = {
 			trade_goods = rubber
 			trade_goods = oil
 			trade_goods = tropical_wood
+		}
+		OR = {
+			work_available = { worker = farmers }
+			work_available = { worker = labourers }
+		}
+	}
+	
+	modifier = {
+		factor = 1.5
+		is_colonial = yes
+		OR = {
+			trade_goods = coal
+			trade_goods = sulphur
+			trade_goods = iron
+			trade_goods = tobacco
+			trade_goods = coffee
+			trade_goods = tea
+			trade_goods = rubber
+			trade_goods = oil
+			trade_goods = tropical_wood
+		}
+		OR = {
+			work_available = { worker = farmers }
+			work_available = { worker = labourers }
 		}
 	}
 	
@@ -1189,7 +1215,7 @@ promote_to = {
 		modifier = {
 			factor = 10
 			state_scope = { has_factories = yes }
-			NOT = { state_scope = { unemployment_by_type = { type = craftsmen value = 0.5 } } }
+			NOT = { state_scope = { unemployment_by_type = { type = craftsmen value = 0.15 } } }
 		}
 		modifier = {
 			factor = -40
@@ -1370,38 +1396,89 @@ promote_to = {
 		modifier = {
 			factor = -100
 			OR = {
-				state_scope = { aristocrats = 0.02 }
+				state_scope = { aristocrats = 0.04 }
 				country = { government = proletarian_dictatorship }
 			}
 		}
 
 		modifier = {
-			factor = -100
-			NOT = { luxury_needs = 0.10 }
-		}		
-		modifier = {
-			factor = 10
-			luxury_needs = 1
+			factor = -10
+			OR = {
+				NOT = { luxury_needs = 0.10 }
+				NOT = { cash_reserves = 4 }
+			}
 		}
 		
+		group = {
+			modifier = {
+				factor = 0.5
+				cash_reserves = 8
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 12
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 16
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 20
+			}
+			modifier = {
+				factor = 0.5
+				cash_reserves = 24
+			}
+			modifier = {
+				factor = 1
+				cash_reserves = 32
+			}
+			modifier = {
+				factor = 1
+				cash_reserves = 40
+			}
+			modifier = {
+				factor = 2
+				cash_reserves = 56
+			}
+			modifier = {
+				factor = 3
+				cash_reserves = 80
+			}
+			modifier = {
+				factor = 5
+				cash_reserves = 160
+			}
+		}
+			
+		group = {
 		modifier = {
-			factor = 2
-			not = { literacy = 0.50 }
+				factor = 1
+				luxury_needs = 0.5
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.6
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.7
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.8
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 0.9
+			}
+			modifier = {
+				factor = 1
+				luxury_needs = 1
+			}
 		}
 	}
-	
-	#slaves = {
-	#	factor = 0
-	#	modifier = {
-	#		factor = -100
-	#		OR = {
-	#			country = { NOT = { slavery = yes_slavery } }
-	#			NOT = { location = { is_colonial = yes } }
-	#			is_primary_culture = yes
-	#			is_accepted_culture = yes
-	#		}
-	#	}
-	#}
 }
 
 

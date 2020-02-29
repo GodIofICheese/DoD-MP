@@ -70,6 +70,9 @@ country_event = {
 
 	trigger = {
 		any_owned_province = {
+			limit = {
+				NOT = { units_in_province = 9 }
+			}
 			any_neighbor_province = {
 				has_province_modifier = zombie_outbreak
 				is_colonial = no
@@ -86,7 +89,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 24
 	}
 	
 	option = {
@@ -103,6 +106,9 @@ country_event = {
 				is_overseas = no
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				reduce_pop = 0.95
 				consciousness = -3
 				militancy = 10
@@ -119,6 +125,9 @@ country_event = {
 				is_overseas = no
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				reduce_pop = 0.95
 				consciousness = -3
 				militancy = 10
@@ -135,6 +144,9 @@ country_event = {
 				is_overseas = no
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				reduce_pop = 0.95
 				consciousness = -3
 				militancy = 10
@@ -179,7 +191,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -195,6 +207,9 @@ country_event = {
 				}
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -232,7 +247,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -248,6 +263,9 @@ country_event = {
 				}
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -288,7 +306,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -307,6 +325,9 @@ country_event = {
 				}
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -348,7 +369,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -368,6 +389,9 @@ country_event = {
 				}
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -405,7 +429,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -421,6 +445,9 @@ country_event = {
 				}
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -459,7 +486,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 48
 	}
 
 	option = {
@@ -478,6 +505,9 @@ country_event = {
 				}
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -517,7 +547,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 48
 	}
 
 	option = {
@@ -535,6 +565,9 @@ country_event = {
 				}
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -637,12 +670,22 @@ country_event = {
 			limit = {
 				has_province_modifier = zombie_outbreak
 			}
+			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
+				reduce_pop = 0.98
+				militancy = 10
+			}
 			any_neighbor_province = {
 			limit = {
 				NOT = { has_province_modifier = zombie_outbreak }
 				NOT = { units_in_province = 9 }
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -666,6 +709,9 @@ country_event = {
 				NOT = { units_in_province = 10 }
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				consciousness = -3
 				militancy = 10
 			}
@@ -712,6 +758,9 @@ country_event = {
 				is_overseas = no
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				reduce_pop = 0.95
 				consciousness = -3
 				militancy = 10
@@ -728,6 +777,9 @@ country_event = {
 				is_overseas = no
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				reduce_pop = 0.95
 				consciousness = -3
 				militancy = 10
@@ -744,6 +796,9 @@ country_event = {
 				is_overseas = no
 			}
 			any_pop = {
+				limit = {
+				NOT = { type = soldiers }
+				}
 				reduce_pop = 0.95
 				consciousness = -3
 				militancy = 10
@@ -924,6 +979,9 @@ country_event = {
 				has_province_modifier = zombie_outbreak
 			}
 			any_pop = {
+			limit = {
+				NOT = { type = soldiers }
+				}
 				reduce_pop = 0.99
 				consciousness = -3
 				militancy = 10

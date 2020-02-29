@@ -1,0 +1,20 @@
+political_decisions = {
+reset_province_selector = {
+		picture = province_selector
+		potential = {
+			ai = no
+			any_owned_province = { has_building = province_selector }
+		}	
+		allow = {
+			any_owned_province = { has_building = province_selector }
+		}
+		effect = {
+			any_owned = {
+				limit = {
+					has_building = province_selector
+				}
+				province_selector = -1
+			}
+		}
+	}
+}

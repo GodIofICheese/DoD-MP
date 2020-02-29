@@ -5,7 +5,7 @@ religion = shinto
 government = prussian_constitutionalism
 plurality = 0.0
 nationalvalue = nv_tradition
-literacy = 0.43
+literacy = 0.21
 civilized = yes
 prestige = 15
 

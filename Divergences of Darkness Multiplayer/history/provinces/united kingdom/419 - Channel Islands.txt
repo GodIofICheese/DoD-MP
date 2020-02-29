@@ -5,3 +5,9 @@ add_core = FRA
 trade_goods = fish
 life_rating = 34
 terrain = small_island
+1836.1.2 = {
+	owner = ENL
+	controller = ENL
+	remove_core = DUA
+	life_rating = 35
+}

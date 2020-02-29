@@ -33,6 +33,12 @@ EVTDESC776604;To compensate for low liferating in some provinces, and due to it'
 EVT776604OPTA;Let the Buffing Commence.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC776605;To compensate for high overall liferating in Germany, and due to the over-all lategame potential of Burgundy & Bohemia liferating has been nerfed for all German provinces by 1.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVT776605OPTA;Let the Nerfing Commence.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME776606;Italian & Venetian Cores Liferating Increase;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776606;To compensate for the fact that usually two players are competiting for the same stretch of land, the overall liferating in Italy has been increased.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT776606OPTA;Let the Buffing Commence.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTNAME776607;Spanish & Aragon Cores Liferating Increase;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVTDESC776607;To compensate for the general low starting pop in Iberia compared to other regions, the overall liferating has been increased.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
+EVT776607OPTA;Let the Buffing Commence.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 199036;Mining RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTNAME199036;Mining RGO Change;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x
 EVTDESC199036;Choose to change a province to the following RGO types, cool down is 25 years for changing, 1 year for not choosing one.;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;;;;;;;;;;;;;;;;;x

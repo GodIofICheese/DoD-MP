@@ -20,6 +20,7 @@ political_decisions = {
 					}
 				}
 				ENL = { exists = no }
+				ENG = { exists = no }
 				NOT = { war = yes }				
 				
 			}
@@ -52,22 +53,29 @@ political_decisions = {
 					tag = HBE
 				}
 				NOT = { has_country_flag = conquer_old_england }   
-				ENL = { exists = yes NOT = { rank = 8 } }
+				OR = {
+					ENL = { exists = yes }
+					ENG = { exists = yes }
+				}
 			}
 		
 		allow = { 
-			revolution_n_counterrevolution = 1
+			mass_politics = 1
 			NOT = { war = yes }
 			is_greater_power = yes
 		}
 	
 		effect = {
-				badboy = 24 
+				badboy = 20 
 				
 				relation = { who = ENL value = -200 }
 				
 				ENL = {
 					all_core = {
+						limit = {
+							NOT = { is_core = IRE }
+							NOT = { is_core = SCO }
+						}
 						add_core = THIS
 					}
 				}
@@ -84,7 +92,10 @@ political_decisions = {
 	picture = England_NAN
 	
 			potential = {
+				OR = {
 				tag = NAN
+				tag = HBE
+				}
 			}
 		
 			allow = {
@@ -102,6 +113,7 @@ political_decisions = {
 				prestige = 20
 				add_accepted_culture = english
 				add_accepted_culture = welsh
+				add_accepted_culture = irish
 			}
 			ai_will_do = {
 				factor = 1

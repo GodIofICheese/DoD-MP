@@ -42,3 +42,11 @@ fairer_taxation2;Taxation Relief;Allégement de la fiscalité;Besteuerung Relief
 fairer_taxation3;Taxation Relief;Allégement de la fiscalité;Besteuerung Relief;;Alivio de impuestos;;;;;;;;;x;;;;
 province_selected;Selected Province;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;
 province_selected_desc;This province is selected for manually triggered decisions such as the change Mining/Farming RGO.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;
+migration_factor_reduced;No Migration from Province;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+migration_factor_reduced_title;No Migration from Province;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+migration_factor_reduced_desc;Due to the unemployment caused by switching to Lumber RGO, this province will not have any migration for two years untill pops can be reemployed with time.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+timber_employment_fix;Timber Employment Fix;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+timber_employment_fix_title;Timber Employment Fix;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+timber_employment_fix_desc;A temporary market reset for Lumber prices inorder to fix the unemployment bug caused by switching a province to a Lumber RGO.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+immunity_from_influenza;Immunity from Influenza;;;;;;;;;;;;;x
+immunity_from_influenza_desc;Prevents Pandemic Influenza from recurring in your country as long as modifier is active.;;;;;;;;;;;;;x

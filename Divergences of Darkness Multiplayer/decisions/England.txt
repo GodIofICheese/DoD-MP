@@ -9,6 +9,8 @@ political_decisions = {
 				tag = IRE
 				tag = WLS
 			}
+			NOT = { has_global_flag = alternative_start_no_dua }
+			year = 1837
 		}	
 		allow = {
 			NOT = { war = yes }
@@ -113,13 +115,132 @@ political_decisions = {
 			factor = 1
 		}
 	}
+	
+	create_british_empire_alternative = {
+	picture = British_islands
+		potential = {
+			NOT = { has_global_flag = britemp }
+			has_global_flag = alternative_start_no_dua
+			OR = { 
+				tag = ENL
+				tag = SCO
+				tag = IRE
+				tag = WLS
+			}
+		}	
+		allow = {
+			NOT = { war = yes }
+			NOT = { part_of_sphere = yes }
+			is_greater_power = yes
+			mass_politics = 1
+			WLS = {
+				all_core = {
+						OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			ENL = {
+				all_core = {
+						OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			SCO = {
+				all_core = {
+						OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+			IRE = {
+				all_core = {
+						OR = {
+						owned_by = THIS
+						owner = {
+							in_sphere = THIS
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			prestige = 30
+			random_owned = { limit = { owner = { tag = ENL } } owner = { capital = 300 } }
+			random_owned = { limit = { owner = { tag = WLS } } owner = { capital = 273 } }
+			random_owned = { limit = { owner = { tag = IRE } } owner = { capital = 263 } }
+			random_owned = { limit = { owner = { tag = SCO } } owner = { capital = 269 } }
+			any_country = {
+				limit = {
+					OR = {
+						tag = ENL 
+						tag = WLS 
+						tag = SCO
+						tag = IRE
+					}
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				annex_to = THIS
+			}
+			change_tag = ENG
+			any_owned = {
+				limit = {
+					is_core = SCO
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = ENL
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = IRE
+				}
+				add_core = THIS
+			}
+			any_owned = {
+				limit = {
+					is_core = WLS
+				}
+				add_core = THIS
+			}
+			set_global_flag = britemp
+			add_accepted_culture = beornian
+			add_accepted_culture = english
+			add_accepted_culture = scottish
+			add_accepted_culture = welsh
+			add_accepted_culture = irish
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	ENL_recognized = {
 	picture = British_islands
 		potential = {
 		NOT = { has_global_flag = wait_DUA }
+		NOT = { has_global_flag = alternative_start_no_dua }
 			tag = ENL
 			NOT = { has_country_flag = ENL_recognized }
+		year = 1837
 		}
 		
 		allow = {
@@ -193,6 +314,7 @@ political_decisions = {
 	OCC_recognized = {
 		potential = {
 		NOT = { has_global_flag = wait_DUA }
+		NOT = { has_global_flag = alternative_start_no_dua }
 		tag = OCC
 		NOT = { has_country_flag = OCC_recognized }
 		}
@@ -255,6 +377,7 @@ political_decisions = {
 			tag = IRE
 			NOT = { has_country_flag = IRE_recognized }
 			NOT = { has_global_flag = wait_DUA }
+			NOT = { has_global_flag = alternative_start_no_dua }
 			all_core = { owned_by = THIS }
 		}
 		
@@ -380,6 +503,7 @@ political_decisions = {
 					tag = ENL 
 					tag = ENG 
 				}
+				NOT = { has_global_flag = alternative_start_no_dua }
 				DUA = { exists = yes }
 				FRA = { exists = no }
 			}
@@ -507,6 +631,31 @@ political_decisions = {
 		301 = { change_province_name = "Cantorbéry" }
 		302 = { change_province_name = "Hantone"}
 		clr_global_flag = South_ENL_renamed
+		}
+	}
+	
+	irish_accepted_enl = {
+		picture = ireland
+		potential = {
+			tag = ENL
+			NOT = { has_country_flag = irish_accepted }
+		}
+		
+		allow = {
+			revolution_n_counterrevolution = 1
+			is_greater_power = yes 
+			ENG_254 = { owned_by = THIS }
+			ENG_263 = { owned_by = THIS }
+			ENG_260 = { owned_by = THIS }	
+		}
+		
+		effect = {
+			set_country_flag = irish_accepted
+			add_accepted_culture = irish
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }

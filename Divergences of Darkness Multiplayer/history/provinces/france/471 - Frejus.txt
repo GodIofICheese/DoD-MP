@@ -4,3 +4,6 @@ add_core = PRV
 add_core = OCC 
 trade_goods = silk
 life_rating = 32
+1836.1.2 = {
+	life_rating = 35
+}

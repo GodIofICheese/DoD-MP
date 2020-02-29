@@ -95,6 +95,7 @@ acquire_substate_region
 demand_concession_BC_casus_belli
 demand_concession_NI_casus_belli
 demand_concession_casus_belli
+demand_concession_casus_belli_ai_early
 rude_boy
 war_reparations
 dismantle_forts
@@ -5871,10 +5872,7 @@ make_puppet_large = {
 			total_pops = 3000000
 			number_of_states = 10
 		}
-		OR = {
-			ai = yes
-			year = 1900
-		}
+		year = 1900
 		this = { NOT = { badboy = 1 } }
 		NOT = { is_our_vassal = THIS }
 		is_greater_power = no
@@ -5970,7 +5968,7 @@ dismantle_factories = {
 	}
 }
 
-# Demand Concession Early
+# Demand Concession Early on Player
 demand_concession_casus_belli_player_early = {
 	sprite_index = 7
 	is_triggered_only = yes
@@ -5995,7 +5993,80 @@ demand_concession_casus_belli_player_early = {
 	always = no
 
 	can_use = {
+		ai = no
 		NOT = { year = 1870 }
+		this = { NOT = { badboy = 1 } }
+		NOT = { 
+			OR = { 
+				has_country_modifier = neutrality
+				has_country_modifier = generic_neutrality
+			}
+		}
+		THIS = { NOT = {
+				OR = {
+					has_country_modifier = neutrality
+					has_country_modifier = generic_neutrality
+				}
+			 } 
+		}
+		OR = {
+			NOT = { has_country_flag = conquerable_1865 }
+			year = 1865
+		}
+		THIS = {
+			civilized = yes
+		}
+		civilized = no
+		number_of_states = 2
+	}
+	
+	allowed_states = {
+		any_owned_province = {
+			is_colonial = no
+		}
+		not = { any_owned_province = { is_capital = yes } }
+	}
+	
+	po_demand_state = yes
+	
+	war_name = WAR_CONCESSION_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+}
+
+# Demand Concession Early on AI
+demand_concession_casus_belli_ai_early = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 0
+	construction_speed = 0.5
+	crisis = no
+	
+	badboy_factor = 0.5
+	prestige_factor = 0.1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 36
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = no
+
+	can_use = {
+		NOT = { year = 1870 }
+		ai = yes
 		this = { NOT = { badboy = 1 } }
 		NOT = { 
 			OR = { 
@@ -6524,7 +6595,7 @@ remove_wmds = {
 	}
 }
 
-#Demand Concession for Puppet on Player 
+#Demand Early Concession for Puppet on Player 
 demand_concession_casus_belli_player_early_for_puppet = {
 	sprite_index = 7
 	is_triggered_only = yes
@@ -6549,6 +6620,86 @@ demand_concession_casus_belli_player_early_for_puppet = {
 	always = no
 
 	can_use = {
+		ai = no
+		NOT = { year = 1870 }
+		this = { NOT = { badboy = 1 } }
+		NOT = { 
+			OR = { 
+				has_country_modifier = neutrality
+				has_country_modifier = generic_neutrality
+			}
+		}
+		THIS = { NOT = {
+				OR = {
+					has_country_modifier = neutrality
+					has_country_modifier = generic_neutrality
+				}
+			 } 
+		}
+		civilized = no
+		number_of_states = 2
+	}
+	allowed_countries = {
+		NOT = { tag = FROM }
+		OR = {
+			NOT = { alliance_with = FROM }
+		}
+		OR = {
+			FROM = { vassal_of = THIS }
+			FROM = { substate_of = THIS }
+		}
+		FROM = {
+			exists = yes
+		}
+	}
+	
+	allowed_states = {
+		any_owned_province = { is_colonial = no }
+		NOT = { any_owned_province = { is_capital = yes } }
+	}
+	
+	po_transfer_provinces = yes
+	
+	war_name = EARLY_WAR_CONCESSION_NAME
+
+	on_add = {
+		move_issue_percentage = { 
+			from = jingoism 
+			to = pro_military
+			value = 0.1
+		}
+	}
+	
+	on_po_accepted = {
+	}
+}
+
+#Demand Early Concession for Puppet on AI
+demand_concession_casus_belli_ai_early_for_puppet = {
+	sprite_index = 7
+	is_triggered_only = yes
+	months = 0
+	construction_speed = 0.5
+	crisis = no
+		
+	badboy_factor = 0.5
+	prestige_factor = 1
+	peace_cost_factor = 1
+	penalty_factor = 1
+
+	break_truce_prestige_factor = 1
+	break_truce_infamy_factor = 1
+	break_truce_militancy_factor = 1
+	truce_months = 48
+	
+	good_relation_prestige_factor = 0
+	good_relation_infamy_factor = 0
+	good_relation_militancy_factor = 0
+	
+	always = no
+
+	can_use = {
+		ai = yes
 		NOT = { year = 1870 }
 		this = { NOT = { badboy = 1 } }
 		NOT = { 

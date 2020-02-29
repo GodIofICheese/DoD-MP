@@ -15,8 +15,6 @@ state_of_emergency = {
 zombie_outbreak = {
 	immigrant_attract = -1.0
 	pop_consciousness_modifier = -0.3
-	pop_militancy_modifier = 1.0
-	population_growth = -0.020
 	icon = 20
 }
 
@@ -35,7 +33,7 @@ accepts_new_provinces = {
 developing_bioweapons = {
 	tax_efficiency = -0.15
 	tariff_efficiency_modifier = -0.1
-	badboy = 0.1
+	badboy = 0.05
 	icon = 15
 }
 
@@ -1607,9 +1605,16 @@ switched_production = {
 
 ##### Diseases & Famines #####
 pandemic_influenza = {
-	global_population_growth = -0.01
+	global_population_growth = -0.007
+	tax_efficiency = -0.05
+	factory_throughput = -0.3
+	rgo_output = -0.3
 	global_pop_consciousness_modifier = 0.1
 	icon = 18
+}
+
+immunity_from_influenza = {
+	icon = 17
 }
 
 pandemic_influenza_immunity = {
@@ -2752,17 +2757,16 @@ secret_police = {
 five_year_plan = {
 	global_pop_consciousness_modifier = 0.02
 	global_pop_militancy_modifier = 0.02
-	factory_throughput = 0.1
-	RGO_throughput = 0.1
+	factory_input = -0.05
+	factory_maintenance = -0.2
+	RGO_throughput = 0.25
 	icon = 5
 }
 	
 purge = {
-	global_pop_militancy_modifier = -0.05
-	global_pop_consciousness_modifier = -0.05
+	global_pop_militancy_modifier = -0.03
+	global_pop_consciousness_modifier = -0.03
 	leadership_modifier = -0.75
-	global_population_growth = -0.001
-	prestige = -0.1
 	icon = 15
 }
 
@@ -2884,9 +2888,9 @@ recruitment_drive = {
 ##### Immigration #####
 the_open_door = {
 	global_immigrant_attract = 0.25
-	mobilisation_size = -0.005
 	global_pop_militancy_modifier = 0.01
-	min_social_spending = 0.1
+	pension_level = 1
+	min_social_spending = 0.15
 	icon = 5
 }
 
@@ -3193,6 +3197,16 @@ rus_expansion_cooldown = {
 
 rgo_changed = {
 	icon = 12
+}
+
+migration_factor_reduced = {
+    icon = 14
+	immigrant_push = -100
+}
+
+timber_employment_fix = {
+    local_RGO_throughput = -0.95
+    icon = 14
 }
 
 province_selected = {

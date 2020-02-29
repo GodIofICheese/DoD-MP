@@ -1771,8 +1771,8 @@ submachine_guns = {
 	}
 	
 	mechanized_infantry = {
-		attack = 6
-		defence = 3
+		attack = 9
+		defence = 5
 		reconnaissance = 1
 		maximum_speed = 1
 	}

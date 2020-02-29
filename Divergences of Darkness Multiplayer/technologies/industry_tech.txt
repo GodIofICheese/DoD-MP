@@ -366,7 +366,8 @@ mechanical_production = {
 	year = 1836
 	cost = 3600
 
-	activate_building = regular_clothes_factory 
+	activate_building = regular_clothes_factory
+	activate_building = machine_parts_factory 	
 	ai_chance = {
 		factor = 2
 		modifier = {
@@ -1981,6 +1982,7 @@ synthetic_polymers = {
 	cost = 21600
 
 	supply_limit = 0.40
+	activate_building = synthetic_rubber_factory
 	ai_chance = {
 		factor = 1.1
 		modifier = {

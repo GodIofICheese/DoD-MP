@@ -171,6 +171,59 @@ promotion_chance = {
 			life_needs = 0.9
 		}
 	}
+	
+	group = {
+			modifier = {
+				factor = 0.005
+				NOT = { strata = rich }
+				cash_reserves = 10
+			}
+			modifier = {
+				factor = 0.01
+				NOT = { strata = rich }
+				cash_reserves = 20
+			}
+			modifier = {
+				factor = 0.02
+				NOT = { strata = rich }
+				cash_reserves = 40
+			}
+			modifier = {
+				factor = 0.05
+				NOT = { strata = rich }
+				cash_reserves = 56
+			}
+			modifier = {
+				factor = 0.08
+				NOT = { strata = rich }
+				cash_reserves = 80
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { strata = rich }
+				cash_reserves = 160
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { strata = rich }
+				cash_reserves = 240
+			}
+			modifier = {
+				factor = 0.15
+				NOT = { strata = rich }
+				cash_reserves = 480
+			}
+			modifier = {
+				factor = 0.15
+				NOT = { strata = rich }
+				cash_reserves = 720
+			}
+			modifier = {
+				factor = 0.4
+				NOT = { strata = rich }
+				cash_reserves = 1200
+			}
+	}
 
 		modifier = {
 			factor = -0.2
@@ -285,6 +338,92 @@ demotion_chance = {
 		location = { controlled_by = owner }
 	}
 	
+	group = {
+			modifier = {
+				factor = 0.025
+				strata = rich
+				NOT = { cash_reserves = 32 }
+			}
+			modifier = {
+				factor = 0.025
+				strata = rich
+				NOT = { cash_reserves = 24 }
+			}
+			modifier = {
+				factor = 0.025
+				strata = rich
+				NOT = { cash_reserves = 20 }
+			}
+			modifier = {
+				factor = 0.025
+				strata = rich
+				NOT = { cash_reserves = 16 }
+			}
+			modifier = {
+				factor = 0.025
+				strata = rich
+				NOT = { cash_reserves = 12 }
+			}
+			modifier = {
+				factor = 0.05
+				strata = rich
+				NOT = { cash_reserves = 8 }
+			}
+			modifier = {
+				factor = 0.05
+				strata = rich
+				NOT = { cash_reserves = 4 }
+			}
+			modifier = {
+				factor = 0.1
+				strata = rich
+				NOT = { cash_reserves = 2 }
+			}
+		}
+			
+		group = {
+			modifier = {
+				factor = -0.05
+				strata = rich
+				cash_reserves = 40
+			}
+			modifier = {
+				factor = -0.1
+				strata = rich
+				cash_reserves = 56
+			}
+			modifier = {
+				factor = -0.15
+				strata = rich
+				cash_reserves = 80
+			}
+			modifier = {
+				factor = -0.2
+				strata = rich
+				cash_reserves = 160
+			}
+			modifier = {
+				factor = -0.2
+				strata = rich
+				cash_reserves = 240
+			}
+			modifier = {
+				factor = -0.3
+				strata = rich
+				cash_reserves = 480
+			}
+			modifier = {
+				factor = -0.3
+				strata = rich
+				cash_reserves = 720
+			}
+			modifier = {
+				factor = -0.6
+				strata = rich
+				cash_reserves = 1200
+			}
+		}
+	
 	modifier = {
 		factor = -0.1
 		not = { religion = this }
@@ -328,37 +467,10 @@ demotion_chance = {
 		strata = poor
 	}
 	
+	group = {
 		modifier = {
 			factor = -0.02
-			not = { literacy = 0.1 }
-		}
-		modifier = {
-			factor = -0.02
-			not = { literacy = 0.15 }
-		}
-		modifier = {
-			factor = -0.02
-			not = { literacy = 0.2 }
-		}
-		modifier = {
-			factor = -0.02
-			not = { literacy = 0.3 }
-		}
-		modifier = {
-			factor = -0.02
-			not = { literacy = 0.4 }
-		}
-		modifier = {
-			factor = -0.02
-			not = { literacy = 0.5 }
-		}
-		modifier = {
-			factor = -0.02
-			not = { literacy = 0.6 }
-		}
-		modifier = {
-			factor = -0.02
-			not = { literacy = 0.7 }
+			not = { literacy = 0.9 }
 		}
 		modifier = {
 			factor = -0.02
@@ -366,8 +478,37 @@ demotion_chance = {
 		}
 		modifier = {
 			factor = -0.02
-			not = { literacy = 0.9 }
+			not = { literacy = 0.7 }
 		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.6 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.5 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.15 }
+		}
+		modifier = {
+			factor = -0.02
+			not = { literacy = 0.1 }
+		}
+	}
 	
 	group = {
 		modifier = {

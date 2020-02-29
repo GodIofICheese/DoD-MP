@@ -161,6 +161,7 @@ political_decisions = {
 			OR = {
 				total_pops = 2000000
 				is_secondary_power = yes
+				NOT = { is_vassal = yes is_substate = yes }
 			}
 			sphere_owner = {
 						NOT = {

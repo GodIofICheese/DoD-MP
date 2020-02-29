@@ -1,35 +1,35 @@
 political_decisions = {
 
-	pas_de_calais = { 
-	picture = Pas_de_Calais
-	potential = {
-			tag = DUA
-			NOT = {
-				has_country_flag = pale_calais
-			}
-		}	
-		allow = {
-			is_greater_power = yes
-			NOT = { war = yes }
-			owns = 400
-		}
-		
-		effect = {
-			prestige = 5
-			set_country_flag = pale_calais
-			400 = {
-				add_core = THIS
-			}
-			401 = {
-				add_core = THIS
-			}
-			399 = {
-				add_core = THIS
-			}
-			404 = { add_core = THIS }
-		}
-	
-	}
+#	pas_de_calais = { 
+#	picture = Pas_de_Calais
+#	potential = {
+#			tag = DUA
+#			NOT = {
+#				has_country_flag = pale_calais
+#			}
+#		}	
+#		allow = {
+#			is_greater_power = yes
+#			NOT = { war = yes }
+#			owns = 400
+#		}
+#		
+#		effect = {
+#			prestige = 5
+#			set_country_flag = pale_calais
+#			400 = {
+#				add_core = THIS
+#			}
+#			401 = {
+#				add_core = THIS
+#			}
+#			399 = {
+#				add_core = THIS
+#			}
+#			404 = { add_core = THIS }
+#		}
+#	
+#	}
 	
 	form_franche_comte = {
 		picture = apanage
@@ -77,6 +77,7 @@ political_decisions = {
 			NOT = {
 				has_country_flag = treaty_of_neuchatel
 			}
+			NOT = { has_global_flag = alternative_start_no_dua }
 		}	
 		allow = {
 			NOT = { war = yes }

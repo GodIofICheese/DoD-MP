@@ -6,7 +6,9 @@ trade_goods = coal
 life_rating = 34
 #naval_base = 1 #Chatham
 fort = 1
-1861.1.1 = { 
-	railroad = 3 
-#	naval_base = 3 #Chatham
+1836.1.2 = {
+	owner = ENL
+	controller = ENL
+	remove_core = DUA
+	life_rating = 35
 }

@@ -300,7 +300,7 @@ reclaim_crown_colony_plantagenia = {
 			factor = 1
 		}
 	}
-
+	
 reclaim_crown_colony_plantagenia_primary = {
 	picture = Plantagenia
 		potential = {
@@ -336,7 +336,7 @@ reclaim_crown_colony_plantagenia_primary = {
 			factor = 1
 		}
 	}
-
+	
 reclaim_crown_colony_plantagenia_accepted = {
 	picture = Plantagenia
 		potential = {
@@ -371,6 +371,116 @@ reclaim_crown_colony_plantagenia_accepted = {
 			factor = 1
 		}
 	}
+	
+reclaim_crown_colony_plantagenia_france = {
+	picture = Plantagenia
+		potential = {
+			exists = ARC
+			year = 1870
+			OR = {
+				tag = FRA
+				primary_culture = french
+			}
+			NOT = { has_country_flag = reclaim_crown_colony_plantagenia_france }
+		}
+		allow = {
+			NOT = { war = yes }
+			exists = ARC
+			NBG_5 = { owned_by = THIS }
+			PLA_2 = { owned_by = THIS }
+			PLA_3 = { owned_by = THIS }
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			NBG_5 = { add_core = THIS }
+			PLA_2 = { add_core = THIS }
+			PLA_3 = { add_core = THIS }
+			add_accepted_culture = plantagenian
+			set_country_flag = reclaim_crown_colony_plantagenia_france
+			set_global_flag = crown_colony_plantagenia_france_claimed
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+reclaim_crown_colony_plantagenia_france_primary = {
+	picture = Plantagenia
+		potential = {
+			has_global_flag = crown_colony_plantagenia_france_claimed
+			tag = ARC
+			primary_culture = plantagenian
+			NOT = { has_country_flag = reclaim_crown_colony_plantagenia_france_primary }
+		}
+		allow = {
+			NOT = { war = yes }
+			ARC = {
+				all_core = {
+					owned_by = THIS
+				}
+			}	
+			ENG_2224 = {
+						NOT = { owned_by = FRA }
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			ENG_2224 = { add_core = THIS } 
+			FRA_420 = { add_core = THIS }
+			add_accepted_culture = french
+			set_country_flag = reclaim_crown_colony_plantagenia_france_primary
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+reclaim_crown_colony_plantagenia_france_accepted = {
+	picture = Plantagenia
+		potential = {
+			has_global_flag = crown_colony_plantagenia_france_claimed
+			tag = ARC
+			NOT = { primary_culture = plantagenian }
+			NOT = { has_country_flag = reclaim_crown_colony_plantagenia_france_accepted }
+		}
+		allow = {
+			NOT = { war = yes }
+			PLA = {
+				all_core = {
+					owned_by = THIS
+				}
+			}	
+			ENG_2224 = {
+						NOT = { owned_by = FRA }
+			}
+			OR = {
+				mass_politics = 1
+				year = 1910
+			}	
+		}
+		effect = {
+			prestige = 20
+			ENG_2224 = { add_core = THIS }
+			FRA_420 = { add_core = THIS } 
+			set_country_flag = reclaim_crown_colony_plantagenia_france_accepted
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	
 
 reclaim_viceroyalty_granada = {
 	picture = colombia_map

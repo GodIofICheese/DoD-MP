@@ -5,12 +5,12 @@ political_decisions = {
 			NOT = { has_country_modifier = developing_bioweapons }
 			NOT = { has_country_modifier = experimental_bioweapon }
 			rank = 16
-			year = 1925
+			year = 1920
 			ai = no
 			}
 		
 			allow = {
-			money = 3000000
+			money = 10000000
 			part_of_sphere = no
 			is_vassal = no
 			is_disarmed = no
@@ -23,6 +23,7 @@ political_decisions = {
 				duration = 1825
 				}
 				money = -2000000
+				add_tax_relative_income = -365
 				any_country = {
 					limit = {
 						ai = no

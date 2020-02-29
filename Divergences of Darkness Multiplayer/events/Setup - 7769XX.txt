@@ -1,0 +1,51 @@
+country_event = {
+	
+	id = 776901
+	trigger = {
+		year = 1836
+		TAG = HAW
+		NOT = { has_global_flag = money_injected }
+	}
+	
+	option = {
+		set_global_flag = money_injected
+		any_country = {
+			limit = { is_greater_power = yes }
+			treasury = 150000
+		}
+		any_country = {
+			limit = { is_greater_power = no }
+			treasury = 75000
+		}
+		any_country = {
+			limit = { ai = no }
+			ammunition = 2000
+			artillery = 2000
+			small_arms = 2000
+			clipper_convoy = 2000
+			canned_food = 2000
+			luxury_clothes = 2000
+			liquor = 2000
+			cement = 2000
+			machine_parts = 2000
+			iron = 2000
+		}
+	}
+}
+
+country_event = {
+	
+	id = 776902
+	trigger = {
+		year = 1836
+		NOT = { year = 1837 }
+		NOT = { exists = DUA }
+		TAG = HAW
+		NOT = { has_global_flag = alternative_start_no_dua }
+	}
+	
+	option = {
+		set_global_flag = alternative_start_no_dua
+		ENL = { add_accepted_culture = welsh }
+	}
+}

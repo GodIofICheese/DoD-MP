@@ -60,6 +60,7 @@ country_event = {
         347 = {
             add_core = RUS
         }
+		RUS_994 = { add_core = RUS }
         ai_chance = { 
             factor = 1
 			

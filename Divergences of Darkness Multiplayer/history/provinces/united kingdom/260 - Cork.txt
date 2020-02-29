@@ -6,13 +6,10 @@ trade_goods = fish
 life_rating = 34
 naval_base = 2 #Base in Cobh, important since pre-Napoleonic times
 
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = regular_clothes_factory
-		upgrade = yes
-	}
-}
-1861.1.1 = { 
-	railroad = 3 
+1836.1.2 = {
+	owner = ENL
+	controller = ENL
+	add_core = ENL
+	remove_core = DUA
+	life_rating = 35
 }

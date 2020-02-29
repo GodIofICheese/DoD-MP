@@ -4,4 +4,6 @@ add_core = BRG
 add_core = LRR
 trade_goods = sulphur
 life_rating = 32
-1861.1.1 = { railroad = 3 }
+1836.1.2 = {
+	life_rating = 35
+}

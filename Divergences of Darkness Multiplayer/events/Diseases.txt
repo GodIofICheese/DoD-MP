@@ -45,9 +45,9 @@ country_event = {
 	option = {
 		name = "EVTOPTA21000"
 		random_list = {
-		50 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.96 militancy = -0.5 } } }
+		50 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.98 militancy = -0.5 } } }
 		25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.97 militancy = -0.5 } } }
-		25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.95 militancy = -0.5 } } }
+		25 = { random_state = { limit = { total_pops = 10000 } any_pop = { reduce_pop = 0.96 militancy = -0.5 } } }
 		}
 	}
 }
@@ -61,7 +61,6 @@ country_event = {
 	
 	trigger = {
 		NOT = { poor_strata_life_needs = 0.8 }
-		NOT = { government = democracy }
 		total_pops = 50000
 	}
 		
@@ -204,8 +203,18 @@ country_event = {
 	picture = "disease"
 	
 	trigger = {
-		NOT = { poor_strata_life_needs = 0.9 }
-		NOT = { has_country_modifier = pandemic_influenza }
+		NOT = { 
+			OR = {
+				poor_strata_life_needs = 0.9
+				has_country_modifier = immunity_from_influenza
+			}
+		}
+		NOT = {
+			OR = {
+			has_country_modifier = pandemic_influenza
+			has_country_modifier = immunity_from_influenza
+			}
+		}
 		total_pops = 50000
 		any_owned_province = {
 			NOT = { terrain = arctic }

@@ -232,20 +232,36 @@ political_decisions = {
 			}
 			ITA = {	exists = no }
 			ARI = { exists = no }
-			NOT = {
-				ITA = {
-					any_core = {
-						owner = {
-							is_culture_group = italian
-							OR = {
-								is_greater_power = yes
-								war = yes
-							}
-						}
+			SAR_720 = {
+					owner = {
+						in_sphere = THIS
 					}
-				}
 			}
-			is_greater_power = yes
+			MOD_739 = {
+					owner = {
+						in_sphere = THIS
+					}
+			}
+			TUS_744 = {
+					owner = {
+						in_sphere = THIS
+					}
+			}
+			AUS_726 = {
+					owner = {
+						in_sphere = THIS
+					}
+			}
+			GEN_724 = {
+					owner = {
+						in_sphere = THIS
+					}
+			}
+			PAP_741 = {
+					owner = {
+						in_sphere = THIS
+					}
+			}
 			OR = {
 				PRV = { 
 					all_core = { 

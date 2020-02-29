@@ -1,0 +1,29 @@
+political_decisions = {
+	found_the_bbc = {
+		potential = {
+			tag = ENG
+			year = 1900
+			NOT = {
+				has_country_flag = we_are_live_from_london
+			}
+		}
+
+		allow = {
+			invention = national_radio_networks
+		}
+
+		effect = {
+			any_country = {
+				relation = {
+					who = THIS
+					value = 5
+				}
+			}
+			any_pop = {
+				militancy = -0.5
+			}
+			prestige = 10
+			set_country_flag = we_are_live_from_london
+		}
+	}
+}

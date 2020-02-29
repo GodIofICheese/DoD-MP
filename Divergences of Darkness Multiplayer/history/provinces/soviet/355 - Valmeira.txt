@@ -3,4 +3,4 @@ controller = SCA
 add_core = SCA
 add_core = LAT
 trade_goods = sulphur
-life_rating = 37
+life_rating = 40

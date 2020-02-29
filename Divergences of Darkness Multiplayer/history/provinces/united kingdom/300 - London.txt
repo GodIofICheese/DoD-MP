@@ -37,19 +37,11 @@ state_building = {
 }
 state_building = {
 	level = 3
-	building = fabric_factory
+	building = cotton_fabric_factory
 	upgrade = yes
 }
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = luxury_clothes_factory
-		upgrade = yes
-	}
-	state_building = {
-		level = 1
-		building = luxury_furniture_factory
-		upgrade = yes
-	}
+1836.1.2 = {
+	owner = ENL
+	controller = ENL
+	remove_core = DUA
 }
-1861.1.1 = { railroad = 3 }

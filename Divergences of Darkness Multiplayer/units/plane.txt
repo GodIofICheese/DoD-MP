@@ -19,10 +19,10 @@ plane = {
 	#Building Costs
 	build_time = 120
 	build_cost = {
-		aeroplanes = 20 #10
+		aeroplanes = 10 #10
 		small_arms = 20 #10
 		canned_food = 10
-		#fuel = 5
+		fuel = 5
 	}
 	
 	supply_consumption = 1.0
@@ -31,7 +31,7 @@ plane = {
 		small_arms = 0.02   #0.5
 		ammunition = 0.05  #0.25		
 		canned_food = 0.05  #0.5
-		fuel = 0.25	    #3.75
+		fuel = 0.5    #3.75
 	}
 	
 

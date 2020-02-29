@@ -10,13 +10,16 @@ party_issues = {
 		free_trade = {
 			max_tariff = 0.25
 			min_tariff = -1
+			rgo_throughput = 0.20
+			factory_input = -0.05
 		}
 	}
 	economic_policy = {
 		laissez_faire = {
 			max_tax = 0.5
 			factory_owner_cost = 0.25
-			factory_output = 0.1
+			factory_maintenance = -0.2
+			factory_output = 0.05
 			import_cost = -0.25
 			
 			rules = {
@@ -69,6 +72,7 @@ party_issues = {
 			import_cost = 0.5
 			min_tax = 0.25
 			factory_owner_cost = 0.8
+			factory_maintenance = 0.1
 			
 			rules = {
 				build_factory = yes
@@ -90,8 +94,8 @@ party_issues = {
 		}
 		planned_economy = {
 			import_cost = 0.75
-			min_tax = 0.5
 			factory_throughput = 0.05
+			factory_maintenance = 0.2
 			factory_owner_cost = -1	#negative costs, can't build.
 			
 			rules = {
@@ -303,27 +307,48 @@ political_reforms = {
 			rich_vote = 0
 			middle_vote = 0
 			poor_vote = 0
-			allow = { NOT = { election = yes } }
-		}
+			allow = { 
+				OR = { 
+					NOT = { election = yes } 
+					AND = { 
+						has_country_flag = totalitarian 
+						OR = { has_country_flag = clean_up_colonial_government has_country_flag = absolute_monarchy_gov has_country_flag = presidential_dictatorship_gov has_country_flag = theocratic_government has_country_flag = communist_gov has_country_flag = anarcho_liberal_gov has_country_flag = fascist_gov } 
+					} 
+				}
+			}
+		}	
 		landed_voting = {
 			rich_vote = 1
 			middle_vote = 0
 			poor_vote = 0
 			global_immigrant_attract = 0.02
-			allow = { NOT = { has_country_flag = theocratic_government } }
+			rich_luxury_needs = -0.1
+			rich_everyday_needs = -0.1
+			rich_life_needs = -0.1
 		}
 		wealth_weighted_voting = {
 			rich_vote = 2
 			middle_vote = 1
 			poor_vote = 0
 			global_immigrant_attract = 0.04
+			rich_luxury_needs = -0.05
+			rich_everyday_needs = -0.05
+			rich_life_needs = -0.05
+			middle_luxury_needs = -0.025
+			middle_everyday_needs = -0.025
+			middle_life_needs = -0.025
 		}
 		wealth_voting = {
 			rich_vote = 1
 			middle_vote = 1
 			poor_vote = 0
-
 			global_immigrant_attract = 0.06
+			rich_luxury_needs = -0.025
+			rich_everyday_needs = -0.025
+			rich_life_needs = -0.025
+			middle_luxury_needs = -0.025
+			middle_everyday_needs = -0.025
+			middle_life_needs = -0.025
 		}
 		universal_weighted_voting = {
 			rich_vote = 3
@@ -470,33 +495,35 @@ political_reforms = {
 		next_step_only = yes
 		mandatory_service = {
 			mobilisation_size = 0.05
-			mobilisation_economy_impact = 0.5
+			mobilisation_economy_impact = 2
 			global_immigrant_attract = -0.15
 			education_efficiency_modifier = -0.20
 			land_organisation = -0.20
 		}
 		four_year_draft = {
 			mobilisation_size = 0.03
-			mobilisation_economy_impact = 0.2
+			mobilisation_economy_impact = 0.8
 			global_immigrant_attract = -0.08
 			education_efficiency_modifier = -0.1
 			land_organisation = -0.10
 		}
 		two_year_draft = {
 			mobilisation_size = 0.02
-			mobilisation_economy_impact = 0.1
+			mobilisation_economy_impact = 0.4
 			global_immigrant_attract = -0.04
 			education_efficiency_modifier = -0.05
 			land_organisation = -0.05
 		}
 		one_year_draft = {
 			mobilisation_size = 0.01
+			mobilisation_economy_impact = 0.2
 			global_immigrant_attract = 0.01
 			land_organisation = 0.05
 			land_unit_start_experience = 5
 		}
 		no_draft = {
 			global_immigrant_attract = 0.04
+			mobilisation_economy_impact = -0.2
 			land_organisation = 0.10
 			land_unit_start_experience = 10
 			allow = {
@@ -526,14 +553,17 @@ political_reforms = {
 			rules = { all_voting = yes }
 			non_accepted_pop_militancy_modifier = -0.01
 			global_assimilation_rate = 0.15
-			global_immigrant_attract = 0.08
+			global_immigrant_attract = 0.04
 		}
 	}
 	
 	debt_law = {
 		next_step_only = yes
 		serfdom = {
-			education_efficiency_modifier = -0.15
+			RGO_throughput  = 0.05
+			goods_demand = 0.05
+			education_efficiency_modifier = -0.25
+			leadership_modifier = -0.2
 			poor_savings_modifier = -0.5
 			global_immigrant_attract = -0.1
 			allow = {
@@ -549,7 +579,7 @@ political_reforms = {
 			}
 		}
 		peonage = {
-			education_efficiency_modifier = -0.03
+			education_efficiency_modifier = -0.05
 			RGO_throughput  = 0.05
 			global_immigrant_attract = -0.05
 			suppression_points_modifier = 0.1
@@ -570,7 +600,7 @@ political_reforms = {
 		bankruptcy = {
 			administrative_efficiency_modifier = 0.05
 			tariff_efficiency_modifier = 0.05
-			administrative_multiplier = 2
+			goods_demand = -0.02
 			allow = { has_country_flag = modern_central_bank_system_invented }
 		}
 	}
@@ -579,9 +609,12 @@ political_reforms = {
 		closed_borders = {
 			global_immigrant_attract = -8
 			badboy = 0.01
-			literacy_con_impact = -0.1
-			administrative_multiplier = 6
+			literacy_con_impact = -0.2
+			administrative_multiplier = 10
 			global_pop_militancy_modifier = 0.02
+			research_points_modifier = -0.5
+			rgo_throughput = -0.25
+			factory_output = -0.05
 			allow = {
 				OR = {
 					has_country_flag = totalitarian
@@ -600,7 +633,6 @@ political_reforms = {
 		}
 		quota_immigration = {
 			administrative_multiplier = 2
-			global_immigrant_attract = -0.02
 			core_pop_militancy_modifier = -0.02
 			allow = {
 				AND = {
@@ -682,12 +714,10 @@ political_reforms = {
 	centralization = {
 		totalitarianism = {
 			global_pop_militancy_modifier = 0.01
-			global_pop_consciousness_modifier = 0.01
+			mobilization_impact = 0.5
 			mobilisation_size = 0.025
 			cb_generation_speed_modifier = 0.25
 			suppression_points_modifier = 0.2
-			badboy = 0.01
-			global_population_growth = -0.0001
 			global_immigrant_attract = -0.25
 			allow = {
 			year = 1890
@@ -805,6 +835,7 @@ social_reforms = {
 			artisan_throughput = -0.02
 			minimum_wage = 0.12
 			administrative_multiplier = 1
+			goods_demand = -0.01
 			global_immigrant_attract = 0.02
 		}
 		twelve_hours = {
@@ -813,6 +844,7 @@ social_reforms = {
 			artisan_throughput = -0.03
 			minimum_wage = 0.25
 			administrative_multiplier = 2
+			goods_demand = -0.02
 			global_immigrant_attract = 0.04
 		}
 		ten_hours = {
@@ -821,6 +853,7 @@ social_reforms = {
 			artisan_throughput = -0.04
 			minimum_wage = 0.37
 			administrative_multiplier = 3
+			goods_demand = -0.03
 			global_immigrant_attract = 0.06
 		}
 		eight_hours = {
@@ -829,6 +862,7 @@ social_reforms = {
 			artisan_throughput = -0.05
 			minimum_wage = 0.5
 			administrative_multiplier = 4
+			goods_demand = -0.04
 			global_immigrant_attract = 0.08
 		}
 	}
@@ -838,36 +872,38 @@ social_reforms = {
 		no_safety = {
 		}
 		trinket_safety = {
-			factory_cost = 0.20
+			factory_cost = 0.10
 			factory_maintenance = 0.1
+			goods_demand = -0.01
 			administrative_multiplier = 1
 			global_immigrant_attract = 0.02
 		}
 		low_safety = {
 			pension_level = 0.1
-			factory_cost = 0.40
+			factory_cost = 0.20
 			factory_maintenance = 0.15
+			goods_demand = -0.02
 			RGO_output = -0.02
-			artisan_output = -0.02
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.04
 		}
 		acceptable_safety = {
 			pension_level = 0.25
-			factory_cost = 0.60
+			factory_cost = 0.30
+			goods_demand = -0.03
 			factory_maintenance = 0.20
 			RGO_output = -0.03
-			artisan_output = -0.03
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.06
 		}
 		good_safety = {
 			pension_level = 0.5
-			factory_cost = 0.80
+			factory_cost = 0.40
+			goods_demand = -0.04
 			factory_maintenance = 0.25
 			RGO_output = -0.04
-			artisan_throughput = -0.04
 			administrative_multiplier = 4
+			global_pop_militancy_modifier = -0.01
 			global_immigrant_attract = 0.08
 		}
 	}
@@ -912,6 +948,7 @@ social_reforms = {
 		good_pensions = {
 			pension_level = 1
 			global_immigrant_attract = 0.12
+			global_pop_militancy_modifier = -0.01
 		}
 	}
 	health_care = {
@@ -920,25 +957,25 @@ social_reforms = {
 		no_health_care = {
 		}
 		trinket_health_care = {
-			pension_level	= 0.125
+			pension_level	= 0.25
 			administrative_multiplier = 1
 			global_immigrant_attract = 0.01
 			allow = { year = 1850 }
 		}
 		low_health_care = {
-			pension_level	= 0.25
+			pension_level	= 0.5
 			administrative_multiplier = 2
 			global_immigrant_attract = 0.02
 			allow = { year = 1865 }
 		}
 		acceptable_health_care = {
-			pension_level	= 0.375
+			pension_level	= 0.75
 			administrative_multiplier = 3
 			global_immigrant_attract = 0.03
 			allow = { year = 1880 }
 		}
 		good_health_care = {
-			pension_level	= 0.5
+			pension_level	= 1
 			administrative_multiplier = 4
 			global_immigrant_attract = 0.04
 			allow = { year = 1895 }
@@ -956,21 +993,18 @@ social_reforms = {
 			education_efficiency_modifier = 0.05
 			global_assimilation_rate = 0.005
 			global_immigrant_attract = 0.02
-			administrative_multiplier = 1
 			global_pop_consciousness_modifier = -0.01
 		}
 		acceptable_schools = {
 			education_efficiency_modifier = 0.075
 			global_assimilation_rate = 0.01
 			global_immigrant_attract = 0.03
-			administrative_multiplier = 2
 			global_pop_consciousness_modifier = 0.01
 		}
 		good_schools = {
 			education_efficiency_modifier = 0.1
 			global_assimilation_rate = 0.02
 			global_immigrant_attract = 0.04
-			administrative_multiplier = 3
 			global_pop_consciousness_modifier = 0.02
 		}
 	}
@@ -1004,9 +1038,9 @@ social_reforms = {
 		next_step_only = yes
 		child_labor_legal = {
 			education_efficiency_modifier = -0.15
-			factory_throughput = 0.15
-			artisan_throughput = 0.15
-			RGO_throughput = 0.25
+			factory_throughput = 0.1
+			artisan_throughput = 0.1
+			RGO_throughput = 0.2
 		}
 		
 		child_labor_restricted = {

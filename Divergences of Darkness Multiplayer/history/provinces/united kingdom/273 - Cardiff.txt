@@ -11,13 +11,10 @@ state_building = {
 	building = steel_factory
 	upgrade = yes
 }
-1861.1.1 = {
-	state_building = {
-		level = 1
-		building = furniture_factory
-		upgrade = yes
-	}
+1836.1.2 = {
+	owner = ENL
+	controller = ENL
+	remove_core = DUA
+	life_rating = 35
 }
-1861.1.1 = { 
-	railroad = 3 
-}
+

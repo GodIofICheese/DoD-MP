@@ -1,7 +1,8 @@
 owner = BRG
 controller = BRG
 add_core = BRG
-add_core = FRA
 trade_goods = coal
 life_rating = 32
-1861.1.1 = { railroad = 3 }
+1836.1.2 = {
+	life_rating = 35
+}

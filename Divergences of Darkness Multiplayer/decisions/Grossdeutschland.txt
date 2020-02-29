@@ -495,7 +495,7 @@ political_decisions = {
 	integrate_south = { 
 	picture = MarzBerlin
 	potential = { 
-	OR = { tag = NGF tag = RHI tag = HLR tag = BOH }
+	OR = { tag = NGF tag = RHI tag = HLR tag = BOH tag = CAE }
 	NOT = { accepted_culture = south_german }
 	NOT = { has_country_flag = south_acc }
 	}

@@ -113,7 +113,7 @@ north_america = {
 	}
 	assimilation_rate = 0.25
 	farm_rgo_size = 2.5
-	mine_rgo_size = 2.5	
+	mine_rgo_size = 2.5
 }
 
 south_america = {
@@ -132,7 +132,7 @@ south_america = {
 	}
 	assimilation_rate = 0.25
 	farm_rgo_size = 2.5
-	mine_rgo_size = 2.5	
+	mine_rgo_size = 2.5
 }
 
 oceania = {
@@ -155,7 +155,7 @@ australia_new_zealand = {
 	}	
 	assimilation_rate = 0.25
 	farm_rgo_size = 2.5
-	mine_rgo_size = 2.5	
+	mine_rgo_size = 2.5
 }
 
 polynesia = {
