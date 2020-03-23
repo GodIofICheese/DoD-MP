@@ -131,7 +131,6 @@ has_siege = {
 }
 
 occupied = {
-	immigrant_attract = -1
 }
 
 nationalism = {
@@ -240,13 +239,13 @@ generalised_debt_default = {
 
 total_occupation = {
 	war_exhaustion = 0.05				#increased by war exhaustion.
-	prestige = -0.05
+	prestige = -0.025
 }
 
 total_blockaded = {
 	war_exhaustion = 0.3	#increased by war exhaustion.  
 	import_cost = 0.4
-	prestige = -0.05
+	prestige = -0.025
 }
 
 in_bankrupcy = {

@@ -6,13 +6,17 @@
 #Enlightenment Philosophy
 
 montesquieu = {
-	limit = { late_enlightenment_philosophy = 1 }
+	limit = { 
+		late_enlightenment_philosophy = 1
+		NOT = { ai = yes }
+	}
 	news = no
 	chance = {
-		base = 10
+		base = 100
 	}
 	effect = {
 		permanent_prestige = 1
+		activate_building = province_selector
 	}	
 }
 

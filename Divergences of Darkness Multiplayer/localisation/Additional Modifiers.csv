@@ -30,7 +30,12 @@ experimental_bioweapon;The Solomon Virus;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;
 experimental_bioweapon_desc;Once considered legend, now revived and modified to be even more infectious & deadly, this weapon can wipe out entire countries once deployed.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 bioweapon_cooldown;Solomon Virus Under Cooldown;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 bioweapon_cooldown_desc;You must wait till the modifier disappears before deploying The Solomon Virus again.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
-help_ai;Moderate AI Boost to Economy;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+help_ai;Moderate Boost to AI Economy;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+help_ai_mid;Moderate Boost to AI Economy;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+help_ai_late;Moderate Boost to AI Economy;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+disable_loans;No more loans for anyone.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+help_ai_free_trade;Forces the AI set Tarrifs Low.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+help_ai_protectionism;Forces the AI to set Tariffs High.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 chinese_economic_compensation;Great Leap Forward;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 divided_society1;Societal Divison;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;;
 divided_society1_desc;Efforts to only focus efforts on the integration of only a portion of our nation has lead to long-standing divison.;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;x;;;;;;;;;;
@@ -48,5 +53,8 @@ migration_factor_reduced_desc;Due to the unemployment caused by switching to Lum
 timber_employment_fix;Timber Employment Fix;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 timber_employment_fix_title;Timber Employment Fix;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 timber_employment_fix_desc;A temporary market reset for Lumber prices inorder to fix the unemployment bug caused by switching a province to a Lumber RGO.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+tropical_wood_employment_fix;Tropical Wood Employment Fix;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+tropical_wood_employment_fix_title;Tropical Wood Employment Fix;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
+tropical_wood_employment_fix_desc;A temporary market reset for Tropical Wood prices inorder to fix the unemployment bug caused by switching a province to a Tropical Wood RGO.;;;;;;;;;;;;;;;;;;;;x,,,,,;;;;;;;;;;;;;;;;;;;;
 immunity_from_influenza;Immunity from Influenza;;;;;;;;;;;;;x
 immunity_from_influenza_desc;Prevents Pandemic Influenza from recurring in your country as long as modifier is active.;;;;;;;;;;;;;x

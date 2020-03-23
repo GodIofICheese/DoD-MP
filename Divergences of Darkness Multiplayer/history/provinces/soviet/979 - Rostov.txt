@@ -1,6 +1,5 @@
 owner = CRI
 controller = CRI
-add_core = RUS
 add_core = ASK
 add_core = CRI
 add_core = TAR

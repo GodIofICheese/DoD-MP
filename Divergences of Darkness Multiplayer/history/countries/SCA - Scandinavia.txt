@@ -101,8 +101,6 @@ schools = naval_tech_school
 
 oob = "SCA_oob.txt"
 
-1861.1.1 = {
-# Technologies
-
-#Inventions
+1836.1.2 = {
+	oob = "/Alternative Start/SCA_oob.txt"
 }

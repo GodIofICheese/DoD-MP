@@ -1,0 +1,126 @@
+#Sphere of Influence
+
+#Army
+
+leader = {
+	name = "Gyula Pauk"
+	type = land
+	date = 1836.1.1
+	personality = bigoted
+	background = incompetent
+}
+
+leader = {
+	name = "Laszlo Pauk"
+	type = land
+	date = 1836.1.1
+	personality = careful
+	background = war_college
+}
+
+army = {
+	name = "Army of the Kingdom of Hungary"
+	location = 641
+	regiment = {
+		name= "1.1. hussar"
+		type = hussar
+		home = 637
+	}
+
+	regiment = {
+		name= "2.1. hussar"
+		type = hussar
+		home = 637
+	}
+
+	regiment = {
+		name= "3.1. hussar"
+		type = hussar
+		home = 950
+	}
+
+	regiment = {
+		name= "1.3. infantry"
+		type = infantry
+		home = 779
+	}
+
+	regiment = {
+		name= "2.3. infantry"
+		type = infantry
+		home = 647
+	}
+
+	regiment = {
+		name= "3.3. infantry"
+		type = infantry
+		home = 641
+	}
+}
+
+army = {
+	name = "Army of Transylvania"
+	location = 657
+	regiment = {
+		name= "1.1. infantry"
+		type = infantry
+		home = 623
+	}
+
+	regiment = {
+		name= "2.1. infantry"
+		type = infantry
+		home = 623
+	}
+
+	regiment = {
+		name= "1.1. Artillery"
+		type = artillery
+		home = 641
+	}
+
+	regiment = {
+		name= "2.1. Artillery"
+		type = artillery
+		home = 641
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.2"
+	static = no
+	personality = balanced
+	
+	befriend = { id="BRG" value=100 }
+	befriend = { id="RHI" value=100 }
+	befriend = { id="BOH" value=50 }
+	befriend = { id="CAE" value=50 }
+	befriend = { id="PLC" value=50 }
+	
+	threat = { id="MOL" value=100 }
+	threat = { id="WAL" value=100 }
+	threat = { id="CRO" value=75 }
+	threat = { id="AUS" value=75 }
+	threat = { id="TUR" value=50 }
+	threat = { id="VEN" value=25 }
+	threat = { id="MON" value=20 }
+	threat = { id="ALB" value=20 }
+	threat = { id="GRE" value=10 }
+	threat = { id="MAC" value=10 }
+
+	antagonize = { id="MOL" value=100 }
+	antagonize = { id="WAL" value=100 }
+	antagonize = { id="CRO" value=75 }
+	antagonize = { id="AUS" value=75 }
+	antagonize = { id="TUR" value=50 }
+	antagonize = { id="VEN" value=25 }
+	antagonize = { id="MON" value=20 }
+	antagonize = { id="ALB" value=20 }
+	antagonize = { id="GRE" value=10 }
+	antagonize = { id="MAC" value=10 }
+
+	rival = { id="TUR" value=100 }
+	rival = { id="VEN" value=100 }
+}

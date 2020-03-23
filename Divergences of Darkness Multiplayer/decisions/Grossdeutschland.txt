@@ -97,6 +97,14 @@ political_decisions = {
 				OR = {
 					SGF = { substate_of = THIS }
 					SGF = { vassal_of = THIS }
+				}
+				AND = {
+					BAV = { all_core = { owned_by = THIS } }
+					SWI = { all_core = { owned_by = THIS } }
+					AUS = { all_core = { owned_by = THIS } }
+					BAD = { all_core = { owned_by = THIS } }
+					WUR = { all_core = { owned_by = THIS } }
+					TIR = { all_core = { owned_by = THIS } }
 				}	
 		    }
 		}

@@ -1,4 +1,20 @@
 leader = {
+	name = "Josif Gudunov"
+	type = land
+	date = 1836.1.1
+	personality = aggressive
+	background = ambitious_careerist
+}
+
+leader = {
+	name = "Dmitryi Ivanov"
+	type = sea
+	date = 1836.1.1
+	personality = irresponsible
+	background = inventor
+}
+
+leader = {
 	name = "Nikolay Kurakin"
 	type = land
 	date = 1836.1.1
@@ -34,31 +50,31 @@ army = {
 	regiment = {
 		name= "2.1-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1008
+		home = 991
 	}
 
 	regiment = {
 		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1008
+		home = 999
 	}
 
 	regiment = {
 		name= "1.2-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1008
+		home = 1001
 	}
 
 	regiment = {
 		name= "2.2-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = infantry
-		home = 1008
+		home = 1010
 	}
 
 	regiment = {
 		name= "3.2-ya Gvardeiskaya Pekhotnaya Diviziya"
 		type = artillery
-		home = 1008
+		home = 1011
 	}
 
 }
@@ -69,13 +85,13 @@ army = {
 	regiment = {
 		name= "1.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1008
+		home = 989
 	}
 
 	regiment = {
 		name= "2.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1009
+		home = 1012
 	}
 
 	regiment = {
@@ -99,7 +115,7 @@ army = {
 	regiment = {
 		name= "2.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
 		type = hussar
-		home = 1037
+		home = 1013
 	}
 
 	regiment = {
@@ -127,13 +143,13 @@ army = {
 	regiment = {
 		name= "3.1-ya Grenaderskaya Diviziya"
 		type = artillery
-		home = 1020
+		home = 977
 	}
 
 	regiment = {
 		name= "1.2-ya Grenaderskaya Diviziya"
 		type = infantry
-		home = 1020
+		home = 1014
 	}
 
 	regiment = {
@@ -152,7 +168,7 @@ army = {
 	regiment = {
 		name= "1.1-ya Kavalerijskaya Diviziya"
 		type = hussar
-		home = 1039
+		home = 1015
 	}
 
 	regiment = {
@@ -160,7 +176,5 @@ army = {
 		type = hussar
 		home = 1008
 	}
-
-
 
 }

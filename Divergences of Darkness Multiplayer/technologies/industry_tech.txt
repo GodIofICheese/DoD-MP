@@ -367,7 +367,6 @@ mechanical_production = {
 	cost = 3600
 
 	activate_building = regular_clothes_factory
-	activate_building = machine_parts_factory 	
 	ai_chance = {
 		factor = 2
 		modifier = {

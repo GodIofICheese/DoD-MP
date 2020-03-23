@@ -1861,20 +1861,20 @@ small_country_draft = {
 }
 
 nationalist_agitation = {
-	pop_consciousness_modifier = 0.2
-	pop_militancy_modifier = 0.25
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.05
 	icon = 4
 }
 
 patriot_uprising = {
-	pop_consciousness_modifier = 0.2
-	pop_militancy_modifier = 0.25
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.05
 	icon = 4
 }
 
 peasant_revolt = {
-	pop_consciousness_modifier = 0.2
-	pop_militancy_modifier = 0.25
+	pop_consciousness_modifier = 0.1
+	pop_militancy_modifier = 0.05
 	icon = 4
 }
 
@@ -3209,31 +3209,32 @@ timber_employment_fix = {
     icon = 14
 }
 
+tropical_wood_employment_fix = {
+    local_RGO_throughput = -0.95
+    icon = 14
+}
+
 province_selected = {
 	icon = 5
 }
 ##### Asian Player Nerfs #####
 asia_nerfonciv = {
 	mobilisation_size = -0.01
-	global_population_growth = -0.001
 	icon = 8
 }
 
 asia_nerfearly = {
 	mobilisation_size = -0.02
-	global_population_growth = -0.001
 	icon = 8
 }
 
 asia_nerfmid = {
-	mobilisation_size = -0.045
-	global_population_growth = -0.002
+	mobilisation_size = -0.03
 	icon = 8
 }
 
 asia_nerflate = {
-	mobilisation_size = -0.065
-	global_population_growth = -0.002
+	mobilisation_size = -0.04
 	icon = 8
 }
 

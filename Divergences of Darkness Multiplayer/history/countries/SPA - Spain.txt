@@ -5,9 +5,9 @@ culture = basque
 culture = granadan
 religion = catholic
 government = absolute_monarchy
-plurality = 25.0
+plurality = 15.0
 nationalvalue = nv_autocracy
-literacy = 0.13
+literacy = 0.26
 non_state_culture_literacy = 0.1
 civilized = yes
 prestige = 45
@@ -189,4 +189,8 @@ school_reforms = low_schools
 	medicine = 1
 
 #Inventions
+}
+
+1836.1.2 = {
+	oob = "/Alternative Start/SPA_oob.txt"
 }

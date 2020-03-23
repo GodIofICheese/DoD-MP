@@ -1,6 +1,7 @@
-owner = NOV
-controller = NOV
+owner = MUS
+controller = MUS
 add_core = RUS
 add_core = NOV
+add_core = MUS
 trade_goods = fish
-life_rating = 10
+life_rating = 35

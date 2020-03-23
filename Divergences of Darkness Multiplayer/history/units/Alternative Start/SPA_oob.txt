@@ -1,0 +1,789 @@
+
+OMA = {
+	value = 125		#relation
+	level = 5		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+TAI = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 35
+}
+
+TRA = {
+	value = 100		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 35
+}
+
+
+leader = {
+	name = "Francisco Aguirre"
+	type = land
+	date = 1836.1.1
+	personality = gallant
+	background = poet
+}
+
+
+leader = {
+	name = "Julio Segura"
+	type = land
+	date = 1836.1.1
+	personality = irresponsible
+	background = ambitious_careerist
+}
+
+
+leader = {
+	name = "Luis Atanes"
+	type = land
+	date = 1836.1.1
+	personality = quixotic
+	background = amateur
+}
+
+
+leader = {
+	name = "Pablo Elcano"
+	type = sea
+	date = 1836.1.1
+	personality = impetuous
+	background = expert_raider
+}
+
+
+leader = {
+	name = "Salvador Pizarro"
+	type = sea
+	date = 1836.1.1
+	personality = tactful
+	background = elder_statesman
+}
+
+
+leader = {
+	name = "Ignacio Vega"
+	type = sea
+	date = 1836.1.1
+	personality = deeply_religious
+	background = drillmaster
+}
+
+#Army
+army = {
+	name = "Ejército Real"
+	location = 487
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = infantry
+		home = 474
+	}
+
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = infantry
+		home = 474
+	}     
+	
+	regiment = {
+		name= "6. Brigada de Infantería 'La Granja'"
+		type = infantry
+		home = 487
+	}
+  
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = dragoon
+		home = 518
+	}
+}
+  
+army = {
+	name = "Ejército Colombian" 
+	location = 516 
+
+	regiment = {
+		name= "1. Brigada de Infantería 'El Ramillete'"
+		type = infantry
+		home = 477
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 477
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantería"
+		type = artillery
+		home = 477
+	}        
+
+	regiment = {
+		name= "3. infantryia Real"
+		type = infantry
+		home = 474
+	}   
+
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = hussar
+		home = 518
+	}
+  
+	regiment = {
+		name= "3. Granaderos del Rey"
+		type = dragoon
+		home = 518
+	}
+}
+
+army = {
+	name = "Ejército del Rabat"
+	location = 1685
+	
+	regiment = {
+		name= "4. Brigada de Infantería 'San Jorge'"
+		type = infantry
+		home = 487
+	}
+
+	regiment = {
+		name= "1. Brigada de Artillería"
+		type = infantry
+		home = 487
+	}
+	
+	regiment = {
+		name= "5. Brigada de Infantería"
+		type = infantry
+		home = 487
+	}
+  
+
+	regiment = {
+		name= "9. Brigada de Infantería"
+		type = hussar
+		home = 1688
+	}
+}
+
+army = {
+	name = "Ejército del Sur"
+	location = 510
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = infantry
+		home = 525
+	}
+
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = infantry
+		home = 525
+	}
+
+	regiment = {
+		name= "3. infantryia Real"
+		type = infantry
+		home = 484
+	}
+
+	regiment = {
+		name= "1. Brigada de Infantería 'El Ramillete'"
+		type = infantry
+		home = 484
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 512
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantería"
+		type = artillery
+		home = 512
+	}
+
+	regiment = {
+		name= "1. Granaderos del Rey"
+		type = hussar
+		home = 513
+	}
+
+	regiment = {
+		name= "2. Granaderos del Rey"
+		type = dragoon
+		home = 513
+	}
+
+	regiment = {
+		name= "3. Granaderos del Rey"
+		type = dragoon
+		home = 487
+	}
+}
+
+army = { 
+
+	name = "Ejercito del Angoya" 
+	location = 2210 
+
+
+
+	regiment = {
+		name= "1. Brigada de Infantería"
+		type = infantry
+		home = 521
+	}
+
+		regiment = {
+		name= "2. Brigada de Infantería"
+		type = infantry
+		home = 521
+	}
+}
+army = {
+	name = "Ejército del Habana"
+	location = 477
+
+	regiment = {
+		name= "4. Brigada de Infantería 'San Jorge'"
+		type = infantry
+		home = 1683
+	}
+
+	regiment = {
+		name= "1. Brigada de Artillería"
+		type = infantry
+		home = 1685
+	}
+	
+	regiment = {
+		name= "5. Brigada de Infantería"
+		type = infantry
+		home = 1685
+	}            
+	
+	regiment = {
+		name= "5. Brigada de Infantería"
+		type = infantry
+		home = 2209
+	}           
+	
+	regiment = {
+		name= "8. Brigada de Infantería 'La Granja'"
+		type = hussar
+		home = 2209
+	}
+}
+
+army = {
+	name = "Ejército del Rangoon"
+	location = 1330
+	
+	regiment = {
+		name= "4. Brigada de Infantería 'San Jorge'"
+		type = infantry
+		home = 2134
+	}
+
+	regiment = {
+		name= "1. Brigada de Artillería"
+		type = infantry
+		home = 1330
+	}
+}
+
+navy = {
+	name = "Armada Real Española"
+	location = 517
+	ship = {
+		name= "San Raimundo"
+		type = manowar
+	}
+
+	ship = {
+		name= "Héroe"
+		type = manowar
+	}
+
+	ship = {
+		name= "San Pablo"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Alerta"
+		type = manowar
+	}
+	
+	ship = {
+		name = "San Fernando"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Legazpi"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Santiago"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Hespérides"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Centinela"
+		type = manowar
+	}
+
+	ship = {
+		name= "San Francisco"
+		type = manowar
+	}
+
+	ship = {
+		name= "Rex"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Leon"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Galicia"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Santa Angelika"
+		type = manowar
+	}
+
+	ship = {
+		name= "Colombia"
+		type = frigate
+	}
+
+	ship = {
+		name= "Hispania"
+		type = frigate
+	}
+
+	ship = {
+		name= "Europa"
+		type = frigate
+	}
+
+	ship = {
+		name= "Ameriga"
+		type = frigate
+	}
+
+	ship = {
+		name= "Concorde"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nuestra Señora de Asunción"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nuestra Señora de Atocha"
+		type = frigate
+	}
+
+	ship = {
+		name= "Santa Sabina"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Victoria"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Isla de Cuba"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Cristóbal Colón"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Nuestra Señora del Patrocinio"
+		type = frigate
+	}
+
+	ship = {
+		name= "Aleria"
+		type = frigate
+	}
+
+	ship = {
+		name= "Morocco"
+		type = frigate
+	}
+
+	ship = {
+		name= "Agadir"
+		type = frigate
+	}
+
+	ship = {
+		name= "Taza"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Orion"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Pisces"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Mare"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Hainan"
+		type = frigate
+	}
+	
+	ship = {
+		name = "India"
+		type = frigate
+	}
+
+	ship = {
+		name= "Formosa"
+		type = frigate
+	}
+
+	ship = {
+		name= "Asunción"
+		type = frigate
+	}
+
+	ship = {
+		name= "Atocha"
+		type = frigate
+	}
+
+	ship = {
+		name= "Purepecha"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Toreador"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Villareal"
+		type = frigate
+	}
+	
+
+
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+	
+	ship = {
+		name= "1b Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2b Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+
+navy = {
+	name = "Armada del Habana"
+	location = 2209
+
+	ship = {
+		name= "Juan"
+		type = manowar
+	}
+  
+  ship = {
+		name= "Lisboa"
+		type = manowar
+	}
+
+	ship = {
+		name= "Madrid"
+		type = manowar
+	}
+
+	ship = {
+		name= "Castilla"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Almeria"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Euskadia"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Etruria"
+		type = manowar
+	}
+  
+  ship = {
+		name = "Coabana"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Sebastian"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Padre"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Christo Redendor"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Magdalena"
+		type = frigate
+	}
+
+	ship = {
+		name= "Portugal"
+		type = manowar
+	}
+
+	ship = {
+		name= "Granada"
+		type = manowar
+	}
+
+	ship = {
+		name= "Isabella"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Quechua"
+		type = manowar
+	}
+	
+	ship = {
+		name = "Andrea"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Navarre"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Maghreb"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Algiers"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Pacific"
+		type = frigate
+	}
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "4a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "5a Flotilla de Transporte"
+		type = clipper_transport
+	}   
+
+	ship = {
+		name= "6a Flotilla de Transporte"
+		type = clipper_transport
+	}  
+
+	ship = {
+		name= "7a Flotilla de Transporte"
+		type = clipper_transport
+	}  
+  
+}
+
+navy = {
+	name = "Armada del India"
+	location = 1303
+	
+	ship = {
+		name = "Deus"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Antillea"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Mayapan"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Yucatan"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Mejico"
+		type = frigate
+	}
+	
+	ship = {
+		name= "1a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "2a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "3a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "4a Flotilla de Transporte"
+		type = clipper_transport
+	}
+
+	ship = {
+		name= "5a Flotilla de Transporte"
+		type = clipper_transport
+	}
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.2"
+	static = no
+	personality = balanced
+	
+	befriend = { id="VEN" value=100 }
+	befriend = { id="ITA" value=100 }
+	befriend = { id="CAT" value=100 }
+	befriend = { id="NAV" value=100 }
+	
+	protect = { id="VEN" value=100 }
+	protect = { id="CAT" value=100 }
+	protect = { id="NAV" value=100 }
+	
+	threat = { id="ARA" value=150 }
+	threat = { id="ARI" value=150 }
+	threat = { id="MGH" value=100 }
+	threat = { id="BEN" value=75 }
+	threat = { id="BUR" value=75 }
+	threat = { id="VIJ" value=50 }
+	threat = { id="BER" value=25 }
+	threat = { id="TRA" value=25 }
+	threat = { id="MDR" value=25 }
+	threat = { id="GCO" value=25 }
+	threat = { id="GRA" value=25 }
+	threat = { id="MUG" value=10 }
+	threat = { id="HYD" value=10 }
+
+	antagonize = { id="ARA" value=150 }
+	antagonize = { id="ARI" value=150 }
+	antagonize = { id="MGH" value=100 }
+	antagonize = { id="BEN" value=75 }
+	antagonize = { id="BUR" value=75 }
+	antagonize = { id="VIJ" value=50 }
+	antagonize = { id="BER" value=25 }
+	antagonize = { id="TRA" value=25 }
+	antagonize = { id="MDR" value=25 }
+	antagonize = { id="GCO" value=25 }
+	antagonize = { id="GRA" value=25 }
+	antagonize = { id="MUG" value=10 }
+	antagonize = { id="HYD" value=10 }
+
+	rival = { id="ARA" value=200 }
+	rival = { id="ARI" value=200 }
+	rival = { id="GCO" value=100 }
+	rival = { id="MUG" value=100 }
+	rival = { id="ENL" value=50 }
+	rival = { id="ENG" value=50 }
+}

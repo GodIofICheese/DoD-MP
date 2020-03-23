@@ -54,6 +54,8 @@ upper_house = {
 	communist = 0
 }
 
+decision = chinese_genocide_MCK
+
 land_reform = yes_land_reform
 foreign_weapons = yes_foreign_weapons
 foreign_officers = yes_foreign_officers

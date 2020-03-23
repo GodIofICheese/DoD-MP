@@ -651,3 +651,53 @@ navy = {
 	}
 
 }
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.2"
+	static = no
+	personality = balanced
+	
+	befriend = { id="SAR" value=100 }
+	befriend = { id="BOH" value=50 }
+	befriend = { id="CAE" value=50 }
+	
+	protect = { id="SAR" value=100 }
+	
+	threat = { id="PRV" value=100 }
+	threat = { id="BRG" value=75 }
+	threat = { id="RHI" value=75 }
+	threat = { id="TRA" value=75 }
+	threat = { id="MDR" value=75 }
+	threat = { id="VIJ" value=25 }
+	threat = { id="BER" value=25 }
+	threat = { id="ARC" value=25 }
+	threat = { id="HYD" value=10 }
+	threat = { id="BEN" value=10 }
+	threat = { id="MUG" value=10 }
+	threat = { id="ETH" value=10 }
+	threat = { id="ADA" value=10 }
+	threat = { id="AMT" value=10 }
+
+	antagonize = { id="PRV" value=100 }
+	antagonize = { id="BRG" value=75 }
+	antagonize = { id="RHI" value=75 }
+	antagonize = { id="TRA" value=75 }
+	antagonize = { id="MDR" value=75 }
+	antagonize = { id="VIJ" value=25 }
+	antagonize = { id="BER" value=25 }
+	antagonize = { id="ARC" value=25 }
+	antagonize = { id="HYD" value=10 }
+	antagonize = { id="BEN" value=10 }
+	antagonize = { id="MUG" value=10 }
+	antagonize = { id="ETH" value=10 }
+	antagonize = { id="ADA" value=10 }
+	antagonize = { id="AMT" value=10 }
+
+	rival = { id="BRG" value=100 }
+	rival = { id="RHI" value=100 }
+	rival = { id="ARC" value=100 }
+	rival = { id="MUG" value=100 }
+	rival = { id="HLR" value=50 }
+}

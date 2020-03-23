@@ -4,7 +4,8 @@ religion = catholic
 government = absolute_monarchy
 plurality = 0.0
 nationalvalue = nv_order
-literacy = 0.75
+literacy = 0.65
+non_state_culture_literacy = 0.7
 civilized = yes
 
 #GreaterPowers = prestige
@@ -84,10 +85,8 @@ high_pressure_steam_engine = 1
 mechanical_production = 1
 puddling_process = 1
 
-1861.1.1 = {
-# Technologies
-
-#Inventions
-}
-
 oob = "BOH_oob.txt"
+
+1836.1.2 = {
+	oob = "/Alternative Start/BOH_oob.txt"
+}

@@ -1,9 +1,8 @@
 political_decisions = {
 		form_russia = {
-			picture = pan_slavism
+			picture = RUS_tsar
 			potential = {
 				is_culture_group = east_slavic	
-				
 				
 				NOT = {
 					exists = RUS
@@ -11,20 +10,19 @@ political_decisions = {
 			}
 		
 			allow = {
-				nationalism_n_imperialism = 1
-				NOT = { war = yes }
-				prestige = 40
-				MUS = {
-					all_core = {
-						OR = {
-							owned_by = THIS
-							owner = {
-								in_sphere = THIS
-							}
-						}
+				revolution_n_counterrevolution = 1
+				OR = {
+					AND = {
+					tag = MUS
+					has_country_flag = baltic_focus
+					has_country_flag = southern_focus
+					has_country_flag = panslavic_focus
+					has_country_flag = siberia
 					}
+					NOT = { tag = MUS }
 				}
-				NOV = {
+				NOT = { war = yes }
+				MUS = {
 					all_core = {
 						OR = {
 							owned_by = THIS
@@ -37,7 +35,8 @@ political_decisions = {
 			}
 		
 			effect = {
-				prestige = 20
+				prestige = 30
+				prestige_factor = 0.15
 				change_tag = RUS
 				add_accepted_culture = russian
 				add_accepted_culture = ugrian
@@ -53,7 +52,6 @@ political_decisions = {
 				factor = 1
 			}
 	}
-
 
 	mongolian_protectorate = {
 		picture = treaty_signing
@@ -102,7 +100,10 @@ political_decisions = {
 	set_expansion_focus = {
 			picture = pan_slavism
 			potential = {
-				tag = RUS
+				OR = { 
+					tag = RUS
+					tag = MUS
+				}
 				NOT = { has_country_modifier = rus_expansion_cooldown }
 				OR = {
 				NOT = { has_country_flag = panslavic_focus }
@@ -110,10 +111,11 @@ political_decisions = {
 				NOT = { has_country_flag = southern_focus }
 				NOT = { has_country_flag = baltic_focus }
 				}
+				NOT = { badboy = 0.4 }
 			}
 			allow = {
-				year = 1860
 				NOT = { has_country_modifier = rus_expansion_cooldown }
+				war = no
 			}
 			effect = {
 				country_event = 202201
@@ -128,15 +130,19 @@ political_decisions = {
 	move_capital_to_nyenschantz = {
 		picture = move_capital_to_stpetersburg
 		potential = {
+			OR = {
 			tag = RUS
+			tag = MUS
+			}
 			has_country_flag = baltic_focus
 			NOT = { has_country_flag = RUS_moved_capital }
 		}
 
-		#Must control all of Estonia and Karelia
+		#Must control all of Estonia and Southern Finland
 		allow = {
-			RUS_339 = { owned_by = THIS }
-			RUS_349 = { owned_by = THIS }
+			RUS_994 = { owned_by = THIS } #Ingria
+			RUS_340 = { owned_by = THIS } #Southern Finland
+			RUS_349 = { owned_by = THIS } #Estonia
 		}
 
 		effect = {
@@ -161,16 +167,19 @@ political_decisions = {
 	move_capital_to_rostov = {
 		picture = move_capital_to_rostov
 		potential = {
+			OR = {
 			tag = RUS
-			has_country_flag = southern_focus
+			tag = MUS
+			}
+			has_country_flag = panslavic_focus
 			NOT = { has_country_flag = RUS_moved_capital }
 		}
 
-		#Must control Crimea, Luhansk, and Rostov regions
+		#Must control Luhansk, Ekaterinodar, and Don regions
 		allow = {
-			RUS_964 = { owned_by = THIS }
-			RUS_980 = { owned_by = THIS }
-			RUS_1048 = { owned_by = THIS }
+			RUS_980 = { owned_by = THIS } #Luhansk
+			RUS_1048 = { owned_by = THIS } #Ekaterinodar
+			RUS_979 = { owned_by = THIS } #Don
 		}
 		effect = {
 			prestige = 10
@@ -196,7 +205,7 @@ political_decisions = {
 			tag = RUS
 			has_country_flag = panslavic_focus
 			NOT = { has_country_flag = ruthenian_culture }
-			NOT = { accepted_culture = ruthenian}
+			NOT = { accepted_culture = ruthenian }
 		}
 		#Ruthenes have higher tech requirements and lower capitol movement requirements. 
 		allow = {
@@ -215,19 +224,22 @@ political_decisions = {
 	integrate_tatar_culture = {
 		picture = embrace_minority
 		potential = {
-			tag = RUS
-			has_country_flag = southern_focus
+			OR = {
+				tag = RUS
+				tag = MUS
+			}
+			has_country_flag = siberia
 			NOT = { accepted_culture = tatar }
 			NOT = { has_country_flag = tatar_culture }
 		} 
 		allow = {
 			social_science = 1
 			
-			RUS_1034 = { owned_by = THIS }
-			RUS_1060 = { owned_by = THIS }
-			RUS_2685 = { owned_by = THIS }
-			RUS_1064 = { owned_by = THIS }
-			RUS_1469 = { owned_by = THIS }
+			RUS_1034 = { owned_by = THIS } #Idel
+			RUS_1060 = { owned_by = THIS } #Ja'ik
+			RUS_2685 = { owned_by = THIS } #Iset
+			RUS_1064 = { owned_by = THIS } #Qashliq
+			RUS_1469 = { owned_by = THIS } #Tannu Tuva
 		}
 		effect = {
 			prestige = 5
@@ -241,13 +253,15 @@ political_decisions = {
 	integrate_astrakhani_culture = {
 		picture = embrace_minority
 		potential = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = MUS
+			}
 			has_country_flag = southern_focus
 			NOT = { has_country_flag = astrakhan_culture }
 		}
 		allow = {
 			investment_banks = 1
-			RUS_1048 = { owned_by = THIS }
 			RUS_979 = { owned_by = THIS }
 			RUS_1041 = { owned_by = THIS }
 		}
@@ -260,35 +274,38 @@ political_decisions = {
 			factor = 1
 		}
 	}	
-	integrate_georgian_culture = {
-		picture = embrace_minority
-		potential = {
-			tag = RUS
-			has_country_flag = southern_focus
-			NOT = { accepted_culture = georgian }
-			NOT = { has_country_flag = georgian_culture }
-		}
-		#Georgians, being further away but Orthodox Christian, take a while.
-		allow = {
-			modern_central_bank_system = 1 
-			combustion_engine = 1
-			RUS_1090 = { owned_by = THIS }
-			GEO_1 = { owned_by = THIS } 
-		}
-		effect = {
-			prestige = 5
-			add_accepted_culture = georgian
-			set_country_flag = georgian_culture
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}	
+#	integrate_georgian_culture = {
+#		picture = embrace_minority
+#		potential = {
+#			tag = RUS
+#			has_country_flag = southern_focus
+#			NOT = { accepted_culture = georgian }
+#			NOT = { has_country_flag = georgian_culture }
+#		}
+#		#Georgians, being further away but Orthodox Christian, take a while.
+#		allow = {
+#			modern_central_bank_system = 1 
+#			combustion_engine = 1
+#			RUS_1090 = { owned_by = THIS }
+#			GEO_1 = { owned_by = THIS } 
+#		}
+#		effect = {
+#			prestige = 5
+#			add_accepted_culture = georgian
+#			set_country_flag = georgian_culture
+#		}
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}	
 	#Baltic cultures
 	integrate_estonian_culture = {
 		picture = embrace_minority
 		potential = {
+			OR = {
 			tag = RUS
+			tag = MUS
+			}
 			has_country_flag = baltic_focus
 			NOT = { accepted_culture = estonian }
 			NOT = { has_country_flag = estonian_culture }
@@ -299,7 +316,7 @@ political_decisions = {
 		}
 		effect = {
 			prestige = 5
-			add_accepted_culture = estonian
+			add_accepted_culture = estonian #Estonia
 			set_country_flag = estonian_culture
 		}
 		ai_will_do = {
@@ -309,13 +326,16 @@ political_decisions = {
 	integrate_latvian_culture = {
 		picture = embrace_minority
 		potential = {
+			OR = {
 			tag = RUS
+			tag = MUS
+			}
 			has_country_flag = baltic_focus
 			NOT = { has_country_flag = latvian_culture }
 		}
 		allow = {
-			psychoanalysis = 1
-			RUS_354 = { owned_by = THIS }
+			modern_central_bank_system = 1
+			RUS_354 = { owned_by = THIS } #Latvia
 		}
 		effect = {
 			prestige = 5
@@ -326,58 +346,60 @@ political_decisions = {
 			factor = 1
 		}
 	}	
-	integrate_finnish_culture = {
+	integrate_novgorodian_culture = {
 		picture = embrace_minority
 		potential = {
-			tag = RUS
+			OR = {
+				tag = RUS
+				tag = MUS
+			}
 			has_country_flag = baltic_focus
-			NOT = { has_country_flag = finnish_culture }
+			NOT = { has_country_flag = novgorodian_culture }
 		}
 		allow = {
-			phenomenology_n_hermeneutic = 1 
 			expressionism = 1
-			RUS_340 = { owned_by = THIS }
-			SCA_345 = { owned_by = THIS } 
-			RUS_336 = { owned_by = THIS }
+			RUS_994 = { owned_by = THIS } #Pskov
+			RUS_1003 = { owned_by = THIS } #Novgorod
+			RUS_339 = { owned_by = THIS } #Karelia
 		}
 		effect = {
-			add_accepted_culture = finnish
-			set_country_flag = finnish_culture
+			add_accepted_culture = novgorodian
+			set_country_flag = novgorodian_culture
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}	
 
-	moscow_expansion_steppes = { 
-	picture = RUS_tsar
-	potential = { 
-	tag = MUS
-	NOT = { has_country_flag = steppes_conquest }
-	NOT = { TAR = { exists = yes }}
-	}
-	
-	allow = {
-	OR = { 
-		AND = { 
-		rank = 16 
-		NOT = { SCA = { is_greater_power = yes } }
-		}
-		AND = { 
-		rank = 16 
-		year = 1845 
-		}
-		is_greater_power = yes 
-		}
-	}
-	
-	effect = { 
-	set_country_flag = steppes_conquest
-	prestige = 15 
-	RUS_1034 = { add_core = THIS }
-	RUS_979 = { add_core = THIS }
-	RUS_980 = { add_core = THIS }
-		}
-	
-	}
-}
+#	moscow_expansion_steppes = { 
+#	picture = RUS_tsar
+#	potential = { 
+#	tag = MUS
+#	NOT = { has_country_flag = steppes_conquest }
+#	NOT = { TAR = { exists = yes }}
+#	}
+#	
+#	allow = {
+#	OR = { 
+#		AND = { 
+#		rank = 16 
+#		NOT = { SCA = { is_greater_power = yes } }
+#		}
+#		AND = { 
+#		rank = 16 
+#		year = 1845 
+#		}
+#		is_greater_power = yes 
+#		}
+#	}
+#	
+#	effect = { 
+#	set_country_flag = steppes_conquest
+#	prestige = 15 
+#	RUS_1034 = { add_core = THIS }
+#	RUS_979 = { add_core = THIS }
+#	RUS_980 = { add_core = THIS }
+#		}
+#	
+#	}
+#}

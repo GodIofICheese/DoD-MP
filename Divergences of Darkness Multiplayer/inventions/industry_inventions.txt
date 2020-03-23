@@ -321,7 +321,7 @@ mechanized_slaughtering_block = {
 }
 
 precision_work = {
-	limit = { interchangeable_parts = 1 }
+	limit = { mechnical_produciton = 1 }
 	chance = {
 		base = 2
 		modifier = {
@@ -334,6 +334,7 @@ precision_work = {
 		}
 	}
 	effect = {
+		activate_building = machine_parts_factory 
 		factory_goods_output = {
 			glass = 0.03
 		} 
@@ -1120,7 +1121,7 @@ prophylaxis_against_malaria = {
 	effect = {
 		land_attrition = -0.05 
 		soldier_to_pop_loss = 0.01
-		colonial_life_rating = -5
+		colonial_life_rating = -7.5
 	}
 }
 pressure_chambers_for_thorax_surgery = {

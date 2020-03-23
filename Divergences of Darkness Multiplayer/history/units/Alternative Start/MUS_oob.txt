@@ -1,0 +1,230 @@
+leader = {
+	name = "Josif Gudunov"
+	type = land
+	date = 1836.1.1
+	personality = aggressive
+	background = ambitious_careerist
+}
+
+leader = {
+	name = "Dmitryi Ivanov"
+	type = sea
+	date = 1836.1.1
+	personality = irresponsible
+	background = inventor
+}
+
+leader = {
+	name = "Nikolay Kurakin"
+	type = land
+	date = 1836.1.1
+	personality = genius
+	background = aristocrat
+}
+
+leader = {
+	name = "Alexander Cherenkov"
+	type = land
+	date = 1836.1.1
+	personality = heroic
+	background = brilliant_strategist
+}
+
+leader = {
+	name = "Lazar Lenin"
+	type = land
+	date = 1836.1.1
+	personality = ballsy
+	background = natural_born_leader
+}
+
+army = {
+	name = "Army Corps of the infantry"
+	location = 1008
+	regiment = {
+		name= "1.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 943
+	}
+
+	regiment = {
+		name= "2.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 991
+	}
+
+	regiment = {
+		name= "3.1-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 999
+	}
+
+	regiment = {
+		name= "1.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1001
+	}
+
+	regiment = {
+		name= "2.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = infantry
+		home = 1010
+	}
+
+	regiment = {
+		name= "3.2-ya Gvardeiskaya Pekhotnaya Diviziya"
+		type = artillery
+		home = 1011
+	}
+
+}
+
+army = {
+	name = "infantrys hussar Corps"
+	location = 1010
+	regiment = {
+		name= "1.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 989
+	}
+
+	regiment = {
+		name= "2.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1012
+	}
+
+	regiment = {
+		name= "3.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1009
+	}
+
+	regiment = {
+		name= "4.1-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = cuirassier
+		home = 998
+	}
+
+	regiment = {
+		name= "1.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1008
+	}
+
+	regiment = {
+		name= "2.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1013
+	}
+
+	regiment = {
+		name= "3.2-ya Gvardeiskaya Kavaleriiskaya Diviziya"
+		type = hussar
+		home = 1037
+	}
+}
+
+army = {
+	name = "Grenadier Corps"
+	location = 1011
+	regiment = {
+		name= "1.1-ya Grenaderskaya Diviziya"
+		type = infantry
+		home = 1037
+	}
+
+	regiment = {
+		name= "2.1-ya Grenaderskaya Diviziya"
+		type = infantry
+		home = 1034
+	}
+
+	regiment = {
+		name= "3.1-ya Grenaderskaya Diviziya"
+		type = artillery
+		home = 977
+	}
+
+	regiment = {
+		name= "1.2-ya Grenaderskaya Diviziya"
+		type = infantry
+		home = 1014
+	}
+
+	regiment = {
+		name= "2.2-ya Grenaderskaya Diviziya"
+		type = infantry
+		home = 1020
+	}
+
+	regiment = {
+		name= "3.2-ya Grenaderskaya Diviziya"
+		type = infantry
+		home = 1039
+	}
+
+	
+	regiment = {
+		name= "1.1-ya Kavalerijskaya Diviziya"
+		type = hussar
+		home = 1015
+	}
+
+	regiment = {
+		name= "2.2-ya Kavalerijskaya Diviziya"
+		type = hussar
+		home = 1008
+	}
+
+}
+
+ai = {
+	initialized = yes
+	consolidate = yes
+	date = "1836.1.2"
+	static = no
+	personality = balanced
+	
+	threat = { id="ASK" value=100 }
+	threat = { id="UKR" value=100 }
+	threat = { id="BLR" value=100 }
+	threat = { id="RUT" value=100 }
+	threat = { id="PSK" value=100 }
+	threat = { id="CRI" value=75 }
+	threat = { id="SIB" value=75 }
+	threat = { id="CHG" value=75 }
+	threat = { id="AFS" value=75 }
+	threat = { id="KZH" value=75 }
+	threat = { id="UZB" value=50 }
+	threat = { id="KOK" value=50 }
+	threat = { id="CIR" value=25 }
+	threat = { id="FIN" value=25 }
+	threat = { id="PLC" value=25 }
+	threat = { id="AZB" value=25 }
+	threat = { id="SCA" value=20 }
+
+	antagonize = { id="ASK" value=100 }
+	antagonize = { id="UKR" value=100 }
+	antagonize = { id="BLR" value=100 }
+	antagonize = { id="RUT" value=100 }
+	antagonize = { id="PSK" value=100 }
+	antagonize = { id="CRI" value=75 }
+	antagonize = { id="SIB" value=75 }
+	antagonize = { id="CHG" value=75 }
+	antagonize = { id="AFS" value=75 }
+	antagonize = { id="KZH" value=75 }
+	antagonize = { id="UZB" value=50 }
+	antagonize = { id="KOK" value=50 }
+	antagonize = { id="CIR" value=25 }
+	antagonize = { id="FIN" value=25 }
+	antagonize = { id="PLC" value=25 }
+	antagonize = { id="AZB" value=25 }
+	antagonize = { id="SCA" value=20 }
+
+	rival = { id="PLC" value=100 }
+	rival = { id="SCA" value=100 }
+	rival = { id="PER" value=100 }
+	rival = { id="JAP" value=50 }
+	rival = { id="MUG" value=50 }
+}

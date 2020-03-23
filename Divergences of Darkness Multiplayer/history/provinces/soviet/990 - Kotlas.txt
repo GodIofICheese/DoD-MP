@@ -1,5 +1,5 @@
-owner = NOV
-controller = NOV
+owner = MUS
+controller = MUS
 add_core = RUS
 add_core = NOV
 add_core = MUS

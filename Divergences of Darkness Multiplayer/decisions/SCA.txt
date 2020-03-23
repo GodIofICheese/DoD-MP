@@ -34,4 +34,40 @@ political_decisions = {
 			factor = 1
 		}
 	}
+
+integrate_novgorodians_sca = {
+		picture = SCA_political_union
+		potential = {
+			tag = SCA
+			NOT = { has_country_flag = integrate_novgorodians_sca }
+		}
+		
+		allow = {
+			OR = {
+				PSV = { exists = no }
+				PSV = { substate_of = THIS }
+			}
+			year = 1870
+			expressionism = 1
+			OR = {
+				AND = {
+					RUS_994 = { owned_by = THIS } #Pskov
+					RUS_1003 = { owned_by = THIS } #Novgorod
+				}
+				PSV = { substate_of = THIS }
+			}
+			RUS_339 = { owned_by = THIS } #Karelia	
+		}
+		
+		effect = {
+			set_country_flag = integrate_novgorodians_sca
+			add_accepted_culture = novgorodian
+			inherit = PSV
+			PSV = { all_core = { add_core = THIS } }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

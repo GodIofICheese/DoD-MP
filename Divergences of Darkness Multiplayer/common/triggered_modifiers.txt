@@ -58,7 +58,7 @@ good_health_care_fully_funded = {
 		OR = {
 			AND = {
 				ai = yes
-				administration_spending = 0.3
+				administration_spending = 0.4
 			}
 			AND = {
 				ai = no
@@ -635,7 +635,7 @@ social_reformed_nation = {
 			penal_system = rehabilitation
 		}
 		
-	social_reform_desire = -0.4
+	social_reform_desire = -0.5
 	icon = 13
 }
 
@@ -880,6 +880,7 @@ player_unciv_mobilization = {
 help_ai = {
 	trigger = {
 		ai = yes
+		NOT = { year = 1870 }
 	}
 	icon = 10
 	tax_efficiency = 0.05
@@ -887,6 +888,60 @@ help_ai = {
 	supply_consumption = -0.15
 	loan_interest = -0.03
 	education_efficiency_modifier = 0.25
+}
+
+help_ai_mid = {
+	trigger = {
+		ai = yes
+		year = 1870
+		NOT = { year = 1900 }
+	}
+	icon = 10
+	tax_efficiency = 0.15
+	administrative_efficiency_modifier = 0.05
+	supply_consumption = -0.20
+	loan_interest = -0.03
+	education_efficiency_modifier = 0.25
+}
+
+help_ai_late = {
+	trigger = {
+		ai = yes
+		year = 1900
+	}
+	icon = 10
+	tax_efficiency = 0.20
+	administrative_efficiency_modifier = 0.05
+	supply_consumption = -0.25
+	loan_interest = -0.03
+	education_efficiency_modifier = 0.25
+}
+
+disable_loans = {
+	trigger = {
+		ai = yes
+	}
+	max_loan_modifier = -1.0
+	icon = 9
+}
+
+help_ai_free_trade = {
+	trigger = {
+		ai = yes
+		trade_policy = free_trade
+	}
+	icon = 9
+	max_tariff = 0.75
+	min_tariff = 1.5
+}
+
+help_ai_protectionism = {
+	trigger = {
+		ai = yes
+		trade_policy = protectionism
+	}
+	icon = 9
+	min_tariff = 0.75
 }
 
 fairer_taxation3 = {

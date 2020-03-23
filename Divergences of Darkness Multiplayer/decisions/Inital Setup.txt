@@ -1,0 +1,43 @@
+political_decisions = {
+	setup_general = {
+		picture = switch_to_fraternity
+		potential = {
+			tag = HAW
+			NOT = {
+				has_global_flag = setup_general
+			}
+		}
+		allow = {
+			NOT = {
+				has_global_flag = setup_general
+			}
+		}
+		effect = {
+		country_event = 776901 #Inital Money & Stockpile Goods
+		country_event = 776903 #Literacy Changes
+		country_event =	776603 #Immigrant Nations Liferating (Buff Oceania, Americas, South Africa)
+		country_event = 776604 #Scandinavia Liferating Buff
+		country_event = 776605 #Germany Liferating Nerf
+		country_event = 776606 #Italy Liferating Buff
+		country_event = 776607 #Iberia Liferating Buff  
+		set_global_flag = setup_general
+		}
+	}
+	setup_no_dua = {
+		picture = switch_to_fraternity
+		potential = {
+			tag = HAW
+			NOT = { has_global_flag = setup_no_dua }
+			year = 1836
+			NOT = { year = 1837 }
+			NOT = { exists = DUA }
+		}
+		allow = {
+			NOT = { has_global_flag = setup_no_dua }
+		}
+		effect = {
+		country_event = 776904 #Alternative Start Setup		
+		set_global_flag = setup_no_dua
+		}
+	}
+}

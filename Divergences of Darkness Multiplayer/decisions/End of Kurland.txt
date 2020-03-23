@@ -5,37 +5,25 @@ political_decisions = {
 			tag = SCA
 			is_greater_power = yes
 			KRL = { exists = yes }
-			OR = {
-				AND = {
-					NOT = { owns = 1006 }
-					owns = 354
-					PSV = { 	
-						OR = { 
-							NOT = { owns = 1006 }
-							NOT = { vassal_of = THIS }
-						}
-					}
-				}
-				KRL = {
-					NOT = { owns = 357 }
-				}
-			}
-			NOT = { has_country_flag = fall_of_kurland }
+			NOT = { owns = 354 }
+			NOT = { has_global_flag = fall_of_kurland }
 		}	
 		allow = {
-			year = 1860
+			year = 1880
 			NOT = { KRL = { war = yes } }
 			NOT = { war = yes }
 			KRL = { in_sphere = THIS }
 		}
 		
 		effect = {
-			prestige = 15
+			prestige = -50
 			badboy = 5
 			set_global_flag = fall_of_kurland
 			KRL = {
 				country_event = 333016
 			}
+			add_accepted_culture = estonian
+			add_accepted_culture = latvian
 		}
 		ai_will_do = {
 			factor = 1
@@ -47,17 +35,32 @@ kurland_annexation = {
 		potential = {
 			tag = SCA
 			is_greater_power = yes
-			has_country_flag = baltic_claimed
-			KRL = { exists = yes }
-			NOT = { has_country_flag = fall_of_kurland }
+			owns = 354
+			NOT = { has_global_flag = fall_of_kurland }
 		}	
 		allow = {
-			year = 1860
-			NOT = { KRL = { war = yes } }
+			year = 1880
 			NOT = { war = yes }
-			KRL = { in_sphere = THIS }
-			owns = 690
-			owns = 695
+			owns = 354 #Riga
+			RUS_349 = { owned_by = THIS } #Estonia
+			OR = {
+				AND = {
+					KRL = { in_sphere = THIS }
+					NOT = { KRL = { war = yes } }
+				}
+				AND = {
+					KRL = { exists = no }
+					owns = 357
+				}
+			}
+			OR = {
+				AND = {
+					PSV = { exists = yes }
+					PSV = { in_sphere = THIS }
+					NOT = { PSV = { war = yes } }
+				}
+				PSV = { exists = no }
+			}
 		}
 		
 		effect = {
@@ -69,6 +72,8 @@ kurland_annexation = {
 			KRL = {
 				country_event = 333016
 			}
+			add_accepted_culture = estonian
+			add_accepted_culture = latvian
 		}
 		ai_will_do = {
 			factor = 1

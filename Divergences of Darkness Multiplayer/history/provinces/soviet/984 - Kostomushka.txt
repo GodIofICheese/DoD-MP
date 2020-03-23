@@ -1,7 +1,7 @@
-owner = NOV
-controller = NOV
+owner = SCA
+controller = SCA
+add_core = SCA
 add_core = NOV
-add_core = RUS
 trade_goods = timber
 terrain = boreal
-life_rating = 10
+life_rating = 35

@@ -4,7 +4,8 @@ religion = catholic
 government = merchant_republic
 plurality = 0.1
 nationalvalue = nv_productivity
-literacy = 0.4
+literacy = 0.6
+non_state_culture_literacy = 0.2
 civilized = yes
 
 
@@ -84,8 +85,6 @@ schools = commerce_tech_school
 
 oob = "VEN_oob.txt"
 
-1861.1.1 = {
-# Technologies
-
-#Inventions
+1836.1.2 = {
+	oob = "/Alternative Start/VEN_oob.txt"
 }

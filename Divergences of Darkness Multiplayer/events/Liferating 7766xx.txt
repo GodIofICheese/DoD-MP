@@ -201,9 +201,7 @@ country_event = {
 	desc = "EVTDESC776603"
 	picture = "rome_buildings"
 
-	trigger = {
-		tag = SIK
-	}
+	is_triggered_only = yes 
 	
 	fire_only_once = yes
 	
@@ -515,9 +513,7 @@ country_event = {
 	desc = "EVTDESC776604"
 	picture = "rome_buildings"
 
-	trigger = {
-		tag = SCA
-	}
+	is_triggered_only = yes 
 	
 	fire_only_once = yes
 	
@@ -612,9 +608,7 @@ country_event = {
 	desc = "EVTDESC776605"
 	picture = "rome_buildings"
 
-	trigger = {
-		tag = SIK
-	}
+	is_triggered_only = yes 
 	
 	fire_only_once = yes
 	
@@ -639,9 +633,7 @@ country_event = {
 	desc = "EVTDESC776606"
 	picture = "rome_buildings"
 
-	trigger = {
-		tag = SIK
-	}
+	is_triggered_only = yes 
 	
 	fire_only_once = yes
 	
@@ -675,9 +667,7 @@ country_event = {
 	desc = "EVTDESC776607"
 	picture = "rome_buildings"
 
-	trigger = {
-		tag = SIK
-	}
+	is_triggered_only = yes 
 	
 	fire_only_once = yes
 	

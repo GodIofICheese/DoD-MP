@@ -4,9 +4,9 @@ culture = castilian
 culture = south_italian
 religion = catholic
 government = prussian_constitutionalism
-plurality = 0.0
+plurality = 10.0
 nationalvalue = nv_equality
-literacy = 0.24
+literacy = 0.36
 civilized = yes
 
 
@@ -88,3 +88,7 @@ nonstate_consciousness = 1
 schools = commerce_tech_school
 
 oob = "ARA_oob.txt"
+
+1836.1.2 = {
+	oob = "/Alternative Start/ARA_oob.txt"
+}

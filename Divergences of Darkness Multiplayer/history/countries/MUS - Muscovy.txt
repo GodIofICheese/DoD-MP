@@ -79,3 +79,7 @@ consciousness = 3
 nonstate_consciousness = 1
 
 oob = "MUS_oob.txt"
+
+1836.1.2 = {
+	oob = "/Alternative Start/MUS_oob.txt"
+}

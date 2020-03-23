@@ -147,6 +147,8 @@ political_decisions = {
 				AUC = { all_core = { add_core = HBE	} }
 				LOT = { all_core = { add_core = HBE	} }
 				GUY = { all_core = { add_core = HBE	} }
+				EQN = { all_core = { add_core = HBE } }
+				ATL = { all_core = { add_core = HBE } }
 				add_accepted_culture = lotharian
         
 				change_tag = HBE

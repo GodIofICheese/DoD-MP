@@ -5,8 +5,6 @@ country_event = {
 	picture = "xinhai"
 	
 	trigger = {
-		ai = no
-		civilized = yes
 		NOT = { has_country_modifier = asia_nerfonciv }
 		NOT = { has_country_flag = asia_nerfonciv }
 		NOT = { has_country_modifier = asia_nerfearly }
@@ -15,6 +13,8 @@ country_event = {
 		NOT = { has_country_flag = asia_nerfmid }
 		NOT = { has_country_modifier = asia_nerflate }
 		NOT = { has_country_flag = asia_nerflate }
+		civilized = yes
+		total_pops = 10000000
 		OR = {
 			tag = QNG
 			tag = CHI
@@ -61,30 +61,20 @@ country_event = {
 		has_country_flag = asia_nerfonciv
 		NOT = { has_country_modifier = asia_nerfearly }
 		NOT = { has_country_flag = asia_nerfearly }
-		ai = no
-		OR = {
-			civilized = yes
-			AND = {
-				invention = railroad_transport_groups
-				invention = staff_command_support
-				invention = mobilization_time_tables
-				invention = personnel_category_tables
-			}
-		}
+		civilized = yes
+		total_pops = 10000000
 		OR = {
 			AND = {
-				invention = railroad_transport_groups
 				invention = staff_command_support
 				invention = mobilization_time_tables
 				invention = personnel_category_tables
 			}
 			AND = {
-				year = 1850
+				year = 1870
 				is_mobilised = yes
-				total_amount_of_divisions = 400
+				total_amount_of_divisions = 500
 			}	
 			military_logistics = 1
-			total_pops = 15000000
 		}	
 		OR = {
 			tag = QNG
@@ -134,16 +124,18 @@ country_event = {
 		has_country_flag = asia_nerfearly
 		NOT = { has_country_modifier = asia_nerfmid }
 		NOT = { has_country_flag = asia_nerfmid }
+		total_pops = 15000000
 		OR = {
+			AND = {
 			total_pops = 22500000
 			military_logistics = 1
+			}
 			AND = {
 				year = 1870
 				is_mobilised = yes
-				total_amount_of_divisions = 650
+				total_amount_of_divisions = 750
 			}	
 		}
-		ai = no
 		civilized = yes
 		OR = {
 			tag = QNG
@@ -193,6 +185,7 @@ country_event = {
 		has_country_flag = asia_nerfmid
 		NOT = { has_country_modifier = asia_nerflate }
 		NOT = { has_country_flag = asia_nerflate }
+		total_pops = 20000000
 		OR = {
 			total_pops = 35000000
 			AND = {
@@ -205,7 +198,6 @@ country_event = {
 				total_amount_of_divisions = 850
 			}
 		}		
-		ai = no
 		civilized = yes
 		OR = {
 			tag = QNG
@@ -263,5 +255,152 @@ country_event = {
 						reduce_pop = 0.33
 				}		
 		}
+	}
+}
+
+country_event = {
+	id = 776406
+	title = "776406"
+	desc = "EVTDESC776406"
+	picture = "xinhai"
+	
+	trigger = {
+		OR = {
+			tag = QNG
+			tag = CHI
+			tag = TPG
+			tag = MCK
+			tag = XBI
+			tag = XIN
+			tag = SZC
+			tag = YNN
+			tag = GXI
+			tag = GNG
+			tag = FJN
+			tag = TAI
+			tag = MUG
+			tag = IND
+			tag = BHA
+			tag = HND
+			tag = DRA
+		}
+	OR = {
+		has_country_modifier = asia_nerfonciv
+		has_country_flag = asia_nerfonciv
+		has_country_modifier = asia_nerfearly
+		has_country_flag = asia_nerfearly
+		has_country_modifier = asia_nerfmid
+		has_country_flag = asia_nerfmid
+		has_country_modifier = asia_nerflate
+		has_country_flag = asia_nerflate
+	}
+	NOT = { total_pops = 10000000 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA776406"
+		remove_country_modifier = asia_nerfonciv
+		clr_country_flag = asia_nerfonciv
+		remove_country_modifier = asia_nerfearly
+		clr_country_flag = asia_nerfearly
+		remove_country_modifier = asia_nerfmid
+		clr_country_flag = asia_nerfmid
+		remove_country_modifier = asia_nerflate
+		clr_country_flag = asia_nerflate
+	}
+}
+
+country_event = {
+	id = 776407
+	title = "776406"
+	desc = "EVTDESC776406"
+	picture = "xinhai"
+	
+	trigger = {
+		OR = {
+			tag = QNG
+			tag = CHI
+			tag = TPG
+			tag = MCK
+			tag = XBI
+			tag = XIN
+			tag = SZC
+			tag = YNN
+			tag = GXI
+			tag = GNG
+			tag = FJN
+			tag = TAI
+			tag = MUG
+			tag = IND
+			tag = BHA
+			tag = HND
+			tag = DRA
+		}
+	OR = {
+		has_country_modifier = asia_nerfmid
+		has_country_flag = asia_nerfmid
+		has_country_modifier = asia_nerflate
+		has_country_flag = asia_nerflate
+	}
+	NOT = { total_pops = 22500000 }
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA776406"
+		remove_country_modifier = asia_nerfmid
+		clr_country_flag = asia_nerfmid
+		remove_country_modifier = asia_nerflate
+		clr_country_flag = asia_nerflate
+	}
+}
+
+country_event = {
+	id = 776408
+	title = "776406"
+	desc = "EVTDESC776406"
+	picture = "xinhai"
+	
+	trigger = {
+		OR = {
+			tag = QNG
+			tag = CHI
+			tag = TPG
+			tag = MCK
+			tag = XBI
+			tag = XIN
+			tag = SZC
+			tag = YNN
+			tag = GXI
+			tag = GNG
+			tag = FJN
+			tag = TAI
+			tag = MUG
+			tag = IND
+			tag = BHA
+			tag = HND
+			tag = DRA
+		}
+	OR = {
+		has_country_modifier = asia_nerflate
+		has_country_flag = asia_nerflate
+	}
+	NOT = { total_pops = 35000000 }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA776406"
+		remove_country_modifier = asia_nerflate
+		clr_country_flag = asia_nerflate
 	}
 }

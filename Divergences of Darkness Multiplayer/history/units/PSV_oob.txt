@@ -26,6 +26,27 @@ army = {
 		type = infantry
 		home = 994
 	}
+	
+		regiment = {
+		name = "4. Pskovian Brigade"
+		type = infantry
+		home = 1003
+	}
+	regiment = {
+		name = "5. Pskovian Brigade"
+		type = infantry
+		home = 1003
+	}
+	regiment = {
+		name = "6. Pskovian Brigade"
+		type = artillery
+		home = 1003
+	}
+	regiment = {
+		name = "7. Pskovian Brigade"
+		type = hussar
+		home = 1003
+	}
 }
 
 navy = {

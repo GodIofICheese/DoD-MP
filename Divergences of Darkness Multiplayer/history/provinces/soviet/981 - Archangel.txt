@@ -1,8 +1,9 @@
-owner = NOV
-controller = NOV
+owner = MUS
+controller = MUS
 add_core = RUS
 add_core = NOV
+add_core = MUS
 trade_goods = timber
 terrain = boreal
-life_rating = 15
-1861.1.1 = { naval_base = 1 }
+life_rating = 35
+naval_base = 1
