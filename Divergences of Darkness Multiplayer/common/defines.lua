@@ -630,7 +630,7 @@ pops = {
 	PROMOTION_SCALE = 0.0012,
 	PROMOTION_ASSIMILATION_CHANCE = 1.0,
 	LUXURY_THRESHOLD = 500,
-	BASE_GOODS_DEMAND = 0.8,
+	BASE_GOODS_DEMAND = 1.0,
 	BASE_POPGROWTH = 0.0001,
 	MIN_LIFE_RATING_FOR_GROWTH = 30,
 	LIFE_RATING_GROWTH_BONUS = 0.0001,
@@ -676,7 +676,7 @@ pops = {
 	
 	MIL_HIT_FROM_CONQUEST = 4, -- how much militancy grows in a province if taken without being core.
 	LUXURY_CON_CHANGE = 0.001, -- con boost from over-buying luxury goods
-	INVENTION_IMPACT_ON_DEMAND = 0.0010, -- how much each invention in a country increases demand for a product in percent
+	INVENTION_IMPACT_ON_DEMAND = 0.0020, -- how much each invention in a country increases demand for a product in percent
 	ARTISAN_SUPPRESSED_COLONIAL_GOODS_CATEGORY = 0, -- Goods category index not produced in colonies
 	ISSUE_MOVEMENT_JOIN_LIMIT = 8,
 	ISSUE_MOVEMENT_LEAVE_LIMIT = 7,
