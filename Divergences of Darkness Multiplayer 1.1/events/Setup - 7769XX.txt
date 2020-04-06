@@ -1,0 +1,262 @@
+country_event = {
+	id = 776901
+	is_triggered_only = yes 
+	
+	option = {
+		any_country = {
+			limit = { is_greater_power = yes }
+			treasury = 150000
+		}
+		any_country = {
+			limit = { is_greater_power = no }
+			treasury = 75000
+		}
+		any_country = {
+			limit = { ai = no }
+			ammunition = 2000
+			artillery = 2000
+			small_arms = 2000
+			canned_food = 2000
+			luxury_clothes = 2000
+			liquor = 2000
+			cement = 2000
+			machine_parts = 2000
+			iron = 2000
+		}
+	}
+}
+
+country_event = {
+	id = 776902
+	trigger = {
+		year = 1836
+		NOT = { year = 1837 }
+		NOT = { exists = DUA }
+		TAG = HAW
+		NOT = { has_global_flag = alternative_start_no_dua }
+	}
+	
+	option = {
+		set_global_flag = alternative_start_no_dua
+		ENL = { add_accepted_culture = welsh }
+	}
+}
+
+country_event = { ##Literacy General
+	id = 776903
+	
+	is_triggered_only = yes 
+	
+	option = {
+		SCA = { 
+			any_pop = {
+				limit = {
+					OR = {
+						has_pop_culture = estonian
+						has_pop_culture = latvian
+					}
+				}
+				literacy = 0.30 #40%
+			}
+		}
+		SCA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = scottish
+				}
+				literacy = -0.30 #50%
+			}
+		}
+		SCA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = north_german
+				}
+				literacy = 0.65 %75%
+			}
+		}
+		SCA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = finnish
+				}
+				literacy = -0.5 %30
+			}
+		}
+		BRG = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = dutch
+				}
+				literacy = 0.45 %85
+			}
+		}
+		BRG = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = rhenish
+				}
+				literacy = 0.6 %70
+			}
+		}
+		BRG = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = burgundian
+				}
+				literacy = 0.25 %60
+			}
+		}
+		BRG = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = french
+				}
+				literacy = 0.35 %45
+			}
+		}
+		PLC = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = north_german
+				}
+				literacy = 0.47 %65
+			}
+		}
+		PLC = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = ashkenazi
+				}
+				literacy = 0.12 %30
+			}
+		}
+		DUA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = english
+				}
+				literacy = 0.45 #55%
+			}
+		}
+		DUA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = french
+				}
+				literacy = 0.35 #45%
+			}
+		}
+		DUA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = provencal
+				}
+				literacy = 0.3 #40%
+			}
+		}
+		DUA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = breton
+				}
+				literacy = -0.15 #35%
+			}
+		}
+		DUA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = welsh
+				}
+				literacy = -0.2 #30%
+			}
+		}
+		DUA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = irish
+				}
+				literacy = 0.1 #20%
+			}
+		}
+	}
+}
+	
+	country_event = { ##Alternative Start Setup
+	id = 776904
+	
+	is_triggered_only = yes 
+	
+	option = {
+		
+		dead_line = { }
+		ENL = { 
+			any_owned = {
+				limit = {
+					is_core = ENL
+				}
+				any_pop = {
+					reduce_pop = 0.90
+				}
+			}
+		}
+		ENL = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = anglois
+				}
+				literacy = 0.35 #45%
+			}
+		}
+		ENL = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = welsh
+				}
+				literacy = 0.2 #30%
+			}
+		}
+		ENL = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = irish
+				}
+				literacy = 0.1 #20%
+			}
+		}
+		FRA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = anglois
+				}
+				literacy = 0.25 #35%
+			}
+		}
+		FRA = { 
+			any_owned = {
+				limit = {
+					is_core = FRA
+				}
+				any_pop = {
+					reduce_pop = 0.90
+				}
+			}
+		}
+		FRA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = provencal
+				}
+				literacy = -0.05 #40%
+			}
+		}
+		FRA = { 
+			any_pop = {
+				limit = {
+					has_pop_culture = breton
+				}
+				literacy = 0.25 #35%
+			}
+		}
+	}
+}

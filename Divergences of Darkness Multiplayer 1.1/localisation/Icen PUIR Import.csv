@@ -1,0 +1,484 @@
+#############################################;;;;;;;;;;;;;;x
+#Agriculture Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+cotton_gin;Cotton Gin;;;;;;;;;;;;x,,,,,,,
+cotton_gin_desc;Eli Whitney invented the first mechanical machine for separating cotton fibres from their seeds in 1793. This dramatically increased the productivity of cotton plantations.;;;;;;;;;;;;x,,,,,,
+cattle_trucks;Cattle Trucks;;;;;;;;;;;;x,,,,,,,
+cattle_trucks_desc;The introduction of automobiles has also had one ancillary benefit: the development of cattle trucks, large enough to hold multiple cattle at once and speed up the process of delivering livestock for slaughter.;;;;;;;;;;;;x,,,,,,
+cattle_breeding_program;Cattle Breeding Program;;;;;;;;;;;;x,,,,,,,
+cattle_breeding_program_desc;New methods of breeding livestock have led to a boom in cattle and horse populations, and permitted the average rancher far more control over the quality of his stock.;;;;;;;;;;;;x,,,,,,
+accelerated_vulcanization;Accelerated Vulcanization;;;;;;;;;;;;x,,,,,,,
+accelerated_vulcanization_desc;It was discovered in the early Twentieth Century that the addition of the organic compound aniline produced an accelerating effect. The active zinc salts in the aniline react strongly with the zinc oxide present in sulfur-vulcanized rubber to decrease the cure time necessary. Other compounds were later used that provided even faster cure times.;;;;;;;;;;;;x,,,,,,
+silk_waste_spinning;Silk Waste Spinning;;;;;;;;;;;;x,,,,,,,
+silk_waste_spinning_desc;This was a cumulative set of processes developed throughout the 19th century to process previously unusable silk. Sources of waste silk included the gummy silk fibres left over the predominant Silk Throwing Process and from the cocoons of the mulberry worms themselves. Previously this 'waste silk' had accounted for nearly 50% of raw silk production, and now it could be utilized too.;;;;;;;;;;;;x,,,,,,
+inclosure;Inclosure;;;;;;;;;;;;x,,,,,,,
+inclosure_desc;Inclosure is the process which was used in order to end some traditional rights, such as mowing meadows for hay, or grazing livestock on land which is owned by another person. Under inclosure, such land is fenced and deeded or entitled to one or more owners. By the 19th century, unenclosed commons had become largely restricted to rough pasture in mountainous areas and in relatively small parts of the lowlands.;;;;;;;;;;;;x,,,
+regenerative_forestry;Regenerative Forestry;;;;;;;;;;;;x,,,,,,,
+regenerative_forestry_desc;New methods of harvesting our nation's forests must be undertaken, in order to ensure that these resources remain sustainable as techniques for harvesting lumber become more advanced.;;;;;;;;;;;;x,,,,,,
+spinning_jenny;Spinning Jenny;;;;;;;;;;;;x,,,,,,,
+spinning_jenny_desc;The spinning jenny is a multi-tool spinning frame. The device reduced the amount of work needed to produce yarn, with a worker able to work eight or more spools at once. It advanced the efficiency of the textile industry a great deal, and was one of the driving forces behind the Industrial Revolution in many textile-based countries.;;;;;;;;;;;;x,,,,,
+seafood_packing;Seafood Packing;;;;;;;;;;;;x,,,,,,,
+seafood_packing_desc;The ability to preserve seafood was the first step in permitting such food to reach parts of the country that did not live by the coast, thereby assisting in the growth of large urban centers.;;;;;;;;;;;;x,,,,,,
+combine_harvesters;Powered Combine;;;;;;;;;;;;x,,,,,,,
+combine_harvesters_desc;With George Stockton Berry's use of a steam engine in a combine harvester, the potential harvest of a single worker increased dramatically.;;;;;;;;;;;;x,,,,,,
+mechanized_farming_equipment;Mechanized Farming Equipment;;;;;;;;;;;;x,,,,,,,
+mechanized_farming_equipment_desc;Traditional methods of harvest are slowly being discarded as new, mechanical inventions are being produced. These will greatly speed up a farm's harvest, and allow the individual farm to cover much greater area than ever before.;;;;;;;;;;;;x,,,,,
+mechanised_plantations;Mechanized Plantations;;;;;;;;;;;;x,,,,,,,
+mechanised_plantations_desc;The introduction of mechanization to plantations allowed for harvesting to occur more rapidly, and for far more land to be manageable by the individual farmer. This freed up a great deal of labor, and led to the growth of urban centers.;;;;;;;;;;;;x,,,,,
+traction_engines;Traction Engines;;;;;;;;;;;;x,,,,,,,
+traction_engines_desc;The traction engine is a self-propelled steam engine. Developed in the mid-nineteenth century, they were slow, heavy, and not very manouverable. However, they provided a clear revolution in road haulage of agricultural and forest products, replacing draught animals as the primary movers. Traction engines also could be used to provide a localized power source, and smaller versions were later produced that could plough fields without sinking into the soil.;;;;;;;;;;;;x,,,,,
+industrial_farming;Industrial Farming;;;;;;;;;;;;x,,,,,,,
+industrial_farming_desc;The notion of a farm being the province of a single family or landowner is slowly becoming a thing of the past. The production of food is an industry, and the cost of farm machinery simply beyond the means of many. Large businesses are stepping in, creating industrial farms that are more akin to factories than anything else.;;;;;;;;;;;;x,,,,,
+industrial_livestock_husbandry;Industrial Livestock Husbandry;;;;;;;;;;;;x,,,,,,,
+industrial_livestock_husbandry_desc;The old ways of ranching and livestock raising have become inadequate to supply the growing population. Large businesses are stepping in, creating large-scale operations that are more akin to factories than anything else.;;;;;;;;;;;;x,,,,,
+tree_plantations;Tree Plantations;;;;;;;;;;;;x,,,,,,,
+tree_plantations_desc;The development of plantations specifically created for tree harvesting reduced the reliance on naturally-occurring forests for exploitation.;;;;;;;;;;;;x,,,,,,,
+mechanized_wells;Mechanized Oil Wells;;;;;;;;;;;;x,,,,,,,
+mechanized_wells_desc;The ability to pump oil from the ground through automated machinery has greatly increased the capacity of the individual well. Already production has begun to skyrocket.;;;;;;;;;;;;x,,,,,,,
+advanced_drilling_techniques;Advanced Drilling Techniques;;;;;;;;;;;;x,,,,,,,
+advanced_drilling_techniques_desc;New methods of pumping oil from the ground are becoming available, meaning that oil can be harvested in a far more efficient manner.;;;;;;;;;;;;x,,,,,,
+zacherlin;Zacherlin;;;;;;;;;;;;x,,,,,,,
+zacherlin_desc;Zacherlin is an industrial pesticide first mass-produced in Austria by Johann Zacherl around 1855. Its formula was based on a centuries-old process from the Middle East for extracting a natural insecticide from the dried head of the flower Chrysanthenum cinerariifolum.;;;;;;;;;;;;x,,,,,
+rotenone;Rotenone;;;;;;;;;;;;x,,,,,,,
+rotenone_desc;Rotenone is an odourless chemical which is naturally derived from several species of tropical and subtropical plants. It was first isolated in 1895 by the French Botanist Emmanuel Geoffroy. It became a key component in many industrial insecticides and pesticides.;;;;;;;;;;;;x,,,,,
+ddt;DDT;;;;;;;;;;;;x,,,,,,,
+ddt_desc;Short-form for dichlorodiphenyltrichloroethane, DDT was first synthesized in the early 1870s. Its insecticidal and pesticidal properties were realized in the first half of the twentieth century, when their industrial production and use skyrocketed.;;;;;;;;;;;;x,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Rare Goods Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+accelerated_vulcanization;Accelerated Vulcanization;;;;;;;;;;;;x,,,,,,,
+accelerated_vulcanization_desc;It was discovered in the early Twentieth Century that the addition of the organic compound aniline produced an accelerating effect. The active zinc salts in the aniline react strongly with the zinc oxide present in sulfur-vulcanized rubber to decrease the cure time necessary. Other compounds were later used that provided even faster cure times.;;;;;;;;;;;;x,,,,,,
+silk_waste_spinning;Silk Waste Spinning;;;;;;;;;;;;x,,,,,,,
+silk_waste_spinning_desc;This was a cumulative set of processes developed throughout the 19th century to process previously unusable silk. Sources of waste silk included the gummy silk fibres left over the predominant Silk Throwing Process and from the cocoons of the mulberry worms themselves. Previously this 'waste silk' had accounted for nearly 50% of raw silk production, and now it could be utilized too.;;;;;;;;;;;;x,,,,,,
+mechanized_wells;Mechanized Oil Wells;;;;;;;;;;;;x,,,,,,,
+mechanized_wells_desc;The ability to pump oil from the ground through automated machinery has greatly increased the capacity of the individual well. Already production has begun to skyrocket.;;;;;;;;;;;;x,,,,,,,
+advanced_drilling_techniques;Advanced Drilling Techniques;;;;;;;;;;;;x,,,,,,,
+advanced_drilling_techniques_desc;New methods of pumping oil from the ground are becoming available, meaning that oil can be harvested in a far more efficient manner.;;;;;;;;;;;;x,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Military Industrial Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+basic_ship_building_R&D;Basic Ship Building R&D;;;;;;;;;;;;x,,,,,,,
+basic_ship_building_R&D_desc;early production techniques were aided by increasing ship research.;;;;;;;;;;;;x,,,,,,,
+improved_ship_building_R&D;Improved Ship Building R&D;;;;;;;;;;;;x,,,,,,,
+improved_ship_building_R&D_desc;With advanced warships came advanced supply output.;;;;;;;;;;;;x,,,,,,,
+late_colonial_ships;Late Colonial Ships;;;;;;;;;;;;x,,,,,,,
+late_colonial_ships_desc;Ships with ever increasing naval ranges meant new methods of supply manufacture had to be devised.;;;;;;;;;;;;x,,,,,,,
+early_modern_oil_ship;Early Modern Oil Ship;;;;;;;;;;;;x,,,,,,,
+early_modern_oil_ship_desc;New advances in mobile refueling soon gave way to new advances in naval supply production.;;;;;;;;;;;;x, too!;;;;;;;;;;;;x,,,,,,
+ship_artillery_making;Ship Artillery Production;;;;;;;;;;;;x,,,,,,,
+ship_artillery_making_desc;The massive cannons required on warships ultimately led to more improvements in artillery production overall.;;;;;;;;;;;;x, resulting in more stable and fruitful marital unions.;;;;;;;;;;;;x,,,,,,
+ship_cannon_building;Ship Cannon Building;;;;;;;;;;;;x,,,,,,,
+ship_cannon_building_desc;As naval weaponry became larger and larger, so did its means of production.;;;;;;;;;;;;x,,,,,,
+late_colonial_armaments_industry;Late Colonial Armaments Industry;;;;;;;;;;;;x,,,,,,,
+late_colonial_armaments_industry_desc;Colonial ventures required arms production, but standard procedures often fell short. Thus, new methods were devised.;;;;;;;;;;;;x,,,,,
+modern_armaments_industry;Modern Armaments Industry;;;;;;;;;;;;x,,,,,,,
+modern_armaments_industry_desc;The modern armaments industry saw impressive gains in arms production.;;;;;;;;;;;;x,,,,,,,
+interruptor_gears;Interruptor Gears;;;;;;;;;;;;x,,,
+interruptor_gears_desc;These were inventions which enabled machine guns to be mounted in front of the cockpit of the airplane to give it real combat power for the first time. One type of gear synchronized the firing of the guns with the spinning arc of the propellers to prevent them being shot off. The second or true interruptor gear developed with bombers prevented the guns from firing if any part of the plane would take a hit.;;;;;;;;;;;;x,,,
+medium_tanks;Medium Tanks;;;;;;;;;;;;x,,,
+medium_tanks_desc;The Medium tank was developed in the interwar period to correct the design deficiencies and lack of speed of the early heavy tanks and the mobile yet underarmoured and outgunned light tanks. Medium tanks featured a main gun of between 37 and 76 millimetres to give it a more than adequate punch. At the same time, they were built with 360 degree revolving turrets and usually armed with at least one machine gun to provide defence from infantry attacks. They were built to specific designs with thicker armour than light tanks and with a lower profile, increasing their ability to survive on the battlefield.;;;;;;;;;;;;x,,,
+#############################################;;;;;;;;;;;;;;x
+#Mining Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+nitrate_extraction_process;Nitrate Extraction Process;;;;;;;;;;;;x,,,,,,,
+nitrate_extraction_process_desc;As the understanding of chemistry increases, so too does our ability to extract needed nitrates advance.;;;;;;;;;;;;x,,,,,,
+bituminous_coal_for_coking;Bituminous Coal for Coking;;;;;;;;;;;;x,,,
+bituminous_coal_for_coking_desc;Bituminous coal is a soft form of coal, usually appearing black or dark brown with bright and dark streaks running through deposits. A sedimentary rock formed by compression of peat materials, Bituminous Coal became favoured for use as coking coal in iron and steel production.;;;;;;;;;;;;x,,,
+deep_shaft_mining;Deep Shaft Mining;;;;;;;;;;;;x,,,
+deep_shaft_mining_desc;Improvements in lighting, transport, and air circulation technology in the latter half of the 19th century allowed shaft mines to reach deeper into the earth than ever before. This permitted a great extraction of mineral resources from the veins in which they were found.;;;;;;;;;;;x,,,
+motor_housing_insulation;Motor Housing Insulation;;;;;;;;;;;;x,,,,,,,
+motor_housing_insulation_desc;Early electric motors were prone to sparking. This made the use of electric tools and machinery unsafe for underground mining due to the greatly increased possiblity of starting underground fires and explosions. American mining engineer Henry Beecher Dierdorff invented insulation that could be tightly wrapped around the housing of the electric motor to prevent sparks. This allowed for the safe use of electric cutting tools in the mines for the first time.;;;;;;;;;;;;x,,,,,,
+modern_mine_hoists;Modern Mine Hoists;;;;;;;;;;;;x,,,,,,,
+modern_mine_hoists_desc;These are hoists with cables and framing made from steel. Powered by electric winding engines, they could raise and lower greater loads from mining shafts. Mines could operate faster and deeper than before, while the electric engine enabled rapid stoppage and reversing of the hoist.;;;;;;;;;;;;x,,,,,,
+conveyor_belt;Conveyor Belt;;;;;;;;;;;;x,,,
+conveyor_belt_desc;The conveyor belt consisted of two pulleys with a continuous loop of material, powered by a motor transmission. The engineering firm Sandvik of Sweden was producing steel conveyor belts by 1891. Thomas Robins developed a conveyor belt that replaced expensive steel with rubber. In 1905, Thomas Sutcliffe patented the first conveyor belt for use underground. The conveyor belt made it easy to transport ores out of the mines, and was soon adopted by Henry Ford in his new assembly line factories.;;;;;;;;;;;x,,,
+pneumatic_drill;Pneumatic Drill;;;;;;;;;;;;x,,,,,,,
+pneumatic_drill_desc;The pneumatic drill is a mechanical drill driven by compressed air. Reciprocating pistons drive the compressed air upwards and down, propelling the drill bit into a surface and then drawing it out again. Pneumatic tools became preferred in the construction and operation of mining shafts and tunnels. Earlier tools had required steam power, and steam power required fire which was too dangerous due to the risk of igniting flammable gases underground. Larger pneumatic drilling machines utilized an external air compressor which could also help to ventilate the underground mines.;;;;;;;;;;;x,,,,,,
+steam_shovel;Steam Shovel;;;;;;;;;;;;x,,,
+steam_shovel_desc;The steam shovel was the first powered excavating machine. Willia Otis patented an original design in 1839. Early steam shovels were 'partial-swing,' meaning the boom and winch could not rotate a full 360 degrees. Steam shovels became more widespread in the last half of the nineteenth century with the development of steel cables and a full-swing design. Steam shovels operated on railways until the invention of caterpillar tracks, and were heavily involved in the development of large-scale,open-pit mining. 102 steam shovels were employed to excavate the Panama Canal.;;;;;;;;;;;x,,,
+mine_cutting_machines;Mine Cutting Machines;;;;;;;;;;;;x,,,,,,,
+mine_cutting_machines_desc;The introduction of electricity to mining at the turn of the century permitted the development of new machines that could cut into or along mineral seams. These machines facilitated the extraction of resources by miners. Cutting machines later became sophisticated enough to displace much of the extraction work itself, formerly done by hand mining.;;;;;;;;;;;x,,,,,,
+artficial_nitrates;Artificial Nitrates;;;;;;;;;;;;x,,,,,,,
+artficial_nitrates_desc;Our understanding of chemistry has led to the development of artificial nitrates, reducing our dependency on naturally-extracted nitrates in sulphur production.;;;;;;;;;;;;x,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Industrial Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+alite;Alite;;;;;;;;;;;;x,,,,,,,
+alite_desc;Alite is a name for tricalcium silicate. It is the major, and characteristic, mineral phases in Portland cement.;;;;;;;;;;;;x,,,,,
+portland_cement;Portland Cement;;;;;;;;;;;;x,,,,,,,
+portland_cement_desc;Portland cement is the most common type of cement in general use around the world because it is a basic ingredient of concrete, mortar, stucco and most non-specialty grout.;;;;;;;;;;;;x,,,,,
+mechanized_sawmills;Mechanized Sawmills;;;;;;;;;;;;x,,,,,,,
+mechanized_sawmills_desc;The introduction of steam power to the operations of sawmills allowed for a greater level of mechanization. Mills could be located far from water with the addition of rail connections. Mechanized Sawmills saw greater efficiency as the scrap waste from lumber production could be used to fuel the boilers. Increased factory costs came with the gains in efficiency however.;;;;;;;;;;;;x,,,,,
+diode;Diodes;;;;;;;;;;;;x,,,,,,,
+diode_desc;In electronics, a diode is a two-terminal electronic component with asymmetric transfer characteristic, with low (ideally zero) resistance to current flow in one direction, and high (ideally infinite) resistance in the other. Diodes were the first semiconductor electronic devices.;;;;;;;;;;;;x,,,,
+triode;Triodes;;;;;;;;;;;;x,,,,,,,
+triode_desc;A triode is an electronic amplification device having three active electrodes. The term most commonly applies to a vacuum tube (or valve in British English) with three elements: the filament or cathode, the grid, and the plate or anode. The triode vacuum tube was the first electronic amplification device, which propelled the electronics age forward,  by enabling amplified radio technology and long-distance telephony.;;;;;;;;;;;;x,,,
+tetrode;Tetrodes;;;;;;;;;;;;x,,,,,,,
+tetrode_desc;A tetrode is an electronic device having four active electrodes. The term most commonly applies to a two-grid vacuum tube. It has the three electrodes of a triode and an additional screen grid which significantly changes its behaviour.;;;;;;;;;;;;x,,,,,,,
+crystal_radio;Crystal Radio;;;;;;;;;;;;x,,,,,,,
+crystal_radio_desc;A crystal radio receiver, also called a crystal set or cat's whisker receiver, is a very simple radio receiver, popular in the early days of radio. It needs no battery or power source and runs on the power received from radio waves by a long wire antenna. It gets its name from its most important component, known as a crystal detector, originally made with a piece of crystalline mineral such as galena.;;;;;;;;;;;;x,,
+valve_radio_sets;Valve Radio Sets;;;;;;;;;;;;x,,,,,,,
+valve_radio_sets_desc;With the discovery that triode valves could amplify signals it was soon noticed that they would also oscillate, a fact that was exploited in generating signals. Once the triode was established as an amplifier it made a tremendous difference to radio receiver performance as it allowed the incoming signals to be amplified. This gave significant improvements in the levels of gain that could be achieved, greatly increasing selectivity, enabling this type of receiver to outperform all other types of the era.;;;;;;;;;;;;x,,,,
+carbon_transmitter;Carbon Transmitter;;;;;;;;;;;;x,,,,,,,
+carbon_transmitter_desc;Before the proliferation of vacuum tube amplifiers in the 1920s, carbon transmitters were the only practical means of obtaining high-level audio signals, and were widely used in telephone systems. Their low cost," inherently high output and ""peaked"" frequency response characteristic were well suited for this application", and their use in new telephone installations continued up to the 1980s, long after they had been replaced by other types of microphones in other applications.;;;;;;;;;;;;x,,
+candlestick_telephone;Candlestick Telephone;;;;;;;;;;;;x,,,,,,,
+candlestick_telephone_desc;The candlestick telephone is a style of telephone that was common from the late 1890s to the 1930s. Also known as a desk stand, upright, or a stick phone, it came with or without a rotary dial, and with a ringer box.;;;;;;;;;;;;x,,,
+bullough_n_kenworthys_lancashire_loom;Bullough and Kenworthy's Lancashire Loom;;;;;;;;;;;;x,,,
+bullough_n_kenworthys_lancashire_loom_desc;The Lancashire Loom was invented in 1842 by James Bullough and William Kenworthy. It was a culmination of several advances made to the Roberts Power Loom from 1830, it was a semi-automatic loom with a single-stop action for changing shuttles. It incorporated an improved automatic filling process and better temples to smooth the edges of the fabric. A Lancashire Loom could increased the productivity of a weaver by a factor of twelve times compared to an existing Cartwright Loom.;;;;;;;;;;;;x,,,
+machine_made_steel_cans;Machine-Made Steel Cans;;;;;;;;;;;;x,,,,,,,
+machine_made_steel_cans_desc;A cumulative process of inventions and improvements have enabled canning factories to mechanize the production of cans and replace the tinned wrought-iron used with cheap steel. These new cans were smaller and could be produced in greater quantities to meet a growing demand.;;;;;;;;;;;;x,,,,,
+double_seams;Double Seams;;;;;;;;;;;;x,,,,,,,
+double_seams_desc;Double Seams were invented in 1888 by Max Ams. A double seam uses advanced metal rolling techniques to create a double-edged seal between the rolled tin plate lids and the body of the can. Double Seaming provided an air-tight lid to keep micro-organisms out. It also removed the need to use solder as a sealant, thus making steel cans cheaper and faster to produce.;;;;;;;;;;;;x,,,,,
+lombard_and_holts_continuous_track;Lombard and Holt's Continuous Track;;;;;;;;;;;;x,,,
+lombard_and_holts_continuous_track_desc;Alvin Lombard patented an effective continuous track system in 1901. This method of vehicle propulsion consisted of an interlocking band of hardened metal plates rotating around two or more wheels. Benjamin Holt acquired the patent in 1905 and began mass production. Holt later trademarked his system as "Caterpillar Tracks" after soldiers likened it to the movements of a caterpillar. Holt's track system was one of the key elements in the development of construction equipment and tanks.;;;;;;;;;;;;x,,,
+mercerization;Mercerization;;;;;;;;;;;;x,,,,,,,
+mercerization_desc;Mercerization is a chemical process developed by Englishman John Mercer in 1844. He developed a chemical treatment for cotton using sodium hydroxide. Mercerization strengthened the fibres and made them easier to dye. H.A. Lowe modernized and popularized Mercer's treatment in the 1890s, producing cotton fabric with a lustrous appearance.;;;;;;;;;;;;x,,,
+rosendale_cement;Rosendale Cement;;;;;;;;;;;;x,,,,,,,
+rosendale_cement_desc;Rosendale cement generally refers to a type of natural cement that was produced in and around Rosendale,New York from argillaceous limestone,but is a term that has had different definitions at different times. The fast-setting Rosendale natural cement mortars proved to be more efficient than the mortars based on lime and sand. Because of its reputation,"""Rosendale Cement"" has also been used as both a trade name and as a generic term referring to natural hydraulic cements produced elsewhere.;;;;;;;;;;;;x",,,,
+vacuum_distillation;Vacuum Distillation;;;;;;;;;;;;x,,,
+vacuum_distillation_desc;Vacuum distillation is a process for separating hydrocarbons using pressure. The liquid hydrocarbons are channeled into the lower portion of the distillation column at a temperature no greater than 370 degrees Celsius at an absolute pressure. The pressure in the column increases gradually from the top of the column to the bottom. The hydrocarbons evaporate and are piped out at various levels whenever the atmospheric pressure above the hydrocarbon to be distilled is lower than its vapor pressure. Vacuum distillation increases the relative volatility of the components, making the separation process quicker.;;;;;;;;;;;;x,,,
+fractional_distillation;Fractional Distillation;;;;;;;;;;;;x,,,
+fractional_distillation_desc;Fractional Distillation is a process of separating crude oil into various fractions of hydrocarbons. The Crude Oil is heated to a temperature between 350 and 370 degrees Celsius which causes vaporization. The gas is then fed into a fractional distillation column, which is made up of several trays and outflowing channels. As the vapour rises, it cools according to its boiling point. The fractions with high boiling points condense into the lower trays; those with lower boiling points condense in the upper trays.;;;;;;;;;;;;x,,,
+fluid_catalytic_cracking;Fluid Catalytic Cracking;;;;;;;;;;;;x,,,
+fluid_catalytic_cracking_desc;Fluid Catalytic Cracking is the most significant of the refining processes. It converts the high-boiling components of heavy crude oils into low-boiling, high-octane components such as gasoline and aviation fuels.;;;;;;;;;;;;x,,,
+bergius_process;Bergius Process;;;;;;;;;;;;x,,,,,,,
+bergius_process_desc;The Bergius Process is a chemical process developed by German chemist Friedrich Bergius in 1913. The Bergius Process diectly converts coal to useful synthetic fuels. Once finely ground, the coal is dried by the addition of hot gas. Heavy oil is recycled from the process and added to the mixture. A catalyst may also be introduced to trigger or speed up the conversion reaction. Bergius received the Nobel Prize in 1931 for his work in high pressure chemistry.;;;;;;;;;;;;x,,,
+fischer_tropsch_process;Fischer-Tropsch Process;;;;;;;;;;;;x,,,,,,,
+fischer_tropsch_process_desc;The Fischer Tropsh Process was developed at the Kaiser-Wilhelm-Institut für Kohlenforschung in 1925 by German chemists Franz Fischer and Hans Tropsch. The Fischer-Tropsch Process indirectly produces synthetic oils and fuels via a series of reactions. Coal or Natural Gas is converted to a gaseous state, and then reacts with a mixture of Carbon Monoxide and Hydrogen to produce various hydrocarbon products. Nazi Germany used this process extensively in the Second World War to convert their abundant coal stocks into replacement fuels after they were cut off from most natural sources of oil.;;;;;;;;;;;;x,,,
+synthetic_cement;Synthetic Cement;;;;;;;;;;;;x,,,,,,,
+synthetic_cement_desc;'Natural' cement,namely cement that does not use chemical processes to make the result more durable,began to fall out of use with the production of modern concrete. A veriety of synthetic brands has developed and has resulted in a burgeoning construction industry.;;;;;;;;;;;;x,,,,,
+alfred_nobel;Alfred Nobel;;;;;;;;;;;;x,,,,,,,
+alfred_nobel_desc;Alfred Bernhard Nobel was a Swedish chemist, engineer, innovator, and armaments manufacturer. He is the inventor of dynamite, and in his last will he used his enormous fortune to institute the Nobel Prizes.;;;;;;;;;;;;x,,,
+#############################################;;;;;;;;;;;;;;x
+#Navy Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+torpedo_tactics;Torpedo Tactics;;;;;;;;;;;;;x
+torpedo_tactics_desc;Cruisers and torpedo boats are now equipped with torpedos. Making the best use of this new weapon requires us to re-think the tactics we use.;;;;;;;;;;;;;x
+torpedo_training_school;Torpedo Training School;;;;;;;;;;;;;x
+torpedo_training_school_desc;As the use of the torpedo grew, it became necessary to have officers and men who knew the weapon in detail. So navies set up Torpedo Training Schools to produce specialists in this weapon.;;;;;;;;;;;;;x
+torpedo_night_training;Torpedo Night Training;;;;;;;;;;;;;x
+torpedo_night_training_desc;The advent of quick-firing guns meant it was difficult for a torpedo boat or destroyer to get close enough to a battleship to fire a torpedo. However, at night, a torpedo flotilla could approach battleships unawares. Night training makes torpedo craft more lethal.;;;;;;;;;;;;;x
+heater_torpedo;Heater Torpedo;;;;;;;;;;;;;x
+heater_torpedo_desc;The first torpedoes were powered by compressed air. However, we have now discovered a way to use the air to ignite kerosene fuel. This makes our torpedos faster and longer-ranged.;;;;;;;;;;;;;x
+compressed_oxygen_torpedo;Compressed Oxygen Torpedo;;;;;;;;;;;;;x
+compressed_oxygen_torpedo_desc;A torpedo fuelled with compressed oxygen, like the Japanese "Long Lance", has even greater range and speed.;;;;;;;;;;;;;x
+cruiser_gun_casemates;Cruiser Gun Casemates;;;;;;;;;;;;;x
+cruiser_gun_casemates_desc;Cruisers tended to have less protection for their gun crews than battleships did. It was impractical to put the guns of a small cruiser in turrets until well into the 20th century. However mounting some guns in a casemate betwen decks provides good protection.;;;;;;;;;;;;;x
+harvey_steel_armour;Harvey Steel Armour;;;;;;;;;;;;;x
+harvey_steel_armour_desc;The 'Harvey process' produced case-hardened armour, which was more difficult to penetrate. 7.75in of Harvey steel provided the same protection as  12in of regular steel.;;;;;;;;;;;;;x
+krupp_steel_armour;Krupp Cemented Steel;;;;;;;;;;;;;x
+krupp_steel_armour_desc;Krupp Cemented Steel uses a 'gas cementing' process to produce thick steel armour with a very tough face. This 'KC' Steel became the standard for battleships in the 20th century. It waas twice as effective against armour-piercing shells as plain steel plate.;;;;;;;;;;;;;x
+gunnery_training_school;Gunnery Training School;;;;;;;;;;;;;x
+gunnery_training_school_desc;As gunnery became an increasingly scientific subject, navies set up specialist Gunnery Schools to train crews in how to handle their weapons.;;;;;;;;;;;;;x
+13in_main_battery;13.5-in Main Battery;;;;;;;;;;;;;x
+13in_main_battery_desc;Our dreadnoughts are now equipped with 13.5-inch main guns, rather than 12-inch guns. This gives them more firepower.;;;;;;;;;;;;;x
+8in_secondary_guns;8-inch Secondary Guns;;;;;;;;;;;;;x
+8in_secondary_guns_desc;Pre-dreadnought battleships adopted heavier and heavier secondary guns in accordance with the "hail of fire" principle. The same guns served as the main armament for armoured cruisers.;;;;;;;;;;;;;x
+9in_secondary_guns;9.2-inch Secondary Guns;;;;;;;;;;;;;x
+9in_secondary_guns_desc;Pre-dreadnought battleships adopted heavier and heavier secondary guns in accordance with the "hail of fire" principle. The same guns served as the main armament for armoured cruisers..;;;;;;;;;;;;;x
+salvo_firing;Salvo Firing;;;;;;;;;;;;;x
+salvo_firing_desc;To judge the range of an enemy ship and calculate a firing solution, our ships now use "salvo firing": they fire a salvo of three to five shells, wait to see the splashes, and adjust accordingly. Once we know we have the enemy ship 'straddled' we open fire with all guns.;;;;;;;;;;;;;x
+ap_capped_shell;Armour Piercing Shell;;;;;;;;;;;;;x
+ap_capped_shell_desc;We now use carefully-designed armour-piercing shells, with a cemented steel point and a high-explosive filling. This is more effective against modern armour.;;;;;;;;;;;;;x
+aero_ap_shell;Aerodynamic Armour Piercing Capped Shell;;;;;;;;;;;;;x
+aero_ap_shell_desc;Research shows that putting a cap of soft metal over the point of an armour-piercing shell makes it more effective. However, this makes the shell less aerodynamic. So on top of that cap we now put another light steel cap to preserve the aerodynamics of the shell. This all means our battleships have unprecedented armour-piercing power at very long ranges.;;;;;;;;;;;;;x
+steam_auxiliaries;Steam Auxiliaries;;;;;;;;;;;;;x
+steam_auxiliaries_desc;The first steam ships in the navies of the 19th Century were not warships but tugs, dredgers and despatch ships. By freeing sailing ships from constraints of tide and wind, these auxiliary ships make our fleets faster and more flexible.;;;;;;;;;;;;;x
+triple_expansion_engine;Triple-Expansion Steam Engine;;;;;;;;;;;;;x
+triple_expansion_engine_desc;A Triple-Expansion Steam Engine divides the work of expanding the charge of steam by feeding it through three cylinders of increasing diameter. This served to lessen the magnitude of the heating and cooling process on the engine, a major source of inefficiency. Triple-Expansion engines were more efficient and generated increased speed for the new steel warships.;;;;;;;;;;;;;x
+quadruple_expansion;Quadruple-Expansion Steam Engines;;;;;;;;;;;;;x
+quadruple_expansion_desc;Adding yet another expansion chamber to a triple-expansion steam engine gave another marginal increase in power and efficiency to steam engines.;;;;;;;;;;;;;x
+geared_turbine_propulsion;Geared Turbine Propulsion;;;;;;;;;;;;;x
+geared_turbine_propulsion_desc;Geared turbines are more fuel-efficient, though more expensive, than regular turbines. The first capital ship to feature all-turbine propulsion was HMS Dreadnought.;;;;;;;;;;;;;x
+brixham_trawlers;Brixham Trawlers;;;;;;;;;;;;x,,,
+brixham_trawlers_desc;Named for the British town where they were developed and built, Brixham Trawlers represented a giant leap forward in the design of fishing vessels. A wooden sailing ship made for deep-sea fishing, its sleek design and tall rigging gave it great speed. Brixham fishermen could travel to the fishing grounds and back in record time. This allowed them to make a bigger catch and bring it to market faster. The design was copied all over the world.;;;;;;;;;;;;x,,,
+coal_powered_fishing_trawlers;Coal Powered Fishing Trawlers;;;;;;;;;;;;x,,,
+coal_powered_fishing_trawlers_desc;As coal became the engine of industrialization, its use became more and more predominant at sea as well.;;;;;;;;;;;;x,,
+turbine_driven_trawlers;Turbine Driven Trawlers;;;;;;;;;;;;x,,,
+turbine_driven_trawlers_desc;With new turbines added to trawlers across the country, who needs actual fishermen?;;;;;;;;;;;;x,,,
+oil_powered_fishing_trawlers;Oil Powered Fishing Trawlers;;;;;;;;;;;;x,,,
+oil_powered_fishing_trawlers_desc;Blue Water fishing fleets followed the merchant marines and navies of the world in transitioning from coal to oil for fueling.;;;;;;;;;;;;x,,
+#############################################;;;;;;;;;;;;;;x
+#Economic Thought Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+adam_smith;Adam Smith;;;;;;;;;;;;x;
+adam_smith_desc;Adam Smith was a Scottish Enlightenment philosopher of political economy. He was author of The Theory of Moral Sentiments and An Inquiry into the Nature and Causes of the Wealth of Nations. Smith promoted the central tenement of Capitalism as the individual pursuing his own self-interest, and in so doing, promoting the greater good. He talked about the "invisible hand" that would guide the actions of individuals and argued against government interference in all but a aspects of the economy.;;;;;;;;;;;;x;
+jean_baptiste_say;Jean-Baptiste Say;;;;;;;;;;;;x;
+jean_baptiste_say_desc;Jean-Baptiste Say was a French scholar active in the field of political economy. A contemporary of Adam Smith, he also advocated economic competition and freedom of trade. He wrote the Traité d'économie politique ou simple exposition de la manière dont se forment, se distribuent et se composent les richesses, originally published in 1803. Say's Law of Markets was derived thus from his treatise, "Inherent in supply is the wherewithal for its own consumption.";;;;;;;;;;;;x;
+david_ricardo;David Ricardo;;;;;;;;;;;;x;
+david_ricardo_desc;David Ricardo was an English political economist who followed the theories of Adam Smith. He wrote his most important work in 1817, titled Principles of Political Economy and Taxation. A great promoter of free trade, his major contribution to classical economics was his Law of Comparative Advantage, where he argued that mutual advantage in trade was always possible if each country concentrated on its resource advantages.;;;;;;;;;;;;x;
+thomas_robert_malthus;Thomas Robert Malthus;;;;;;;;;;;;x;
+thomas_robert_malthus_desc;Thomas Robert Malthus was a British scholar, influential in political economy and demography. Malthus popularised the economic theory of rent.;;;;;;;;;;;;x;
+floating_international_exchange_rates;Floating International Exchange Rates;;;;;;;;;;;;x;
+floating_international_exchange_rates_desc;In a Floating Exchange Rate region, the value of the currency is set by supply and demand in the international markets. This is measured freely against the currencies of other countries. The Central Bank may intervene in cases of rapid and extreme movement by the currency price in either direction. It buys or sells from its own currency reserves to stabilize the value.;;;;;;;;;;;;x;
+monetization_of_debt;Monetization of Debt;;;;;;;;;;;;x;
+monetization_of_debt_desc;By monetizing the debt, the Central Bank could artificially decrease the fiscal deficit and increase the money supply of the country. It would print new money and use it to purchase public debt instruments (bonds and bills) issued by the Treasury. This has the effect of moving the debt off of the public balance sheet, with the Central Bank remitting the balance of the interest earnings back to the Treasury on a regular basis.;;;;;;;;;;;;x;
+#############################################;;;;;;;;;;;;;;x
+#Philosophy Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+montesquieu;Montesquieu;;;;;;;;;;;;x;
+montesquieu_desc;Charles-Louis de Secondat, Baron de La Brède et de Montesquieu was a French lawyer and political philosopher. He was best known for his support of constitutional government with a clear separation of powers. In his most famous work, 'The Spirit of the Laws (1748),' Montesquieu developed a series of classification sytems to describe governments and societies. He divided French society into three classes: the monarchy, the aristocracy and the commons, and he said that they should be equally dependent on and separate from eachother. Government administration was divided into three branches, the executive, legislative, and the judicial. His separation of powers later became embedded in the U.S. and other modern constitutions. He popularized the term 'Despotism' by describing it as one of the three basic forms of government, along with Monarchy and Republic.;;;;;;;;;;;;x;
+rousseau;Jean-Jacques Rousseau;;;;;;;;;;;;x,,,,,,,
+rousseau_desc;Jean-Jacques Rousseau was a French writer and philosopher. Rousseau's many publications provided a central inspiration for the French Revolution. In 'Discourse on the Origin and Basis of Inequality Among Men (1754),' Rousseau refuted Hobbes' conception of the Social Contract as being imposed on the masses by the powerful in society, thereby instituting inequality into the civil society. In 'The Social Contract (1762) Rousseau argued against the divine right of monarchs and asserted that sovereignty resides with the people. However, he argued that government must be separate from the legislative power of the sovereignty for the application of laws and that it was the duty of the people to abolish an overreaching government. Under his version of the Social Contract, the people had a right of freedom to withdraw from it except in time of need.;;;;;;;;;;;;x,,,,,,
+denis_diderot;Denis Diderot;;;;;;;;;;;;x,,,,,,,
+denis_diderot_desc;Denis Diderot as a French philosopher and writer best known as a coauthor and editor of the 'Encyclopédie, ou dictionnaire raisonné des sciences, des arts et des métiers' with Jean le Rond d'Alembert between 1751 and 1772. The Encyclopedia was the most comprehensive collection of Enlightenment thought and knowledge in every field from philosophy and the arts to science and technology. Its contributors included Diderot himself and most of his leading cotemporaries including Montesquieu, Voltaire, and Rousseau. Diderot's support for religious and political freedoms and the importance of modern science and industry was opposed by the aristoratic society in France. His encyclopedia was officially suppressed in 1759 and he had to complete much of the work on his own thereafter.;;;;;;;;;;;;x,,,,,,
+immanuel_kant;Immanuel Kant;;;;;;;;;;;;x,,,,,,,
+immanuel_kant_desc;Immanuel Kant was a German philosopher, highly influential in many fields such as metaphysics, ethics, aesthetics,and political philosophy. He promoted as a central theme of the Enlightenment the application of reason to sujective experiences in order to derive knowledge. Kant published 'The Critique of Pure Reason (1781)' in which he argued for a 'Copernican revolution' in philosophy. Kant's doctrine became known as Transcendental Idealism. Kant believed that humans do not experience the world in a direct way, but in a phenomenal way using our senses. These experiences are thus purely subjective and incapable of comprehension as they are (in and of themselves) until processed through Reason. He stated that concepts of mathematics, space and time were transcendental. That is, they were necessary preconditions for the possibilities of experience. His theories influenced a wide spectrum of thinkers and scientists within many disciplines.;;;;;;;;;;;;x,,,,,,
+david_hume;David Hume;;;;;;;;;;;;x,,,,,,,
+david_hume_desc;David Hume was a Scottish philosopher, historian and essayist, highly influential in the fields of empiricism and skepticism. Hume argued in 'A Treatise of Human Nature (1739)' that the psychological basis for human behaviour was desire rather than reason. He rejected the views of Locke that humans were born with innate ideas, believing instead that knowledge is derived solely from direct experience. Hume wrote that moral actions came from passions and were intrisically motivated, rather than derived from Reason. He believed in the compatibility of scientific determinism with the concept of free will. The exercise of liberty in fact requires the uniform physical laws governing the natural world, or else our exercise of free will would be nothing more than an act of chance. Hume influenced a diverse group of contemporary and subsequent writers including William James, Adam Smith and Kant.;;;;;;;;;;;;x,,,,,,
+mary_wollstonecraft;Mary Wollstonecraft;;;;;;;;;;;;x,,,,,,,
+mary_wollstonecraft_desc;Mary Wollstonecraft was an English philosopher and writer who was an early proponent of women's rights. She criticzed Rousseau's subordination of women to a solely domestic role. In 'Vindication of the Rights of Woman (1792)' she argued that women only appeared to be inferior to men due to a lack of education. Wollstonecraft believed in treating men and women equally before God as rational, thinking beings, although she conceded a vague predominance of men in a physical sense.;;;;;;;;;;;;x,,,,,,
+cesare_beccaria;Cesare Beccaria;;;;;;;;;;;;x,,,,,,,
+cesare_beccaria_desc;Cesare Marquis Beccaria-Bonesana was an Italian jurist and philosopher. He was best known for his 1764 treatise 'On Crime and Punishments.' Beccaria argued against torture and for the abolition of the death penalty. He believed that the state did not possess the right to take lives and because capital punishment was neither a useful nor a necessary deterrent to crime. A number of his principles such as the proportionality and promptness of punishment continue to form the basis of criminal justice in modern societies.;;;;;;;;;;;;x,,,,,,
+thomas_jefferson;Thomas Jefferson;;;;;;;;;;;;x,,,,,,,
+thomas_jefferson_desc;Thomas Jefferson was one of the 'Founding Fathers' of the United States of America. Jefferson wrote the Declaration of Independence in 1776, in which he asserted that all men had "certain inalienable rights." He believed in the paramount importance of individual liberties, and argued that liberty should only be limited insofar as it infringed upon the equal rights and liberties of others. Jefferson served as the Third President of the United States from 1801 to 1809 and worked to limit the power of the federal government, favouring decentralisation and protecting the rights of individuals. Jefferson promoted science and education and believed in a wall of separation between church and state.;;;;;;;;;;;;x,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Psychology Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+william_hamilton;William Hamilton;;;;;;;;;;;;x;
+william_hamilton_desc;William Hamilton was a Scottish philosopher and professor at Edinburgh University who wrote on the concepts of metaphysics and psychology. A follower of the ideas of Kant, Hamilton emphasized the science of psychology over metaphysical ideas. He stated that "every object is known only in virtue of its relations to other objects." Human thought is finite, and yet demands an understanding of the infinite; ergo, the basis for faith and the faculty of theology is established and conditioned.;;;;;;;;;;;;x;
+soren_kierkegaard;Søren Kierkegaard;;;;;;;;;;;;x;
+soren_kierkegaard_desc;Søren Aabye Kierkegaard was a Danish philosopher," theologian and religious author interested in human psychology. He strongly criticized many modern philosophers and the Christianity of the State Church versus the Free Church. Much of his philosophical work deals with the issues of how one lives as a ""single individual""", giving priority to concrete human reality over abstract thinking, and highlighting the importance of personal choice and commitment.;;;;;;;;;;;;x;
+alexander_bain;Alexander Bain;;;;;;;;;;;;x;
+alexander_bain_desc;An associate of J.S. Mill, Alexander Bain added connections from physiology to associationist psychology, adding the laws of compound and constructive association to those of contiguity, similarity, and frequency. He was known for writing two of the earliest textbooks in psychology in 1855 and 1859, which were used by later experimental psychologists such as William James. His Spencer-Bain principle concerning probability of behavior recalls the later Behaviorist school in its conclusions.;;;;;;;;;;;;x;
+thomas_brown;Thomas Brown;;;;;;;;;;;;x;
+thomas_brown_desc;Thomas Brown was an associationist of the Scottish School, he added a secondary set of laws to complete the associationist philosophy. He built upon earlier work by broadening associationism to consider it as an active process of an active mind. This active process considered the effects of other associations, temperament and state of mind of the individual, the state of health of the body, as well as the circumstances of the moment.;;;;;;;;;;;;x;
+psychological_intelligence;Psychological Intelligence;;;;;;;;;;;;x;
+psychological_intelligence_desc;This is the concurrent development to Experimental Psychology that focuses on the use of measurement and mathematics to classify individuals by their development. Beginning with Sir Francis Galton and continuing through Alfred Binet, Charles Spearman, and others, the study of intelligence would produce many different ways of measuring the mental abilities of people. Intelligence theorists would propose methods by which individuals and society could improve itself; they also inspired darker movements such as the Nazis to try to eliminate those considered unfit. Today's IQ test is the direct legacy of intelligence measurement in psychology.;;;;;;;;;;;;x;
+francis_galton;Francis Galton;;;;;;;;;;;;x;
+francis_galton_desc;Sir Francis Galton was a British aristocrat who wrote extensively on the measurement of an individual's mental abilities using sensory and motor tests. His 1869 work "Hereditary Genius:  An Inquiry into its Laws and Consequences" argued that the children of geniuses tended to become geniuses themselves. He surveyed thousands of fellow academics, publishing in 1874 his findings that intelligence was primarily a heritable trait, although there was some necessity for environmental nurturance of that trait. He was the first to use identical and fraternal twins to measure the effects of nature versus nurture, and established in 1888 the theoretical basis for correlation, scatterplots, and regression as measurement tools.;;;;;;;;;;;;x;
+alfred_binet;Alfred Binet;;;;;;;;;;;;x;
+alfred_binet_desc;Alfred Binet was a French psychologist who pioneered the use of standardized testing to measure individual differences in intelligence. The French government commissioned Binet and his student Theodore Simon to develop a test in 1899 to differentiate 'retarded' from 'normal' children. The Simon-Binet test divided intelligence into several areas and measured each with a battery of questions. Questions considered to measure higher ability were those answered more often by students whom their teachers had rated highly. Binet also believed that intelligences were inherited, but improvable by education. His test assigned a single 'mental-level' score to each subject based on their test results.;;;;;;;;;;;;x;
+charles_spearman;Charles Spearman;;;;;;;;;;;;x;
+charles_spearman_desc;Charles Spearman was a British psychologist and mathematician. Spearman criticized Galton's tests as being too simple to measure intelligence. He preferred Binet's test, but criticized the use of a universal number to characterize different areas of intelligence. He developed the process of factor analysis, measuring correlations between performance in different test areas. He proposed two underlying factors 'g' for general intelligence to explain the correlations and 's' for specific abilities to explain the imperfections in his correlations. His 'g'factor was not a concrete number, but he too believed in the heritability of intelligence.;;;;;;;;;;;;x;
+eugenics;Eugenics;;;;;;;;;;;;x,,,,,,,
+eugenics_desc;An outgrowth from Darwinistic ideas on natural selection and trait theories and from the studies in intelligence measurement, Eugenics was concerned with the mental and physical traits found in society and a response to the weaknesses found. Positive eugenics encouraged family programs, social welfare, and the importance of education in the desirability of breeding to increase the appearance of positive traits. Negative eugenics argued for the need to remove weak traits by removing undesirable elements, leading to sterilization and even extermination of target groups.;;;;;;;;;;;;x,,,
+wilhelm_wundt;Wilhelm Wundt;;;;;;;;;;;;x;
+wilhelm_wundt_desc;Wilhelm Wundt was a German physiologist who opened the first university-based psychological laborator in Leipzig in 1879. Wundt published the first textbook to identify psychology as a science; his 'two reaction-time' tasks demonstrated that complex sequences are the combination of more elementary processes. This was the foundation of Cognitive Psychology.;;;;;;;;;;;;x;
+edward_titchener;Edward Titchener;;;;;;;;;;;;x;
+edward_titchener_desc;Edward Titchener was an English psychologist who studied under Wundt at Leipzig. Titchener headed the psychology department at Cornell University and founded the Structuralist school, which relied heavily on introspection to perform analysis on the structure of the mind. His attempts to break down experiences into four basic elements was discredited because it was possible for different subjects to identify different elements from the same experiences.;;;;;;;;;;;;x;
+william_james;William James;;;;;;;;;;;;x;
+william_james_desc;William James was an American psychologist and philosopher at Harvard University. James emphasized the the study of the purposes and functions of the mind, rather than its structure. James is considered the founder of the Functionalist school. He used experiments and introspection, but disclaimed introspection as scientific proof.;;;;;;;;;;;;x;
+gs_hall;G. Stanley Hall;;;;;;;;;;;;x;
+gs_hall_desc;G. Stanley Hall was the first President of the American Psychological Association. Hall founded the American Journal of Psychology in 1887. His research focused on educational psychology and adolescence; he adapted the term 'Storm and Stress' to characterize the period of adolescence. Hall believed in the heritability of behavior and supported the Eugenics program. His views on child development were later largely refuted by Piaget and Vygotsky.;;;;;;;;;;;;x;
+hermann_ebbinghaus;Hermann Ebbinghaus;;;;;;;;;;;;x;
+hermann_ebbinghaus_desc;Hermann Ebbinghaus was a German psychologist who pioneered studies in memory. Ebbinghaus used himself as subject in thousands of repetitions of his 'nonsense syllables.' Among his contributions to the field were the learning curve, the forgetting curve, and the serial position effect, which demonstrated that individuals remember the most recent information first presented. He documented 'savings': information relearned a second time is memorized faster.;;;;;;;;;;;;x;
+mary_calkins;Mary Calkins;;;;;;;;;;;;x;
+mary_calkins_desc;Mary Calkins was an American teacher who became the first female President of the American Psychological Association. A student of James' in 1890, Calkins completed the requirements for a PhD at Harvard only to be refused. She went on to a distinguished tenure at Wellesley College, writing about the psychology of the self: 'a totality, a one of many characters... a unique being in the sense that I am I and you are you'....;;;;;;;;;;;;x;
+sigmund_freud;Sigmund Freud;;;;;;;;;;;;x;
+sigmund_freud_desc;Sigmund Freud was an Austrian psychologist who founded the discipline of Psychoanalysis. Freud focused on the unconscious mind, dividing it into the id, ego, and superego. Freud believed that unconscious motivations guided the behaviour of his patients and these need to be identified by looking for thoughts and actions that did not fit normal explanation. Manifestation of sexual and aggressive drives were most likely explanations for the differences observed in personality.;;;;;;;;;;;;x;
+carl_jung;Carl Jung;;;;;;;;;;;;x;
+carl_jung_desc;Carl Jung was a Swiss psychiatrist and contemporary of Freud. Jung proposed a second, deeper level of collective unconscious, where a number of universal personality types known as archetypes were formed from patterns of emotions and experiences. Jung pioneered dream analysis, arguing that archetypes, complexes and motives manifested themselves through dreams. He was influential in developing the concepts of synchronicity, introversion and extraversion.;;;;;;;;;;;;x;
+alfred_adler;Alfred Adler;;;;;;;;;;;;x;
+alfred_adler_desc;Alfred Adler was an Austrian doctor and psychtherapist. Adler diverged from Freud in arguing that unconscious motivation could be better explained by teleological goals rather than instinctual drives. According to Adler, people are born with a feeling of Inferiority. People attempt to overcome these feelings of inferiority. Adler posited one of three outcomes. An 'inferiority complex' develops in people who are overwhelmed by these feelings. Some of these will develop a superiority complex to mask their true feelings. Psychologically healthy people manifest the concept of self-esteem and satsify their goals through a sense of personal achievement.;;;;;;;;;;;;x;
+anna_freud;Anna Freud;;;;;;;;;;;;x;
+anna_freud_desc;The daughter of Sigmund Freud, Anna began her psychoanalytic practice in 1923. She served as secretary of the International Psychoanalytical Association between 1925 and 1934. Freud became known for her work on the social importance of the ego in childhood development. She wrote 'Ego and the Mechanisms of Defense' (1936) in which she further developed the concept of defense mechanisms such as repression, displacement, reaction formation and rationalization. These are mental processes to reduce consciousness of wishes, memories and thoughts that prove threatening to self-esteem and security of the individual.;;;;;;;;;;;;x;
+karen_horney;Karen Horney;;;;;;;;;;;;x;
+karen_horney_desc;Karen Horney was a German psychoanalyst. She came to criticize Freud's emphasis on sex and aggressive as motivating drives. Horney (1937) focused on security instead as the central, inborn human need. In her view, child development was contingent upon parental fulfillment of the child's 'basic anxiety' emotion. Success would result in a trusting individual, while failure would result in insecurity. Insecurity and distrust manifests itself in personality as either avoidance, submission or dominance.;;;;;;;;;;;;x;
+ivan_pavlov;Ivan Pavlov;;;;;;;;;;;;x;
+ivan_pavlov_desc;Ivan Pavlov was a Russian physiologist and winner of the Nobel Prize for his work on reflexes in digestion. In the course of studies with dogs and salivation, Pavlov observed that the dogs elicited a certain type of salivation with certain signals that preceeded the arrival of food. In his 1927 study, Pavlov laid out the basic principles of classical conditioning in Behaviorism. The food was the unconditioned stimulus for salivation. The signal became associated with salivation as a conditioned stimulus, with salivation to the sound of the signal alone becoming the new conditioned response. Extinction, recovery, generalization and discrimination were identified in subsequent studies.;;;;;;;;;;;;x;
+el_thorndike;Edward L. Thorndike;;;;;;;;;;;;x
+el_thorndike_desc;Edward Lee Thorndike was an American researcher who also conducted experiments in animal learning. He was known for his puzzle-box procedure (1898), in which a hungry cat was placed inside a small cage and observed to see how long it took the cat to learn to pull the lever and escape, where food was waiting. He observed that after 20-30 trials, the cats had become efficient at escaping almost instantaneously. Thorndike formulated the law of effect, stating that responses producing a positive effect became more likely to occur again, and those producing discomfort were less likely to occur again. These observations were later transformed by B.F. Skinner into the concept of operant conditioning in psychology.;;;;;;;;;;;;x;
+jb_watson;John B. Watson;;;;;;;;;;;;x;
+jb_watson_desc;John Broadus Watson was an American psychologist who studied Pavlovian conditioning in humans. Watson's most famous experiment involved conditioning an 11-year old child named Albert to associate a conditioned stimulus (fear of rats) to an unconditioned stimulus (fear of a loud hammering sound). Watson's research later led to clinical treatments extinguishing irrational fears in people. After being dismissed from Harvard over an affair and marriage with a graduate student, Watson brought his research experience to a prominent advertising firm; modern advertising owed much to behaviorist psychology and conditioning concepts.;;;;;;;;;;;;x;
+ec_tolman;Edward C. Tolman;;;;;;;;;;;;x;
+ec_tolman_desc;Edward C. Tolman was another prominent American psychologist in the field of Behaviorism. Tolman performed maze experiments to demonstrate latent learning in animals. He showed that a rat could run the maze on the first try, if it was previously allowed to explore the maze while not hungry. Tolman evinced that the subject learned useful stimulus information about the world without reference to a reinforcing stimulus (the food). The ability to run the maze correctly on trial one demonstrated flexibility in the use of the learned information. Tolman's stimulus-stimulus (S-S) learning was opposed by the stimulus-response (S-R) orthodoxy of Skinner.;;;;;;;;;;;;x;
+cinematographic_propaganda;Cinematographic Propaganda;;;;;;;;;;;;x,,,,,,,
+cinematographic_propaganda_desc;The advent of cinema has allowed the rapid spread of 'propaganda films', allowing a government the ability to sway large groups of people with messages conveyed through film.;;;;;;;;;;;;x,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Social Science Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+auguste_comte;Auguste Comte;;;;;;;;;;;;x,,,,,,,
+auguste_comte_desc;Isidore Auguste Marie François Xavier Comte was a french philosopher who founded the political and philosophical movement known as Positivism. He is best known for his six-volume work 'TheCourse on Positive Philosophy (1830-1842)' in which he described a law of three stages in the development of the human mind and developed a unifying philosophy of science. Comte's law was a progressive process. The human mind begins by seeking answers to its questions in theology. Mental development passes through a transition stage to a 'positive' or final state, where supernatural or abstract causes are rejected in favour of seeking answers through scientific laws. His accompanying philosophy of science was influential for decades after his death. Within the positivist framework, the interrelation of the various branches of sciences is maintained despite their increasing divergence and level of specialization.;;;;;;;;;;;;x,,,,,
+th_huxley;Thomas Henry Huxley;;;;;;;;;;;;x,,,,,,,
+th_huxley_desc;Thomas Henry Huxley was an English biologist, nautral scientist and social thinker. Huxley became a passionate adherent and defender of Charles Darwin and the concept of Evolution after reading Darwin's 'Origin of Species.' He famously defeated Archbishop Samuel Wilberforce in an 1860 debate on the Theory of Evolution. Huxley promoted the development of scientific education over religious traditions, coining the term 'agnostic' for his beliefs. He founded the X-Club in 1869 with a group of likeminded scientists and researchers. The X-Club would go on to found the scientific journal Nature in 1869, which still publishes today.;;;;;;;;;;;;x,,,,,
+franz_boas;Franz Boas;;;;;;;;;;;;x,,,,,,,
+franz_boas_desc;Franz Boas was a German-American anthropologist," a pioneer of modern anthropology who has been called the ""Father of Modern Anthropology"". He applied the scientific method to the study of human cultures and societies. Previously this discipline was based on the formulation of grand theories around anecdotal knowledge.;;;;;;;;;;;;x",,,,,,
+marcel_mauss;Marcel Mauss;;;;;;;;;;;;x,,,,,,,
+marcel_mauss_desc;Marcel Mauss was a French sociologst. Mauss' academic work traversed the boundaries between sociology and anthropology. Today, he is perhaps better recognised for his influence on the latter discipline, particularly with respect to his analyses of topics such as magic, sacrifice and gift exchange in primitive cultures.;;;;;;;;;;;;x,,,,
+branislaw_malinowski;Bronislaw Malinowski;;;;;;;;;;;;x,,,,,,,
+branislaw_malinowski_desc;Bronislaw Kasper Malinowski was a Polish anthropologist, widely considered one of the most important modern anthropologists, and also influential in structural functionalist sociology. His pioneering ethnographic fieldwork made a major contribution to the study of Melanesia and of phenomena relating to reciprocity.;;;;;;;;;;;;x,,,,,
+flinders_petrie;Flinders Petrie;;;;;;;;;;;;x,,,,,,,
+flinders_petrie_desc;Professor Sir William Flinders Petrie was an English Egyptologist and a pioneer of systematic methodology in archaeology. He held the first chair of Egyptology in the United Kingdom, and excavated at many of the most important archaeological sites in Egypt, such as Naukratis, Tanis, Abydos and Amarna. Some consider his most famous discovery to be that of the Mernetaph Stele.;;;;;;;;;;;;x,,,
+jg_taylor;John George Taylor;;;;;;;;;;;;x,,,,,,,
+jg_taylor_desc;J.G. Taylor was an English publisher, essayist, and contributor to the study of Egyptian Pyramidology.;;;;;;;;;;;;x,,,,,,,
+cl_wooley;Charles Leonard Woolley;;;;;;;;;;;;x,,,,,,,
+cl_wooley_desc;Sir Charles Leonard Woolley was a British archaeologist best known for his excavations at Ur in Mesopotamia. He is considered to have been one of the first ""modern"" archaeologists.;;;;;;;;;;;;x,,,,,,,
+arthur_evans;Arthur Evans;;;;;;;;;;;;x,,,,,,,
+arthur_evans_desc;Sir Arthur John Evans was a British archaeologist most famous for unearthing the palace of Knossos on the Greek island of Crete and for developing the concept of Minoan civilization from the structures of the artifacts found there and elsewhere throughout the eastern Mediterranean.;;;;;;;;;;;;x,,,,,,,
+heinrich_schliemann;Heinrich Schliemann;;;;;;;;;;;;x,,,,,,,
+heinrich_schliemann_desc;Heinrich Schliemann was a German businessman and archaeologist, and an advocate of the historical reality of places mentioned in the works of Homer. Schliemann was an archaeological excavator of Troy, along with the Mycenaean sites of Mycenae and Tiryns. His work lent weight to the idea that Homer's Iliad and Virgil's Aeneid reflect actual historical events.;;;;;;;;;;;;x,,,,,
+emile_dirkheim;Emile Durkheim;;;;;;;;;;;;x,,,,,,,
+emile_dirkheim_desc;David Emile Durkheim was a French sociologist. He formally established the academic discipline and, with Karl Marx and Max Weber, is commonly cited as the principal architect of modern social science.;;;;;;;;;;;;x,,,,,
+max_weber;Max Weber;;;;;;;;;;;;x,,,,,,,
+max_weber_desc;Karl Emil Maximilian Weber was a German sociologist and political economist who profoundly influenced social theory, social research," and the discipline of sociology itself. Weber's major works dealt with the rationalization and ""disenchantment"" he associated with the rise of capitalism and modernity.;;;;;;;;;;;;x",,,,,
+ferdinand_de_saussure;Ferdinand de Saussure;;;;;;;;;;;;x,,,,,,,
+ferdinand_de_saussure_desc;Ferdinand de Saussure was a Swiss linguist whose ideas laid a foundation for many significant developments in linguistics in the 20th century. Saussure is widely considered to be one of the fathers of modern linguistics.;;;;;;;;;;;;x,,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#POP Growth Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+sanitation;Sanitation;;;;;;;;;;;;x,,,,,,,
+sanitation_desc;It was not until the development of sanitation that the presence of waste and sewage in cities was even considered to be a health issue. Once methods were introduced to remove waste and keep the streets clean, it became possible for rodent infestations to be reduced in size and for cities to rapidly grow.;;;;;;;;;;;;x,,,,,,
+prophylactics;Prophylactics;;;;;;;;;;;;x,,,,,,,
+prophylactics_desc;The invention of modern methods of voluntary birth control are having a profound effect on the national birth rate, as citizens (particularly the wealthy) are able to exert far more control over when and how often they have children.;;;;;;;;;;;;x,,,,,,
+cholera_vaccine;Cholera Vaccine;;;;;;;;;;;;x,,,,,,,
+cholera_vaccine_desc;A vaccine has been developed which should stop the spread of cholera in our country, and which indeed should be a blow against the affliction throughout the world.;;;;;;;;;;;;x,,,,,,
+antitoxins;Antitoxins;;;;;;;;;;;;x,,,,,,,
+antitoxins_desc;The development of antitoxins is an advance that not only allows the medical field to combat poisons, but also to develop and further their understanding of how to kill bacteria and other microorganisms which are responsible for many afflictions.;;;;;;;;;;;;x,,,,,,
+defamation_of_women;Defamation of Women;;;;;;;;;;;;x,,,,,,,
+defamation_of_women_desc;A cultural shift has begun which assigns to women a lesser status than that of men, even beyond their traditional inability to partake in politics. Common thought is that women are lesser creatures, best suited as chattel and as producers of children.;;;;;;;;;;;;x,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Ideology Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+social_democracy;Social Democracy;;;;;;;;;;;;x,,,,,,,
+social_democracy_desc;Democratic Socialism grew out of the revolutionary Socialist movement in the late Nineteenth Century. Some socialists remained revolutionary, and advocated the end of Market Capitalism in favor of complete state control of capital and the means of production. Social Democrats instead advocated the Social Welfare or 'Mixed Economy' state. In this version of Social Democracy, certain key services and industries might be nationalized, and the state would provide many social services and programs. However, market forces would continue to function. Political Parties advocating socialist policies, including the SPD in Germany and Labour in Brtain became powerful in the parliaments.;;;;;;;;;;;;x,,,,,
+marxism_leninism;Marxism-Leninism;;;;;;;;;;;;x,,,,,,,
+marxism_leninism_desc;Marxism-Leninism was a further development of the Marxist theory described by Marx and Engels. As the name attests, it was originally propounded by Vladimir Ilyich Lenin. Lenin espoused the concept of the Vanguard Party. Marxist-Leninists rejected Democratic Socialism's peaceful, parliamentary path to socialism. They argued instead argued for immediate and violent revolution. Lenin wrote 'What is to Be Done?' in 1903, in which he described how a dedicated core of revolutionaries could take over in nations where a large, educated proletariat did not already exist. In 1917, Lenin launched a revolution in Russia with a mix of soldier, worker, and peasant support, where a collection of 'Soviets' unde the leadership of Lenin's revolutionary vanguard usurped and then replaced the functions of the traditional state authorities. Marxism-Leninism never realized the utopian withering away of the state as Marx had envisioned. The revolutionary Dictatorship of the Proletariat became a dominant social class of its own. Membership in the Communist Party meant a standard of living  and power above that of the 'proletariat' whom the revolution had been proclaimed for.;;;;;;;;;;;;x,,,,,
+national_socialism;National Socialism;;;;;;;;;;;;x,,,,,,,
+national_socialism_desc;National Socialism was an extreme form of the ideology of Fascism, which grew out of global instability after the Great War. National Socialists started with the basic tenets of Fascism, including the Leadership Principle, the Police State, a mass movement, the suppression of Democratic institutions and the subordination of industry and labour to the state. They added ideas derived from social-Darwinism, Eugenics, and Ultranationalist thinkers. This produced a highly toxic and perverted ideology that promised to make the national community or 'Volk' healthy, strong, and dominant. Along with traditional racism towards non-whites, members of minority religions, Eastern European cultures, and especially the Jews were to be forcibly deported, encouraged to emigrate, sterilized, or simply exterminated.'Racial Science' determined them to be inferior not only socially and culturally, but also biologically. National Socialist or 'Nazi' movements primarily sprung up in 'Western' states in the first half of the Twentieth Century, though Japan developed its own theories of race akin to the Nordic 'Aryan' superman based on the 'Yamato' Culture. Communism was the great ideological enemy of the National Socialists;;;;;;;;;;;;x,,,,,
+the_one_party_state;The One Party State;;;;;;;;;;;;x,,,,,,,
+the_one_party_state_desc;Politically, while a varying amount of factionalism and competition for power and ideas could be (and WAS) tolerated behind closed doors, there could be no organized opposition in public, to the Party, or to the 'Revolution,' or the 'Movement,' depending on the Fascist or Communist usage. In practice this meant various measures of popular indoctrination, legal or violent repression of the political opposition, and varying levels of persecution against non-party social and religious groups.;;;;;;;;;;;;x,,,,,
+totalitarianism;Totalitarianism;;;;;;;;;;;;x,,,,,,,
+totalitarianism_desc;The suppression of the basic institutions and rights of a democratic society became one of the first goals of Fascist and Communist states. Parliaments were abolished or made rubber stamps for state decrees and programs. Elections and Plebiscites (if held at all) were no longer secret-ballot: any citizens who opposed were virtually forced to vote the party line, or face punishment in prison or even in Gulags/Concentration Camps. The Press was censored, or more often became another state organ for the dissemination of propaganda extolling the regime's virtues and demonizing its enemies. Freedom of expression in academia, in the world of culture and in the public sphere was curtailed. Professors, scientists and professionals were willingly or unwillingly conscripted to serve the state's priorities. Many intellectuals became emigres and moved to other democratic nations, because to stay and refuse to serve meant incarceration or death.;;;;;;;;;;;;x,,,,,
+the_leadership_principle;The Leadership Principle;;;;;;;;;;;;x,,,,,,,
+the_leadership_principle_desc;Fascism rejected assumptions that all were born with the ability to be leaders through popular revolution or election to democratic office. The 'Leadership Principle' affirmed that the state would be led by a group of individuals who were 'gifted to rule.' This introduced an appointed hierarchy in civil society which resembled that of the military. An Italian essay on the 'Doctrine of Fascism' stated: 'the conception of the State is all-embracing; outside of it no human or spiritual values can exist, much less have value. Thus understood, Fascism is totalitarian, and the Fascist State 'a synthesis and a unit inclusive of all values' interprets, develops, and potentiates the whole life of a people.' This hierarchical organization demanded total obedience to those above the individual. Fascism typically gave rise to one supreme leader who would assume a special title, such as that of Fuhrer or Duce. This rule by decree often led to instability and inefficiency, as those most loyal might be chosen over those most able. Those who broke with the hierarchical structure and created their own organizations and leadership power in the state might even recieve attention and praise in the Fascist appreciation for the constant national struggle.;;;;;;;;;;;;x,,,,,
+ultranationalism_n_the_volk;Ultranationalism and The Volk;;;;;;;;;;;;x,,,,,,,
+ultranationalism_n_the_volk_desc;Ultranationalism encouraged a form of collectivism that unlike Marxism, emphasized national unity through ethnicity or 'race.' Fascists believed in a state free of class struggle, National organizations were formed for the various economic classes, who all worked for the benefit of the nation. This was known as Corporatism. National Socialist variants rejected definitions based on mere national 'feeling' or 'myth.' Their definitions of belonging were based on the lines of racial protectionism or racial supremacy; This concept of the 'Volk' stated that traditional definitions of who belonged to the national state were inadequate. A German whose ancestors had lived in Germany and spoke German for centuries could be excluded from the national community if they were Jewish, joined the political opposition, or had ancestors from 'inferior' nationalities. Italian and other variants emphasized the concept of humankind as in constant struggle, and some conquered peoples could be assimilated into the nation. National Socialism emphasized a racial imperialism, whereby new territory was to be conquered, cleansed of inferior peoples, and colonized by the 'Volk.';;;;;;;;;;;;x,,,,,
+collectivisation;Collectivisation;;;;;;;;;;;;x,,,,,,,
+collectivisation_desc;Marxist doctrine emphasized the 'dictatorship of the proletariat' whereby the workers would take control of the means of the production and ulimately own their own factories and farms in a utopian socialist vision of collectivism. The architects of Communist state ideology were inevitably unable to deliver this utopian vision. What resulted instead was a dramatic expansion of state economic planning and central control over all industries and industrial production. Housing and infrastructure projects also became state-owned and directed. Heavy industry was to be emphasized above consumer goods. Private ownership of land was largely ended, and early attempts at land redistribution became massive collectivization projects whereby huge farms were organized in a factory-like manner. As with factories, delivery of raw materials and production quotas were set by central planning agencies. In all of these areas, the inherent problems of deficiencies and impossible targets came to the fore.;;;;;;;;;;;;x,,,,,
+the_classless_society;The Classless Society;;;;;;;;;;;;x,,,,,,,
+the_classless_society_desc;The coming to power of Communist movements usually meant that the 'intelligentsia' - academics, the political opposition, businessmen, aristocrats and large landowners, even army officers - were purged, driven into exile, or killed as being opposed to the revolution. The Communist state promoted the idea of the classless society, where everyone was a comrade in the service of the State. Organized religion and ethnic nationalism were often brutally suppressed, because they could provide foci for anti-regime activities and armed resistance. The armed forces were not only often deprived of leadership in purges, but traditional military symbols that inspired the army were removed in favour of empty Marxist slogans.;;;;;;;;;;;;x,,,,,
+#############################################;;;;;;;;;;;;;;x
+#New Triggered Modifiers;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+desperate_nation;Desperate Nation;Nation microscopique;Mikroskopische Nation;;Nación microscópica;;;;;;;;;x;;;;
+microscopic_nation;Microscopic Nation;Nation microscopique;Mikroskopische Nation;;Nación microscópica;;;;;;;;;x;;;;
+tiny_nation;Tiny Nation;Très petite Nation;Sehr kleine Nation;;Muy pequeña nación;;;;;;;;;x;;;;
+small_nation;Small Nation;Petite Nation;Kleine Nation;;Pequeña nación;;;;;;;;;x;;;;
+medium_nation;Medium Nation;Nation moyenne;Mittlere Nation;;Medio país;;;;;;;;;x;;;;
+average_nation;Average Nation;Nation régulière;Durchschnittsgröße Nation;;País promedio;;;;;;;;;x;;;;
+large_nation;Large Nation;Grande Nation;Großes Nation;;Nación grande;;;;;;;;;x;;;;
+empire;Empire;Empire;Reich;;Imperio;;;;;;;;;x;;;;
+medium_empire;Medium Empire;Moyen Empire;Mittleres Reich;;Imperio medio;;;;;;;;;x;;;;
+large_empire; Large Empire;Grand Empire;Große Reich;;Gran imperio;;;;;;;;;x;;;;
+insane_empire; Insane Empire;L'Empire de fou;Das wahnsinnig Reich;;El Imperio loco;;;;;;;;;x;;;;
+insane_empire2; Large Insane Empire;L'Empire de fou;Das wahnsinnig Reich;;El Imperio loco;;;;;;;;;x;;;;
+#############################################;;;;;;;;;;;;;;x
+#New CBs;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+minor_conquest;Minor Conquest;;;;;;;;;;;;;x
+minor_conquest_desc;Annex a §Ycountry§W of small size and population by conquest;;;;;;;;;;;;;x
+minor_conquest_setup;Annex minor nation of $RECIPIENT$;;;;;;;;;;;;;x
+minor_conquest_short;Annex $RECIPIENT$;;;;;;;;;;;;;x
+negotiated_transfer;Negotiated Transfer;;;;;;;;;;;;x
+negotiated_transfer_desc;Transfer a state or colonial region to another country with no effect on infamy, prestige, or jingoism;;;;;;;;;;;;x
+negotiated_transfer_short;$RECIPIENT$ receives $STATE$ from us;;;;;;;;;;;;;x
+negotiated_transfer_setup;Transfer $STATE$ from our country to $RECIPIENT$;;;;;;;;;;;;x
+NORMAL_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+AGRESSION_WAR_NEGOTIATE_NAME;$ORDER$$SECOND$ Transfer of $STATE$ to $FIRST_COUNTRY$;;;;;;;;;;;;x
+acquire_state;Acquire State Early;;;;;;;;;;;;;x
+acquire_state_short;Acquire $STATE$;;;;;;;;;;;;;x
+acquire_state_desc;Aquire an enemy §Ystate§W;;;;;;;;;;;;;x
+acquire_state_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_state_midgame;Acquire State Midgame;;;;;;;;;;;;;x
+acquire_state_midgame_short;Acquire $STATE$ for 33% less.;;;;;;;;;;;;;x
+acquire_state_midgame_desc;Aquire an enemy §Ystate§W for 33% less warscore;;;;;;;;;;;;;x
+acquire_state_midgame_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_state_late;Acquire State Lategame;;;;;;;;;;;;;x
+acquire_state_late_short;Acquire $STATE$ for 55% less.;;;;;;;;;;;;;x
+acquire_state_late_desc;Aquire an enemy §Ystate§W for 55% less warscore;;;;;;;;;;;;;x
+acquire_state_late_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+demand_concession_casus_belli_player_early_for_puppet;Demand Concession Early for Puppet;Demande de concession;Konzession verlangen;;;;;;;;;;;
+demand_concession_casus_belli_player_early_for_puppet_short;Demand $STATE$ for a puppet for 100% more warscore.;Demander $STATE$;Fordern Sie $STATE$;;;;;;;;;;;
+demand_concession_casus_belli_player_early_for_puppet_desc;Force the §Yuncivilized country§W to secede territory to your puppet for 100% more warscore.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonialkonzession abzuspalten.;;;;;;;;;;;
+demand_concession_casus_belli_player_early_for_puppet_setup;Demand that $RECIPIENT$ secede territory to a puppet.;Demandez à ce que $RECIPIENT$ fasse sécession d'un territoire pour former une concession coloniale.;Verlangen Sie, dass $RECIPIENT$ Gebiete zur Gründung einer Kolonialkonzession abspaltet.;;;;;;;;;;;
+demand_concession_casus_belli_ai_early_for_puppet;Demand Concession Early for Puppet;Demande de concession;Konzession verlangen;;;;;;;;;;;
+demand_concession_casus_belli_ai_early_for_puppet_short;Demand $STATE$ for a puppet for 10% more warscore.;Demander $STATE$;Fordern Sie $STATE$;;;;;;;;;;;
+demand_concession_casus_belli_ai_early_for_puppet_desc;Force the §Yuncivilized country§W to secede territory to your puppet for 100% more warscore.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonialkonzession abzuspalten.;;;;;;;;;;;
+demand_concession_casus_belli_player_early_for_puppet_setup;Demand that $RECIPIENT$ secede territory to a puppet.;Demandez à ce que $RECIPIENT$ fasse sécession d'un territoire pour former une concession coloniale.;Verlangen Sie, dass $RECIPIENT$ Gebiete zur Gründung einer Kolonialkonzession abspaltet.;;;;;;;;;;;
+demand_concession_casus_belli_for_puppet;Demand Concession for a Puppet;Demande de concession;Konzession verlangen;;;;;;;;;;;
+demand_concession_casus_belli_for_puppet_short;Demand $STATE$ for a puppet.;Demander $STATE$;Fordern Sie $STATE$;;;;;;;;;;;
+demand_concession_casus_belli_for_puppet_desc;Force an §Yuncivilized country§W to secede territory to your puppet.;Obligez un §Ypays non civilisé§W à faire sécession d'un territoire pour former une concession coloniale.;Zwingen Sie ein §Yunzivilisiertes Land§W, Gebiete zur Gründung einer Kolonialkonzession abzuspalten.;;;;;;;;;;;
+demand_concession_casus_belli_for_puppet_setup;Demand that $RECIPIENT$ secede territory to a puppet.;Demandez à ce que $RECIPIENT$ fasse sécession d'un territoire pour former une concession coloniale.;Verlangen Sie, dass $RECIPIENT$ Gebiete zur Gründung einer Kolonialkonzession abspaltet.;;;;;;;;;;;
+place_in_the_sun_for_puppet;Place in the sun for a Puppet;Une place au soleil;Ein Platz an der Sonne;;;;;;;;;;;
+place_in_the_sun_for_puppet_short;Acquire $STATE$ for a puppet.;Prendre $STATE$;$STATE$ erwerben;;;;;;;;;;;
+place_in_the_sun_for_puppet_desc;Aquire an enemy §Ycolonial state§W for a puppet.;Prendre un §YÉtat colonial§W ennemi;Erobern Sie einen feindlichen §YKolonialstaat§W.;;;;;;;;;;;
+place_in_the_sun_for_puppet_setup;Acquire colony $STATE$ from $RECIPIENT$ for a puppet.;Prendre colonie $STATE$ de $RECIPIENT$;Kolonie $STATE$ von $RECIPIENT$ erwerben;;;;;;;;;;;
+acquire_state_for_puppet;Acquir State Early for Puppet;Prendre un ?at;Region erobern;;Adquirir estado;;;;;;;;;x;;;;
+acquire_state_for_puppet_desc;Aquire an enemy §Ystate§W;;;;;;;;;;;;;x
+acquire_state_for_puppet_short;Acquire $STATE$ for a puppet.; Prendre l'?at de $STATE$;$STATE$ erobern;;Adquirir $STATE$;;;;;;;;;x;;;;
+acquire_state_for_puppet_setup;Acquire $STATE$ from $RECIPIENT$ for a puppet.;Prendre $STATE$ ?$RECIPIENT$;$STATE$ von $RECIPIENT$ erobern.;;Adquirir $STATE$ de manos de $RECIPIENT$;;;;;;;;;x;;;;
+acquire_state_midgame_for_puppet;Acquire State Midgame for Puppet;;;;;;;;;;;;;x
+acquire_state_midgame_for_puppet_short;Acquire for a puppet $STATE$ for 33% less.;;;;;;;;;;;;;x
+acquire_state_midgame_for_puppet_desc;Aquire an enemy §Ystate§W for a puppet using 33% less warscore;;;;;;;;;;;;;x
+acquire_state_midgame_for_puppet_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+acquire_state_late_for_puppet;Acquire State Lategame for Puppet;;;;;;;;;;;;;x
+acquire_state_late_for_puppet_short;Acquire for a puppet $STATE$ for 55% less.;;;;;;;;;;;;;x
+acquire_state_late_for_puppet_desc;Aquire an enemy §Ystate§W for a puppet using 55% less warscore;;;;;;;;;;;;;x
+acquire_state_late_for_puppet_setup;Acquire $STATE$ from $RECIPIENT$;;;;;;;;;;;;;x
+total_war_state_for_puppet;Total War Acquire State for Puppet;;;;;;;;;;;
+total_war_state_for_puppet_short;The time has come to wipe the very idea of $RECIPIENT$ from the annals of history;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+total_war_state_for_puppet_desc;Acquire an enemy country's state for 0 warscore & 0 infamy.;;;;;;;;;;;
+total_war_state_for_puppet_setup;The peoples of $RECIPIENT$$ stand in the way of a better world;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+total_war_place_in_the_sun_for_puppet;Total War Acquire Colony for Puppet;;;;;;;;;;;
+total_war_place_in_the_sun_for_puppet_short;The time has come to wipe the very idea of $RECIPIENT$ from the annals of history;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+total_war_place_in_the_sun_for_puppet_desc;Acquire an enemy country's colony for a puppet costing 0 warscore & 0 infamy.;;;;;;;;;;;
+total_war_place_in_the_sun_for_puppet_setup;The peoples of $RECIPIENT$$ stand in the way of a better world;;;;;;;;;;;;;x,,,;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+negotiated_transfer_for_puppet;Negotiated Transfer for Puppet;;;;;;;;;;;;x
+negotiated_transfer_for_puppet_desc;Transfer a state or colonial region to another country's puppet for low inamy, 0 prestige, no jingoism;;;;;;;;;;;;x
+negotiated_transfer_for_puppet_short;$RECIPIENT$ receives $STATE$ from us;;;;;;;;;;;;;x
+negotiated_transfer_for_puppet_setup;Transfer $STATE$ to $RECIPIENT$;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+#More Inventions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+sanitation;Sanitation;;;;;;;;;;;;x,,,,,,,
+sanitation_desc;It was not until the development of sanitation that the presence of waste and sewage in cities was even considered to be a health issue. Once methods were introduced to remove waste and keep the streets clean, it became possible for rodent infestations to be reduced in size and for cities to rapidly grow.;;;;;;;;;;;;x,,,,,,
+antitoxins;Antitoxins;;;;;;;;;;;;x,,,,,,,
+antitoxins_desc;The development of antitoxins is an advance that not only allows the medical field to combat poisons, but also to develop and further their understanding of how to kill bacteria and other microorganisms which are responsible for many afflictions.;;;;;;;;;;;;x,,,,,,,
+child_welfare;Child Welfare;;;;;;;;;;;;x,,,,,,,
+child_welfare_desc;The quaint new idea of basic care & legal rights for children has been established.;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+#Save The Nation;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+save_the_nation0.5;Moderate Patriotism;;;;;;;;;;;;x,,,,,,,
+save_the_nation0.5_desc;Moderate Patriotism;;;;;;;;;;;;x,,,,,,,
+save_the_nation1;Patriotism;;;;;;;;;;;;x,,,,,,,
+save_the_nation1_desc;Patriotism;;;;;;;;;;;;x,,,,,,,
+save_the_nation1.5;Moderate Naionalism;;;;;;;;;;;;x,,,,,,,
+save_the_nation1.5_desc;Moderate Nationalism;;;;;;;;;;;;x,,,,,,,
+save_the_nation2;Heightened Naionalism;;;;;;;;;;;;x,,,,,,,
+save_the_nation2_desc;Heightened Nationalism;;;;;;;;;;;;x,,,,,,,
+save_the_nation2.5;Limited Desperate Defense;;;;;;;;;;;;x,,,,,,,
+save_the_nation2.5_desc;Limited Desperate Defense;;;;;;;;;;;;x,,,,,,,
+save_the_nation3;Full Desperate Defense;;;;;;;;;;;;x,,,,,,,
+save_the_nation3_desc;Full Desperate Defense;;;;;;;;;;;;x,,,,,,,
+save_the_nation3.5;Nearing the Final Hour;;;;;;;;;;;;x,,,,,,,
+save_the_nation3.5_desc;Nearing the Final Hour;;;;;;;;;;;;x,,,,,,,
+save_the_nation4;Final Hour;;;;;;;;;;;;x,,,,,,,
+save_the_nation4_desc;Final Hour;;;;;;;;;;;;x,,,,,,,
+save_the_nation4.5;Somewhat Spiteful Resistance;;;;;;;;;;;;x,,,,,,,
+save_the_nation4.5_desc;Somewhat Spiteful Resistance;;;;;;;;;;;;x,,,,,,,
+save_the_nation5;Spiteful Resistance;;;;;;;;;;;;x,,,,,,,
+save_the_nation5_desc;Spiteful Resistance;;;;;;;;;;;;x,,,,,,,
+#############################################;;;;;;;;;;;;;;x
+#Decisions;;;;;;;;;;;;;;x
+#############################################;;;;;;;;;;;;;;x
+romanians_integrated_title;Integrate the Romanians;;;;;;;;;;;;x,,,,,,,
+romanians_integrated;Integrate the Romanians;;;;;;;;;;;;x,,,,,,,
+romanians_integrated_desc;The time has come for the Romanian peoples to accept the crown of Hungary.;;;;;;;;;;;;x,,,,,,,
+spanish_expansion_maghreb_title;Proclaim Spanish Dominion over Maghreb;;;;;;;;;;;;x,,,,,,,
+spanish_expansion_maghreb;Proclaim Spanish Dominion over Maghreb;;;;;;;;;;;;x,,,,,,,
+spanish_expansion_maghreb_desc;After taking over Western Aragonese Maghreb, and annexing the local natives we have gained total dominion over North-West Africa.;;;;;;;;;;;;x,,,,,,,
+mesopotamian_excavations_decision_title;The Cradle of Civilization;;;;;;;;;;;;;
+mesopotamian_excavations_decision_desc;Mesopotamia: the onetime home of Babylonia, Akkadia and Assyria holds great promise for archaeological discovery. We've moved beyond the old methods of tomb-raiding and amateur excavations--- we should outfit a modern expedition and seek permission to explore these lands. We might bring back a few trophies for the museum... and learn something along the way.;;;;;;;;;;;;;
+minoan_excavations_decision_title;Minoan Excavations;;;;;;;;;;;;;
+minoan_excavations_decision_desc;We must plunder the secrets of the ancient Minoan civilization, for the good of science.;;;;;;;;;;;;;
+integrate_north_germans_title;Soldify Control over Elbia;;;;;;;;;;;;;
+integrate_north_germans_desc;The Bohemians are beaten back & much of Northern Germany is ours, it is time to look ever farther south to expand the Union.;;;;;;;;;;;;;
+##### Neutrality #####;;;;;;;;;;;;;;x
+declare_neutrality_generic_title;Declare Neutrality;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+declare_neutrality_generic_desc;We have little interest in the wars of the world. By enacting this decision, we will no longer be able to use the following CBs: Conquest, Minor Conquest, Acquire State, Place in the Sun, Take Capital, Acquire Treaty Port, Demand Concession, Establish Protectorate and Install Communist Government. Other nations will no longer be able to use the following CBs against us: Conquest, Minor Conquest, Acquire State, Place in the Sun, Free Peoples, Liberate Country, Take Capital, and Install Communist Government;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+generic_neutrality;Political Neutrality;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+generic_neutrality_desc;Our country deliberately takes no sides. We do not go to war, even against those the world universally reviles, and thus expect that no one shall go to war against us. This means we will likely never achieve recognition as a 'mover and shaker', but it also protects us. We shall not abandon our principles for the sake of power and influence.;;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+abandon_neutrality_generic_title;Abandon Neutrality;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+abandon_neutrality_generic_desc;The might of our army is such that we can repel our neighbors without difficulty. Our policy of neutrality is no longer necessary.;;;;;;;;;;;;x,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,848 @@
+country_event = { # Venice becomes Greece if they have lost their Italian holdings
+	id = 222120
+	title = "222120.T"
+	desc = "222120.D"
+	major = yes
+
+	trigger = {
+		tag = VEN
+		ai = no
+		NOT = { is_greater_power = yes }
+		NOT = { owns = 729 } # Venice
+		NOT = { war = yes }
+		owns = 834 # Athens
+		owns = 839 # Nafplion
+		NOT = { exists = GRE }
+		NOT = { has_country_flag = VEN_GRE }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "222120.A"
+		prestige = -10
+		release = ATS
+		primary_culture = greek
+		add_accepted_culture = venetian
+		add_accepted_culture = serb
+		add_accepted_culture = albanian
+		add_accepted_culture = croat
+		add_accepted_culture = bosniak
+		add_accepted_culture = bulgarian
+		government = democracy
+		set_country_flag = VEN_GRE
+		capital = 834
+		any_owned = {
+				limit = {
+						is_core = THIS
+					}
+					add_core = GRE
+			}
+		any_country = {
+				any_owned = {
+						limit = {
+							is_core = THIS
+					}
+				remove_core = VEN
+			}
+		}
+		change_tag = GRE
+	}
+}
+
+
+country_event = { 
+	id = 106054
+	title = "106054.T"
+	desc = "106054.D"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "106054.A"
+	}
+}
+
+country_event = { 
+	id = 106065
+	title = "VEN6.T"
+	desc = "VEN6.D"
+	
+	picture = "biennale_VEN"
+	
+	trigger = { 
+	owns = 729 
+	has_global_flag = ven_building
+	year = 1895
+	}
+
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "106065.A"
+	prestige = 25 
+	}
+	
+}
+
+country_event = { 
+	id = 106066 		#Doge Office
+	title = "VEN7.T"
+	desc = "VEN7.D"
+	
+	picture = "doge_palace"
+	
+	trigger = { 
+	tag = VEN 
+	}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "106066.A"
+	set_country_flag = doge_1
+	}
+}
+
+country_event = { 
+	id = 106067 		#Silvestro Dandolo dies
+	title = "VEN8.T"
+	desc = "VEN8.D"
+	
+	picture = "silvestro_dandolo" 
+	
+	trigger = { 
+	tag = VEN 
+	government = merchant_republic	
+	year = 1847 
+	has_country_flag = doge_1 
+	NOT = { has_country_flag = doge_election_1 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 1 
+	}
+	
+	option = { 
+	name = "106067.A"
+	set_country_flag = doge_election_1
+	any_pop = { 
+	limit = { culture = venetian }
+	consciousness = 1 
+		}
+	}
+}
+
+country_event = { 
+	id = 106068		#Election 
+	title = "VEN9.T"
+	desc = "VEN9.D"
+	
+	picture = "doge_palace" 
+	
+	trigger = { 
+	tag = VEN 
+	government = merchant_republic
+	has_country_flag = doge_election_1
+	}
+	
+	fire_only_once = yes 
+	
+	mean_time_to_happen = { 
+	days = 10 
+	}
+	
+	option = { 
+	name = "106068.A"
+	set_country_flag = daniele_manin_doge
+	any_pop = { 
+	limit = { culture = venetian }
+	ideology = {
+	factor = 0.05
+	value = liberal 
+			}
+	scaled_militancy = {
+	factor = 1
+	ideology = conservative
+			}	
+	scaled_militancy = {
+	factor = 5
+	ideology = reactionary
+			}	
+		}
+	ai_chance = { 
+	factor = 30	
+	modifier = { 
+	factor = 1.3
+	ideology = liberal 
+			}
+	modifier = { 
+	factor = 1.3
+	ITA = { exists = yes government = democracy } 
+			} 
+		}
+	}
+	
+	option = { 
+	name = "106068.B"
+	set_country_flag = salviati_doge
+	any_pop = { 
+	limit = { culture = venetian }
+	ideology = {
+	factor = 0.03
+	value = conservative 
+			}
+	scaled_militancy = {
+	factor = 2
+	ideology = liberal
+			}
+	scaled_militancy = {
+	factor = -4
+	ideology = reactionary
+			}	
+	scaled_militancy = {
+	factor = -2
+	ideology = conservative
+			}	
+		}
+	ai_chance = { 
+	factor = 40
+	modifier = { 
+	factor = 1.2 
+	ideology = conservative 
+			}
+	modifier = {
+	factor = 1.4 
+	ideology = reactionary
+		}
+	}
+	}
+	
+	option = { 
+	name = "106068.C"
+	set_country_flag = albrizzi_doge
+	any_pop = {  
+	limit = { culture = greek }
+	militancy = -2 
+	}
+	any_pop = { 
+	limit = { culture = venetian }
+	consciousness = 2
+	}
+	ai_chance = { 
+	factor = 30	
+	modifier = { 
+	factor = 0.6
+	GRE = { exists = yes NOT = { is_vassal = yes } } 
+			}
+	modifier = { 
+	factor = 1.1 
+	romanticism = 1 
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 106069 #Death of Manin 
+	title = "VEN10.T"
+	desc = "VEN10.D"
+	
+	picture = "daniele_manin"
+	
+	trigger = { 
+	tag = VEN 
+	OR = { 
+	government = merchant_republic 
+	government = democracy
+		}
+	has_country_flag = daniele_manin_doge
+	year = 1886  
+	NOT = { has_country_flag = doge_election_2 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 6 
+	}
+	
+	option = { 
+	name = "106069.A"
+	set_country_flag = doge_election_2 
+	}
+}
+
+country_event = { 
+	id = 106070 #Death of Salviati 
+	title = "VEN11.T"
+	desc = "VEN11.D"
+	
+	picture = "antonio_salviati"
+	
+	trigger = { 
+	tag = VEN 
+	OR = { 
+	government = merchant_republic 
+	government = democracy
+		}
+	has_country_flag = salviati_doge
+	year = 1889  
+	NOT = { has_country_flag = doge_election_2 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "106070.A"
+	set_country_flag = doge_election_2 
+	}
+}
+
+country_event = { 
+	id = 106071 #Death of Albrizzi
+	title = "VEN12.T"
+	desc = "VEN12.D"
+	
+	picture = "albrizzi"
+	
+	trigger = { 
+	tag = VEN 
+	OR = { 
+	government = merchant_republic 
+	government = democracy
+		}
+	has_country_flag = albrizzi_doge
+	year = 1888
+	NOT = { has_country_flag = doge_election_2 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 5 
+	}
+	
+	option = { 
+	name = "106071.A"
+	prestige = 5 
+	set_country_flag = doge_election_2 
+	}
+}
+
+country_event = { 
+	id = 106072	#Election 
+	title = "VEN13.T"
+	desc = "VEN13.D"
+	
+	picture = "doge_palace" 
+	
+	trigger = { 
+	tag = VEN 
+	OR = { government = merchant_republic government = democracy }
+	has_country_flag = doge_election_2
+	}
+	
+	mean_time_to_happen = { 
+	days = 10 
+	}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "106072.A"
+	set_country_flag = guiccioli_doge
+	any_pop = { 
+	limit = { culture = venetian }
+	ideology = {
+	factor = 0.02
+	value = liberal 
+			}
+	scaled_militancy = {
+	factor = 1
+	ideology = conservative
+			}	
+	scaled_militancy = {
+	factor = 3
+	ideology = reactionary
+			}	
+		}
+	scaled_militancy = {
+	factor = 2
+	ideology = communist
+			}
+	scaled_consciousness = { 
+	factor = 3
+	ideology = socialist
+	}
+	ai_chance = { 
+	factor = 40	
+	modifier = { 
+	factor = 1.3
+	ideology = liberal 
+			}
+	modifier = { 
+	factor = 1.1
+	ITA = { exists = yes government = democracy } 
+			} 
+		}
+	}
+	
+	option = { 
+	name = "106072.B"
+	set_country_flag = bertoloni_doge
+	any_pop = { 
+	limit = { culture = venetian }
+	ideology = {
+	factor = 0.03
+	value = conservative 
+			}
+	scaled_militancy = {
+	factor = 2
+	ideology = communist
+			}
+	scaled_militancy = {
+	factor = 1
+	ideology = socialist
+			}
+	scaled_militancy = {
+	factor = 1
+	ideology = liberal
+			}
+	scaled_militancy = {
+	factor = -4
+	ideology = reactionary
+			}	
+	scaled_militancy = {
+	factor = -2
+	ideology = conservative
+			}	
+		}
+	ai_chance = { 
+	factor = 30
+	modifier = { 
+	factor = 1.2 
+	ideology = conservative 
+			}
+	modifier = {
+	factor = 1.4 
+	ideology = reactionary
+		}
+	}
+	}
+	
+	option = { 
+	name = "106072.C"
+	set_country_flag = grimalni_doge
+	any_pop = { 
+	limit = { culture = venetian }
+	ideology = {
+	factor = 0.02
+	value = socialist	
+		}
+	}
+	scaled_militancy = {
+	factor = -2
+	ideology = socialist
+			}
+	scaled_militancy = {
+	factor = -1
+	ideology = communist 
+			}
+	scaled_militancy = {
+	factor = 1
+	ideology = conservative
+			}
+	scaled_consciousness = { 
+	factor = 2
+	ideology = conservative
+			}
+	scaled_consciousness = { 
+	factor = 3
+	ideology = liberal
+			}
+	ai_chance = { 
+	factor = 30	
+	modifier = { 
+	factor = 1.3
+	ideology = socialist 
+			}
+	modifier = { 
+	factor = 1.4
+	ITA = { exists = yes government = democracy } 
+			} 
+		}
+	}
+}
+
+country_event = { 
+	id = 106073	#Abolishment of the Office of Doge
+	title = "VEN14.T"
+	desc = "VEN14.D"
+	
+	picture = "doge_palace" 
+	
+	trigger = { 
+	tag = VEN 
+	OR = { 
+	government = theocracy
+	government = hms_government 
+	government = absolute_monarchy
+	government = fascist_dictatorship
+	government = bourgeois_dictatorship
+	government = presidential_dictatorship
+	government = prussian_constitutionalism
+	government = proletarian_dictatorship
+		} 
+	NOT = { has_global_flag = end_doge }
+	}
+	
+	mean_time_to_happen = { 
+	days = 5
+	}
+	
+	option = { 
+	name = "106073.A"
+	prestige = -5
+	clr_country_flag = doge_1
+	clr_country_flag = doge_election_1
+	clr_country_flag = doge_election_2
+	clr_country_flag = grimalni_doge
+	clr_country_flag = bertoloni_doge
+	clr_country_flag = guiccioli_doge
+	clr_country_flag = albrizzi_doge 
+	clr_country_flag = salviati_doge 
+	clr_country_flag = daniele_manin_doge
+	set_global_flag = end_doge
+	}
+}
+
+country_event = { 
+	id = 106074	#1500th Anniversary of Venice
+	title = "VEN15.T"
+	desc = "VEN15.D"
+	
+	fire_only_once = yes 
+	
+	major = yes 
+	
+	trigger = { 
+	tag = VEN 
+	OR = { 
+	government = merchant_republic 
+	government = democracy
+		}
+	year = 1921
+	NOT = { year = 1922 }
+	}
+	
+	mean_time_to_happen = { 
+	months = 3 
+	}
+	
+	option = { 
+	name = "106074.A"
+	prestige = 5 
+	any_pop = { 
+	limit = { has_pop_culture = venetian }
+	militancy = -2 
+		}
+	}
+	
+}
+
+country_event = { 
+	id = 106090
+	title = "GRE90.T"
+	desc = "GRE90.D"
+	
+	picture = "hagia_sophia"
+	
+	trigger = { 
+	tag = GRE 
+	has_country_flag = megali_idea
+	}
+	
+	fire_only_once = yes 
+	
+	option = { 
+	name = "106090.A"
+	prestige = 5 
+	scaled_militancy = {
+		issue = moralism
+		factor = -5 
+		}
+	}
+}
+
+country_event = { 
+	id = 106091 
+	title = "GRE91.T"
+	desc = "GRE91.D"
+	
+	picture = "great_catastrophe"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	tag = GRE 
+	owns = 860 
+	owns = 828 
+	has_country_flag = megali_idea 
+	owns = 862
+	}
+	
+	mean_time_to_happen = { 
+	months = 12
+	}
+	
+	option = { 
+	name = "106091.A"
+	prestige = -20 
+	any_pop = {
+			limit = {
+				location = { province_id = 828 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 860 }
+				culture = turkish 
+			}
+			reduce_pop = 0.5
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 859 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 858 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 861 }
+				culture = turkish 
+			}
+			reduce_pop = 0.6
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 828 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 860 }
+				culture = greek 
+			}
+			reduce_pop = 1.2
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 861 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}	
+	any_pop = {
+			limit = {
+				location = { province_id = 858 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}
+	any_pop = {
+			limit = {
+				location = { province_id = 859 }
+				culture = greek 
+			}
+			reduce_pop = 1.1
+			militancy = 8 
+		}
+	858 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+			}
+	859 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+			}
+	860 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = -1
+				}
+			}
+	861 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+			}
+	828 = {
+			add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+				}
+		}
+	}
+}
+
+country_event = { 
+	id = 106092 
+	title = "GRE92.T"
+	desc = "GRE92.D"
+	
+	picture = "orthodox_revival"
+	
+	fire_only_once = yes 
+	
+	trigger = { 
+	OR = { 
+	tag = GRE 
+	AND = { tag = MAC has_country_flag = macedon_greece}
+	}
+	year = 1860
+	}
+	
+	option = { 
+	name = "106092.A"
+	any_pop = { 
+	limit = { has_pop_religion = orthodox } 
+	literacy = 0.15 
+		}
+	any_pop = {
+	limit = { culture = greek }
+			dominant_issue = {
+				factor = 0.01
+				value = moralism
+			}
+			scaled_consciousness = {
+				issue = moralism
+				factor = 5
+			}
+		}
+	}
+}
+
+country_event = { 
+	id = 106093
+	title = "GRE93.T"
+	desc = "GRE93.D"
+	
+	picture = "BUL_GRE_meeting"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "106093.A"
+	TUR_805 = { remove_core = BUL }
+	relation = { who = FROM value = 50 }
+	any_pop = {
+		limit = {
+			has_pop_culture = greek
+			}
+	reduce_pop = 0.6
+	consciousness = 2
+	militancy = -1
+	move_pop = 823
+		}
+	FROM = { country_event = 106094 }
+	}
+}
+	
+country_event = { 
+	id = 106094
+	title = "GRE94.T"
+	desc = "GRE94.D"
+	
+	picture = "BUL_GRE_meeting"
+	
+	is_triggered_only = yes 
+	
+	option = { 
+	name = "106094.A"
+	any_owned = { 
+	limit = { is_core = BUL }
+	secede_province = BUL
+		}
+	any_pop = {
+		limit = {
+			has_pop_culture = bulgarian
+			location = {
+				OR = {
+					province_id = 823
+					province_id = 829
+					province_id = 830
+					}
+				}
+			}
+	reduce_pop = 0.6
+	consciousness = 2
+	militancy = -1
+	move_pop = 816
+		}
+	any_pop = {
+		limit = {
+			has_pop_culture = bulgarian
+			location = {
+				OR = {
+					province_id = 828
+					province_id = 858
+					}
+				}
+			}
+	reduce_pop = 0.6
+	consciousness = 2
+	militancy = -1
+	move_pop = 817
+		}
+	823 = { 
+		add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+			}
+		} 
+	829 = { 
+		add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+			}
+		} 
+	830 = { 
+		add_province_modifier = {
+			name = thrace_boom
+			duration = 1095
+			}
+		}
+	}
+}
+

@@ -1,0 +1,263 @@
+political_decisions = {
+	illyrian_annexation = {
+		picture = illyria
+		potential = {
+			primary_culture = venetian
+			has_country_flag = dalmatia_cores
+			NOT = { has_country_flag = illyrian_annexation }
+		}
+		allow = {
+			 OR = {
+			       AND = {
+				      owns = 783
+				      owns = 771
+				      }
+				      CRO = {
+				      in_sphere = THIS
+				      }
+			       }	
+			OR = {
+			      revolution_n_counterrevolution = 1
+			      AND = {
+			             rank = 8
+				     nationalism_n_imperialism = 1
+			      }
+		        }
+		}
+		
+		effect = {
+			prestige = 5
+			add_accepted_culture = croat
+			add_accepted_culture = bosniak
+			set_country_flag = illyrian_annexation
+			TUR_788 = { add_core = VEN }
+			AUS_771 = { add_core = VEN }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	connect_holdings_greece = {
+		picture = adriatic
+		potential = {
+			primary_culture = venetian
+			has_country_flag = illyrian_annexation
+			NOT = { has_country_flag = connect_holdings_greece }
+		}
+		allow = {
+			 OR = {
+			       AND = {
+				      owns = 2583
+				      owns = 849
+				      owns = 824
+				      owns = 780
+				      owns = 783
+				      owns = 834
+				      }
+				      AND = {
+					     ALB = {
+				      		    in_sphere = THIS
+				      	     }
+				      	     MON = {
+				      		    in_sphere = THIS
+			       		     }
+					     owns = 780
+					     owns = 783
+					     owns = 834
+					     owns = 824
+				     }
+			}
+			OR = {
+			      phenomenology_n_hermeneutic = 1
+			      AND = {
+			             rank = 6
+				     revolution_n_counterrevolution = 1
+			      }
+		        }
+		}
+		
+		effect = {
+			prestige = 5
+			add_accepted_culture = albanian
+			add_accepted_culture = serb
+			set_country_flag = connect_holdings_greece
+			TUR_853 = { add_core = VEN }
+			MON_2582 = { add_core = VEN }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	stewardship_italy = {
+		picture = north_italy
+		potential = {
+			tag = VEN
+			NOT = { has_country_flag = stewardship_italy }
+			NOT = {
+					exists = ITA
+			}
+			NOT = {
+				exists = ARI
+			}
+		}
+	
+		allow = {
+			prestige = 45
+			NOT = { war = yes }
+			SAR_720 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			MOD_739 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			TUS_744 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			AUS_726 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			GEN_724 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+			PAP_741 = {
+				OR = {
+					owned_by = THIS
+					owner = {
+						in_sphere = THIS
+					}
+				}
+			}
+		}
+	
+		effect = {
+			prestige_factor = 0.1
+			set_country_flag = stewardship_italy
+			SAR_720 = { add_core = VEN }
+			MOD_739 = { add_core = VEN }
+			TUS_744 = { add_core = VEN }
+			AUS_726 = { add_core = VEN }
+			GEN_724 = { add_core = VEN }
+			PAP_741 = { add_core = VEN }
+			
+			any_country = {
+				limit = {
+					is_culture_group = italian
+					NOT = {
+						primary_culture = catalan
+						primary_culture = athesian
+						primary_culture = south_italian
+					}
+					in_sphere = THIS
+					NOT = {
+						tag = THIS
+					}
+				}
+				country_event = 11101
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	integrate_milan = {
+		picture = north_east_italy
+		potential = {
+			tag = VEN
+			NOT = { has_country_flag = integrate_milan }
+			NOT = {
+					exists = ITA
+			}
+		}
+	
+		allow = {
+			nationalism_n_imperialism = 1
+			NOT = { war = yes }
+			AUS_729 = { owned_by = THIS }
+			AUS_726 = { owned_by = THIS }
+			AUS_736 = { owned_by = THIS }
+		}	
+	
+		effect = {
+			prestige = 10
+			set_country_flag = integrate_milan
+			AUS_726 = { remove_core = ITA }
+			AUS_726 = { remove_core = LOM }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	government_in_exile_ven = {
+		picture = map_caribbean
+		potential = {
+			NOT = { has_country_flag = government_in_exile_ven }
+			owns = 199
+			tag = VEN
+		}
+		
+		allow = { 
+			AND = {
+				OR = {
+					revanchism = 0.50
+					NOT = { 
+						729 = { owned_by = VEN }
+						736 = { owned_by = VEN }
+						781 = { owned_by = VEN }
+						728 = { owned_by = VEN }
+					}
+				}
+		        }
+		}
+		
+		effect = {
+			add_core = 199
+			add_core = 200
+			capital = 199
+			199 = {
+				    life_rating = 5
+				    change_province_name = "Nova Venetia" 
+				    add_province_modifier = {
+				    	name = government_in_exile
+						duration = 7300
+	 				}  	  
+			}
+			add_accepted_culture = afro_latino
+			set_country_flag = government_in_exile_ven
+			set_country_flag = new_world_nation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,987 @@
+# Triggered modifiers are here.
+# these are checked for each countries once/month and then applied.
+#
+# Effects are fully scriptable here.
+
+trinket_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = trinket_health_care
+		administration_spending = 0.2
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+low_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = low_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.25
+			}
+			AND = {
+			        ai = no
+				administration_spending = 0.3
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+acceptable_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = acceptable_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.3
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.4
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+good_health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = good_health_care
+		OR = {
+			AND = {
+				ai = yes
+				administration_spending = 0.4
+			}
+			AND = {
+				ai = no
+				administration_spending = 0.5
+			}
+		}
+	}
+	global_population_growth = 0.002
+	icon = 19
+}
+
+trinket_health_care_fully_funded_social = {
+	trigger = {
+		exists = yes
+		health_care = trinket_health_care
+		social_spending = 0.2
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+low_health_care_fully_funded_social = {
+	trigger = {
+		exists = yes
+		health_care = low_health_care
+		OR = {
+			AND = {
+				ai = yes
+				social_spending = 0.25
+			}
+			AND = {
+			        ai = no
+				social_spending = 0.3
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+acceptable_health_care_fully_funded_social = {
+	trigger = {
+		exists = yes
+		health_care = acceptable_health_care
+		OR = {
+			AND = {
+				ai = yes
+				social_spending = 0.3
+			}
+			AND = {
+				ai = no
+				social_spending = 0.4
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+good_health_care_fully_funded_social = {
+	trigger = {
+		exists = yes
+		health_care = good_health_care
+		OR = {
+			AND = {
+				ai = yes
+				social_spending = 0.4
+			}
+			AND = {
+				ai = no
+				social_spending = 0.5
+			}
+		}
+	}
+	global_population_growth = 0.002
+	icon = 19
+}
+
+health_care_fully_funded = {
+	trigger = {
+		exists = yes
+		health_care = good_health_care
+		OR = {
+			AND = {
+				ai = yes
+				social_spending = 0.74
+			}
+			AND = {
+				ai = no
+				social_spending = 0.99
+			}
+		}
+	}
+	global_population_growth = 0.001
+	icon = 19
+}
+
+low_schools_fully_funded = {
+	trigger = {
+		exists = yes
+		school_reforms = low_schools
+		education_spending = 0.3
+	}
+	education_efficiency_modifier = 0.05
+	icon = 19
+}
+
+acceptable_schools_fully_funded = {
+	trigger = {
+		exists = yes
+		school_reforms = acceptable_schools
+		education_spending = 0.4
+	}
+	education_efficiency_modifier = 0.075
+	icon = 19
+}
+
+good_schools_fully_funded = {
+	trigger = {
+		exists = yes
+		school_reforms = good_schools
+		education_spending = 0.5
+	}
+	education_efficiency_modifier = 0.1
+	icon = 19
+}
+
+education_fully_funded = {
+	trigger = {
+		exists = yes
+		school_reforms = good_schools
+		OR = {
+			AND = {
+				ai = yes
+				education_spending = 0.74
+			}
+			AND = {
+				ai = no
+				education_spending = 0.99
+			}
+		}
+	}
+	education_efficiency_modifier = 0.1
+	icon = 19
+}
+
+neglected_education = {
+	trigger = {
+		exists = yes
+		civilized = yes
+		ai = no
+		number_of_states = 2
+		total_pops = 1000000
+		OR = {
+			AND = {
+				literacy = 0.75
+				NOT = { education_spending = 0.3 }
+			}
+			AND = {
+				literacy = 0.5
+				NOT = { education_spending = 0.2 }
+			}
+			AND = {
+				literacy = 0.25
+				NOT = { education_spending = 0.1 }
+			}
+		}
+	}
+	education_efficiency_modifier = -1
+	icon = 19
+}
+
+desperate_nation  = {
+	trigger = {
+		NOT = { total_pops = 25000 }  #25 thousand POPs/100 thousand population 
+	}
+	global_population_growth = 0.05
+	mobilisation_economy_impact = -0.80
+	supply_consumption = -0.80
+	mobilisation_size = 0.2
+	tax_efficiency = 0.50 #50% boost
+	icon = 9
+}
+
+microscopic_nation  = {
+	trigger = {
+		total_pops = 25000 #25 thousand POPs/100 thousand population
+		NOT = { total_pops = 125000 }  #125 thousand POPs/500 thousand population 
+	}
+	global_population_growth = 0.004
+	mobilisation_economy_impact = -0.75
+	supply_consumption = -0.75
+	mobilisation_size = 0.1
+	tax_efficiency = 0.40 #40% boost
+	icon = 6
+}
+
+tiny_nation  = {
+	trigger = {
+		total_pops = 125000 #125 thousand POPs/500 thousand population
+		NOT = { total_pops = 1250000 } #1.25 million POPs/5 Million population
+	}
+	global_population_growth = 0.003
+	mobilisation_economy_impact = -0.50
+	supply_consumption = -0.50
+	mobilisation_size = 0.04
+	tax_efficiency = 0.25 #25% boost
+	icon = 6
+}
+
+small_nation  = {
+	trigger = {
+		total_pops = 1250000 #1.25 million POPs/5 Million population
+		NOT = { total_pops = 3750000 } #3.75 million POPs/30 Million population
+	}
+	global_population_growth = 0.003
+	mobilisation_economy_impact = -0.25
+	supply_consumption = -0.25
+	mobilisation_size = 0.02
+	tax_efficiency = 0.20 #20% boost
+	icon = 9
+}
+
+medium_nation  = {
+	trigger = {
+		civilized = yes
+		total_pops = 3750000 #3.75 million POPs/15 Million population
+		NOT = { total_pops = 7500000 } #7.5 million POPs/30 Million population
+	}
+	global_population_growth = 0.001
+	mobilisation_economy_impact = -0.10
+	supply_consumption = -0.10
+	mobilisation_size = 0.01
+	tax_efficiency = 0.10 #10% boost
+	icon = 9
+}
+
+average_nation  = {
+	trigger = {
+		civilized = yes
+		total_pops = 7500000 #7.5 million POPs/30 Million population 
+		NOT = { total_pops = 12500000 } #12.5 million POPs/50 million population
+	}
+	supply_consumption = 0.05
+	mobilisation_size = -0.01
+	tax_efficiency = -0.05 #5% malus
+	#max_tariff = -0.1 #10% 
+	icon = 9
+}
+
+large_nation = {
+	trigger = {
+		civilized = yes
+		total_pops = 12500000 #12.5 million POPs/50 million population
+		NOT = { total_pops = 21250000 } #21.25 million POPs/85 million population
+	}
+	#global_population_growth = -0.001
+	supply_consumption = 0.1
+	mobilisation_size = -0.02
+	tax_efficiency = -0.05 #5% malus
+	max_tariff = -0.05 #5% was 15%
+	mobilisation_economy_impact = 0.1
+	global_immigrant_attract = -0.05
+	icon = 9
+}
+
+empire = {
+	trigger = {
+		civilized = yes
+		total_pops = 21250000 #21.25 million POPs/85 million population
+		NOT = { total_pops = 37500000 } #37.5 million POPs/150 million population
+	}
+	global_population_growth = -0.001
+	mobilisation_size = -0.02
+	supply_consumption = 0.15
+	tax_efficiency = -0.07 #7% malus
+	max_tariff = -0.10 #10% was 20%
+	factory_owner_cost = -0.10 #10% decrease in cost for buildings
+	mobilisation_economy_impact = 0.2
+	global_immigrant_attract = -0.1
+	icon = 9
+}
+
+medium_empire = {
+	trigger = {
+		civilized = yes
+		total_pops = 37500000 #37.5 million POPs/150 million population
+		NOT = { total_pops = 62500000 } #62.5 million POPs/250 million population
+	}
+	global_population_growth = -0.002
+	mobilisation_size = -0.03
+	supply_consumption = 0.2
+	tax_efficiency = -0.09 #9% malus
+	max_tariff = -0.15 #15% was 20%
+	research_points_modifier = 0.1 #10% increase
+	factory_owner_cost = -0.10 #10% decrease in cost for buildings
+	mobilisation_economy_impact = 0.4
+	global_immigrant_attract = -0.2
+	icon = 9
+}
+
+large_empire = {
+	trigger = {
+		civilized = yes
+		total_pops = 62500000 #62.5 million POPs/250 million population
+		NOT = { total_pops = 87500000 } #87.5 million POPs/350 million population
+	}
+	global_population_growth = -0.003
+	mobilisation_size = -0.04
+	supply_consumption = 0.3 #30% increase
+	tax_efficiency = -0.11 #11% malus
+	max_tariff = -0.20 #20% was 25%
+	research_points_modifier = 0.13 #13% increase
+	factory_owner_cost = -0.15 #15% decrease in cost for buildings
+	mobilisation_economy_impact = 0.6
+	global_immigrant_attract = -0.3
+	icon = 9
+}
+
+insane_empire = {
+	trigger = {
+		year = 1837
+		civilized = yes
+		total_pops = 87500000 #87.5 million POPs/350 million population
+		NOT = { total_pops = 125000000 } #87.5 million POPs/350 million population
+	}
+	global_population_growth = -0.004
+	mobilisation_size = -0.05
+	supply_consumption = 0.6 #50% increase
+	tax_efficiency = -0.2 #20% malus
+	max_tariff = -0.25 #25% malus
+	factory_owner_cost = -0.15 #15% decrease in cost for buildings
+	mobilisation_economy_impact = 1.0
+	global_immigrant_attract = -0.4
+	icon = 9
+}
+
+insane_empire2 = {
+	trigger = {
+		year = 1837
+		civilized = yes
+		total_pops = 125000000 #125 million POPs/500 million population
+	}
+	global_population_growth = -0.006
+	mobilisation_size = -0.07
+	supply_consumption = 0.6 #60% increase
+	tax_efficiency = -0.2 #25% malus
+	max_tariff = -0.60 #60% malus
+	factory_owner_cost = -0.20 #20% decrease in cost for buildings
+	mobilisation_economy_impact = 1.0
+	global_immigrant_attract = -0.5
+	icon = 9
+}
+
+islamic_law_triggered = {
+	trigger = {
+		exists = yes
+		civilized = yes
+		OR = {
+			has_country_flag = sunni_country
+			has_country_flag = shiite_country
+			has_country_flag = ibadi_country
+		}
+		NOT = { has_country_flag = secularized_muslim_society }
+		NOT = { has_country_flag = dynamic_tag }
+		NOT = { has_country_flag = post_colonial_country }
+		NOT = { religious_policy = pro_atheism }
+	}
+	research_points_modifier = -0.05
+	education_efficiency_modifier = -0.15
+	literacy_con_impact = -0.5
+	issue_change_speed = -0.5
+	suppression_points_modifier = 0.5
+	tax_efficiency = 0.05
+	icon = 5
+}
+
+the_british_raj = {
+	trigger = {
+		exists = yes
+		capital_scope = { continent = europe }
+		NOT = { is_culture_group = indo_iranian }
+		NOT = { is_culture_group = south_asian }
+		1227 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1236 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1251 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1297 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	prestige = 0.05
+	icon = 19
+}
+
+dutch_east_india = {
+	trigger = {
+		exists = yes
+		capital_scope = { continent = europe }
+		1413 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+		1418 = {
+			is_colonial = yes
+			owned_by = THIS
+		}
+	}
+	prestige = 0.01
+	icon = 19
+}
+
+vassal_nation = {
+	trigger = {
+		exists = yes
+		is_vassal = yes
+		is_substate = no
+	}
+	icon = 10
+	prestige = -0.1
+}
+
+substate_nation = {
+	trigger = {
+		exists = yes
+		is_substate = yes
+		civilized = yes
+	}
+	
+	prestige = -0.25
+	max_loan_modifier = -1.0
+	min_tax = 0.4
+	max_military_spending = -0.25
+	min_tariff = 1.2
+	tax_efficiency = 0.5
+	
+	icon = 10
+}
+
+chinese_substate = {
+	trigger = {
+		OR = {
+			substate_of = QNG
+			vassal_of = QNG
+		}
+		civilized = no
+		exists = yes
+		QNG = {	government = absolute_monarchy }
+		is_culture_group = east_asian
+	}
+	icon = 10
+	research_points_modifier = -0.2
+	global_pop_consciousness_modifier = 0.02
+}
+
+own_kiel_canal = {
+	trigger = {
+		exists = yes
+		owns = 369
+		civilized = yes
+		is_canal_enabled = 1
+	}
+	icon = 9
+	tariff_efficiency_modifier = 0.05
+}
+
+own_suez_canal = {
+	trigger = {
+		exists = yes
+		owns = 1755
+		civilized = yes
+		is_canal_enabled = 2
+	}
+	icon = 9
+	tariff_efficiency_modifier = 0.1
+	import_cost = -0.2
+	prestige = 0.01
+}
+
+own_panama_canal = {
+	trigger = {
+		exists = yes
+		owns = 1723
+		civilized = yes
+		is_canal_enabled = 3
+	}
+	icon = 9
+	tariff_efficiency_modifier = 0.2
+	import_cost = -0.25
+	prestige = 0.02
+}
+
+small_but_efficient = {
+	trigger = {
+		exists = yes
+		capital_scope = { continent = europe }
+		civilized = yes
+		NOT = { number_of_states = 4 }
+		NOT = { num_of_cities = 8 }
+		NOT = { total_pops = 500000 }
+		NOT = { money = 1000000 }
+		NOT = { year = 1886 }
+		OR = {
+			NOT = { 
+				is_culture_group = south_slavic
+				is_culture_group = pan_romanian
+				is_culture_group = levantine
+			}
+			NOT = { num_of_cities = 4 }
+		}
+	}
+	
+	icon = 9
+	tax_efficiency = 0.4
+	administrative_efficiency_modifier = 0.3
+	tariff_efficiency_modifier = 0.3
+	supply_consumption = -0.9
+}
+
+sound_dues = {
+	trigger = {
+		capital_scope = { continent = europe }
+		exists = yes
+		civilized = yes
+		total_num_of_ports = 1
+		NOT = { has_global_flag = sound_dues_abolished }
+		NOT = { owns = 372 }
+		OR = {
+			is_culture_group = scandinavian
+			is_culture_group = british
+			is_culture_group = french
+			is_culture_group = beneluxian
+			primary_culture = north_german
+			primary_culture = russian
+		}
+	}
+	
+	icon = 9
+	tariff_efficiency_modifier = -0.05
+	import_cost = 0.05
+}
+
+landlocked_nation = {
+	trigger = {
+		exists = yes
+		NOT = { total_num_of_ports = 1 }
+		NOT = { has_country_modifier = trek_boers }
+	}
+
+	import_cost = 0.25
+	global_immigrant_attract = -0.5
+	icon = 8
+}
+
+social_reformed_nation = {
+		trigger = {
+			exists = yes
+			wage_reform = good_minimum_wage
+			work_hours = eight_hours
+			safety_regulations = good_safety
+			unemployment_subsidies = good_subsidies
+			pensions = good_pensions
+			health_care = good_health_care
+			school_reforms = good_schools
+			penal_system = rehabilitation
+		}
+		
+	social_reform_desire = -0.5
+	icon = 13
+}
+
+educational_spen = {
+		trigger = {
+			ai = yes
+			exists = yes
+			administration_spending = 0.74
+		}
+
+	education_efficiency_modifier = 0.3
+	icon = 16
+}
+
+admin_spen = {
+		trigger = {
+			ai = yes
+			exists = yes
+			administration_spending = 0.74
+		}
+
+	administrative_efficiency_modifier = 0.3
+	icon = 16
+}
+
+hormuz_strait = {
+		trigger = {
+			exists = yes
+			year = 1880
+			owns = 1071
+			owns = 2664
+		}
+
+	tax_efficiency = 0.01
+	tariff_efficiency_modifier = 0.05
+	icon = 16
+}
+
+DVG_badboy_1 = { 
+	trigger = {
+		NOT = { has_global_flag = DVG_infamy }
+		is_greater_power = yes 
+	}
+	badboy = -0.05 
+	icon = 1
+
+}
+
+DVG_badboy_2 = { 
+	trigger = {
+		NOT = { has_global_flag = DVG_infamy }
+		is_greater_power = no 
+	}
+	badboy = -0.05 
+	icon = 1
+
+}
+
+powerful_HRE = { 
+	trigger = { 
+		OR = { 
+		primary_culture = south_german
+		primary_culture = rheinish 
+		primary_culture = north_german 
+			}
+		in_sphere = BOH 
+		NOT = { year = 1849 }
+	}
+	prestige = -0.50 
+
+}
+
+save_the_nation0.5  = {
+	trigger = {
+		revanchism = 0.05
+		NOT = { revanchism = 0.10 } 
+	}
+	
+	suppression_points_modifier = 0.05
+	
+	land_organisation = 0.0125
+	mobilisation_size = 0.005
+	supply_consumption = -0.025
+	icon = 9
+}
+
+save_the_nation1  = {
+	trigger = {
+		revanchism = 0.10
+		NOT = { revanchism = 0.15 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.025
+	mobilisation_size = 0.01
+	supply_consumption = -0.05
+	icon = 9
+}
+
+save_the_nation1.5  = {
+	trigger = {
+		revanchism = 0.15
+		NOT = { revanchism = 0.20 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.05
+	mobilisation_size = 0.015
+	supply_consumption = -0.1
+	mobilization_impact = 0.125
+	mobilisation_economy_impact = -0.0625
+	icon = 9
+}
+
+save_the_nation2  = {
+	trigger = {
+		revanchism = 0.20
+		NOT = { revanchism = 0.25 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.075
+	mobilisation_size = 0.02
+	supply_consumption = -0.15
+	mobilization_impact = 0.25
+	mobilisation_economy_impact = -0.125
+	icon = 9
+}
+
+save_the_nation2.5  = {
+	trigger = {
+		revanchism = 0.25
+		NOT = { revanchism = 0.30 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.0875
+	mobilisation_size = 0.025
+	supply_consumption = -0.175
+	mobilization_impact = 0.375
+	mobilisation_economy_impact = -0.19
+	icon = 9
+}
+
+save_the_nation3  = {
+	trigger = {
+		revanchism = 0.30
+		NOT = { revanchism = 0.35 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.1
+	mobilisation_size = 0.03
+	supply_consumption = -0.20
+	mobilization_impact = 0.5
+	mobilisation_economy_impact = -0.25
+	icon = 9
+}
+
+save_the_nation3.5  = {
+	trigger = {
+		revanchism = 0.35
+		NOT = { revanchism = 0.40 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.15
+	mobilisation_size = 0.035
+	supply_consumption = -0.25
+	mobilization_impact = 0.75
+	mobilisation_economy_impact = -0.375
+	icon = 9
+}
+
+save_the_nation4  = {
+	trigger = {
+		revanchism = 0.40
+		NOT = { revanchism = 0.45 } 
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.2
+	mobilisation_size = 0.04
+	supply_consumption = -0.30
+	mobilization_impact = 1
+	mobilisation_economy_impact = -0.5
+	icon = 9
+}
+
+save_the_nation4.5  = {
+	trigger = {
+		revanchism = 0.45
+		NOT = { revanchism = 0.50 }
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.225
+	land_unit_start_experience = 2.5
+	mobilisation_size = 0.045
+	supply_consumption = -0.30
+	mobilization_impact = 1
+	mobilisation_economy_impact = -0.58
+	icon = 9
+}
+
+save_the_nation5  = {
+	trigger = {
+		revanchism = 0.50
+	}
+	
+	suppression_points_modifier = 0.10
+	
+	land_organisation = 0.25
+	land_unit_start_experience = 5
+	mobilisation_size = 0.05
+	supply_consumption = -0.30
+	mobilization_impact = 1
+	mobilisation_economy_impact = -0.66
+	icon = 9
+}
+
+help_ai = {
+	trigger = {
+		ai = yes
+		NOT = { year = 1870 }
+	}
+	icon = 10
+	tax_efficiency = 0.05
+	administrative_efficiency_modifier = 0.03
+	supply_consumption = -0.15
+	loan_interest = -0.03
+	education_efficiency_modifier = 0.25
+}
+
+help_ai_mid = {
+	trigger = {
+		ai = yes
+		year = 1870
+		NOT = { year = 1900 }
+	}
+	icon = 10
+	tax_efficiency = 0.15
+	administrative_efficiency_modifier = 0.05
+	supply_consumption = -0.20
+	loan_interest = -0.03
+	education_efficiency_modifier = 0.25
+}
+
+help_ai_late = {
+	trigger = {
+		ai = yes
+		year = 1900
+	}
+	icon = 10
+	tax_efficiency = 0.20
+	administrative_efficiency_modifier = 0.05
+	supply_consumption = -0.25
+	loan_interest = -0.03
+	education_efficiency_modifier = 0.25
+}
+
+help_ai_free_trade = {
+	trigger = {
+		ai = yes
+		trade_policy = free_trade
+	}
+	icon = 9
+	max_tariff = 0.25
+	min_tariff = 1
+}
+
+help_ai_protectionism = {
+	trigger = {
+		ai = yes
+		trade_policy = protectionism
+	}
+	icon = 9
+	min_tariff = 0.75
+}
+
+disable_loans = {
+	trigger = {
+		ai = yes
+	}
+	max_loan_modifier = -1.0
+	icon = 9
+}
+
+fairer_taxation3 = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 50000000
+	}
+	max_tax = 0.10
+	icon = 9
+}
+
+fairer_taxation2 = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 40000000
+		NOT = { money = 50000000 }
+	}
+	max_tax = 0.20
+	icon = 9
+}
+
+fairer_taxation1 = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 30000000
+		NOT = { money = 40000000 }
+	}
+	max_tax = 0.30
+	icon = 9
+}
+
+fairer_taxation = {
+	trigger = {
+		ai = yes
+		civilized = yes
+		money = 20000000
+		NOT = { money = 30000000 }
+	}
+	max_tax = 0.40
+	icon = 9
+}
+
+#chinese_economic_compensation = {
+#	trigger = {
+#		has_country_flag = chinese_economic_compensation
+#		NOT = { year = 1890 }
+#		civilized = no
+#	}
+#	icon = 10
+#	farm_rgo_eff = 1
+#	mine_rgo_eff = 1
+#}

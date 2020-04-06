@@ -1,0 +1,117 @@
+country_event = {
+    id = 202201
+    title = "RUS_EXP_202201_t"
+    desc = "RUS_EXP_202201_d"
+    picture = "administration"
+
+    is_triggered_only = yes
+
+    #Each focus adds some cores. Perhaps the AI weights should depend on the relative strength of Scandinavia, the Commonwealth, Bohemia, Ottomans, etc. Mostly by region.
+
+    #Baltic focus - cores on Livonia and Finland
+    option = {
+        name = "202201.A"
+        badboy = 10
+	set_country_flag = baltic_focus
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 5475
+	}
+        #Estonia, Latvia
+        RUS_354 = { add_core = THIS } #Latvia
+        RUS_349 = { add_core = THIS } #Estonia
+        #Pskov, Novgorod, Karelia, Southern Finland
+		RUS_994 = { add_core = THIS } #Pskov
+		RUS_1003 = { add_core = THIS } #Novgorod
+        
+        ai_chance = { 
+            factor = 1
+			
+			modifier = {
+				factor = 0
+				has_country_flag = baltic_focus
+			}
+        }
+    }
+    #Steppe/Caucasus focus
+    option = {
+        name = "202201.B"
+        badboy = 10
+	set_country_flag = southern_focus
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 5475
+	}
+
+        RUS_979 = { add_core = THIS } #Don
+        RUS_1041 = { add_core = THIS } #Astrakhan
+        RUS_1048 = { add_core = THIS } #Ekaterinodar
+		RUS_1052 = {add_core = THIS } #North Cacucasia
+
+        ai_chance = { 
+             factor = 1
+			 
+			 modifier = {
+				factor = 0
+				has_country_flag = southern_focus
+			}
+        }
+    }
+
+    #Pan-slavic focus
+    option = {
+        name = "202201.C"
+        badboy = 10
+	set_country_flag = panslavic_focus
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 5475
+	}
+        RUS_947 = { add_core = THIS } #Orsha
+		UKR_001 = { add_core = THIS } #Chernigov
+        RUS_980 = { add_core = THIS } #Luhansk
+
+        ai_chance = { 
+             factor = 1
+			 modifier = {
+				factor = 0
+				has_country_flag = panslavic_focus
+			}
+        }
+    }
+
+    option = {
+	name = "202201.D"
+	badboy = 10
+	set_country_flag = siberia
+	add_country_modifier = {
+		name = rus_expansion_cooldown
+		duration = 5475
+	}
+	RUS_1034 = { add_core = THIS } #Idel
+	RUS_1060 = { add_core = THIS } #Ja'ik
+	RUS_1182 = { add_core = THIS } #Uralsk
+	RUS_1184 = { add_core = THIS } #Astana
+	RUS_2685 = { add_core = THIS } #Iset
+	RUS_1064 = { add_core = THIS } #Qashliq
+	RUS_1065 = { add_core = THIS } #Yamila
+	RUS_1469 = { add_core = THIS } #Tannu Tuva
+		
+	ai_chance = {
+	       factor = 1
+		   
+		   modifier = {
+				factor = 0
+				has_country_flag = siberia
+			}
+	}
+    }
+    
+    option = {
+	name = "202201.E"
+	
+	ai_chance = {
+	       factor = 0
+	}
+    }
+}
